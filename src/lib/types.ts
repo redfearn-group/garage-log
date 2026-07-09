@@ -5,6 +5,8 @@ export interface VehicleSummary {
   year: number;
   trim?: string;
   vin?: string;
+  licensePlate?: string;
+  tireSize?: string;
   purchaseDate?: string;
   previousOwner?: string;
   status: "active" | "archived";

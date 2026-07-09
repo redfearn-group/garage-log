@@ -23,7 +23,7 @@ const sortedMaintenanceLog = [...vehicle.maintenanceLog].sort((a, b) => (a.date 
 
   <h2>{vehicleLabel(vehicle)} — Maintenance History</h2>
   <p class="muted">
-    VIN: {vehicle.vin || "—"} · Current mileage: {mileage != null ? mileage.toLocaleString() : "—"}
+    VIN: {vehicle.vin || "—"} · Plate: {vehicle.licensePlate || "—"} · Tires: {vehicle.tireSize || "—"} · Current mileage: {mileage != null ? mileage.toLocaleString() : "—"}
     {vehicle.previousOwner && <> · {vehicle.previousOwner}</>}
   </p>
 

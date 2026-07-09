@@ -74,6 +74,8 @@ app.get("/vehicles/new", (req, res) => {
         </div>
         <label>Trim<input name="trim" /></label>
         <label>VIN<input name="vin" /></label>
+        <label>License plate<input name="licensePlate" placeholder="e.g. [PLATE-REDACTED]" /></label>
+        <label>Tire size (currently mounted)<input name="tireSize" placeholder="e.g. 275/65R18" /></label>
         <label>Purchase date<input name="purchaseDate" type="date" /></label>
         <label>Previous owner / purchase notes<textarea name="previousOwner" rows="2"></textarea></label>
       </fieldset>
@@ -85,7 +87,7 @@ app.get("/vehicles/new", (req, res) => {
 });
 
 app.post("/vehicles/new", (req, res) => {
-  const { year, make, model, trim, vin, purchaseDate, previousOwner } = req.body;
+  const { year, make, model, trim, vin, licensePlate, tireSize, purchaseDate, previousOwner } = req.body;
   if (!year || !make || !model) {
     return redirect(res, "/vehicles/new", "Year, make, and model are required.", "error");
   }
@@ -105,6 +107,8 @@ app.post("/vehicles/new", (req, res) => {
     year: Number(year),
     trim: trim || undefined,
     vin: vin || undefined,
+    licensePlate: licensePlate || undefined,
+    tireSize: tireSize || undefined,
     purchaseDate: purchaseDate || undefined,
     previousOwner: previousOwner || undefined,
     status: "active",
@@ -155,7 +159,7 @@ app.get("/vehicles/:slug", requireVehicle, (req, res) => {
   const body = `
     <p><a href="/">← All vehicles</a> · <a href="http://localhost:4321/vehicles/${slug}" target="_blank">View on site ↗</a></p>
     <h2>${v.year} ${escapeHtml(v.make)} ${escapeHtml(v.model)}${v.trim ? " " + escapeHtml(v.trim) : ""}</h2>
-    <p class="muted">VIN: ${escapeHtml(v.vin) || "—"} · Current mileage: ${mileage?.toLocaleString() ?? "—"} · Status: ${v.status}</p>
+    <p class="muted">VIN: ${escapeHtml(v.vin) || "—"} · Plate: ${escapeHtml(v.licensePlate) || "—"} · Tires: ${escapeHtml(v.tireSize) || "—"} · Current mileage: ${mileage?.toLocaleString() ?? "—"} · Status: ${v.status}</p>
 
     <fieldset>
       <legend>Log mileage</legend>

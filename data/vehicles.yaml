@@ -1,13 +1,13 @@
+# Index of all vehicles. Add new ones here (or use the admin app: `npm run admin`).
+# slug must be unique and match the folder name under data/vehicles/<slug>/
 vehicles:
-  - slug: example-2018-ford-f150
+  - slug: 2015-ford-f150
     make: Ford
     model: F-150
-    year: 2018
-    trim: XLT SuperCrew 4x4
-    vin: SAMPLE-VIN-EDIT-ME-000
-    purchaseDate: '2019-03-15'
-    previousOwner: >-
-      Example seed vehicle — replace with your truck's real info, or delete once you've added your
-      real vehicles via the admin app.
+    year: 2015
+    trim: 3.5L V6 4WD SuperCrew
+    vin: [VIN-REDACTED]
+    licensePlate: [PLATE-REDACTED]
+    tireSize: 275/65R18
     status: active
     photo: null

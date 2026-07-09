@@ -1,6 +1,0 @@
-# Auto-generated/updated by the monthly recall-check GitHub Action
-# (scripts/check-recalls.mjs) pulling from the NHTSA API. Don't hand-edit —
-# it will be overwritten on the next scheduled run.
-lastChecked: null
-recalls: []
-complaints: []
