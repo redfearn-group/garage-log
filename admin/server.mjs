@@ -121,6 +121,7 @@ app.post("/vehicles/new", (req, res) => {
   saveVehicleFile(slug, "documents", { documents: [] });
   saveVehicleFile(slug, "recalls", { lastChecked: null, recalls: [], complaints: [] });
   saveVehicleFile(slug, "watch-list", { items: [] });
+  saveVehicleFile(slug, "private", { notes: [] });
 
   redirect(res, `/vehicles/${slug}`, "Vehicle created with a starter maintenance schedule — customize it below.");
 });
@@ -144,6 +145,7 @@ app.get("/vehicles/:slug", requireVehicle, (req, res) => {
   const adminDates = loadVehicleFile(slug, "admin-dates", { dates: [] }).dates;
   const documents = loadVehicleFile(slug, "documents", { documents: [] }).documents;
   const watchList = loadVehicleFile(slug, "watch-list", { items: [] }).items;
+  const privateNotes = loadVehicleFile(slug, "private", { notes: [] }).notes;
   const mileage = currentMileage(slug);
 
   const itemTypeOptions = schedule
@@ -231,6 +233,7 @@ app.get("/vehicles/:slug", requireVehicle, (req, res) => {
 
     <fieldset>
       <legend>Upload document</legend>
+      <p class="muted">⚠️ Uploaded files are committed to the public repo and are visible to anyone. Don't upload anything containing door/lock codes, account numbers, or other private info — use "Private notes" below for that instead.</p>
       <form method="post" action="/vehicles/${slug}/documents" enctype="multipart/form-data">
         <label>File *<input name="file" type="file" required /></label>
         <label>Category *
@@ -290,6 +293,25 @@ app.get("/vehicles/:slug", requireVehicle, (req, res) => {
         <label>Typical mileage<input name="typicalMileage" type="number" /></label>
         <label>Description<textarea name="description" rows="2"></textarea></label>
         <button type="submit">Add watch item</button>
+      </form>
+    </fieldset>
+
+    <fieldset>
+      <legend>🔒 Private notes (this computer only — never committed or published)</legend>
+      <p class="muted">Door/lock codes, mechanic or insurance-adjuster contact info, policy numbers, anything you wouldn't want public. Stored in a file this app excludes from git, so it's never pushed and never appears on the public site.</p>
+      <table>
+        ${privateNotes
+          .map(
+            (n) => `<tr><td>${escapeHtml(n.label)}</td><td>${escapeHtml(n.value)}</td></tr>`
+          )
+          .join("")}
+      </table>
+      <form method="post" action="/vehicles/${slug}/private-notes">
+        <div class="row">
+          <label>Label *<input name="label" required placeholder="e.g. Door code" /></label>
+          <label>Value *<input name="value" required /></label>
+        </div>
+        <button type="submit">Add private note</button>
       </form>
     </fieldset>
 
@@ -435,6 +457,18 @@ app.post("/vehicles/:slug/watch-list", requireVehicle, (req, res) => {
   });
   saveVehicleFile(slug, "watch-list", data);
   redirect(res, `/vehicles/${slug}`, "Watch list item added.");
+});
+
+// ---------- Private notes (gitignored — never committed, never rendered on the public site) ----------
+
+app.post("/vehicles/:slug/private-notes", requireVehicle, (req, res) => {
+  const { slug } = req.params;
+  const { label, value } = req.body;
+  if (!label || !value) return redirect(res, `/vehicles/${slug}`, "Label and value are required.", "error");
+  const data = loadVehicleFile(slug, "private", { notes: [] });
+  data.notes.push({ label, value });
+  saveVehicleFile(slug, "private", data);
+  redirect(res, `/vehicles/${slug}`, "Private note saved (local only).");
 });
 
 // ---------- Documents ----------

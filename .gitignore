@@ -22,3 +22,8 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Private per-vehicle notes (door codes, personal contact info, policy
+# numbers, etc.) — local-only, never committed, never rendered on the
+# public site. See data/vehicles/*/private.yaml.
+data/vehicles/*/private.yaml
