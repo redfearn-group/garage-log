@@ -9,6 +9,47 @@ items:
       approaches 150K.
     sources: []
     status: not-yet-at-mileage
+  - issue: 'TSB L-SB-0020-20: low rear speaker volume / front-rear sound bias'
+    typicalMileage: null
+    description: >-
+      Applies to 2019 ES 350/300h with the base audio system (not
+      Mark Levinson) — sound stays biased forward even with the fader set
+      fully to rear. Fix is an amplifier logic update / amp replacement
+      under Lexus Basic Warranty. Confirm the car has the base system
+      before asking the dealer to check this.
+    sources:
+      - https://static.nhtsa.gov/odi/tsbs/2020/MC-10176288-9999.pdf
+    status: due-for-inspection
+  - issue: 'TSB L-SB-0006-20: "Hybrid System Malfunction" message, MIL on'
+    typicalMileage: null
+    description: Applies to 2019-2020 ES 300h. Ask the dealer to check if this applies if the hybrid warning has ever appeared.
+    sources: []
+    status: not-yet-at-mileage
+  - issue: 'TSB L-SB-0012-22: MIL on with DTC P019064'
+    typicalMileage: null
+    description: Applies to some 2019 ES 300h vehicles. Relevant only if this specific code has appeared.
+    sources: []
+    status: not-yet-at-mileage
+  - issue: 'TSB L-SB-0008-22: front brake squeal/squeak noise'
+    typicalMileage: null
+    description: Applies to 2019-2022 ES 300h. Relevant if front brakes squeal, especially at low speed/light braking.
+    sources: []
+    status: not-yet-at-mileage
+  - issue: 'TSB L-SB-0031-22: wind/whistle noise from rear-left quarter window'
+    typicalMileage: null
+    description: Applies to 2019-2022 ES 300h. Relevant if there's a whistle/wind noise from the rear-left area at speed.
+    sources: []
+    status: not-yet-at-mileage
+  - issue: 'TSB: smart key immobilizer reset / add-remove key procedure'
+    typicalMileage: null
+    description: Applies to 2018-2021 ES300h (revised to include 2021). Relevant only if adding/removing a key fob or troubleshooting immobilizer issues.
+    sources: []
+    status: not-yet-at-mileage
+  - issue: 'TSB L-SB-0040-20: HV battery "rescue charge" procedure'
+    typicalMileage: null
+    description: Applies to 2019-2021 ES300h. Reference procedure for if the hybrid battery is ever found fully depleted (e.g. after long storage) — not an action item now.
+    sources: []
+    status: not-yet-at-mileage
   - issue: HV traction battery health — monitor, no fixed OEM interval
     typicalMileage: null
     description: >-

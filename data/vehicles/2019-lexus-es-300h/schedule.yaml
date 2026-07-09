@@ -35,9 +35,9 @@ items:
     intervalMiles: null
     intervalMonths: 72
   - itemType: hybrid-battery-fan-filter
-    name: Hybrid battery cooling fan filter — clean (behind right rear seat trim)
-    intervalMiles: 15000
-    intervalMonths: 12
+    name: Hybrid battery cooling fan filter — clean (behind right rear seat trim, per TSB L-SB-0028-20)
+    intervalMiles: 20000
+    intervalMonths: null
   - itemType: brake-inspection
     name: Brake pad/rotor inspection (regenerative braking wears these slowly — still check)
     intervalMiles: 30000

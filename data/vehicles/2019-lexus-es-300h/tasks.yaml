@@ -20,8 +20,18 @@ tasks:
     createdDate: '2026-07-09'
     completedDate: null
   - id: 3
-    title: 'Book dealer visit: TSB L-SB-0020-20 (speaker issue) + Android Auto update check'
-    notes: Flagged in the source research as worth checking; no further detail available on the TSB's exact scope.
+    title: 'Dealer visit: TSB L-SB-0020-20 (low rear speaker volume) + Android Auto update check'
+    notes: >-
+      Confirmed real (NHTSA-hosted PDF, May 8 2020). Applies to 2019 ES
+      350/300h with the BASE audio system (not Mark Levinson) — front-rear
+      sound bias stays forward even with fader set fully to rear. Fix is
+      an amp logic update / amp assembly replacement under Lexus Basic
+      Warranty. Confirm base-audio-system status before asking. While
+      there, also worth asking about: L-SB-0028-20 (HV battery cooling
+      filter, every 20K mi), L-SB-0006-20 (hybrid system malfunction MIL),
+      L-SB-0012-22 (DTC P019064), L-SB-0008-22 (front brake squeal,
+      2019-2022), L-SB-0031-22 (rear-left wind noise, 2019-2022) if any of
+      those symptoms have shown up.
     status: open
     createdDate: '2026-07-09'
     completedDate: null
