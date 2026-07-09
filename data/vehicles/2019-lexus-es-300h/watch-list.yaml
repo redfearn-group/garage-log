@@ -1,0 +1,22 @@
+items:
+  - issue: Inverter (hybrid) coolant — first change not yet due
+    typicalMileage: 150000
+    description: >-
+      Separate reservoir/loop from engine coolant, though both use the same
+      Toyota Super Long Life Coolant (pink). First factory change is at
+      150,000 mi or 15 years, then every 50,000 mi / 5 years after that.
+      Not due yet at current mileage — informational only until the car
+      approaches 150K.
+    sources: []
+    status: not-yet-at-mileage
+  - issue: HV traction battery health — monitor, no fixed OEM interval
+    typicalMileage: null
+    description: >-
+      No scheduled replacement interval; watch for reduced range, slow
+      READY-light startup, or HV warning lights, especially as mileage
+      climbs toward 200K. Can be checked via a Bluetooth OBD2 reader with
+      an app like Dr. Prius to see per-cell state-of-charge balance. Never
+      touch the orange high-voltage cables — 12V-only work is DIY-safe,
+      anything HV goes to a Lexus dealer or hybrid-certified shop.
+    sources: []
+    status: not-yet-at-mileage

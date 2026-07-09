@@ -1,0 +1,27 @@
+tasks:
+  - id: 1
+    title: eCVT transaxle fluid — proactive drain & fill (Toyota ATF WS, ~3.5 qt)
+    notes: >-
+      Factory spec is "lifetime" with no set interval, but a proactive
+      change at 100-120K miles is well-documented practice on this
+      platform. Drain and fill only, no flush. Car is at 106,862 mi with
+      unknown prior service — good window to do this now.
+    status: open
+    createdDate: '2026-07-09'
+    completedDate: null
+  - id: 2
+    title: Inspect serpentine/accessory drive belt
+    notes: >-
+      At 106,862 miles the belt is approaching typical replacement
+      territory. Check for cracking, fraying, glazing, or missing ribs;
+      replace immediately if cracked, otherwise plan proactive replacement
+      before 130K.
+    status: open
+    createdDate: '2026-07-09'
+    completedDate: null
+  - id: 3
+    title: 'Book dealer visit: TSB L-SB-0020-20 (speaker issue) + Android Auto update check'
+    notes: Flagged in the source research as worth checking; no further detail available on the TSB's exact scope.
+    status: open
+    createdDate: '2026-07-09'
+    completedDate: null

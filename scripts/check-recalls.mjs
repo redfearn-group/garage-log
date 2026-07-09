@@ -37,10 +37,19 @@ async function checkVehicle(summary) {
   const recallsFile = path.join(DATA_DIR, "vehicles", slug, "recalls.yaml");
   const existing = readYaml(recallsFile, { lastChecked: null, recalls: [], complaints: [] });
 
+  // The recalls endpoint 400s on a model name containing a space (e.g. "ES
+  // 300h"); the complaints endpoint tolerates it fine. Strip spaces only
+  // for the recalls query — confirmed same result set as the full name.
+  const recallParams = new URLSearchParams({
+    make,
+    model: model.replace(/\s+/g, ""),
+    modelYear: String(year),
+  });
+
   let recalls = existing.recalls;
   let recallsOk = false;
   try {
-    const data = await fetchJson(`https://api.nhtsa.gov/recalls/recallsByVehicle?${params}`);
+    const data = await fetchJson(`https://api.nhtsa.gov/recalls/recallsByVehicle?${recallParams}`);
     recalls = (data.results ?? []).map((r) => ({
       campaignNumber: r.NHTSACampaignNumber,
       component: r.Component,

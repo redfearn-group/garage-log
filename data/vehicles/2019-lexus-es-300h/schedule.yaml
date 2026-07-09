@@ -1,0 +1,48 @@
+# Corrected from the source research: the source doc misidentified the
+# engine as 2AR-FXE (it's actually A25A-FXS, confirmed via VIN decode) and
+# as a result specified 0W-20 oil; the correct spec for this engine is
+# 0W-16 (0W-20 is too thick for its VVT orifices and can trigger codes).
+# Oil-change interval resolved from a source-internal contradiction (5K vs
+# 10K tables): 10K/12mo is the normal-use interval, 5K is for severe use
+# or the separate tire-rotation cadence.
+items:
+  - itemType: oil-change
+    name: Oil change (0W-16 full synthetic, 4.8 qt, filter 04152-YZZA1)
+    intervalMiles: 10000
+    intervalMonths: 12
+  - itemType: tire-rotation
+    name: Tire rotation
+    intervalMiles: 5000
+    intervalMonths: 6
+  - itemType: cabin-air-filter
+    name: Cabin air filter (87139-YZZ20)
+    intervalMiles: 15000
+    intervalMonths: 12
+  - itemType: engine-air-filter
+    name: Engine air filter (17801-31110, verify fit against VIN)
+    intervalMiles: 20000
+    intervalMonths: 24
+  - itemType: brake-fluid-flush
+    name: Brake fluid flush (Toyota DOT 3 / JWS 3133) — time-based only
+    intervalMiles: null
+    intervalMonths: 36
+  - itemType: engine-coolant-flush
+    name: Engine coolant flush (Toyota SLLC pink, 50/50) — separate from inverter coolant
+    intervalMiles: 50000
+    intervalMonths: 60
+  - itemType: battery-12v
+    name: 12V auxiliary battery (Group 55B24R, in trunk behind left panel)
+    intervalMiles: null
+    intervalMonths: 72
+  - itemType: hybrid-battery-fan-filter
+    name: Hybrid battery cooling fan filter — clean (behind right rear seat trim)
+    intervalMiles: 15000
+    intervalMonths: 12
+  - itemType: brake-inspection
+    name: Brake pad/rotor inspection (regenerative braking wears these slowly — still check)
+    intervalMiles: 30000
+    intervalMonths: null
+  - itemType: spark-plugs
+    name: Spark plugs (iridium, part 9091901259 — verify at parts counter) — do NOT replace early
+    intervalMiles: 120000
+    intervalMonths: null

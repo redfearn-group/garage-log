@@ -11,3 +11,14 @@ vehicles:
     tireSize: 275/65R18
     status: active
     photo: null
+  - slug: 2019-lexus-es-300h
+    make: Lexus
+    model: ES 300h
+    year: 2019
+    trim: Hybrid (A25A-FXS 2.5L), Nav + Premium Package
+    vin: [VIN-REDACTED]
+    tireSize: 235/45R18
+    purchaseDate: '2026-06-19'
+    previousOwner: Purchased at 106,862 miles with unknown prior service history.
+    status: active
+    photo: null

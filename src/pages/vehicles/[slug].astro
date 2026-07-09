@@ -109,6 +109,28 @@ if (points.length > 1) {
           <p style="margin: 0.25rem 0 0;">{r.summary}</p>
         </div>
       ))}
+      {vehicle.recallsData.complaints.length > 0 && (
+        <details class="no-print">
+          <summary class="muted">
+            {vehicle.recallsData.complaints.length} owner complaint{vehicle.recallsData.complaints.length === 1 ? "" : "s"} on file (unverified, user-submitted — not confirmed defects)
+          </summary>
+          <p class="muted" style="font-size:0.85rem;">
+            These are raw NHTSA complaint reports for this make/model/year, not necessarily this exact trim or engine, and are not verified findings. High counts often just reflect a popular model. Treat as a directional signal, not a diagnosis.
+          </p>
+          <table>
+            <thead><tr><th>Component</th><th>Summary</th><th>Filed</th></tr></thead>
+            <tbody>
+              {vehicle.recallsData.complaints.map((c) => (
+                <tr>
+                  <td>{c.component}</td>
+                  <td style="max-width: 32rem;">{c.summary}</td>
+                  <td class="muted">{c.dateReceived}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </details>
+      )}
     </>
   )}
 
