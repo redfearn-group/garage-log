@@ -299,6 +299,7 @@ app.get("/vehicles/:slug", requireVehicle, (req, res) => {
     <fieldset>
       <legend>🔒 Private notes (this computer only — never committed or published)</legend>
       <p class="muted">Door/lock codes, mechanic or insurance-adjuster contact info, policy numbers, anything you wouldn't want public. Stored in a file this app excludes from git, so it's never pushed and never appears on the public site.</p>
+      <p class="muted">⚠️ Because this file is never committed, it has no online backup — if this computer is lost or wiped, these notes go with it. Also save anything you add here to <a href="https://keep.google.com" target="_blank">Google Keep</a> (or another notes app) so there's a backup copy that isn't just local.</p>
       <table>
         ${privateNotes
           .map(
