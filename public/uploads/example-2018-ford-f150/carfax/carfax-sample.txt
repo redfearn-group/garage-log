@@ -1,0 +1,4 @@
+Placeholder for an uploaded document (e.g. a Carfax report PDF).
+
+Replace this with a real file using the admin app's "Upload Document" form —
+it will copy the file here and register it in documents.yaml automatically.

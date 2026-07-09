@@ -1,0 +1,108 @@
+import fs from "node:fs";
+import path from "node:path";
+import * as yaml from "js-yaml";
+import type {
+  VehicleSummary,
+  Vehicle,
+  MileageEntry,
+  MaintenanceEntry,
+  ScheduleItem,
+  TaskItem,
+  AdminDate,
+  DocumentEntry,
+  RecallsData,
+  WatchListItem,
+} from "./types";
+
+const DATA_DIR = path.resolve(process.cwd(), "data");
+
+function readYaml<T>(filePath: string, fallback: T): T {
+  if (!fs.existsSync(filePath)) return fallback;
+  const raw = fs.readFileSync(filePath, "utf-8");
+  const parsed = yaml.load(raw);
+  return (parsed as T) ?? fallback;
+}
+
+export function getVehicleSummaries(): VehicleSummary[] {
+  const indexPath = path.join(DATA_DIR, "vehicles.yaml");
+  const parsed = readYaml<{ vehicles: VehicleSummary[] }>(indexPath, { vehicles: [] });
+  return parsed.vehicles ?? [];
+}
+
+export function getVehicle(slug: string): Vehicle {
+  const summaries = getVehicleSummaries();
+  const summary = summaries.find((v) => v.slug === slug);
+  if (!summary) throw new Error(`Unknown vehicle slug: ${slug}`);
+
+  const dir = path.join(DATA_DIR, "vehicles", slug);
+  const mileageLog = readYaml<{ entries: MileageEntry[] }>(
+    path.join(dir, "mileage-log.yaml"),
+    { entries: [] }
+  ).entries;
+  const maintenanceLog = readYaml<{ entries: MaintenanceEntry[] }>(
+    path.join(dir, "maintenance-log.yaml"),
+    { entries: [] }
+  ).entries;
+  const schedule = readYaml<{ items: ScheduleItem[] }>(
+    path.join(dir, "schedule.yaml"),
+    { items: [] }
+  ).items;
+  const tasks = readYaml<{ tasks: TaskItem[] }>(path.join(dir, "tasks.yaml"), {
+    tasks: [],
+  }).tasks;
+  const adminDates = readYaml<{ dates: AdminDate[] }>(
+    path.join(dir, "admin-dates.yaml"),
+    { dates: [] }
+  ).dates;
+  const documents = readYaml<{ documents: DocumentEntry[] }>(
+    path.join(dir, "documents.yaml"),
+    { documents: [] }
+  ).documents;
+  const recallsData = readYaml<RecallsData>(path.join(dir, "recalls.yaml"), {
+    lastChecked: null,
+    recalls: [],
+    complaints: [],
+  });
+  const watchList = readYaml<{ items: WatchListItem[] }>(
+    path.join(dir, "watch-list.yaml"),
+    { items: [] }
+  ).items;
+
+  return {
+    ...summary,
+    mileageLog,
+    maintenanceLog,
+    schedule,
+    tasks,
+    adminDates,
+    documents,
+    recallsData,
+    watchList,
+  };
+}
+
+export function getAllVehicles(): Vehicle[] {
+  return getVehicleSummaries().map((v) => getVehicle(v.slug));
+}
+
+export function getActiveVehicles(): Vehicle[] {
+  return getAllVehicles().filter((v) => v.status === "active");
+}
+
+export function getArchivedVehicles(): Vehicle[] {
+  return getAllVehicles().filter((v) => v.status === "archived");
+}
+
+export function currentMileage(vehicle: Vehicle): number | null {
+  const candidates: { date: string; mileage: number }[] = [
+    ...vehicle.mileageLog,
+    ...vehicle.maintenanceLog.map((m) => ({ date: m.date, mileage: m.mileage })),
+  ];
+  if (candidates.length === 0) return null;
+  candidates.sort((a, b) => (a.date < b.date ? 1 : -1));
+  return candidates[0].mileage;
+}
+
+export function vehicleLabel(vehicle: VehicleSummary): string {
+  return `${vehicle.year} ${vehicle.make} ${vehicle.model}${vehicle.trim ? " " + vehicle.trim : ""}`;
+}

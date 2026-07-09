@@ -1,0 +1,70 @@
+---
+import Base from "../layouts/Base.astro";
+import StatusBadge from "../components/StatusBadge.astro";
+import { getActiveVehicles, currentMileage, vehicleLabel } from "../lib/data";
+import { scheduleStatusesFor, worstStatus, upcomingAdminDates } from "../lib/status";
+import { withBase } from "../lib/url";
+
+const vehicles = getActiveVehicles();
+
+const rows = vehicles.map((vehicle) => {
+  const statuses = scheduleStatusesFor(vehicle);
+  const dueItems = statuses.filter((s) => s.status === "overdue" || s.status === "due-soon");
+  const admin = upcomingAdminDates(vehicle).filter((d) => d.daysUntil <= 60);
+  return {
+    vehicle,
+    mileage: currentMileage(vehicle),
+    overall: worstStatus(statuses),
+    dueItems,
+    admin,
+    openTasks: vehicle.tasks.filter((t) => t.status === "open"),
+    recallCount: vehicle.recallsData.recalls.length,
+  };
+});
+---
+<Base title="Dashboard">
+  <h2>Your vehicles</h2>
+  {rows.length === 0 && <p class="muted">No active vehicles yet. Add one with <code>npm run admin</code>.</p>}
+
+  <div class="vehicle-grid">
+    {rows.map(({ vehicle, mileage, overall, dueItems, admin, openTasks, recallCount }) => (
+      <div class="card">
+        <div style="display:flex; justify-content: space-between; align-items: start;">
+          <h3 style="margin:0 0 0.25rem;"><a href={withBase(`/vehicles/${vehicle.slug}`)}>{vehicleLabel(vehicle)}</a></h3>
+          <StatusBadge status={overall} />
+        </div>
+        <div class="stat-row">
+          <div class="stat"><strong>{mileage != null ? mileage.toLocaleString() : "—"}</strong>miles</div>
+          <div class="stat"><strong>{openTasks.length}</strong>open task{openTasks.length === 1 ? "" : "s"}</div>
+          {recallCount > 0 && <div class="stat"><strong>{recallCount}</strong>open recall{recallCount === 1 ? "" : "s"}</div>}
+        </div>
+
+        {dueItems.length > 0 && (
+          <>
+            <p class="muted" style="margin-bottom: 0.35rem;">Needs attention:</p>
+            <ul class="pill-list">
+              {dueItems.map((s) => (
+                <li>
+                  <StatusBadge status={s.status} /> {s.item.name}
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+
+        {admin.length > 0 && (
+          <>
+            <p class="muted" style="margin-top: 0.75rem; margin-bottom: 0.35rem;">Coming up:</p>
+            <ul class="pill-list">
+              {admin.map((d) => (
+                <li class="muted">{d.label} — {d.dueDate} ({d.daysUntil >= 0 ? `${d.daysUntil}d` : "overdue"})</li>
+              ))}
+            </ul>
+          </>
+        )}
+
+        <p style="margin-top: 1rem; margin-bottom: 0;"><a href={withBase(`/vehicles/${vehicle.slug}`)}>View details →</a></p>
+      </div>
+    ))}
+  </div>
+</Base>

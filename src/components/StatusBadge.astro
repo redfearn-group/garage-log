@@ -1,0 +1,16 @@
+---
+import type { DueStatus } from "../lib/types";
+
+interface Props {
+  status: DueStatus;
+}
+const { status } = Astro.props;
+
+const labels: Record<DueStatus, string> = {
+  overdue: "Overdue",
+  "due-soon": "Due soon",
+  ok: "OK",
+  "never-done": "Never logged",
+};
+---
+<span class={`badge ${status}`}>{labels[status]}</span>

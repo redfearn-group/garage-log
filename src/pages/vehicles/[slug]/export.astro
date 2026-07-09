@@ -1,0 +1,52 @@
+---
+import Base from "../../../layouts/Base.astro";
+import { getVehicleSummaries, getVehicle, currentMileage, vehicleLabel } from "../../../lib/data";
+import { withBase } from "../../../lib/url";
+
+export function getStaticPaths() {
+  return getVehicleSummaries().map((v) => ({ params: { slug: v.slug } }));
+}
+
+const { slug } = Astro.params;
+const vehicle = getVehicle(slug!);
+const mileage = currentMileage(vehicle);
+const sortedMaintenanceLog = [...vehicle.maintenanceLog].sort((a, b) => (a.date < b.date ? -1 : 1));
+---
+<Base title={`${vehicleLabel(vehicle)} — history export`}>
+  <p class="no-print">
+    <a href={withBase(`/vehicles/${vehicle.slug}`)}>← Back to vehicle</a>
+    &nbsp;·&nbsp;
+    <a href={withBase(`/vehicles/${vehicle.slug}/export.csv`)}>Download CSV</a>
+    &nbsp;·&nbsp;
+    <button onclick="window.print()">Print / Save as PDF</button>
+  </p>
+
+  <h2>{vehicleLabel(vehicle)} — Maintenance History</h2>
+  <p class="muted">
+    VIN: {vehicle.vin || "—"} · Current mileage: {mileage != null ? mileage.toLocaleString() : "—"}
+    {vehicle.previousOwner && <> · {vehicle.previousOwner}</>}
+  </p>
+
+  <h3 class="section-title">Service history</h3>
+  <table>
+    <thead><tr><th>Date</th><th>Mileage</th><th>Service</th><th>Notes</th></tr></thead>
+    <tbody>
+      {sortedMaintenanceLog.map((m) => (
+        <tr>
+          <td>{m.date}</td>
+          <td>{m.mileage.toLocaleString()}</td>
+          <td>{m.description}</td>
+          <td>{m.notes}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+
+  <h3 class="section-title">Documents on file</h3>
+  <ul>
+    {vehicle.documents.map((doc) => <li>{doc.filename} — {doc.category} ({doc.dateAdded}){doc.description ? `: ${doc.description}` : ""}</li>)}
+    {vehicle.documents.length === 0 && <li class="muted">None</li>}
+  </ul>
+
+  <p class="muted" style="margin-top: 2rem; font-size: 0.85rem;">Generated from garage-log for handover purposes.</p>
+</Base>

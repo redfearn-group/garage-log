@@ -1,0 +1,13 @@
+vehicles:
+  - slug: example-2018-ford-f150
+    make: Ford
+    model: F-150
+    year: 2018
+    trim: XLT SuperCrew 4x4
+    vin: SAMPLE-VIN-EDIT-ME-000
+    purchaseDate: '2019-03-15'
+    previousOwner: >-
+      Example seed vehicle — replace with your truck's real info, or delete once you've added your
+      real vehicles via the admin app.
+    status: active
+    photo: null

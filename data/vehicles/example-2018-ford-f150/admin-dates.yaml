@@ -1,0 +1,9 @@
+dates:
+  - type: insurance-renewal
+    label: Auto insurance renewal
+    dueDate: '2026-09-01'
+    notes: ''
+  - type: registration-renewal
+    label: Registration renewal
+    dueDate: '2026-08-15'
+    notes: ''

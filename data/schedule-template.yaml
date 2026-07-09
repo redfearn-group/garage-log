@@ -1,0 +1,53 @@
+# Generic "normal driving" starter schedule used to prefill a new vehicle's
+# schedule.yaml when it's added via the admin app. Edit per-vehicle afterward
+# using the actual manufacturer intervals from the owner's manual — these are
+# conservative, commonly-seen defaults, not specific to any make/model.
+items:
+  - itemType: oil-change
+    name: Oil & filter change
+    intervalMiles: 5000
+    intervalMonths: 6
+  - itemType: tire-rotation
+    name: Tire rotation
+    intervalMiles: 5000
+    intervalMonths: 6
+  - itemType: multi-point-inspection
+    name: Multi-point inspection
+    intervalMiles: 5000
+    intervalMonths: 6
+  - itemType: engine-air-filter
+    name: Engine air filter
+    intervalMiles: 15000
+    intervalMonths: 12
+  - itemType: cabin-air-filter
+    name: Cabin air filter
+    intervalMiles: 15000
+    intervalMonths: 12
+  - itemType: brake-inspection
+    name: Brake inspection
+    intervalMiles: 10000
+    intervalMonths: 12
+  - itemType: battery-test
+    name: Battery test
+    intervalMiles: null
+    intervalMonths: 12
+  - itemType: wiper-blades
+    name: Wiper blades
+    intervalMiles: null
+    intervalMonths: 12
+  - itemType: brake-fluid-flush
+    name: Brake fluid flush
+    intervalMiles: 30000
+    intervalMonths: 24
+  - itemType: coolant-flush
+    name: Coolant flush
+    intervalMiles: 30000
+    intervalMonths: 24
+  - itemType: transmission-fluid-service
+    name: Transmission fluid service
+    intervalMiles: 30000
+    intervalMonths: null
+  - itemType: spark-plugs
+    name: Spark plugs
+    intervalMiles: 30000
+    intervalMonths: null
