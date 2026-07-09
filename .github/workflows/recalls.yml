@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   check-recalls:
@@ -20,9 +21,23 @@ jobs:
       - run: npm ci
       - run: npm run check-recalls
       - name: Commit updated recall data
+        id: commit
         run: |
           git config user.name "garage-log-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/vehicles/*/recalls.yaml
-          git diff --cached --quiet || git commit -m "Monthly recall & complaint check"
-          git push
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "Monthly recall & complaint check"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Trigger a redeploy
+        # A push made with the default GITHUB_TOKEN does not itself trigger
+        # deploy.yml's on-push rule (GitHub's anti-loop protection), so kick
+        # it off explicitly whenever recall data actually changed.
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --repo ${{ github.repository }}
