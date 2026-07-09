@@ -1,3 +1,116 @@
-lastChecked: null
-recalls: []
+lastChecked: '2026-07-09'
+recalls:
+  - campaignNumber: 18V894000
+    component: ENGINE
+    summary: >-
+      Ford Motor Company (Ford) is recalling certain 2015-2019 Ford F-150 and 2017-2019 Ford F-250
+      Super Duty, F-350 Super Duty, F-450 Super Duty, and F-550 Super Duty pick-up trucks equipped
+      with an engine block heater.   Water and contaminants may get into the block heater cable's
+      splice connector causing corrosion and damage.
+    reportedDate: 18/12/2018
+  - campaignNumber: 19V278000
+    component: ENGINE
+    summary: >-
+      Ford Motor Company (Ford) is recalling certain 2015-2019 Ford F-150 and 2017-2019 Ford F-250
+      Super Duty, F-350 Super Duty, F-450 Super Duty, and F-550 Super Duty pick-up trucks equipped
+      with an engine block heater and previously remedied under recall 18V894.   During the previous
+      repair, the block heater cable's splice connector may have been damaged.
+    reportedDate: 08/04/2019
+  - campaignNumber: 18V568000
+    component: SEAT BELTS:PRETENSIONER
+    summary: >-
+      Ford Motor Company (Ford) is recalling certain 2015-2018 Ford F-150 Regular Cab and SuperCrew
+      Cab vehicles.  If a front seat belt pretensioner deploys as the result of a crash, the sparks
+      may ignite materials such as carpeting or insulation within the B-pillar area.
+    reportedDate: 31/08/2018
+  - campaignNumber: 17V652000
+    component: LATCHES/LOCKS/LINKAGES:DOORS:LATCH
+    summary: >-
+      Ford Motor Company (Ford) is recalling certain 2015-2017 Ford F-150, and 2017 F-250, F-350,
+      F-450, and F-550 Super Duty trucks.  The doors on these vehicles may have a bent or kinked
+      actuation cable or the door latches may freeze after water gets into the latch.  Either
+      condition can result in the doors opening while driving although they appear to be closed.
+    reportedDate: 16/10/2017
+  - campaignNumber: 17V526000
+    component: SEAT BELTS:REAR/OTHER
+    summary: >-
+      Ford Motor Company (Ford) is recalling certain 2015-2017 F-150, and 2017 F-250 and F-350
+      trucks equipped with a crew cab.  The left rear inflatable seat belt buckle assembly may be
+      inadequately attached to its mounting bracket.  As such, these vehicles fail to comply with
+      the requirements of Federal Motor Vehicle Safety Standard (FMVSS) number 210, "Seat Belt
+      Assembly Anchorages."
+    reportedDate: 28/08/2017
+  - campaignNumber: 17V331000
+    component: LATCHES/LOCKS/LINKAGES:DOORS:LATCH
+    summary: >-
+      Ford Motor Company (Ford) is recalling certain 2015-2017 F-150, and 2017 F-250, F-350, F-450,
+      and F-550 vehicles originally produced with black or body colored exterior door handles that
+      may have been subsequently equipped with a chrome exterior door handle cover accessory kit
+      purchased from a Ford dealer.  These accessory door handle covers may cause the doors to
+      unlatch in a side impact collision.  As such, these vehicles may fail to comply with the
+      requirements of Federal Motor Vehicle Safety Standard (FMVSS) number 206, "Door Locks and Door
+      Retention Components."
+    reportedDate: 22/05/2017
+  - campaignNumber: 15V867000
+    component: SEAT BELTS:FRONT:ANCHORAGE
+    summary: >-
+      Ford Motor Company (Ford) is recalling certain model year 2015 Ford F-150 SuperCrew trucks
+      manufactured January 22, 2015, to March 17, 2015.  The affected vehicles may be equipped with
+      driver or front passenger seat belt anchorage assemblies whose pretensioner cable was not
+      properly crimped.  As a result, the seat belts may not properly restrain the seat occupant in
+      the event of a crash.  As such, these vehicles fail to comply with the requirements of Federal
+      Motor Vehicle Safety Standard (FMVSS) number 209, "Seat Belt Assemblies" and 210, " Seat Belt
+      Assembly Anchorages."
+    reportedDate: 22/12/2015
+  - campaignNumber: 15V614000
+    component: 'FORWARD COLLISION AVOIDANCE: ADAPTIVE CRUISE CONTROL'
+    summary: >-
+      Ford Motor Company (Ford) is recalling certain model year 2015 Ford F-150 trucks manufactured
+      March 18, 2014, to August 6, 2015 and equipped with Adaptive Cruise Control (ACC).  While
+      using the Adaptive Cruise Control, the vehicle may falsely detect an obstacle in its path and
+      may unexpectedly apply the brakes.
+    reportedDate: 30/09/2015
+  - campaignNumber: 15V251000
+    component: STRUCTURE:FRAME AND MEMBERS:UNDERBODY SHIELDS
+    summary: >-
+      Ford Motor Company (Ford) is recalling certain model year 2015 Ford F-150 vehicles
+      manufactured January 30, 2015, to January 31, 2015.  The affected vehicles may have loose or
+      missing underbody heat shields.
+    reportedDate: 28/04/2015
+  - campaignNumber: 15V279000
+    component: STEERING
+    summary: >-
+      Ford Motor Company (Ford) is recalling certain model year 2015 Ford F-150 trucks manufactured
+      March 19, 2015, to March 30, 2015.  The affected vehicles may have been built with a steering
+      upper intermediate shaft that was improperly riveted.
+    reportedDate: 12/05/2015
+  - campaignNumber: 20V098000
+    component: ENGINE
+    summary: >-
+      Ford Motor Company (Ford) is recalling certain 2015-2016 F-150 pick-up trucks equipped with
+      3.5L GTDI engines and block immersion heaters that were potentially relocated from their
+      originally installed location.  The incorrect location could put the heater too close to hot
+      engine components, possibly resulting in a damaged cable.
+    reportedDate: 21/02/2020
+  - campaignNumber: 20V332000
+    component: SERVICE BRAKES, HYDRAULIC:FOUNDATION COMPONENTS:MASTER CYLINDER
+    summary: >-
+      Ford Motor Company (Ford) is recalling certain 2014-2017 F-150 pickup trucks equipped with
+      3.5L Ecoboost engines.  The brake master cylinder may leak brake fluid into the brake booster.
+    reportedDate: 08/06/2020
+  - campaignNumber: 21E027000
+    component: SUSPENSION:FRONT:CONTROL ARM:UPPER BALL JOINT
+    summary: >-
+      Tenneco Automotive (DRiV) is recalling certain MOOG K500359 ball joints, for aftermarket
+      installation on 2015-2018 Ford F-150 trucks.  The ball joint may have a misaligned dust boot
+      and may be missing alignment hole and installation warning tag, which may lead to improper
+      alignment of the ball joint.
+    reportedDate: 12/04/2021
+  - campaignNumber: 26V237000
+    component: POWER TRAIN:AUTOMATIC TRANSMISSION
+    summary: >-
+      Ford Motor Company (Ford) is recalling certain 2015-2017 F-150 vehicles. A loss of signal
+      between the transmission range sensor and the powertrain control module can cause the
+      transmission to unexpectedly downshift into second gear.
+    reportedDate: 14/04/2026
 complaints: []
