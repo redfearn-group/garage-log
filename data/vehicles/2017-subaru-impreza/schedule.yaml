@@ -1,0 +1,42 @@
+# Built from a prior research session's checklist for this exact car (140K
+# mi, zero known service history). Intervals not confirmed with high
+# confidence by that research are left without a number rather than guessed.
+items:
+  - itemType: oil-change
+    name: Oil change (0W-20 full synthetic)
+    intervalMiles: 5000
+    intervalMonths: 6
+  - itemType: tire-rotation
+    name: Tire rotation
+    intervalMiles: 5000
+    intervalMonths: 6
+  - itemType: cabin-air-filter
+    name: Cabin air filter
+    intervalMiles: 15000
+    intervalMonths: 12
+  - itemType: engine-air-filter
+    name: Engine air filter
+    intervalMiles: 20000
+    intervalMonths: 24
+  - itemType: brake-fluid-flush
+    name: Brake fluid flush (Subaru DOT 3) — time-based, typically 2-3 years
+    intervalMiles: null
+    intervalMonths: 30
+  - itemType: cvt-fluid
+    name: >-
+      CVT fluid drain & fill — Subaru CVTF-II ONLY (green, SOA427V1660/
+      SOA427V1610). NEVER the orange High Torque CVTF (SOA748V0200) — that's
+      for turbo Forester/Legacy/Outback H-6/WRX with the TR690, chemically
+      different, wrong fluid is a documented cause of CVT damage/failure.
+      Confirm the bottle says CVTF-II before pouring anything in. Drain and
+      fill only, not a full flush, given unknown history.
+    intervalMiles: 35000
+    intervalMonths: null
+  - itemType: coolant-flush
+    name: Engine coolant flush (Subaru Super Coolant, long-life)
+    intervalMiles: 40000
+    intervalMonths: null
+  - itemType: spark-plugs
+    name: Spark plugs (iridium — chain engine, no timing belt) — confirm exact OEM spec/interval at parts counter, do not guess
+    intervalMiles: null
+    intervalMonths: null

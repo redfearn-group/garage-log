@@ -1,0 +1,12 @@
+items:
+  - issue: FB20 head gasket — low probability, non-zero risk
+    typicalMileage: null
+    description: >-
+      The FB20 in this Impreza is a structurally redesigned engine from the
+      older EJ-series that had well-documented head gasket failures. FB
+      engines route coolant differently and use multi-layer steel gaskets
+      from the start, making failure rare (though not eliminated) versus
+      the EJ platform. Not a reason for special alarm — just worth a
+      coolant level/color check as part of any routine inspection.
+    sources: []
+    status: not-yet-at-mileage

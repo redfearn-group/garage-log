@@ -29,5 +29,22 @@ vehicles:
     year: 2012
     nickname: Hera
     trim: SE AWD, 2GR-FE 3.5L V6, U660E 6-speed automatic
+    vin: [VIN-REDACTED]
+    licensePlate: '[PLATE-REDACTED]'
+    tireSize: P245/65R17
+    previousOwner: >-
+      Load-carrying-capacity label notes an aftermarket modification (e.g.
+      hitch/rack) reduced original capacity by 11 kg / 25 lbs — cause not
+      yet identified, worth a look during the physical inspection.
+    status: active
+    photo: null
+  - slug: 2017-subaru-impreza
+    make: Subaru
+    model: Impreza
+    year: 2017
+    nickname: Draco
+    trim: Premium Sedan AWD, FB20 2.0L, TR580 Lineartronic CVT
+    vin: [VIN-REDACTED]
+    licensePlate: '[PLATE-REDACTED]'
     status: active
     photo: null

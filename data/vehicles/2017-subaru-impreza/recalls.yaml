@@ -1,0 +1,244 @@
+lastChecked: '2026-07-10'
+recalls:
+  - campaignNumber: 21V264000
+    component: ELECTRICAL SYSTEM:SOFTWARE
+    summary: >-
+      Subaru of America, Inc. (Subaru) is recalling certain 2017-2019 Subaru Impreza and 2018-2019
+      Crosstrek vehicles.  The Engine Control Module (ECM) may continue to power the ignition coil
+      after the engine is shut off, causing a short circuit.
+    reportedDate: 15/04/2021
+  - campaignNumber: 19V744000
+    component: ENGINE AND ENGINE COOLING:EXHAUST SYSTEM:EMISSION CONTROL:CRANKCASE (PCV)
+    summary: >-
+      Subaru of America, Inc. (Subaru) is recalling certain 2017-2018 Impreza and 2018 Crosstrek
+      vehicles equipped with an aluminum Positive Crankcase Ventilation (PCV) valve.  The PCV valve
+      may come apart, allowing the separated components to enter the engine, possibly resulting in a
+      loss of power while driving.
+    reportedDate: 17/10/2019
+  - campaignNumber: 19V745000
+    component: ENGINE AND ENGINE COOLING:EXHAUST SYSTEM:EMISSION CONTROL:CRANKCASE (PCV)
+    summary: >-
+      Subaru of America, Inc. (Subaru) is recalling certain 2017 Impreza vehicles equipped with an
+      aluminum Positive Crankcase Ventilation (PCV) valve.  The PCV valve may come apart, allowing
+      the separated components to enter the engine, possibly resulting in a loss of power while
+      driving.
+    reportedDate: 17/10/2019
+  - campaignNumber: 19V743000
+    component: ELECTRICAL SYSTEM:SOFTWARE
+    summary: >-
+      Subaru of America, Inc. (Subaru) is recalling certain 2017-2019 Impreza and 2018-2019
+      Crosstrek vehicles.  The Engine Control Module (ECM) may continue to power the ignition coil
+      after the engine is shut off, which could result in a short circuit and blown fuse.
+    reportedDate: 18/10/2019
+  - campaignNumber: 17V216000
+    component: FUEL SYSTEM, GASOLINE:DELIVERY:HOSES, LINES/PIPING, AND FITTINGS
+    summary: >-
+      Subaru of America, Inc. (Subaru) is recalling certain 2017 Impreza vehicles.  Winter fuels may
+      vaporize prematurely in the fuel line, resulting in a reduction in fuel pressure, possibly
+      causing the engine to stall.
+    reportedDate: 29/03/2017
+  - campaignNumber: 17V132000
+    component: 'BACK OVER PREVENTION: CAMERA SYSTEM'
+    summary: >-
+      Subaru of America, Inc. (Subaru) is recalling certain 2017 Impreza vehicles.  Due to a
+      software problem, the rearview camera display may not work properly.
+    reportedDate: 02/03/2017
+  - campaignNumber: 22V624000
+    component: EXTERIOR LIGHTING:HEADLIGHTS
+    summary: >-
+      Subaru of America, Inc. (Subaru) is recalling certain 2017-2019 Impreza vehicles.  The left
+      and right side reflex reflector and left side low beam reflector may inadequately reflect
+      light.  As such, these vehicles fail to comply with the requirements of Federal Motor Vehicle
+      Safety Standard number 108, "Lamps, Reflective Devices, and Associated Equipment."
+    reportedDate: 12/08/2022
+complaints:
+  - component: ELECTRICAL SYSTEM
+    summary: >-
+      I am filing a safety complaint regarding an Engine Control Module (ECM) failure in my 2017
+      Subaru Impreza and the handling of a prior recall repair.  Dealership records show that a
+      recall repair (WRE21 – ignition coil recall) was completed in June 2021. At that time, the
+      dealership documented that the ECM calibration was up to date and functioning properly. 
+      However, I later experienced a check engine light and drivability concerns. Diagnostic records
+      from February 2026 indicate: •Camshaft slow response codes •Persistent sensor issues •A
+      technician recommendation to replace multiple components, including the ECM, stating that
+      codes were “burned into the ECM”  The dealership has since attempted to attribute the ECM
+      failure to “engine sludge” and lack of maintenance.  Concern with Dealership Explanation: 
+      This explanation is inconsistent and raises serious concerns: •Engine sludge is a mechanical
+      lubrication issue and does not directly cause an ECM (electronic control module) to fail or
+      become “burned.” •The ECM is an electronic unit, and failure typically results from electrical
+      defects, internal faults, or manufacturing issues—not oil sludge. •The dealership has not
+      provided technical evidence showing how sludge could damage or “burn” the ECM. •This appears
+      to be an attempt to shift responsibility away from a potential defect or improperly completed
+      recall repair.  Safety Concern:  The ECM is critical to safe vehicle operation. A failure can
+      result in: •Engine malfunction or reduced power •Unpredictable vehicle behavior •Increased
+      risk while driving  If ECM failures are being misdiagnosed or incorrectly attributed to
+      maintenance issues, this could allow serious safety defects to go unaddressed.  Requested
+      Action:  I request that NHTSA: 1.Investigate whether ECM failures are being improperly
+      attributed to maintenance issues such as engine sludge. 2.Review whether the recall repair
+      (WRE21) was properly completed and whether it is related to thi
+    dateReceived: 04/16/2026
+  - component: ELECTRICAL SYSTEM,EXTERIOR LIGHTING,VISIBILITY/WIPER
+    summary: >-
+      I noticed that visibility at night was poor. I was pulled over by the police and give a
+      warning that my headlight was out and told to get it fixed. I thought it may be as simple as a
+      bulb but was told the entire left headlamp assembly had to be replaced at a cost of more than
+      $2,000. Just days later my Dealership send me a service notice which also stated that the left
+      headlamp should be inspected. This was after I had already had it replaced at a local garage.
+      The dealership confirmed that their was a recall but when I tried to get reimbursed by Subaru
+      thru the safety recall WRG-22/NHTSA 22V624000 they said my vin# was excluded from the
+      recall!(?)
+    dateReceived: 02/16/2026
+  - component: ELECTRICAL SYSTEM,UNKNOWN OR OTHER,SERVICE BRAKES
+    summary: >-
+      [XXX]  2017 Subaru Impreza  VIN   [XXX]  Cruze control error. Will it make brake lights fail
+      if not repaired?  go look in your database and see if Impreza has more than normal rear end
+      collisions?  What else is on bus that might be damaged by spike? Braking? Antilock? Lights?
+      Why is this NOT a recall?  INFORMATION REDACTED PURSUANT TO THE FREEDOM OF INFORMATION ACT
+      (FOIA), 5 U.S.C. 552(B)(6)
+    dateReceived: 09/01/2025
+  - component: AIR BAGS,FORWARD COLLISION AVOIDANCE
+    summary: >-
+      1. Any and all airbags failed to deploy. The car is currently parked in my garage and is
+      available for inspection. The insurance company has declared the car a "total loss," and would
+      like to tow it away as soon as possible. 2. The driver had a concussion and whiplash after
+      their forehead hit the steering wheel. 3. No safety inspector has inspected the car yet. The
+      insurance appraiser has inspected the car for the insurance company. 4. There were no warnings
+      or dashboard lights indicating that the airbag had a problem and would fail to fully deploy.
+    dateReceived: 08/26/2025
+  - component: POWER TRAIN
+    summary: >-
+      Premature failure of wheel bearings.  Both rear wheel bearings had to be replaced after only
+      54,192 miles.  Technician indicated that replacements were upgraded "sealed" systems.  At
+      73,712 miles the front driver's side wheel bearing was also replaced by the dealer after the
+      same symptoms of excessive noise and poor mileage occurred.  Concern is that high resistance
+      in the failing bearings creates a lot of heat and could eventually cause catastrophic
+      failure.  In 40+ years of driving and owning cars with mileage accruals up to 229,000, this is
+      the only one that ever required a wheel bearing replacement.  This, and the technician's
+      reference to upgraded bearings makes me believe that this is a manufacturing defect that
+      should have been covered by a recall.
+    dateReceived: 08/23/2025
+  - component: UNKNOWN OR OTHER
+    summary: >-
+      After reading forums online and my own experience I’m convinced the Subaru sun visors are
+      improperly installed or fitted and pose a danger to drivers and those on the road.   The sun
+      visors on the driver and passenger side are incredibly loose and prone to falling off while
+      I’m driving. I cannot use it to deflect sun because it will fall off while I’m driving -
+      creating incredibly dangerous driving conditions. It has fallen in my lap but I’m afraid it
+      might fall down to where the pedals are and cause further issues. This has been an issue since
+      I purchased the vehicle in 2019 and happens almost weekly  It doesn’t appear that Subaru sells
+      the parts separately so replacing it would  be costly.
+    dateReceived: 08/05/2025
+  - component: AIR BAGS
+    summary: "The contact owned a 2017 Subaru Impreza. The contact stated that while driving 10 MPH, she crashed into the rear of another vehicle on the front passenger side of her vehicle. The contact mentioned that\_the seat belt did retract during the impact. No air bags deployed.\_ The vehicle was towed to IAA by the insurance company. The\_insurance company inspected the vehicle and informed the contact that the air bags should have deployed.  The vehicle was deemed a total loss.  The contact stated that she sustained a\_neck and brain injury from the impact that required medical attention. A police report was filed. The vehicle was not diagnosed or repaired. The manufacturer was not notified of the failure. The approximate failure mileage was 69,000."
+    dateReceived: 04/23/2025
+  - component: EXTERIOR LIGHTING
+    summary: >-
+      The contact owns a 2017 Subaru Impreza. The contact stated that the "Check Headlight Assembly"
+      message was displayed, and the front passenger’s side headlight occasionally turned off or on,
+      while attempting to start the vehicle and while driving at various speeds. The vehicle was
+      taken to a local dealer, where the vehicle was diagnosed, and the contact was informed that
+      the front passenger’s side headlight assembly was faulty and needed to be replaced. The
+      vehicle was not repaired. The contact referenced NHTSA Campaign Number: 22V624000 (EXTERIOR
+      LIGHTING); as a possible cause for the failure. The manufacturer was notified of the failure.
+      The approximate failure mileage was 69,534.
+    dateReceived: 03/28/2025
+  - component: ENGINE,VISIBILITY/WIPER
+    summary: >-
+      I hit the guard rail going 35 mph on an exit ramp because of the low visibility because of the
+      safety recall. I went to get the recall fixed when I found out and they refused to fix the
+      recall because my bumper is messed up.
+    dateReceived: 02/02/2025
+  - component: ELECTRICAL SYSTEM,EXTERIOR LIGHTING
+    summary: >-
+      Parked at a store. Car caught on fire while in store. Car had been parked approximately 10
+      minutes.  Left side headlight spontaneously ignited.
+    dateReceived: 08/02/2024
+  - component: FUEL SYSTEM, GASOLINE
+    summary: >-
+      The contact owns a 2017 Subaru Impreza. The contact stated while driving 15 MPH, the vehicle
+      began to hesitate without warning. The contact then stated that while at a stop light, the
+      vehicle stalled upon the depression of the accelerator pedal with the traction control symbol
+      flashing on the instrument panel. The vehicle failed to restart after several attempts. An
+      attempt to jumpstart the vehicle also failed to start the vehicle. The vehicle was then towed
+      to the dealer where it was initially diagnosed with defective spark plugs and contaminated
+      fuel. The contact was later informed that the failure was caused by a defective fuel pump that
+      needed to be replaced. The manufacturer was notified of the failure but offered no assistance.
+      The vehicle was not repaired and remained in the possession of the dealer. The failure mileage
+      was approximately 68,500.
+    dateReceived: 05/17/2024
+  - component: EXTERIOR LIGHTING
+    summary: >-
+      The contact owns a 2017 Subaru Impreza. The contact received notification of NHTSA Campaign
+      Number: 22V624000 (Exterior Lighting) however, the part to do the recall repair was not yet
+      available. The local dealer was contacted, and it was confirmed that the part was not yet
+      available. The contact stated that the manufacturer had exceeded a reasonable amount of time
+      for the recall repair. The manufacturer was made aware of the issue. The contact had
+      experienced the failure causing the low beam reflector to inadequately reflect light. The
+      failure mileage was 60,000. VIN tool confirms parts not available.
+    dateReceived: 04/05/2024
+  - component: EXTERIOR LIGHTING
+    summary: >-
+      Brunswick Subaru refuses to do headlight recall. I was told there is no fix yet over 6 months
+      ago. I called again 2 weeks ago and told the same thing. I called Subaru directly and was told
+      there is a fix and that they would contact me in two days. They still have not gotten me
+      information on how to resolve recall 22v624000
+    dateReceived: 04/02/2024
+  - component: POWER TRAIN
+    summary: >-
+      The clutch release bearing seized while driving preventing the clutch from being depressed.
+      The only way to stop the car was by overpowering the clutch with the brakes and pulling the
+      emergency brake. There is a service information bulletin (NUMBER: 03-82-18) currently for the
+      known defective part. There were no dash lights on at the time.
+    dateReceived: 03/30/2024
+  - component: EXTERIOR LIGHTING
+    summary: Hard to see at night
+    dateReceived: 02/25/2024
+  - component: POWER TRAIN,VEHICLE SPEED CONTROL,WHEELS
+    summary: >-
+      Since new, maybe once a month, Cruise control idiot light comes on and flashes until car is
+      turned off.   usually no bother but one day it started braking without me and I bought the
+      DUMB base model!!!   before extended warranty expires, this august, hopefully dealer will
+      replace wheel speed sensors on rear wheels. not sure if this will fix problem.   I have asked
+      them to check this six or seven times now. they tell me warranty may not cover it unless code
+      is stored? hopefully they will stand behind product and fix it anyway.  2017 Impreza with
+      33000 miles and have done ALL recalls and maintenance!
+    dateReceived: 02/21/2024
+  - component: AIR BAGS
+    summary: >-
+      I was driving on the freeway and the all the airbags in my vehicle deployed, sides, front and
+      under the steering wheel.  I did not have an accident or hit anything in the road.  The
+      airbags blocked my view of the road, and the cabin filled with smoke.  I was traveling at a
+      freeway speed.  I do not know if the issue has been reproduced.  I have contacted my insurance
+      company, and they are handling the claim.  There was no prior indication of an issue and no
+      dashboard lights indicated that there was an issue with any of the components of my car. 
+      There are no added components or modifications to my vehicle.  I purchased the car new.
+    dateReceived: 02/16/2024
+  - component: AIR BAGS
+    summary: >-
+      I was involved in an auto accident 9/18/2023.  An SUV ran a red light and struck my care on
+      the drivers side.  The SUV struck me going between 45 and 50 mph according to the police
+      report. My car was pushed over 20 feet and struck a traffic sign in the center median. My car
+      was equipped with side curtain airbags and they did not deploy.  I struck my head on the
+      drivers side window. The front airbags failed to deploy also.
+    dateReceived: 02/13/2024
+  - component: EXTERIOR LIGHTING
+    summary: >-
+      I received recall notice WRG-22 in October 2022. If this is a safety issue 15 months and no
+      follow up is ridiculous.
+    dateReceived: 01/01/2024
+  - component: UNKNOWN OR OTHER
+    summary: >-
+      I have NOT been on an accident or anything related, my complaint is about my car's current
+      recall that the manufacturer cannot fix.   My husband is military and we are currently
+      stationed in Spain, the car has a recall to be fixed before shipment to the new duty station.
+      As per the shipping rules, there cannot be any recalls active on the vehicle and we have done
+      our part to contact the manufacturer both in Spain, United States and Puerto Rico (where the
+      car was purchased originally).   We are expected to ship the car in January 31st, 2024 from
+      Spain to the new duty station which this matter has an urgency as it is the only car we
+      have.   I have done my part of contacting all Subaru manufacturers so someone can fix the
+      issue before the ship out date, and even they say the manufacturer has no idea HOW they will
+      fix the recall. We need help! The car is in perfect condition we have NOT have any issues with
+      the related 'recall' as of today.   Again, we are NOT in the United States but stationed in
+      Spain for military purposes and we are expected to move out at the end of January, this matter
+      has great urgency!
+    dateReceived: 12/28/2023

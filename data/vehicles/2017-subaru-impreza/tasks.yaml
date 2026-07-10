@@ -1,0 +1,63 @@
+tasks:
+  - id: 1
+    title: Rear & center differential fluid — identify correct spec before servicing
+    notes: >-
+      Subaru lists three non-interchangeable gear oils (Extra MT 75W80,
+      High Performance 75W90, and 80W90 LSD) with no single confirmed
+      answer for which applies to this exact AWD Impreza's rear
+      differential. Verify by VIN at a dealer parts counter before buying
+      — do not guess between the three.
+    status: open
+    createdDate: '2026-07-11'
+    completedDate: null
+  - id: 2
+    title: Accessory drive belt inspection
+    notes: >-
+      No timing belt on this FB20 chain engine, but the accessory belt
+      still needs a visual + groove-depth gauge check (modern EPDM belts
+      don't crack visibly with age the way older belts did).
+    status: open
+    createdDate: '2026-07-11'
+    completedDate: null
+  - id: 3
+    title: 12V battery load test
+    notes: Regardless of apparent starting performance — batteries can fail with little warning.
+    status: open
+    createdDate: '2026-07-11'
+    completedDate: null
+  - id: 4
+    title: Brake pad/rotor measurement at all four corners
+    notes: Record the exact numbers for reference.
+    status: open
+    createdDate: '2026-07-11'
+    completedDate: null
+  - id: 5
+    title: Tire inspection — tread depth, DOT date codes, sidewall condition
+    notes: All four plus the spare.
+    status: open
+    createdDate: '2026-07-11'
+    completedDate: null
+  - id: 6
+    title: 'Ask dealer about TSB WTT-79R if AC-related hesitation has occurred'
+    notes: >-
+      Not a recall (won't show in the automated NHTSA recall check) — a
+      free ECM software reprogram for a hot-weather AC stall / idle-drop
+      condition (DTC P1603) on 2017-2019 Impreza. Only relevant if the car
+      has ever hesitated or nearly stalled at low speed with the AC on in
+      hot weather. No parts needed if it applies.
+    status: open
+    createdDate: '2026-07-11'
+    completedDate: null
+  - id: 7
+    title: Verify VIN-specific status of 3 additional recalls not confirmed by name
+    notes: >-
+      The source research flagged a headlight reflector recall, a fuel
+      line vaporization recall, and a rearview camera software recall as
+      "check by VIN" without full campaign numbers. The automated monthly
+      recall check here pulls by make/model/year and should surface the
+      two confirmed ones (ignition coil short/stall — 21V-264 — and PCV
+      valve fragments — 19V-744/19V-745), but do a VIN-specific check at
+      nhtsa.gov/recalls to make sure nothing's been missed.
+    status: open
+    createdDate: '2026-07-11'
+    completedDate: null
