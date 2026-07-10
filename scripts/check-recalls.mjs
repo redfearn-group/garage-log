@@ -2,6 +2,16 @@
 // active vehicle. Recalls are the reliable, high-confidence source; the
 // complaints endpoint has proven flaky (times out under load as of testing),
 // so it's fetched best-effort and never blocks recall data from saving.
+//
+// Deliberately NOT included: VIN-specific recall completion status (open vs.
+// already-fixed on a particular car). The recallsByVehicle API used below
+// only returns campaigns ever issued for a make/model/year, not per-VIN
+// completion — that only exists as a one-VIN-at-a-time web form at
+// nhtsa.gov/recalls with no public API or bulk-data feed behind it.
+// Automating it would mean scraping a .gov webpage (fragile, unlike every
+// other data source this app uses) or paying for a third-party VIN recall
+// API. Decided 2026-07-10: leave this as a manual, occasional check rather
+// than build either. Don't "fix" this without asking first.
 import fs from "node:fs";
 import path from "node:path";
 import * as yaml from "js-yaml";
