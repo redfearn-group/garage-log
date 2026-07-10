@@ -22,16 +22,47 @@ tasks:
   - id: 3
     title: 'Dealer visit: TSB L-SB-0020-20 (low rear speaker volume) + Android Auto update check'
     notes: >-
-      Confirmed real (NHTSA-hosted PDF, May 8 2020). Applies to 2019 ES
-      350/300h with the BASE audio system (not Mark Levinson) — front-rear
-      sound bias stays forward even with fader set fully to rear. Fix is
-      an amp logic update / amp assembly replacement under Lexus Basic
-      Warranty. Confirm base-audio-system status before asking. While
-      there, also worth asking about: L-SB-0028-20 (HV battery cooling
-      filter, every 20K mi), L-SB-0006-20 (hybrid system malfunction MIL),
-      L-SB-0012-22 (DTC P019064), L-SB-0008-22 (front brake squeal,
-      2019-2022), L-SB-0031-22 (rear-left wind noise, 2019-2022) if any of
-      those symptoms have shown up.
-    status: open
+      Done 2026-07-09 — dealer quoted $1000+ for the amp replacement and
+      confirmed no official Android Auto upgrade path exists. Both are
+      being pursued DIY instead — see tasks below.
+    status: done
     createdDate: '2026-07-09'
+    completedDate: '2026-07-09'
+  - id: 4
+    title: 'DIY speaker fix: source correct amp 86280-06260 (with nav), avoid old-style cores'
+    notes: >-
+      Per TSB L-SB-0020-20's own parts table: bad/old part numbers are
+      86280-06230, 06231, 33310, or 33311 (nav-equipped) — installing one
+      of these (e.g. a random used pull) reproduces the same bad sound
+      bias. The FIX is part number 86280-06260 specifically. Toyota's
+      note says only new parts are available (no exchange/refurb
+      program), and comparable Lexus OEM amp assemblies run $960-$2,000+
+      new — so the dealer's $1000 quote is mostly parts cost, not labor
+      (labor alone is only 0.3 hr per Toyota's own guide, a simple R&R).
+      Real savings would come from a USED but CORRECT-part-number amp —
+      look for one pulled from a 2019+ ES300h built after the TSB's VIN
+      cutoff (JTHB21B1_K2047220 or later for US-built cars), confirmed by
+      part number before buying, not just "Lexus ES amplifier."
+    status: open
+    createdDate: '2026-07-10'
+    completedDate: null
+  - id: 5
+    title: 'DIY Android Auto: install an aftermarket "AI box" (not a simple wireless dongle)'
+    notes: >-
+      No official Lexus/OEM path exists for this platform (a genuine
+      Beat-Sonic CarPlay+Android Auto accessory exists but its
+      compatibility list stops at 2018 — different infotainment
+      generation than this 2019 car). Simple "wired-to-wireless CarPlay"
+      dongles won't help since they only convert an existing protocol,
+      and this car's factory system is CarPlay-only. What's needed is an
+      "AI box" style adapter (e.g. Ottocast Play2Video/P3, CarlinKit
+      Android 13.0) that plugs into the existing wired CarPlay USB port
+      and runs its own onboard Android system, projecting both CarPlay
+      and Android Auto onto the factory screen. Confirmed working by real
+      2019+ ES owners on ClubLexus, including that the trackpad (not
+      touchscreen) controls it fine via tap/double-tap. Roughly
+      $100-250, fully reversible, no cutting. Verify current model/price
+      before buying — this product category changes often.
+    status: open
+    createdDate: '2026-07-10'
     completedDate: null
