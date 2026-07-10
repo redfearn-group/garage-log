@@ -3,6 +3,7 @@ export interface VehicleSummary {
   make: string;
   model: string;
   year: number;
+  nickname?: string;
   trim?: string;
   vin?: string;
   licensePlate?: string;

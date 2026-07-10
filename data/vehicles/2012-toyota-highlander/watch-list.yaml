@@ -1,0 +1,31 @@
+items:
+  - issue: Torque converter clutch (TCC) shudder
+    typicalMileage: null
+    description: >-
+      Most common complaint on the U660E/U760E transmission family — a
+      shudder in the 25-50 MPH range under light throttle. Sometimes
+      improved by a correct-fluid change. Worth checking on the next test
+      drive.
+    sources: []
+    status: due-for-inspection
+  - issue: Case bearing bore wear (rare, V6 torque loads)
+    typicalMileage: null
+    description: >-
+      Rare on this transmission family, but can progress to input spline
+      damage in extreme cases. Not alarming at 150K on its own — just
+      something to be aware of, not an active symptom to chase.
+    sources: []
+    status: not-yet-at-mileage
+  - issue: Valve body wear (pulse-width-modulation pressure system)
+    typicalMileage: null
+    description: A known high-mileage wear mechanism on the U660E/U760E family. Monitor for shift quality changes; no specific action needed without symptoms.
+    sources: []
+    status: not-yet-at-mileage
+  - issue: Engine weep-hole/seal leak (documented on some model years)
+    typicalMileage: null
+    description: >-
+      This engine has a documented weep-hole or seal issue on some model
+      years — check for leaks at the water pump weep hole during any
+      under-hood inspection.
+    sources: []
+    status: due-for-inspection

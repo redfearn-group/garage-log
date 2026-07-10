@@ -5,6 +5,7 @@ vehicles:
     make: Ford
     model: F-150
     year: 2015
+    nickname: Zeus
     trim: 3.5L V6 4WD SuperCrew
     vin: [VIN-REDACTED]
     licensePlate: [PLATE-REDACTED]
@@ -20,5 +21,13 @@ vehicles:
     tireSize: 235/45R18
     purchaseDate: '2026-06-19'
     previousOwner: Purchased at 106,862 miles with unknown prior service history.
+    status: active
+    photo: null
+  - slug: 2012-toyota-highlander
+    make: Toyota
+    model: Highlander
+    year: 2012
+    nickname: Hera
+    trim: SE AWD, 2GR-FE 3.5L V6, U660E 6-speed automatic
     status: active
     photo: null

@@ -72,6 +72,7 @@ app.get("/vehicles/new", (req, res) => {
           <div><label>Make *<input name="make" required /></label></div>
           <div><label>Model *<input name="model" required /></label></div>
         </div>
+        <label>Nickname<input name="nickname" placeholder="e.g. Hera" /></label>
         <label>Trim<input name="trim" /></label>
         <label>VIN<input name="vin" /></label>
         <label>License plate<input name="licensePlate" placeholder="e.g. [PLATE-REDACTED]" /></label>
@@ -87,7 +88,7 @@ app.get("/vehicles/new", (req, res) => {
 });
 
 app.post("/vehicles/new", (req, res) => {
-  const { year, make, model, trim, vin, licensePlate, tireSize, purchaseDate, previousOwner } = req.body;
+  const { year, make, model, nickname, trim, vin, licensePlate, tireSize, purchaseDate, previousOwner } = req.body;
   if (!year || !make || !model) {
     return redirect(res, "/vehicles/new", "Year, make, and model are required.", "error");
   }
@@ -105,6 +106,7 @@ app.post("/vehicles/new", (req, res) => {
     make,
     model,
     year: Number(year),
+    nickname: nickname || undefined,
     trim: trim || undefined,
     vin: vin || undefined,
     licensePlate: licensePlate || undefined,

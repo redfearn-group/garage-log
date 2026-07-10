@@ -1,0 +1,100 @@
+tasks:
+  - id: 1
+    title: 'Physical inspection: under-hood & under-vehicle visual check'
+    notes: >-
+      Belt condition via groove-depth gauge (visual alone isn't enough on
+      modern EPDM belts — they don't crack visibly with age like older
+      belts did). Hose cracking/sponginess. Leaks at valve covers, oil pan
+      gasket, timing cover, and water pump weep hole (documented issue on
+      some model years — see watch list). Under vehicle: frame/subframe
+      rust (tap suspect areas with a screwdriver handle to check
+      solidity — flaking/perforated metal is a stop-and-address item),
+      exhaust condition, CV boot tears, brake line condition.
+    status: open
+    createdDate: '2026-07-11'
+    completedDate: null
+  - id: 2
+    title: 'Physical inspection: suspension play test + brake measurement + battery test'
+    notes: >-
+      Grab each wheel at 12 and 6 o'clock and rock it, then at 3 and 9
+      o'clock, on all four corners — excessive play indicates worn ball
+      joints, tie rod ends, or wheel bearings. Measure brake pad/rotor
+      thickness (calipered if possible) at all four corners, record the
+      numbers. 12V battery load test regardless of apparent starting
+      performance — batteries this age can fail with little warning.
+    status: open
+    createdDate: '2026-07-11'
+    completedDate: null
+  - id: 3
+    title: 'Test drive: listen/feel for TCC shudder, CV clicking, mount clunks'
+    notes: >-
+      Combine into one drive: 25-50 MPH under light throttle listening/feeling
+      for torque converter clutch shudder (see watch list); tight low-speed
+      turns listening for CV joint clicking (outer joint failure); hard
+      highway acceleration checking for vibration (inner joint failure —
+      a torn boot lets grease mix with dirt/water into an abrasive paste
+      that destroys the joint from inside, treat any torn boot as urgent);
+      listen/feel for clunks from the mounts under acceleration/braking.
+    status: open
+    createdDate: '2026-07-11'
+    completedDate: null
+  - id: 4
+    title: Tire condition & age check
+    notes: >-
+      Tread depth on all four plus the spare. DOT date code (4-digit
+      week+year at the end of the sidewall stamp) — tires over 6-7 years
+      old should be considered for replacement regardless of remaining
+      tread, due to rubber hardening. Check sidewalls for cracking.
+    status: open
+    createdDate: '2026-07-11'
+    completedDate: null
+  - id: 5
+    title: Transmission fluid — proactive drain & fill, then a shop visit for the real level check
+    notes: >-
+      Toyota WS (World Standard), part 00289-ATFWS, is strongly indicated
+      for this U660E transmission family — but the exact pairing to this
+      precise model/engine/transmission code combo wasn't independently
+      confirmed, so verify against the build sticker or a dealer parts
+      lookup before buying fluid. Drain-and-fill recommended over a full
+      flush given 150K miles with unknown fluid-change history (a
+      high-pressure flush risks dislodging settled debris).
+
+      The LEVEL check needs dealer-grade tooling this transmission has no
+      conventional dipstick. A factory-correct check requires fluid
+      heated to 185-194°F, the vehicle level within ±1° of tilt, a
+      Techstream scan tool to read fluid temp via OBD, and a calibrated
+      ATF level gauge/extraction tank for a drip test at the overflow
+      port. Community workarounds (IR temp gun, paperclip trick) aren't
+      fully equivalent — take this specific check to a transmission shop
+      rather than attempting it solely at home.
+    status: open
+    createdDate: '2026-07-11'
+    completedDate: null
+  - id: 6
+    title: 'Age-based rubber check: hoses, fuel lines, mounts, bushings'
+    notes: >-
+      Radiator/heater hoses: rubber generally lasts ~10 years before
+      age-related degradation, this vehicle has exceeded that — squeeze
+      test for sponginess/hardness, look for weeping at clamps, likely
+      due for replacement based on age alone. Fuel lines: commonly
+      flagged for proactive replacement around the 10-year mark due to
+      cracking/fire risk, independent of mileage — worth a careful visual.
+      Engine/transmission mounts: check for excessive movement or a clunk
+      under load, visible cracking, separation. Suspension bushings, ball
+      joints, sway bar links: physically check for play (rubber cracks
+      and hardens with age even at moderate mileage).
+    status: open
+    createdDate: '2026-07-11'
+    completedDate: null
+  - id: 7
+    title: Brake fluid flush
+    notes: Toyota specifies a time-based interval (not purely mileage-based); at 12+ years old this is very likely overdue regardless of mileage.
+    status: open
+    createdDate: '2026-07-11'
+    completedDate: null
+  - id: 8
+    title: Engine coolant flush
+    notes: Toyota Super Long Life Coolant. Exact interval not independently confirmed for this exact combo, but treat as due given the vehicle's age.
+    status: open
+    createdDate: '2026-07-11'
+    completedDate: null

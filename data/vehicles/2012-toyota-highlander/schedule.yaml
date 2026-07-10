@@ -1,0 +1,18 @@
+# Built from a prior research session's checklist for this exact car (150K
+# mi, 12+ years old, unknown prior service history). Several intervals the
+# source itself couldn't confirm with high confidence are left without a
+# number here rather than guessed — see item names for what to verify
+# against the printed owner's manual before relying on the due-status here.
+items:
+  - itemType: oil-change
+    name: Oil change (5W-30 — confirm exact grade/interval in owner's manual, not independently confirmed)
+    intervalMiles: 5000
+    intervalMonths: 6
+  - itemType: rear-diff-transfer-case
+    name: Rear differential & transfer case inspection + driveshaft bolt re-torque
+    intervalMiles: 15000
+    intervalMonths: null
+  - itemType: spark-plugs
+    name: Spark plugs (iridium) — verify exact interval in owner's manual before servicing, do not guess
+    intervalMiles: null
+    intervalMonths: null

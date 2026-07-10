@@ -104,5 +104,6 @@ export function currentMileage(vehicle: Vehicle): number | null {
 }
 
 export function vehicleLabel(vehicle: VehicleSummary): string {
-  return `${vehicle.year} ${vehicle.make} ${vehicle.model}${vehicle.trim ? " " + vehicle.trim : ""}`;
+  const nickname = vehicle.nickname ? ` "${vehicle.nickname}"` : "";
+  return `${vehicle.year} ${vehicle.make} ${vehicle.model}${nickname}${vehicle.trim ? " " + vehicle.trim : ""}`;
 }
