@@ -20,7 +20,15 @@ vehicles:
     vin: [VIN-REDACTED]
     tireSize: 235/45R18
     purchaseDate: '2026-06-19'
-    previousOwner: Purchased at 106,862 miles with unknown prior service history.
+    previousOwner: >-
+      Purchased at 106,862 miles with unknown prior service history. Built
+      02/19. Labels confirm engine A25A-FXS and 0W-16 oil spec (matches
+      corrections already made here). Currently mounted tires are
+      aftermarket "Velocity Sport" (not Lexus OEM), 235/45R18 — factory
+      cold pressure 35 PSI front/rear, 60 PSI for the compact spare
+      (T155/70D17). AC refrigerant: R-1234yf, 550±30g. Load-carrying-capacity
+      label notes a minor aftermarket-modification reduction of 3 kg / 6
+      lbs — small enough not to worry about, noted for completeness.
     status: active
     photo: null
   - slug: 2012-toyota-highlander
