@@ -29,40 +29,71 @@ tasks:
     createdDate: '2026-07-09'
     completedDate: '2026-07-09'
   - id: 4
-    title: 'DIY speaker fix: source correct amp 86280-06260 (with nav), avoid old-style cores'
+    title: 'TOMORROW before calling dealer: verify the amp is actually the bad part'
     notes: >-
-      Per TSB L-SB-0020-20's own parts table: bad/old part numbers are
-      86280-06230, 06231, 33310, or 33311 (nav-equipped) — installing one
-      of these (e.g. a random used pull) reproduces the same bad sound
-      bias. The FIX is part number 86280-06260 specifically. Toyota's
-      note says only new parts are available (no exchange/refurb
-      program), and comparable Lexus OEM amp assemblies run $960-$2,000+
-      new — so the dealer's $1000 quote is mostly parts cost, not labor
-      (labor alone is only 0.3 hr per Toyota's own guide, a simple R&R).
-      Real savings would come from a USED but CORRECT-part-number amp —
-      look for one pulled from a 2019+ ES300h built after the TSB's VIN
-      cutoff (JTHB21B1_K2047220 or later for US-built cars), confirmed by
-      part number before buying, not just "Lexus ES amplifier."
+      Decision made 2026-07-10: having the dealer order the correct part
+      (86280-06260) and install it, ~$200 out of pocket — worth it for
+      speed + warranty, since DIY sourcing (new-only, $863-869 at
+      LexusPartsNow/AutoPartsPrime) barely undercuts the dealer once
+      labor/shop fees are added, and no used correct-part-number units
+      exist yet in the salvage market. Do NOT buy a used amp off eBay
+      labeled just "2019 ES300h amplifier" — common listings are part
+      86280-33310, which is one of the confirmed BAD pre-fix cores per
+      the TSB, not the fix.
+
+      Two checks before/while calling the dealer, to make sure this is
+      really the amp and not something else (e.g. a blown speaker):
+
+      1) VIN CHECK (already done): this car's production sequence
+      (2033784) falls BEFORE the TSB's fix cutoff (2047220 for
+      Japan-built cars) — strong evidence the amp really is the pre-fix
+      part, not just an assumption.
+
+      2) PHYSICAL PART NUMBER: the amp is under the driver's seat on
+      2013-2019 ES models — slide the seat forward, look for a metal box
+      with a Toyota/Lexus part-number sticker on it. Should read
+      86280-06230, 06231, 33310, or 33311 (bad/needs fix). If it already
+      says 86280-06260, something else is going on — stop and
+      investigate before ordering a part you don't need.
+
+      3) RULE OUT BLOWN SPEAKERS (2 min, no tools): head unit → audio
+      settings → Balance/Fader. Push fader all the way to REAR, then
+      swing balance hard LEFT, then hard RIGHT, listening to each rear
+      speaker individually. Both clean but quieter than expected even at
+      full rear fade = matches the TSB exactly (amp issue). Any
+      distortion, rattling, or silence from one specific rear speaker =
+      a separate speaker problem the amp swap won't fix — mention this
+      to the dealer before they order the part.
     status: open
     createdDate: '2026-07-10'
     completedDate: null
   - id: 5
-    title: 'DIY Android Auto: install an aftermarket "AI box" (not a simple wireless dongle)'
+    title: 'DIY Android Auto: buy an aftermarket "AI box" (not a simple wireless dongle)'
     notes: >-
       No official Lexus/OEM path exists for this platform (a genuine
       Beat-Sonic CarPlay+Android Auto accessory exists but its
       compatibility list stops at 2018 — different infotainment
       generation than this 2019 car). Simple "wired-to-wireless CarPlay"
-      dongles won't help since they only convert an existing protocol,
-      and this car's factory system is CarPlay-only. What's needed is an
-      "AI box" style adapter (e.g. Ottocast Play2Video/P3, CarlinKit
-      Android 13.0) that plugs into the existing wired CarPlay USB port
+      dongles (e.g. the cheap ~$65 CarlinKit 2air) won't help — they only
+      convert an EXISTING protocol to wireless, and this car's factory
+      system is CarPlay-only with no Android Auto at all. What's needed
+      is an "AI box" that plugs into the existing wired CarPlay USB port
       and runs its own onboard Android system, projecting both CarPlay
-      and Android Auto onto the factory screen. Confirmed working by real
-      2019+ ES owners on ClubLexus, including that the trackpad (not
-      touchscreen) controls it fine via tap/double-tap. Roughly
-      $100-250, fully reversible, no cutting. Verify current model/price
-      before buying — this product category changes often.
+      and Android Auto onto the factory screen.
+
+      Recommended (cheapest, confirmed match): Ottocast Play2Video Ultra
+      — $89 (sale, reg $109). Requires "factory wired Apple CarPlay,"
+      which this car has. Comes with streaming apps (Netflix/YouTube)
+      bundled in.
+
+      Alternative: CarlinKit Tbox Plus — $175 (sale, reg $279.99), same
+      category, pricier.
+
+      Confirmed working by real 2019+ ES owners on ClubLexus, including
+      that the trackpad (not touchscreen) controls it fine via
+      tap/double-tap. Fully reversible, no cutting. Verify current
+      price/availability before buying — this product category changes
+      often.
     status: open
     createdDate: '2026-07-10'
     completedDate: null
