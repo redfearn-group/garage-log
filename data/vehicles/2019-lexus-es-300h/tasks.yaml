@@ -68,32 +68,72 @@ tasks:
     createdDate: '2026-07-10'
     completedDate: null
   - id: 5
-    title: 'DIY Android Auto: buy an aftermarket "AI box" (not a simple wireless dongle)'
+    title: 'DIY Android Auto: still unresolved — nothing confirmed working yet'
     notes: >-
-      No official Lexus/OEM path exists for this platform (a genuine
-      Beat-Sonic CarPlay+Android Auto accessory exists but its
-      compatibility list stops at 2018 — different infotainment
-      generation than this 2019 car). Simple "wired-to-wireless CarPlay"
-      dongles (e.g. the cheap ~$65 CarlinKit 2air) won't help — they only
-      convert an EXISTING protocol to wireless, and this car's factory
-      system is CarPlay-only with no Android Auto at all. What's needed
-      is an "AI box" that plugs into the existing wired CarPlay USB port
-      and runs its own onboard Android system, projecting both CarPlay
-      and Android Auto onto the factory screen.
+      STATUS as of 2026-07-10: no product has been found with a real,
+      dated owner report confirming it adds Android Auto to this car.
+      Two earlier candidates have both been RULED OUT after deeper
+      research — do not buy either without new evidence:
 
-      Recommended (cheapest, confirmed match): Ottocast Play2Video Ultra
-      — $89 (sale, reg $109). Requires "factory wired Apple CarPlay,"
-      which this car has. Comes with streaming apps (Netflix/YouTube)
-      bundled in.
+      - Ottocast Play2Video Ultra ($89) — a Lexus LC owner tested two
+      units and reported it "will not work with wireless Android Auto,"
+      plus refund/support problems.
 
-      Alternative: CarlinKit Tbox Plus — $175 (sale, reg $279.99), same
-      category, pricier.
+      - AAWireless TWO+ ($55-65) — confirmed by multiple independent
+      reviews (Android Authority, MobileSyrup) to only convert an
+      EXISTING wired Android Auto connection to wireless; the vendor's
+      own text says it "does not bring Android Auto or CarPlay to
+      vehicles that don't already support it." This car has wired
+      CarPlay only, no Android Auto at all, so this device cannot help
+      — an earlier recommendation of this product was wrong, based on
+      the vendor's marketing page rather than independent verification.
 
-      Confirmed working by real 2019+ ES owners on ClubLexus, including
-      that the trackpad (not touchscreen) controls it fine via
-      tap/double-tap. Fully reversible, no cutting. Verify current
-      price/availability before buying — this product category changes
-      often.
+      - CarlinKit's Entune 2.0 module — built for Toyota Entune 2.0
+      (Highlander, Tundra, Sienna, etc.), does not list Lexus/Enform 2.0
+      as compatible.
+
+      No official Lexus/OEM path exists either (a genuine Beat-Sonic
+      CarPlay+Android Auto accessory exists but its compatibility list
+      stops at 2018 — a different infotainment generation than this 2019
+      car).
+
+      SAVED RESEARCH PROMPT — reuse this for a future research pass or
+      to post on ClubLexus/a forum directly:
+
+      ---
+      My car is a 2019 Lexus ES 300h (7th-generation ES, Enform 2.0
+      infotainment). It has factory wired Apple CarPlay only (via USB)
+      — no Android Auto support at all, wired or wireless. The dealer
+      confirmed there's no official Lexus upgrade path for this.
+      Controls are via a trackpad/Remote Touch controller, not a
+      touchscreen.
+
+      I need a device that adds Android Auto to this car. Requirements
+      for what counts as "confirmed":
+      - Must be a real, dated, identifiable source — a forum post,
+      review, or video from an actual owner who used it — not a
+      manufacturer's marketing claim or spec sheet
+      - Ideally from a 2019+ Lexus ES (300h or 350) owner specifically;
+      a close match would be another 2019+ Toyota/Lexus vehicle with the
+      same generation Entune 2.0/Enform 2.0 system and
+      factory-wired-CarPlay-only setup — flag clearly if a source is a
+      close-platform match rather than an exact ES 300h match
+      - Must specifically confirm Android Auto works, not just CarPlay
+      - Must be a device with its own onboard Android system that
+      injects video through the existing wired CarPlay port (an "AI
+      box") — NOT a simple wired-to-wireless converter, since those only
+      convert a protocol the car already has and can't add one it
+      doesn't
+      - Note current price and where to buy (prefer Amazon or other
+      easily-returnable retailers)
+
+      Already ruled out, do not re-suggest without new contradicting
+      evidence: Ottocast Play2Video Ultra, AAWireless TWO+, CarlinKit's
+      Entune 2.0 module (see above for why each was ruled out).
+
+      If nothing meets this bar, say so plainly rather than stretching
+      weak evidence.
+      ---
     status: open
     createdDate: '2026-07-10'
     completedDate: null
