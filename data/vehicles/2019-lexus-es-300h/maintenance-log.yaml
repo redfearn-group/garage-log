@@ -1,1 +1,11 @@
-entries: []
+entries:
+  - date: '2026-07-10'
+    mileage: 106862
+    itemType: recall-verification
+    description: Dealer stated all reported open recalls (including 19V544000, brake booster/ESC) were completed prior to sale
+    notes: >-
+      Verbal assurance only — no documentation/paperwork provided. Not
+      independently confirmed. For certainty, check completion status by
+      VIN at nhtsa.gov/recalls (a different, VIN-aware tool than the
+      model/year recall list this tracker pulls automatically).
+    documents: []
