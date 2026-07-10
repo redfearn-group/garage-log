@@ -1,1 +1,18 @@
-tasks: []
+tasks:
+  - id: 1
+    title: 'Get open recall fixed before selling: 26V237 (transmission downshift)'
+    notes: >-
+      Confirmed OPEN via nhtsa.gov/recalls VIN-specific lookup on
+      2026-07-10 (1 unrepaired recall on this VIN). NHTSA 26V237 / Ford
+      26S28: transmission range sensor signal loss can cause an
+      unexpected downshift to a lower gear, abruptly slowing the rear
+      tires and risking loss of vehicle control. Free fix — Ford dealer
+      reprograms the PCM via software update; if a MIL or powertrain
+      warning lamp is on before or after, they'll run diagnostics and
+      replace the leadframe at no cost under extended warranty program
+      26N04. Worth doing before the sale — it's free, quick, and an
+      unresolved safety recall is a bad look (and possible disclosure
+      issue) for a buyer to find later.
+    status: open
+    createdDate: '2026-07-10'
+    completedDate: null
