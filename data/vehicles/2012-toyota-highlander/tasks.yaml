@@ -98,3 +98,15 @@ tasks:
     status: open
     createdDate: '2026-07-11'
     completedDate: null
+  - id: 9
+    title: 'TPMS warning light is on — check tire pressures now'
+    notes: >-
+      Spotted lit on the dash 2026-07-10 at 160,357 mi. This is an active
+      warning, not just the general age/tread check in task #4 — check
+      all four tires (plus spare) with a gauge now, since one is likely
+      low or the sensor itself has an issue. If pressures are all fine,
+      a TPMS sensor battery (these are typically 5-10 year sealed units)
+      or sensor fault becomes the more likely cause.
+    status: open
+    createdDate: '2026-07-11'
+    completedDate: null
