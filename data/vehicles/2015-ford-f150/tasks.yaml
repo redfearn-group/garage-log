@@ -90,3 +90,16 @@ tasks:
     status: open
     createdDate: '2026-07-14'
     completedDate: null
+  - id: 10
+    title: 'Zeus spring service pass — oil treatment, oil change, filters, tire rotation, fuel/coolant/brake checks'
+    notes: >-
+      From the "ZEUS spring" notebook checklist — none of this had been
+      done as of 2026-07-14 (unlike Hera and Draco, which got their spring
+      service done). Covers: oil treatment (before the oil change), oil
+      change, cabin air filter, engine air filter, tire rotation, AutoZone
+      fuel system cleaner, test coolant & brake fluid. Brady's plan as of
+      2026-07-14 is to finish this the week of 2026-07-13, alongside
+      Draco's oil change.
+    status: open
+    createdDate: '2026-07-14'
+    completedDate: null
