@@ -10,6 +10,22 @@ vehicles:
     vin: [VIN-REDACTED]
     licensePlate: [PLATE-REDACTED]
     tireSize: 275/65R18
+    purchaseDate: '2018-05-23'
+    previousOwner: >-
+      Purchased from Clegg Auto Sales (Spanish Fork, UT), [dealer # in private.yaml],
+      [stock # in private.yaml], 2018-05-23. Odometer at sale: 44,240 mi (marked
+      "ACTUAL") — confirmed by both the Bill of Sale and the Utah TC-891
+      odometer disclosure statement. Color: Silver. Cash price [price in private.yaml],
+      [amount in private.yaml] financed (after a [doc fee in private.yaml], [fee in private.yaml],
+      and $2,443.36 Utah sales tax) through [lender in private.yaml] at
+      [APR in private.yaml] — [term in private.yaml] of [payment in private.yaml] plus one final payment of
+      [payment in private.yaml] (total of payments [amount in private.yaml]), first payment due 2018-07-06.
+      Sold AS-IS with no dealer warranty, though the Ford factory warranty
+      still applied to some components at the time per the Buyers Guide. No
+      trade-in. A Utah TC-353 disclosure notes the vehicle was originally
+      sold new in Canada — its odometer may have originally been calibrated
+      in kilometers, though the reading was already in miles by this 2018
+      sale.
     status: active
     photo: null
   - slug: 2019-lexus-es-300h
