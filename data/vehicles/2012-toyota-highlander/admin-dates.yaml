@@ -1,1 +1,7 @@
-dates: []
+dates:
+  - type: tire-replacement
+    label: Planned tire replacement (weather turning cold/snowy)
+    dueDate: '2026-11-01'
+    notes: >-
+      Exact date not yet set, targeting November 2026. TPMS sensor(s)
+      will be addressed at the same time — see tasks.yaml task #9.

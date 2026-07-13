@@ -99,7 +99,7 @@ tasks:
     createdDate: '2026-07-11'
     completedDate: null
   - id: 9
-    title: 'TPMS warning light — persistent for over a year, likely a dead sensor battery'
+    title: 'TPMS warning light — persistent for over a year, likely a dead sensor battery — planned for Nov 2026 tire replacement'
     notes: >-
       Reviewing dashboard photos going back through the mileage history:
       the TPMS light has been lit in nearly every photo since 2025-04-07
@@ -108,28 +108,11 @@ tasks:
       this persistent, across many drives and presumably many top-offs,
       points much more strongly to a dead/dying TPMS sensor battery
       (these are typically sealed 5-10 year units — this car is 14 years
-      old) or a sensor fault than an actual ongoing leak. Still worth
-      confirming current pressures with a gauge first (cheap, 2 min), but
-      go in expecting a sensor replacement is the likely fix, not a tire
-      repair.
-    status: open
-    createdDate: '2026-07-11'
-    completedDate: null
-  - id: 10
-    title: 'Dec 2025 multiple warning lights — likely explained by the Nov 2025 accident'
-    notes: >-
-      The 2025-12-30 dashboard photo (153,008 mi) showed check engine,
-      battery, a red oil-can/maintenance icon, brake warning, AND TPMS all
-      lit simultaneously. RESOLVED (probable cause): Brady's wife
-      sideswiped the car in November 2025 — see the maintenance-log.yaml
-      entry for the cosmetic-only detail that followed (real body repair
-      was deferred). This combination of lights (battery + check engine +
-      brake) is consistent with electrical/sensor damage from that
-      collision rather than a separate low-voltage event. Those extra
-      lights are NOT present in the following Feb 2026 or July 2026
-      photos. Still worth doing the 12V battery load test already in
-      task #2 as a general precaution, but no longer treating this as an
-      unexplained mystery.
+      old) or a sensor fault than an actual ongoing leak. Confirmed by
+      Brady (2026-07-14): this is the ONLY dash light currently on —
+      no other warning lights or OBD-II codes to worry about. Plan is to
+      replace tires in November 2026 when the weather turns cold/snowy,
+      and address the TPMS sensor(s) at the same time.
     status: open
     createdDate: '2026-07-11'
     completedDate: null
