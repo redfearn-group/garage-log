@@ -92,7 +92,32 @@ entries:
     itemType: ''
     description: Rear brake rotors replaced — DIY (pads left in place, still had life per the Sept 2025 inspection)
     notes: >-
-      Date is Brady's estimate ("probably Memorial Day weekend" 2026).
-      Mileage interpolated between the 2026-02-21 (155,252 mi) and
-      2026-07-11 (160,357 mi) readings — treat as rough.
+      Confirmed as part of the same Memorial Day weekend 2026 service
+      session (tire rotation, oil change, oil/fuel system cleaners — see
+      other entries at this date). Mileage interpolated between the
+      2026-02-21 (155,252 mi) and 2026-07-11 (160,357 mi) readings — treat
+      as rough.
+    documents: []
+  - date: '2026-05-25'
+    mileage: 158643
+    itemType: tire-rotation
+    description: Tires rotated — DIY, Memorial Day weekend spring service
+    notes: Mileage interpolated the same way as the other entries at this date — treat as rough.
+    documents: []
+  - date: '2026-05-25'
+    mileage: 158643
+    itemType: oil-change
+    description: Oil & filter changed — DIY, Memorial Day weekend spring service
+    notes: Mileage interpolated the same way as the other entries at this date — treat as rough.
+    documents: []
+  - date: '2026-05-25'
+    mileage: 158643
+    itemType: ''
+    description: "Bernie's oil system cleaner + AutoZone fuel system cleaner run — DIY, Memorial Day weekend spring service"
+    notes: >-
+      Bernie's (the more expensive oil+fuel system treatment) is Brady's
+      once-a-year spring product across all his vehicles; the cheaper
+      AutoZone fuel-system-only cleaner gets used at other oil changes
+      throughout the year. Mileage interpolated the same way as the other
+      entries at this date — treat as rough.
     documents: []
