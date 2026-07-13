@@ -23,6 +23,30 @@ documents:
       charged (includes $15 core fee) with a same-day $16.12 core fee
       refund per invoice #11180148552 — net cost $196.62. Also includes the
       standard Costco battery warranty terms sheet.
+  - filename: 20230619-tim-dahle-wfm-visit2.pdf
+    category: repair-invoice
+    dateAdded: '2026-07-14'
+    description: >-
+      Tim Dahle Ford (RO #885408), 2023-06-19 (116,501 mi) — Worry Free
+      Maintenance 2nd visit: oil change (0W-20 synthetic), tire rotation,
+      MPI, and car wash under an earlier WFM service contract, no charge.
+      See maintenance-log.yaml.
+  - filename: 20240306-tim-dahle-wfm-package.pdf
+    category: repair-invoice
+    dateAdded: '2026-07-14'
+    description: >-
+      Tim Dahle Ford (RO #896515), 2024-03-06 (127,215 mi) — purchase of a
+      new 3-visit full-synthetic Worry Free Maintenance package with its
+      1st oil-change/rotation visit redeemed, $255.26. Declined add-ons
+      (lug nuts, engine air filter, brakes) noted on the invoice. See
+      maintenance-log.yaml.
+  - filename: 20240725-tim-dahle-wfm-visit2.pdf
+    category: repair-invoice
+    dateAdded: '2026-07-14'
+    description: >-
+      Tim Dahle Ford (RO #902720), 2024-07-25 (132,260 mi) — Worry Free
+      Maintenance 2nd visit (oil change, rotation, MPI) under the package
+      bought 2024-03-06, no charge. See maintenance-log.yaml.
   - filename: car-repairs-for-may-2024-planning-doc.pdf
     category: other
     dateAdded: '2026-07-13'

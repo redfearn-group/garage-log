@@ -41,6 +41,59 @@ documents:
       Vehicle Inspection/Check-In Report noting an aftermarket engine air
       filter, tire tread readings, and an early note of a front cover and
       oil pan leak. See maintenance-log.yaml.
+  - filename: 20191118-tim-dahle-adaptive-cruise-recalibration.pdf
+    category: repair-invoice
+    dateAdded: '2026-07-14'
+    description: >-
+      Tim Dahle Ford (RO #837078), 2019-11-18 (69,553 mi) — IDS diagnostics
+      and IPMA module reset to recalibrate the adaptive cruise / driver-
+      assist system after an insurance windshield replacement, $135. See
+      maintenance-log.yaml.
+  - filename: 20221004-clegg-auto-pinion-seal-followup.pdf
+    category: repair-invoice
+    dateAdded: '2026-07-14'
+    description: >-
+      Clegg Auto Spanish Fork (RO #204835), 2022-10-04 (108,838 mi) — rear
+      differential pinion seal + flange replaced again as a warranty
+      follow-up to the 2022-09-12 Clegg repair (RO #204446), $95.25. See
+      maintenance-log.yaml.
+  - filename: 20221222-tim-dahle-recalls-brake-line-valve-cover.pdf
+    category: repair-invoice
+    dateAdded: '2026-07-14'
+    description: >-
+      Tim Dahle Ford (RO #878393), 2022-12-22 (111,520 mi) — blown left-
+      front brake line replaced + brake fluid flush, passenger valve cover
+      gasket + VCT seals resealed (oil leak), and recalls 17S33 (door
+      latch, NHTSA 17V-652) and 18S27 (carpet shielding, NHTSA 18V-568)
+      performed. $1,208.92 out of pocket (not a warranty claim). See
+      maintenance-log.yaml.
+  - filename: 20230509-tim-dahle-emissions-wfm-package.pdf
+    category: repair-invoice
+    dateAdded: '2026-07-14'
+    description: >-
+      Tim Dahle Ford (RO #883831), 2023-05-09 (117,125 mi) — emission (I/M)
+      inspection + purchase of a 3-visit synthetic-blend Worry Free
+      Maintenance package with its 1st oil-change/rotation visit redeemed,
+      $231.96. See maintenance-log.yaml.
+  - filename: 20250225-tim-dahle-wfm-visit3-valve-cover.pdf
+    category: repair-invoice
+    dateAdded: '2026-07-14'
+    description: >-
+      Tim Dahle Ford (RO #911377), 2025-02-25 (140,142 mi) — WFM 3rd/final
+      visit (oil change, rotation, MPI) plus the passenger-side valve cover
+      replaced (found cracked), $113.07 out of pocket. Includes the card
+      transaction receipt. See maintenance-log.yaml.
+  - filename: 20251209-tim-dahle-vacuum-pump-camera-mirror-axle.pdf
+    category: repair-invoice
+    dateAdded: '2026-07-14'
+    description: >-
+      Tim Dahle Ford (RO #924599), 2025-12-09 to 2025-12-31 (151,830 mi) —
+      large multi-item repair: vacuum pump replaced (under warranty),
+      driver's seat lumbar adjuster, backup camera, folding-mirror switch,
+      front axle seal + rear axle oil, plus a rental. Printed total due
+      $3,428.72; the Carchex warranty (still active) covered the vacuum
+      pump, with an ambiguous handwritten ~$940–1,050 out-of-pocket figure.
+      See maintenance-log.yaml and admin-dates.yaml.
   - filename: 20220912-clegg-auto-pinion-seal-oil-pan-repair.pdf
     category: repair-invoice
     dateAdded: '2026-07-14'
