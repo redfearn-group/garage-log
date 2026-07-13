@@ -1,4 +1,16 @@
 documents:
+  - filename: 20180523-clegg-auto-purchase-docs.pdf
+    category: registration
+    dateAdded: '2026-07-14'
+    description: >-
+      Original purchase paperwork from Clegg Auto Sales (Spanish Fork, UT),
+      dealer #6861, stock #2354, 2018-05-23: Bill of Sale, Buyers Guide
+      (AS IS — no dealer warranty), Retail Installment Contract & Security
+      Agreement (financed through Utah Community Credit Union), Utah
+      odometer disclosure statement (TC-891), Utah notice for a vehicle
+      originally sold new in Canada (TC-353), and privacy notice. Odometer
+      reading at sale: 44,240 mi — see the previousOwner note in
+      vehicles.yaml for full deal terms.
   - filename: 20181210-discounttire-tire-purchase.pdf
     category: repair-invoice
     dateAdded: '2026-07-14'
