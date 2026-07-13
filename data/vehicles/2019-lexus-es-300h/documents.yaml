@@ -1,4 +1,15 @@
 documents:
+  - filename: 20260528-carfax-report.pdf
+    category: carfax
+    dateAdded: '2026-07-13'
+    description: >-
+      Full CARFAX Vehicle History Report, provided free by Lexus of Murray,
+      pulled 5/28/26. 31 service history records, 47 detailed records
+      available, 2 previous owners. No accidents, structural damage, airbag
+      deployment, odometer rollback, or title problems reported. "Great
+      Reliability" forecast (top 25% vs. similar vehicles, ~$280/yr avg
+      repair cost). See the previousOwner note in vehicles.yaml for the
+      full summary.
   - filename: 20260618-lexus-of-murray-buyers-guide-and-signing-certs.pdf
     category: registration
     dateAdded: '2026-07-13'
