@@ -54,5 +54,10 @@ vehicles:
     trim: Premium Sedan AWD, FB20 2.0L, TR580 Lineartronic CVT
     vin: [VIN-REDACTED]
     licensePlate: '[PLATE-REDACTED]'
+    previousOwner: >-
+      Earliest known mileage (133,254 on 2026-03-13) is from the dealer's
+      online listing photo, not a reading Brady took himself — actual
+      mileage on the day of purchase was somewhat higher than that,
+      exact figure unknown.
     status: active
     photo: null
