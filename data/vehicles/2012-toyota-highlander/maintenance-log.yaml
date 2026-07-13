@@ -1,4 +1,16 @@
 entries:
+  - date: '2024-02-19'
+    mileage: 126947
+    itemType: ''
+    description: '12V battery replaced — Costco Tire Center (Interstate Batteries Group 24F AGM), $196.62 net after core fee refund'
+    notes: >-
+      Date and invoice total confirmed from the Costco receipt (invoice
+      #11180148520, $212.74 charged including a $15 core fee, refunded
+      $16.12 the same day per the separate core-fee-refund slip — net cost
+      $196.62). Mileage estimated via interpolation between the 2023-08-02
+      (120,000 mi) and 2025-04-07 (141,180 mi) readings — treat as rough.
+    documents:
+      - 20240219-costco-battery-purchase.pdf
   - date: '2024-05-15'
     mileage: 130000
     itemType: ''

@@ -1,4 +1,13 @@
 documents:
+  - filename: 20240219-costco-battery-purchase.pdf
+    category: repair-invoice
+    dateAdded: '2026-07-14'
+    description: >-
+      Costco Tire Center (location 1118, UT), 2024-02-19, Interstate
+      Batteries Group 24F AGM battery, invoice #11180148520, $212.74
+      charged (includes $15 core fee) with a same-day $16.12 core fee
+      refund per invoice #11180148552 — net cost $196.62. Also includes the
+      standard Costco battery warranty terms sheet.
   - filename: car-repairs-for-may-2024-planning-doc.pdf
     category: other
     dateAdded: '2026-07-13'
