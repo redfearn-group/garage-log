@@ -62,7 +62,14 @@ documents:
   - filename: allegiance-ultimate-direct-sample-contract-terms.pdf
     category: warranty
     dateAdded: '2026-07-13'
-    description: Generic sample contract (no personal info) showing the full terms/exclusions of the Allegiance "Ultimate Direct" plan Zeus's Carchex warranty was administered under.
+    description: >-
+      Blank/generic sample contract (all fields empty — not Brady's actual
+      signed contract) showing the general terms/exclusions format of the
+      Allegiance "Ultimate Direct" plan Zeus's Carchex warranty was
+      administered under. CARCHEX also mailed Brady the real, personalized
+      signed contract, but since the warranty term has since expired
+      (see admin-dates.yaml), tracking down and filing that physical copy
+      is considered OBE (overtaken by events) — not being pursued further.
   - filename: car-repairs-for-may-2024-planning-doc.pdf
     category: other
     dateAdded: '2026-07-13'
