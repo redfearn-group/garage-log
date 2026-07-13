@@ -55,12 +55,6 @@ tasks:
     status: open
     createdDate: '2026-07-13'
     completedDate: null
-  - id: 4
-    title: Window tint
-    notes: From Brady's Google Tasks list. No further detail yet — pricing/vendor still to be researched (see the linked "call the tint guys" task).
-    status: open
-    createdDate: '2026-07-13'
-    completedDate: null
   - id: 5
     title: Headlights are foggy
     notes: From Brady's Google Tasks list. Not yet determined whether these have a prior coating (like Hera's failed Cerakote job) or have simply oxidized — worth checking before deciding on a fix.

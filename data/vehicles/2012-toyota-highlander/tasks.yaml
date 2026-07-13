@@ -180,8 +180,12 @@ tasks:
     createdDate: '2026-07-13'
     completedDate: null
   - id: 17
-    title: Window tint job
-    notes: From Brady's Google Tasks list. No further detail yet — pricing/vendor still to be researched (see the linked "call the tint guys" task).
+    title: Real heat-rejection window tint job (e.g. 3M Crystalline or XPEL Prime)
+    notes: >-
+      From Brady's Google Tasks list. Part of a combined tint plan with
+      Lexus (PPF + tint) and Draco (tint) — one vendor call ("call the
+      tint guys and get pricing") covers pricing across all three cars.
+      Zeus excluded.
     status: open
     createdDate: '2026-07-13'
     completedDate: null
@@ -223,6 +227,16 @@ tasks:
       revive hardened seals and bushings. Given the age-based rubber
       concerns already flagged for this vehicle, worth doing as a
       proactive, low-cost treatment.
+    status: open
+    createdDate: '2026-07-13'
+    completedDate: null
+  - id: 23
+    title: Hair padding for the small screen
+    notes: >-
+      From Brady's Google Tasks list — originally logged against "Val's
+      car" via voice-dictation autocorrect, confirmed to actually mean
+      Hera. Related to task #14 (small screen flexing) — likely the same
+      screen, possibly the same underlying fix.
     status: open
     createdDate: '2026-07-13'
     completedDate: null
