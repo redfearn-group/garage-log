@@ -5,7 +5,10 @@ items:
       Commonly reported on this generation of F-150 — exhaust manifold bolts can shear, causing a
       ticking/exhaust-leak noise from the engine bay. Worth a visual/torque inspection before it
       reaches this mileage, and replacing with upgraded bolts proactively if accessible during other
-      engine-bay work. RESOLVED: replaced both sides (driver's and passenger's) with new gaskets and
-      bolts, DIY, ~2024-05 (~127,800 mi estimated — see maintenance-log.yaml).
+      engine-bay work. Diagnosed at Tim Dahle Ford 2023-12-27 (124,020 mi) — both rear manifolds
+      warped/leaking with a broken bolt on the right side, not covered by the extended warranty;
+      Brady declined the $3,506.48 dealer estimate. RESOLVED: replaced both sides (driver's and
+      passenger's) with new gaskets and bolts, DIY, ~2024-05 (~127,800 mi estimated — see
+      maintenance-log.yaml), about 4-5 months after the dealer diagnosis.
     sources: []
     status: addressed
