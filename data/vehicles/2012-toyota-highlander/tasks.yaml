@@ -116,20 +116,20 @@ tasks:
     createdDate: '2026-07-11'
     completedDate: null
   - id: 10
-    title: 'Dec 2025 photo showed multiple warning lights at once — worth understanding'
+    title: 'Dec 2025 multiple warning lights — likely explained by the Nov 2025 accident'
     notes: >-
       The 2025-12-30 dashboard photo (153,008 mi) showed check engine,
       battery, a red oil-can/maintenance icon, brake warning, AND TPMS all
-      lit simultaneously. That specific combination (battery + check
-      engine + brake together) is a classic pattern for a low-voltage
-      event (weak/dying 12V battery, corroded terminal, bad
-      alternator) — those extra lights are NOT present in the following
-      Feb 2026 or July 2026 photos, so whatever it was seems to have
-      cleared or been addressed. Worth asking Brady if anything happened
-      around late Dec 2025 (jump start, battery replacement, etc.) for
-      the record, and reinforces the 12V battery load test already in
-      task #2 — this car's battery may be more marginal than "test to be
-      safe" implied.
+      lit simultaneously. RESOLVED (probable cause): Brady's wife
+      sideswiped the car in November 2025 — see the maintenance-log.yaml
+      entry for the cosmetic-only detail that followed (real body repair
+      was deferred). This combination of lights (battery + check engine +
+      brake) is consistent with electrical/sensor damage from that
+      collision rather than a separate low-voltage event. Those extra
+      lights are NOT present in the following Feb 2026 or July 2026
+      photos. Still worth doing the 12V battery load test already in
+      task #2 as a general precaution, but no longer treating this as an
+      unexplained mystery.
     status: open
     createdDate: '2026-07-11'
     completedDate: null
@@ -239,4 +239,17 @@ tasks:
       screen, possibly the same underlying fix.
     status: open
     createdDate: '2026-07-13'
+    completedDate: null
+  - id: 24
+    title: 'Get proper body repair for side damage — Nov 2025 sideswipe, currently only cosmetically detailed'
+    notes: >-
+      Brady's wife was sideswiped in November 2025. Couldn't afford the
+      real body/structural repair at the time, so the damaged side was
+      professionally detailed instead to look presentable — see
+      maintenance-log.yaml. The underlying damage is still there and
+      unrepaired. Worth addressing before any future sale, and worth
+      checking whether it affects anything structural or just
+      cosmetic/panel alignment.
+    status: open
+    createdDate: '2026-07-14'
     completedDate: null
