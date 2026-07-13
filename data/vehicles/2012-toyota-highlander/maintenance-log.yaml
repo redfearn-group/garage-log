@@ -6,9 +6,9 @@ entries:
       Routine DIY maintenance & cosmetic fixes — cabin & engine air filter
       cleaned, fuel system cleaner (Bernie's), drain holes cleared
       (sunroof, doors, AC drain, fenders), MAF sensor cleaned, cup holder
-      trim glued, headlights polished, battery terminals cleaned & sealed,
-      driver's back-left window switch cleaned & lubed, rear license
-      plate light bulbs replaced, new sun visors installed
+      trim glued, battery terminals cleaned & sealed, driver's back-left
+      window switch cleaned & lubed, rear license plate light bulbs
+      replaced, new sun visors installed
     notes: >-
       Date and mileage are estimated — Brady didn't record an exact date or
       odometer reading, only "May/June 2024." Mileage interpolated between
@@ -33,6 +33,19 @@ entries:
     itemType: ''
     description: AC system vacuum & refill — DIY
     notes: Same estimated date/mileage caveat as the routine maintenance entry above.
+    documents: []
+  - date: '2024-07-07'
+    mileage: 131700
+    itemType: ''
+    description: Headlight lens polishing — DIY
+    notes: >-
+      Date confirmed from before/after photo timestamps (2024-07-07/08),
+      more precise than the estimated "May 2024" bundled with the other
+      routine items above — pulled out of that entry once the photo dates
+      turned up. Photos clearly show hazy/oxidized lenses before and
+      clear lenses after. Mileage still estimated via the same
+      interpolation method (120,000 mi on 2023-08-02, 141,180 mi on
+      2025-04-07).
     documents: []
   - date: '2024-06-18'
     mileage: 131000

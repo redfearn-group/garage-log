@@ -19,3 +19,11 @@ documents:
     category: warranty
     dateAdded: '2026-07-13'
     description: Generic sample contract (no personal info) showing the full terms/exclusions of the Allegiance "Ultimate Direct" plan Zeus's Carchex warranty was administered under.
+  - filename: car-repairs-for-may-2024-planning-doc.pdf
+    category: other
+    dateAdded: '2026-07-13'
+    description: >-
+      Brady's original DIY planning checklist (shared with Hera, same
+      file), not a repair record despite the filename. Source for the
+      2024-05-15 maintenance-log entries covering the "easy items" and
+      exhaust manifold work — see maintenance-log.yaml.
