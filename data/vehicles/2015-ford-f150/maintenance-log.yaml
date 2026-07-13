@@ -10,6 +10,20 @@ entries:
     notes: 'Invoice #4306877. 60,000/70,000 mi tire mileage warranty.'
     documents:
       - 20181210-discounttire-tire-purchase.pdf
+  - date: '2019-11-18'
+    mileage: 69553
+    itemType: ''
+    description: >-
+      Adaptive (radar) cruise control recalibration — Tim Dahle Ford (RO
+      #837078/1). Brady's insurance company was replacing the windshield;
+      the truck was dropped at Tim Dahle first so the forward-facing
+      camera/radar and driver-assist options could be recalibrated after
+      the glass install. Tech ran IDS diagnostics, found multiple U-codes
+      (including U2100), reset the IPMA module, cleared codes, road-tested
+      and verified adaptive speed control operation.
+    notes: 'R/O #837078/1, tech Dwayne Owens. $135.00 (1.0 hr diagnostic labor).'
+    documents:
+      - 20191118-tim-dahle-adaptive-cruise-recalibration.pdf
   - date: '2019-12-09'
     mileage: 71882
     itemType: tire-rotation
@@ -78,6 +92,76 @@ entries:
       again and declined again (Brady prefers his aftermarket filter).
     documents:
       - 20220912-clegg-auto-pinion-seal-oil-pan-repair.pdf
+  - date: '2022-10-04'
+    mileage: 108838
+    itemType: ''
+    description: >-
+      Rear differential pinion seal replaced again — Clegg Auto Spanish
+      Fork (RO #204835). Follow-up to the 2022-09-12 repair above (RO
+      #204446): the rear pinion seal was found still leaking, so Clegg
+      replaced the seal and pinion flange again under their own parts/labor
+      warranty on the prior work.
+    notes: >-
+      $95.25 paid (Ford pinion flange FL3Z-4851-A $82.23 + pinion seal
+      BL3Z-4676-A at no charge, plus fees/tax). Card ending 5395. Separate
+      from the Carchex extended-warranty claims — this was Clegg standing
+      behind its own September repair.
+    documents:
+      - 20221004-clegg-auto-pinion-seal-followup.pdf
+  - date: '2022-12-22'
+    mileage: 111520
+    itemType: ''
+    description: >-
+      Blown left-front brake line replaced — Tim Dahle Ford (RO #878393).
+      Truck was towed in (AM/PM) with a ruptured left-front brake hose;
+      dealer replaced the hose/line, banjo bolt and copper seals, and did a
+      full brake fluid flush.
+    notes: >-
+      Total for the whole RO was $1,208.92 out of pocket (paid by card
+      ending 5395, auth #76366D) — NOT filed as an extended-warranty claim
+      (brake lines/hoses are a wear/exclusion item). The towing (WFMTOW)
+      was covered by the service contract.
+    documents:
+      - 20221222-tim-dahle-recalls-brake-line-valve-cover.pdf
+  - date: '2022-12-22'
+    mileage: 111520
+    itemType: ''
+    description: >-
+      Passenger-side valve cover gasket + VCT (variable cam timing) seals
+      replaced to address an oil leak — Tim Dahle Ford (RO #878393), same
+      visit as the brake line above.
+    notes: >-
+      Part of the $1,208.92 RO total. Note this is a gasket/seal reseal of
+      the passenger valve cover; the passenger valve cover itself was later
+      replaced (found cracked) at the 2025-02-25 visit below.
+    documents:
+      - 20221222-tim-dahle-recalls-brake-line-valve-cover.pdf
+  - date: '2022-12-22'
+    mileage: 111520
+    itemType: ''
+    description: >-
+      Recall 17S33 (NHTSA 17V-652) performed — door latch that could allow
+      a door to open/not stay closed while driving — and recall 18S27
+      (NHTSA 18V-568) — front/rear carpet shielding and insulation rework —
+      Tim Dahle Ford (RO #878393), same visit.
+    notes: No charge — both covered under the Ford recalls.
+    documents:
+      - 20221222-tim-dahle-recalls-brake-line-valve-cover.pdf
+  - date: '2023-05-09'
+    mileage: 117125
+    itemType: oil-change
+    description: >-
+      Emission (I/M) inspection + new "Worry Free Maintenance" package
+      purchased and its 1st visit redeemed (full-service oil change,
+      Motorcraft 5W-30, tire rotation, MPI) — Tim Dahle Ford (RO #883831).
+    notes: >-
+      $231.96 total: $55 emission inspection + $155 for a 3-visit synthetic-
+      blend WFM package (+ $10 haz-mat, $11.96 tax); the 1st oil-change/
+      rotation visit was redeemed against the package the same day. This is
+      a separate, later WFM package from the 2020-08-12 one. R/O #883831,
+      advisor Jon Haymond.
+    documents:
+      - 20230509-tim-dahle-emissions-wfm-package.pdf
   - date: '2023-12-27'
     mileage: 124020
     itemType: ''
@@ -214,6 +298,22 @@ entries:
     description: AC system vacuum & refill — DIY
     notes: Same estimated date/mileage caveat as the cabin air filter entry above.
     documents: []
+  - date: '2025-02-25'
+    mileage: 140142
+    itemType: oil-change
+    description: >-
+      Worry Free Maintenance 3rd (final) visit — full-service oil change +
+      tire rotation + MPI — plus the passenger-side valve cover replaced
+      (found cracked) — Tim Dahle Ford (RO #911377). Redeems the last visit
+      of the WFM package bought 2023-05-09 above.
+    notes: >-
+      $113.07 out of pocket (parts/labor $110.20 + $2.87 card surcharge,
+      card ending 5395, invoice #911377) — this covered the cracked
+      passenger valve cover replacement; the oil change/rotation itself was
+      under the WFM service contract. Follows the 2022-12-22 passenger valve
+      cover gasket reseal above (gasket then, whole cover now).
+    documents:
+      - 20250225-tim-dahle-wfm-visit3-valve-cover.pdf
   - date: '2025-11-19'
     mileage: 149829
     itemType: ''
@@ -229,6 +329,34 @@ entries:
       replaced the full set, not just the 2 remaining original rears.
     documents:
       - 20251119-discounttire-tire-replacement.pdf
+  - date: '2025-12-09'
+    mileage: 151830
+    itemType: ''
+    description: >-
+      Large multi-item repair — Tim Dahle Ford (RO #924599, opened
+      2025-12-09, closed 2025-12-31, tech Charles McClellan). Work
+      performed: (1) engine oil leak traced to the vacuum pump housing,
+      vacuum pump (DL3Z-2A451-B) replaced — done under warranty; (2)
+      driver's seat lumbar adjuster (CU5Z-9665500-U) replaced; (3) backup/
+      parking camera (FL3Z-19G490-D) replaced — wouldn't turn on; (4)
+      driver's folding-mirror window-control switch (FL3Z-14529-CB)
+      replaced — mirrors wouldn't fold; (5) front axle seal + rear axle oil
+      + bolts/spacer kit replaced (front-end leak); plus a rental car while
+      in the shop.
+    notes: >-
+      Printed TOTAL DUE on the invoice was $3,428.72 (labor $2,045.80,
+      parts $900.35, sublet/rental $200, shop supplies $56.15, tax $223.67,
+      data fee $2.75), with the vacuum pump line shown as "Warranty." The
+      Carchex "Ultimate Direct" contract (UDA1001522) was still active at
+      this mileage/date (expired at 152,412 mi or 2026-05-11), and the RO
+      notes reference it — so this appears to be a THIRD Carchex claim (the
+      covered vacuum pump). Handwritten figures on the invoice ($940.47 and
+      1,050.47, with "-20%") suggest a negotiated out-of-pocket amount of
+      roughly $940–1,050, but these are ambiguous and unverified — recorded
+      here as approximate, not fact. See admin-dates.yaml. Confirm the
+      actual OOP/warranty split with Brady if it matters.
+    documents:
+      - 20251209-tim-dahle-vacuum-pump-camera-mirror-axle.pdf
   - date: '2026-01-30'
     mileage: 152431
     itemType: ''

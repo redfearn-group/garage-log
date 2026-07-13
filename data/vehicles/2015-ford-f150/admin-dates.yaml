@@ -28,11 +28,17 @@ dates:
       2015-ford-f150/warranty/20220512-carchex-order-confirmation-email.pdf.
       CARCHEX also mailed a physical signed contract, but since this
       warranty has already expired, tracking that copy down is OBE — not
-      being pursued further. Actually used twice, both well documented:
-      claim #J22-79200 (2022-09-12, Clegg Auto, rear pinion seal + oil pan
-      gasket) paid $998.01 of a $1,369.73 repair, and claim #M23-48974
+      being pursued further. Actually used at least three times: claim
+      #J22-79200 (2022-09-12, Clegg Auto, rear pinion seal + oil pan
+      gasket) paid $998.01 of a $1,369.73 repair; claim #M23-48974
       (2023-12-27, Tim Dahle Ford, pinion seal again + timing cover reseal
       + rear main seal) paid the bulk of a $5,864.53 gross repair down to
-      just $533 out of pocket — between the two claims the warranty paid
-      out several times its own $3,882.45 purchase price. See
-      maintenance-log.yaml for both repair visits.
+      just $533 out of pocket; and a third time at 2025-12-09 (Tim Dahle
+      Ford, RO #924599) when the vacuum pump was replaced under warranty
+      while the contract was still active at 151,830 mi. That 2025-12-09
+      invoice's printed total due was $3,428.72 including customer-pay
+      items (seat lumbar adjuster, backup camera, folding-mirror switch,
+      front axle seal, rental); a handwritten ~$940–1,050 out-of-pocket
+      figure on it is ambiguous/unverified. Across these claims the
+      warranty paid out several times its own $3,882.45 purchase price. See
+      maintenance-log.yaml for all three repair visits.

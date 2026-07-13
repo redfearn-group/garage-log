@@ -7,6 +7,8 @@ entries:
     mileage: 51778
   - date: '2019-01-16'
     mileage: 54742
+  - date: '2019-11-18'
+    mileage: 69553
   - date: '2019-12-09'
     mileage: 71882
   - date: '2020-01-23'
@@ -15,16 +17,24 @@ entries:
     mileage: 81599
   - date: '2022-09-12'
     mileage: 107172
+  - date: '2022-10-04'
+    mileage: 108838
   - date: '2022-11-28'
     mileage: 111111
+  - date: '2022-12-22'
+    mileage: 111520
   - date: '2023-02-20'
     mileage: 114560
   - date: '2023-02-25'
     mileage: 114837
+  - date: '2023-05-09'
+    mileage: 117125
   - date: '2023-12-27'
     mileage: 124020
   - date: '2024-01-23'
     mileage: 124030
+  - date: '2025-02-25'
+    mileage: 140142
   - date: '2025-04-07'
     mileage: 140842
   - date: '2025-11-14'
@@ -33,6 +43,8 @@ entries:
     mileage: 149829
   - date: '2025-11-25'
     mileage: 150002
+  - date: '2025-12-09'
+    mileage: 151830
   - date: '2026-02-21'
     mileage: 153240
   - date: '2026-07-12'

@@ -1,4 +1,18 @@
 entries:
+  - date: '2023-06-19'
+    mileage: 116501
+    itemType: oil-change
+    description: >-
+      Worry Free Maintenance 2nd visit — full-service oil change (0W-20
+      synthetic, M967 filter) + tire rotation + MPI + car wash — Tim Dahle
+      Ford (RO #885408). Redeemed under an earlier WFM service contract
+      (contract exp 124,000 mi or 2024-04-27), no charge.
+    notes: >-
+      R/O #885408, advisor Kevin Vrooman. $0.00 (service contract). Invoice
+      notes the truck was "eligible for a new maintenance package at next
+      visit" — that new package was in fact bought 2024-03-06 below.
+    documents:
+      - 20230619-tim-dahle-wfm-visit2.pdf
   - date: '2024-02-19'
     mileage: 126947
     itemType: ''
@@ -7,10 +21,41 @@ entries:
       Date and invoice total confirmed from the Costco receipt (invoice
       #11180148520, $212.74 charged including a $15 core fee, refunded
       $16.12 the same day per the separate core-fee-refund slip — net cost
-      $196.62). Mileage estimated via interpolation between the 2023-08-02
-      (120,000 mi) and 2025-04-07 (141,180 mi) readings — treat as rough.
+      $196.62). Mileage estimated — well-supported by the confirmed
+      2024-03-06 reading of 127,215 mi (Tim Dahle RO #896515) just two and
+      a half weeks later, so ~126,947 on this date is a close estimate.
     documents:
       - 20240219-costco-battery-purchase.pdf
+  - date: '2024-03-06'
+    mileage: 127215
+    itemType: oil-change
+    description: >-
+      New "Worry Free Maintenance" package purchased and its 1st visit
+      redeemed (full-service oil change, 0W-20 full synthetic, M967 filter,
+      tire rotation, MPI) — Tim Dahle Ford (RO #896515).
+    notes: >-
+      $255.26 total: $225 for a 3-visit full-synthetic WFM package (+ $10
+      haz-mat, $2.75 data fee, $17.51 tax); the 1st oil-change/rotation
+      visit was redeemed against it the same day (card ending 3192, invoice
+      #896515). Declined the advisor's recommended add-ons: swollen lug
+      nuts, engine air filter, and front & rear brake pads + rotor
+      resurface. R/O #896515, advisor McKenna Chornia.
+    documents:
+      - 20240306-tim-dahle-wfm-package.pdf
+  - date: '2024-07-25'
+    mileage: 132260
+    itemType: oil-change
+    description: >-
+      Worry Free Maintenance 2nd visit — full-service oil change (0W-20
+      synthetic, M967 filter) + tire rotation + MPI — Tim Dahle Ford (RO
+      #902720). Redeemed under the WFM package bought 2024-03-06 above, no
+      charge.
+    notes: >-
+      R/O #902720, advisor Bernie Ure. $0.00 (service contract). Invoice
+      notes "eligible for new maintenance package at next visit," i.e. this
+      package's 3rd visit would be the last.
+    documents:
+      - 20240725-tim-dahle-wfm-visit2.pdf
   - date: '2024-05-15'
     mileage: 130000
     itemType: ''
