@@ -138,3 +138,15 @@ tasks:
     status: open
     createdDate: '2026-07-10'
     completedDate: null
+  - id: 7
+    title: 'Windshield paint/protection film (PPF), then heat-rejection window tint'
+    notes: >-
+      From Brady's Google Tasks list — PPF on the windshield first, then
+      a real heat-rejection tint (e.g. 3M Crystalline or XPEL Prime —
+      same options being researched for Draco) on this car, Hera, and
+      Draco. Zeus is excluded — being sold, no further investment beyond
+      needed repairs. One vendor call ("call the tint guys and get
+      pricing") covers pricing across all three cars.
+    status: open
+    createdDate: '2026-07-13'
+    completedDate: null

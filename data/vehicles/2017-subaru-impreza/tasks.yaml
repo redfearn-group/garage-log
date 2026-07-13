@@ -75,7 +75,12 @@ tasks:
     completedDate: null
   - id: 9
     title: 'Research window tint costs (3M Crystalline or XPEL Prime)'
-    notes: From Brady's Google Tasks list — researching high-heat-rejection window tint options for this car specifically.
+    notes: >-
+      From Brady's Google Tasks list — researching high-heat-rejection
+      window tint options for this car specifically. Part of a combined
+      tint plan with Lexus (PPF + tint) and Hera (tint) — one vendor call
+      ("call the tint guys and get pricing") covers pricing across all
+      three cars. Zeus excluded.
     status: open
     createdDate: '2026-07-13'
     completedDate: null
