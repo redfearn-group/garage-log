@@ -134,8 +134,12 @@ tasks:
     createdDate: '2026-07-11'
     completedDate: null
   - id: 11
-    title: 'Inner fender liner deteriorating — eventual replacement, not urgent'
-    notes: Noted during a May 2024 DIY maintenance pass as slowly falling apart. Brady is aware and watching it rather than fixing immediately.
+    title: 'Inner fender liner deteriorating (passenger side) — eventual replacement, not urgent'
+    notes: >-
+      Noted during a May 2024 DIY maintenance pass as slowly falling
+      apart; side confirmed as passenger-side via Brady's Google Tasks
+      list. Brady is aware and watching it rather than fixing
+      immediately.
     status: open
     createdDate: '2026-07-13'
     completedDate: null
@@ -154,6 +158,71 @@ tasks:
       the product is sold with. File a claim with Cerakote for a
       replacement/re-application kit. Find the original order/receipt
       (Amazon or Cerakote direct) for proof of purchase before filing.
+    status: open
+    createdDate: '2026-07-13'
+    completedDate: null
+  - id: 14
+    title: Adjust small screen from flexing
+    notes: From Brady's Google Tasks list — an in-dash small screen (likely a phone mount or aftermarket display) flexes and needs adjustment. No further detail yet.
+    status: open
+    createdDate: '2026-07-13'
+    completedDate: null
+  - id: 15
+    title: Route charging cord through dash
+    notes: From Brady's Google Tasks list (listed twice, once under a "Hera" typo as "Hero" — treated as the same item).
+    status: open
+    createdDate: '2026-07-13'
+    completedDate: null
+  - id: 16
+    title: Replace drip moulding
+    notes: From Brady's Google Tasks list — no further detail on location (door/roof) yet.
+    status: open
+    createdDate: '2026-07-13'
+    completedDate: null
+  - id: 17
+    title: Window tint job
+    notes: From Brady's Google Tasks list. No further detail yet — pricing/vendor still to be researched (see the linked "call the tint guys" task).
+    status: open
+    createdDate: '2026-07-13'
+    completedDate: null
+  - id: 18
+    title: Wire in the cigarette lighter or USB ports to the new stereo
+    notes: From Brady's Google Tasks list — implies an aftermarket stereo was installed and power/USB wiring for it still needs to be finished.
+    status: open
+    createdDate: '2026-07-13'
+    completedDate: null
+  - id: 19
+    title: Roof rail bolt covers
+    notes: From Brady's Google Tasks list — missing or damaged roof rail bolt covers, cosmetic.
+    status: open
+    createdDate: '2026-07-13'
+    completedDate: null
+  - id: 20
+    title: Figure out what's blowing around on driver-side front fender
+    notes: From Brady's Google Tasks list — a noise/rattle diagnostic, not yet identified or fixed.
+    status: open
+    createdDate: '2026-07-13'
+    completedDate: null
+  - id: 21
+    title: Emergency brake
+    notes: >-
+      From Brady's Google Tasks list, still open as of 2026-07-13 despite
+      an "e-brake adjustment" already logged as done in the May 2024
+      maintenance pass (see maintenance-log.yaml) — may need
+      re-adjustment or be a different/recurring issue. Worth confirming
+      with Brady what specifically isn't right about it before assuming
+      it just needs the same adjustment again.
+    status: open
+    createdDate: '2026-07-13'
+    completedDate: null
+  - id: 22
+    title: 'AT205 Reseal treatment for all rubber bushings (shared with Zeus)'
+    notes: >-
+      From Brady's Google Tasks list, listed for both Hera and Zeus. AT205
+      Re-Seal is a rubber conditioner additive/treatment marketed to
+      revive hardened seals and bushings. Given the age-based rubber
+      concerns already flagged for this vehicle, worth doing as a
+      proactive, low-cost treatment.
     status: open
     createdDate: '2026-07-13'
     completedDate: null
