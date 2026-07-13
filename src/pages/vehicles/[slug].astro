@@ -183,10 +183,11 @@ if (points.length > 1) {
   </table>
 
   <h3 class="section-title">Documents</h3>
+  <p class="muted" style="font-size:0.85rem;">🔒 Source files are kept in a private repo — only the summary below is public.</p>
   <ul class="pill-list">
     {vehicle.documents.map((doc) => (
       <li>
-        <a href={withBase(`/uploads/${vehicle.slug}/${doc.category}/${doc.filename}`)} target="_blank">{doc.filename}</a>
+        <span>{doc.filename}</span>
         <span class="muted"> — {doc.category}, added {doc.dateAdded}</span>
         {doc.description && <div class="muted" style="font-size:0.85rem;">{doc.description}</div>}
       </li>

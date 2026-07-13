@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import {
   DATA_DIR,
-  UPLOADS_DIR,
+  PRIVATE_UPLOADS_DIR,
   vehicleDir,
   getVehicleSummaries,
   saveVehicleSummaries,
@@ -239,7 +239,7 @@ app.get("/vehicles/:slug", requireVehicle, (req, res) => {
 
     <fieldset>
       <legend>Upload document</legend>
-      <p class="muted">⚠️ Uploaded files are committed to the public repo and are visible to anyone. Don't upload anything containing door/lock codes, account numbers, or other private info — use "Private notes" below for that instead.</p>
+      <p class="muted">🔒 Uploaded files are stored in the private <code>garage-log-private</code> repo, not the public site — only a filename/category/date summary appears publicly. Still avoid door/lock codes; use "Private notes" below for those (no online backup at all).</p>
       <form method="post" action="/vehicles/${slug}/documents" enctype="multipart/form-data">
         <label>File *<input name="file" type="file" required /></label>
         <label>Category *
@@ -249,6 +249,8 @@ app.get("/vehicles/:slug", requireVehicle, (req, res) => {
             <option value="previous-owner-info">Previous owner info</option>
             <option value="registration">Registration</option>
             <option value="insurance">Insurance</option>
+            <option value="warranty">Warranty</option>
+            <option value="repair-invoice">Repair invoice</option>
             <option value="other">Other</option>
           </select>
         </label>
@@ -498,7 +500,7 @@ app.post("/vehicles/:slug/documents", requireVehicle, upload.single("file"), (re
   const categorySlug = slugify(category || "other");
   const safeName = req.file.originalname.replace(/[^a-zA-Z0-9._-]+/g, "-");
   const filename = `${Date.now()}-${safeName}`;
-  const dest = path.join(UPLOADS_DIR, slug, categorySlug);
+  const dest = path.join(PRIVATE_UPLOADS_DIR, slug, categorySlug);
   fs.mkdirSync(dest, { recursive: true });
   fs.writeFileSync(path.join(dest, filename), req.file.buffer);
 

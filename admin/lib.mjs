@@ -4,8 +4,14 @@ import * as yaml from "js-yaml";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 export const DATA_DIR = path.join(ROOT, "data");
-export const UPLOADS_DIR = path.join(ROOT, "public", "uploads");
 export const VEHICLES_INDEX = path.join(DATA_DIR, "vehicles.yaml");
+
+// All uploaded documents live in the sibling private repo, never in this
+// (public) one — see garage-log-private/README.md. The public site only
+// ever renders document metadata (filename/category/date/description),
+// never the file itself.
+export const PRIVATE_REPO_DIR = path.join(ROOT, "..", "garage-log-private");
+export const PRIVATE_UPLOADS_DIR = path.join(PRIVATE_REPO_DIR, "documents");
 
 export function readYaml(filePath, fallback) {
   if (!fs.existsSync(filePath)) return fallback;
