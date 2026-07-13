@@ -7,3 +7,15 @@ documents:
       Covers the seat heat/AC (SCME connector) repair — done DIY beforehand,
       see maintenance-log.yaml — plus a pending pre-sale service list, see
       tasks.yaml.
+  - filename: carchex-quick-reference-card.jpg
+    category: warranty
+    dateAdded: '2026-07-13'
+    description: Carchex "Ultimate Direct" extended warranty quick-reference card. See admin-dates.yaml — this warranty has since expired.
+  - filename: carchex-warranty-confirmation-2022-05-11.pdf
+    category: warranty
+    dateAdded: '2026-07-13'
+    description: Carchex extended warranty full purchase/coverage confirmation, purchased 2022-05-11. See admin-dates.yaml — this warranty has since expired.
+  - filename: allegiance-ultimate-direct-sample-contract-terms.pdf
+    category: warranty
+    dateAdded: '2026-07-13'
+    description: Generic sample contract (no personal info) showing the full terms/exclusions of the Allegiance "Ultimate Direct" plan Zeus's Carchex warranty was administered under.

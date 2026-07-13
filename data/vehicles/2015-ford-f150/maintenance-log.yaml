@@ -53,5 +53,8 @@ entries:
       spare parts (SCME computer + dongle) from the dealer after the DIY
       fix was already done, not a separate repair event. Mileage
       interpolated between the 2025-11-25 (150,002 mi) and 2026-02-21
-      (153,240 mi) readings — an estimate, not an exact reading.
-    documents: []
+      (153,240 mi) readings — an estimate, not an exact reading. Note:
+      the Carchex extended warranty (see admin-dates.yaml) was borderline
+      still active at this mileage (expired at 152,412 mi / 2026-05-11)
+      — a claim might have covered this repair for a $100 deductible, but
+      it wasn't filed; DIY was already done before this was noticed.
