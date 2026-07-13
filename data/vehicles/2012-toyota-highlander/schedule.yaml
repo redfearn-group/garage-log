@@ -8,6 +8,10 @@ items:
     name: Oil change (5W-30 — confirm exact grade/interval in owner's manual, not independently confirmed)
     intervalMiles: 5000
     intervalMonths: 6
+  - itemType: tire-rotation
+    name: Tire rotation
+    intervalMiles: 5000
+    intervalMonths: 6
   - itemType: rear-diff-transfer-case
     name: Rear differential & transfer case inspection + driveshaft bolt re-torque
     intervalMiles: 15000
