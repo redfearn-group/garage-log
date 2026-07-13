@@ -1,4 +1,37 @@
 documents:
+  - filename: 20260313-carnova-suby-purchase-docs.pdf
+    category: registration
+    dateAdded: '2026-07-14'
+    description: >-
+      Original purchase paperwork from Carnova LLC (Midvale, UT), dealer
+      #317B, stock #617577, 2026-03-13: Utah Transaction Disclosure Form
+      (TC-466), Buyer's Order, downpayment receipt ($1,000 non-refundable),
+      and Buyers Guide (AS IS — no dealer warranty). Odometer reading at
+      sale: 133,173 mi — see the previousOwner note in vehicles.yaml for
+      the mileage correction this confirms.
+  - filename: 20260405-autozone-valve-cover-gasket-purchase.pdf
+    category: repair-invoice
+    dateAdded: '2026-07-14'
+    description: >-
+      AutoZone #886 (Spanish Fork), 2026-04-05, two BECK/ARNLEY valve
+      cover gasket sets (#036-2073, #036-2074), $64.45. Arrived too late
+      to use — see the return receipt below. The gaskets actually
+      installed came from Amazon (documentation pending).
+  - filename: 20260501-autozone-valve-cover-gasket-return.pdf
+    category: repair-invoice
+    dateAdded: '2026-07-14'
+    description: >-
+      Full return of the 2026-04-05 AutoZone valve cover gasket order
+      (both sets, $64.45) on 2026-05-01 — the parts arrived too late for
+      the April service, so Brady sourced the actual gaskets from Amazon
+      instead.
+  - filename: 20260409-oreilly-throttle-body-gasket.pdf
+    category: repair-invoice
+    dateAdded: '2026-07-14'
+    description: >-
+      O'Reilly Auto Parts (Spanish Fork), 2026-04-09, Fel-Pro throttle
+      body mounting gasket (#61733), $17.18, picked up in-store. Still
+      uninstalled as of 2026-07-14 — see the open throttle body task.
   - filename: dealership-listing-photo-1.jpg through dealership-listing-photo-11.jpg
     category: previous-owner-info
     dateAdded: '2026-07-13'

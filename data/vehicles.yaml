@@ -85,10 +85,16 @@ vehicles:
     trim: Premium Sedan AWD, FB20 2.0L, TR580 Lineartronic CVT
     vin: [VIN-REDACTED]
     licensePlate: '[PLATE-REDACTED]'
+    purchaseDate: '2026-03-13'
     previousOwner: >-
-      Earliest known mileage (133,254 on 2026-03-13) is from the dealer's
-      online listing photo, not a reading Brady took himself — actual
-      mileage on the day of purchase was somewhat higher than that,
-      exact figure unknown.
+      Purchased from Carnova LLC (Midvale, UT), dealer #317B, stock
+      #617577, 2026-03-13. Odometer at sale: 133,173 mi — confirmed by
+      two signed documents (Buyer's Order, downpayment receipt), which
+      corrects the earlier 133,254 figure that came from the dealer's
+      online listing photo (an estimate, not an actual reading). Color:
+      Gray. Sold AS-IS, no dealer warranty. Deal terms: $8,496.39
+      negotiated price, $10,000 total with tax/fees, $1,000 non-refundable
+      down payment (card), remaining $9,000 financed independently by
+      Brady (not arranged through the dealer).
     status: active
     photo: null
