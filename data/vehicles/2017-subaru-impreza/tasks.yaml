@@ -1,12 +1,14 @@
 tasks:
   - id: 1
-    title: Rear & center differential fluid — identify correct spec before servicing
+    title: Front & rear differential fluid — fluid already on hand, just needs the swap
     notes: >-
       Subaru lists three non-interchangeable gear oils (Extra MT 75W80,
       High Performance 75W90, and 80W90 LSD) with no single confirmed
       answer for which applies to this exact AWD Impreza's rear
-      differential. Verify by VIN at a dealer parts counter before buying
-      — do not guess between the three.
+      differential — originally flagged to verify by VIN before buying.
+      Brady has since acquired the fluid for both the front and rear
+      differentials (as of the April 2026 post-purchase checklist) — just
+      needs to actually do the fluid swap on both.
     status: open
     createdDate: '2026-07-11'
     completedDate: null
@@ -21,10 +23,12 @@ tasks:
     completedDate: null
   - id: 3
     title: 12V battery load test
-    notes: Regardless of apparent starting performance — batteries can fail with little warning.
-    status: open
+    notes: >-
+      Done — tested good out of the car, terminals/battery cleaned, as
+      part of the April 2026 post-purchase checklist (~134,783 mi).
+    status: done
     createdDate: '2026-07-11'
-    completedDate: null
+    completedDate: '2026-04-08'
   - id: 4
     title: Brake pad/rotor measurement at all four corners
     notes: Record the exact numbers for reference.
@@ -89,4 +93,66 @@ tasks:
     notes: From Brady's Google Tasks list — a suspected loose/rattling heat shield, not yet confirmed or fixed.
     status: open
     createdDate: '2026-07-13'
+    completedDate: null
+  - id: 11
+    title: CVT fluid drain & fill — Subaru CVTF-II, fluid already on hand
+    notes: >-
+      From the April 2026 post-purchase checklist (~134,783 mi) — fluid
+      acquired, just needs to actually be done. Per schedule.yaml: must be
+      genuine CVTF-II (green, SOA427V1660/SOA427V1610) — NEVER the orange
+      High Torque CVTF, which is chemically different and a documented
+      cause of CVT damage on the wrong platform. Confirm the bottle before
+      pouring.
+    status: open
+    createdDate: '2026-07-14'
+    completedDate: null
+  - id: 12
+    title: Install seat covers — already purchased, not yet installed
+    notes: From the April 2026 post-purchase checklist. Same pattern as Zeus — bought, just needs the install.
+    status: open
+    createdDate: '2026-07-14'
+    completedDate: null
+  - id: 13
+    title: Throttle body clean & gasket replacement
+    notes: Still pending as of the April 2026 post-purchase checklist.
+    status: open
+    createdDate: '2026-07-14'
+    completedDate: null
+  - id: 14
+    title: Hood prop rod — have a spare, wrong size
+    notes: >-
+      Brady has a prop rod for the car already but it's the wrong size —
+      deferred at the April 2026 service since it's a nice-to-have, not a
+      need-to-have.
+    status: open
+    createdDate: '2026-07-14'
+    completedDate: null
+  - id: 15
+    title: Confirm/redo Bernie's oil system cleaner treatment
+    notes: >-
+      Brady isn't certain whether Bernie's oil system cleaner was run
+      during the April 2026 post-purchase service (fairly confident the
+      AutoZone fuel system cleaner was done, less sure about Bernie's).
+      He does this annually each spring across all his vehicles — worth
+      confirming or just redoing at the next spring pass.
+    status: open
+    createdDate: '2026-07-14'
+    completedDate: null
+  - id: 16
+    title: Fix USB port inside the car
+    notes: No further detail yet on what's wrong with it.
+    status: open
+    createdDate: '2026-07-14'
+    completedDate: null
+  - id: 17
+    title: Fix seatbelt latch
+    notes: No further detail yet on which seatbelt or what's wrong with the latch.
+    status: open
+    createdDate: '2026-07-14'
+    completedDate: null
+  - id: 18
+    title: Fix radio/infotainment screen
+    notes: No further detail yet on the specific issue.
+    status: open
+    createdDate: '2026-07-14'
     completedDate: null

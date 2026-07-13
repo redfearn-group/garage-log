@@ -75,3 +75,24 @@ entries:
       between the 2025-09-09 (147,713 mi) and 2025-12-30 (153,008 mi)
       readings.
     documents: []
+  - date: '2025-09-08'
+    mileage: 147713
+    itemType: ''
+    description: >-
+      Rear brake pads inspected — found to have remaining life, not
+      replaced. New pads purchased as spares for a future job. Brake
+      fluid noted as needing a change (coolant checked OK at the same
+      time) — see the open brake fluid flush task.
+    notes: >-
+      Mileage taken from the closest confirmed odometer reading
+      (2025-09-09, one day after this note).
+    documents: []
+  - date: '2026-05-25'
+    mileage: 158643
+    itemType: ''
+    description: Rear brake rotors replaced — DIY (pads left in place, still had life per the Sept 2025 inspection)
+    notes: >-
+      Date is Brady's estimate ("probably Memorial Day weekend" 2026).
+      Mileage interpolated between the 2026-02-21 (155,252 mi) and
+      2026-07-11 (160,357 mi) readings — treat as rough.
+    documents: []

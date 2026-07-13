@@ -1,1 +1,33 @@
-entries: []
+entries:
+  - date: '2026-04-08'
+    mileage: 134783
+    itemType: ''
+    description: >-
+      Post-purchase inspection & DIY service — valve cover gaskets and
+      spark plug tubes replaced, PCV valve replaced, MAF sensor cleaned,
+      12V battery load-tested (good) and terminals cleaned, coolant
+      topped off slightly (Subaru Blue — has held level since), tried
+      aftermarket headlight bulbs (poor quality, reverted to factory
+      bulbs), likely ran an AutoZone fuel system cleaner (not fully
+      certain, uncertain whether Bernie's oil system cleaner was also
+      run this session)
+    notes: >-
+      Brady recalls doing this work 03-05 April 2026, shortly after
+      buying the car; using 04-08 since that's the date with a confirmed
+      odometer photo (134,783 mi) in the same window. Tires/wheels,
+      engine air filter, and cabin air filter were all brand new at
+      purchase — inspected and confirmed good, no action needed on those
+      this session. Brake fluid also inspected and tested good.
+    documents: []
+  - date: '2026-04-08'
+    mileage: 134783
+    itemType: oil-change
+    description: Oil & filter changed — DIY, same session as the valve cover gasket job
+    notes: Oil/color had been good since the dealer replaced it right before purchase; this is the first change under Brady's ownership.
+    documents: []
+  - date: '2026-04-08'
+    mileage: 134783
+    itemType: spark-plugs
+    description: Spark plugs replaced — DIY, same session as the valve cover gasket job
+    notes: ''
+    documents: []
