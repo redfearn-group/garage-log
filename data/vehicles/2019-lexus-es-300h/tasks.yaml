@@ -4,18 +4,19 @@ tasks:
     notes: >-
       Factory spec is "lifetime" with no set interval, but a proactive
       change at 100-120K miles is well-documented practice on this
-      platform. Drain and fill only, no flush. Car is at 106,862 mi with
-      unknown prior service — good window to do this now.
+      platform. Drain and fill only, no flush. Car was purchased at
+      106,926 mi with unknown prior service (now at 110,834 mi as of
+      2026-07-12) — good window to do this now.
     status: open
     createdDate: '2026-07-09'
     completedDate: null
   - id: 2
     title: Inspect serpentine/accessory drive belt
     notes: >-
-      At 106,862 miles the belt is approaching typical replacement
-      territory. Check for cracking, fraying, glazing, or missing ribs;
-      replace immediately if cracked, otherwise plan proactive replacement
-      before 130K.
+      Purchased at 106,926 miles, now at 110,834 mi as of 2026-07-12 —
+      approaching typical replacement territory. Check for cracking,
+      fraying, glazing, or missing ribs; replace immediately if cracked,
+      otherwise plan proactive replacement before 130K.
     status: open
     createdDate: '2026-07-09'
     completedDate: null
