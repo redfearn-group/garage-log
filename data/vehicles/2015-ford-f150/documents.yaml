@@ -48,6 +48,17 @@ documents:
     category: warranty
     dateAdded: '2026-07-13'
     description: Carchex extended warranty full purchase/coverage confirmation, purchased 2022-05-11. See admin-dates.yaml — this warranty has since expired.
+  - filename: 20220511-carchex-plan-details.pdf
+    category: warranty
+    dateAdded: '2026-07-14'
+    description: >-
+      CARCHEX "My Selected Plans" account page for contract #UDA1001522 —
+      full purchase details (deductible, limit of liability, waiting
+      period, financing schedule). See admin-dates.yaml for the summary.
+  - filename: 20220512-carchex-order-confirmation-email.pdf
+    category: warranty
+    dateAdded: '2026-07-14'
+    description: CARCHEX order confirmation email, 2022-05-12, for the same Ultimate Direct contract #UDA1001522.
   - filename: allegiance-ultimate-direct-sample-contract-terms.pdf
     category: warranty
     dateAdded: '2026-07-13'
