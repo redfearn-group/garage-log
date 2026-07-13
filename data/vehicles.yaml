@@ -71,10 +71,25 @@ vehicles:
     vin: [VIN-REDACTED]
     licensePlate: '[PLATE-REDACTED]'
     tireSize: P245/65R17
+    purchaseDate: '2019-05-25'
     previousOwner: >-
-      Load-carrying-capacity label notes an aftermarket modification (e.g.
-      hitch/rack) reduced original capacity by 11 kg / 25 lbs — cause not
-      yet identified, worth a look during the physical inspection.
+      Purchased from Patriot Motors LLC (American Fork, UT), [deal # in private.yaml],
+      [stock # in private.yaml], 2019-05-25. Odometer at sale: 88,289 mi — confirmed by
+      two signed documents (Utah TC-891 odometer disclosure statement and
+      the title reassignment), which corrects the earlier 88,336 estimate
+      in the mileage log. Color: Sizzling Crimson Mica. Cash price [price in private.yaml],
+      total selling price [price in private.yaml] after a [doc fee in private.yaml] plus Utah
+      taxes/fees, minus a [deposit in private.yaml] — [amount in private.yaml] financed through
+      [lender in private.yaml] at [APR in private.yaml] over [term in private.yaml] of
+      [payment in private.yaml] (total of payments [amount in private.yaml]). Sold AS-IS; a dealer limited
+      warranty covering internally lubricated engine/transmission/transfer
+      case/differential parts plus water pump, thermostat, and fuel pump
+      applied for only 7 days/500 miles (long since expired) — an optional
+      extended service contract was offered and explicitly waived (signed
+      Waiver of Service Contract on file). Load-carrying-capacity label
+      notes an aftermarket modification (e.g. hitch/rack) reduced original
+      capacity by 11 kg / 25 lbs — cause not yet identified, worth a look
+      during the physical inspection.
     status: active
     photo: null
   - slug: 2017-subaru-impreza
