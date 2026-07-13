@@ -61,3 +61,20 @@ entries:
       This also answers the "18 or 19 bolt pan? What's the model?" open
       question from Brady's original May 2024 to-do notes.
     documents: []
+  - date: '2025-11-15'
+    mileage: 150880
+    itemType: ''
+    description: 'Professional detail — cosmetic touch-up after being sideswiped (structural/panel repair deferred)'
+    notes: >-
+      Brady's wife was sideswiped in November 2025. Full body/structural
+      repair wasn't affordable at the time, so the damaged side was
+      professionally detailed instead to look presentable — this is a
+      cosmetic fix only, not an actual repair of the underlying damage.
+      Real repair is still outstanding — see the related open task. Date
+      and mileage are estimated (exact day not recorded) — interpolated
+      between the 2025-09-09 (147,713 mi) and 2025-12-30 (153,008 mi)
+      readings. Likely explains the multiple warning lights (battery,
+      check engine, brake) seen in the 2025-12-30 dashboard photo —
+      consistent with electrical/sensor damage from the collision rather
+      than a separate unrelated event.
+    documents: []
