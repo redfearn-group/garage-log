@@ -16,3 +16,23 @@ tasks:
     status: open
     createdDate: '2026-07-10'
     completedDate: null
+  - id: 2
+    title: 'Recurring check engine light across years — possibly connected to the open recall (task #1)'
+    notes: >-
+      Reviewing dashboard photos across the full mileage history: the
+      check engine light is lit in multiple photos spanning 2020-01-23
+      (73,512 mi), 2025-04-07 (140,842 mi), 2025-11-25 (150,002 mi), and
+      2026-02-21 (153,240 mi) — recurring over 6 years, not a one-time
+      fluke. Worth cross-referencing with task #1: recall 26V237's own
+      description says the transmission fault "may cause a malfunction
+      indicator lamp (MIL) and/or powertrain warning lamp wrench symbol"
+      to appear before an unintended downshift — so this recurring CEL
+      history could actually be evidence of this exact fault happening
+      repeatedly over years, not a separate unrelated issue. When the
+      dealer does the recall fix, ask them to pull stored/historical DTCs
+      first if possible, rather than just clearing the current code — it
+      may confirm (or rule out) that connection. Given the truck is being
+      sold, worth resolving and understanding before the sale either way.
+    status: open
+    createdDate: '2026-07-11'
+    completedDate: null

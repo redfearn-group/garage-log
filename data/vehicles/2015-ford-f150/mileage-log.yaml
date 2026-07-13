@@ -1,1 +1,23 @@
-entries: []
+entries:
+  - date: '2018-12-08'
+    mileage: 51736
+  - date: '2019-01-16'
+    mileage: 54742
+  - date: '2020-01-23'
+    mileage: 73512
+  - date: '2022-11-28'
+    mileage: 111111
+  - date: '2023-02-20'
+    mileage: 114560
+  - date: '2023-02-25'
+    mileage: 114837
+  - date: '2024-01-23'
+    mileage: 124030
+  - date: '2025-04-07'
+    mileage: 140842
+  - date: '2025-11-14'
+    mileage: 149366
+  - date: '2025-11-25'
+    mileage: 150002
+  - date: '2026-02-21'
+    mileage: 153240
