@@ -78,3 +78,15 @@ tasks:
     status: open
     createdDate: '2026-07-13'
     completedDate: null
+  - id: 8
+    title: Install new driver's seat cover — before selling
+    notes: New seat cover already purchased, just needs to be installed. Do before the sale.
+    status: open
+    createdDate: '2026-07-14'
+    completedDate: null
+  - id: 9
+    title: Replace buckle kit for the bed cover
+    notes: Bed/tonneau cover buckle kit needs replacing.
+    status: open
+    createdDate: '2026-07-14'
+    completedDate: null
