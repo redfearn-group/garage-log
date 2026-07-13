@@ -1,1 +1,9 @@
-documents: []
+documents:
+  - filename: 20260109-tim-dahle-ford-estimate.png
+    category: repair-invoice
+    dateAdded: '2026-07-13'
+    description: >-
+      Tim Dahle Ford multi-point inspection & repair estimate, 2026-01-09.
+      Covers the seat heat/AC (SCME connector) repair — done DIY beforehand,
+      see maintenance-log.yaml — plus a pending pre-sale service list, see
+      tasks.yaml.
