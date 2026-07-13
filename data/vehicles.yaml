@@ -71,10 +71,25 @@ vehicles:
     vin: [VIN-REDACTED]
     licensePlate: '[PLATE-REDACTED]'
     tireSize: P245/65R17
+    purchaseDate: '2019-05-25'
     previousOwner: >-
-      Load-carrying-capacity label notes an aftermarket modification (e.g.
-      hitch/rack) reduced original capacity by 11 kg / 25 lbs — cause not
-      yet identified, worth a look during the physical inspection.
+      Purchased from Patriot Motors LLC (American Fork, UT), deal #6855817,
+      stock #4044, 2019-05-25. Odometer at sale: 88,289 mi — confirmed by
+      two signed documents (Utah TC-891 odometer disclosure statement and
+      the title reassignment), which corrects the earlier 88,336 estimate
+      in the mileage log. Color: Sizzling Crimson Mica. Cash price $15,995,
+      total selling price $17,852.57 after a $399 dealer doc fee plus Utah
+      taxes/fees, minus a $100 cash deposit — $17,752.57 financed through
+      Utah Community Credit Union at 4.49% APR over 72 monthly payments of
+      $281.72 (total of payments $20,283.84). Sold AS-IS; a dealer limited
+      warranty covering internally lubricated engine/transmission/transfer
+      case/differential parts plus water pump, thermostat, and fuel pump
+      applied for only 7 days/500 miles (long since expired) — an optional
+      extended service contract was offered and explicitly waived (signed
+      Waiver of Service Contract on file). Load-carrying-capacity label
+      notes an aftermarket modification (e.g. hitch/rack) reduced original
+      capacity by 11 kg / 25 lbs — cause not yet identified, worth a look
+      during the physical inspection.
     status: active
     photo: null
   - slug: 2017-subaru-impreza

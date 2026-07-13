@@ -1,4 +1,19 @@
 documents:
+  - filename: 20190525-patriot-motors-purchase-docs.pdf
+    category: registration
+    dateAdded: '2026-07-14'
+    description: >-
+      Original purchase paperwork from Patriot Motors LLC (American Fork,
+      UT), deal #6855817, stock #4044, 2019-05-25: Retail Purchase
+      Agreement, Retail Installment Contract & Security Agreement (financed
+      through Utah Community Credit Union), Utah odometer disclosure
+      statement (TC-891) and title reassignment, Buyers Guide, Waiver of
+      Service Contract, Agreement to Provide Insurance, Vehicle Application
+      for Utah Title (TC-656), privacy notice, and credit application.
+      Odometer reading at sale: 88,289 mi — see the previousOwner note in
+      vehicles.yaml for the mileage correction this confirms. Contains
+      Brady's SSN and a photocopy of his driver's license (credit
+      application pages) — sensitive, private-repo only.
   - filename: 20240219-costco-battery-purchase.pdf
     category: repair-invoice
     dateAdded: '2026-07-14'
