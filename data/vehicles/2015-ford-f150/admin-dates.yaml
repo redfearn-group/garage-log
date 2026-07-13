@@ -1,1 +1,18 @@
-dates: []
+dates:
+  - type: extended-warranty
+    label: 'Carchex "Ultimate Direct" extended warranty — EXPIRED'
+    dueDate: '2026-05-11'
+    notes: >-
+      Contract #UDA1001522, administered by Allegiance (claims
+      1-877-356-1500, roadside 1-866-994-4667), purchased 2022-05-11 for
+      $3,882.45. 48 months / 48,000 miles from a starting odometer of
+      104,412 mi — expired at whichever came first: 2026-05-11 or
+      152,412 mi. Current mileage (155,407.7 as of 2026-07-12) is already
+      past the mileage cutoff, and the date cutoff has also passed — this
+      warranty is no longer active. $100 deductible while it was active.
+      Broad "Supreme" mechanical/electrical breakdown coverage, but
+      routine maintenance (fluids, filters, coolant, diff/transmission
+      service) was excluded unless required by an actual breakdown — so
+      it would not have covered the pre-sale service items in task #3
+      even while active. Sample contract terms filed privately at
+      2015-ford-f150/warranty/allegiance-ultimate-direct-sample-contract-terms.pdf.

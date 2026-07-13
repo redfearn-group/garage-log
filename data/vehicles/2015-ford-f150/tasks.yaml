@@ -48,7 +48,10 @@ tasks:
       None of these were approved/done as of that estimate — Brady wants
       to get all of them done in 2026 before selling the truck, to
       maximize resale value. Can be split into separate visits/DIY jobs
-      rather than done as one dealer visit at full estimate price.
+      rather than done as one dealer visit at full estimate price. All
+      out of pocket — the Carchex extended warranty (see admin-dates.yaml)
+      has expired both by date and mileage, and even while active it
+      excluded routine maintenance/fluid services like these.
     status: open
     createdDate: '2026-07-13'
     completedDate: null
