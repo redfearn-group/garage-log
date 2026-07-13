@@ -61,3 +61,15 @@ tasks:
     status: open
     createdDate: '2026-07-11'
     completedDate: null
+  - id: 8
+    title: 'Check engine light + traction control light on as of 2026-07-12 (140,837 mi)'
+    notes: >-
+      Today's odometer photo (140,837 mi) shows the CHECK ENGINE light and
+      the amber traction-control-off icon both lit, plus a red BRAKE
+      indicator and seatbelt icon (likely just parking-brake-engaged/seatbelt
+      reminders while parked in P, not necessarily faults). Worth pulling
+      codes with an OBD-II reader before doing anything else — no other
+      symptoms reported yet.
+    status: open
+    createdDate: '2026-07-12'
+    completedDate: null
