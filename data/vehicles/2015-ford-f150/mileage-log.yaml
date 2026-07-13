@@ -11,12 +11,18 @@ entries:
     mileage: 71882
   - date: '2020-01-23'
     mileage: 73512
+  - date: '2020-08-12'
+    mileage: 81599
+  - date: '2022-09-12'
+    mileage: 107172
   - date: '2022-11-28'
     mileage: 111111
   - date: '2023-02-20'
     mileage: 114560
   - date: '2023-02-25'
     mileage: 114837
+  - date: '2023-12-27'
+    mileage: 124020
   - date: '2024-01-23'
     mileage: 124030
   - date: '2025-04-07'

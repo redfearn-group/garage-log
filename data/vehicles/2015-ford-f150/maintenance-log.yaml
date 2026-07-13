@@ -17,6 +17,164 @@ entries:
     notes: Invoice #1015365.
     documents:
       - 20191209-discounttire-rotation.pdf
+  - date: '2020-08-12'
+    mileage: 81599
+    itemType: oil-change
+    description: >-
+      Oil & filter changed (Motorcraft 5W-30 SN SNP, FL-500S filter) — Tim
+      Dahle Ford, 1st of 3 visits under a "Worry Free Maintenance" package
+      ($129.95 for 3 full-service oil changes + 3 courtesy tire rotations +
+      MPI inspections each visit, purchased same day).
+    notes: >-
+      R/O #846304/1, tech Braedan Buchanan. No record of the other 2
+      package visits ever being used in later history — likely lapsed.
+    documents:
+      - 20200812-tim-dahle-worry-free-maintenance.pdf
+  - date: '2020-08-12'
+    mileage: 81599
+    itemType: tire-rotation
+    description: Tire rotation — Tim Dahle Ford, same Worry Free Maintenance package visit, no charge.
+    notes: R/O #846304/1.
+    documents:
+      - 20200812-tim-dahle-worry-free-maintenance.pdf
+  - date: '2020-08-12'
+    mileage: 81599
+    itemType: multi-point-inspection
+    description: Complete multi-point inspection — Tim Dahle Ford, no charge, part of the Worry Free Maintenance package.
+    notes: >-
+      Findings: engine air filter noted as aftermarket; tire tread 4/32 on
+      front axle vs 8/32 on rear — makes sense since the newer Michelins
+      bought 2018-12-10 went on the front but were free-rotated to the rear
+      2019-12-09, leaving the older/original tires up front by this visit.
+      Advisor also flagged the front (timing) cover "starting to leak" and
+      a "transpan leak / oil pan leak" — these weren't actually repaired
+      until the 2022-09-12 Clegg Auto visit (oil pan gasket + rear pinion
+      seal) below, roughly 2 years later.
+    documents:
+      - 20200812-tim-dahle-worry-free-maintenance.pdf
+  - date: '2020-08-12'
+    mileage: 81599
+    itemType: battery-test
+    description: Battery tested — Tim Dahle Ford, 655 CCA actual vs 610 CCA factory spec, good condition, no leaks/damage.
+    notes: R/O #846304/1.
+    documents:
+      - 20200812-tim-dahle-worry-free-maintenance.pdf
+  - date: '2022-09-12'
+    mileage: 107172
+    itemType: ''
+    description: >-
+      Rear differential pinion seal replaced, engine oil pan gasket
+      replaced, and differential cover reseal — Clegg Auto Spanish Fork
+      (RO #204446). Customer concerns: engine oil leak and rear pinion
+      seal leak (first noted at the 2020-08-12 Tim Dahle inspection above).
+    notes: >-
+      Warranty claim filed against the Carchex/Allegiance extended
+      warranty (claim #J22-79200, see admin-dates.yaml) — warranty covered
+      $998.01, Brady's actual out-of-pocket cost was $351.52 (reconciled
+      from the invoice's $1,369.73 charge followed by a $1,018.21 refund).
+      Steam-clean dye tracer testing ($107.20) found two separate leaks:
+      rear pinion seal and oil pan gasket, with a chance it could also be
+      the rear main seal. Engine air filter replacement was recommended
+      again and declined again (Brady prefers his aftermarket filter).
+    documents:
+      - 20220912-clegg-auto-pinion-seal-oil-pan-repair.pdf
+  - date: '2023-12-27'
+    mileage: 124020
+    itemType: ''
+    description: >-
+      Exhaust manifold diagnosis (NOT repaired) — Tim Dahle Ford (RO
+      #893785/1). Whistle noise under acceleration diagnosed as both rear
+      exhaust manifolds warped and leaking, with a broken bolt on the
+      right side. Not covered by the extended warranty. Estimated
+      $3,506.48 — Brady declined the dealer repair at this time.
+    notes: >-
+      This is the same issue Brady later fixed himself — see the DIY
+      "Exhaust manifold replacement, both sides" entry at 2024-05-15
+      above (~127,800 mi estimated) — so the real gap between this
+      diagnosis and the actual fix was about 4-5 months, not estimated
+      from scratch. $185 diagnostic charge was paid regardless of the
+      declined repair.
+    documents:
+      - 20231227-tim-dahle-major-warranty-repairs.pdf
+  - date: '2023-12-27'
+    mileage: 124020
+    itemType: ''
+    description: >-
+      Windshield washer pump motor/pump assembly replaced (aftermarket
+      part) — Tim Dahle Ford (RO #893785/2), same visit as the exhaust
+      manifold diagnosis above.
+    notes: >-
+      Warranty covered the labor ($288.40) and $15.70 of the parts cost;
+      Brady paid the remaining ~$41 upcharge for the aftermarket
+      replacement part (dealer would not warranty an aftermarket part
+      going forward).
+    documents:
+      - 20231227-tim-dahle-major-warranty-repairs.pdf
+  - date: '2023-12-27'
+    mileage: 124020
+    itemType: ''
+    description: >-
+      Power door lock actuator recall (20M04) inspection — Tim Dahle Ford
+      (RO #893785/2), no fault found. Door locks worked fine during the
+      visit and the truck already had the updated water-diverting door
+      channels installed.
+    notes: No charge — recall-related check, not a repair.
+    documents:
+      - 20231227-tim-dahle-major-warranty-repairs.pdf
+  - date: '2023-12-27'
+    mileage: 124020
+    itemType: ''
+    description: >-
+      Recall 19G01 performed — engine block heater cord replaced (new wire
+      assembly) — Tim Dahle Ford (RO #893785/3). No charge, covered under
+      the recall.
+    notes: The old block heater cord had been previously disabled; this recall provided an updated replacement cord.
+    documents:
+      - 20231227-tim-dahle-major-warranty-repairs.pdf
+  - date: '2023-12-27'
+    mileage: 124020
+    itemType: ''
+    description: >-
+      Rear differential pinion seal replaced again — Tim Dahle Ford (RO
+      #893785/4), same visit — found leaking a second time since the
+      2022-09-12 Clegg Auto repair above.
+    notes: >-
+      Warranty covered the $247.20 labor plus $34.29 of parts; Brady paid
+      the remaining ~$52 in parts.
+    documents:
+      - 20231227-tim-dahle-major-warranty-repairs.pdf
+  - date: '2023-12-27'
+    mileage: 124020
+    itemType: ''
+    description: >-
+      Front engine timing cover reseal (found leaking) — Tim Dahle Ford
+      (RO #893785/4-5), same visit — large job with a long parts list
+      (gaskets, seals, silicone sealant, water pump gasket, coolant,
+      engine shampoo).
+    notes: >-
+      Warranty covered all labor ($2,451.40) but not all parts; Brady was
+      responsible for the remainder of the parts not covered.
+    documents:
+      - 20231227-tim-dahle-major-warranty-repairs.pdf
+  - date: '2023-12-27'
+    mileage: 124020
+    itemType: ''
+    description: >-
+      Rear main seal replaced (found leaking oil at rear of engine) — Tim
+      Dahle Ford (RO #893785/5-6), same visit.
+    notes: >-
+      Warranty covered all labor ($1,915.80) but not all parts; Brady was
+      responsible for the remainder of the parts not covered. Warranty
+      claim auth #M23-48974 covered this entry plus the timing cover and
+      pinion seal work above — labor $4,902.80 + parts $428.14 = $5,330.94
+      claimed. Across the whole 2023-12-27 R/O (all 7 line items above),
+      the invoice's gross total was $5,864.53, but after the extended
+      warranty (Carchex/Allegiance, contract UDA1001522) covered its
+      share, Brady's actual out-of-pocket cost was just $533, paid by
+      check #1312 on 2024-01-22 — this single visit likely paid for the
+      entire cost of the warranty many times over.
+    documents:
+      - 20231227-tim-dahle-major-warranty-repairs.pdf
   - date: '2024-05-15'
     mileage: 127800
     itemType: cabin-air-filter

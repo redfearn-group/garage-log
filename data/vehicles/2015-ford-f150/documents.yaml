@@ -32,6 +32,33 @@ documents:
       #5053390356 — all 4 tires replaced with BFGoodrich Trail-Terrain T/A
       (275/65R18) plus 4 new TPMS sensors, $1,499.94 total. Includes a
       credit for the 2018 Michelin front tires. See maintenance-log.yaml.
+  - filename: 20200812-tim-dahle-worry-free-maintenance.pdf
+    category: repair-invoice
+    dateAdded: '2026-07-14'
+    description: >-
+      Tim Dahle Ford (RO #846304/1), 2020-08-12 — Worry Free Maintenance
+      package purchase + 1st visit (oil change, tire rotation, MPI), plus a
+      Vehicle Inspection/Check-In Report noting an aftermarket engine air
+      filter, tire tread readings, and an early note of a front cover and
+      oil pan leak. See maintenance-log.yaml.
+  - filename: 20220912-clegg-auto-pinion-seal-oil-pan-repair.pdf
+    category: repair-invoice
+    dateAdded: '2026-07-14'
+    description: >-
+      Clegg Auto Spanish Fork (RO #204446), 2022-09-12 — rear differential
+      pinion seal, oil pan gasket, and differential cover reseal, under a
+      Carchex/Allegiance warranty claim (#J22-79200). See maintenance-log.yaml
+      and admin-dates.yaml.
+  - filename: 20231227-tim-dahle-major-warranty-repairs.pdf
+    category: repair-invoice
+    dateAdded: '2026-07-14'
+    description: >-
+      Tim Dahle Ford (RO #893785), 2023-12-27 to 2024-01-22 — multi-item
+      visit: exhaust manifold diagnosis (declined), washer pump
+      replacement, door lock recall check, block heater cord recall,
+      rear pinion seal (again), timing cover reseal, and rear main seal
+      replacement. Warranty claim auth #M23-48974. See maintenance-log.yaml
+      and admin-dates.yaml for the cost reconciliation.
   - filename: 20260109-tim-dahle-ford-estimate.png
     category: repair-invoice
     dateAdded: '2026-07-13'
