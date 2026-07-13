@@ -1,6 +1,10 @@
-# Built from a prior research session's checklist for this exact car (140K
-# mi, zero known service history). Intervals not confirmed with high
-# confidence by that research are left without a number rather than guessed.
+# Built from a prior research session's checklist for this exact car (that
+# doc described it as ~140K mi at the time, zero known service history —
+# that mileage figure was approximate/undated, not a real reading; see
+# mileage-log.yaml for actual confirmed odometer photos). Schedule intervals
+# below are unaffected by the exact current mileage. Intervals not confirmed
+# with high confidence by that research are left without a number rather
+# than guessed.
 items:
   - itemType: oil-change
     name: Oil change (0W-20 full synthetic)
