@@ -5,6 +5,7 @@ items:
       Commonly reported on this generation of F-150 — exhaust manifold bolts can shear, causing a
       ticking/exhaust-leak noise from the engine bay. Worth a visual/torque inspection before it
       reaches this mileage, and replacing with upgraded bolts proactively if accessible during other
-      engine-bay work.
+      engine-bay work. RESOLVED: replaced both sides (driver's and passenger's) with new gaskets and
+      bolts, DIY, ~2024-05 (~127,800 mi estimated — see maintenance-log.yaml).
     sources: []
-    status: not-yet-at-mileage
+    status: addressed

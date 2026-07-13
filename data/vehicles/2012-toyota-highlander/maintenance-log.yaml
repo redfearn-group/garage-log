@@ -1,1 +1,48 @@
-entries: []
+entries:
+  - date: '2024-05-15'
+    mileage: 130000
+    itemType: ''
+    description: >-
+      Routine DIY maintenance & cosmetic fixes — cabin & engine air filter
+      cleaned, fuel system cleaner (Bernie's), drain holes cleared
+      (sunroof, doors, AC drain, fenders), MAF sensor cleaned, cup holder
+      trim glued, headlights polished, battery terminals cleaned & sealed,
+      driver's back-left window switch cleaned & lubed, rear license
+      plate light bulbs replaced, new sun visors installed
+    notes: >-
+      Date and mileage are estimated — Brady didn't record an exact date or
+      odometer reading, only "May/June 2024." Mileage interpolated between
+      the 2023-08-02 (120,000 mi) and 2025-04-07 (141,180 mi) readings, a
+      20-month gap with no other data points — treat as rough. Update if a
+      better source turns up.
+    documents: []
+  - date: '2024-05-15'
+    mileage: 130000
+    itemType: ''
+    description: Front & rear rotors and brake pads replaced, lug nuts replaced, e-brake adjusted — DIY
+    notes: Same estimated date/mileage caveat as the routine maintenance entry above.
+    documents: []
+  - date: '2024-05-15'
+    mileage: 130000
+    itemType: spark-plugs
+    description: Spark plugs replaced — DIY
+    notes: Same estimated date/mileage caveat as the routine maintenance entry above.
+    documents: []
+  - date: '2024-05-15'
+    mileage: 130000
+    itemType: ''
+    description: AC system vacuum & refill — DIY
+    notes: Same estimated date/mileage caveat as the routine maintenance entry above.
+    documents: []
+  - date: '2024-06-18'
+    mileage: 131000
+    itemType: ''
+    description: Transmission fluid & filter drain-and-fill (WIX 58010 filter) — DIY
+    notes: >-
+      Date matches the Amazon order-placed date for the WIX 58010
+      transmission filter ($21.24, order #113-4001144-6370615). Mileage is
+      still estimated (interpolated the same way as the other May 2024
+      entries) — an exact odometer reading was not recorded at the time.
+      This also answers the "18 or 19 bolt pan? What's the model?" open
+      question from Brady's original May 2024 to-do notes.
+    documents: []

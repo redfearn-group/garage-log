@@ -36,3 +36,19 @@ tasks:
     status: open
     createdDate: '2026-07-11'
     completedDate: null
+  - id: 3
+    title: 'Pre-sale service pass: coolant, rear diff, transmission, front diff, transfer case (~$1,254 est.)'
+    notes: >-
+      From the Tim Dahle Ford multi-point inspection dated 2026-01-09 (all
+      flagged "no service history" — filed privately at
+      2015-ford-f150/repair-invoice/20260109-tim-dahle-ford-estimate.png):
+      coolant recovery reservoir service ($249.95), rear differential
+      service ($242.95), transmission drain & refill ($361.96), front
+      differential service ($199.95), transfer case service ($199.95).
+      None of these were approved/done as of that estimate — Brady wants
+      to get all of them done in 2026 before selling the truck, to
+      maximize resale value. Can be split into separate visits/DIY jobs
+      rather than done as one dealer visit at full estimate price.
+    status: open
+    createdDate: '2026-07-13'
+    completedDate: null

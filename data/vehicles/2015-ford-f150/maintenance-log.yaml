@@ -1,1 +1,57 @@
-entries: []
+entries:
+  - date: '2024-05-15'
+    mileage: 127800
+    itemType: cabin-air-filter
+    description: Cabin air filter cleaned (not replaced) — DIY
+    notes: >-
+      Date and mileage are estimated — Brady didn't record an exact date or
+      odometer reading at the time, only "May 2024." Mileage interpolated
+      between the 2024-01-23 (124,030 mi) and 2025-04-07 (140,842 mi)
+      readings, a 15-month gap with no other data points — treat as rough.
+      Update if a better source turns up.
+    documents: []
+  - date: '2024-05-15'
+    mileage: 127800
+    itemType: engine-air-filter
+    description: Engine air filter cleaned (not replaced) — DIY
+    notes: Same estimated date/mileage caveat as the cabin air filter entry above — see there for the interpolation basis.
+    documents: []
+  - date: '2024-05-15'
+    mileage: 127800
+    itemType: ''
+    description: 'Fuel system cleaner (Bernie''s), drain holes cleared (sunroof, doors, AC drain, fenders), MAF sensor cleaned — DIY'
+    notes: Same estimated date/mileage caveat as the cabin air filter entry above.
+    documents: []
+  - date: '2024-05-15'
+    mileage: 127800
+    itemType: ''
+    description: Exhaust manifold replacement, both sides, new gaskets & bolts — DIY
+    notes: >-
+      Addresses the known F-150-generation exhaust-manifold-bolt-shearing
+      issue already tracked on the watch list — see watch-list.yaml, status
+      updated to "addressed." Same estimated date/mileage caveat as the
+      cabin air filter entry above.
+    documents: []
+  - date: '2024-05-15'
+    mileage: 127800
+    itemType: ''
+    description: AC system vacuum & refill — DIY
+    notes: Same estimated date/mileage caveat as the cabin air filter entry above.
+    documents: []
+  - date: '2026-01-30'
+    mileage: 152431
+    itemType: ''
+    description: Heated/cooled seat module (SCME) connector repair — DIY
+    notes: >-
+      Front driver/passenger seat heat & AC blower had stopped working;
+      diagnosed as a burnt SCME (seat climate module) connector. Fixed via
+      a HOPUT WPT928 wiring-kit connector replacement (Amazon order placed
+      2026-01-22, ~$19.33, installed ~2026-01-30). A separate Tim Dahle
+      Ford estimate dated 2026-01-09 (filed in the private repo,
+      2015-ford-f150/repair-invoice/20260109-tim-dahle-ford-estimate.png)
+      quotes the same repair at $1,302.13 — that was for buying backup/
+      spare parts (SCME computer + dongle) from the dealer after the DIY
+      fix was already done, not a separate repair event. Mileage
+      interpolated between the 2025-11-25 (150,002 mi) and 2026-02-21
+      (153,240 mi) readings — an estimate, not an exact reading.
+    documents: []

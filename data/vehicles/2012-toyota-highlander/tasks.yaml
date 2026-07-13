@@ -133,3 +133,15 @@ tasks:
     status: open
     createdDate: '2026-07-11'
     completedDate: null
+  - id: 11
+    title: 'Inner fender liner deteriorating — eventual replacement, not urgent'
+    notes: Noted during a May 2024 DIY maintenance pass as slowly falling apart. Brady is aware and watching it rather than fixing immediately.
+    status: open
+    createdDate: '2026-07-13'
+    completedDate: null
+  - id: 12
+    title: 'Glove box struts broken — repair cost/benefit not yet decided'
+    notes: Noted during a May 2024 DIY maintenance pass. Replacement parts may not be worth the cost relative to the fix — Brady hasn't decided whether to address this.
+    status: open
+    createdDate: '2026-07-13'
+    completedDate: null
