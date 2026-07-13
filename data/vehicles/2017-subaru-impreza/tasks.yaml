@@ -73,3 +73,15 @@ tasks:
     status: open
     createdDate: '2026-07-12'
     completedDate: null
+  - id: 9
+    title: 'Research window tint costs (3M Crystalline or XPEL Prime)'
+    notes: From Brady's Google Tasks list — researching high-heat-rejection window tint options for this car specifically.
+    status: open
+    createdDate: '2026-07-13'
+    completedDate: null
+  - id: 10
+    title: Check front-right engine bay for rattling heat shield
+    notes: From Brady's Google Tasks list — a suspected loose/rattling heat shield, not yet confirmed or fixed.
+    status: open
+    createdDate: '2026-07-13'
+    completedDate: null

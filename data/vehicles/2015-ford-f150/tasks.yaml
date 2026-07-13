@@ -55,3 +55,32 @@ tasks:
     status: open
     createdDate: '2026-07-13'
     completedDate: null
+  - id: 4
+    title: Window tint
+    notes: From Brady's Google Tasks list. No further detail yet — pricing/vendor still to be researched (see the linked "call the tint guys" task).
+    status: open
+    createdDate: '2026-07-13'
+    completedDate: null
+  - id: 5
+    title: Headlights are foggy
+    notes: From Brady's Google Tasks list. Not yet determined whether these have a prior coating (like Hera's failed Cerakote job) or have simply oxidized — worth checking before deciding on a fix.
+    status: open
+    createdDate: '2026-07-13'
+    completedDate: null
+  - id: 6
+    title: Fix broken glove box
+    notes: From Brady's Google Tasks list — no further detail on what's broken (latch, hinge, etc.).
+    status: open
+    createdDate: '2026-07-13'
+    completedDate: null
+  - id: 7
+    title: 'AT205 Reseal treatment for all rubber bushings (shared with Hera)'
+    notes: >-
+      From Brady's Google Tasks list, listed for both Hera and Zeus. AT205
+      Re-Seal is a rubber conditioner additive/treatment marketed to
+      revive hardened seals and bushings. Given the age-based rubber
+      concerns already flagged for these vehicles, worth doing as a
+      proactive, low-cost treatment.
+    status: open
+    createdDate: '2026-07-13'
+    completedDate: null
