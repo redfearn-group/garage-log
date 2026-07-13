@@ -37,15 +37,17 @@ entries:
   - date: '2024-07-07'
     mileage: 131700
     itemType: ''
-    description: Headlight lens polishing — DIY
+    description: Headlight lens restoration — Cerakote ceramic coating, DIY
     notes: >-
       Date confirmed from before/after photo timestamps (2024-07-07/08),
       more precise than the estimated "May 2024" bundled with the other
       routine items above — pulled out of that entry once the photo dates
       turned up. Photos clearly show hazy/oxidized lenses before and
-      clear lenses after. Mileage still estimated via the same
-      interpolation method (120,000 mi on 2023-08-02, 141,180 mi on
-      2025-04-07).
+      clear lenses after. Product was a Cerakote headlight coating kit,
+      advertised as warrantied for the life of the vehicle — lenses went
+      hazy again after about a year (see open task to file a warranty
+      claim). Mileage still estimated via the same interpolation method
+      (120,000 mi on 2023-08-02, 141,180 mi on 2025-04-07).
     documents: []
   - date: '2024-06-18'
     mileage: 131000

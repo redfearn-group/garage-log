@@ -145,3 +145,15 @@ tasks:
     status: open
     createdDate: '2026-07-13'
     completedDate: null
+  - id: 13
+    title: 'File a warranty claim for the Cerakote headlight coating — hazed over again after ~1 year'
+    notes: >-
+      Headlights were Cerakote-coated 2024-07-07 (see maintenance-log.yaml)
+      and looked clear in the after photos, but went foggy again after
+      about a year — well short of the "lifetime of the vehicle" warranty
+      the product is sold with. File a claim with Cerakote for a
+      replacement/re-application kit. Find the original order/receipt
+      (Amazon or Cerakote direct) for proof of purchase before filing.
+    status: open
+    createdDate: '2026-07-13'
+    completedDate: null
