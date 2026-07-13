@@ -1,4 +1,22 @@
 entries:
+  - date: '2018-12-10'
+    mileage: 51778
+    itemType: ''
+    description: >-
+      Two Michelin Defender LTX M/S tires (275/65R18) installed on the
+      front axle — Discount Tire (UTS 19, Provo), $542.66 total
+      ($460 tires + certificates/fees/install). Rears were not replaced
+      this visit.
+    notes: 'Invoice #4306877. 60,000/70,000 mi tire mileage warranty.'
+    documents:
+      - 20181210-discounttire-tire-purchase.pdf
+  - date: '2019-12-09'
+    mileage: 71882
+    itemType: tire-rotation
+    description: Free tire rotation & rebalance — Discount Tire (UTS 24, Spanish Fork), no charge (included with tire purchase)
+    notes: Invoice #1015365.
+    documents:
+      - 20191209-discounttire-rotation.pdf
   - date: '2024-05-15'
     mileage: 127800
     itemType: cabin-air-filter
@@ -38,6 +56,21 @@ entries:
     description: AC system vacuum & refill — DIY
     notes: Same estimated date/mileage caveat as the cabin air filter entry above.
     documents: []
+  - date: '2025-11-19'
+    mileage: 149829
+    itemType: ''
+    description: >-
+      All 4 tires replaced with BFGoodrich Trail-Terrain T/A (275/65R18)
+      plus 4 new snap-in TPMS sensors — Discount Tire (UTS 24, Spanish
+      Fork), $1,499.94 total (sales order #5053390356).
+    notes: >-
+      60,000 mi tire mileage warranty. The 2 Michelin Defender LTX M/S
+      tires bought 2018-12-10 (front axle only) were credited back
+      (-$83.45 adjustment, "customer satisfaction") as part of this
+      transaction rather than sold/kept separately — so this visit
+      replaced the full set, not just the 2 remaining original rears.
+    documents:
+      - 20251119-discounttire-tire-replacement.pdf
   - date: '2026-01-30'
     mileage: 152431
     itemType: ''

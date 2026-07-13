@@ -1,4 +1,25 @@
 documents:
+  - filename: 20181210-discounttire-tire-purchase.pdf
+    category: repair-invoice
+    dateAdded: '2026-07-14'
+    description: >-
+      Discount Tire (UTS 19, Provo), 2018-12-10, invoice #4306877 — 2
+      Michelin Defender LTX M/S tires (275/65R18) installed on the front
+      axle, $542.66 total. See maintenance-log.yaml.
+  - filename: 20191209-discounttire-rotation.pdf
+    category: repair-invoice
+    dateAdded: '2026-07-14'
+    description: >-
+      Discount Tire (UTS 24, Spanish Fork), 2019-12-09, invoice #1015365 —
+      free tire rotation & rebalance, no charge. See maintenance-log.yaml.
+  - filename: 20251119-discounttire-tire-replacement.pdf
+    category: repair-invoice
+    dateAdded: '2026-07-14'
+    description: >-
+      Discount Tire (UTS 24, Spanish Fork), 2025-11-19, sales order
+      #5053390356 — all 4 tires replaced with BFGoodrich Trail-Terrain T/A
+      (275/65R18) plus 4 new TPMS sensors, $1,499.94 total. Includes a
+      credit for the 2018 Michelin front tires. See maintenance-log.yaml.
   - filename: 20260109-tim-dahle-ford-estimate.png
     category: repair-invoice
     dateAdded: '2026-07-13'
