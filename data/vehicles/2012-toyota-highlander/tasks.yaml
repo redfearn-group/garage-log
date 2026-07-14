@@ -236,3 +236,18 @@ tasks:
     status: open
     createdDate: '2026-07-14'
     completedDate: null
+  - id: 25
+    title: 'Resolve which vehicle got the 2023 Griot''s Garage headlight restoration kit'
+    notes: >-
+      An AutoZone order history crawl (2026-07-14) turned up a Griot's
+      Garage Ceramic Headlight Restoration Kit picked up 2023-07-27 at
+      AutoZone #884 (Springville), $29.99. Brady doesn't remember the
+      purchase and wants to look into it later. The vehicle is UNCONFIRMED —
+      parked here on Hera because Hera has the other documented headlight
+      restoration (the 2024-07-07 Cerakote job, see task #13), but in 2023
+      Brady owned both Zeus and Hera, so it could belong to either. Confirm
+      the vehicle and, if it was actually applied, add a maintenance-log
+      entry for it (and move this task if it turns out to be Zeus's).
+    status: open
+    createdDate: '2026-07-14'
+    completedDate: null

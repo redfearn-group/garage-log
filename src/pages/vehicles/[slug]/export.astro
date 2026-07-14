@@ -34,7 +34,7 @@ const sortedMaintenanceLog = [...vehicle.maintenanceLog].sort((a, b) => (a.date 
       {sortedMaintenanceLog.map((m) => (
         <tr>
           <td>{m.date}</td>
-          <td>{m.mileage.toLocaleString()}</td>
+          <td>{m.mileage != null ? m.mileage.toLocaleString() : "—"}</td>
           <td>{m.description}</td>
           <td>{m.notes}</td>
         </tr>

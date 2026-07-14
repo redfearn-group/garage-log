@@ -76,6 +76,17 @@ entries:
       visit" — that new package was in fact bought 2024-03-06 below.
     documents:
       - 20230619-tim-dahle-wfm-visit2.pdf
+  - date: '2023-11-29'
+    mileage: 123956
+    itemType: ''
+    description: >-
+      A/C heater blower motor replaced (Continental/Duralast PM9351) — DIY
+    notes: >-
+      AutoZone ship-to-home 2023-11-29, $110.39. No vehicle tag on the order;
+      Brady confirmed it was the Highlander. Mileage interpolated between the
+      2023-08-02 (120,000 mi) and 2024-03-06 (127,215 mi) readings — treat as
+      rough.
+    documents: []
   - date: '2024-02-19'
     mileage: 126947
     itemType: ''
@@ -105,6 +116,17 @@ entries:
       resurface. R/O #896515, advisor McKenna Chornia.
     documents:
       - 20240306-tim-dahle-wfm-package.pdf
+  - date: '2024-05-21'
+    mileage: 129934
+    itemType: ''
+    description: >-
+      Wheel lug nut(s) replaced (Dorman 611-117.1) — DIY
+    notes: >-
+      Bought at AutoZone #886 twice — 2024-05-21 and 2024-06-15. The 611-117.1
+      is an M12x1.5 nut, which matches the Highlander (the F-150 uses M14), so
+      these are Hera's. Mileage interpolated between the 2024-03-06 (127,215
+      mi) and 2024-07-25 (132,260 mi) readings — treat as rough.
+    documents: []
   - date: '2024-05-22'
     mileage: 129970
     itemType: ''
@@ -257,9 +279,12 @@ entries:
     description: Transmission fluid & filter drain-and-fill (WIX 58010 filter) — DIY
     notes: >-
       Date matches the Amazon order-placed date for the WIX 58010
-      transmission filter ($21.24, order #113-4001144-6370615). Mileage is
-      still estimated (interpolated the same way as the other May 2024
-      entries) — an exact odometer reading was not recorded at the time.
+      transmission filter ($21.24, order #113-4001144-6370615). The fluid
+      was Valvoline MaxLife Multi-Vehicle ATF (1 gallon) bought at AutoZone
+      #886 on 2024-06-19, the day after the filter's order date — so the
+      filter (Amazon) and fluid (AutoZone) line up with this same job.
+      Mileage is still estimated (interpolated the same way as the other May
+      2024 entries) — an exact odometer reading was not recorded at the time.
       This also answers the "18 or 19 bolt pan? What's the model?" open
       question from Brady's original May 2024 to-do notes.
     documents: []
@@ -276,6 +301,19 @@ entries:
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
     documents: []
+  - date: '2025-05-20'
+    mileage: 142990
+    itemType: ''
+    description: >-
+      Engine oil filter purchased (Toyota OE 04152-YZZA1 cartridge) — for a
+      DIY oil change
+    notes: >-
+      AutoZone #886 2025-05-20. 04152-YZZA1 is the Toyota engine oil-filter
+      cartridge kit; Hera was Brady's only Toyota-family vehicle at this date.
+      Logged as a filter purchase — the exact oil-change date isn't
+      independently confirmed. Mileage interpolated between the 2025-04-07
+      (141,180 mi) and 2025-09-09 (147,713 mi) readings — treat as rough.
+    documents: []
   - date: '2025-07-05'
     mileage: 144931
     itemType: ''
@@ -288,6 +326,20 @@ entries:
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
+    documents: []
+  - date: '2025-07-14'
+    mileage: 145309
+    itemType: ''
+    description: >-
+      Alternator replaced (Duralast Gold NDLG24914) — DIY
+    notes: >-
+      AutoZone #886 2025-07-14. NDLG24914 is cataloged for the 2012 Toyota
+      Highlander, confirming Hera. A second identical alternator was bought ~5
+      weeks later (2025-08-22) — almost certainly a warranty/defective-unit
+      replacement under Duralast's lifetime warranty, so treat this as one
+      alternator installed, not two. Mileage interpolated between the
+      2025-04-07 (141,180 mi) and 2025-09-09 (147,713 mi) readings — treat as
+      rough.
     documents: []
   - date: '2025-07-29'
     mileage: 145943
@@ -342,6 +394,18 @@ entries:
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
     documents: []
+  - date: '2025-11-02'
+    mileage: 150265
+    itemType: ''
+    description: >-
+      Engine oil filter purchased (STP S10590) — for a DIY oil change
+    notes: >-
+      AutoZone #886 2025-11-02, same trip that included a cabin air filter for
+      cousin the family member's Tucson (logged under that vehicle). S10590 fits the
+      Toyota 3.5L V6. Logged as a filter purchase; exact oil-change date not
+      confirmed. Mileage interpolated between the 2025-09-09 (147,713 mi) and
+      2025-12-30 (153,008 mi) readings — treat as rough.
+    documents: []
   - date: '2025-11-15'
     mileage: 150880
     itemType: ''
@@ -367,6 +431,19 @@ entries:
     notes: >-
       Mileage taken from the closest confirmed odometer reading
       (2025-09-09, one day after this note).
+    documents: []
+  - date: '2025-12-27'
+    mileage: 152865
+    itemType: ''
+    description: >-
+      Engine oil filter cartridge kits x2 (Toyota OE 04152-YZZA1) purchased
+    notes: >-
+      AutoZone in-store pickup 2025-12-27, explicitly tagged to the 2012
+      Toyota Highlander, qty 2 at $11.99 each. AutoZone's listing calls it a
+      'Transmission Oil Pan Kit' but 04152-YZZA1 is the engine oil-filter
+      cartridge kit (filter + O-rings). Mileage interpolated between the
+      2025-09-09 (147,713 mi) and 2025-12-30 (153,008 mi) readings — treat as
+      rough.
     documents: []
   - date: '2026-05-25'
     mileage: 158643

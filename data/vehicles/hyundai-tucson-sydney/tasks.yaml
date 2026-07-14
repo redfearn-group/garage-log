@@ -1,0 +1,21 @@
+tasks:
+  - id: 1
+    title: Gather this Tucson's basic details — model year, engine, trim, VIN, plate, tire size, current mileage
+    notes: >-
+      Added as a placeholder vehicle 2026-07-14 from a single AutoZone cabin
+      air filter purchase; almost nothing is known about the car yet. The
+      CAF90165P cabin filter fits 2016-2021 Tucson, so it's probably a
+      3rd-gen (TL) — but confirm directly with the family member or from the car. Once
+      the year/engine are known, tailor schedule.yaml and run the recall
+      check.
+    status: open
+    createdDate: '2026-07-14'
+    completedDate: null
+  - id: 2
+    title: Get a baseline odometer reading for the family member's Tucson
+    notes: >-
+      No mileage on file at all — needed before any schedule due-status can
+      be computed. Grab an odometer photo next time Brady works on the car.
+    status: open
+    createdDate: '2026-07-14'
+    completedDate: null

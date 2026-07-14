@@ -108,6 +108,27 @@ vehicles:
       during the physical inspection.
     status: active
     photo: null
+  - slug: hyundai-tucson-sydney
+    make: Hyundai
+    model: Tucson
+    year: null
+    nickname: the family member's Tucson
+    trim: null
+    vin: null
+    licensePlate: null
+    tireSize: null
+    purchaseDate: null
+    previousOwner: >-
+      Not Brady's vehicle — belongs to his cousin the family member, who lives nearby;
+      Brady helps with her maintenance, so it's tracked here. Black paint.
+      Added 2026-07-14 after an STP CAF90165P cabin air filter (fits
+      2016-2021 Tucson) turned up in Brady's AutoZone order history, bought
+      alongside Highlander parts. Year, trim, VIN, license plate, tire size,
+      and current mileage are all still UNKNOWN — need to be gathered from
+      the family member/the car (see the open task). The cabin-filter fitment implies a
+      2016-2021 (3rd-gen "TL") Tucson, but that's an inference, not confirmed.
+    status: active
+    photo: null
   - slug: 2017-subaru-impreza
     make: Subaru
     model: Impreza
