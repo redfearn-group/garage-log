@@ -354,7 +354,11 @@ entries:
       1,050.47, with "-20%") suggest a negotiated out-of-pocket amount of
       roughly $940–1,050, but these are ambiguous and unverified — recorded
       here as approximate, not fact. See admin-dates.yaml. Confirm the
-      actual OOP/warranty split with Brady if it matters.
+      actual OOP/warranty split with Brady if it matters. DISPUTED: line
+      item #12 is a $200 rental-vehicle sublet ("RENT001"), but Brady never
+      had a rental for this repair — flagged to advisor Luke Miller
+      2026-07-14 for a corrected RO. The $200 (and any tax calculated on
+      it) should come off the $3,428.72 total once corrected.
     documents:
       - 20251209-tim-dahle-vacuum-pump-camera-mirror-axle.pdf
   - date: '2026-01-30'
