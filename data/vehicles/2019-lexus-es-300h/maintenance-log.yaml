@@ -25,6 +25,19 @@ entries:
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
     documents: []
+  - date: '2026-06-24'
+    mileage: 107776
+    itemType: ''
+    description: >-
+      24-pack automotive brake bleeder screw caps / nipple covers (rubber)
+    notes: >-
+      Purchased via Amazon (order #114-6763929-3251447, $4.05) — the same
+      order as the Lexus ES floor mats and windshield sunshade above, so
+      attributed here by order context. Order-placed date used as the log
+      date; exact install date not independently confirmed. Mileage
+      interpolated between the surrounding odometer readings — treat as
+      rough.
+    documents: []
   - date: '2026-07-10'
     mileage: 106862
     itemType: recall-verification
