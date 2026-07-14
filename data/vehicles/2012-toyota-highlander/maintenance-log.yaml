@@ -239,13 +239,32 @@ entries:
     mileage: 130000
     itemType: spark-plugs
     description: Spark plugs replaced — DIY
-    notes: Same estimated date/mileage caveat as the routine maintenance entry above.
+    notes: >-
+      Plugs were Autolite Iridium XP XP5325 (Amazon order
+      #114-5707785-2577015, placed 2024-05-20, $36.36) — a Toyota/Lexus V6
+      plug, confirmed by fitment lookup not to fit any Ford, so it belongs
+      here rather than to the F-150. Same estimated date/mileage caveat as
+      the routine maintenance entry above.
     documents: []
   - date: '2024-05-15'
     mileage: 130000
     itemType: ''
     description: AC system vacuum & refill — DIY
     notes: Same estimated date/mileage caveat as the routine maintenance entry above.
+    documents: []
+  - date: '2024-05-20'
+    mileage: 130000
+    itemType: ''
+    description: >-
+      SYLVANIA 168 T10 W5W LED White Mini Bulbs — interior lighting (map,
+      dome, cargo) replacement
+    notes: >-
+      Purchased via Amazon (order #114-5707785-2577015, $15.85) — the same
+      order as the Autolite XP5325 spark plug and Cerakote headlight kit
+      (both attributed here). Order-placed date used as the log date; exact
+      install date not independently confirmed. Mileage held at the same
+      ~130,000 mi rough estimate as the other May 2024 DIY entries this
+      order supplied — treat as rough.
     documents: []
   - date: '2024-07-07'
     mileage: 131700
@@ -260,7 +279,9 @@ entries:
       advertised as warrantied for the life of the vehicle — lenses went
       hazy again after about a year (see open task to file a warranty
       claim). Mileage still estimated via the same interpolation method
-      (120,000 mi on 2023-08-02, 141,180 mi on 2025-04-07).
+      (120,000 mi on 2023-08-02, 141,180 mi on 2025-04-07). The kit was a
+      CERAKOTE Ceramic Headlight Restoration Kit (Amazon order
+      #114-5707785-2577015, placed 2024-05-20, $18.14).
     documents: []
   - date: '2024-06-18'
     mileage: 131000

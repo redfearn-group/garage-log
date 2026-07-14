@@ -468,30 +468,6 @@ entries:
       independently confirmed. Mileage interpolated between the surrounding
       odometer readings — treat as rough.
     documents: []
-  - date: '2024-05-20'
-    mileage: 128795
-    itemType: ''
-    description: >-
-      Autolite Iridium XP Automotive Replacement Spark Plug, XP5325 (1 Pack)
-    notes: >-
-      Purchased via Amazon (order #114-5707785-2577015, $36.36) — order-placed
-      date used as the log date; exact install date not independently
-      confirmed. Mileage interpolated between the surrounding odometer
-      readings — treat as rough. Same order as "BD Diesel® 1043002 EXHAUST®
-      Manifold Install Kit Fits 11-16 Compatible with/Fits a F-150" above.
-    documents: []
-  - date: '2024-05-20'
-    mileage: 128795
-    itemType: ''
-    description: >-
-      CERAKOTE® Ceramic Headlight Restoration Kit
-    notes: >-
-      Purchased via Amazon (order #114-5707785-2577015, $18.14) — order-placed
-      date used as the log date; exact install date not independently
-      confirmed. Mileage interpolated between the surrounding odometer
-      readings — treat as rough. Same order as "BD Diesel® 1043002 EXHAUST®
-      Manifold Install Kit Fits 11-16 Compatible with/Fits a F-150" above.
-    documents: []
   - date: '2024-06-05'
     mileage: 129441
     itemType: ''
