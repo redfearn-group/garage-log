@@ -1,0 +1,24 @@
+# Generic starter schedule — NOT yet tailored to this Tucson's exact year/engine
+# (unknown as of 2026-07-14). Intervals are common Hyundai defaults; confirm
+# against the actual owner's manual once the model year and engine are known.
+items:
+  - itemType: oil-change
+    name: Oil change (confirm spec — likely 5W-30 or 5W-20 synthetic blend)
+    intervalMiles: 5000
+    intervalMonths: 6
+  - itemType: tire-rotation
+    name: Tire rotation
+    intervalMiles: 5000
+    intervalMonths: 6
+  - itemType: cabin-air-filter
+    name: Cabin air filter (STP CAF90165P confirmed fitment)
+    intervalMiles: 15000
+    intervalMonths: 12
+  - itemType: engine-air-filter
+    name: Engine air filter
+    intervalMiles: 30000
+    intervalMonths: 36
+  - itemType: brake-fluid-flush
+    name: Brake fluid flush
+    intervalMiles: null
+    intervalMonths: 24

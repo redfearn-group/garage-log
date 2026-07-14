@@ -1,0 +1,6 @@
+# Recall check can't run until the model year is known (the automated NHTSA
+# pull keys off make/model/year). Left empty until the Tucson's year is
+# confirmed — see tasks.yaml.
+lastChecked: null
+recalls: []
+complaints: []

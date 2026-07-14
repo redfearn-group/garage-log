@@ -67,7 +67,7 @@ if (points.length > 1) {
         <tr>
           <td>{s.item.name}</td>
           <td><StatusBadge status={s.status} /></td>
-          <td>{s.lastDone ? `${s.lastDone.date} (${s.lastDone.mileage.toLocaleString()} mi)` : "—"}</td>
+          <td>{s.lastDone ? (s.lastDone.mileage != null ? `${s.lastDone.date} (${s.lastDone.mileage.toLocaleString()} mi)` : s.lastDone.date) : "—"}</td>
           <td>
             {s.dueMileage != null ? `${s.dueMileage.toLocaleString()} mi` : ""}
             {s.dueMileage != null && s.dueDate != null ? " / " : ""}
@@ -158,7 +158,7 @@ if (points.length > 1) {
       {sortedMaintenanceLog.map((m) => (
         <tr>
           <td>{m.date}</td>
-          <td>{m.mileage.toLocaleString()}</td>
+          <td>{m.mileage != null ? m.mileage.toLocaleString() : "—"}</td>
           <td>{m.description}</td>
           <td class="muted">{m.notes}</td>
         </tr>
