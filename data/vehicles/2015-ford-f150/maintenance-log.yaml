@@ -472,23 +472,18 @@ entries:
     mileage: 129441
     itemType: ''
     description: >-
-      Bosch 17321 Premium Original Equipment Oxygen Sensor
+      Bosch 17321 Premium Original Equipment Oxygen Sensor(s) — two ordered
+      the same day
     notes: >-
-      Purchased via Amazon (order #111-1352957-8216263, $0) — order-placed
-      date used as the log date; exact install date not independently
-      confirmed. Mileage interpolated between the surrounding odometer
-      readings — treat as rough.
-    documents: []
-  - date: '2024-06-05'
-    mileage: 129441
-    itemType: ''
-    description: >-
-      Bosch 17321 Premium Original Equipment Oxygen Sensor
-    notes: >-
-      Purchased via Amazon (order #113-7033374-8383439, $71.6) — order-placed
-      date used as the log date; exact install date not independently
-      confirmed. Mileage interpolated between the surrounding odometer
-      readings — treat as rough.
+      Two Bosch 17321 O2 sensors were ordered on 2024-06-05 in separate
+      orders — one at $71.60 (order #113-7033374-8383439, which also
+      included the O2 sensor socket below) and one showing $0 (order
+      #111-1352957-8216263, likely gift-card/promo-covered). Neither was
+      returned. This single entry covers both; if only one sensor was
+      actually installed the other is a spare. Order-placed date used as the
+      log date; exact install date not independently confirmed. Mileage
+      interpolated between the surrounding odometer readings — treat as
+      rough.
     documents: []
   - date: '2024-06-05'
     mileage: 129441
@@ -611,6 +606,7 @@ entries:
       still active at this mileage (expired at 152,412 mi / 2026-05-11)
       — a claim might have covered this repair for a $100 deductible, but
       it wasn't filed; DIY was already done before this was noticed.
+    documents: []
   - date: '2026-03-06'
     mileage: 153440
     itemType: ''

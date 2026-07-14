@@ -46,18 +46,6 @@ entries:
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
     documents: []
-  - date: '2022-06-21'
-    mileage: 109383
-    itemType: ''
-    description: >-
-      Ezzy Auto Beige Left Driver Side Sun Visor fit for Highlander 2008 2009
-      2010 2011 2012 2013 74320-48500-B0
-    notes: >-
-      Purchased via Amazon (order #112-5663971-8989834, $35.64) — order-placed
-      date used as the log date; exact install date not independently
-      confirmed. Mileage interpolated between the surrounding odometer
-      readings — treat as rough.
-    documents: []
   - date: '2022-07-01'
     mileage: 109580
     itemType: ''
@@ -65,10 +53,14 @@ entries:
       Ezzy Auto Beige Left Driver Side Sun Visor fit for Highlander 2008 2009
       2010 2011 2012 2013 74320-48500-B0
     notes: >-
-      Purchased via Amazon (order #113-1280914-9567405, $0) — order-placed
-      date used as the log date; exact install date not independently
-      confirmed. Mileage interpolated between the surrounding odometer
-      readings — treat as rough.
+      Driver's sun visor (a known Highlander sagging/breaking item).
+      Originally ordered 2022-06-21 for $35.64 (Amazon order
+      #112-5663971-8989834); that first unit was returned defective and
+      Amazon shipped a free replacement (order #113-1280914-9567405, $0,
+      2022-07-01) — this single entry represents the one visor actually
+      installed, not two. Exact install date not independently confirmed;
+      mileage interpolated between the surrounding odometer readings — treat
+      as rough.
     documents: []
   - date: '2023-06-19'
     mileage: 116501
@@ -125,18 +117,6 @@ entries:
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
     documents: []
-  - date: '2024-05-24'
-    mileage: 130042
-    itemType: ''
-    description: >-
-      SCITOO Left & Right Sides Sun Visor Assembly fit for Toyota Highlander
-      2008-2013 with Sunroof (Beige)
-    notes: >-
-      Purchased via Amazon (order #113-5235170-2468253, $0) — order-placed
-      date used as the log date; exact install date not independently
-      confirmed. Mileage interpolated between the surrounding odometer
-      readings — treat as rough.
-    documents: []
   - date: '2024-06-09'
     mileage: 130614
     itemType: ''
@@ -173,18 +153,6 @@ entries:
       readings — treat as rough. Same order as the 61445 throttle body gasket
       above; fitment confirmed for Toyota Highlander (2008-2016) and related
       models — Hera.
-    documents: []
-  - date: '2024-06-29'
-    mileage: 131330
-    itemType: ''
-    description: >-
-      SCITOO Left & Right sides Sun Visor Assembly fit for Toyota for
-      Highlander 2008-2013 with Sunroof (Beige)
-    notes: >-
-      Purchased via Amazon (order #113-1337653-2500212, $0) — order-placed
-      date used as the log date; exact install date not independently
-      confirmed. Mileage interpolated between the surrounding odometer
-      readings — treat as rough.
     documents: []
   - date: '2024-07-05'
     mileage: 131544
