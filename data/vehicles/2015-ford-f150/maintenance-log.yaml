@@ -312,6 +312,30 @@ entries:
       advisor Jon Haymond.
     documents:
       - 20230509-tim-dahle-emissions-wfm-package.pdf
+  - date: '2023-05-09'
+    mileage: 117125
+    itemType: tire-rotation
+    description: >-
+      Tire rotation — Tim Dahle Ford, part of the Worry Free Maintenance visit
+    notes: >-
+      Tire rotation — done as part of the dealer Worry Free Maintenance
+      oil-change visit the same day (see the oil-change entry above). Broken
+      out so the tire-rotation interval reflects it; the visit bundled oil
+      change + rotation + inspection into one service.
+    documents:
+      - 20230509-tim-dahle-emissions-wfm-package.pdf
+  - date: '2023-05-09'
+    mileage: 117125
+    itemType: multi-point-inspection
+    description: >-
+      Multi-point inspection — Tim Dahle Ford, part of the Worry Free
+      Maintenance visit
+    notes: >-
+      Multi-point inspection — done as part of the dealer Worry Free
+      Maintenance oil-change visit the same day (see the oil-change entry
+      above). Broken out so the inspection interval reflects it.
+    documents:
+      - 20230509-tim-dahle-emissions-wfm-package.pdf
   - date: '2023-12-27'
     mileage: 124020
     itemType: ''
@@ -567,6 +591,29 @@ entries:
       passenger valve cover replacement; the oil change/rotation itself was
       under the WFM service contract. Follows the 2022-12-22 passenger valve
       cover gasket reseal above (gasket then, whole cover now).
+    documents:
+      - 20250225-tim-dahle-wfm-visit3-valve-cover.pdf
+  - date: '2025-02-25'
+    mileage: 140142
+    itemType: tire-rotation
+    description: >-
+      Tire rotation — Tim Dahle Ford, part of the WFM 3rd/final visit
+    notes: >-
+      Tire rotation — done as part of the dealer Worry Free Maintenance
+      oil-change visit the same day (see the oil-change entry above). Broken
+      out so the tire-rotation interval reflects it; the visit bundled oil
+      change + rotation + inspection into one service.
+    documents:
+      - 20250225-tim-dahle-wfm-visit3-valve-cover.pdf
+  - date: '2025-02-25'
+    mileage: 140142
+    itemType: multi-point-inspection
+    description: >-
+      Multi-point inspection — Tim Dahle Ford, part of the WFM 3rd/final visit
+    notes: >-
+      Multi-point inspection — done as part of the dealer Worry Free
+      Maintenance oil-change visit the same day (see the oil-change entry
+      above). Broken out so the inspection interval reflects it.
     documents:
       - 20250225-tim-dahle-wfm-visit3-valve-cover.pdf
   - date: '2025-07-08'
