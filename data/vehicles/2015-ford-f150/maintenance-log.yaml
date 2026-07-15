@@ -512,6 +512,19 @@ entries:
       on the F-150. Mileage interpolated between the 2024-01-23 (124,030 mi)
       and 2025-02-25 (140,142 mi) readings — treat as rough.
     documents: []
+  - date: '2024-08-02'
+    mileage: 128074
+    itemType: ''
+    description: >-
+      Electronic throttle body module replaced (Duralast TB1052D) — DIY
+    notes: >-
+      AutoZone (store #4093) 2024-08-02, with throttle-body cleaner. Brady
+      confirmed this was Zeus, not the neighbor's F-150. Pairs with the
+      FEL-PRO 61466 throttle body gasket bought from Amazon 2024-08-12
+      (below) — the same throttle-body job. Mileage interpolated between the
+      2024-01-23 (124,030 mi) and 2025-02-25 (140,142 mi) readings — treat as
+      rough.
+    documents: []
   - date: '2024-08-12'
     mileage: 132187
     itemType: ''
