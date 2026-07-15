@@ -512,18 +512,6 @@ entries:
       on the F-150. Mileage interpolated between the 2024-01-23 (124,030 mi)
       and 2025-02-25 (140,142 mi) readings — treat as rough.
     documents: []
-  - date: '2024-08-02'
-    mileage: 128074
-    itemType: ''
-    description: >-
-      Electronic throttle body module replaced (Duralast TB1052D) — DIY
-    notes: >-
-      AutoZone (store #4093) 2024-08-02, with throttle-body cleaner. TB1052D
-      is a Ford-application part (F-150/Expedition family) and Zeus is Brady's
-      only Ford, so it belongs here. Mileage interpolated between the
-      2024-01-23 (124,030 mi) and 2025-02-25 (140,142 mi) readings — treat as
-      rough.
-    documents: []
   - date: '2024-08-12'
     mileage: 132187
     itemType: ''
@@ -631,34 +619,6 @@ entries:
       still active at this mileage (expired at 152,412 mi / 2026-05-11)
       — a claim might have covered this repair for a $100 deductible, but
       it wasn't filed; DIY was already done before this was noticed.
-    documents: []
-  - date: '2026-02-10'
-    mileage: 153030
-    itemType: ''
-    description: >-
-      Turbocharger coolant line + a sensor replaced and engine coolant
-      refilled — DIY
-    notes: >-
-      AutoZone ship-to-home 2026-02-10, explicitly tagged to the 2015 Ford
-      F-150: Dorman Turbocharger Coolant Line 667-539 ($51.19) + Duralast
-      Sensor SU16398 ($21.59), plus 4x ShopPro yellow pre-mixed engine
-      coolant/antifreeze (AXA053) the same day. Turbo hardware = the 3.5L
-      EcoBoost = Zeus. SU16398's exact function isn't identified here —
-      recorded by part number. Mileage interpolated between the 2025-12-09
-      (151,830 mi) and 2026-02-21 (153,240 mi) readings — treat as rough.
-    documents: []
-  - date: '2026-02-12'
-    mileage: 153068
-    itemType: spark-plugs
-    description: >-
-      Spark plugs + engine air filter + a lug nut replaced — DIY
-    notes: >-
-      AutoZone #886 2026-02-12: NGK IX Iridium 94374 spark plug(s), STP
-      SA10262 engine air filter, and a Dorman 611-008.1 wheel lug nut. Both
-      the NGK 94374 (LTR6IX) and the STP SA10262 air filter are
-      F-150/EcoBoost-fitment parts, so the whole order is Zeus. Mileage
-      interpolated between the 2025-12-09 (151,830 mi) and 2026-02-21 (153,240
-      mi) readings — treat as rough.
     documents: []
   - date: '2026-03-06'
     mileage: 153440
