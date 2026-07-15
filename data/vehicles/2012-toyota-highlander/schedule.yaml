@@ -20,3 +20,39 @@ items:
     name: Spark plugs (iridium) — verify exact interval in owner's manual before servicing, do not guess
     intervalMiles: null
     intervalMonths: null
+  - itemType: multi-point-inspection
+    name: Multi-point inspection
+    intervalMiles: 5000
+    intervalMonths: 6
+  - itemType: engine-air-filter
+    name: Engine air filter
+    intervalMiles: 30000
+    intervalMonths: 36
+  - itemType: cabin-air-filter
+    name: Cabin air filter
+    intervalMiles: 15000
+    intervalMonths: 12
+  - itemType: brake-inspection
+    name: Brake inspection (pads/rotors)
+    intervalMiles: 15000
+    intervalMonths: 12
+  - itemType: brake-fluid-flush
+    name: Brake fluid flush — Toyota specifies a time-based interval (~3 years); very likely overdue at this age
+    intervalMiles: null
+    intervalMonths: 36
+  - itemType: coolant-flush
+    name: Engine coolant flush (Toyota Super Long Life Coolant) — confirm exact interval in owner's manual
+    intervalMiles: 50000
+    intervalMonths: null
+  - itemType: transmission-fluid-service
+    name: Transmission fluid service (U660E, Toyota WS) — confirm interval; drain-and-fill given unknown history
+    intervalMiles: 60000
+    intervalMonths: null
+  - itemType: battery-12v
+    name: 12V battery replacement (typical service life ~4-5 years)
+    intervalMiles: null
+    intervalMonths: 60
+  - itemType: wiper-blades
+    name: Wiper blades
+    intervalMiles: null
+    intervalMonths: 12

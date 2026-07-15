@@ -76,6 +76,29 @@ entries:
       visit" — that new package was in fact bought 2024-03-06 below.
     documents:
       - 20230619-tim-dahle-wfm-visit2.pdf
+  - date: '2023-06-19'
+    mileage: 116501
+    itemType: tire-rotation
+    description: >-
+      Tire rotation — Tim Dahle Ford, part of the WFM 2nd visit
+    notes: >-
+      Tire rotation — done as part of the dealer Worry Free Maintenance
+      oil-change visit the same day (see the oil-change entry above). Broken
+      out so the tire-rotation interval reflects it; the visit bundled oil
+      change + rotation + inspection into one service.
+    documents:
+      - 20230619-tim-dahle-wfm-visit2.pdf
+  - date: '2023-06-19'
+    mileage: 116501
+    itemType: multi-point-inspection
+    description: >-
+      Multi-point inspection — Tim Dahle Ford, part of the WFM 2nd visit
+    notes: >-
+      Multi-point inspection — done as part of the dealer Worry Free
+      Maintenance oil-change visit the same day (see the oil-change entry
+      above). Broken out so the inspection interval reflects it.
+    documents:
+      - 20230619-tim-dahle-wfm-visit2.pdf
   - date: '2023-11-29'
     mileage: 123956
     itemType: ''
@@ -114,6 +137,30 @@ entries:
       #896515). Declined the advisor's recommended add-ons: swollen lug
       nuts, engine air filter, and front & rear brake pads + rotor
       resurface. R/O #896515, advisor McKenna Chornia.
+    documents:
+      - 20240306-tim-dahle-wfm-package.pdf
+  - date: '2024-03-06'
+    mileage: 127215
+    itemType: tire-rotation
+    description: >-
+      Tire rotation — Tim Dahle Ford, part of the new WFM package 1st visit
+    notes: >-
+      Tire rotation — done as part of the dealer Worry Free Maintenance
+      oil-change visit the same day (see the oil-change entry above). Broken
+      out so the tire-rotation interval reflects it; the visit bundled oil
+      change + rotation + inspection into one service.
+    documents:
+      - 20240306-tim-dahle-wfm-package.pdf
+  - date: '2024-03-06'
+    mileage: 127215
+    itemType: multi-point-inspection
+    description: >-
+      Multi-point inspection — Tim Dahle Ford, part of the new WFM package 1st
+      visit
+    notes: >-
+      Multi-point inspection — done as part of the dealer Worry Free
+      Maintenance oil-change visit the same day (see the oil-change entry
+      above). Broken out so the inspection interval reflects it.
     documents:
       - 20240306-tim-dahle-wfm-package.pdf
   - date: '2024-05-21'
@@ -288,6 +335,29 @@ entries:
       This also answers the "18 or 19 bolt pan? What's the model?" open
       question from Brady's original May 2024 to-do notes.
     documents: []
+  - date: '2024-07-25'
+    mileage: 132260
+    itemType: tire-rotation
+    description: >-
+      Tire rotation — Tim Dahle Ford, part of the WFM 2nd visit
+    notes: >-
+      Tire rotation — done as part of the dealer Worry Free Maintenance
+      oil-change visit the same day (see the oil-change entry above). Broken
+      out so the tire-rotation interval reflects it; the visit bundled oil
+      change + rotation + inspection into one service.
+    documents:
+      - 20240725-tim-dahle-wfm-visit2.pdf
+  - date: '2024-07-25'
+    mileage: 132260
+    itemType: multi-point-inspection
+    description: >-
+      Multi-point inspection — Tim Dahle Ford, part of the WFM 2nd visit
+    notes: >-
+      Multi-point inspection — done as part of the dealer Worry Free
+      Maintenance oil-change visit the same day (see the oil-change entry
+      above). Broken out so the inspection interval reflects it.
+    documents:
+      - 20240725-tim-dahle-wfm-visit2.pdf
   - date: '2024-07-26'
     mileage: 132295
     itemType: ''
