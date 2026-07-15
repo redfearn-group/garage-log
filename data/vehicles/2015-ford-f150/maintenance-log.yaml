@@ -26,7 +26,7 @@ entries:
     documents: []
   - date: '2018-06-13'
     mileage: 45031
-    itemType: ''
+    itemType: cabin-air-filter
     description: >-
       K&N VF2049 Washable & Reusable Cabin Air Filter Cleans and Freshens
       Incoming Air for your Ford
@@ -255,6 +255,22 @@ entries:
       ending 5395, auth #76366D) — NOT filed as an extended-warranty claim
       (brake lines/hoses are a wear/exclusion item). The towing (WFMTOW)
       was covered by the service contract.
+    documents:
+      - 20221222-tim-dahle-recalls-brake-line-valve-cover.pdf
+  - date: '2022-12-22'
+    mileage: 111520
+    itemType: brake-fluid-flush
+    description: >-
+      Full brake fluid flush — the entire brake system was drained and
+      re-filled because all the fluid was lost when the left-front brake
+      line burst
+    notes: >-
+      Not a standalone maintenance visit — this happened as part of the
+      blown brake-line repair the same day (Tim Dahle Ford RO #878393, see
+      the brake line entry above). The system had to be fully flushed/bled
+      since the ruptured left-front line drained it. Broken out as its own
+      entry so the brake-fluid service interval reflects that the fluid was
+      changed on 2022-12-22.
     documents:
       - 20221222-tim-dahle-recalls-brake-line-valve-cover.pdf
   - date: '2022-12-22'
