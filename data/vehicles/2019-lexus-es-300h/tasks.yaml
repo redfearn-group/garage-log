@@ -150,3 +150,24 @@ tasks:
     status: open
     createdDate: '2026-07-13'
     completedDate: null
+  - id: 8
+    title: 'Install the eBay Pioneer amplifier once delivered — but FIRST verify the part number'
+    notes: >-
+      Brady ordered a replacement audio amplifier on eBay 2026-07-15 —
+      "2019-2023 Lexus ES300h 2.5L FWD Pioneer Amplifier / Speaker Audio
+      Output Module" (eBay order #11-14898-91580), estimated delivery Jul
+      18-22, 2026. This is the DIY route for the low-rear-speaker-volume amp
+      issue (TSB L-SB-0020-20), instead of the ~$200 dealer install that was
+      the plan in task #4.
+
+      IMPORTANT — verify the part number BEFORE installing. The TSB fix is
+      part 86280-06260. Task #4's research explicitly warned that common
+      eBay ES300h amp listings are the pre-fix BAD cores (86280-06230,
+      06231, 33310, or 33311), which will NOT fix the problem. This listing
+      didn't show a part number, so when it arrives, confirm the sticker
+      reads 86280-06260 (or at least none of the known-bad cores) before
+      installing; if it's a bad core, return it rather than fitting it. The
+      amp lives under the driver's seat.
+    status: open
+    createdDate: '2026-07-15'
+    completedDate: null
