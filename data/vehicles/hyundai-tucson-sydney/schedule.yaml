@@ -118,11 +118,20 @@ items:
       every 30,000-75,000 mi is common owner practice given unknown history.
     intervalMiles: 60000
     intervalMonths: null
+  - itemType: battery-test
+    name: >-
+      12V battery load test — Brady does this every spring for his own 3
+      cars, but hasn't yet for the family member's Tucson; worth adding to the routine
+    intervalMiles: null
+    intervalMonths: 12
   - itemType: battery-12v
     name: 12V battery replacement (typical service life ~4-5 yr; no history on file for this car yet)
     intervalMiles: null
     intervalMonths: 60
   - itemType: wiper-blades
-    name: Wiper blades
+    name: >-
+      Wiper blades — replace roughly every other year once streaky
+      (sometimes sooner if damaged), matching Brady's practice on his own
+      cars; check condition at every seasonal tune-up regardless.
     intervalMiles: null
-    intervalMonths: 12
+    intervalMonths: 24
