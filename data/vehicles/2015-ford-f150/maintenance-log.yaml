@@ -770,9 +770,11 @@ entries:
     notes: >-
       Brady replaced the wiper blades on all his vehicles together in March
       2026, right after buying the Impreza (Draco, purchased 2026-03-13) —
-      logged as the day after that purchase. Exact date is approximate (Brady
-      wasn't certain of the day). Mileage interpolated from the surrounding
-      odometer readings — treat as rough.
+      logged as the day after that purchase. All the blades were bought
+      together at Costco; there's no receipt on file (Costco's online order
+      history isn't readily searchable for past item purchases), so this is
+      reconstructed from Brady's memory. Exact date is approximate. Mileage
+      interpolated from the surrounding odometer readings — treat as rough.
     documents: []
   - date: '2026-06-26'
     mileage: 155162
