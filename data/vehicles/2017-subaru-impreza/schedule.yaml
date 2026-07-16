@@ -74,7 +74,10 @@
 # stronger than a bare forum guess but short of a directly-read citation.
 items:
   - itemType: oil-change
-    name: Oil & filter change (0W-20 full synthetic) — Subaru normal 6,000 mi/6 mo
+    name: >-
+      Oil & filter change (0W-20 full synthetic) — Subaru normal 6,000
+      mi/6 mo. Already satisfies Brady's fleet-wide minimum-2x/year policy
+      (2026-07-16) without any adjustment needed.
     intervalMiles: 6000
     intervalMonths: 6
   - itemType: tire-rotation

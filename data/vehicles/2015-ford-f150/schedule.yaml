@@ -29,9 +29,12 @@ items:
       Oil & filter change (Motorcraft 5W-30 full synthetic, ~6 qt) — Ford
       Intelligent Oil Life Monitor; normal max 10,000 mi / 12 mo (severe/
       towing 5,000 mi / 6 mo). The turbo EcoBoost often trips the monitor
-      before 10k, but do not exceed it.
+      before 10k, but do not exceed it. BRADY'S POLICY (2026-07-16): every
+      car in the fleet gets a minimum of 2 oil changes/year regardless of
+      mileage (spring tune-up + fall oil change) — 6 mo below reflects that
+      standing policy, not Ford's own 12 mo normal-schedule allowance.
     intervalMiles: 10000
-    intervalMonths: 12
+    intervalMonths: 6
   - itemType: tire-rotation
     name: Tire rotation — Ford lists this at the oil-change interval (~10,000 mi)
     intervalMiles: 10000

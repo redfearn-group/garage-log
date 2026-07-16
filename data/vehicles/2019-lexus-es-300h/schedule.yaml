@@ -30,9 +30,13 @@ items:
       acceptable substitute only until the next change, per the 2020
       ES 300h WSG; verify capacity/filter part at parts counter) — Lexus
       normal 12 mo/10,000 mi (NOT the 6 mo/5,000 mi visit rhythm, which
-      is a fluid-check/rotation visit, not necessarily an oil change)
+      is a fluid-check/rotation visit, not necessarily an oil change).
+      BRADY'S POLICY (2026-07-16): every car in the fleet gets a minimum
+      of 2 oil changes/year regardless of mileage (spring tune-up + fall
+      oil change) — 6 mo below reflects that standing policy, not Lexus's
+      own 12 mo normal-schedule allowance.
     intervalMiles: 10000
-    intervalMonths: 12
+    intervalMonths: 6
   - itemType: tire-rotation
     name: Tire rotation — done at every scheduled visit, 6 mo/5,000 mi
     intervalMiles: 5000

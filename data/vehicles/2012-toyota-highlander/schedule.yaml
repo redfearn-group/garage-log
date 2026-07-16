@@ -55,9 +55,14 @@
 # actual oil-change interval; corrected in an earlier pass.
 items:
   - itemType: oil-change
-    name: Oil & filter change (0W-20 full synthetic, ~6.4 qt) — Toyota normal 10,000 mi/12 mo
+    name: >-
+      Oil & filter change (0W-20 full synthetic, ~6.4 qt) — Toyota normal
+      10,000 mi/12 mo. BRADY'S POLICY (2026-07-16): every car in the fleet
+      gets a minimum of 2 oil changes/year regardless of mileage (spring
+      tune-up + fall oil change) — 6 mo below reflects that standing
+      policy, not Toyota's own 12 mo normal-schedule allowance.
     intervalMiles: 10000
-    intervalMonths: 12
+    intervalMonths: 6
   - itemType: tire-rotation
     name: Tire rotation — Toyota's standard 5,000 mi/6 mo service rhythm
     intervalMiles: 5000
