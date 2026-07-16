@@ -92,14 +92,37 @@ items:
       interval. Any proactive fluid drain-and-fill some owners perform is
       outside Lexus's specification, not a manufacturer requirement.
       COMMUNITY NOTE: the "sealed" stance is genuinely contested even among
-      Toyota/Lexus techs — Toyota Canada lists a 72 mo/96,000 km (~60,000
-      mi) interval for the mechanically-identical Camry Hybrid transaxle,
-      and forum-reported independent practice ranges 60,000-90,000 mi (or
-      6-9 yr) using Toyota ATF-WS. Some dealer service managers refuse to
-      touch it at all, arguing a change can disturb debris and cause more
-      harm than leaving it alone on a high-mileage, unknown-history unit —
-      so this is a genuine judgment call, not a clear-cut community
-      consensus like the other vehicles' fluids.
+      Toyota/Lexus techs, and forum-reported independent practice ranges
+      60,000-90,000 mi (or 6-9 yr) using Toyota ATF-WS. Some dealer service
+      managers refuse to touch it at all, arguing a change can disturb
+      debris and cause more harm than leaving it alone on a high-mileage,
+      unknown-history unit — so this is a genuine judgment call, not a
+      clear-cut community consensus like the other vehicles' fluids.
+      UNCONFIRMED CLAIM (flagged, not stated as fact): forum posts widely
+      repeat a figure of "Toyota Canada: 72 mo/96,000 km (~60,000 mi)" for
+      the mechanically-related Camry Hybrid transaxle. THREE separate
+      research passes (the third on 2026-07-16, with working web access)
+      have tried and failed to find this figure in any primary Toyota
+      Canada document. The 2026-07-16 pass directly pulled and full-text
+      searched the 2019 Camry Hybrid US Warranty & Maintenance Guide
+      (assets.sia.toyota.com, T-MMS-19CamryHV — same generation/platform,
+      same transaxle family as this car) and found ONLY the identical
+      "inspect sealed transmissions... for signs of leakage" language at
+      every service interval, with no numbered fluid-change mileage/month
+      figure anywhere in the document. Toyota Canada guides for the same
+      model year are normally near-identical in content to the US guide
+      (same maintenance log structure, just bilingual), which is evidence
+      AGAINST a materially different hard-interval figure existing in the
+      Canadian version, though a genuine Toyota Canada document was still
+      not directly located/read to confirm or deny this one way or the
+      other. No credible primary source (Toyota Canada PDF, JDM manual, or
+      other market's factory schedule) was found for ANY hybrid transaxle
+      fluid change interval on this transaxle family — only unsourced
+      forum claims and independent shops' own recommendations (e.g. one
+      Japanese tire/service shop's page recommending 40,000 km on its own
+      authority, not citing any Toyota document). Treat the 72mo/96,000km
+      figure as an unverified forum claim, not a confirmed fact, until
+      someone locates and reads the actual source document.
     intervalMiles: 30000
     intervalMonths: 36
   - itemType: spark-plugs

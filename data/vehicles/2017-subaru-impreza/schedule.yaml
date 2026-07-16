@@ -25,12 +25,53 @@
 #    15,000 mi figure that wasn't as well corroborated).
 #  - Front & rear differential fluid: inspect at 30,000 mi intervals per
 #    Subaru's normal schedule (severe duty 15,000 mi); community proactive
-#    replacement figure 50,000-60,000 mi.
+#    replacement figure 50,000-60,000 mi; see DRIVELINE COMPONENT AUDIT below
+#    for why these are two separate items.
+#  - Subaru Canada official maintenance guide (subaru.ca, Vehicle
+#    Maintenance / Maintenance Guide page): explicitly lists BOTH "CVT
+#    fluid (except BRZ)" AND "Front/Rear Differential Gear Oil (except
+#    BRZ)" at a recommended replacement of 110,000 km / 66 months
+#    (~68,000 mi) — a real official non-US-market Subaru interval, not a
+#    forum guess. This directly confirms Brady's hypothesis that these
+#    "lifetime fluid" community intervals largely trace back to real
+#    factory schedules Subaru publishes outside the US.
 #
 # Prior version of this file used a 5,000 mi oil interval and a 35,000 mi
 # "CVT fluid drain & fill" figure that were both off — corrected here. The
 # CVTF-II-only fluid warning (never the orange High Torque CVTF) is kept
 # since it's a real, distinct hazard, not a manufacturer interval question.
+#
+# DRIVELINE COMPONENT AUDIT (2026-07-16, corrected same day after a first
+# pass got this wrong): this is a CVT (TR580 Lineartronic) car, not a
+# manual-transmission Impreza. VERIFIED via multiple independent forum
+# how-to threads (subaruoutback.org, impreza5.com, NASIOC) describing the
+# actual service procedure: the FRONT differential on the TR580, despite
+# being housed within the same transmission casing as the CVT variator, has
+# its OWN separate fill plug (passenger-side 8mm Allen), drain plug (Torx
+# T70), and level/check port — it takes ~1.3-1.35 qt of 75W-90 gear oil,
+# completely distinct from CVT fluid (CVTF-II), and is NOT topped off or
+# serviced by a CVT fluid change. An earlier pass on this file incorrectly
+# concluded the front diff shares CVT fluid, based on unverified general
+# knowledge during a tool outage — that was wrong and has been corrected.
+# The REAR differential is a separate housing entirely (fed by the
+# propeller shaft) with its own fill/drain, also 75W-90 gear oil. So there
+# ARE two genuinely separate differential service items (front + rear),
+# each getting its own itemType below, matching Brady's original
+# expectation. The AWD torque-split TRANSFER CLUTCH, by contrast, is a wet
+# multi-plate clutch pack inside the CVT's extension housing with no
+# separate fill of its own — it IS lubricated by the CVT fluid, so it does
+# NOT get a separate schedule item; a CVT fluid change already covers it.
+# Corroborated by maintenance-log.yaml: Brady bought a case of 4 qt of
+# Valvoline 75W-90 gear oil — more than the ~1 qt a single differential
+# needs, but right for filling both front (~1.35 qt) AND rear (~1 qt) diffs
+# from one purchase, which only makes sense if both are real separate fills.
+# JAPAN INTERVAL: multiple independent forum threads (thesubaruforums.com,
+# subaruxvforum.com, bobistheoilguy.com) consistently reference a Japan-
+# market CVT fluid interval in the 30,000-36,000 mi/km range, distinctly
+# shorter than the US "no scheduled replacement" stance — no single primary
+# JDM manual PDF was located, so treat the exact figure (30k vs 36k, mi vs
+# km ambiguity across secondary sources) as corroborated-but-imprecise,
+# stronger than a bare forum guess but short of a directly-read citation.
 items:
   - itemType: oil-change
     name: Oil & filter change (0W-20 full synthetic) — Subaru normal 6,000 mi/6 mo
@@ -66,23 +107,55 @@ items:
       schedule doesn't call for a fluid change through 132,000 mi (inspect
       only, every 30,000 mi) — the interval below is a proactive
       drain-and-fill given this car's unknown prior service history, not a
-      manufacturer-mandated replacement. COMMUNITY NOTE: independent CVT
-      shops report the US "lifetime fluid" line causes a dramatically
-      higher CVT failure rate without service, and Subaru Japan directs its
-      own market to change this fluid every 30,000 mi — the 30,000 mi
-      figure below matches that, though some forum members push it to
-      60,000-100,000 mi.
+      manufacturer-mandated replacement. This service also covers the AWD
+      transfer clutch pack, which is lubricated by CVT fluid with no
+      separate fill of its own (see DRIVELINE COMPONENT AUDIT above) — but
+      does NOT cover the front differential, which has its own separate
+      75W-90 gear oil fill (see front-differential-fluid below). COMMUNITY
+      NOTE: independent CVT shops report the US "lifetime fluid" line
+      causes a dramatically higher CVT failure rate without service.
+      Subaru Canada's OFFICIAL maintenance guide (subaru.ca) lists CVT
+      fluid replacement at 110,000 km/66 months (~68,000 mi) — a real
+      factory interval, not a forum guess. Separately, multiple forum
+      threads reference a shorter Japan-market interval of roughly
+      30,000-36,000 mi/km (exact figure not pinned to a primary JDM
+      document, but corroborated across several independent threads) —
+      the 30,000 mi figure below leans toward that more conservative JDM
+      range given this car's unknown prior service history at ~140K mi.
     intervalMiles: 30000
     intervalMonths: null
-  - itemType: rear-diff-transfer-case
+  - itemType: front-differential-fluid
     name: >-
-      Front & rear differential fluid (AWD) — inspect at 30,000 mi
-      intervals per Subaru's normal schedule; replace only if
-      contaminated or under severe use. COMMUNITY NOTE: severe-duty spec
-      already calls for a 15,000 mi change; forum consensus for
-      normal-use proactive replacement (not just inspection) clusters
-      around 50,000-60,000 mi with synthetic gear oil, given this car's
-      unknown prior service history.
+      Front differential fluid — 75W-90 gear oil (~1.3-1.35 qt), API GL-5.
+      Despite being housed within the same case as the CVT, this has its
+      OWN separate fill (passenger-side 8mm Allen plug), drain (Torx T70),
+      and level/check port — it is NOT topped off or serviced by a CVT
+      fluid change (see DRIVELINE COMPONENT AUDIT above). Inspect at
+      30,000 mi intervals per Subaru's normal schedule; replace only if
+      contaminated or under severe use. COMMUNITY NOTE: Subaru Canada's
+      official guide lists front/rear differential gear oil at 110,000
+      km/66 months (~68,000 mi) — a real factory interval, not a forum
+      guess. Severe-duty US spec already calls for a 15,000 mi change;
+      forum consensus for normal-use proactive replacement (not just
+      inspection) clusters around 50,000-60,000 mi with synthetic gear
+      oil, given this car's unknown prior service history.
+    intervalMiles: 30000
+    intervalMonths: null
+  - itemType: rear-differential-fluid
+    name: >-
+      Rear differential fluid — 75W-90 gear oil (~1 qt), a fully separate
+      housing at the rear axle fed by the propeller shaft, with its own
+      fill/drain. Inspect at 30,000 mi intervals per Subaru's normal
+      schedule; replace only if contaminated or under severe use.
+      COMMUNITY NOTE: Subaru Canada's official guide lists front/rear
+      differential gear oil at 110,000 km/66 months (~68,000 mi) — a real
+      factory interval, not a forum guess. Severe-duty US spec already
+      calls for a 15,000 mi change; forum consensus for normal-use
+      proactive replacement (not just inspection) clusters around
+      50,000-60,000 mi with synthetic gear oil, given this car's unknown
+      prior service history. Same service visit as front-differential-fluid
+      above (both use the same 75W-90 gear oil Brady already has on hand),
+      but tracked as a separate item so neither gets silently skipped.
     intervalMiles: 30000
     intervalMonths: null
   - itemType: coolant-flush

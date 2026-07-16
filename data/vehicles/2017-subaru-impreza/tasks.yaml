@@ -1,20 +1,31 @@
 tasks:
   - id: 1
-    title: Front & rear differential fluid — fluid already on hand, just needs the swap
+    title: 'Front & rear differential fluid — both fills already on hand, just needs the swap'
     notes: >-
       Subaru lists three non-interchangeable gear oils (Extra MT 75W80,
       High Performance 75W90, and 80W90 LSD) with no single confirmed
-      answer for which applies to this exact AWD Impreza's rear
-      differential — originally flagged to verify by VIN before buying.
-      Brady has since acquired the fluid for both the front and rear
-      differentials (as of the April 2026 post-purchase checklist) — just
-      needs to actually do the fluid swap on both. COMMUNITY NOTE (see
-      schedule.yaml): Subaru's own severe-duty spec already calls for a
-      15,000 mi change; forum consensus for a normal-use proactive
-      replacement (not just inspection) is 50,000-60,000 mi with synthetic
-      gear oil — given this car's unknown prior service history, doing the
-      swap now rather than waiting is reasonable regardless of exact
-      mileage.
+      answer for which applies to this exact AWD Impreza — originally
+      flagged to verify by VIN before buying. Brady has since acquired a
+      case of 4 qt Valvoline 75W-90 synthetic gear oil (per
+      maintenance-log.yaml, purchased 2026-03-14) — enough to cover BOTH
+      the front differential (~1.3-1.35 qt) and the rear differential
+      (~1 qt), just needs the swap on both. MECHANICAL NOTE (2026-07-16,
+      see schedule.yaml's DRIVELINE COMPONENT AUDIT): despite being housed
+      within the same case as the CVT, the front differential has its own
+      separate fill/drain/check plugs and its own 75W-90 gear oil — it is
+      NOT serviced by the CVT fluid change (task #11), and IS a genuinely
+      separate service from the rear differential. Do both while under the
+      car for this service — schedule.yaml tracks them as two separate
+      items (front-differential-fluid, rear-differential-fluid) so neither
+      gets silently skipped, even though they're done in the same visit.
+      COMMUNITY NOTE: Subaru Canada's official maintenance guide lists
+      front/rear differential gear oil replacement at 110,000 km/66
+      months (~68,000 mi) — a real factory interval, not a forum guess.
+      US severe-duty spec already calls for a 15,000 mi change; forum
+      consensus for normal-use proactive replacement (not just
+      inspection) is 50,000-60,000 mi with synthetic gear oil — given
+      this car's unknown prior service history, doing the swap now rather
+      than waiting is reasonable regardless of exact mileage.
     status: open
     createdDate: '2026-07-11'
     completedDate: null
@@ -110,10 +121,17 @@ tasks:
       cause of CVT damage on the wrong platform. Confirm the bottle before
       pouring. COMMUNITY NOTE: independent CVT shops report a dramatically
       higher failure rate on Subaru CVTs that never get a fluid change
-      despite the US "lifetime fluid" marketing, and Subaru Japan directs
-      its own market to change this fluid every 30,000 mi (some forum
-      members stretch to 60,000-100,000 mi) — worth doing now given this
-      car's unknown prior service history at ~135K mi.
+      despite the US "lifetime fluid" marketing. Subaru Canada's official
+      guide lists CVT fluid at 110,000 km/66 months (~68,000 mi) — a real
+      factory interval. Separately, forum threads reference a shorter
+      Japan-market interval around 30,000-36,000 mi/km (not pinned to a
+      primary JDM document, but corroborated across multiple threads) —
+      worth doing now given this car's unknown prior service history at
+      ~140K mi. This service covers the AWD transfer clutch pack, which
+      shares CVT fluid with no separate fill of its own — but does NOT
+      cover the front differential, which has its own separate gear-oil
+      fill (see task #1). See schedule.yaml's DRIVELINE COMPONENT AUDIT
+      note for the full mechanical breakdown.
     status: open
     createdDate: '2026-07-14'
     completedDate: null
