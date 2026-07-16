@@ -515,6 +515,19 @@ entries:
       2025-09-09 (147,713 mi) and 2025-12-30 (153,008 mi) readings — treat as
       rough.
     documents: []
+  - date: '2026-03-14'
+    mileage: 156018
+    itemType: wiper-blades
+    description: >-
+      Wiper blades replaced — DIY (all vehicles done together right after
+      buying the Impreza)
+    notes: >-
+      Brady replaced the wiper blades on all his vehicles together in March
+      2026, right after buying the Impreza (Draco, purchased 2026-03-13) —
+      logged as the day after that purchase. Exact date is approximate (Brady
+      wasn't certain of the day). Mileage interpolated from the surrounding
+      odometer readings — treat as rough.
+    documents: []
   - date: '2026-05-25'
     mileage: 158643
     itemType: ''
