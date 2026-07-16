@@ -58,9 +58,16 @@ items:
     name: >-
       Inverter coolant (same Toyota Super Long Life Coolant spec,
       separate reservoir/system from engine coolant) — FIRST replacement
-      at 180 mo/150,000 mi, then every 60 mo/50,000 mi thereafter
-    intervalMiles: 150000
-    intervalMonths: 180
+      at 180 mo/150,000 mi, then every 60 mo/50,000 mi thereafter. The
+      interval below (50,000 mi/60 mo) is the RECURRING figure that
+      applies once the first service is logged — the true first-due point
+      is the higher 150,000 mi/180 mo figure, but this app always computes
+      the next due point as last-logged + this interval, so the recurring
+      number belongs here, not the first-occurrence one. No due-mileage is
+      shown at all until the first entry is logged, so this doesn't cause
+      premature nagging before the real first-due point.
+    intervalMiles: 50000
+    intervalMonths: 60
   - itemType: transmission-fluid-service
     name: >-
       eCVT transaxle — Lexus states the transaxle and its fluid are a
