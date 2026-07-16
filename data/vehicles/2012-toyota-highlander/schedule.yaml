@@ -139,11 +139,19 @@ items:
       mi given this car's high mileage and unknown prior service.
     intervalMiles: 30000
     intervalMonths: null
+  - itemType: battery-test
+    name: 12V battery load test — part of Brady's annual spring tune-up routine
+    intervalMiles: null
+    intervalMonths: 12
   - itemType: battery-12v
     name: 12V battery replacement (typical service life ~4-5 yr; last replaced 2024-02-19)
     intervalMiles: null
     intervalMonths: 60
   - itemType: wiper-blades
-    name: Wiper blades
+    name: >-
+      Wiper blades — Brady checks these every spring during the seasonal
+      tune-up, but only actually replaces them roughly every other year
+      once they get streaky (sometimes sooner if damaged). 24 mo below
+      reflects the real replacement cadence, not the annual spring check.
     intervalMiles: null
-    intervalMonths: 12
+    intervalMonths: 24

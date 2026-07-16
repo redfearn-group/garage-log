@@ -776,6 +776,19 @@ entries:
       reconstructed from Brady's memory. Exact date is approximate. Mileage
       interpolated from the surrounding odometer readings — treat as rough.
     documents: []
+  - date: '2026-04-08'
+    mileage: 153950
+    itemType: battery-test
+    description: 12V battery load-tested with Brady's own tester — good
+    notes: >-
+      Part of Brady's annual spring battery-check routine, done across his
+      3 personal vehicles this year (Zeus, Hera, Draco). Exact date not
+      independently confirmed — approximated to match Draco's confirmed
+      2026-04-08 post-purchase service date since Brady wasn't certain of
+      the precise day. Mileage interpolated between the surrounding
+      odometer readings (153,240 mi on 2026-02-21, 155,407.7 mi on
+      2026-07-12) — treat as rough.
+    documents: []
   - date: '2026-06-26'
     mileage: 155162
     itemType: ''

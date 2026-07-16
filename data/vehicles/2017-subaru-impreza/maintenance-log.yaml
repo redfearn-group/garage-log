@@ -268,6 +268,16 @@ entries:
     description: Spark plugs replaced — DIY, same session as the valve cover gasket job
     notes: ''
     documents: []
+  - date: '2026-04-08'
+    mileage: 134783
+    itemType: battery-test
+    description: 12V battery load-tested with Brady's own tester — good, terminals cleaned
+    notes: >-
+      Split out from the bundled post-purchase inspection entry above (part
+      of Brady's annual spring battery-check routine, done across his 3
+      personal vehicles this year — Zeus, Hera, Draco) so it can actually be
+      tracked against a schedule item.
+    documents: []
   - date: '2026-04-29'
     mileage: 136121
     itemType: ''
