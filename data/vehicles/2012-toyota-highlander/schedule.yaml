@@ -7,20 +7,52 @@
 # (frequent short trips, dusty/stop-and-go driving, towing) are noted where
 # they differ, but the numeric interval here is the normal one.
 #
-# Sources (verified 2026-07-15):
+# Sources (verified 2026-07-16, re-audited against the primary document text):
 #  - Toyota Warranty & Maintenance Guide, Highlander (2013 model year guide,
 #    same 2GR-FE/U660E powertrain as this 2012; assets.sia.toyota.com
-#    T-MMS-13Highlander).
-#  - Toyota official oil-change-interval clarification (support.toyota.com):
-#    0W-20 full-synthetic-equipped models = 10,000 mi / 12 mo normal interval;
-#    the 5,000 mi figure is the fluid-check/rotation rhythm, or the severe-
+#    T-MMS-13Highlander/pdf/2013_Toyota_Highlander_WMG.pdf) — downloaded and
+#    read directly (Schedule B, V6 Engines tables + "Explanation of
+#    Maintenance Items" section) rather than trusted via aggregator summary.
+#  - Toyota official oil-change-interval clarification, confirmed in the WMG
+#    itself: "For VEHICLES CERTIFIED FOR 0W20 motor oil, the oil change
+#    interval is 10,000 miles or 12 months IF 0W20 MOTOR OIL IS BEING USED."
+#    The 5,000 mi figure is the fluid-check/rotation rhythm, or the severe-
 #    duty oil interval.
 #  - Aggregated dealer maintenance-schedule pages (Toyota of Des Moines,
-#    Galaxy Toyota, KBB) for spark plug, coolant, and transmission intervals.
+#    Galaxy Toyota, KBB) used only as secondary cross-checks, not primary
+#    sourcing, for transmission/differential community-interval framing.
+#
+# 2026-07-16 audit corrections against the primary WMG PDF text:
+#  - cabin-air-filter was wrong: file previously said 15,000 mi/12 mo
+#    (aggregator-sourced); the actual WMG places "Replace cabin air filter"
+#    only at the 30,000/60,000/90,000/120,000 mi (36/72/108/144 mo) service
+#    points for both Schedule A and B. Corrected to 30,000 mi/36 mo.
+#  - engine-air-filter mileage (30,000 mi) was already correct but
+#    intervalMonths was null; the WMG lists it at "30,000 miles or 36
+#    months" (recurring), so intervalMonths corrected to 36.
+#  - brake-fluid-flush previously implied a "Toyota time-based, every 3
+#    years" factory spec; the WMG for this vehicle contains no scheduled
+#    brake-fluid replacement item at all (inspection of "brake lines and
+#    hoses" only). Re-labeled as a community-sourced estimate, no Toyota
+#    citation exists for this vehicle.
+#  - coolant-flush recurring time figure (60 mo) was previously a derived/
+#    estimated value; a literal Toyota footnote in this WMG was located
+#    confirming it directly ("Initial replacement at 100,000 miles/120
+#    months. Replace every 50,000 miles/60 months thereafter.") — no longer
+#    a derivation.
+#  - spark-plugs (120,000 mi/144 mo) confirmed directly against the WMG's
+#    Schedule B V6 table; the alternate 60,000 mi figure floating around
+#    dealer sites does not appear anywhere in Toyota's own document for this
+#    powertrain.
+#  - oil-change, tire-rotation, multi-point-inspection, brake-inspection,
+#    transmission-fluid-service, rear-diff-transfer-case (including the
+#    front-vs-rear 30k/15k inspection split) were all independently
+#    re-checked against the WMG tables and are unchanged — figures were
+#    already correct.
 #
 # Prior version of this file used a 5,000 mi oil-change interval sourced from
 # SEO round-up sites that don't distinguish the service rhythm from the
-# actual oil-change interval; corrected here.
+# actual oil-change interval; corrected in an earlier pass.
 items:
   - itemType: oil-change
     name: Oil & filter change (0W-20 full synthetic, ~6.4 qt) — Toyota normal 10,000 mi/12 mo
@@ -35,32 +67,39 @@ items:
     intervalMiles: 5000
     intervalMonths: 6
   - itemType: cabin-air-filter
-    name: Cabin air filter — Toyota ~15,000 mi/12 mo
-    intervalMiles: 15000
-    intervalMonths: 12
-  - itemType: engine-air-filter
-    name: Engine air filter — Toyota ~30,000 mi
+    name: Cabin air filter — Toyota normal-schedule 30,000 mi/36 mo (confirmed in 2013 Highlander WMG Schedule A/B tables)
     intervalMiles: 30000
-    intervalMonths: null
+    intervalMonths: 36
+  - itemType: engine-air-filter
+    name: Engine air filter — Toyota normal-schedule 30,000 mi/36 mo (confirmed in 2013 Highlander WMG Schedule A/B tables)
+    intervalMiles: 30000
+    intervalMonths: 36
   - itemType: brake-inspection
     name: Brake inspection (pads/rotors) — with each service
     intervalMiles: 5000
     intervalMonths: 6
   - itemType: brake-fluid-flush
-    name: Brake fluid — Toyota time-based, every 3 years regardless of mileage
+    name: >-
+      Brake fluid — Toyota's own Warranty & Maintenance Guide for this
+      vehicle does NOT list a scheduled brake-fluid replacement item at all
+      (only visual "brake lines and hoses" inspection); there is no fixed
+      Toyota factory interval to cite here. COMMUNITY NOTE: industry/Toyota-
+      tech consensus (independent shops, other Toyota owner's-manual
+      language for models that do specify it) is every 2-3 years regardless
+      of mileage to control moisture/corrosion; 36 mo below is the
+      conservative end of that community range, not a literal Toyota
+      citation for this vehicle.
     intervalMiles: null
     intervalMonths: 36
   - itemType: coolant-flush
     name: >-
       Engine coolant (Toyota Super Long Life Coolant, pink) — FIRST change
-      100,000 mi/10 yr, then every 50,000 mi thereafter. Toyota's source
-      only states the recurring MILEAGE figure (50,000 mi), not a recurring
-      time figure — 60 mo below is DERIVED by halving the first-change time
-      figure (120 mo) in the same proportion as the mileage figure was
-      halved (100K → 50K); this exact halving pattern is explicitly
-      confirmed on the mechanically-related Lexus ES 300h coolant schedule
-      (120 mo first → 60 mo recurring), so it's a well-grounded derivation,
-      not a literal Toyota citation for the recurring time value.
+      100,000 mi/120 mo, then every 50,000 mi/60 mo thereafter. Confirmed by
+      a literal citation in the 2013 Highlander Warranty & Maintenance
+      Guide footnote: "Initial replacement at 100,000 miles/120 months.
+      Replace every 50,000 miles/60 months thereafter." (both the recurring
+      mileage AND recurring time figures below are directly stated by
+      Toyota for this vehicle, not derived.)
     intervalMiles: 50000
     intervalMonths: 60
   - itemType: transmission-fluid-service
@@ -79,11 +118,12 @@ items:
     intervalMonths: null
   - itemType: spark-plugs
     name: >-
-      Spark plugs (iridium, 2GR-FE V6) — Toyota's guide is inconsistent
-      across sources (60,000 mi cited by some dealer pages, 120,000 mi/12 yr
-      cited by others as the iridium long-life interval); iridium plugs on
-      this engine family are long-life parts, so treat 120,000 mi as the
-      correct normal interval and do not replace early
+      Spark plugs (iridium, 2GR-FE V6) — confirmed directly in the 2013
+      Highlander Warranty & Maintenance Guide, Schedule B (V6 engines):
+      "Replace spark plugs" appears only at the "120,000 miles or 144
+      months" service table. (Some dealer/aggregator pages cite 60,000 mi;
+      that figure does not appear in Toyota's own document for this
+      powertrain and is disregarded here.)
     intervalMiles: 120000
     intervalMonths: 144
   - itemType: rear-diff-transfer-case

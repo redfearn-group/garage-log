@@ -4,16 +4,25 @@
 # heavy loads, sustained dusty/off-road, extended idling — are noted where
 # they differ, but the numeric interval is the normal one.
 #
-# Sources (verified 2026-07-15):
-#  - Ford Owner's Manual / Scheduled Maintenance Guide, 2015 F-150, "Normal
-#    Scheduled Maintenance – 3.5L Duratec/3.5L EcoBoost"
-#    (fordservicecontent.com owner-manual content).
+# Sources (re-verified 2026-07-16):
+#  - PRIMARY: 2015 F-150 Owner's Manual (May 2015 Third Printing), "Scheduled
+#    Maintenance" chapter, pp. 501-506 — "NORMAL SCHEDULED MAINTENANCE" and
+#    "SPECIAL OPERATING CONDITIONS SCHEDULED MAINTENANCE" tables, read in full
+#    from the actual manual text (also mirrored on fordservicecontent.com).
 #  - f150hub.com "3.5L EcoBoost F-150 Maintenance Schedule".
 #  - Firestone Complete Auto Care, 2015 F-150 scheduled maintenance.
+#  - ZF/community sources cited inline per-item below for the two fluids
+#    Ford calls "lifetime" (transmission, axle/transfer-case) and for items
+#    Ford's own schedule table does not cover at all for this model year
+#    (cabin air filter, brake fluid).
 #
 # Prior version of this file used generic placeholder intervals (5k oil, 30k
 # plugs/coolant/transmission) that were far more frequent than Ford specifies;
-# corrected here to the actual Ford intervals.
+# corrected here to the actual Ford intervals. 2026-07-16 pass: re-verified
+# every item against the actual owner's-manual text (not just aggregator
+# summaries) and corrected two items whose citations turned out to be wrong
+# (rear-diff-transfer-case, cabin-air-filter, brake-fluid-flush) and fixed an
+# inaccurate "derived" note on coolant that Ford actually states literally.
 items:
   - itemType: oil-change
     name: >-
@@ -36,7 +45,15 @@ items:
     intervalMiles: 30000
     intervalMonths: null
   - itemType: cabin-air-filter
-    name: Cabin air filter — Ford ~20,000 mi
+    name: >-
+      Cabin air filter — CORRECTED 2026-07-16: the 2015 F-150 owner's
+      manual only says "replace at regular intervals, see Scheduled
+      Maintenance" but the actual Scheduled Maintenance table does NOT
+      list a cabin air filter line item at all (prior version of this
+      file wrongly attributed a 20,000 mi figure to Ford). 20,000 mi is
+      kept as a COMMUNITY/industry-standard estimate (widely-cited
+      15,000-20,000 mi range from parts retailers and independent shops),
+      not an official Ford interval.
     intervalMiles: 20000
     intervalMonths: null
   - itemType: brake-inspection
@@ -56,19 +73,25 @@ items:
     intervalMiles: null
     intervalMonths: 12
   - itemType: brake-fluid-flush
-    name: Brake fluid — Ford specifies a time-based change (~every 3 years), no set mileage
+    name: >-
+      Brake fluid — CORRECTED 2026-07-16: the 2015 F-150 owner's manual
+      has NO scheduled brake fluid change at all — only a periodic "Brake
+      Fluid Check" (level/condition). Ford did not add a scheduled brake
+      fluid CHANGE to the F-150's maintenance table until the 2020 model
+      year (prior version of this file wrongly attributed a 3-year figure
+      to this 2015 truck's own Ford schedule). 36 mo below is kept as a
+      COMMUNITY/industry-standard estimate — DOT 4 brake fluid is
+      hygroscopic and most non-Ford manufacturers (and Ford's own 2020+
+      schedule) call for a ~3-year change regardless of mileage.
     intervalMiles: null
     intervalMonths: 36
   - itemType: coolant-flush
     name: >-
-      Engine coolant (Motorcraft Orange) — Ford: FIRST change at 100,000 mi
-      or 6 yr, then every 50,000 mi thereafter. Ford's source only states
-      the recurring MILEAGE figure (50,000 mi), not a recurring time figure
-      — 36 mo below is DERIVED by halving the first-change time figure (72
-      mo) in the same proportion as the mileage figure was halved (100K →
-      50K), matching the identical halving pattern Toyota/Lexus state
-      explicitly for their own coolant (120 mo first → 60 mo recurring).
-      Not a literal Ford citation for the recurring time value.
+      Engine coolant (Motorcraft Orange) — Ford owner's manual, Scheduled
+      Maintenance table, footnote 2: "Initial replacement at six years or
+      100,000 miles, then every three years or 50,000 miles." Both the
+      recurring mileage (50,000 mi) AND recurring time (3 yr / 36 mo)
+      figures below are literal, direct Ford citations, not derived.
     intervalMiles: 50000
     intervalMonths: 36
   - itemType: transmission-fluid-service
@@ -89,15 +112,21 @@ items:
     intervalMonths: null
   - itemType: rear-diff-transfer-case
     name: >-
-      Rear axle + transfer case + front axle fluid (4WD) — Ford's normal
-      schedule says 150,000 mi, but Ford's OWN severe-duty table (an
-      official Ford figure, not just forum chatter) already specifies
-      axles at 30,000 mi and the transfer case at 60,000 mi; F150 forums
-      lean the same direction, recommending 30,000-50,000 mi regardless of
-      official duty classification. The interval below uses Ford's own
-      severe-duty axle figure (30,000 mi) as the governing number — the
-      most conservative, best-sourced figure — NOT the 150,000 mi normal
-      figure. Water submersion (deep fording/flooding) calls for an
+      Rear axle + transfer case + front axle fluid (4WD) — CORRECTED
+      2026-07-16: Ford's owner's manual normal schedule lists 150,000 mi
+      for all three, and Ford's "Exceptions" section actually classifies
+      the synthetic-filled axles as lubricated FOR LIFE — no scheduled
+      change at all, service only on leak or water submersion (there is
+      no official Ford "severe-duty axle = 30,000 mi" figure; that was a
+      misattribution in a prior version of this file). Ford's own SEVERE
+      duty table only gives a numeric figure for the transfer case
+      (60,000 mi under towing/idling/dusty/off-road use), not the axles.
+      Since Ford treats the axle fluid as effectively unscheduled, the
+      30,000 mi interval below is a COMMUNITY-sourced figure (F150
+      Forum/Ford-Trucks/F150online consensus, incl. mechanics quoted
+      recommending a change despite the "lifetime" label), chosen as the
+      most conservative well-supported number to cover all three fluids
+      in one item. Water submersion (deep fording/flooding) calls for an
       immediate change regardless of interval.
     intervalMiles: 30000
     intervalMonths: null
