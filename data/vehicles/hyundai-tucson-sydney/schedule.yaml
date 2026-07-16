@@ -31,7 +31,9 @@ items:
       Oil & filter change (0W-20 full synthetic per Hyundai spec) — Hyundai
       normal 7,500 mi/6 mo (severe 5,000 mi/6 mo — short trips under 5-10
       mi, extensive idling, dusty roads, or extreme temperatures all count
-      as severe; worth asking the family member about her typical driving)
+      as severe; worth asking the family member about her typical driving). Already
+      satisfies Brady's fleet-wide minimum-2x/year policy (2026-07-16,
+      spring tune-up + fall oil change) without any adjustment needed.
     intervalMiles: 7500
     intervalMonths: 6
   - itemType: tire-rotation

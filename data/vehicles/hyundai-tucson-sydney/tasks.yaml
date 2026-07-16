@@ -85,3 +85,22 @@ tasks:
     status: open
     createdDate: '2026-07-16'
     completedDate: null
+  - id: 7
+    title: 'Standing plan: the family member comes over every spring for a tune-up, every fall for an oil change (minimum)'
+    notes: >-
+      New fleet-wide policy from Brady (2026-07-16): the family member should come over
+      every SPRING to get her Tucson tuned up alongside Brady's own cars —
+      same seasonal routine as the rest of the fleet (battery load test,
+      wiper blade check, fluid checks, etc.). Then every FALL, at minimum,
+      each car — including hers — gets an oil change, so every car ends up
+      with at least 2 oil changes/year regardless of actual mileage. This is
+      an ongoing standing arrangement, not a one-time to-do — leaving it open
+      as a recurring reminder rather than marking it done after any single
+      instance. This car's oil-change schedule item was already at a
+      6-month interval before this policy (Hyundai's own normal-schedule
+      figure happens to match), so no schedule.yaml change was needed here
+      specifically — Zeus, Hera, and Lexus needed their oil-change intervals
+      tightened from 12 to 6 months to comply.
+    status: open
+    createdDate: '2026-07-16'
+    completedDate: null
