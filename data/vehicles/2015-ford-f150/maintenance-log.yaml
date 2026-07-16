@@ -204,6 +204,25 @@ entries:
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
     documents: []
+  - date: '2021-08-17'
+    mileage: 94027
+    itemType: brake-inspection
+    description: >-
+      Brake service — worked through seized/stuck brake caliper hardware,
+      replaced a caliper bolt/pin — DIY
+    notes: >-
+      Reconstructed from a cluster of AutoZone receipts on Brady's old
+      un-merged account (found in Gmail, not in the online order history):
+      2021-07-21 B'laster penetrating catalyst + a 21mm deep impact socket
+      (for stubborn/seized bolts), 2021-08-16 CRC Freeze-Off penetrant +
+      Permatex blue threadlocker, and 2021-08-17 a Duralast caliper bolt/pin
+      ($6.29). Brady confirms this was Zeus's brake work — the truck's
+      known tricky, seized-up brake components (the same caliper-hardware
+      trouble that recurs at the 2024-07 guide-pin job below). Dated to the
+      caliper-part purchase; the work spanned late July to mid-August 2021.
+      Mileage interpolated between the 2020-08-12 (81,599 mi) and 2022-09-12
+      (107,172 mi) readings — a ~2-year gap, so treat as rough.
+    documents: []
   - date: '2022-07-01'
     mileage: 104719
     itemType: ''
