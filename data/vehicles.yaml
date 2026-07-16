@@ -111,10 +111,10 @@ vehicles:
   - slug: hyundai-tucson-sydney
     make: Hyundai
     model: Tucson
-    year: null
+    year: 2020
     nickname: the family member's Tucson
-    trim: null
-    vin: null
+    trim: 2.4L GDI Theta II, AWD (HTRAC), 6-speed automatic
+    vin: [VIN-REDACTED]
     licensePlate: null
     tireSize: null
     purchaseDate: null
@@ -123,10 +123,18 @@ vehicles:
       Brady helps with her maintenance, so it's tracked here. Black paint.
       Added 2026-07-14 after an STP CAF90165P cabin air filter (fits
       2016-2021 Tucson) turned up in Brady's AutoZone order history, bought
-      alongside Highlander parts. Year, trim, VIN, license plate, tire size,
-      and current mileage are all still UNKNOWN — need to be gathered from
-      the family member/the car (see the open task). The cabin-filter fitment implies a
-      2016-2021 (3rd-gen "TL") Tucson, but that's an inference, not confirmed.
+      alongside Highlander parts — confirmed 2026-07-16 as correct fitment
+      once the VIN was known (this is a 3rd-gen "TL" facelift Tucson).
+
+      VIN decoded 2026-07-16 via NHTSA vPIC: 2020 model year, built at
+      Hyundai's Ulsan, South Korea plant, 2.4L GDI Theta II inline-4 (181
+      hp, DOHC), 6-speed automatic, AWD (HTRAC) — NHTSA's decode flags
+      drive type as "4WD/4x4" but this generation Tucson's AWD is an
+      on-demand electronically-controlled coupling system Hyundai
+      branded HTRAC, not a true low-range 4WD transfer case. NHTSA's trim
+      field returned an ambiguous list (Value/SEL/Sport/Limited/Ultimate —
+      VIN doesn't fully encode Hyundai trim), not yet narrowed down.
+      License plate and exact tire size still unknown — see open task.
     status: active
     photo: null
   - slug: 2017-subaru-impreza

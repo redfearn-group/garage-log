@@ -1,1 +1,8 @@
-entries: []
+entries:
+  - date: '2026-03-15'
+    mileage: 65865
+    notes: >-
+      First reading on file — reported by Brady as "around March 2026," so
+      the exact day is approximate (mid-month placeholder used). Baseline
+      needed before any schedule due-status can be computed; a more precise
+      date/reading would help but isn't required to unblock tracking.
