@@ -60,14 +60,23 @@ items:
       schedule doesn't call for a fluid change through 132,000 mi (inspect
       only, every 30,000 mi) — the interval below is a proactive
       drain-and-fill given this car's unknown prior service history, not a
-      manufacturer-mandated replacement.
+      manufacturer-mandated replacement. COMMUNITY NOTE: independent CVT
+      shops report the US "lifetime fluid" line causes a dramatically
+      higher CVT failure rate without service, and Subaru Japan directs its
+      own market to change this fluid every 30,000 mi — the 30,000 mi
+      figure below matches that, though some forum members push it to
+      60,000-100,000 mi.
     intervalMiles: 30000
     intervalMonths: null
   - itemType: rear-diff-transfer-case
     name: >-
       Front differential fluid (AWD) — inspect at 30,000 mi intervals per
       Subaru's normal schedule; replace only if contaminated or under
-      severe use
+      severe use. COMMUNITY NOTE: severe-duty spec already calls for a
+      15,000 mi change; forum consensus for normal-use proactive
+      replacement (not just inspection) clusters around 50,000-60,000 mi
+      with synthetic gear oil, given this car's unknown prior service
+      history.
     intervalMiles: 30000
     intervalMonths: null
   - itemType: coolant-flush

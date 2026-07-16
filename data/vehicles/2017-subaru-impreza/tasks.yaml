@@ -8,7 +8,13 @@ tasks:
       differential — originally flagged to verify by VIN before buying.
       Brady has since acquired the fluid for both the front and rear
       differentials (as of the April 2026 post-purchase checklist) — just
-      needs to actually do the fluid swap on both.
+      needs to actually do the fluid swap on both. COMMUNITY NOTE (see
+      schedule.yaml): Subaru's own severe-duty spec already calls for a
+      15,000 mi change; forum consensus for a normal-use proactive
+      replacement (not just inspection) is 50,000-60,000 mi with synthetic
+      gear oil — given this car's unknown prior service history, doing the
+      swap now rather than waiting is reasonable regardless of exact
+      mileage.
     status: open
     createdDate: '2026-07-11'
     completedDate: null
@@ -102,7 +108,12 @@ tasks:
       genuine CVTF-II (green, SOA427V1660/SOA427V1610) — NEVER the orange
       High Torque CVTF, which is chemically different and a documented
       cause of CVT damage on the wrong platform. Confirm the bottle before
-      pouring.
+      pouring. COMMUNITY NOTE: independent CVT shops report a dramatically
+      higher failure rate on Subaru CVTs that never get a fluid change
+      despite the US "lifetime fluid" marketing, and Subaru Japan directs
+      its own market to change this fluid every 30,000 mi (some forum
+      members stretch to 60,000-100,000 mi) — worth doing now given this
+      car's unknown prior service history at ~135K mi.
     status: open
     createdDate: '2026-07-14'
     completedDate: null

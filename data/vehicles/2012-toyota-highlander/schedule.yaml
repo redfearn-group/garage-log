@@ -62,7 +62,12 @@ items:
       interval in Toyota's guide (fill-for-life under normal conditions);
       Toyota's severe-duty schedule calls for a drain-and-fill around 60,000
       mi, which is the reasonable proactive interval for a car with unknown
-      prior fluid history like this one
+      prior fluid history like this one. COMMUNITY NOTE: Toyota techs
+      commonly recommend proactive changes every 60,000-100,000 mi on any
+      "sealed"/lifetime Toyota transmission regardless of official stance;
+      some Highlander owners report noticeably cleaner fluid doing it every
+      25,000-30,000 mi. 60,000 mi below is a reasonable middle ground given
+      unknown history.
     intervalMiles: 60000
     intervalMonths: null
   - itemType: spark-plugs
@@ -78,7 +83,13 @@ items:
     name: >-
       Front/rear differential + transfer case fluid (AWD) — Toyota AWD
       Highlander: inspect at 30,000 mi intervals, replace only if
-      contaminated/severe use (no fixed normal-use replacement interval)
+      contaminated/severe use (no fixed normal-use replacement interval).
+      COMMUNITY NOTE: Toyota's own manual actually specifies more frequent
+      INSPECTION than this item's interval reflects — rear diff/transfer
+      case every 15,000 mi/18 mo, front diff every 30,000 mi/36 mo under
+      normal use (severe: replace every 15,000 mi); forum consensus for
+      proactive replacement (not just inspection) is every 20,000-30,000
+      mi given this car's high mileage and unknown prior service.
     intervalMiles: 30000
     intervalMonths: null
   - itemType: battery-12v

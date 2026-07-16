@@ -71,6 +71,15 @@ items:
       entry tracks that leak inspection — it is NOT a fluid change
       interval. Any proactive fluid drain-and-fill some owners perform is
       outside Lexus's specification, not a manufacturer requirement.
+      COMMUNITY NOTE: the "sealed" stance is genuinely contested even among
+      Toyota/Lexus techs — Toyota Canada lists a 72 mo/96,000 km (~60,000
+      mi) interval for the mechanically-identical Camry Hybrid transaxle,
+      and forum-reported independent practice ranges 60,000-90,000 mi (or
+      6-9 yr) using Toyota ATF-WS. Some dealer service managers refuse to
+      touch it at all, arguing a change can disturb debris and cause more
+      harm than leaving it alone on a high-mileage, unknown-history unit —
+      so this is a genuine judgment call, not a clear-cut community
+      consensus like the other vehicles' fluids.
     intervalMiles: 30000
     intervalMonths: null
   - itemType: spark-plugs

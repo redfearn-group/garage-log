@@ -68,7 +68,13 @@ items:
   - itemType: transmission-fluid-service
     name: >-
       Transmission fluid (6R80, Motorcraft MERCON LV) — Ford normal 150,000
-      mi (30,000 mi if used in severe/tow service)
+      mi (30,000 mi if used in severe/tow service). COMMUNITY NOTE (not a
+      Ford spec): ZF, the actual transmission manufacturer, specifies 8
+      yr/50,000 mi; F150 forums widely call Ford's 150K figure "a terrible
+      idea" and recommend a first change at 30,000 mi then every 60,000 mi
+      thereafter (or every 30,000 mi as best practice). Given this truck's
+      unknown prior transmission-fluid history, treat 30,000-60,000 mi as
+      the realistic proactive interval, not 150,000.
     intervalMiles: 150000
     intervalMonths: null
   - itemType: spark-plugs
@@ -78,6 +84,12 @@ items:
   - itemType: rear-diff-transfer-case
     name: >-
       Rear axle + transfer case + front axle fluid (4WD) — Ford normal
-      150,000 mi (much sooner, ~30,000 mi, if towing/severe)
+      150,000 mi (much sooner, ~30,000 mi, if towing/severe). COMMUNITY
+      NOTE (not a Ford spec): even Ford's own severe-schedule already puts
+      axles at 30,000 mi and the transfer case at 60,000 mi; F150 forums
+      lean more conservative still, recommending 30,000-50,000 mi
+      regardless of official duty classification. Water submersion (deep
+      fording/flooding) calls for an immediate change regardless of
+      interval.
     intervalMiles: 150000
     intervalMonths: null

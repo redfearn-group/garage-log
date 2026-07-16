@@ -90,6 +90,22 @@ tasks:
     status: open
     createdDate: '2026-07-14'
     completedDate: null
+  - id: 11
+    title: 'Rear diff / front diff / transfer case fluid — fluid already on hand, just needs the swap'
+    notes: >-
+      Brady has already purchased differential fluid for the truck, not yet
+      installed. Per schedule.yaml's community note: Ford's own severe
+      schedule already calls for axle fluid at 30,000 mi and transfer case
+      at 60,000 mi (vs. 150,000 mi normal), and F150 forums lean toward an
+      even more conservative 30,000-50,000 mi given unknown prior service
+      history. This overlaps with task #3's pre-sale dealer estimate (rear
+      diff $242.95, front diff $199.95, transfer case $199.95) — doing it
+      DIY with fluid already on hand avoids that cost entirely; use
+      Motorcraft-spec gear oil per the truck's build (verify front vs. rear
+      axle fluid spec before pouring, they differ).
+    status: open
+    createdDate: '2026-07-16'
+    completedDate: null
   - id: 10
     title: 'Zeus spring service pass — oil treatment, oil change, filters, tire rotation, fuel/coolant/brake checks'
     notes: >-
