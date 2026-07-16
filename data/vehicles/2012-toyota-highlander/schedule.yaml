@@ -1,55 +1,88 @@
-# Built from a prior research session's checklist for this exact car (150K
-# mi, 12+ years old, unknown prior service history). Several intervals the
-# source itself couldn't confirm with high confidence are left without a
-# number here rather than guessed — see item names for what to verify
-# against the printed owner's manual before relying on the due-status here.
+# 2012 Toyota Highlander SE AWD, 2GR-FE 3.5L V6, U660E 6-speed automatic.
+# Intervals below are Toyota's NORMAL-schedule specs. Toyota's maintenance
+# booklet sets a 5,000 mi / 6 mo "service rhythm" (tire rotation + fluid/
+# filter checks at every visit), but that does NOT mean an oil-and-filter
+# change every visit — with 0W-20 full synthetic the 2GR-FE's actual oil
+# change interval is 10,000 mi / 12 mo under normal use. Severe-duty figures
+# (frequent short trips, dusty/stop-and-go driving, towing) are noted where
+# they differ, but the numeric interval here is the normal one.
+#
+# Sources (verified 2026-07-15):
+#  - Toyota Warranty & Maintenance Guide, Highlander (2013 model year guide,
+#    same 2GR-FE/U660E powertrain as this 2012; assets.sia.toyota.com
+#    T-MMS-13Highlander).
+#  - Toyota official oil-change-interval clarification (support.toyota.com):
+#    0W-20 full-synthetic-equipped models = 10,000 mi / 12 mo normal interval;
+#    the 5,000 mi figure is the fluid-check/rotation rhythm, or the severe-
+#    duty oil interval.
+#  - Aggregated dealer maintenance-schedule pages (Toyota of Des Moines,
+#    Galaxy Toyota, KBB) for spark plug, coolant, and transmission intervals.
+#
+# Prior version of this file used a 5,000 mi oil-change interval sourced from
+# SEO round-up sites that don't distinguish the service rhythm from the
+# actual oil-change interval; corrected here.
 items:
   - itemType: oil-change
-    name: Oil change (5W-30 — confirm exact grade/interval in owner's manual, not independently confirmed)
-    intervalMiles: 5000
-    intervalMonths: 6
+    name: Oil & filter change (0W-20 full synthetic, ~6.4 qt) — Toyota normal 10,000 mi/12 mo
+    intervalMiles: 10000
+    intervalMonths: 12
   - itemType: tire-rotation
-    name: Tire rotation
+    name: Tire rotation — Toyota's standard 5,000 mi/6 mo service rhythm
     intervalMiles: 5000
     intervalMonths: 6
-  - itemType: rear-diff-transfer-case
-    name: Rear differential & transfer case inspection + driveshaft bolt re-torque
-    intervalMiles: 15000
-    intervalMonths: null
-  - itemType: spark-plugs
-    name: Spark plugs (iridium) — verify exact interval in owner's manual before servicing, do not guess
-    intervalMiles: null
-    intervalMonths: null
   - itemType: multi-point-inspection
-    name: Multi-point inspection
+    name: Multi-point inspection / fluid level checks — with each 5,000 mi service
     intervalMiles: 5000
     intervalMonths: 6
-  - itemType: engine-air-filter
-    name: Engine air filter
-    intervalMiles: 30000
-    intervalMonths: 36
   - itemType: cabin-air-filter
-    name: Cabin air filter
+    name: Cabin air filter — Toyota ~15,000 mi/12 mo
     intervalMiles: 15000
     intervalMonths: 12
+  - itemType: engine-air-filter
+    name: Engine air filter — Toyota ~30,000 mi
+    intervalMiles: 30000
+    intervalMonths: null
   - itemType: brake-inspection
-    name: Brake inspection (pads/rotors)
-    intervalMiles: 15000
-    intervalMonths: 12
+    name: Brake inspection (pads/rotors) — with each service
+    intervalMiles: 5000
+    intervalMonths: 6
   - itemType: brake-fluid-flush
-    name: Brake fluid flush — Toyota specifies a time-based interval (~3 years); very likely overdue at this age
+    name: Brake fluid — Toyota time-based, every 3 years regardless of mileage
     intervalMiles: null
     intervalMonths: 36
   - itemType: coolant-flush
-    name: Engine coolant flush (Toyota Super Long Life Coolant) — confirm exact interval in owner's manual
+    name: >-
+      Engine coolant (Toyota Super Long Life Coolant, pink) — FIRST change
+      100,000 mi/10 yr, then every 50,000 mi thereafter
     intervalMiles: 50000
-    intervalMonths: null
+    intervalMonths: 120
   - itemType: transmission-fluid-service
-    name: Transmission fluid service (U660E, Toyota WS) — confirm interval; drain-and-fill given unknown history
+    name: >-
+      Transmission fluid (U660E, Toyota WS ATF) — no fixed normal-use
+      interval in Toyota's guide (fill-for-life under normal conditions);
+      Toyota's severe-duty schedule calls for a drain-and-fill around 60,000
+      mi, which is the reasonable proactive interval for a car with unknown
+      prior fluid history like this one
     intervalMiles: 60000
     intervalMonths: null
+  - itemType: spark-plugs
+    name: >-
+      Spark plugs (iridium, 2GR-FE V6) — Toyota's guide is inconsistent
+      across sources (60,000 mi cited by some dealer pages, 120,000 mi/12 yr
+      cited by others as the iridium long-life interval); iridium plugs on
+      this engine family are long-life parts, so treat 120,000 mi as the
+      correct normal interval and do not replace early
+    intervalMiles: 120000
+    intervalMonths: 144
+  - itemType: rear-diff-transfer-case
+    name: >-
+      Front/rear differential + transfer case fluid (AWD) — Toyota AWD
+      Highlander: inspect at 30,000 mi intervals, replace only if
+      contaminated/severe use (no fixed normal-use replacement interval)
+    intervalMiles: 30000
+    intervalMonths: null
   - itemType: battery-12v
-    name: 12V battery replacement (typical service life ~4-5 years)
+    name: 12V battery replacement (typical service life ~4-5 yr; last replaced 2024-02-19)
     intervalMiles: null
     intervalMonths: 60
   - itemType: wiper-blades

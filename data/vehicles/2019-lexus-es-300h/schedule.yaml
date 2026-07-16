@@ -1,48 +1,97 @@
-# Corrected from the source research: the source doc misidentified the
-# engine as 2AR-FXE (it's actually A25A-FXS, confirmed via VIN decode) and
-# as a result specified 0W-20 oil; the correct spec for this engine is
-# 0W-16 (0W-20 is too thick for its VVT orifices and can trigger codes).
-# Oil-change interval resolved from a source-internal contradiction (5K vs
-# 10K tables): 10K/12mo is the normal-use interval, 5K is for severe use
-# or the separate tire-rotation cadence.
+# 2019 Lexus ES 300h, A25A-FXS 2.5L hybrid, eCVT.
+#
+# Source (verified 2026-07-15, primary document): 2016 Lexus ES 300h
+# Warranty & Services Guide, official Lexus/Toyota PDF
+# (assets.sia.toyota.com, L-MMS-16ES300H) — the Scheduled Maintenance Log
+# table (pages 48-67) and Explanation of Maintenance Items (pages 68-72).
+# This is the SAME A25A-FXS/eCVT hybrid powertrain generation as this 2019
+# car (7th-gen ES, 2019-2024), and Lexus does not change this schedule
+# across a generation, so it applies directly. All intervals below are
+# read directly off that table, not aggregated from third-party sites.
+#
+# The Lexus schedule has a 6 mo/5,000 mi "visit rhythm" (fluid checks,
+# tire rotation, brake/wiper inspection at EVERY visit) that is separate
+# from the oil-change interval — do not confuse the two. Oil/cabin filter
+# are changed at every OTHER visit (12 mo/10,000 mi), matching engine
+# air filter/brake fluid at every 6th visit (36 mo/30,000 mi), etc.
 items:
   - itemType: oil-change
-    name: Oil change (0W-16 full synthetic, 4.8 qt, filter 04152-YZZA1)
+    name: >-
+      Oil & filter change (0W-16 full synthetic, 4.8 qt, filter
+      04152-YZZA1) — Lexus normal 12 mo/10,000 mi (NOT the 6 mo/5,000 mi
+      visit rhythm, which is a fluid-check/rotation visit, not
+      necessarily an oil change)
     intervalMiles: 10000
     intervalMonths: 12
   - itemType: tire-rotation
-    name: Tire rotation
+    name: Tire rotation — done at every scheduled visit, 6 mo/5,000 mi
+    intervalMiles: 5000
+    intervalMonths: 6
+  - itemType: brake-inspection
+    name: Visual brake pad/caliper/rotor inspection — done at every scheduled visit, 6 mo/5,000 mi
+    intervalMiles: 5000
+    intervalMonths: 6
+  - itemType: wiper-blades
+    name: Wiper blade inspection — done at every scheduled visit, 6 mo/5,000 mi; replace when cracked/streaking
     intervalMiles: 5000
     intervalMonths: 6
   - itemType: cabin-air-filter
-    name: Cabin air filter (87139-YZZ20)
-    intervalMiles: 15000
+    name: Cabin air filter (87139-YZZ20) — replaced at the same 12 mo/10,000 mi cadence as the oil change
+    intervalMiles: 10000
     intervalMonths: 12
   - itemType: engine-air-filter
-    name: Engine air filter (17801-31110, verify fit against VIN)
-    intervalMiles: 20000
-    intervalMonths: 24
+    name: Engine air filter (17801-31110, verify fit against VIN) — Lexus 36 mo/30,000 mi
+    intervalMiles: 30000
+    intervalMonths: 36
   - itemType: brake-fluid-flush
-    name: Brake fluid flush (Toyota DOT 3 / JWS 3133) — time-based only
-    intervalMiles: null
+    name: Brake fluid replacement — Lexus 36 mo/30,000 mi, whichever occurs first (not purely time-based)
+    intervalMiles: 30000
     intervalMonths: 36
   - itemType: engine-coolant-flush
-    name: Engine coolant flush (Toyota SLLC pink, 50/50) — separate from inverter coolant
+    name: >-
+      Engine coolant (Toyota Super Long Life Coolant, pink/50-50) —
+      FIRST replacement at 120 mo/100,000 mi, then every 60 mo/50,000 mi
+      thereafter — separate system from inverter coolant below
     intervalMiles: 50000
     intervalMonths: 60
-  - itemType: battery-12v
-    name: 12V auxiliary battery (Group 55B24R, in trunk behind left panel)
-    intervalMiles: null
-    intervalMonths: 72
-  - itemType: hybrid-battery-fan-filter
-    name: Hybrid battery cooling fan filter — clean (behind right rear seat trim, per TSB L-SB-0028-20)
-    intervalMiles: 20000
-    intervalMonths: null
-  - itemType: brake-inspection
-    name: Brake pad/rotor inspection (regenerative braking wears these slowly — still check)
+  - itemType: inverter-coolant-flush
+    name: >-
+      Inverter coolant (same Toyota Super Long Life Coolant spec,
+      separate reservoir/system from engine coolant) — FIRST replacement
+      at 180 mo/150,000 mi, then every 60 mo/50,000 mi thereafter
+    intervalMiles: 150000
+    intervalMonths: 180
+  - itemType: transmission-fluid-service
+    name: >-
+      eCVT transaxle — Lexus states the transaxle and its fluid are a
+      SEALED unit with NO scheduled fluid check or replacement, and there
+      is no dipstick. The only manufacturer-specified service is a visual
+      leak inspection of the transaxle/front differential case, which
+      appears on the schedule every 30,000 mi (18, 36, 54... mo). This
+      entry tracks that leak inspection — it is NOT a fluid change
+      interval. Any proactive fluid drain-and-fill some owners perform is
+      outside Lexus's specification, not a manufacturer requirement.
     intervalMiles: 30000
     intervalMonths: null
   - itemType: spark-plugs
-    name: Spark plugs (iridium, part 9091901259 — verify at parts counter) — do NOT replace early
+    name: >-
+      Spark plugs (iridium, part 9091901259 — verify at parts counter) —
+      Lexus 120,000 mi (only appears once, at the 144-month/120,000-mile
+      line, so mileage is the effective trigger) — do NOT replace early
     intervalMiles: 120000
+    intervalMonths: null
+  - itemType: battery-12v
+    name: >-
+      12V auxiliary battery (Group 55B24R, in trunk behind left panel) —
+      NOT a manufacturer-scheduled interval (Lexus's guide gives no fixed
+      replacement interval, only "replace when needed"); the figure below
+      is a general AGM-battery service-life estimate, not a Lexus spec
+    intervalMiles: null
+    intervalMonths: 72
+  - itemType: hybrid-battery-fan-filter
+    name: >-
+      Hybrid battery cooling fan filter — clean (behind right rear seat
+      trim, per TSB L-SB-0028-20). This is a Technical Service Bulletin
+      item, not part of the core Lexus maintenance schedule above.
+    intervalMiles: 20000
     intervalMonths: null
