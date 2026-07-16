@@ -46,7 +46,9 @@ export function scheduleStatusesFor(
     }
 
     const dueMileage =
-      item.intervalMiles != null ? lastDone.mileage + item.intervalMiles : null;
+      item.intervalMiles != null && lastDone.mileage != null
+        ? lastDone.mileage + item.intervalMiles
+        : null;
     const dueDate =
       item.intervalMonths != null ? addMonths(lastDone.date, item.intervalMonths) : null;
 

@@ -1,24 +1,128 @@
-# Generic starter schedule — NOT yet tailored to this Tucson's exact year/engine
-# (unknown as of 2026-07-14). Intervals are common Hyundai defaults; confirm
-# against the actual owner's manual once the model year and engine are known.
+# 2020 Hyundai Tucson, 2.4L GDI Theta II I4, 6-speed automatic, AWD (HTRAC).
+# Intervals below are Hyundai's NORMAL-schedule specs. Severe-duty figures
+# (frequent short trips under 5-10 mi, extensive idling, dusty/rough roads,
+# towing, mountainous/very hot or cold climates) are noted where they
+# differ, but the numeric interval here is the normal one.
+#
+# Sources (verified 2026-07-16):
+#  - 2020 Hyundai Tucson Owner's Manual, Scheduled Maintenance chapter,
+#    "Maintenance under normal conditions" table — transcribed via
+#    hyundaitucsonmanual.com (a mirror of the official manual content).
+#    Not yet independently cross-checked against a directly-fetched
+#    official Hyundai PDF — flagged per item below if a figure is only
+#    single-sourced.
+#  - Hyundai's own oil-change-interval marketing/dealer pages, cross-checked
+#    against the manual transcription above (both agree: 7,500 mi/6 mo
+#    normal, 5,000 mi/6 mo severe).
+#  - Community/forum sourcing (Hyundai Forums, Tucson Forum) for items
+#    Hyundai's normal schedule only inspects rather than replaces
+#    (transmission fluid, transfer case/rear differential fluid on AWD
+#    models) — Hyundai's own severe-duty figures are used where available
+#    rather than pure forum guesses.
+#
+# This is a brand-new vehicle entry (added 2026-07-16) — mileage is only
+# known from a single March 2026 reading (~65,865 mi), so several items
+# below may already be overdue by the time of that first reading; treat
+# "never-done" status on high-mileage items as a signal to check history
+# with the family member, not necessarily as "nothing has ever been done."
 items:
   - itemType: oil-change
-    name: Oil change (confirm spec — likely 5W-30 or 5W-20 synthetic blend)
-    intervalMiles: 5000
+    name: >-
+      Oil & filter change (0W-20 full synthetic per Hyundai spec) — Hyundai
+      normal 7,500 mi/6 mo (severe 5,000 mi/6 mo — short trips under 5-10
+      mi, extensive idling, dusty roads, or extreme temperatures all count
+      as severe; worth asking the family member about her typical driving)
+    intervalMiles: 7500
     intervalMonths: 6
   - itemType: tire-rotation
-    name: Tire rotation
-    intervalMiles: 5000
+    name: Tire rotation — done at every oil-change service, 7,500 mi/6 mo
+    intervalMiles: 7500
+    intervalMonths: 6
+  - itemType: multi-point-inspection
+    name: Multi-point inspection (brakes, battery, fluids) — done at every oil-change service
+    intervalMiles: 7500
     intervalMonths: 6
   - itemType: cabin-air-filter
-    name: Cabin air filter (STP CAF90165P confirmed fitment)
+    name: Cabin air filter (STP CAF90165P confirmed fitment) — Hyundai normal 15,000 mi
     intervalMiles: 15000
-    intervalMonths: 12
+    intervalMonths: null
   - itemType: engine-air-filter
-    name: Engine air filter
+    name: Engine air filter — Hyundai normal 30,000 mi (inspected at every other oil-change visit before that)
     intervalMiles: 30000
-    intervalMonths: 36
-  - itemType: brake-fluid-flush
-    name: Brake fluid flush
-    intervalMiles: null
+    intervalMonths: null
+  - itemType: drive-belt
+    name: >-
+      Accessory drive belt — Hyundai: first inspection at 60,000 mi/72 mo,
+      then every 15,000 mi/24 mo thereafter (inspection only, not a fixed
+      replacement interval — replace on visible cracking/glazing/fraying)
+    intervalMiles: 15000
     intervalMonths: 24
+  - itemType: brake-fluid-flush
+    name: >-
+      Brake fluid — Hyundai's normal schedule only lists an INSPECTION
+      (at 30,000/60,000/90,000/120,000/150,000 mi), not a fixed replacement
+      interval. COMMUNITY NOTE: industry-standard practice for DOT-3/4
+      hygroscopic brake fluid is replacement every 24-36 months regardless
+      of mileage to control moisture/corrosion — 30 mo below is the
+      conservative end of that range, not a literal Hyundai citation.
+    intervalMiles: null
+    intervalMonths: 30
+  - itemType: coolant-flush
+    name: >-
+      Engine coolant — Hyundai: FIRST replacement at 120,000 mi/120 mo,
+      then every 30,000 mi/24 mo thereafter (both recurring figures are a
+      literal citation from the manual transcription, not derived)
+    intervalMiles: 30000
+    intervalMonths: 24
+  - itemType: transmission-fluid-service
+    name: >-
+      Automatic transmission fluid (6-speed automatic) — Hyundai's normal
+      schedule lists no fixed replacement interval (fill-for-life under
+      normal conditions); Hyundai's own SEVERE-duty schedule specifies
+      60,000 mi, which independent Hyundai/Kia techs and forum consensus
+      broadly agree is a reasonable proactive interval regardless of
+      official duty classification, especially given this car's unknown
+      prior fluid history.
+    intervalMiles: 60000
+    intervalMonths: null
+  - itemType: spark-plugs
+    name: >-
+      Spark plugs (iridium-coated) — Hyundai normal schedule lists this
+      only once, at 105,000 mi/168 mo — single-sourced figure (see file
+      header), plausible for iridium plugs but not yet cross-checked
+      against a second independent source; do not replace early
+    intervalMiles: 105000
+    intervalMonths: null
+  - itemType: rear-differential-fluid
+    name: >-
+      Rear differential fluid (HTRAC AWD) — GL-5 75W-90, ~0.56-0.67 qt.
+      Hyundai's normal schedule only lists an INSPECTION (at 37,500/
+      75,000/112,500/150,000 mi); a separate Hyundai figure of 100,000 mi
+      is cited by some dealer/community sources as the actual replacement
+      interval. COMMUNITY NOTE: many AWD owners report doing this
+      proactively every 30,000-75,000 mi rather than waiting for 100,000,
+      especially for a car with unknown prior service history — 60,000 mi
+      below is a reasonable middle ground, not a literal Hyundai citation
+      for a hard replacement interval.
+    intervalMiles: 60000
+    intervalMonths: null
+  - itemType: transfer-case-fluid
+    name: >-
+      Transfer case / power transfer unit fluid (HTRAC AWD) — GL-5 75W-90,
+      ~0.51-0.55 qt, a separate fill from the rear differential above (own
+      capacity spec per forum-documented service procedures — this is a
+      distinct component, not the same fluid as rear-differential-fluid).
+      Same sourcing/interval reasoning as rear-differential-fluid above —
+      Hyundai's normal schedule only inspects; a 100,000 mi replacement
+      figure is cited by community sources, but proactive replacement
+      every 30,000-75,000 mi is common owner practice given unknown history.
+    intervalMiles: 60000
+    intervalMonths: null
+  - itemType: battery-12v
+    name: 12V battery replacement (typical service life ~4-5 yr; no history on file for this car yet)
+    intervalMiles: null
+    intervalMonths: 60
+  - itemType: wiper-blades
+    name: Wiper blades
+    intervalMiles: null
+    intervalMonths: 12

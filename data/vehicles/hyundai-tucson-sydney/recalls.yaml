@@ -1,6 +1,25 @@
-# Recall check can't run until the model year is known (the automated NHTSA
-# pull keys off make/model/year). Left empty until the Tucson's year is
-# confirmed — see tasks.yaml.
-lastChecked: null
-recalls: []
+# NHTSA recall check run 2026-07-16 now that the model year is confirmed
+# (2020) via VIN decode. Queried api.nhtsa.gov/recalls/recallsByVehicle for
+# make=hyundai, model=tucson, modelYear=2020 — 1 result (Count: 1). NOTE:
+# Hyundai's Theta II/Nu "Knock Sensor Detection System" engine SERVICE
+# CAMPAIGNS (966, 982, etc.) are dealer service campaigns, not NHTSA safety
+# recalls, so they will never appear here regardless of applicability — see
+# the open task in tasks.yaml for a VIN-specific lookup at
+# autoservice.hyundaiusa.com instead.
+lastChecked: '2026-07-16'
+recalls:
+  - campaignNumber: 20V543000
+    component: 'SERVICE BRAKES, HYDRAULIC:ANTILOCK/TRACTION CONTROL/ELECTRONIC LIMITED SLIP:CONTROL UNIT/MODULE'
+    summary: >-
+      Hyundai is recalling certain 2019-2021 Tucson vehicles (campaign
+      later expanded to include some 2016-2018 models). The Anti-lock
+      Brake Hydraulic Electronic Control Unit (HECU) may corrode
+      internally, causing an electrical short that can ignite an engine
+      compartment fire — including while parked with the engine off.
+      Dealers will replace the HECU fuse at no cost; 2019-2021 models also
+      receive an Electronic Stability Control software update. Hyundai's
+      guidance until repaired: park outside and away from structures.
+      Not yet confirmed whether this specific VIN has had the repair done
+      — worth checking before anything else on this car.
+    reportedDate: 22/09/2020
 complaints: []

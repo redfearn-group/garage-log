@@ -94,13 +94,14 @@ export function getArchivedVehicles(): Vehicle[] {
 }
 
 export function currentMileage(vehicle: Vehicle): number | null {
-  const candidates: { date: string; mileage: number }[] = [
+  const candidates: { date: string; mileage: number | null }[] = [
     ...vehicle.mileageLog,
     ...vehicle.maintenanceLog.map((m) => ({ date: m.date, mileage: m.mileage })),
   ];
-  if (candidates.length === 0) return null;
-  candidates.sort((a, b) => (a.date < b.date ? 1 : -1));
-  return candidates[0].mileage;
+  const known = candidates.filter((c) => c.mileage != null);
+  if (known.length === 0) return null;
+  known.sort((a, b) => (a.date < b.date ? 1 : -1));
+  return known[0].mileage;
 }
 
 export function vehicleLabel(vehicle: VehicleSummary): string {

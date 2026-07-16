@@ -1,21 +1,87 @@
 tasks:
   - id: 1
-    title: Gather this Tucson's basic details — model year, engine, trim, VIN, plate, tire size, current mileage
+    title: Get license plate and exact tire size for the family member's Tucson
     notes: >-
-      Added as a placeholder vehicle 2026-07-14 from a single AutoZone cabin
-      air filter purchase; almost nothing is known about the car yet. The
-      CAF90165P cabin filter fits 2016-2021 Tucson, so it's probably a
-      3rd-gen (TL) — but confirm directly with the family member or from the car. Once
-      the year/engine are known, tailor schedule.yaml and run the recall
-      check.
+      Originally a broader "gather basic details" task, added 2026-07-14
+      from a single AutoZone cabin air filter purchase. RESOLVED 2026-07-16:
+      Brady supplied the VIN ([VIN-REDACTED]), color (black), and a March
+      2026 odometer reading (~65,865 mi) — VIN decode via NHTSA vPIC
+      confirmed 2020 model year, 2.4L GDI Theta II, AWD (HTRAC), 6-speed
+      automatic, built in Ulsan, South Korea. schedule.yaml has been fully
+      tailored to this year/engine and the recall check has been run (see
+      recalls.yaml). Still outstanding: exact trim (NHTSA's VIN decode
+      returned an ambiguous list — Value/SEL/Sport/Limited/Ultimate — since
+      Hyundai VINs don't fully encode trim), license plate, and exact tire
+      size (needed to pin down whether the OEM 17" or 19" wheel/tire combo
+      applies). Check the door-jamb tire placard and registration next time
+      Brady's at the car.
     status: open
     createdDate: '2026-07-14'
     completedDate: null
   - id: 2
     title: Get a baseline odometer reading for the family member's Tucson
     notes: >-
-      No mileage on file at all — needed before any schedule due-status can
-      be computed. Grab an odometer photo next time Brady works on the car.
-    status: open
+      RESOLVED 2026-07-16 — Brady reported ~65,865 mi as of "around March
+      2026." Logged in mileage-log.yaml as 2026-03-15 (a mid-month
+      placeholder date, since only the month was given) — a more precise
+      date would sharpen due-status math slightly but isn't blocking.
+    status: done
     createdDate: '2026-07-14'
+    completedDate: '2026-07-16'
+  - id: 3
+    title: 'Check open-recall repair status: HECU fire recall (20V543000)'
+    notes: >-
+      A real, safety-critical NHTSA recall applies to this VIN's model
+      year: the ABS Hydraulic Electronic Control Unit can corrode internally
+      and short, risking an engine-compartment fire — even while parked
+      with the engine off. Free fix (fuse replacement + ESC software
+      update on 2019-2021 models). Not yet confirmed whether this specific
+      VIN has had it done — check at nhtsa.gov/recalls with the VIN, or
+      call Hyundai at 1-855-371-9460. Worth prioritizing above routine
+      maintenance given the fire risk and the "park outside" guidance.
+    status: open
+    createdDate: '2026-07-16'
+    completedDate: null
+  - id: 4
+    title: 'Check for open Hyundai engine service campaigns (966/982 KSDS) via VIN lookup'
+    notes: >-
+      Hyundai/Kia ran large "Knock Sensor Detection System" (KSDS) service
+      campaigns and a class-action settlement covering premature
+      connecting-rod bearing wear on Theta II and Nu-engine vehicles from
+      roughly 2011-2021. These are dealer SERVICE CAMPAIGNS, not NHTSA
+      safety recalls, so they will never show up in the automated recall
+      check in recalls.yaml. Sources found during 2026-07-16 research were
+      inconsistent about whether this specific 2.4L Theta II GDI engine (as
+      opposed to the 2.0L Nu GDI engine some Tucsons have) is actually in
+      scope — not confirmed either way. Enter this VIN at
+      autoservice.hyundaiusa.com (Hyundai's own campaign lookup) to check
+      for real, rather than guessing from secondhand forum summaries.
+    status: open
+    createdDate: '2026-07-16'
+    completedDate: null
+  - id: 5
+    title: Confirm exact trim level (Value/SE/SEL/Sport/Limited/Ultimate) and drivetrain details with the family member
+    notes: >-
+      VIN decode confirmed engine (2.4L Theta II), transmission (6-speed
+      automatic), and AWD (HTRAC), but NHTSA's data doesn't pin down the
+      exact trim — matters mainly for feature/equipment questions, not for
+      the maintenance schedule (which doesn't vary by trim on this
+      platform). Low priority.
+    status: open
+    createdDate: '2026-07-16'
+    completedDate: null
+  - id: 6
+    title: Establish full service history with the family member before trusting "never done" status on any item
+    notes: >-
+      This is a brand-new entry with only one mileage reading on file
+      (~65,865 mi as of March 2026) and zero logged maintenance history
+      besides one cabin air filter purchase. Several schedule.yaml items
+      (spark plugs at 105K, coolant, transmission fluid, differential/
+      transfer case fluid) may already be due or overdue by mileage — but
+      the dashboard will show "never done" rather than "overdue" until
+      actual service history is logged. Ask the family member for whatever records/
+      receipts she has (dealer, independent shop, DIY) before assuming
+      nothing has been done.
+    status: open
+    createdDate: '2026-07-16'
     completedDate: null

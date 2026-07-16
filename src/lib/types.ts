@@ -21,7 +21,7 @@ export interface MileageEntry {
 
 export interface MaintenanceEntry {
   date: string;
-  mileage: number;
+  mileage: number | null;
   itemType: string;
   description: string;
   notes?: string;
