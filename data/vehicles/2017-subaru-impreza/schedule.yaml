@@ -165,6 +165,10 @@ items:
       thereafter — do NOT change early or mix with other coolant types
     intervalMiles: 75000
     intervalMonths: 72
+  - itemType: wiper-blades
+    name: Wiper blades
+    intervalMiles: null
+    intervalMonths: 12
   - itemType: spark-plugs
     name: Spark plugs (iridium, FB20 chain engine, no timing belt) — Subaru normal 60,000 mi; do not replace early
     intervalMiles: 60000
