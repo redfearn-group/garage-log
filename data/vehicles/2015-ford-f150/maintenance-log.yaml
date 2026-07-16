@@ -72,6 +72,20 @@ entries:
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
     documents: []
+  - date: '2018-11-23'
+    mileage: 51171
+    itemType: oil-change
+    description: Oil change — Jiffy Lube
+    notes: >-
+      From the Jiffy Lube email receipt (11/23/2018) in Brady's personal
+      Gmail; the itemized invoice is a PDF attachment there and wasn't read
+      line-by-line here. Zeus was Brady's only vehicle at this date (F-150
+      bought May 2018, the Highlander not until 2019), so this is the truck.
+      Mileage interpolated between the 2018-05-23 (44,240 mi) purchase and
+      the 2018-12-08 (51,736 mi) reading just two weeks later — a tight
+      bracket, so ~51,171 is a close estimate. Exact odometer and oil spec
+      are on the attached invoice if ever needed.
+    documents: []
   - date: '2018-12-10'
     mileage: 51778
     itemType: ''
