@@ -1,13 +1,22 @@
 # 2019 Lexus ES 300h, A25A-FXS 2.5L hybrid, eCVT.
 #
-# Source (verified 2026-07-15, primary document): 2016 Lexus ES 300h
+# Source (re-verified 2026-07-16, primary document): 2020 Lexus ES 300h
 # Warranty & Services Guide, official Lexus/Toyota PDF
-# (assets.sia.toyota.com, L-MMS-16ES300H) — the Scheduled Maintenance Log
+# (assets.sia.toyota.com, L-MMS-20ES300h) — the Scheduled Maintenance Log
 # table (pages 48-67) and Explanation of Maintenance Items (pages 68-72).
-# This is the SAME A25A-FXS/eCVT hybrid powertrain generation as this 2019
-# car (7th-gen ES, 2019-2024), and Lexus does not change this schedule
-# across a generation, so it applies directly. All intervals below are
-# read directly off that table, not aggregated from third-party sites.
+# CORRECTION: this file previously cited the 2016 ES 300h WSG
+# (L-MMS-16ES300H) as "same generation" — that is WRONG. The 2016 ES 300h
+# is 6th-gen (2013-2018) with the 2AR-FXE 2.5L engine and 0W-20 oil spec.
+# The 2019 car is 7th-gen (2019-2024) with the all-new A25A-FXS engine
+# and a 0W-16 oil spec, plus a factory HV-battery-cooling-filter check
+# that doesn't exist on the 6th-gen schedule at all. The 2020 MY document
+# used now IS the same 7th-gen A25A-FXS/eCVT platform as this 2019 car,
+# and Lexus does not change this schedule within a generation, so it
+# applies directly. All intervals below are read directly off that table,
+# not aggregated from third-party sites. Despite the wrong source doc,
+# nearly all the interval NUMBERS below already matched (Lexus kept the
+# same visit rhythm across generations) — the exceptions are noted at the
+# relevant items below.
 #
 # The Lexus schedule has a 6 mo/5,000 mi "visit rhythm" (fluid checks,
 # tire rotation, brake/wiper inspection at EVERY visit) that is separate
@@ -17,10 +26,11 @@
 items:
   - itemType: oil-change
     name: >-
-      Oil & filter change (0W-16 full synthetic, 4.8 qt, filter
-      04152-YZZA1) — Lexus normal 12 mo/10,000 mi (NOT the 6 mo/5,000 mi
-      visit rhythm, which is a fluid-check/rotation visit, not
-      necessarily an oil change)
+      Oil & filter change (0W-16 full synthetic — SAE 0W-20 is an
+      acceptable substitute only until the next change, per the 2020
+      ES 300h WSG; verify capacity/filter part at parts counter) — Lexus
+      normal 12 mo/10,000 mi (NOT the 6 mo/5,000 mi visit rhythm, which
+      is a fluid-check/rotation visit, not necessarily an oil change)
     intervalMiles: 10000
     intervalMonths: 12
   - itemType: tire-rotation
@@ -74,8 +84,11 @@ items:
       SEALED unit with NO scheduled fluid check or replacement, and there
       is no dipstick. The only manufacturer-specified service is a visual
       leak inspection of the transaxle/front differential case, which
-      appears on the schedule every 30,000 mi (18, 36, 54... mo). This
-      entry tracks that leak inspection — it is NOT a fluid change
+      appears on the schedule every 30,000 mi/36 mo (36, 72, 108... mo —
+      corrected from a prior transcription error that said "18, 36,
+      54... mo"; the leak check does NOT appear on the 18-month/15,000-mi
+      visit or other non-36-month-multiple visits, only every 3rd year).
+      This entry tracks that leak inspection — it is NOT a fluid change
       interval. Any proactive fluid drain-and-fill some owners perform is
       outside Lexus's specification, not a manufacturer requirement.
       COMMUNITY NOTE: the "sealed" stance is genuinely contested even among
@@ -88,7 +101,7 @@ items:
       so this is a genuine judgment call, not a clear-cut community
       consensus like the other vehicles' fluids.
     intervalMiles: 30000
-    intervalMonths: null
+    intervalMonths: 36
   - itemType: spark-plugs
     name: >-
       Spark plugs (iridium, part 9091901259 — verify at parts counter) —
@@ -106,8 +119,17 @@ items:
     intervalMonths: 72
   - itemType: hybrid-battery-fan-filter
     name: >-
-      Hybrid battery cooling fan filter — clean (behind right rear seat
-      trim, per TSB L-SB-0028-20). This is a Technical Service Bulletin
-      item, not part of the core Lexus maintenance schedule above.
+      HV battery cooling intake filter — clean (behind right rear seat
+      trim). CORRECTED: this IS part of the official core Lexus schedule
+      for the 7th-gen (2019+) ES 300h — the 2020 ES 300h WSG lists
+      "Check HV battery cooling intake filter" at every single 6 mo/
+      5,000 mi visit (this item did not exist at all on the 6th-gen/2016
+      schedule this file previously cited). That routine item is a
+      visual check, not a full clean/service. The actual clean/service
+      procedure and its ~20,000 mi interval come from TSB L-SB-0028-20
+      (Aug. 2020, "HV Battery Cooling System Maintenance Service"),
+      which independent sources describe as inspect-every-5,000-mi,
+      clean-every-20,000-mi. This entry tracks that 20,000 mi
+      clean/service action, not the every-visit visual check.
     intervalMiles: 20000
     intervalMonths: null

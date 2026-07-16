@@ -5,7 +5,7 @@
 # tracked here as a due-for-inspection/proactive-service item given that
 # unknown history — not because Subaru mandates a replacement at that mileage.
 #
-# Sources (verified 2026-07-15):
+# Sources (verified 2026-07-16):
 #  - Subaru 2017 Impreza Owner's/Warranty & Maintenance Manual (by way of
 #    aggregated citations: impreza5.com forum copy, Bowser/Freehold/Hadwin-
 #    White Subaru dealer maintenance-schedule pages).
@@ -20,6 +20,12 @@
 #    multiple Subaru CVT-care write-ups).
 #  - Spark plugs: 60,000 mi per Subaru's normal schedule (FB-series iridium
 #    plugs; do not replace early).
+#  - Cabin air filter: 12,000 mi/12 mo, confirmed across multiple
+#    independent dealer maintenance-schedule pages (corrected from a prior
+#    15,000 mi figure that wasn't as well corroborated).
+#  - Front & rear differential fluid: inspect at 30,000 mi intervals per
+#    Subaru's normal schedule (severe duty 15,000 mi); community proactive
+#    replacement figure 50,000-60,000 mi.
 #
 # Prior version of this file used a 5,000 mi oil interval and a 35,000 mi
 # "CVT fluid drain & fill" figure that were both off — corrected here. The
@@ -35,8 +41,8 @@ items:
     intervalMiles: 6000
     intervalMonths: 6
   - itemType: cabin-air-filter
-    name: Cabin air filter — Subaru ~15,000 mi/12 mo
-    intervalMiles: 15000
+    name: Cabin air filter — Subaru ~12,000 mi/12 mo
+    intervalMiles: 12000
     intervalMonths: 12
   - itemType: engine-air-filter
     name: Engine air filter — Subaru ~30,000 mi (some sources cite 20,000; using the more conservative 30,000 confirmed by the multi-source schedule)
@@ -70,13 +76,13 @@ items:
     intervalMonths: null
   - itemType: rear-diff-transfer-case
     name: >-
-      Front differential fluid (AWD) — inspect at 30,000 mi intervals per
-      Subaru's normal schedule; replace only if contaminated or under
-      severe use. COMMUNITY NOTE: severe-duty spec already calls for a
-      15,000 mi change; forum consensus for normal-use proactive
-      replacement (not just inspection) clusters around 50,000-60,000 mi
-      with synthetic gear oil, given this car's unknown prior service
-      history.
+      Front & rear differential fluid (AWD) — inspect at 30,000 mi
+      intervals per Subaru's normal schedule; replace only if
+      contaminated or under severe use. COMMUNITY NOTE: severe-duty spec
+      already calls for a 15,000 mi change; forum consensus for
+      normal-use proactive replacement (not just inspection) clusters
+      around 50,000-60,000 mi with synthetic gear oil, given this car's
+      unknown prior service history.
     intervalMiles: 30000
     intervalMonths: null
   - itemType: coolant-flush
