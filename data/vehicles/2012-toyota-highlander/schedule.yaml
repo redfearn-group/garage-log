@@ -53,9 +53,16 @@ items:
   - itemType: coolant-flush
     name: >-
       Engine coolant (Toyota Super Long Life Coolant, pink) — FIRST change
-      100,000 mi/10 yr, then every 50,000 mi thereafter
+      100,000 mi/10 yr, then every 50,000 mi thereafter. Toyota's source
+      only states the recurring MILEAGE figure (50,000 mi), not a recurring
+      time figure — 60 mo below is DERIVED by halving the first-change time
+      figure (120 mo) in the same proportion as the mileage figure was
+      halved (100K → 50K); this exact halving pattern is explicitly
+      confirmed on the mechanically-related Lexus ES 300h coolant schedule
+      (120 mo first → 60 mo recurring), so it's a well-grounded derivation,
+      not a literal Toyota citation for the recurring time value.
     intervalMiles: 50000
-    intervalMonths: 120
+    intervalMonths: 60
   - itemType: transmission-fluid-service
     name: >-
       Transmission fluid (U660E, Toyota WS ATF) — no fixed normal-use

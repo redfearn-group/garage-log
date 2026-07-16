@@ -62,34 +62,42 @@ items:
   - itemType: coolant-flush
     name: >-
       Engine coolant (Motorcraft Orange) — Ford: FIRST change at 100,000 mi
-      or 6 yr, then every 50,000 mi thereafter
+      or 6 yr, then every 50,000 mi thereafter. Ford's source only states
+      the recurring MILEAGE figure (50,000 mi), not a recurring time figure
+      — 36 mo below is DERIVED by halving the first-change time figure (72
+      mo) in the same proportion as the mileage figure was halved (100K →
+      50K), matching the identical halving pattern Toyota/Lexus state
+      explicitly for their own coolant (120 mo first → 60 mo recurring).
+      Not a literal Ford citation for the recurring time value.
     intervalMiles: 50000
-    intervalMonths: 72
+    intervalMonths: 36
   - itemType: transmission-fluid-service
     name: >-
-      Transmission fluid (6R80, Motorcraft MERCON LV) — Ford normal 150,000
-      mi (30,000 mi if used in severe/tow service). COMMUNITY NOTE (not a
-      Ford spec): ZF, the actual transmission manufacturer, specifies 8
-      yr/50,000 mi; F150 forums widely call Ford's 150K figure "a terrible
-      idea" and recommend a first change at 30,000 mi then every 60,000 mi
-      thereafter (or every 30,000 mi as best practice). Given this truck's
-      unknown prior transmission-fluid history, treat 30,000-60,000 mi as
-      the realistic proactive interval, not 150,000.
-    intervalMiles: 150000
-    intervalMonths: null
+      Transmission fluid (6R80, Motorcraft MERCON LV) — Ford's own normal
+      schedule says 150,000 mi, which every independent source agrees is
+      unrealistically long: ZF (the actual transmission manufacturer)
+      specifies 8 yr/50,000 mi, and F150 forums call Ford's 150K figure "a
+      terrible idea," recommending 30,000-60,000 mi. Given this truck's
+      unknown prior transmission-fluid history, the interval below is set
+      to ZF's own 50,000 mi/8 yr spec — the most authoritative sourced
+      number in the 30-60K community range — NOT Ford's 150,000 mi figure.
+    intervalMiles: 50000
+    intervalMonths: 96
   - itemType: spark-plugs
     name: Spark plugs (Motorcraft, 3.5L EcoBoost) — Ford ~100,000 mi
     intervalMiles: 100000
     intervalMonths: null
   - itemType: rear-diff-transfer-case
     name: >-
-      Rear axle + transfer case + front axle fluid (4WD) — Ford normal
-      150,000 mi (much sooner, ~30,000 mi, if towing/severe). COMMUNITY
-      NOTE (not a Ford spec): even Ford's own severe-schedule already puts
+      Rear axle + transfer case + front axle fluid (4WD) — Ford's normal
+      schedule says 150,000 mi, but Ford's OWN severe-duty table (an
+      official Ford figure, not just forum chatter) already specifies
       axles at 30,000 mi and the transfer case at 60,000 mi; F150 forums
-      lean more conservative still, recommending 30,000-50,000 mi
-      regardless of official duty classification. Water submersion (deep
-      fording/flooding) calls for an immediate change regardless of
-      interval.
-    intervalMiles: 150000
+      lean the same direction, recommending 30,000-50,000 mi regardless of
+      official duty classification. The interval below uses Ford's own
+      severe-duty axle figure (30,000 mi) as the governing number — the
+      most conservative, best-sourced figure — NOT the 150,000 mi normal
+      figure. Water submersion (deep fording/flooding) calls for an
+      immediate change regardless of interval.
+    intervalMiles: 30000
     intervalMonths: null
