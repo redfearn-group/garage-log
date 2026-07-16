@@ -1,34 +1,54 @@
+# 2015 Ford F-150, 3.5L EcoBoost V6, 4WD SuperCrew.
+# Intervals below are Ford's NORMAL-schedule specs (this truck is not used
+# for heavy/frequent towing). Severe-duty figures — used for regular towing,
+# heavy loads, sustained dusty/off-road, extended idling — are noted where
+# they differ, but the numeric interval is the normal one.
+#
+# Sources (verified 2026-07-15):
+#  - Ford Owner's Manual / Scheduled Maintenance Guide, 2015 F-150, "Normal
+#    Scheduled Maintenance – 3.5L Duratec/3.5L EcoBoost"
+#    (fordservicecontent.com owner-manual content).
+#  - f150hub.com "3.5L EcoBoost F-150 Maintenance Schedule".
+#  - Firestone Complete Auto Care, 2015 F-150 scheduled maintenance.
+#
+# Prior version of this file used generic placeholder intervals (5k oil, 30k
+# plugs/coolant/transmission) that were far more frequent than Ford specifies;
+# corrected here to the actual Ford intervals.
 items:
   - itemType: oil-change
-    name: Oil & filter change
-    intervalMiles: 5000
-    intervalMonths: 6
+    name: >-
+      Oil & filter change (Motorcraft 5W-30 full synthetic, ~6 qt) — Ford
+      Intelligent Oil Life Monitor; normal max 10,000 mi / 12 mo (severe/
+      towing 5,000 mi / 6 mo). The turbo EcoBoost often trips the monitor
+      before 10k, but do not exceed it.
+    intervalMiles: 10000
+    intervalMonths: 12
   - itemType: tire-rotation
-    name: Tire rotation
-    intervalMiles: 5000
-    intervalMonths: 6
+    name: Tire rotation — Ford lists this at the oil-change interval (~10,000 mi)
+    intervalMiles: 10000
+    intervalMonths: 12
   - itemType: multi-point-inspection
-    name: Multi-point inspection
-    intervalMiles: 5000
-    intervalMonths: 6
+    name: Multi-point inspection (done alongside each oil-change service)
+    intervalMiles: 10000
+    intervalMonths: 12
   - itemType: engine-air-filter
-    name: Engine air filter
-    intervalMiles: 15000
-    intervalMonths: 12
+    name: Engine air filter — Ford ~30,000 mi
+    intervalMiles: 30000
+    intervalMonths: null
   - itemType: cabin-air-filter
-    name: Cabin air filter
-    intervalMiles: 15000
-    intervalMonths: 12
+    name: Cabin air filter — Ford ~20,000 mi
+    intervalMiles: 20000
+    intervalMonths: null
   - itemType: brake-inspection
-    name: Brake inspection
+    name: Brake inspection (pads/rotors/lines) — with each service
     intervalMiles: 10000
     intervalMonths: 12
   - itemType: battery-test
-    name: Battery test
+    name: 12V battery test
     intervalMiles: null
     intervalMonths: 12
   - itemType: battery-12v
-    name: 12V battery replacement (typical AGM service life ~4-5 years)
+    name: 12V battery replacement (typical service life ~4-5 yr; Zeus's AGM is from 2020-10-24)
     intervalMiles: null
     intervalMonths: 60
   - itemType: wiper-blades
@@ -36,18 +56,28 @@ items:
     intervalMiles: null
     intervalMonths: 12
   - itemType: brake-fluid-flush
-    name: Brake fluid flush
-    intervalMiles: 30000
-    intervalMonths: 24
+    name: Brake fluid — Ford specifies a time-based change (~every 3 years), no set mileage
+    intervalMiles: null
+    intervalMonths: 36
   - itemType: coolant-flush
-    name: Coolant flush
-    intervalMiles: 30000
-    intervalMonths: 24
+    name: >-
+      Engine coolant (Motorcraft Orange) — Ford: FIRST change at 100,000 mi
+      or 6 yr, then every 50,000 mi thereafter
+    intervalMiles: 50000
+    intervalMonths: 72
   - itemType: transmission-fluid-service
-    name: Transmission fluid service
-    intervalMiles: 30000
+    name: >-
+      Transmission fluid (6R80, Motorcraft MERCON LV) — Ford normal 150,000
+      mi (30,000 mi if used in severe/tow service)
+    intervalMiles: 150000
     intervalMonths: null
   - itemType: spark-plugs
-    name: Spark plugs
-    intervalMiles: 30000
+    name: Spark plugs (Motorcraft, 3.5L EcoBoost) — Ford ~100,000 mi
+    intervalMiles: 100000
+    intervalMonths: null
+  - itemType: rear-diff-transfer-case
+    name: >-
+      Rear axle + transfer case + front axle fluid (4WD) — Ford normal
+      150,000 mi (much sooner, ~30,000 mi, if towing/severe)
+    intervalMiles: 150000
     intervalMonths: null

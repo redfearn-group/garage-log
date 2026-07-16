@@ -1,12 +1,23 @@
 tasks:
   - id: 1
-    title: eCVT transaxle fluid — proactive drain & fill (Toyota ATF WS, ~3.5 qt)
+    title: 'eCVT transaxle fluid — optional proactive drain & fill (NOT a manufacturer-required service)'
     notes: >-
-      Factory spec is "lifetime" with no set interval, but a proactive
-      change at 100-120K miles is well-documented practice on this
-      platform. Drain and fill only, no flush. Car was purchased at
-      106,926 mi with unknown prior service (now at 110,834 mi as of
-      2026-07-12) — good window to do this now.
+      UPDATED 2026-07-15 after pulling the official Lexus Warranty &
+      Services Guide (2016 ES 300h, same A25A-FXS/eCVT generation):
+      Lexus states explicitly that "the transaxle and transaxle fluid are
+      a completely sealed unit — periodic checks and replacement of the
+      fluid are NOT required, and there is no dipstick." The only
+      manufacturer-specified transaxle service is a visual leak
+      inspection every 30,000 mi (see schedule.yaml) — there is no
+      official fluid-change interval at all, contrary to the earlier
+      "well-documented practice" framing below.
+
+      A proactive drain-and-fill (Toyota ATF WS, ~3.5 qt) at 100-120K
+      miles is still a reasonable enthusiast/forum-sourced precaution for
+      a car with unknown prior service history, and doing it causes no
+      harm — but it is Brady's discretionary choice, not something the
+      manufacturer calls for. Car was purchased at 106,926 mi with
+      unknown prior service (now at 110,834 mi as of 2026-07-12).
     status: open
     createdDate: '2026-07-09'
     completedDate: null

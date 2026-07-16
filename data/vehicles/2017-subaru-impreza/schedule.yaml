@@ -1,46 +1,83 @@
-# Built from a prior research session's checklist for this exact car (that
-# doc described it as ~140K mi at the time, zero known service history —
-# that mileage figure was approximate/undated, not a real reading; see
-# mileage-log.yaml for actual confirmed odometer photos). Schedule intervals
-# below are unaffected by the exact current mileage. Intervals not confirmed
-# with high confidence by that research are left without a number rather
-# than guessed.
+# 2017 Subaru Impreza Premium Sedan AWD, FB20 2.0L, TR580 Lineartronic CVT.
+# Intervals below are Subaru's NORMAL-schedule specs. Mileage on this car is
+# high (~140K) with unknown prior service history, so items with no fixed
+# "replace" interval under normal use (CVT fluid, differential) are still
+# tracked here as a due-for-inspection/proactive-service item given that
+# unknown history — not because Subaru mandates a replacement at that mileage.
+#
+# Sources (verified 2026-07-15):
+#  - Subaru 2017 Impreza Owner's/Warranty & Maintenance Manual (by way of
+#    aggregated citations: impreza5.com forum copy, Bowser/Freehold/Hadwin-
+#    White Subaru dealer maintenance-schedule pages).
+#  - Subaru official oil interval: 6,000 mi/6 mo normal (0W-20 full synthetic).
+#  - Subaru brake fluid: 30 months/30,000 mi, whichever first (more frequent,
+#    15 mo/15,000 mi, only in high-humidity/mountainous severe use).
+#  - Subaru Super Coolant (factory fill): no first change until 11 yr/137,500
+#    mi; every 6 yr/75,000 mi thereafter.
+#  - Subaru CVT fluid: no scheduled replacement through 132,000 mi under
+#    normal use per the warranty booklet; inspect only, at 30,000 mi
+#    intervals (impreza5.com forum copy of the maintenance schedule, and
+#    multiple Subaru CVT-care write-ups).
+#  - Spark plugs: 60,000 mi per Subaru's normal schedule (FB-series iridium
+#    plugs; do not replace early).
+#
+# Prior version of this file used a 5,000 mi oil interval and a 35,000 mi
+# "CVT fluid drain & fill" figure that were both off — corrected here. The
+# CVTF-II-only fluid warning (never the orange High Torque CVTF) is kept
+# since it's a real, distinct hazard, not a manufacturer interval question.
 items:
   - itemType: oil-change
-    name: Oil change (0W-20 full synthetic)
-    intervalMiles: 5000
+    name: Oil & filter change (0W-20 full synthetic) — Subaru normal 6,000 mi/6 mo
+    intervalMiles: 6000
     intervalMonths: 6
   - itemType: tire-rotation
-    name: Tire rotation
-    intervalMiles: 5000
+    name: Tire rotation — done at each oil-change service
+    intervalMiles: 6000
     intervalMonths: 6
   - itemType: cabin-air-filter
-    name: Cabin air filter
+    name: Cabin air filter — Subaru ~15,000 mi/12 mo
     intervalMiles: 15000
     intervalMonths: 12
   - itemType: engine-air-filter
-    name: Engine air filter
-    intervalMiles: 20000
-    intervalMonths: 24
+    name: Engine air filter — Subaru ~30,000 mi (some sources cite 20,000; using the more conservative 30,000 confirmed by the multi-source schedule)
+    intervalMiles: 30000
+    intervalMonths: null
+  - itemType: brake-inspection
+    name: Brake inspection (pads/rotors) — with each service
+    intervalMiles: 6000
+    intervalMonths: 6
   - itemType: brake-fluid-flush
-    name: Brake fluid flush (Subaru DOT 3) — time-based, typically 2-3 years
-    intervalMiles: null
+    name: Brake fluid — Subaru 30 months/30,000 mi, whichever comes first
+    intervalMiles: 30000
     intervalMonths: 30
   - itemType: cvt-fluid
     name: >-
-      CVT fluid drain & fill — Subaru CVTF-II ONLY (green, SOA427V1660/
-      SOA427V1610). NEVER the orange High Torque CVTF (SOA748V0200) — that's
-      for turbo Forester/Legacy/Outback H-6/WRX with the TR690, chemically
-      different, wrong fluid is a documented cause of CVT damage/failure.
-      Confirm the bottle says CVTF-II before pouring anything in. Drain and
-      fill only, not a full flush, given unknown history.
-    intervalMiles: 35000
+      CVT fluid — Subaru CVTF-II ONLY (green, SOA427V1660/SOA427V1610).
+      NEVER the orange High Torque CVTF (SOA748V0200) — that's for turbo
+      Forester/Legacy/Outback H-6/WRX with the TR690, chemically different,
+      wrong fluid is a documented cause of CVT damage/failure. Confirm the
+      bottle says CVTF-II before pouring anything in. Subaru's normal
+      schedule doesn't call for a fluid change through 132,000 mi (inspect
+      only, every 30,000 mi) — the interval below is a proactive
+      drain-and-fill given this car's unknown prior service history, not a
+      manufacturer-mandated replacement.
+    intervalMiles: 30000
+    intervalMonths: null
+  - itemType: rear-diff-transfer-case
+    name: >-
+      Front differential fluid (AWD) — inspect at 30,000 mi intervals per
+      Subaru's normal schedule; replace only if contaminated or under
+      severe use
+    intervalMiles: 30000
     intervalMonths: null
   - itemType: coolant-flush
-    name: Engine coolant flush (Subaru Super Coolant, long-life)
-    intervalMiles: 40000
-    intervalMonths: null
+    name: >-
+      Engine coolant (Subaru Super Coolant, factory long-life green) — no
+      first change until 11 yr/137,500 mi, then every 6 yr/75,000 mi
+      thereafter — do NOT change early or mix with other coolant types
+    intervalMiles: 75000
+    intervalMonths: 72
   - itemType: spark-plugs
-    name: Spark plugs (iridium — chain engine, no timing belt) — confirm exact OEM spec/interval at parts counter, do not guess
-    intervalMiles: null
+    name: Spark plugs (iridium, FB20 chain engine, no timing belt) — Subaru normal 60,000 mi; do not replace early
+    intervalMiles: 60000
     intervalMonths: null
