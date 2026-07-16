@@ -27,6 +27,10 @@ items:
     name: Battery test
     intervalMiles: null
     intervalMonths: 12
+  - itemType: battery-12v
+    name: 12V battery replacement (typical AGM service life ~4-5 years)
+    intervalMiles: null
+    intervalMonths: 60
   - itemType: wiper-blades
     name: Wiper blades
     intervalMiles: null
