@@ -119,3 +119,35 @@ tasks:
     status: open
     createdDate: '2026-07-14'
     completedDate: null
+  - id: 12
+    title: 'Follow up on 3 open Customer Satisfaction Programs found on ford.com (free goodwill repairs, not safety recalls)'
+    notes: >-
+      Checked ford.com/support/recalls-details with this VIN
+      ([VIN-REDACTED]) on 2026-07-17 — beyond task #1's safety recall
+      (26V237/26S28, still "Recall incomplete"), the same VIN-specific page
+      lists 3 open "Customer Satisfaction Programs": these are Ford
+      goodwill/extended-coverage programs, not NHTSA safety recalls, so
+      they don't show up in the automated NHTSA recall check in
+      recalls.yaml — this is new information not previously captured.
+
+      - 20M04: Power door lock actuator failure
+      - 21M06: Unintended tailgate opening
+      - 25N17: Rear view camera replacement if required after dealer
+      evaluation
+
+      Ford's page gives no detail beyond the title for any of these — each
+      just says "Contact your dealer for next steps." Worth calling the
+      dealer to find out what's actually covered/free and whether any are
+      still within eligibility (CSPs often have mileage/age caps that may
+      have already expired on a truck this old). A 4th item on the same
+      page, 26N04 "Transmission molded leadframe replacement," is NOT new —
+      it's the same conditional follow-on repair already described in task
+      #1's notes, tied to the PCM recall.
+
+      Worth bundling into the same dealer visit as task #1's recall fix
+      before selling, and worth checking while dealer diagnostics are
+      already being run — some of these free fixes could be relevant to a
+      buyer's inspection or improve resale value.
+    status: open
+    createdDate: '2026-07-17'
+    completedDate: null
