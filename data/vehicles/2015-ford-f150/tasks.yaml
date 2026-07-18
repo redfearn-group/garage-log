@@ -1,18 +1,38 @@
 tasks:
   - id: 1
-    title: 'Get open recall fixed before selling: 26V237 (transmission downshift)'
+    title: 'CRITICAL — get open recall fixed: 26V237 (transmission downshift)'
     notes: >-
-      Confirmed OPEN via nhtsa.gov/recalls VIN-specific lookup on
-      2026-07-10 (1 unrepaired recall on this VIN). NHTSA 26V237 / Ford
-      26S28: transmission range sensor signal loss can cause an
-      unexpected downshift to a lower gear, abruptly slowing the rear
-      tires and risking loss of vehicle control. Free fix — Ford dealer
-      reprograms the PCM via software update; if a MIL or powertrain
-      warning lamp is on before or after, they'll run diagnostics and
-      replace the leadframe at no cost under extended warranty program
-      26N04. Worth doing before the sale — it's free, quick, and an
-      unresolved safety recall is a bad look (and possible disclosure
-      issue) for a buyer to find later.
+      Confirmed CRITICAL priority by Brady on 2026-07-17. Confirmed OPEN
+      via nhtsa.gov/recalls VIN-specific lookup on 2026-07-10, re-confirmed
+      "Recall incomplete" on ford.com with the VIN on 2026-07-17 (1
+      unrepaired recall on this VIN).
+
+      PLAIN-LANGUAGE EXPLANATION (Brady wasn't sure what this meant):
+      a sensor inside the automatic transmission (the "transmission range
+      sensor") can lose signal to the truck's computer. When that happens,
+      the transmission can suddenly shift down into a much lower gear WHILE
+      DRIVING, with no warning and no input from the driver. That abrupt
+      downshift can make the rear tires slow down far faster than the
+      truck's actual road speed, causing them to slide/lose traction — in
+      plain terms, this can cause a sudden loss of vehicle control, which
+      is a real crash risk, not a minor issue. A warning sign: a check
+      engine light or a "powertrain" wrench-symbol dash light may come on
+      before it happens.
+
+      THE FIX: completely free at any Ford dealer — they reprogram the
+      transmission's computer (PCM) with updated software, no parts needed
+      for most trucks. If a MIL/powertrain warning lamp was on before or
+      after the update, they'll run further diagnostics, and if specific
+      transmission trouble codes are found, they'll also replace an
+      internal part called the "leadframe" at no cost under a separate
+      extended warranty program, 26N04 — this is the SAME item that also
+      appears as a standalone "Customer Satisfaction Program" entry on
+      ford.com; it's not a separate issue, just the conditional follow-on
+      repair for this same recall.
+
+      Worth doing soon regardless of the planned sale — it's free, quick,
+      and fixes a genuine safety issue, not just a pre-sale disclosure
+      concern.
     status: open
     createdDate: '2026-07-10'
     completedDate: null
@@ -120,34 +140,39 @@ tasks:
     createdDate: '2026-07-14'
     completedDate: null
   - id: 12
-    title: 'Follow up on 3 open Customer Satisfaction Programs found on ford.com (free goodwill repairs, not safety recalls)'
+    title: 'CRITICAL — get rear view camera checked/replaced (25N17)'
     notes: >-
-      Checked ford.com/support/recalls-details with this VIN
-      ([VIN-REDACTED]) on 2026-07-17 — beyond task #1's safety recall
-      (26V237/26S28, still "Recall incomplete"), the same VIN-specific page
-      lists 3 open "Customer Satisfaction Programs": these are Ford
-      goodwill/extended-coverage programs, not NHTSA safety recalls, so
-      they don't show up in the automated NHTSA recall check in
-      recalls.yaml — this is new information not previously captured.
-
-      - 20M04: Power door lock actuator failure
-      - 21M06: Unintended tailgate opening
-      - 25N17: Rear view camera replacement if required after dealer
-      evaluation
-
-      Ford's page gives no detail beyond the title for any of these — each
-      just says "Contact your dealer for next steps." Worth calling the
-      dealer to find out what's actually covered/free and whether any are
-      still within eligibility (CSPs often have mileage/age caps that may
-      have already expired on a truck this old). A 4th item on the same
-      page, 26N04 "Transmission molded leadframe replacement," is NOT new —
-      it's the same conditional follow-on repair already described in task
-      #1's notes, tied to the PCM recall.
-
-      Worth bundling into the same dealer visit as task #1's recall fix
-      before selling, and worth checking while dealer diagnostics are
-      already being run — some of these free fixes could be relevant to a
-      buyer's inspection or improve resale value.
+      Confirmed CRITICAL priority by Brady on 2026-07-17. Found on
+      ford.com/support/recalls-details with this VIN
+      ([VIN-REDACTED]): Customer Satisfaction Program 25N17, "Rear view
+      camera replacement if required after dealer evaluation" — a Ford
+      goodwill/extended-coverage program, not an NHTSA safety recall, so it
+      doesn't show up in the automated recall check in recalls.yaml. Ford's
+      page gives no detail beyond the title ("Contact your dealer for next
+      steps") — need the dealer to actually evaluate the camera to confirm
+      it qualifies. Worth bundling into the same dealer visit as task #1's
+      recall fix. Unlike the door lock/tailgate items (task #13), Brady
+      hasn't already raised this with the dealer, so it's a fresh lead
+      worth pursuing.
+    status: open
+    createdDate: '2026-07-17'
+    completedDate: null
+  - id: 13
+    title: 'Lower priority: door lock actuator (20M04) and tailgate (21M06) — dealer already tried, could not reproduce'
+    notes: >-
+      Also found on ford.com/support/recalls-details with this VIN on
+      2026-07-17: two more Customer Satisfaction Programs, 20M04 (power
+      door lock actuator failure) and 21M06 (unintended tailgate opening) —
+      Ford goodwill programs, not NHTSA recalls, so neither shows up in the
+      automated check in recalls.yaml. Brady confirmed 2026-07-17 he
+      already complained to the dealer about both issues, but the dealer
+      wasn't able to recreate either problem, so there's nothing to fix
+      right now. Leaving this open as a low-priority reminder rather than
+      closing it out — if either issue recurs and becomes reproducible
+      (e.g. a specific door consistently failing to lock, or the tailgate
+      actually popping open while driving), it's worth another dealer visit
+      referencing these exact program numbers, since they're presumably
+      free repairs once confirmed.
     status: open
     createdDate: '2026-07-17'
     completedDate: null
