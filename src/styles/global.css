@@ -114,6 +114,7 @@ header.site-header h1 {
 }
 
 header.site-header nav a {
+  position: relative;
   margin-left: 1.25rem;
   text-decoration: none;
   color: var(--text-muted);
@@ -124,6 +125,27 @@ header.site-header nav a {
   text-transform: uppercase;
 }
 header.site-header nav a:hover { color: var(--text); }
+/* Expand the tappable area well past the visible text for comfortable
+   mobile tapping, without changing the header's visual density. */
+header.site-header nav a::after {
+  content: "";
+  position: absolute;
+  top: -14px; bottom: -14px; left: -8px; right: -8px;
+}
+
+/* Below ~400px (older/smaller phones), "Garage Log" + both nav links no
+   longer fit on one line — wrap onto a second line instead of overflowing
+   the viewport. */
+@media (max-width: 400px) {
+  header.site-header .container {
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
+  header.site-header nav a {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+}
 
 h1, h2, h3 {
   font-family: 'Space Grotesk', sans-serif;
@@ -150,7 +172,7 @@ h1, h2, h3 {
   padding: 0.15rem 0.55rem;
   border-radius: 2px;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -202,7 +224,7 @@ th { color: var(--text-muted); font-weight: 600; font-size: 0.8rem; text-transfo
 .fleet-stat-value.is-positive { color: var(--status-ok-fg); }
 .fleet-stat-label {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -227,7 +249,7 @@ th { color: var(--text-muted); font-weight: 600; font-size: 0.8rem; text-transfo
 }
 .callout-label {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.12em;
   color: var(--status-overdue-fg);
@@ -288,8 +310,13 @@ th { color: var(--text-muted); font-weight: 600; font-size: 0.8rem; text-transfo
   font-size: 1.05rem;
   line-height: 1.3;
 }
-.vehicle-card h3 a { color: var(--text); text-decoration: none; }
+.vehicle-card h3 a { position: relative; color: var(--text); text-decoration: none; }
 .vehicle-card h3 a:hover { color: var(--accent); }
+.vehicle-card h3 a::after {
+  content: "";
+  position: absolute;
+  top: -6px; bottom: -6px; left: 0; right: 0;
+}
 
 .vehicle-card .stat-row {
   display: flex;
@@ -308,7 +335,7 @@ th { color: var(--text-muted); font-weight: 600; font-size: 0.8rem; text-transfo
 }
 .vehicle-card .stat-label {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -319,7 +346,7 @@ th { color: var(--text-muted); font-weight: 600; font-size: 0.8rem; text-transfo
 .card-section { margin-top: 1rem; }
 .section-label {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -333,7 +360,7 @@ th { color: var(--text-muted); font-weight: 600; font-size: 0.8rem; text-transfo
   padding: 0.22rem 0.55rem;
   border-radius: 2px;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.04em;
 }
@@ -345,10 +372,16 @@ th { color: var(--text-muted); font-weight: 600; font-size: 0.8rem; text-transfo
 .tag-tawny   { color: var(--status-due-soon-fg); background: var(--status-due-soon-bg); }
 .tag-neutral { color: var(--status-never-fg);    background: var(--status-never-bg); }
 .tag-ember   { color: var(--rg-ember); background: rgba(194, 89, 42, 0.08); }
-.tag-link { text-decoration: none; cursor: pointer; }
+.tag-link { position: relative; text-decoration: none; cursor: pointer; }
 .tag-link:hover { text-decoration: underline; }
+.tag-link::after {
+  content: "";
+  position: absolute;
+  top: -10px; bottom: -10px; left: -6px; right: -6px;
+}
 
 .card-link {
+  position: relative;
   display: inline-block;
   margin-top: 1.5rem;
   font-family: 'JetBrains Mono', monospace;
@@ -359,6 +392,11 @@ th { color: var(--text-muted); font-weight: 600; font-size: 0.8rem; text-transfo
   text-decoration: none;
 }
 .card-link:hover { text-decoration: underline; }
+.card-link::after {
+  content: "";
+  position: absolute;
+  top: -12px; bottom: -12px; left: -6px; right: -6px;
+}
 
 @media print {
   header.site-header, .no-print, .skip-link { display: none !important; }
