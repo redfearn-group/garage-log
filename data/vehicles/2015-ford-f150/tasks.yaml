@@ -143,8 +143,8 @@ tasks:
     title: 'CRITICAL — get rear view camera checked/replaced (25N17)'
     notes: >-
       Confirmed CRITICAL priority by Brady on 2026-07-17. Found on
-      ford.com/support/recalls-details with this VIN
-      ([VIN-REDACTED]): Customer Satisfaction Program 25N17, "Rear view
+      ford.com/support/recalls-details with this VIN (see private.yaml):
+      Customer Satisfaction Program 25N17, "Rear view
       camera replacement if required after dealer evaluation" — a Ford
       goodwill/extended-coverage program, not an NHTSA safety recall, so it
       doesn't show up in the automated recall check in recalls.yaml. Ford's
