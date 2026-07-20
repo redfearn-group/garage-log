@@ -21,50 +21,151 @@ const rows = vehicles.map((vehicle) => {
     recallCount: vehicle.recallsData.recalls.length,
   };
 });
+
+// Fleet-wide aggregates for the summary strip.
+const overdueCount = rows.reduce((n, r) => n + r.dueItems.filter((s) => s.status === "overdue").length, 0);
+const dueSoonCount = rows.reduce((n, r) => n + r.dueItems.filter((s) => s.status === "due-soon").length, 0);
+const openTasksCount = rows.reduce((n, r) => n + r.openTasks.length, 0);
+const vehiclesNeedAttentionCount = rows.filter((r) => r.overall !== "ok").length;
+
+// Critical items: Brady's own hand-curated "CRITICAL — " task-title
+// convention is a more trustworthy urgency signal than raw recall counts,
+// which mix decades-old resolved recalls with genuinely open ones.
+const criticalItems = rows.flatMap((r) =>
+  r.openTasks
+    .filter((t) => /^critical\s*—/i.test(t.title))
+    .map((t) => ({ vehicle: r.vehicle, task: t }))
+);
+
+const accentFor: Record<string, string> = {
+  overdue: "var(--rg-red)",
+  "due-soon": "var(--rg-tawny)",
+  ok: "var(--rg-green)",
+  "never-done": "var(--rg-ash)",
+};
+
+const tagClassFor: Record<string, string> = {
+  overdue: "tag-red",
+  "due-soon": "tag-tawny",
+  ok: "tag-green",
+  "never-done": "tag-neutral",
+};
+
+// Small hardcoded body-type lookup — 5 vehicles, not worth a schema change.
+const vehicleTypeFor: Record<string, "sedan" | "suv" | "truck"> = {
+  "F-150": "truck",
+  "ES 300h": "sedan",
+  Highlander: "suv",
+  Tucson: "suv",
+  Impreza: "sedan",
+};
+
+const ICONS: Record<"sedan" | "suv" | "truck", string> = {
+  sedan:
+    "M1 11 L1 8.5 C1 7.7 1.6 7 2.5 7 L5.5 7 L7.5 3.2 C7.9 2.4 8.7 2 9.5 2 L14.5 2 C15.3 2 16.1 2.4 16.5 3.2 L18.5 7 L21.5 7 C22.4 7 23 7.7 23 8.5 L23 11",
+  suv:
+    "M1 11 L1 7.5 C1 6.7 1.6 6 2.5 6 L4.5 6 L6 2.8 C6.3 2.3 6.9 2 7.5 2 L16.5 2 C17.1 2 17.7 2.3 18 2.8 L19.5 6 L21.5 6 C22.4 6 23 6.7 23 7.5 L23 11",
+  truck:
+    "M1 11 L1 7.5 C1 6.7 1.6 6 2.5 6 L4 6 L5.5 2.8 C5.8 2.3 6.4 2 7 2 L10.5 2 C11.3 2 12 2.7 12 3.5 L12 6 L20.5 6 C21.9 6 23 7.1 23 8.5 L23 11 M12 6 L12 8.5 L20.5 8.5",
+};
 ---
 <Base title="Dashboard">
   <h2>Your vehicles</h2>
   {rows.length === 0 && <p class="muted">No active vehicles yet. Add one with <code>npm run admin</code>.</p>}
 
-  <div class="vehicle-grid">
-    {rows.map(({ vehicle, mileage, overall, dueItems, admin, openTasks, recallCount }) => (
-      <div class="card">
-        <div style="display:flex; justify-content: space-between; align-items: start;">
-          <h3 style="margin:0 0 0.25rem;"><a href={withBase(`/vehicles/${vehicle.slug}`)}>{vehicleLabel(vehicle)}</a></h3>
-          <StatusBadge status={overall} />
+  {rows.length > 0 && (
+    <div class="fleet-stats">
+      <div class="fleet-stat">
+        <div class={`fleet-stat-value ${vehiclesNeedAttentionCount > 0 ? "is-critical" : "is-positive"}`}>
+          {vehiclesNeedAttentionCount} / {rows.length}
         </div>
-        <div class="stat-row">
-          <div class="stat"><strong>{mileage != null ? mileage.toLocaleString() : "—"}</strong>miles</div>
-          <div class="stat"><strong>{openTasks.length}</strong>open task{openTasks.length === 1 ? "" : "s"}</div>
-          {recallCount > 0 && <div class="stat"><strong>{recallCount}</strong>open recall{recallCount === 1 ? "" : "s"}</div>}
-        </div>
-
-        {dueItems.length > 0 && (
-          <>
-            <p class="muted" style="margin-bottom: 0.35rem;">Needs attention:</p>
-            <ul class="pill-list">
-              {dueItems.map((s) => (
-                <li>
-                  <StatusBadge status={s.status} /> {s.item.name}
-                </li>
-              ))}
-            </ul>
-          </>
-        )}
-
-        {admin.length > 0 && (
-          <>
-            <p class="muted" style="margin-top: 0.75rem; margin-bottom: 0.35rem;">Coming up:</p>
-            <ul class="pill-list">
-              {admin.map((d) => (
-                <li class="muted">{d.label} — {d.dueDate} ({d.daysUntil >= 0 ? `${d.daysUntil}d` : "overdue"})</li>
-              ))}
-            </ul>
-          </>
-        )}
-
-        <p style="margin-top: 1rem; margin-bottom: 0;"><a href={withBase(`/vehicles/${vehicle.slug}`)}>View details →</a></p>
+        <div class="fleet-stat-label">Need attention</div>
       </div>
-    ))}
+      <div class="fleet-stat">
+        <div class={`fleet-stat-value ${overdueCount > 0 ? "is-critical" : "is-positive"}`}>{overdueCount}</div>
+        <div class="fleet-stat-label">Overdue items</div>
+      </div>
+      <div class="fleet-stat">
+        <div class={`fleet-stat-value ${dueSoonCount > 0 ? "is-warning" : "is-positive"}`}>{dueSoonCount}</div>
+        <div class="fleet-stat-label">Due soon</div>
+      </div>
+      <div class="fleet-stat">
+        <div class="fleet-stat-value">{openTasksCount}</div>
+        <div class="fleet-stat-label">Open tasks</div>
+      </div>
+    </div>
+  )}
+
+  {criticalItems.length > 0 && (
+    <div class="callout callout-alert">
+      <p class="callout-label">Alert — {criticalItems.length} critical item{criticalItems.length === 1 ? "" : "s"}</p>
+      <div class="callout-body">
+        {criticalItems.map(({ vehicle, task }) => (
+          <span class="callout-item">
+            <a href={withBase(`/vehicles/${vehicle.slug}`)}>{vehicleLabel(vehicle)}</a>
+            {" — "}
+            {task.title.replace(/^critical\s*—\s*/i, "")}
+          </span>
+        ))}
+      </div>
+    </div>
+  )}
+
+  <div class="vehicle-grid">
+    {rows.map(({ vehicle, mileage, overall, dueItems, openTasks, recallCount }) => {
+      const iconType = vehicleTypeFor[vehicle.model] ?? "sedan";
+      const shown = dueItems.slice(0, 3);
+      const overflow = dueItems.length - shown.length;
+      return (
+        <div class="vehicle-card" style={`--card-accent: ${accentFor[overall]}`}>
+          <div class="vehicle-card-header">
+            <div class="vehicle-card-title">
+              <svg class="vehicle-type-icon" viewBox="0 0 24 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d={ICONS[iconType]} />
+                <circle cx="6" cy="11" r="2" />
+                <circle cx={iconType === "truck" ? "18.5" : "18"} cy="11" r="2" />
+              </svg>
+              <h3><a href={withBase(`/vehicles/${vehicle.slug}`)}>{vehicleLabel(vehicle)}</a></h3>
+            </div>
+            <StatusBadge status={overall} />
+          </div>
+
+          <div class="stat-row">
+            <div>
+              <div class="stat-value">{mileage != null ? mileage.toLocaleString() : "—"}</div>
+              <div class="stat-label">Miles</div>
+            </div>
+            <div>
+              <div class="stat-value">{openTasks.length}</div>
+              <div class="stat-label">Open task{openTasks.length === 1 ? "" : "s"}</div>
+            </div>
+            {recallCount > 0 && (
+              <div>
+                <div class="stat-value">{recallCount}</div>
+                <div class="stat-label">Recall{recallCount === 1 ? "" : "s"} on file</div>
+              </div>
+            )}
+          </div>
+
+          {dueItems.length > 0 && (
+            <div class="card-section">
+              <p class="section-label">Needs attention</p>
+              <div class="tag-row">
+                {shown.map((s) => (
+                  <span class={`tag ${tagClassFor[s.status]}`}>{s.item.name}</span>
+                ))}
+                {overflow > 0 && (
+                  <a class="tag tag-neutral tag-link" href={withBase(`/vehicles/${vehicle.slug}`)}>
+                    +{overflow} more →
+                  </a>
+                )}
+              </div>
+            </div>
+          )}
+
+          <a class="card-link" href={withBase(`/vehicles/${vehicle.slug}`)}>View full history →</a>
+        </div>
+      );
+    })}
   </div>
 </Base>
