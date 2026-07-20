@@ -1,10 +1,10 @@
 tasks:
   - id: 1
-    title: Get license plate and exact tire size for the family member's Tucson
+    title: Get license plate and exact tire size for this Tucson
     notes: >-
       Originally a broader "gather basic details" task, added 2026-07-14
       from a single AutoZone cabin air filter purchase. RESOLVED 2026-07-16:
-      Brady supplied the VIN ([VIN-REDACTED]), color (black), and a March
+      Brady supplied the VIN (see private.yaml), color (black), and a March
       2026 odometer reading (~65,865 mi) — VIN decode via NHTSA vPIC
       confirmed 2020 model year, 2.4L GDI Theta II, AWD (HTRAC), 6-speed
       automatic, built in Ulsan, South Korea. schedule.yaml has been fully
@@ -19,7 +19,7 @@ tasks:
     createdDate: '2026-07-14'
     completedDate: null
   - id: 2
-    title: Get a baseline odometer reading for the family member's Tucson
+    title: Get a baseline odometer reading for this Tucson
     notes: >-
       RESOLVED 2026-07-16 — Brady reported ~65,865 mi as of "around March
       2026." Logged in mileage-log.yaml as 2026-03-15 (a mid-month
@@ -86,13 +86,13 @@ tasks:
     createdDate: '2026-07-16'
     completedDate: null
   - id: 7
-    title: 'Standing plan: the family member comes over every spring for a tune-up, every fall for an oil change (minimum)'
+    title: 'Standing plan: family member comes over every spring for a tune-up, every fall for an oil change (minimum)'
     notes: >-
-      New fleet-wide policy from Brady (2026-07-16): the family member should come over
-      every SPRING to get her Tucson tuned up alongside Brady's own cars —
+      New fleet-wide policy from Brady (2026-07-16): the family member should come
+      over every SPRING to get this Tucson tuned up alongside Brady's own cars —
       same seasonal routine as the rest of the fleet (battery load test,
       wiper blade check, fluid checks, etc.). Then every FALL, at minimum,
-      each car — including hers — gets an oil change, so every car ends up
+      each car — including this one — gets an oil change, so every car ends up
       with at least 2 oil changes/year regardless of actual mileage. This is
       an ongoing standing arrangement, not a one-time to-do — leaving it open
       as a recurring reminder rather than marking it done after any single
