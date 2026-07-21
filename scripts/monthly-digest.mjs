@@ -57,6 +57,8 @@ const index = readYaml(path.join(DATA_DIR, "vehicles.yaml"), { vehicles: [] });
 const overdue = [];
 const dueSoon = [];
 const staleMileage = [];
+const neverLoggedCounts = new Map(); // label -> count; full item names are too numerous/noisy for a digest, many not due for years yet
+const watchListDue = [];
 
 for (const summary of index.vehicles) {
   if (summary.status !== "active") continue;
@@ -67,6 +69,7 @@ for (const summary of index.vehicles) {
     maintenanceLog: readYaml(path.join(dir, "maintenance-log.yaml"), { entries: [] }).entries,
     schedule: readYaml(path.join(dir, "schedule.yaml"), { items: [] }).items,
     adminDates: readYaml(path.join(dir, "admin-dates.yaml"), { dates: [] }).dates,
+    watchList: readYaml(path.join(dir, "watch-list.yaml"), { items: [] }).items,
   };
   const label = vehicleLabel(vehicle);
   const { mileage: mileageNow } = currentMileageAndDate(vehicle);
@@ -76,7 +79,10 @@ for (const summary of index.vehicles) {
       .filter((e) => e.itemType === item.itemType)
       .sort((a, b) => (a.date < b.date ? 1 : -1));
     const lastDone = matching[0] ?? null;
-    if (!lastDone) continue; // "never done" isn't a due-date miss, skip for the digest
+    if (!lastDone) {
+      neverLoggedCounts.set(label, (neverLoggedCounts.get(label) ?? 0) + 1);
+      continue;
+    }
 
     const dueMileage =
       item.intervalMiles != null && lastDone.mileage != null ? lastDone.mileage + item.intervalMiles : null;
@@ -106,6 +112,16 @@ for (const summary of index.vehicles) {
   if (lastMileageDate == null || daysBetween(lastMileageDate, today) >= STALE_MILEAGE_DAYS) {
     staleMileage.push(`${label} — last mileage entry ${lastMileageDate ?? "never"}`);
   }
+
+  // Nudge for watch-list items nobody's revisited: if an item is still
+  // marked "not-yet-at-mileage" but the vehicle has actually reached (or
+  // passed) its typicalMileage, that status is stale and worth flagging —
+  // mirrors the "Mileage reached" badge shown on the vehicle's own page.
+  for (const w of vehicle.watchList) {
+    if (w.status === "not-yet-at-mileage" && w.typicalMileage != null && mileageNow != null && mileageNow >= w.typicalMileage) {
+      watchListDue.push(`${label} — ${w.issue} (typical ${w.typicalMileage.toLocaleString()} mi, now at ${mileageNow.toLocaleString()} mi)`);
+    }
+  }
 }
 
 const lines = [];
@@ -115,6 +131,11 @@ lines.push(...(overdue.length ? overdue.map((l) => `  - ${l}`) : ["  - none"]), 
 lines.push(`DUE SOON, within ${DUE_SOON_DAYS} days/${DUE_SOON_MILES} mi (${dueSoon.length})`);
 lines.push(...(dueSoon.length ? dueSoon.map((l) => `  - ${l}`) : ["  - none"]), "");
 lines.push(`MILEAGE NOT LOGGED IN ${STALE_MILEAGE_DAYS}+ DAYS (${staleMileage.length})`);
-lines.push(...(staleMileage.length ? staleMileage.map((l) => `  - ${l}`) : ["  - none"]));
+lines.push(...(staleMileage.length ? staleMileage.map((l) => `  - ${l}`) : ["  - none"]), "");
+const neverLoggedLines = [...neverLoggedCounts.entries()].map(([label, count]) => `${label} — ${count} schedule item${count === 1 ? "" : "s"} with no history on file (full list: https://redfearn.group/garage-log/)`);
+lines.push(`NEVER LOGGED — schedule items with zero history (not necessarily due yet) (${neverLoggedLines.length} vehicle${neverLoggedLines.length === 1 ? "" : "s"} affected)`);
+lines.push(...(neverLoggedLines.length ? neverLoggedLines.map((l) => `  - ${l}`) : ["  - none"]), "");
+lines.push(`WATCH-LIST ITEMS AT/PAST TYPICAL MILEAGE (${watchListDue.length})`);
+lines.push(...(watchListDue.length ? watchListDue.map((l) => `  - ${l}`) : ["  - none"]));
 
 console.log(lines.join("\n"));

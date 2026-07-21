@@ -1,6 +1,7 @@
 tasks:
   - id: 1
-    title: 'CRITICAL — get open recall fixed: 26V237 (transmission downshift)'
+    title: 'Get open recall fixed: 26V237 (transmission downshift)'
+    priority: critical
     notes: >-
       Confirmed CRITICAL priority by Brady on 2026-07-17. Confirmed OPEN
       via nhtsa.gov/recalls VIN-specific lookup on 2026-07-10, re-confirmed
@@ -140,7 +141,8 @@ tasks:
     createdDate: '2026-07-14'
     completedDate: null
   - id: 12
-    title: 'CRITICAL — get rear view camera checked/replaced (25N17)'
+    title: 'Get rear view camera checked/replaced (25N17)'
+    priority: critical
     notes: >-
       Confirmed CRITICAL priority by Brady on 2026-07-17. Found on
       ford.com/support/recalls-details with this VIN (see private.yaml):

@@ -2,7 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import StatusBadge from "../../components/StatusBadge.astro";
 import { getVehicleSummaries, getVehicle, currentMileage, vehicleLabel } from "../../lib/data";
-import { scheduleStatusesFor, upcomingAdminDates } from "../../lib/status";
+import { scheduleStatusesFor, upcomingAdminDates, splitScheduleItemName, currentMileageAtOrAbove } from "../../lib/status";
 import { withBase } from "../../lib/url";
 
 export function getStaticPaths() {
@@ -63,9 +63,18 @@ if (points.length > 1) {
       <tr><th>Item</th><th>Status</th><th>Last done</th><th>Due at</th></tr>
     </thead>
     <tbody>
-      {statuses.map((s) => (
+      {statuses.map((s) => {
+        const { short, citation } = splitScheduleItemName(s.item.name);
+        return (
         <tr>
-          <td>{s.item.name}</td>
+          <td>
+            {citation ? (
+              <details>
+                <summary>{short}</summary>
+                <p class="muted" style="font-size:0.85rem; margin: 0.35rem 0 0;">{citation}</p>
+              </details>
+            ) : short}
+          </td>
           <td><StatusBadge status={s.status} /></td>
           <td>{s.lastDone ? (s.lastDone.mileage != null ? `${s.lastDone.date} (${s.lastDone.mileage.toLocaleString()} mi)` : s.lastDone.date) : "—"}</td>
           <td>
@@ -75,7 +84,8 @@ if (points.length > 1) {
             {s.dueMileage == null && s.dueDate == null ? "—" : ""}
           </td>
         </tr>
-      ))}
+        );
+      })}
     </tbody>
   </table>
 
@@ -85,13 +95,19 @@ if (points.length > 1) {
       <table>
         <thead><tr><th>Issue</th><th>Typical mileage</th><th>Status</th></tr></thead>
         <tbody>
-          {vehicle.watchList.map((w) => (
+          {vehicle.watchList.map((w) => {
+            const mileageReached = w.status === "not-yet-at-mileage" && currentMileageAtOrAbove(mileage, w.typicalMileage);
+            return (
             <tr>
               <td>{w.issue}<div class="muted" style="font-size:0.85rem;">{w.description}</div></td>
               <td>{w.typicalMileage ? w.typicalMileage.toLocaleString() + " mi" : "—"}</td>
-              <td>{w.status}</td>
+              <td>
+                {w.status}
+                {mileageReached && <span class="tag tag-tawny" style="margin-left: 0.4rem;">Mileage reached</span>}
+              </td>
             </tr>
-          ))}
+            );
+          })}
         </tbody>
       </table>
     </>
@@ -146,7 +162,12 @@ if (points.length > 1) {
 
   <h3 class="section-title">Tasks</h3>
   <ul class="pill-list">
-    {openTasks.map((t) => <li>☐ {t.title} <span class="muted">({t.createdDate})</span></li>)}
+    {openTasks.map((t) => (
+      <li>
+        ☐ {t.priority === "critical" && <span class="tag tag-red" style="margin-right: 0.4rem;">Critical</span>}
+        {t.title} <span class="muted">({t.createdDate})</span>
+      </li>
+    ))}
     {doneTasks.map((t) => <li class="muted">☑ {t.title}</li>)}
     {vehicle.tasks.length === 0 && <li class="muted">No tasks.</li>}
   </ul>

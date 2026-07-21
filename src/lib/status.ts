@@ -81,3 +81,18 @@ export function upcomingAdminDates(vehicle: Vehicle, today: string = new Date().
     .map((d) => ({ ...d, daysUntil: daysBetween(today, d.dueDate) }))
     .sort((a, b) => a.daysUntil - b.daysUntil);
 }
+
+// schedule.yaml item names carry a long sourcing citation after " — " (owner's
+// manual references, forum corroboration, correction history) that's valuable
+// on the full vehicle page but too long for a dashboard tag or table row on a
+// phone. Split it off so callers can show the short lead and, where there's
+// room, the full citation behind a tap.
+export function splitScheduleItemName(name: string): { short: string; citation: string | null } {
+  const idx = name.indexOf(" — ");
+  if (idx === -1) return { short: name, citation: null };
+  return { short: name.slice(0, idx), citation: name.slice(idx + 3) };
+}
+
+export function currentMileageAtOrAbove(mileageNow: number | null, typicalMileage: number | null | undefined): boolean {
+  return mileageNow != null && typicalMileage != null && mileageNow >= typicalMileage;
+}
