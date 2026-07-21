@@ -11,7 +11,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "publish": "node scripts/publish.mjs",
-    "check-recalls": "node scripts/check-recalls.mjs"
+    "check-recalls": "node scripts/check-recalls.mjs",
+    "monthly-digest": "node scripts/monthly-digest.mjs"
   },
   "dependencies": {
     "astro": "^7.0.7",
