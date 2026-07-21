@@ -542,6 +542,19 @@ entries:
       odometer readings (155,252 mi on 2026-02-21, 160,357 mi on
       2026-07-11) — treat as rough.
     documents: []
+  - date: '2026-04-10'
+    mileage: 156920
+    itemType: oil-change
+    description: Oil & filter change (Kirkland Signature 0W-20 full synthetic) — DIY
+    notes: >-
+      Oil (Kirkland Signature 0W-20 Full Synthetic, 5-qt 2-pack, $35.99)
+      purchased at Costco (Spanish Fork) 2026-04-10, same trip as Zeus's
+      5W-30 — see that vehicle's log. No filter purchased in the same
+      transaction; Brady believes he already had one on hand. Exact
+      install date not independently confirmed beyond the purchase date.
+      Mileage interpolated between the 2026-02-21 (155,252 mi) and
+      2026-07-11 (160,357 mi) readings — treat as rough.
+    documents: []
   - date: '2026-05-25'
     mileage: 158643
     itemType: ''
