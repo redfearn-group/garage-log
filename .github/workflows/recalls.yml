@@ -1,4 +1,4 @@
-name: Monthly recall & complaint check
+name: Monthly recall check
 
 on:
   schedule:
@@ -29,7 +29,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
-            git commit -m "Monthly recall & complaint check"
+            git commit -m "Monthly recall check"
             git push
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
