@@ -186,6 +186,13 @@ table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
 th, td { text-align: left; padding: 0.5rem 0.6rem; border-bottom: 1px solid var(--border); }
 th { color: var(--text-muted); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.02em; }
 
+/* Multi-column tables (schedule, mileage log, maintenance history, admin
+   dates) don't fit a phone viewport at their natural column widths — clip
+   instead of reading. Scroll horizontally within the table itself rather
+   than letting it squish illegibly or overflow the page. */
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.table-wrap table { min-width: 480px; }
+
 .muted { color: var(--text-muted); }
 .section-title { margin-top: 2rem; margin-bottom: 0.75rem; }
 
@@ -403,4 +410,8 @@ th { color: var(--text-muted); font-weight: 600; font-size: 0.8rem; text-transfo
   body { background: white; color: black; }
   .card, .vehicle-card { border: none; padding: 0; }
   .vehicle-card::before, .tag, .callout { background: none !important; }
+  /* Paper doesn't scroll — let tables shrink to the page width instead of
+     imposing the mobile min-width. */
+  .table-wrap { overflow-x: visible; }
+  .table-wrap table { min-width: 0; }
 }
