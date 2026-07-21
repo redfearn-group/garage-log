@@ -17,6 +17,10 @@ Five vehicles, tracked against maintenance schedules sourced from actual owner's
 
 No database. Vehicle data lives as YAML files committed directly to this repo, which means git history doubles as a free audit trail: every correction, every backfilled record, every re-sourced interval is a diff you can go back and read.
 
+![Architecture diagram: the local admin app writes YAML data, which is git-tracked; the NHTSA recall API feeds in on a schedule; Astro builds the YAML into a static site; the static site deploys to GitHub Pages.](.github/assets/architecture.svg)
+
+*The admin app is the only thing that writes data. Everything downstream of the YAML is a read-only build.*
+
 ```
 data/vehicles.yaml              # index of all vehicles
 data/vehicles/<slug>/
