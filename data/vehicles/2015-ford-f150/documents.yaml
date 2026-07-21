@@ -4,7 +4,7 @@ documents:
     dateAdded: '2026-07-14'
     description: >-
       Original purchase paperwork from Clegg Auto Sales (Spanish Fork, UT),
-      dealer #6861, stock #2354, 2018-05-23: Bill of Sale, Buyers Guide
+      2018-05-23: Bill of Sale, Buyers Guide
       (AS IS — no dealer warranty), Retail Installment Contract & Security
       Agreement (financed through Utah Community Credit Union), Utah
       odometer disclosure statement (TC-891), Utah notice for a vehicle
@@ -15,28 +15,28 @@ documents:
     category: repair-invoice
     dateAdded: '2026-07-14'
     description: >-
-      Discount Tire (UTS 19, Provo), 2018-12-10, invoice #4306877 — 2
+      Discount Tire (UTS 19, Provo), 2018-12-10 — 2
       Michelin Defender LTX M/S tires (275/65R18) installed on the front
       axle, $542.66 total. See maintenance-log.yaml.
   - filename: 20191209-discounttire-rotation.pdf
     category: repair-invoice
     dateAdded: '2026-07-14'
     description: >-
-      Discount Tire (UTS 24, Spanish Fork), 2019-12-09, invoice #1015365 —
+      Discount Tire (UTS 24, Spanish Fork), 2019-12-09 —
       free tire rotation & rebalance, no charge. See maintenance-log.yaml.
   - filename: 20251119-discounttire-tire-replacement.pdf
     category: repair-invoice
     dateAdded: '2026-07-14'
     description: >-
-      Discount Tire (UTS 24, Spanish Fork), 2025-11-19, sales order
-      #5053390356 — all 4 tires replaced with BFGoodrich Trail-Terrain T/A
+      Discount Tire (UTS 24, Spanish Fork), 2025-11-19 —
+      all 4 tires replaced with BFGoodrich Trail-Terrain T/A
       (275/65R18) plus 4 new TPMS sensors, $1,499.94 total. Includes a
       credit for the 2018 Michelin front tires. See maintenance-log.yaml.
   - filename: 20200812-tim-dahle-worry-free-maintenance.pdf
     category: repair-invoice
     dateAdded: '2026-07-14'
     description: >-
-      Tim Dahle Ford (RO #846304/1), 2020-08-12 — Worry Free Maintenance
+      Tim Dahle Ford, 2020-08-12 — Worry Free Maintenance
       package purchase + 1st visit (oil change, tire rotation, MPI), plus a
       Vehicle Inspection/Check-In Report noting an aftermarket engine air
       filter, tire tread readings, and an early note of a front cover and
@@ -45,7 +45,7 @@ documents:
     category: repair-invoice
     dateAdded: '2026-07-14'
     description: >-
-      Tim Dahle Ford (RO #837078), 2019-11-18 (69,553 mi) — IDS diagnostics
+      Tim Dahle Ford, 2019-11-18 (69,553 mi) — IDS diagnostics
       and IPMA module reset to recalibrate the adaptive cruise / driver-
       assist system after an insurance windshield replacement, $135. See
       maintenance-log.yaml.
@@ -53,15 +53,15 @@ documents:
     category: repair-invoice
     dateAdded: '2026-07-14'
     description: >-
-      Clegg Auto Spanish Fork (RO #204835), 2022-10-04 (108,838 mi) — rear
+      Clegg Auto Spanish Fork, 2022-10-04 (108,838 mi) — rear
       differential pinion seal + flange replaced again as a warranty
-      follow-up to the 2022-09-12 Clegg repair (RO #204446), $95.25. See
+      follow-up to the 2022-09-12 Clegg repair, $95.25. See
       maintenance-log.yaml.
   - filename: 20221222-tim-dahle-recalls-brake-line-valve-cover.pdf
     category: repair-invoice
     dateAdded: '2026-07-14'
     description: >-
-      Tim Dahle Ford (RO #878393), 2022-12-22 (111,520 mi) — blown left-
+      Tim Dahle Ford, 2022-12-22 (111,520 mi) — blown left-
       front brake line replaced + brake fluid flush, passenger valve cover
       gasket + VCT seals resealed (oil leak), and recalls 17S33 (door
       latch, NHTSA 17V-652) and 18S27 (carpet shielding, NHTSA 18V-568)
@@ -71,7 +71,7 @@ documents:
     category: repair-invoice
     dateAdded: '2026-07-14'
     description: >-
-      Tim Dahle Ford (RO #883831), 2023-05-09 (117,125 mi) — emission (I/M)
+      Tim Dahle Ford, 2023-05-09 (117,125 mi) — emission (I/M)
       inspection + purchase of a 3-visit synthetic-blend Worry Free
       Maintenance package with its 1st oil-change/rotation visit redeemed,
       $231.96. See maintenance-log.yaml.
@@ -79,7 +79,7 @@ documents:
     category: repair-invoice
     dateAdded: '2026-07-14'
     description: >-
-      Tim Dahle Ford (RO #911377), 2025-02-25 (140,142 mi) — WFM 3rd/final
+      Tim Dahle Ford, 2025-02-25 (140,142 mi) — WFM 3rd/final
       visit (oil change, rotation, MPI) plus the passenger-side valve cover
       replaced (found cracked), $113.07 out of pocket. Includes the card
       transaction receipt. See maintenance-log.yaml.
@@ -87,7 +87,7 @@ documents:
     category: repair-invoice
     dateAdded: '2026-07-14'
     description: >-
-      Tim Dahle Ford (RO #924599), 2025-12-09 to 2025-12-31 (151,830 mi) —
+      Tim Dahle Ford, 2025-12-09 to 2025-12-31 (151,830 mi) —
       large multi-item repair: vacuum pump replaced (under warranty),
       driver's seat lumbar adjuster, backup camera, folding-mirror switch,
       front axle seal + rear axle oil, plus a rental. Printed total due
@@ -98,19 +98,19 @@ documents:
     category: repair-invoice
     dateAdded: '2026-07-14'
     description: >-
-      Clegg Auto Spanish Fork (RO #204446), 2022-09-12 — rear differential
+      Clegg Auto Spanish Fork, 2022-09-12 — rear differential
       pinion seal, oil pan gasket, and differential cover reseal, under a
-      Carchex/Allegiance warranty claim (#J22-79200). See maintenance-log.yaml
+      Carchex/Allegiance warranty claim. See maintenance-log.yaml
       and admin-dates.yaml.
   - filename: 20231227-tim-dahle-major-warranty-repairs.pdf
     category: repair-invoice
     dateAdded: '2026-07-14'
     description: >-
-      Tim Dahle Ford (RO #893785), 2023-12-27 to 2024-01-22 — multi-item
+      Tim Dahle Ford, 2023-12-27 to 2024-01-22 — multi-item
       visit: exhaust manifold diagnosis (declined), washer pump
       replacement, door lock recall check, block heater cord recall,
       rear pinion seal (again), timing cover reseal, and rear main seal
-      replacement. Warranty claim auth #M23-48974. See maintenance-log.yaml
+      replacement. See maintenance-log.yaml
       and admin-dates.yaml for the cost reconciliation.
   - filename: 20260109-tim-dahle-ford-estimate.png
     category: repair-invoice
@@ -132,13 +132,13 @@ documents:
     category: warranty
     dateAdded: '2026-07-14'
     description: >-
-      CARCHEX "My Selected Plans" account page for contract #UDA1001522 —
+      CARCHEX "My Selected Plans" account page —
       full purchase details (deductible, limit of liability, waiting
       period, financing schedule). See admin-dates.yaml for the summary.
   - filename: 20220512-carchex-order-confirmation-email.pdf
     category: warranty
     dateAdded: '2026-07-14'
-    description: CARCHEX order confirmation email, 2022-05-12, for the same Ultimate Direct contract #UDA1001522.
+    description: CARCHEX order confirmation email, 2022-05-12, for the same Ultimate Direct plan.
   - filename: allegiance-ultimate-direct-sample-contract-terms.pdf
     category: warranty
     dateAdded: '2026-07-13'

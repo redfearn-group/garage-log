@@ -3,42 +3,31 @@ dates:
     label: 'Carchex "Ultimate Direct" extended warranty — EXPIRED'
     dueDate: '2026-05-11'
     notes: >-
-      Contract #UDA1001522, plan "Ultimate Direct" underwritten by
-      Allegiance (claims 1-877-356-1500, roadside 1-866-994-4667), sold/
-      financed through CARCHEX (representative Joseph Jenkins), purchased
-      2022-05-11 for $3,882.45. Financed as 12 monthly payments of $323.54
-      through CARCHEX, first payment 2022-06-15, last payment 2023-04-15
-      — paid off well before the coverage itself expired. 48 months /
-      48,000 miles from a starting odometer of 104,412 mi — expired at
-      whichever came first: 2026-05-11 or 152,412 mi. Current mileage
-      (155,407.7 as of 2026-07-12) is already past the mileage cutoff, and
-      the date cutoff has also passed — this warranty is no longer active.
-      $100 deductible while it was active, $50,000 (or Actual Cash Value,
-      whichever lesser) limit of liability, 30-day/1,000-mile waiting
-      period from purchase. Broad "Supreme" mechanical/electrical
-      breakdown coverage, but routine maintenance (fluids, filters,
-      coolant, diff/transmission service) was excluded unless required by
-      an actual breakdown — so it would not have covered the pre-sale
-      service items in task #3 even while active. A blank/generic sample
-      contract (terms/exclusions reference only, not Brady's actual signed
-      copy) is filed privately at
-      2015-ford-f150/warranty/allegiance-ultimate-direct-sample-contract-terms.pdf,
-      plan details and order confirmation at
-      2015-ford-f150/warranty/20220511-carchex-plan-details.pdf and
-      2015-ford-f150/warranty/20220512-carchex-order-confirmation-email.pdf.
-      CARCHEX also mailed a physical signed contract, but since this
-      warranty has already expired, tracking that copy down is OBE — not
-      being pursued further. Actually used at least three times: claim
-      #J22-79200 (2022-09-12, Clegg Auto, rear pinion seal + oil pan
-      gasket) paid $998.01 of a $1,369.73 repair; claim #M23-48974
-      (2023-12-27, Tim Dahle Ford, pinion seal again + timing cover reseal
+      Plan "Ultimate Direct," purchased 2022-05-11 for $3,882.45, financed
+      as 12 monthly payments (paid off well before the coverage itself
+      expired). 48 months / 48,000 miles from a starting odometer of
+      104,412 mi — expired at whichever came first: 2026-05-11 or
+      152,412 mi. Current mileage (155,407.7 as of 2026-07-12) is already
+      past the mileage cutoff, and the date cutoff has also passed — this
+      warranty is no longer active. $100 deductible while it was active,
+      $50,000 (or Actual Cash Value, whichever lesser) limit of liability,
+      30-day/1,000-mile waiting period from purchase. Broad "Supreme"
+      mechanical/electrical breakdown coverage, but routine maintenance
+      (fluids, filters, coolant, diff/transmission service) was excluded
+      unless required by an actual breakdown — so it would not have
+      covered the pre-sale service items in task #3 even while active.
+      Actually used at least three times: 2022-09-12 (Clegg Auto, rear
+      pinion seal + oil pan gasket) paid $998.01 of a $1,369.73 repair;
+      2023-12-27 (Tim Dahle Ford, pinion seal again + timing cover reseal
       + rear main seal) paid the bulk of a $5,864.53 gross repair down to
       just $533 out of pocket; and a third time at 2025-12-09 (Tim Dahle
-      Ford, RO #924599) when the vacuum pump was replaced under warranty
-      while the contract was still active at 151,830 mi. That 2025-12-09
-      invoice's printed total due was $3,428.72 including customer-pay
-      items (seat lumbar adjuster, backup camera, folding-mirror switch,
-      front axle seal, rental); a handwritten ~$940–1,050 out-of-pocket
-      figure on it is ambiguous/unverified. Across these claims the
-      warranty paid out several times its own $3,882.45 purchase price. See
-      maintenance-log.yaml for all three repair visits.
+      Ford) when the vacuum pump was replaced under warranty while the
+      contract was still active at 151,830 mi. That 2025-12-09 invoice's
+      printed total due was $3,428.72 including customer-pay items (seat
+      lumbar adjuster, backup camera, folding-mirror switch, front axle
+      seal, rental); a handwritten ~$940–1,050 out-of-pocket figure on it
+      is ambiguous/unverified. Across these claims the warranty paid out
+      several times its own $3,882.45 purchase price. See
+      maintenance-log.yaml for all three repair visits. Full contract,
+      administrator, claims-contact, and financing details filed
+      privately.

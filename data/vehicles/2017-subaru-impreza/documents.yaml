@@ -1,25 +1,23 @@
 documents:
-  - filename: 20260419-carchex-contract-CHXM5745679.pdf
+  - filename: 20260419-carchex-contract.pdf
     category: warranty
     dateAdded: '2026-07-14'
     description: >-
-      Full CARCHEX M2M Powertrain Gold Select vehicle service contract,
-      #CHXM5745679, administered by American Auto Shield, Ltd. Purchased
-      2026-04-15 at 135,271 mi. See admin-dates.yaml for coverage summary,
-      pricing, and cancellation terms.
+      Full CARCHEX M2M Powertrain Gold Select vehicle service contract.
+      Purchased 2026-04-15 at 135,271 mi. See admin-dates.yaml for coverage
+      summary, pricing, and cancellation terms.
   - filename: 20260415-carchex-confirmation-email.pdf
     category: warranty
     dateAdded: '2026-07-14'
     description: >-
-      CARCHEX confirmation-of-coverage email for contract #CHXM5745679,
-      2026-04-15 — quick summary of the same plan detailed in the full
-      contract PDF above.
+      CARCHEX confirmation-of-coverage email, 2026-04-15 — quick summary
+      of the same plan detailed in the full contract PDF above.
   - filename: 20260313-carnova-suby-purchase-docs.pdf
     category: registration
     dateAdded: '2026-07-14'
     description: >-
-      Original purchase paperwork from Carnova LLC (Midvale, UT), dealer
-      #317B, stock #617577, 2026-03-13: Utah Transaction Disclosure Form
+      Original purchase paperwork from Carnova LLC (Midvale, UT),
+      2026-03-13: Utah Transaction Disclosure Form
       (TC-466), Buyer's Order, downpayment receipt ($1,000 non-refundable),
       and Buyers Guide (AS IS — no dealer warranty). Odometer reading at
       sale: 133,173 mi — see the previousOwner note in vehicles.yaml for

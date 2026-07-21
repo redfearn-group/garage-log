@@ -7,7 +7,7 @@ entries:
       (Kluger, Highlander, Camry Hybrid, Sienna, Alphard, Harrier, Solara,
       Wisdom, ES 300, RX 300) 33-2260
     notes: >-
-      Purchased via Amazon (order #112-9525969-9615458, $43.36) — order-placed
+      Purchased via Amazon ($43.36) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
@@ -19,7 +19,7 @@ entries:
       K&N VF2000 Washable & Reusable Cabin Air Filter Cleans and Freshens
       Incoming Air for your Subaru, Toyota
     notes: >-
-      Purchased via Amazon (order #112-9525969-9615458, $34.16) — order-placed
+      Purchased via Amazon ($34.16) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
@@ -30,7 +30,7 @@ entries:
     description: >-
       Bosch Rear Wiper Blade H307, 12" Original Equipment Replacement
     notes: >-
-      Purchased via Amazon (order #112-1775117-7951442, $6.63) — order-placed
+      Purchased via Amazon ($6.63) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
@@ -41,7 +41,7 @@ entries:
     description: >-
       TRICO Exact Fit 12" Rear Wiper Blade
     notes: >-
-      Purchased via Amazon (order #112-5274335-9341063, $10.1) — order-placed
+      Purchased via Amazon ($10.1) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
@@ -54,11 +54,10 @@ entries:
       2010 2011 2012 2013 74320-48500-B0
     notes: >-
       Driver's sun visor (a known Highlander sagging/breaking item).
-      Originally ordered 2022-06-21 for $35.64 (Amazon order
-      #112-5663971-8989834); that first unit was returned defective and
-      Amazon shipped a free replacement (order #113-1280914-9567405, $0,
-      2022-07-01) — this single entry represents the one visor actually
-      installed, not two. Exact install date not independently confirmed;
+      Originally ordered 2022-06-21 for $35.64 via Amazon; that first
+      unit was returned defective and Amazon shipped a free replacement
+      ($0, 2022-07-01) — this single entry represents the one visor
+      actually installed, not two. Exact install date not independently confirmed;
       mileage interpolated between the surrounding odometer readings — treat
       as rough.
     documents: []
@@ -68,10 +67,10 @@ entries:
     description: >-
       Worry Free Maintenance 2nd visit — full-service oil change (0W-20
       synthetic, M967 filter) + tire rotation + MPI + car wash — Tim Dahle
-      Ford (RO #885408). Redeemed under an earlier WFM service contract
-      (contract exp 124,000 mi or 2024-04-27), no charge.
+      Ford. Redeemed under an earlier WFM service contract
+      (contract 124,000 mi or 2024-04-27), no charge.
     notes: >-
-      R/O #885408, advisor Kevin Vrooman. $0.00 (service contract). Invoice
+      $0.00 (service contract). Invoice
       notes the truck was "eligible for a new maintenance package at next
       visit" — that new package was in fact bought 2024-03-06 below.
     documents:
@@ -115,11 +114,11 @@ entries:
     itemType: battery-12v
     description: '12V battery replaced — Costco Tire Center (Interstate Batteries Group 24F AGM), $196.62 net after core fee refund'
     notes: >-
-      Date and invoice total confirmed from the Costco receipt (invoice
-      #11180148520, $212.74 charged including a $15 core fee, refunded
+      Date and invoice total confirmed from the Costco receipt ($212.74
+      charged including a $15 core fee, refunded
       $16.12 the same day per the separate core-fee-refund slip — net cost
       $196.62). Mileage estimated — well-supported by the confirmed
-      2024-03-06 reading of 127,215 mi (Tim Dahle RO #896515) just two and
+      2024-03-06 reading of 127,215 mi (Tim Dahle Ford) just two and
       a half weeks later, so ~126,947 on this date is a close estimate.
     documents:
       - 20240219-costco-battery-purchase.pdf
@@ -129,14 +128,14 @@ entries:
     description: >-
       New "Worry Free Maintenance" package purchased and its 1st visit
       redeemed (full-service oil change, 0W-20 full synthetic, M967 filter,
-      tire rotation, MPI) — Tim Dahle Ford (RO #896515).
+      tire rotation, MPI) — Tim Dahle Ford.
     notes: >-
       $255.26 total: $225 for a 3-visit full-synthetic WFM package (+ $10
       haz-mat, $2.75 data fee, $17.51 tax); the 1st oil-change/rotation
-      visit was redeemed against it the same day (card ending 3192, invoice
-      #896515). Declined the advisor's recommended add-ons: swollen lug
+      visit was redeemed against it the same day. Declined the advisor's
+      recommended add-ons: swollen lug
       nuts, engine air filter, and front & rear brake pads + rotor
-      resurface. R/O #896515, advisor McKenna Chornia.
+      resurface.
     documents:
       - 20240306-tim-dahle-wfm-package.pdf
   - date: '2024-03-06'
@@ -181,7 +180,7 @@ entries:
       12x1.5 Lug Nuts 20 Pcs Chrome Closed End Mag Style Lug Nuts with Washer
       13/16" (21mm) Hex Compatible with Toyota Camry/Corolla/Tacoma Lexus
     notes: >-
-      Purchased via Amazon (order #113-6125964-0825809, $18.28) — order-placed
+      Purchased via Amazon ($18.28) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
@@ -192,7 +191,7 @@ entries:
     description: >-
       Genuine Toyota Parts - Valve Sub-Assy, Vent (12204-31120)
     notes: >-
-      Purchased via Amazon (order #113-9796661-3452262, $13.75) — order-placed
+      Purchased via Amazon ($13.75) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
@@ -203,7 +202,7 @@ entries:
     description: >-
       FEL-PRO 61445 Throttle Body Gasket
     notes: >-
-      Purchased via Amazon (order #113-6757612-1701050, $4.73) — order-placed
+      Purchased via Amazon ($4.73) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough. Fitment confirmed via lookup: FEL-PRO 61445
@@ -216,7 +215,7 @@ entries:
     description: >-
       FEL-PRO MS 96786 Fuel Injection Plenum Gasket Set
     notes: >-
-      Purchased via Amazon (order #113-6757612-1701050, $18.67) — order-placed
+      Purchased via Amazon ($18.67) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough. Same order as the 61445 throttle body gasket
@@ -230,7 +229,7 @@ entries:
       Power Stop K4713 Front Z23 Carbon Fiber Brake Pads with Drilled and
       Slotted Rotors Brake Kit For Lexus RX350 RX450h Toyota Highlander Sienna
     notes: >-
-      Purchased via Amazon (order #111-5811340-2156236, $233.16) —
+      Purchased via Amazon ($233.16) —
       order-placed date used as the log date; exact install date not
       independently confirmed. Mileage interpolated between the surrounding
       odometer readings — treat as rough.
@@ -240,11 +239,11 @@ entries:
     itemType: oil-change
     description: >-
       Worry Free Maintenance 2nd visit — full-service oil change (0W-20
-      synthetic, M967 filter) + tire rotation + MPI — Tim Dahle Ford (RO
-      #902720). Redeemed under the WFM package bought 2024-03-06 above, no
+      synthetic, M967 filter) + tire rotation + MPI — Tim Dahle Ford.
+      Redeemed under the WFM package bought 2024-03-06 above, no
       charge.
     notes: >-
-      R/O #902720, advisor Bernie Ure. $0.00 (service contract). Invoice
+      $0.00 (service contract). Invoice
       notes "eligible for new maintenance package at next visit," i.e. this
       package's 3rd visit would be the last.
     documents:
@@ -277,8 +276,8 @@ entries:
     itemType: spark-plugs
     description: Spark plugs replaced — DIY
     notes: >-
-      Plugs were Autolite Iridium XP XP5325 (Amazon order
-      #114-5707785-2577015, placed 2024-05-20, $36.36) — a Toyota/Lexus V6
+      Plugs were Autolite Iridium XP XP5325 (Amazon,
+      placed 2024-05-20, $36.36) — a Toyota/Lexus V6
       plug, confirmed by fitment lookup not to fit any Ford, so it belongs
       here rather than to the F-150. Same estimated date/mileage caveat as
       the routine maintenance entry above.
@@ -296,7 +295,7 @@ entries:
       SYLVANIA 168 T10 W5W LED White Mini Bulbs — interior lighting (map,
       dome, cargo) replacement
     notes: >-
-      Purchased via Amazon (order #114-5707785-2577015, $15.85) — the same
+      Purchased via Amazon ($15.85) — the same
       order as the Autolite XP5325 spark plug and Cerakote headlight kit
       (both attributed here). Order-placed date used as the log date; exact
       install date not independently confirmed. Mileage held at the same
@@ -317,8 +316,8 @@ entries:
       hazy again after about a year (see open task to file a warranty
       claim). Mileage still estimated via the same interpolation method
       (120,000 mi on 2023-08-02, 141,180 mi on 2025-04-07). The kit was a
-      CERAKOTE Ceramic Headlight Restoration Kit (Amazon order
-      #114-5707785-2577015, placed 2024-05-20, $18.14).
+      CERAKOTE Ceramic Headlight Restoration Kit (Amazon,
+      placed 2024-05-20, $18.14).
     documents: []
   - date: '2024-06-18'
     mileage: 131000
@@ -326,7 +325,7 @@ entries:
     description: Transmission fluid & filter drain-and-fill (WIX 58010 filter) — DIY
     notes: >-
       Date matches the Amazon order-placed date for the WIX 58010
-      transmission filter ($21.24, order #113-4001144-6370615). The fluid
+      transmission filter ($21.24). The fluid
       was Valvoline MaxLife Multi-Vehicle ATF (1 gallon) bought at AutoZone
       #886 on 2024-06-19, the day after the filter's order date — so the
       filter (Amazon) and fluid (AutoZone) line up with this same job.
@@ -366,7 +365,7 @@ entries:
       Toyota Highlander 2008 2009 2010 2011 2012 2013 Beige Visor Assembly,
       Replacement 74320-48500-B0, 74320-0E050-B0
     notes: >-
-      Purchased via Amazon (order #113-6519875-3153037, $46.09) — order-placed
+      Purchased via Amazon ($46.09) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
@@ -392,7 +391,7 @@ entries:
       Ceramic Brake Pads with Hardware For Toyota Highlander 2008-2013 [Model
       Specific]
     notes: >-
-      Purchased via Amazon (order #114-5770212-7200254, $68.79) — order-placed
+      Purchased via Amazon ($68.79) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
@@ -419,7 +418,7 @@ entries:
       Side, Replacement for Toyota Highlander Highlander Hybrid 2008-2013,
       Replaces 75555-0E040
     notes: >-
-      Purchased via Amazon (order #113-1286416-9109016, $38.67) — order-placed
+      Purchased via Amazon ($38.67) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
@@ -431,7 +430,7 @@ entries:
       Phoenix Systems 8006-B Double-Ended Brake Fluid + Coolant Test Strips
       (15 foil wrapped test strips), 1 Pack
     notes: >-
-      Purchased via Amazon (order #113-1286416-9109016, $23.63) — order-placed
+      Purchased via Amazon ($23.63) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough. Same order as "Hoypeyfiy 75555-48061 Roof
@@ -446,7 +445,7 @@ entries:
       90430-12031 (24Pcs) Aluminum Oil Drain Plug Gaskets Fits for Toyota
       Lexus Scion Crush Washer Seals Replaces# 9043012031
     notes: >-
-      Purchased via Amazon (order #114-8263010-4972263, $7.51) — order-placed
+      Purchased via Amazon ($7.51) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
@@ -459,7 +458,7 @@ entries:
       64mm for Lexus, Camry, 4 Runner, RAV4, Tundra, Tacoma, Highlander,
       Sienna, Sequoia, Avaion, Venza 2.5-5.7L Engine
     notes: >-
-      Purchased via Amazon (order #114-8263010-4972263, $9.49) — order-placed
+      Purchased via Amazon ($9.49) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.

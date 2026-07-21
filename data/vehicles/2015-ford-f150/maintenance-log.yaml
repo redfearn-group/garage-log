@@ -6,7 +6,7 @@ entries:
       USA US American Flag Trailer Hitch Cover tube Plug Insert (Fits 2"
       Receivers)
     notes: >-
-      Purchased via Amazon (order #112-3943379-4695432, $10) — order-placed
+      Purchased via Amazon ($10) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
@@ -19,7 +19,7 @@ entries:
       Sunshade To Keep Your Vehicle Cool And Damage Free,Easy To Use,Fits
       Windshields of Various Size (X-Large-66 x 36 inches)
     notes: >-
-      Purchased via Amazon (order #112-3943379-4695432, $16.98) — order-placed
+      Purchased via Amazon ($16.98) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
@@ -31,7 +31,7 @@ entries:
       K&N VF2049 Washable & Reusable Cabin Air Filter Cleans and Freshens
       Incoming Air for your Ford
     notes: >-
-      Purchased via Amazon (order #112-3474336-8654626, $49.09) — order-placed
+      Purchased via Amazon ($49.09) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
@@ -43,7 +43,7 @@ entries:
       FH Group FB072115 Road Master Fabric Auto Seat Covers Full Set Airbag &
       Split Ready, Gray/Black Color- Fit Most Car, Truck, Suv, or Van
     notes: >-
-      Purchased via Amazon (order #112-9954917-9832251, $26.58) — order-placed
+      Purchased via Amazon ($26.58) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
@@ -55,7 +55,7 @@ entries:
       CravenSpeed Bullet Style Stubby Antenna Replacement for the Ford F-150
       1997-2018 | 5.4 Inches
     notes: >-
-      Purchased via Amazon (order #111-8755984-6579463, $35) — order-placed
+      Purchased via Amazon ($35) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
@@ -67,7 +67,7 @@ entries:
       SEG Direct Black and Gray Microfiber Leather Steering Wheel Cover For
       F-150 Tundra Range Rover 15.5"
     notes: >-
-      Purchased via Amazon (order #112-5974250-3157047, $11.99) — order-placed
+      Purchased via Amazon ($11.99) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
@@ -94,7 +94,7 @@ entries:
       front axle — Discount Tire (UTS 19, Provo), $542.66 total
       ($460 tires + certificates/fees/install). Rears were not replaced
       this visit.
-    notes: 'Invoice #4306877. 60,000/70,000 mi tire mileage warranty.'
+    notes: 'Invoice on file. 60,000/70,000 mi tire mileage warranty.'
     documents:
       - 20181210-discounttire-tire-purchase.pdf
   - date: '2019-01-23'
@@ -105,7 +105,7 @@ entries:
       51mm x 22mm, Fits Chevy GMC Ford Cadillac Lincoln SAAB Saturn Silverado
       1500 Savana 1500 F150 Expedition
     notes: >-
-      Purchased via Amazon (order #113-9219856-8581818, $24.99) — order-placed
+      Purchased via Amazon ($24.99) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
@@ -114,21 +114,21 @@ entries:
     mileage: 69553
     itemType: ''
     description: >-
-      Adaptive (radar) cruise control recalibration — Tim Dahle Ford (RO
-      #837078/1). Brady's insurance company was replacing the windshield;
+      Adaptive (radar) cruise control recalibration — Tim Dahle Ford.
+      Brady's insurance company was replacing the windshield;
       the truck was dropped at Tim Dahle first so the forward-facing
       camera/radar and driver-assist options could be recalibrated after
       the glass install. Tech ran IDS diagnostics, found multiple U-codes
       (including U2100), reset the IPMA module, cleared codes, road-tested
       and verified adaptive speed control operation.
-    notes: 'R/O #837078/1, tech Dwayne Owens. $135.00 (1.0 hr diagnostic labor).'
+    notes: '$135.00 (1.0 hr diagnostic labor).'
     documents:
       - 20191118-tim-dahle-adaptive-cruise-recalibration.pdf
   - date: '2019-12-09'
     mileage: 71882
     itemType: tire-rotation
     description: Free tire rotation & rebalance — Discount Tire (UTS 24, Spanish Fork), no charge (included with tire purchase)
-    notes: Invoice #1015365.
+    notes: Invoice on file.
     documents:
       - 20191209-discounttire-rotation.pdf
   - date: '2020-08-12'
@@ -140,7 +140,7 @@ entries:
       ($129.95 for 3 full-service oil changes + 3 courtesy tire rotations +
       MPI inspections each visit, purchased same day).
     notes: >-
-      R/O #846304/1, tech Braedan Buchanan. No record of the other 2
+      No record of the other 2
       package visits ever being used in later history — likely lapsed.
     documents:
       - 20200812-tim-dahle-worry-free-maintenance.pdf
@@ -148,7 +148,6 @@ entries:
     mileage: 81599
     itemType: tire-rotation
     description: Tire rotation — Tim Dahle Ford, same Worry Free Maintenance package visit, no charge.
-    notes: R/O #846304/1.
     documents:
       - 20200812-tim-dahle-worry-free-maintenance.pdf
   - date: '2020-08-12'
@@ -170,7 +169,6 @@ entries:
     mileage: 81599
     itemType: battery-test
     description: Battery tested — Tim Dahle Ford, 655 CCA actual vs 610 CCA factory spec, good condition, no leaks/damage.
-    notes: R/O #846304/1.
     documents:
       - 20200812-tim-dahle-worry-free-maintenance.pdf
   - date: '2020-10-24'
@@ -180,8 +178,8 @@ entries:
       12V battery replaced — Duralast Platinum AGM ($199.99 + $18.00 core
       charge + $3.49 battery install kit) — AutoZone #0886 (Spanish Fork)
     notes: >-
-      Reconstructed from the AutoZone email receipt (10/24/2020, store
-      transaction #684421) found in Brady's personal Gmail. This purchase
+      Reconstructed from an AutoZone email receipt (10/24/2020)
+      found in Brady's personal Gmail. This purchase
       was on an older AutoZone account that never got properly merged, so it
       did NOT appear in the online order-history crawl (which only covers
       2022-2026) — that's why it was missing until now. Brady confirms the
@@ -199,7 +197,7 @@ entries:
       Alegender Qty(2) 5 Buttons Rubber Smart Key Cover Jacket Glove Holder
       for Ford Fusion Explorer F-150 Mustang Lincoln MKZ MKC Fob Remote
     notes: >-
-      Purchased via Amazon (order #114-4749704-2429028, $11.79) — order-placed
+      Purchased via Amazon ($11.79) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
@@ -230,7 +228,7 @@ entries:
       Dorman 75409 Door Lock Knob Kit Compatible with Select Ford / Mercury
       Models, 2 Pack
     notes: >-
-      Purchased via Amazon (order #113-2013944-0024237, $3.5) — order-placed
+      Purchased via Amazon ($3.5) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
@@ -240,12 +238,11 @@ entries:
     itemType: ''
     description: >-
       Rear differential pinion seal replaced, engine oil pan gasket
-      replaced, and differential cover reseal — Clegg Auto Spanish Fork
-      (RO #204446). Customer concerns: engine oil leak and rear pinion
+      replaced, and differential cover reseal — Clegg Auto Spanish Fork. Customer concerns: engine oil leak and rear pinion
       seal leak (first noted at the 2020-08-12 Tim Dahle inspection above).
     notes: >-
       Warranty claim filed against the Carchex/Allegiance extended
-      warranty (claim #J22-79200, see admin-dates.yaml) — warranty covered
+      warranty (see admin-dates.yaml) — warranty covered
       $998.01, Brady's actual out-of-pocket cost was $351.52 (reconciled
       from the invoice's $1,369.73 charge followed by a $1,018.21 refund).
       Steam-clean dye tracer testing ($107.20) found two separate leaks:
@@ -259,13 +256,12 @@ entries:
     itemType: ''
     description: >-
       Rear differential pinion seal replaced again — Clegg Auto Spanish
-      Fork (RO #204835). Follow-up to the 2022-09-12 repair above (RO
-      #204446): the rear pinion seal was found still leaking, so Clegg
+      Fork. Follow-up to the 2022-09-12 repair above: the rear pinion seal was found still leaking, so Clegg
       replaced the seal and pinion flange again under their own parts/labor
       warranty on the prior work.
     notes: >-
       $95.25 paid (Ford pinion flange FL3Z-4851-A $82.23 + pinion seal
-      BL3Z-4676-A at no charge, plus fees/tax). Card ending 5395. Separate
+      BL3Z-4676-A at no charge, plus fees/tax). Separate
       from the Carchex extended-warranty claims — this was Clegg standing
       behind its own September repair.
     documents:
@@ -277,7 +273,7 @@ entries:
       DirectFit Magnetic Phone Mount and Car Phone Holder for Ford F150
       (2015-2020), F250/F350/F450 (2017-Present), Expedition (2018-Present)
     notes: >-
-      Purchased via Amazon (order #111-5374579-5041800, $77.22) — order-placed
+      Purchased via Amazon ($77.22) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
@@ -289,7 +285,7 @@ entries:
       Keymall Remote Key Fob Case Shell Cover for Ford F150/F250 2015 2016
       2017(FCC ID:M3N-A2C31243300 P/N:164-R8117) 5 Buttons,Just a Key Shell
     notes: >-
-      Purchased via Amazon (order #111-5260859-6333844, $20.37) — order-placed
+      Purchased via Amazon ($20.37) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
@@ -298,13 +294,13 @@ entries:
     mileage: 111520
     itemType: ''
     description: >-
-      Blown left-front brake line replaced — Tim Dahle Ford (RO #878393).
+      Blown left-front brake line replaced — Tim Dahle Ford.
       Truck was towed in (AM/PM) with a ruptured left-front brake hose;
       dealer replaced the hose/line, banjo bolt and copper seals, and did a
       full brake fluid flush.
     notes: >-
       Total for the whole RO was $1,208.92 out of pocket (paid by card
-      ending 5395, auth #76366D) — NOT filed as an extended-warranty claim
+      ending 5395, the claim) — NOT filed as an extended-warranty claim
       (brake lines/hoses are a wear/exclusion item). The towing (WFMTOW)
       was covered by the service contract.
     documents:
@@ -318,7 +314,7 @@ entries:
       line burst
     notes: >-
       Not a standalone maintenance visit — this happened as part of the
-      blown brake-line repair the same day (Tim Dahle Ford RO #878393, see
+      blown brake-line repair the same day (Tim Dahle Ford, see
       the brake line entry above). The system had to be fully flushed/bled
       since the ruptured left-front line drained it. Broken out as its own
       entry so the brake-fluid service interval reflects that the fluid was
@@ -330,7 +326,7 @@ entries:
     itemType: ''
     description: >-
       Passenger-side valve cover gasket + VCT (variable cam timing) seals
-      replaced to address an oil leak — Tim Dahle Ford (RO #878393), same
+      replaced to address an oil leak — Tim Dahle Ford, same
       visit as the brake line above.
     notes: >-
       Part of the $1,208.92 RO total. Note this is a gasket/seal reseal of
@@ -345,7 +341,7 @@ entries:
       Recall 17S33 (NHTSA 17V-652) performed — door latch that could allow
       a door to open/not stay closed while driving — and recall 18S27
       (NHTSA 18V-568) — front/rear carpet shielding and insulation rework —
-      Tim Dahle Ford (RO #878393), same visit.
+      Tim Dahle Ford, same visit.
     notes: No charge — both covered under the Ford recalls.
     documents:
       - 20221222-tim-dahle-recalls-brake-line-valve-cover.pdf
@@ -355,14 +351,12 @@ entries:
     description: >-
       Emission (I/M) inspection + new "Worry Free Maintenance" package
       purchased and its 1st visit redeemed (full-service oil change,
-      Motorcraft 5W-30, tire rotation, MPI) — Tim Dahle Ford (RO #883831).
+      Motorcraft 5W-30, tire rotation, MPI) — Tim Dahle Ford.
     notes: >-
       $231.96 total: $55 emission inspection + $155 for a 3-visit synthetic-
       blend WFM package (+ $10 haz-mat, $11.96 tax); the 1st oil-change/
       rotation visit was redeemed against the package the same day. This is
-      a separate, later WFM package from the 2020-08-12 one. R/O #883831,
-      advisor Jon Haymond.
-    documents:
+      a separate, later WFM package from the 2020-08-12 one. documents:
       - 20230509-tim-dahle-emissions-wfm-package.pdf
   - date: '2023-05-09'
     mileage: 117125
@@ -392,8 +386,8 @@ entries:
     mileage: 124020
     itemType: ''
     description: >-
-      Exhaust manifold diagnosis (NOT repaired) — Tim Dahle Ford (RO
-      #893785/1). Whistle noise under acceleration diagnosed as both rear
+      Exhaust manifold diagnosis (NOT repaired) — Tim Dahle Ford.
+      Whistle noise under acceleration diagnosed as both rear
       exhaust manifolds warped and leaking, with a broken bolt on the
       right side. Not covered by the extended warranty. Estimated
       $3,506.48 — Brady declined the dealer repair at this time.
@@ -411,7 +405,7 @@ entries:
     itemType: ''
     description: >-
       Windshield washer pump motor/pump assembly replaced (aftermarket
-      part) — Tim Dahle Ford (RO #893785/2), same visit as the exhaust
+      part) — Tim Dahle Ford, same visit as the exhaust
       manifold diagnosis above.
     notes: >-
       Warranty covered the labor ($288.40) and $15.70 of the parts cost;
@@ -424,8 +418,7 @@ entries:
     mileage: 124020
     itemType: ''
     description: >-
-      Power door lock actuator recall (20M04) inspection — Tim Dahle Ford
-      (RO #893785/2), no fault found. Door locks worked fine during the
+      Power door lock actuator recall (20M04) inspection — Tim Dahle Ford, no fault found. Door locks worked fine during the
       visit and the truck already had the updated water-diverting door
       channels installed.
     notes: No charge — recall-related check, not a repair.
@@ -436,7 +429,7 @@ entries:
     itemType: ''
     description: >-
       Recall 19G01 performed — engine block heater cord replaced (new wire
-      assembly) — Tim Dahle Ford (RO #893785/3). No charge, covered under
+      assembly) — Tim Dahle Ford. No charge, covered under
       the recall.
     notes: The old block heater cord had been previously disabled; this recall provided an updated replacement cord.
     documents:
@@ -445,8 +438,8 @@ entries:
     mileage: 124020
     itemType: ''
     description: >-
-      Rear differential pinion seal replaced again — Tim Dahle Ford (RO
-      #893785/4), same visit — found leaking a second time since the
+      Rear differential pinion seal replaced again — Tim Dahle Ford,
+      same visit — found leaking a second time since the
       2022-09-12 Clegg Auto repair above.
     notes: >-
       Warranty covered the $247.20 labor plus $34.29 of parts; Brady paid
@@ -457,8 +450,8 @@ entries:
     mileage: 124020
     itemType: ''
     description: >-
-      Front engine timing cover reseal (found leaking) — Tim Dahle Ford
-      (RO #893785/4-5), same visit — large job with a long parts list
+      Front engine timing cover reseal (found leaking) — Tim Dahle Ford,
+      same visit — large job with a long parts list
       (gaskets, seals, silicone sealant, water pump gasket, coolant,
       engine shampoo).
     notes: >-
@@ -471,17 +464,16 @@ entries:
     itemType: ''
     description: >-
       Rear main seal replaced (found leaking oil at rear of engine) — Tim
-      Dahle Ford (RO #893785/5-6), same visit.
+      Dahle Ford, same visit.
     notes: >-
       Warranty covered all labor ($1,915.80) but not all parts; Brady was
-      responsible for the remainder of the parts not covered. Warranty
-      claim auth #M23-48974 covered this entry plus the timing cover and
+      responsible for the remainder of the parts not covered. The warranty
+      claim covered this entry plus the timing cover and
       pinion seal work above — labor $4,902.80 + parts $428.14 = $5,330.94
       claimed. Across the whole 2023-12-27 R/O (all 7 line items above),
       the invoice's gross total was $5,864.53, but after the extended
-      warranty (Carchex/Allegiance, contract UDA1001522) covered its
-      share, Brady's actual out-of-pocket cost was just $533, paid by
-      check #1312 on 2024-01-22 — this single visit likely paid for the
+      warranty (Carchex/Allegiance) covered its
+      share, Brady's actual out-of-pocket cost was just $533, paid by check on 2024-01-22 — this single visit likely paid for the
       entire cost of the warranty many times over.
     documents:
       - 20231227-tim-dahle-major-warranty-repairs.pdf
@@ -493,7 +485,7 @@ entries:
       2013-2016 Ford Fusion 2015-2017 Ford Mustang F-150 Explorer-Black(Red
       line)
     notes: >-
-      Purchased via Amazon (order #114-9644427-5728218, $21.48) — order-placed
+      Purchased via Amazon ($21.48) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
@@ -543,7 +535,7 @@ entries:
     description: >-
       BD Diesel Exhaust Manifold Set - Ford F-150 3.5L Ecoboost 11-16
     notes: >-
-      Purchased via Amazon (order #113-6860659-2890643, $425.45) —
+      Purchased via Amazon ($425.45) —
       order-placed date used as the log date; exact install date not
       independently confirmed. Mileage interpolated between the surrounding
       odometer readings — treat as rough.
@@ -555,7 +547,7 @@ entries:
       BD Diesel® 1043002 EXHAUST® Manifold Install Kit Fits 11-16 Compatible
       with/Fits a F-150
     notes: >-
-      Purchased via Amazon (order #114-5707785-2577015, $246.22) —
+      Purchased via Amazon ($246.22) —
       order-placed date used as the log date; exact install date not
       independently confirmed. Mileage interpolated between the surrounding
       odometer readings — treat as rough.
@@ -568,9 +560,8 @@ entries:
       the same day
     notes: >-
       Two Bosch 17321 O2 sensors were ordered on 2024-06-05 in separate
-      orders — one at $71.60 (order #113-7033374-8383439, which also
-      included the O2 sensor socket below) and one showing $0 (order
-      #111-1352957-8216263, likely gift-card/promo-covered). Neither was
+      orders — one at $71.60 (which also
+      included the O2 sensor socket below) and one showing $0 (a separate order, likely gift-card/promo-covered). Neither was
       returned. This single entry covers both; if only one sensor was
       actually installed the other is a spare. Order-placed date used as the
       log date; exact install date not independently confirmed. Mileage
@@ -585,7 +576,7 @@ entries:
       Accesses Sensor from Side, Preventing Damage to Wires, Universal for
       Most Cars
     notes: >-
-      Purchased via Amazon (order #113-7033374-8383439, $7.51) — order-placed
+      Purchased via Amazon ($7.51) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough. Same order as "Bosch 17321 Premium Original
@@ -610,7 +601,7 @@ entries:
     description: >-
       Electronic throttle body module replaced (Duralast TB1052D) — DIY
     notes: >-
-      AutoZone (store #4093) 2024-08-02, with throttle-body cleaner. Brady
+      AutoZone 2024-08-02, with throttle-body cleaner. Brady
       confirmed this was Zeus, not the neighbor's F-150. Pairs with the
       FEL-PRO 61466 throttle body gasket bought from Amazon 2024-08-12
       (below) — the same throttle-body job. Mileage interpolated between the
@@ -623,7 +614,7 @@ entries:
     description: >-
       FEL-PRO 61466 Throttle Body Gasket
     notes: >-
-      Purchased via Amazon (order #113-3785143-0894631, $10.61) — order-placed
+      Purchased via Amazon ($10.61) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough. Fitment confirmed via lookup: FEL-PRO 61466
@@ -635,11 +626,10 @@ entries:
     description: >-
       Worry Free Maintenance 3rd (final) visit — full-service oil change +
       tire rotation + MPI — plus the passenger-side valve cover replaced
-      (found cracked) — Tim Dahle Ford (RO #911377). Redeems the last visit
+      (found cracked) — Tim Dahle Ford. Redeems the last visit
       of the WFM package bought 2023-05-09 above.
     notes: >-
-      $113.07 out of pocket (parts/labor $110.20 + $2.87 card surcharge,
-      card ending 5395, invoice #911377) — this covered the cracked
+      $113.07 out of pocket (parts/labor $110.20 + $2.87 card surcharge) — this covered the cracked
       passenger valve cover replacement; the oil change/rotation itself was
       under the WFM service contract. Follows the 2022-12-22 passenger valve
       cover gasket reseal above (gasket then, whole cover now).
@@ -675,7 +665,7 @@ entries:
       Power Stop Z36-1602 Rear Z36 Truck and Tow Carbon-Fiber Ceramic Brake
       Pads For 2012-2017 Ford F-150 [Models with Manual Parking Brake]
     notes: >-
-      Purchased via Amazon (order #113-7128107-2569822, $46.38) — order-placed
+      Purchased via Amazon ($46.38) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
@@ -686,7 +676,7 @@ entries:
     description: >-
       All 4 tires replaced with BFGoodrich Trail-Terrain T/A (275/65R18)
       plus 4 new snap-in TPMS sensors — Discount Tire (UTS 24, Spanish
-      Fork), $1,499.94 total (sales order #5053390356).
+      Fork), $1,499.94 total.
     notes: >-
       60,000 mi tire mileage warranty. The 2 Michelin Defender LTX M/S
       tires bought 2018-12-10 (front axle only) were credited back
@@ -699,8 +689,8 @@ entries:
     mileage: 151830
     itemType: ''
     description: >-
-      Large multi-item repair — Tim Dahle Ford (RO #924599, opened
-      2025-12-09, closed 2025-12-31, tech Charles McClellan). Work
+      Large multi-item repair — Tim Dahle Ford (opened
+      2025-12-09, closed 2025-12-31, the tech). Work
       performed: (1) engine oil leak traced to the vacuum pump housing,
       vacuum pump (DL3Z-2A451-B) replaced — done under warranty; (2)
       driver's seat lumbar adjuster (CU5Z-9665500-U) replaced; (3) backup/
@@ -722,7 +712,7 @@ entries:
       here as approximate, not fact. See admin-dates.yaml. Confirm the
       actual OOP/warranty split with Brady if it matters. DISPUTED: line
       item #12 is a $200 rental-vehicle sublet ("RENT001"), but Brady never
-      had a rental for this repair — flagged to advisor Luke Miller
+      had a rental for this repair — flagged to the advisor
       2026-07-14 for a corrected RO. The $200 (and any tax calculated on
       it) should come off the $3,428.72 total once corrected.
     documents:
@@ -756,7 +746,7 @@ entries:
       Perforated Leather Seat Cover Black Compatible with Ford F-150 Lariat
       2015-2017 Compatible with Ford F250 F350 Lariat XLT 2017-2022
     notes: >-
-      Purchased via Amazon (order #113-3530370-2661818, $46.9) — order-placed
+      Purchased via Amazon ($46.9) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
@@ -797,7 +787,7 @@ entries:
       F-150 F150 Accessories Hood Protector TPE Bug Deflector Shield
       Replacement
     notes: >-
-      Purchased via Amazon (order #114-8249008-4951406, $45.09) — order-placed
+      Purchased via Amazon ($45.09) — order-placed
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
