@@ -26,6 +26,6 @@ pnpm-debug.log*
 # Private per-vehicle notes (door codes, personal contact info, policy
 # numbers, etc.) — local-only, never committed, never rendered on the
 # public site. See data/vehicles/*/private.yaml. Since this is never
-# committed it has no git-history backup — the admin app's private-notes
-# form reminds you to also save these to Google Keep as an online backup.
+# committed it has no git-history backup — also save these to Google Keep
+# as an online backup.
 data/vehicles/*/private.yaml
