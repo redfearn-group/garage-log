@@ -141,21 +141,23 @@ tasks:
     createdDate: '2026-07-14'
     completedDate: null
   - id: 12
-    title: 'Get rear view camera checked/replaced (25N17)'
-    priority: critical
+    title: 'Ask dealer for reimbursement — 25N17 camera replacement already paid out of pocket'
     notes: >-
-      Confirmed CRITICAL priority by Brady on 2026-07-17. Found on
-      ford.com/support/recalls-details with this VIN (see private.yaml):
-      Customer Satisfaction Program 25N17, "Rear view
+      UPDATED 2026-07-21 by Brady: the rear view camera was already
+      replaced at the 2025-12-09 to 2025-12-31 Tim Dahle Ford visit (see
+      maintenance-log.yaml — "backup/parking camera (FL3Z-19G490-D)
+      replaced — wouldn't turn on") — so this is no longer a get-it-fixed
+      task. Found on ford.com/support/recalls-details with this VIN (see
+      private.yaml): Customer Satisfaction Program 25N17, "Rear view
       camera replacement if required after dealer evaluation" — a Ford
       goodwill/extended-coverage program, not an NHTSA safety recall, so it
-      doesn't show up in the automated recall check in recalls.yaml. Ford's
-      page gives no detail beyond the title ("Contact your dealer for next
-      steps") — need the dealer to actually evaluate the camera to confirm
-      it qualifies. Worth bundling into the same dealer visit as task #1's
-      recall fix. Unlike the door lock/tailgate items (task #13), Brady
-      hasn't already raised this with the dealer, so it's a fresh lead
-      worth pursuing.
+      doesn't show up in the automated recall check in recalls.yaml. Since
+      the replacement already happened and was paid for as part of that
+      RO (not called out separately as covered under 25N17 in the invoice
+      notes on file), the actual action now is to go back to the dealer
+      and ask them to apply 25N17 retroactively and refund whatever
+      portion of that repair the program should have covered. Bring the
+      25N17 program number and the 2025-12-09 RO.
     status: open
     createdDate: '2026-07-17'
     completedDate: null
