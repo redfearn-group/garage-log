@@ -71,7 +71,7 @@ const ICONS: Record<"sedan" | "suv" | "truck", string> = {
 ---
 <Base title="Dashboard">
   <h2>Your vehicles</h2>
-  {rows.length === 0 && <p class="muted">No active vehicles yet. Add one with <code>npm run admin</code>.</p>}
+  {rows.length === 0 && <p class="muted">No active vehicles yet. Add one to <code>data/vehicles.yaml</code>.</p>}
 
   {rows.length > 0 && (
     <div class="fleet-stats">

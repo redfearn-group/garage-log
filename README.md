@@ -11,15 +11,12 @@ Five vehicles, tracked against maintenance schedules sourced from actual owner's
 - **Due-status dashboard** — each vehicle's schedule is checked against logged mileage and dates, and flagged overdue, due soon, or on track, whichever comes first between mileage and time.
 - **Recall tracking** — pulled live from the NHTSA API by VIN, refreshed automatically on a schedule.
 - **Full maintenance history** — every oil change, part, and repair, with mileage interpolated from surrounding odometer readings when an exact reading isn't on file.
-- **Admin app** — a local-only Express app (`npm run admin`) for day-to-day data entry, so nobody has to hand-edit YAML to log an oil change.
 
 ## Architecture
 
 No database. Vehicle data lives as YAML files committed directly to this repo, which means git history doubles as a free audit trail: every correction, every backfilled record, every re-sourced interval is a diff you can go back and read.
 
-![Architecture diagram: the local admin app writes YAML data, which is git-tracked; the NHTSA recall API feeds in on a schedule; Astro builds the YAML into a static site; the static site deploys to GitHub Pages.](.github/assets/architecture.svg)
-
-*The admin app is the only thing that writes data. Everything downstream of the YAML is a read-only build.*
+*Data is edited directly (by hand or via Claude) as YAML and committed to git. Everything downstream of the YAML is a read-only build — there is no write path in the deployed site.*
 
 ```
 data/vehicles.yaml              # index of all vehicles
@@ -32,7 +29,7 @@ data/vehicles/<slug>/
   private.yaml                  # gitignored — door codes, policy numbers, anything that shouldn't be public
 ```
 
-The site itself is pure Astro with no UI framework and no database driver — `src/lib/` reads the YAML at build time and every page is static HTML. The only thing that writes data is the local admin app; the deployed site is read-only.
+The site itself is pure Astro with no UI framework and no database driver — `src/lib/` reads the YAML at build time and every page is static HTML. The deployed site is read-only; data is edited directly as YAML.
 
 ```
 src/
@@ -41,7 +38,6 @@ src/
   layouts/          # page shell
   lib/              # data loading, due-status logic, types
   styles/           # design tokens + shared CSS
-admin/              # local-only Express app for data entry (never deployed)
 scripts/            # recall-check + publish automation
 ```
 
@@ -52,14 +48,12 @@ Deployed via GitHub Actions to GitHub Pages on every push to `main`. A second, p
 ```sh
 npm install
 npm run dev      # local dev server at localhost:4321
-npm run admin    # local data-entry app
 npm run build    # static build to ./dist/
 ```
 
 | Script | What it does |
 | :--- | :--- |
 | `npm run dev` | Astro dev server |
-| `npm run admin` | Local-only Express app for editing vehicle data |
 | `npm run build` | Production build to `./dist/` |
 | `npm run check-recalls` | Refresh recall data from the NHTSA API |
 | `npm run publish` | Push data changes to both this repo and the private documents repo |
