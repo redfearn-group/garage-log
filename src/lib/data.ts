@@ -61,7 +61,6 @@ export function getVehicle(slug: string): Vehicle {
   const recallsData = readYaml<RecallsData>(path.join(dir, "recalls.yaml"), {
     lastChecked: null,
     recalls: [],
-    complaints: [],
   });
   const watchList = readYaml<{ items: WatchListItem[] }>(
     path.join(dir, "watch-list.yaml"),

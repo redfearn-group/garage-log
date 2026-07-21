@@ -65,16 +65,9 @@ export interface RecallEntry {
   reportedDate?: string;
 }
 
-export interface ComplaintEntry {
-  component: string;
-  summary: string;
-  dateReceived?: string;
-}
-
 export interface RecallsData {
   lastChecked: string | null;
   recalls: RecallEntry[];
-  complaints: ComplaintEntry[];
 }
 
 export interface WatchListItem {
