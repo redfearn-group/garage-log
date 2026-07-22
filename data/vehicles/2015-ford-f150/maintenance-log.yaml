@@ -375,6 +375,19 @@ entries:
       oil change and MPI. Same estimate caveats as the oil-change entry
       above.
     documents: []
+  - date: '2022-03-05'
+    mileage: 100778
+    itemType: spark-plugs
+    description: Spark plugs replaced — Tim Dahle Ford, 100K mile service
+    notes: >-
+      Brady confirmed (2026-07-22) he had a "100K service" done that
+      included spark plug replacement plus other work, but has no RO on
+      file for it. Placed at this dealer visit — the closest logged visit
+      to 100,000 mi and the same date/mileage as this estimated WFM
+      package visit — since that's the most likely occasion for a
+      100K-mile dealer service. Treat the exact date as approximate; the
+      mileage (~100K) is the confirmed anchor.
+    documents: []
   - date: '2022-07-01'
     mileage: 104719
     itemType: ''

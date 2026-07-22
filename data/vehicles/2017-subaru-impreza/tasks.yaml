@@ -190,3 +190,20 @@ tasks:
     status: open
     createdDate: '2026-07-14'
     completedDate: null
+  - id: 19
+    title: 'Weekend check (2026-07-25): oil change/tire rotation due now, plus brake fluid and coolant flush'
+    notes: >-
+      From this week's fleet review. Oil change + tire rotation: last done
+      2026-04-08 @ 134,783 mi, 6,000 mi interval — mileage threshold
+      already passed by a few hundred miles as of current mileage
+      (~141,000). Brake fluid flush: never appears in the log under
+      Brady's ownership — the 04-08 entry only notes it was inspected, not
+      flushed; interval is 30 mo/30,000 mi and given the unknown
+      pre-purchase history this is due now. Coolant flush: Subaru's
+      first-change threshold is 11 yr/137,500 mi and current mileage has
+      already passed that; only a partial top-off is logged, never a real
+      flush. Add all three to the same weekend as the CVT/differential
+      fluid (tasks #1/#11) and throttle body gasket (task #13) work.
+    status: open
+    createdDate: '2026-07-22'
+    completedDate: null

@@ -293,3 +293,26 @@ tasks:
     status: open
     createdDate: '2026-07-21'
     completedDate: null
+  - id: 27
+    title: 'Switch from K&N reusable air filters (cabin + engine) to disposable — planned spring 2027'
+    notes: >-
+      Brady confirmed (2026-07-22) both the cabin (VF2000) and engine
+      (33-2260) air filters are washable/reusable, cleaned every spring
+      rather than replaced — currently clean and working, not an active
+      gap. He wants to switch to disposable filters starting the spring
+      2027 service pass. See schedule.yaml's cabin-air-filter/
+      engine-air-filter notes for the washable-filter context.
+    status: open
+    createdDate: '2026-07-22'
+    completedDate: null
+  - id: 28
+    title: 'Weekend check (2026-07-25): AWD front/rear differential + transfer case fluid — never once done'
+    notes: >-
+      From this week's fleet review — this itemType has never appeared in
+      maintenance-log.yaml at all across Hera's full history. Schedule
+      calls for inspection at 30,000 mi intervals; at 160,357+ mi this has
+      never been checked once, over 5 intervals past due. Add to the
+      weekend checklist alongside the rubber/hose inspection (task #6).
+    status: open
+    createdDate: '2026-07-22'
+    completedDate: null

@@ -191,3 +191,23 @@ tasks:
     status: done
     createdDate: '2026-07-15'
     completedDate: '2026-07-22'
+  - id: 9
+    title: 'Weekend check (2026-07-25): coolant flush, 12V battery, eCVT leak inspection, HV battery cooling filter'
+    notes: >-
+      From this week's fleet review — all unknown/likely-due given the
+      car's unknown pre-purchase history (bought 2026-06-19 @ 106,926 mi).
+      Engine coolant flush: first due at 100,000 mi/120 mo; current
+      mileage (~111,000) is already past the mileage trigger with no
+      record it's ever been done. 12V battery: no logged replacement; car
+      is a 2019 model (~7 yrs), at/past the 72-month general AGM
+      service-life estimate — worth a load test given age alone. eCVT
+      transaxle leak inspection (a visual check, separate from the
+      fluid-change question in task #1): mileage-triggered every
+      30,000 mi/36 mo, several intervals likely passed with no record. HV
+      battery cooling filter clean/service (TSB L-SB-0028-20, ~20,000 mi
+      interval): no record since purchase — lower confidence since this
+      interval is TSB-sourced rather than core Lexus schedule, but worth
+      confirming given hybrid-battery-health stakes.
+    status: open
+    createdDate: '2026-07-22'
+    completedDate: null
