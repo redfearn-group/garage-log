@@ -35,6 +35,26 @@ entries:
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
     documents: []
+  - date: '2019-08-21'
+    mileage: 89697
+    itemType: ''
+    description: Body/paint repair — Clegg Auto Body (Spanish Fork)
+    notes: >-
+      ADDED 2026-07-22 from Google Voice voicemails (Aug 21-23, 2019) —
+      a multi-day body shop repair, picked up around 2019-08-23. Exact
+      damage/repair scope not specified in the voicemails (one later
+      voicemail references touching up "that little scratch," suggesting
+      minor paint/scratch repair). NOTE: the voicemails' auto-transcript
+      says "Kelly Auto Body," but the same phone number ((801) 794-5511)
+      is saved elsewhere as "Clegg Auto Body" — treating this as a
+      transcription error for the already-known Clegg Auto Body, not a
+      separate shop. During this visit the shop also flagged the 12V
+      battery as weak/not holding a charge and asked if Brady wanted it
+      replaced while the car was there — not confirmed whether that
+      happened; the next known battery event is the 2024-02-19
+      replacement. Mileage interpolated between the 2019-05-25 (88,289
+      mi) and 2020-02-07 (92,423 mi) readings — treat as rough.
+    documents: []
   - date: '2022-01-08'
     mileage: 106168
     itemType: wiper-blades
@@ -294,38 +314,56 @@ entries:
       2024-05-15 — see those entries.
     documents:
       - 20230619-tim-dahle-wfm-visit2.pdf
-  - date: '2024-01-15'
-    mileage: 121501
+  - date: '2023-09-22'
+    mileage: 121786
     itemType: oil-change
     description: >-
-      Worry Free Maintenance package #2 3rd visit — full-service oil change
-      (0W-20 synthetic) + tire rotation + MPI — Tim Dahle Ford. Redeemed
-      under the package purchased 2022-08-25, no charge.
+      Worry Free Maintenance package #2 3rd (final) visit — full-service oil
+      change + tire rotation + MPI — Tim Dahle Ford (RO #889720, advisor
+      Dakota Vanpetten). Redeemed under the package purchased 2022-08-25
+      above, no charge.
     notes: >-
-      Brady confirmed (2026-07-21) this was the 3rd and final visit on
-      package #2 (purchased 2022-08-25 above; 1st visit same day, 2nd visit
-      2023-06-19), placed in winter 2024 — the dealer wouldn't sell him a
-      new package until the old one was used up, and a new package (#3) was
-      in fact purchased 2024-03-06, consistent with this visit closing out
-      package #2 shortly before. No receipt/invoice on file for this visit,
-      unlike the 1st and 2nd. Exact date not confirmed; date kept within the
-      "winter 2024" window Brady recalled. Mileage corrected (2026-07-21)
-      from a straight date-based interpolation (which put it at 125,121 mi)
-      to ~5,000 miles past the prior 2023-06-19 (116,501 mi) visit —
-      matching Hera's normal ~5,000-7,300 mile interval seen elsewhere in
-      this log — rather than the ~8,600 miles the straight-line date
-      interpolation implied. Treat as an estimate until a more precise
-      date/mileage turns up.
+      CORRECTED 2026-07-22 — replaces the earlier "winter 2024/2024-01-15"
+      estimate (which had no receipt on file and was placed from Brady's
+      memory alone). Found via Gmail: a real Tim Dahle Ford "Multipoint
+      Inspection Report" email dated 2023-09-22 explicitly confirms "WORRY
+      FREE MAINTENANCE 3RD VISIT" at 121,786 mi, RO #889720. All checklist
+      items passed (battery, cabin/engine air filter, brakes, coolant,
+      etc. all green); the only declined item was swollen lug nuts
+      (recommended replacing all 20, declined at this visit — see
+      watch-list/tasks if not already tracked). This also resolves the
+      mileage-ordering question raised earlier this session — 121,786 mi
+      on 2023-09-22 sits cleanly before the 2023-11-29 (123,956 mi) entry.
     documents: []
-  - date: '2024-01-15'
-    mileage: 121501
+  - date: '2023-09-22'
+    mileage: 121786
     itemType: tire-rotation
     description: Tire rotation — Tim Dahle Ford, part of WFM package #2's 3rd visit
     notes: >-
-      Tire rotation — done as part of the estimated dealer Worry Free
-      Maintenance visit the same day (see the oil-change entry above).
-      Broken out so the tire-rotation interval reflects it. Same estimate
-      caveats as that entry.
+      Tire rotation — done as part of the dealer Worry Free Maintenance
+      oil-change visit the same day (see the oil-change entry above). Broken
+      out so the tire-rotation interval reflects it. Same sourcing as that
+      entry.
+    documents: []
+  - date: '2023-09-22'
+    mileage: 121786
+    itemType: multi-point-inspection
+    description: Multi-point inspection — Tim Dahle Ford, part of WFM package #2's 3rd visit
+    notes: >-
+      Multi-point inspection — done as part of the dealer Worry Free
+      Maintenance oil-change visit the same day (see the oil-change entry
+      above). Broken out so the inspection interval reflects it. Same
+      sourcing as that entry.
+    documents: []
+  - date: '2023-09-22'
+    mileage: 121786
+    itemType: ''
+    description: Windshield chip/crack repair — Safelite
+    notes: >-
+      ADDED 2026-07-22 from Google Voice texts — Safelite confirmed the
+      repair started and completed same-day, $0 out-of-pocket (likely
+      insurance-covered). Same date as the confirmed WFM 3rd visit above,
+      so mileage is exact rather than interpolated.
     documents: []
   - date: '2023-11-29'
     mileage: 123956
