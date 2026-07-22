@@ -136,14 +136,28 @@ items:
       line, so mileage is the effective trigger) — do NOT replace early
     intervalMiles: 120000
     intervalMonths: null
+  - itemType: battery-test
+    name: >-
+      12V battery load test (KONNWEI KW208 tester) — ADDED 2026-07-22:
+      Brady tests every vehicle's 12V battery twice yearly (spring & fall)
+      and records the CCA/SOH/SOC result each time; replacement is
+      decided by the test result, not by the battery's age. No test
+      logged yet for this car since purchase (2026-06-19) — first one
+      due this fall.
+    intervalMiles: null
+    intervalMonths: 6
   - itemType: battery-12v
     name: >-
       12V auxiliary battery (Group 55B24R, in trunk behind left panel) —
       NOT a manufacturer-scheduled interval (Lexus's guide gives no fixed
-      replacement interval, only "replace when needed"); the figure below
-      is a general AGM-battery service-life estimate, not a Lexus spec
+      replacement interval, only "replace when needed"). CORRECTED
+      2026-07-22: this is an informational "last replaced" record only,
+      NOT a schedule-driven due date — Brady explicitly does not want a
+      replacement flagged just because the battery has crossed a generic
+      age estimate. Replacement happens only when the twice-yearly KW208
+      test (see battery-test above) indicates it's needed.
     intervalMiles: null
-    intervalMonths: 72
+    intervalMonths: null
   - itemType: hybrid-battery-fan-filter
     name: >-
       HV battery cooling intake filter — clean (behind right rear seat

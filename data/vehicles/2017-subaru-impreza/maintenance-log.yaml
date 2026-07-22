@@ -271,12 +271,17 @@ entries:
   - date: '2026-04-08'
     mileage: 134783
     itemType: battery-test
-    description: 12V battery load-tested with Brady's own tester — good, terminals cleaned
+    description: 12V battery load-tested with Brady's KONNWEI KW208 tester — good, terminals cleaned
     notes: >-
       Split out from the bundled post-purchase inspection entry above (part
       of Brady's annual spring battery-check routine, done across his 3
       personal vehicles this year — Zeus, Hera, Draco) so it can actually be
-      tracked against a schedule item.
+      tracked against a schedule item. UPDATED 2026-07-22: Brady confirmed
+      he tests the 12V battery twice yearly (spring & fall) with the
+      KONNWEI KW208 (see 2015-ford-f150/maintenance-log.yaml for the
+      2025-07-13 purchase entry, a shared tool used across the fleet) and
+      records the result here — replacement is test-driven, not based on
+      the battery's age alone.
     documents: []
   - date: '2026-04-09'
     mileage: 134847

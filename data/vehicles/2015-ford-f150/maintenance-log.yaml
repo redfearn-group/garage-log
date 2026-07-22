@@ -1089,7 +1089,7 @@ entries:
   - date: '2026-04-08'
     mileage: 153950
     itemType: battery-test
-    description: 12V battery load-tested with Brady's own tester — good, tested at 621 CCA
+    description: 12V battery load-tested with Brady's KONNWEI KW208 tester — good, tested at 621 CCA
     notes: >-
       CCA figure from a Google Keep checklist note, confirmed (2026-07-22)
       to be about this truck rather than Draco. That same note lists
@@ -1097,6 +1097,10 @@ entries:
       system fluid exchange, transmission and transfer case fluid
       service) that are already tracked as open tasks here (tasks.yaml
       #3, #10, #11) — no new gaps found from it beyond this CCA number.
+      UPDATED 2026-07-22: Brady confirmed he tests the 12V battery twice
+      yearly (spring & fall) with a KONNWEI KW208 battery tester (see the
+      2025-07-13 purchase entry below) and records the result here —
+      replacement is test-driven, not based on the battery's age alone.
       Part of Brady's annual spring battery-check routine, done across his
       3 personal vehicles this year (Zeus, Hera, Draco). Exact date not
       independently confirmed — approximated to match Draco's confirmed
@@ -1173,6 +1177,19 @@ entries:
       current condition instead of showing overdue against the last
       untagged/DIY wash. Mileage taken from the last known odometer
       reading (155,407.7 mi, 2026-07-12).
+    documents: []
+  - date: '2025-07-13'
+    mileage: 147900
+    itemType: ''
+    description: KONNWEI KW208 12V Car Battery Tester (battery load/alternator/starter analyzer)
+    notes: >-
+      $25.99 on Amazon (color KW208). Brady uses this to load-test the
+      12V battery on each of his vehicles twice yearly (spring & fall) as
+      part of the regular maintenance schedule — replacement is decided
+      by the test result (CCA/SOH/SOC readings), not by the battery's age
+      alone. See the battery-test entries on this car and others for
+      actual results. Mileage interpolated between surrounding odometer
+      readings — treat as rough.
     documents: []
   - date: '2025-07-28'
     mileage: 148000

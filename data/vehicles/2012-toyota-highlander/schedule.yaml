@@ -167,13 +167,24 @@ items:
     intervalMiles: 30000
     intervalMonths: null
   - itemType: battery-test
-    name: 12V battery load test — part of Brady's annual spring tune-up routine
+    name: >-
+      12V battery load test (KONNWEI KW208 tester) — UPDATED 2026-07-22:
+      Brady tests twice yearly (spring & fall), not annually, and records
+      the CCA/SOH/SOC result each time. Replacement is decided by the
+      test result, not by the battery's age — see battery-12v below,
+      which is now informational only.
     intervalMiles: null
-    intervalMonths: 12
+    intervalMonths: 6
   - itemType: battery-12v
-    name: 12V battery replacement (typical service life ~4-5 yr; last replaced 2024-02-19)
+    name: >-
+      12V battery replacement — last replaced 2024-02-19. CORRECTED
+      2026-07-22: this is an informational "last replaced" record only,
+      NOT a schedule-driven due date — Brady explicitly does not want a
+      replacement flagged just because the battery has crossed a generic
+      age estimate. Replacement happens only when the twice-yearly KW208
+      test (see battery-test above) indicates it's needed.
     intervalMiles: null
-    intervalMonths: 60
+    intervalMonths: null
   - itemType: wiper-blades
     name: >-
       Wiper blades — Brady checks these every spring during the seasonal

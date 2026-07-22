@@ -181,6 +181,10 @@ items:
     intervalMiles: 60000
     intervalMonths: null
   - itemType: battery-test
-    name: 12V battery load test — part of Brady's annual spring tune-up routine
+    name: >-
+      12V battery load test (KONNWEI KW208 tester) — UPDATED 2026-07-22:
+      Brady tests twice yearly (spring & fall), not annually, and records
+      the CCA/SOH/SOC result each time. Replacement is decided by the
+      test result, not by the battery's age.
     intervalMiles: null
-    intervalMonths: 12
+    intervalMonths: 6
