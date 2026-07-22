@@ -142,7 +142,9 @@ items:
       Brady tests every vehicle's 12V battery twice yearly (spring & fall)
       and records the CCA/SOH/SOC result each time; replacement is
       decided by the test result, not by the battery's age. No test
-      logged yet for this car since purchase (2026-06-19) — first one
+      logged yet for this car since purchase (2026-06-18, CORRECTED
+      2026-07-22 from 2026-06-19 — the buyer's order, odometer disclosure,
+      and title/loan paperwork are all dated 06/18/2026) — first one
       due this fall.
     intervalMiles: null
     intervalMonths: 6

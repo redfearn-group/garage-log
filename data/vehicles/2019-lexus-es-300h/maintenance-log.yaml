@@ -389,7 +389,9 @@ entries:
     notes: >-
       From CARFAX — no exact mileage given; interpolated between "offered
       for sale" (106,854 mi, 2026-05-21) and Brady's purchase (106,926 mi,
-      2026-06-19) — treat as rough. This is the dealer's pre-sale prep
+      2026-06-18 — CORRECTED 2026-07-22 from 2026-06-19, per the signed
+      buyer's order/odometer disclosure) — treat as rough. This is the
+      dealer's pre-sale prep
       before selling the car to Brady, and matches the existing note on
       Brady's own first oil-change entry ("oil/color had been good since
       the dealer replaced it right before purchase").
@@ -486,8 +488,9 @@ entries:
       confirmed no official Android Auto upgrade path exists for this
       infotainment generation. No repair performed; Brady is pursuing the
       amp fix DIY instead (see tasks.yaml #8). Mileage interpolated
-      between the 2026-06-19 (106,926 mi) and 2026-07-12 (110,834 mi)
-      odometer readings — treat as rough.
+      between the 2026-06-18 (106,926 mi — CORRECTED 2026-07-22 from
+      2026-06-19, per the signed buyer's order/odometer disclosure) and
+      2026-07-12 (110,834 mi) odometer readings — treat as rough.
     documents: []
   - date: '2026-07-10'
     mileage: 110494
@@ -500,9 +503,11 @@ entries:
       closed on this car, not just claimed. Also corroborated by the
       CARFAX report (added 2026-07-22): "No Recalls Reported" for both
       owners. CORRECTED 2026-07-22: mileage was previously logged as
-      106,862, which is lower than the 2026-06-19 purchase-date reading
-      (106,926 mi) — not possible. Recalculated by interpolating between
-      the 2026-06-19 (106,926 mi) and 2026-07-12 (110,834 mi) odometer
+      106,862, which is lower than the purchase-date reading (106,926 mi)
+      — not possible. Recalculated by interpolating between the
+      2026-06-18 (106,926 mi — CORRECTED 2026-07-22 from 2026-06-19, per
+      the signed buyer's order/odometer disclosure) and 2026-07-12
+      (110,834 mi) odometer
       readings — treat as rough.
     documents:
       - 20260528-carfax-report.pdf
