@@ -27,7 +27,8 @@ tasks:
       Purchased at 106,926 miles, now at 110,834 mi as of 2026-07-12 —
       approaching typical replacement territory. Check for cracking,
       fraying, glazing, or missing ribs; replace immediately if cracked,
-      otherwise plan proactive replacement before 130K.
+      otherwise plan proactive replacement before 130K. PLANNED
+      2026-07-22: added to Brady's weekend-of-2026-07-25 inspection list.
     status: open
     createdDate: '2026-07-09'
     completedDate: null
@@ -43,11 +44,10 @@ tasks:
   - id: 4
     title: 'TOMORROW before calling dealer: verify the amp is actually the bad part'
     notes: >-
-      SUPERSEDED 2026-07-22: Brady ended up ordering the amp on eBay
-      2026-07-15 instead of going the dealer-install route decided below —
-      see task #8, which now owns this. Leaving this open only for its
-      still-relevant verification checklist (VIN production sequence,
-      physical part number, ruling out blown speakers).
+      DONE 2026-07-22: Brady ended up ordering the amp on eBay 2026-07-15
+      instead of going the dealer-install route decided below — see task
+      #8, now closed. The amp is installed and working well; this whole
+      line of work is resolved.
 
       Decision made 2026-07-10: having the dealer order the correct part
       (86280-06260) and install it, ~$200 out of pocket — worth it for
@@ -82,9 +82,9 @@ tasks:
       distortion, rattling, or silence from one specific rear speaker =
       a separate speaker problem the amp swap won't fix — mention this
       to the dealer before they order the part.
-    status: open
+    status: done
     createdDate: '2026-07-10'
-    completedDate: null
+    completedDate: '2026-07-22'
   - id: 5
     title: 'DIY Android Auto: still unresolved — nothing confirmed working yet'
     notes: >-
@@ -185,6 +185,9 @@ tasks:
       reads 86280-06260 (or at least none of the known-bad cores) before
       installing; if it's a bad core, return it rather than fitting it. The
       amp lives under the driver's seat.
-    status: open
+
+      DONE 2026-07-22: arrived and installed today — Brady confirmed it's
+      working well. See maintenance-log.yaml.
+    status: done
     createdDate: '2026-07-15'
-    completedDate: null
+    completedDate: '2026-07-22'

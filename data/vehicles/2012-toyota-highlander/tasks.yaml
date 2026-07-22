@@ -49,24 +49,30 @@ tasks:
     createdDate: '2026-07-11'
     completedDate: null
   - id: 5
-    title: Transmission fluid — proactive drain & fill, then a shop visit for the real level check
+    title: 'Transmission fluid drain & fill — DONE; shop visit for the real level check still open'
     notes: >-
-      Toyota WS (World Standard), part 00289-ATFWS, is strongly indicated
-      for this U660E transmission family — but the exact pairing to this
-      precise model/engine/transmission code combo wasn't independently
-      confirmed, so verify against the build sticker or a dealer parts
-      lookup before buying fluid. Drain-and-fill recommended over a full
-      flush given 150K miles with unknown fluid-change history (a
-      high-pressure flush risks dislodging settled debris).
+      UPDATED 2026-07-22: Brady confirmed the drain-and-fill portion was
+      already done — see maintenance-log.yaml's 2024-06-18 entry
+      (transmission fluid & filter drain-and-fill, WIX 58010 filter,
+      Valvoline MaxLife Multi-Vehicle ATF). Note the fluid used was
+      Valvoline MaxLife Multi-Vehicle ATF, not the Toyota WS originally
+      recommended below — worth being aware of if there's ever a shift-
+      quality concern, though multi-vehicle ATFs are commonly used
+      without issue.
 
-      The LEVEL check needs dealer-grade tooling this transmission has no
-      conventional dipstick. A factory-correct check requires fluid
-      heated to 185-194°F, the vehicle level within ±1° of tilt, a
+      The LEVEL check still needs dealer-grade tooling this transmission
+      has no conventional dipstick. A factory-correct check requires
+      fluid heated to 185-194°F, the vehicle level within ±1° of tilt, a
       Techstream scan tool to read fluid temp via OBD, and a calibrated
       ATF level gauge/extraction tank for a drip test at the overflow
       port. Community workarounds (IR temp gun, paperclip trick) aren't
       fully equivalent — take this specific check to a transmission shop
       rather than attempting it solely at home.
+
+      Original note on fluid spec: Toyota WS (World Standard), part
+      00289-ATFWS, is strongly indicated for this U660E transmission
+      family — but the exact pairing to this precise model/engine/
+      transmission code combo wasn't independently confirmed.
     status: open
     createdDate: '2026-07-11'
     completedDate: null
@@ -83,12 +89,21 @@ tasks:
       under load, visible cracking, separation. Suspension bushings, ball
       joints, sway bar links: physically check for play (rubber cracks
       and hardens with age even at moderate mileage).
+
+      PLANNED 2026-07-22: Brady is targeting the weekend of 2026-07-25 for
+      this inspection.
     status: open
     createdDate: '2026-07-11'
     completedDate: null
   - id: 7
-    title: Brake fluid flush
-    notes: Toyota specifies a time-based interval (not purely mileage-based); at 12+ years old this is very likely overdue regardless of mileage.
+    title: Brake fluid test (moisture test strip) — twice yearly, spring & fall
+    notes: >-
+      Toyota specifies a time-based interval (not purely mileage-based);
+      at 12+ years old this is very likely overdue regardless of mileage.
+      UPDATED 2026-07-22: Brady confirmed (2026-07-22) he needs to test
+      the brake fluid with a test strip and replace if it fails — plans to
+      make this a standing twice-yearly check during the spring and fall
+      service passes going forward, not just a one-time flush.
     status: open
     createdDate: '2026-07-11'
     completedDate: null
@@ -229,13 +244,12 @@ tasks:
       Brady's wife was sideswiped in November 2025. Couldn't afford the
       real body/structural repair at the time, so the damaged side was
       professionally detailed instead to look presentable — see
-      maintenance-log.yaml. The underlying damage is still there and
-      unrepaired. Worth addressing before any future sale, and worth
-      checking whether it affects anything structural or just
-      cosmetic/panel alignment.
-    status: open
+      maintenance-log.yaml. RESOLVED 2026-07-22: Brady confirmed the
+      detailing buffed it out and it's fine as-is for a car this age — no
+      further body repair planned.
+    status: done
     createdDate: '2026-07-14'
-    completedDate: null
+    completedDate: '2026-07-22'
   - id: 25
     title: 'Resolve which vehicle got the 2023 Griot''s Garage headlight restoration kit'
     notes: >-

@@ -34,28 +34,13 @@ tasks:
       Worth doing soon regardless of the planned sale — it's free, quick,
       and fixes a genuine safety issue, not just a pre-sale disclosure
       concern.
+
+      UPDATED 2026-07-22: Brady confirmed this isn't scheduled yet —
+      intentional. He wants to finish everything else he can do himself
+      in the driveway first, then make one dealer trip to handle the
+      recall and the 25N17 reimbursement ask (task #12) together.
     status: open
     createdDate: '2026-07-10'
-    completedDate: null
-  - id: 2
-    title: 'Recurring check engine light across years — possibly connected to the open recall (task #1)'
-    notes: >-
-      Reviewing dashboard photos across the full mileage history: the
-      check engine light is lit in multiple photos spanning 2020-01-23
-      (73,512 mi), 2025-04-07 (140,842 mi), 2025-11-25 (150,002 mi), and
-      2026-02-21 (153,240 mi) — recurring over 6 years, not a one-time
-      fluke. Worth cross-referencing with task #1: recall 26V237's own
-      description says the transmission fault "may cause a malfunction
-      indicator lamp (MIL) and/or powertrain warning lamp wrench symbol"
-      to appear before an unintended downshift — so this recurring CEL
-      history could actually be evidence of this exact fault happening
-      repeatedly over years, not a separate unrelated issue. When the
-      dealer does the recall fix, ask them to pull stored/historical DTCs
-      first if possible, rather than just clearing the current code — it
-      may confirm (or rule out) that connection. Given the truck is being
-      sold, worth resolving and understanding before the sale either way.
-    status: open
-    createdDate: '2026-07-11'
     completedDate: null
   - id: 3
     title: 'Pre-sale service pass: coolant, rear diff, transmission, front diff, transfer case (~$1,254 est.)'
@@ -73,6 +58,11 @@ tasks:
       out of pocket — the Carchex extended warranty (see admin-dates.yaml)
       has expired both by date and mileage, and even while active it
       excluded routine maintenance/fluid services like these.
+
+      CONFIRMED 2026-07-22: Brady has never done a transmission service on
+      this truck at all — unlike Hera (see her tasks.yaml #5, already
+      done). This fluid item in particular is not just "proactive," it's
+      genuinely never been touched.
     status: open
     createdDate: '2026-07-13'
     completedDate: null
@@ -137,6 +127,9 @@ tasks:
       fuel system cleaner, test coolant & brake fluid. Brady's plan as of
       2026-07-14 is to finish this the week of 2026-07-13, alongside
       Draco's oil change.
+
+      PLANNED 2026-07-22: Brady is now targeting the weekend of 2026-07-25
+      for this checklist.
     status: open
     createdDate: '2026-07-14'
     completedDate: null
@@ -158,6 +151,9 @@ tasks:
       and ask them to apply 25N17 retroactively and refund whatever
       portion of that repair the program should have covered. Bring the
       25N17 program number and the 2025-12-09 RO.
+
+      PLANNED 2026-07-22: Brady confirmed he'll raise this in the same
+      dealer visit as the recall fix (task #1), not separately.
     status: open
     createdDate: '2026-07-17'
     completedDate: null

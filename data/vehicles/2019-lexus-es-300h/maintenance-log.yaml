@@ -67,3 +67,18 @@ entries:
       Recalculated by interpolating between the 2026-06-19 (106,926 mi)
       and 2026-07-12 (110,834 mi) odometer readings — treat as rough.
     documents: []
+  - date: '2026-07-22'
+    mileage: 110834
+    itemType: ''
+    description: >-
+      Pioneer amplifier replaced (TSB L-SB-0020-20 fix, low rear speaker
+      volume) — DIY
+    notes: >-
+      Amp ordered on eBay 2026-07-15 ("2019-2023 Lexus ES300h 2.5L FWD
+      Pioneer Amplifier / Speaker Audio Output Module"), arrived and was
+      installed 2026-07-22 — Brady confirmed it's working well now. See
+      tasks.yaml #8 for the part-number verification this was contingent
+      on and task #4 for the earlier (superseded) dealer-install plan. No
+      new odometer reading on file since 2026-07-12 (110,834 mi) — using
+      that as a floor; actual mileage is likely somewhat higher.
+    documents: []

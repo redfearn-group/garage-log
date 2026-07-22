@@ -15,11 +15,11 @@ items:
       Applies to 2019 ES 350/300h with the base audio system (not
       Mark Levinson) — sound stays biased forward even with the fader set
       fully to rear. Fix is an amplifier logic update / amp replacement
-      under Lexus Basic Warranty. Confirm the car has the base system
-      before asking the dealer to check this.
+      under Lexus Basic Warranty. RESOLVED 2026-07-22: fixed DIY with a
+      replacement Pioneer amp (see maintenance-log.yaml) — working well.
     sources:
       - https://static.nhtsa.gov/odi/tsbs/2020/MC-10176288-9999.pdf
-    status: due-for-inspection
+    status: addressed
   - issue: 'TSB L-SB-0006-20: "Hybrid System Malfunction" message, MIL on'
     typicalMileage: null
     description: Applies to 2019-2020 ES 300h. Ask the dealer to check if this applies if the hybrid warning has ever appeared.
