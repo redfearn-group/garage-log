@@ -1161,3 +1161,16 @@ entries:
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
     documents: []
+  - date: '2026-07-22'
+    mileage: 155408
+    itemType: cabin-air-filter
+    description: Cabin air filter inspected — washable K&N (VF2049), confirmed clean, not replaced
+    notes: >-
+      Brady confirmed (2026-07-22) this washable/reusable filter is
+      currently clean and working — washed each spring rather than
+      replaced on a mileage interval (see schedule.yaml). Logged as a
+      real dated entry so the site's due-date calculation reflects
+      current condition instead of showing overdue against the last
+      untagged/DIY wash. Mileage taken from the last known odometer
+      reading (155,407.7 mi, 2026-07-12).
+    documents: []
