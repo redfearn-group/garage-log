@@ -865,3 +865,27 @@ entries:
       on a mileage interval (see schedule.yaml). Brady reconfirmed
       (2026-07-22) it's currently clean and working.
     documents: []
+  - date: '2026-05-25'
+    mileage: 158643
+    itemType: brake-fluid-flush
+    description: Brake fluid tested (Phoenix Systems test strip) — passed, no replacement needed
+    notes: >-
+      Brady confirmed (2026-07-22) he tests brake fluid chemical
+      condition every spring and fall rather than replacing on a calendar
+      interval, using Phoenix Systems 8006-B test strips (bought
+      2025-07-28 — see 2015-ford-f150/maintenance-log.yaml, a shared
+      purchase used across the fleet). This spring's test passed, so no
+      flush was performed. Same Memorial Day weekend spring service as
+      the other 2026-05-25 entries.
+    documents: []
+  - date: '2026-05-25'
+    mileage: 158643
+    itemType: coolant-flush
+    description: Coolant tested (Phoenix Systems test strip) — passed, no replacement needed
+    notes: >-
+      Brady confirmed (2026-07-22) he tests coolant chemical condition
+      every spring and fall alongside the brake fluid test above, rather
+      than replacing on Toyota's calendar interval. This spring's test
+      passed, so no flush was performed. Same Memorial Day weekend spring
+      service as the other 2026-05-25 entries.
+    documents: []
