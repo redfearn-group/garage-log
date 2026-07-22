@@ -612,33 +612,6 @@ entries:
       2025-04-07 (141,180 mi) and 2025-09-09 (147,713 mi) readings — treat
       as rough.
     documents: []
-  - date: '2025-05-20'
-    mileage: 142990
-    itemType: tire-rotation
-    description: Tire rotation — DIY, part of the same 2025-05-20 service
-    notes: >-
-      Brady confirmed (2026-07-21) this service also included a tire
-      rotation. Same date/mileage as the oil-change entry above; same
-      estimate caveats.
-    documents: []
-  - date: '2025-05-20'
-    mileage: 142990
-    itemType: brake-inspection
-    description: Brake check — DIY, part of the same 2025-05-20 service
-    notes: >-
-      Brady confirmed (2026-07-21) this service also included a brake
-      check. Same date/mileage as the oil-change entry above; same
-      estimate caveats.
-    documents: []
-  - date: '2025-05-20'
-    mileage: 142990
-    itemType: multi-point-inspection
-    description: Filter and fluid level checks — DIY, part of the same 2025-05-20 service
-    notes: >-
-      Brady confirmed (2026-07-21) this service also included filter
-      checks (cabin/engine air) and fluid level checks. Same date/mileage
-      as the oil-change entry above; same estimate caveats.
-    documents: []
   - date: '2025-07-05'
     mileage: 144931
     itemType: ''
@@ -849,4 +822,24 @@ entries:
       AutoZone fuel-system-only cleaner gets used at other oil changes
       throughout the year. Mileage interpolated the same way as the other
       entries at this date — treat as rough.
+    documents: []
+  - date: '2026-05-25'
+    mileage: 158643
+    itemType: brake-inspection
+    description: Brake check — DIY, Memorial Day weekend spring service
+    notes: >-
+      Brady confirmed (2026-07-21) this service also included a brake
+      check (alongside the rear rotor replacement logged separately at
+      this date). Mileage interpolated the same way as the other entries
+      at this date — treat as rough.
+    documents: []
+  - date: '2026-05-25'
+    mileage: 158643
+    itemType: multi-point-inspection
+    description: Filter and fluid level checks — DIY, Memorial Day weekend spring service
+    notes: >-
+      Brady confirmed (2026-07-21) this service also included filter
+      checks (cabin/engine air) and fluid level checks. Mileage
+      interpolated the same way as the other entries at this date — treat
+      as rough.
     documents: []
