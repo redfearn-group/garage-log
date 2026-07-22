@@ -287,7 +287,12 @@ entries:
       with this real logged date/mileage. Exact services performed on
       this specific visit weren't itemized in the export beyond the
       dealer name; assumed to match the standard WFM oil-change/rotation/
-      MPI/brake-check bundle per Brady's confirmed practice.
+      MPI/brake-check bundle per Brady's confirmed practice. ADDED
+      2026-07-22 from Google Voice texts with Tim Dahle Ford: this was a
+      multi-day visit — dropped off 2021-05-18, but the door latches were
+      freezing up and needed an extra day (picked up 2021-05-19). Brady
+      also asked them to grease the sunroof track while it was there
+      (it was hanging up about 50% of the time when opening).
     documents: []
   - date: '2021-05-21'
     mileage: 89600
@@ -344,7 +349,10 @@ entries:
       appointment confirmation email for 7/19/2021. Exact services
       performed weren't itemized in the export beyond the dealer name;
       assumed to match the standard WFM bundle per Brady's confirmed
-      practice.
+      practice. ADDED 2026-07-22 from Google Voice texts: Brady requested
+      this appointment (2021-07-16 text) because the driver's door wasn't
+      locking properly — made a click sound but the door could still be
+      opened.
     documents: []
   - date: '2021-07-20'
     mileage: 91402
@@ -427,6 +435,20 @@ entries:
       Previously placed at the estimated 2022-03-05/100,778 mi visit;
       moved here now that the real date/mileage is confirmed.
     documents: []
+  - date: '2022-04-30'
+    mileage: 103400
+    itemType: ''
+    description: Rear differential leak reported to Tim Dahle Ford
+    notes: >-
+      ADDED 2026-07-22 from Google Voice — Brady texted Tim Dahle Ford
+      "My rear differential started leaking today pretty heavily. When
+      can I bring my truck in?" This is the first report of the leak
+      that wasn't actually repaired until the 2022-09-12 Clegg Auto visit
+      below, about 5 months later — logged here for the history even
+      though no repair happened on this date. Mileage interpolated
+      between the 2022-01-06 (99,857 mi) and 2022-09-12 (107,172 mi)
+      readings — treat as rough.
+    documents: []
   - date: '2022-07-01'
     mileage: 104719
     itemType: ''
@@ -455,6 +477,15 @@ entries:
       rear pinion seal and oil pan gasket, with a chance it could also be
       the rear main seal. Engine air filter replacement was recommended
       again and declined again (Brady prefers his aftermarket filter).
+      ADDED 2026-07-22 from Google Voice texts with Clegg Auto: the
+      09-12 date is when the estimate was issued/truck dropped off —
+      Brady's father-in-law took the truck in while Brady was on a work
+      trip. The truck wasn't actually finished and ready for pickup until
+      2022-09-20 (per a Clegg voicemail that day), resolving an earlier
+      discrepancy where Brady's MyCARFAX export logged this visit as
+      "09/21/2022." Brady first reported the rear differential leaking
+      heavily to Tim Dahle Ford on 2022-04-30 — about 5 months before
+      this repair — see the new 2022-04-30 entry below.
     documents:
       - 20220912-clegg-auto-pinion-seal-oil-pan-repair.pdf
   - date: '2022-09-12'
@@ -784,6 +815,18 @@ entries:
       confirmed for 2024-07-25, so the visit may have spanned or been
       rescheduled within that week). Mileage is still an estimate — no
       odometer reading independently confirmed for this exact date.
+
+      ADDED 2026-07-22 from a live Tim Dahle "review services" itemized
+      report (RO#902744, this same visit): several issues were flagged
+      here and DECLINED, only actually fixed much later — a major oil
+      leak was suspected to be the vacuum pump/front cover ($185 to
+      investigate further, declined) and the passenger valve cover was
+      already found broken/missing a piece ($664.99, declined) — the
+      valve cover wasn't actually replaced until the 2025-02-25 WFM 3rd
+      visit, and the vacuum pump itself not until 2025-12-09, both about
+      a year-plus later. Also declined here: a dirty-brake-fluid exchange
+      ($167.01) and a K&N air filter cleaning ($134.99). Tires were
+      noted as "getting low" but not yet recommended for replacement.
     documents: []
   - date: '2024-07-31'
     mileage: 132081
@@ -1092,12 +1135,17 @@ entries:
       2025-12-09, closed 2025-12-31, the tech). Work
       performed: (1) engine oil leak traced to the vacuum pump housing,
       vacuum pump (DL3Z-2A451-B) replaced — done under warranty; (2)
-      driver's seat lumbar adjuster (CU5Z-9665500-U) replaced; (3) backup/
+      driver's seat lumbar adjuster (CU5Z-9665500-U) AND the driver's
+      seat cover replaced together — the lumbar assembly was binding and
+      the seat cover's zipper was broken, so the lumbar couldn't be
+      replaced without damaging the cover; (3) backup/
       parking camera (FL3Z-19G490-D) replaced — wouldn't turn on; (4)
       driver's folding-mirror window-control switch (FL3Z-14529-CB)
       replaced — mirrors wouldn't fold; (5) front axle seal + rear axle oil
       + bolts/spacer kit replaced (front-end leak); plus a rental car while
-      in the shop.
+      in the shop. A driver's steering-wheel adjustment switch complaint
+      was also checked at this visit but could not be reproduced/verified
+      — no repair made, no charge.
     notes: >-
       Printed TOTAL DUE on the invoice was $3,428.72 (labor $2,045.80,
       parts $900.35, sublet/rental $200, shop supplies $56.15, tax $223.67,
@@ -1114,6 +1162,31 @@ entries:
       had a rental for this repair — flagged to the advisor
       2026-07-14 for a corrected RO. The $200 (and any tax calculated on
       it) should come off the $3,428.72 total once corrected.
+
+      ADDED 2026-07-22 from Google Voice — the reason this visit ran the
+      full three weeks shown above: the Carchex warranty required a
+      physical inspector to examine the truck before approving the claim
+      (inspector arrived ~2025-12-16), then the approved parts didn't
+      arrive until the weekend of 2025-12-27/28. Brady had the truck back
+      for the weekend of 2025-12-12 mid-repair, then returned it that
+      Monday for the inspection.
+
+      ADDED 2026-07-22 from a live Tim Dahle "review services" itemized
+      report (RO#924599, linked from the Dec 10 2025 text): itemizes the
+      seat lumbar/cover job at $1,195.47, the camera at $920.08, the
+      mirror switch at $511.82, and the front pinion seal repair (item 5
+      above) at $493.98, all approved. It also flags $1,429.71 of
+      declined recommendations at this visit (brake fluid exchange,
+      coolant service, transmission drain/refill, front/rear diff
+      service, transfer case service) — consistent with tasks.yaml #3's
+      pre-sale service estimate. NOTE: the advisor's write-up says "we
+      did the vacuum pump under 2 years ago," but this contradicts the
+      2024-07-25 MPI (RO#902744) at this same shop, which shows the
+      vacuum pump leak as merely SUSPECTED and the repair DECLINED at
+      that visit — no earlier vacuum pump replacement appears anywhere
+      in Zeus's actual service history. Treating the advisor's comment as
+      a misremembered aside rather than evidence of an undocumented
+      prior repair.
 
       Left un-tagged (itemType '') rather than rear-diff-transfer-case:
       item (5) was a leak REPAIR (front axle seal/bolts/spacer kit, plus a
@@ -1138,6 +1211,23 @@ entries:
       captured elsewhere on this R/O.
     documents:
       - 20251209-tim-dahle-vacuum-pump-camera-mirror-axle.pdf
+  - date: '2026-01-22'
+    mileage: 152668
+    itemType: ''
+    description: Repair visit — Tim Dahle Ford (Tim Dahle Service Center)
+    notes: >-
+      ADDED 2026-07-22 from Google Voice — a separate visit from the
+      Dec 2025 repair above, arranged via texts: 2026-01-19 Brady asked
+      about bringing the truck back in ahead of the Carchex warranty
+      mileage cutoff (152,412 mi/2026-05-11), then 2026-01-21 asked
+      "can I drop my truck off late tonight for repair tomorrow? Or are
+      we still waiting for parts?" No RO/invoice on file and Brady
+      doesn't recall what specifically this repair addressed — logged
+      as an unconfirmed placeholder visit rather than guessing at the
+      work performed. Mileage interpolated between the 2025-12-09
+      (151,830 mi) and 2026-02-21 (153,240 mi) readings — treat as
+      rough.
+    documents: []
   - date: '2026-01-30'
     mileage: 152431
     itemType: ''
