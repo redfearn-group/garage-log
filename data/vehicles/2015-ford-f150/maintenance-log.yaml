@@ -197,10 +197,13 @@ entries:
       MPI inspections each visit, purchased same day).
     notes: >-
       UPDATED 2026-07-21: Brady confirmed the other 2 visits on this
-      package DID happen (see the estimated 2021-02-28 and 2021-09-16
-      entries below) — the earlier "likely lapsed" assumption was wrong,
-      just unreceipted. He continued at the dealer at roughly a 6-month
-      cadence straight through to the 2025-02-25 visit.
+      package DID happen — the earlier "likely lapsed" assumption was
+      wrong, just unreceipted. He continued at the dealer at roughly a
+      6-month cadence straight through to the 2025-02-25 visit. UPDATED
+      2026-07-22: the other 2 visits on this package are now confirmed
+      as the real 2021-05-21 and 2021-07-20 entries below (found via
+      Gmail/MyCARFAX), superseding an earlier round of date estimates
+      for them.
     documents:
       - 20200812-tim-dahle-worry-free-maintenance.pdf
   - date: '2020-08-12'
@@ -915,7 +918,7 @@ entries:
       Equipment Oxygen Sensor" above.
     documents: []
   - date: '2024-07-06'
-    mileage: 127510
+    mileage: 130901
     itemType: ''
     description: >-
       Brake caliper bolt guide pins replaced (Duralast 14193) — DIY brake
@@ -924,11 +927,15 @@ entries:
       Guide pins bought at AutoZone #886 twice — 2024-07-06 and again
       2024-08-14 — along with brake cleaner and brake lubricant (shared
       consumables, not logged separately). Brady confirmed this brake work was
-      on the F-150. Mileage interpolated between the 2024-01-23 (124,030 mi)
-      and 2025-02-25 (140,142 mi) readings — treat as rough.
+      on the F-150. CORRECTED 2026-07-22: mileage was previously interpolated
+      between the 2024-01-23 (124,030 mi) and 2025-02-25 (140,142 mi)
+      readings, which put it lower than the 2024-06-05 (129,441 mi) entry
+      before it — not possible. Recalculated between the 2024-06-05
+      (129,441 mi) and 2024-07-31 (132,081 mi, confirmed) readings — treat
+      as rough.
     documents: []
   - date: '2024-08-02'
-    mileage: 128074
+    mileage: 132099
     itemType: ''
     description: >-
       Electronic throttle body module replaced (Duralast TB1052D) — DIY
@@ -936,9 +943,11 @@ entries:
       AutoZone 2024-08-02, with throttle-body cleaner. Brady
       confirmed this was Zeus, not the neighbor's F-150. Pairs with the
       FEL-PRO 61466 throttle body gasket bought from Amazon 2024-08-12
-      (below) — the same throttle-body job. Mileage interpolated between the
-      2024-01-23 (124,030 mi) and 2025-02-25 (140,142 mi) readings — treat as
-      rough.
+      (below) — the same throttle-body job. CORRECTED 2026-07-22: mileage
+      was previously interpolated between the 2024-01-23 and 2025-02-25
+      readings, which put it lower than several entries before it — not
+      possible. Recalculated between the 2024-07-31 (132,081 mi, confirmed)
+      and 2024-08-12 (132,187 mi) readings — treat as rough.
     documents: []
   - date: '2024-08-12'
     mileage: 132187
