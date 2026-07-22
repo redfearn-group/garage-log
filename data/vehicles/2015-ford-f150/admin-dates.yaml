@@ -31,3 +31,35 @@ dates:
       maintenance-log.yaml for all three repair visits. Full contract,
       administrator, claims-contact, and financing details filed
       privately.
+      ADMINISTRATOR CHAIN — FLAGGED, NOT FULLY RESOLVED (2026-07-22 document
+      sweep): the contract involves at least three differently-named
+      entities and the source documents don't tie them together explicitly.
+      (1) Carchex is the seller/broker. (2) Carchex's own portal and the
+      physical "quick reference card" both list the "Administrator" as
+      "Allegiance" with claims line 1-877-356-1500 — but the actual sample
+      Vehicle Service Contract terms document (Ultimate Direct,
+      ABIC-ULTIMATE DIRECT-01) names the Provider/Administrator as "Scioto
+      Administrators Corporation" (Dublin, OH) with a DIFFERENT claims line,
+      (800) 457-7703, and the underwriting insurer as American Bankers
+      Insurance Company of Florida — "Allegiance" does not appear anywhere
+      in that contract text. (3) The 2023-12-27 Tim Dahle repair order
+      (RO #893785) instructs the shop to send the final warranty invoice to
+      claimpayments@rps-tpa.com — i.e., RPS-TPA was already handling actual
+      claim payment processing back in Dec 2023, well before any mention of
+      "Renascent Protection Solutions, LLC" turned up in Gmail. This is
+      consistent with RPS-TPA being Renascent's third-party-administrator
+      claims-processing operation for this contract, but none of the
+      documents on file state that connection explicitly — it's an
+      inference, not a confirmed fact. There's also a minor roadside-number
+      mismatch: the quick reference card prints 866-222-7869, while the
+      Carchex portal (both an older 2025 screenshot and the current view)
+      prints 866-994-4667. Bottom line: coverage dates, mileage, and the
+      $100 deductible are solid (corroborated by 3 independent sources —
+      contract terms doc, Carchex portal, quick reference card), but which
+      company actually answers the phone for a claim, and how Renascent/
+      RPS-TPA fits into Carchex → Allegiance → Scioto Administrators →
+      American Bankers Insurance, is unresolved. Worth asking Carchex or
+      checking the physical confirmation-package mailer (referenced in the
+      2022-05-12 order-confirmation email, "sent within 7-14 business days")
+      if it still exists — it may name the actual claims TPA more plainly
+      than any document currently on file.
