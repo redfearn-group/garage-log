@@ -43,6 +43,12 @@ tasks:
   - id: 4
     title: 'TOMORROW before calling dealer: verify the amp is actually the bad part'
     notes: >-
+      SUPERSEDED 2026-07-22: Brady ended up ordering the amp on eBay
+      2026-07-15 instead of going the dealer-install route decided below —
+      see task #8, which now owns this. Leaving this open only for its
+      still-relevant verification checklist (VIN production sequence,
+      physical part number, ruling out blown speakers).
+
       Decision made 2026-07-10: having the dealer order the correct part
       (86280-06260) and install it, ~$200 out of pocket — worth it for
       speed + warranty, since DIY sourcing (new-only, $863-869 at
