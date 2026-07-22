@@ -110,6 +110,29 @@ entries:
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
     documents: []
+  - date: '2019-04-29'
+    mileage: 58778
+    itemType: oil-change
+    description: Oil change — Jiffy Lube
+    notes: >-
+      Brady confirmed (2026-07-21) he went to Jiffy Lube twice in 2019 and
+      once in early 2020, following the truck's onboard oil-life monitor
+      (his standing policy is a minimum of 2 changes/year regardless of
+      mileage — see schedule.yaml). No receipt on file for this specific
+      visit. Date and mileage are estimated by evenly dividing the
+      2018-11-23 (51,171 mi) to 2020-08-12 (81,599 mi) gap into 4 intervals
+      at roughly the confirmed ~6-month cadence. Treat as a rough estimate
+      until a receipt turns up.
+    documents: []
+  - date: '2019-10-03'
+    mileage: 66385
+    itemType: oil-change
+    description: Oil change — Jiffy Lube
+    notes: >-
+      Second of the 2 confirmed 2019 Jiffy Lube visits — see the 2019-04-29
+      entry above for the full methodology note. No receipt on file. Treat
+      as a rough estimate until a receipt turns up.
+    documents: []
   - date: '2019-11-18'
     mileage: 69553
     itemType: ''
@@ -131,6 +154,16 @@ entries:
     notes: Invoice on file.
     documents:
       - 20191209-discounttire-rotation.pdf
+  - date: '2020-03-08'
+    mileage: 73992
+    itemType: oil-change
+    description: Oil change — Jiffy Lube
+    notes: >-
+      Third and last Jiffy Lube visit (early 2020) before switching to the
+      Tim Dahle Ford WFM package below — see the 2019-04-29 entry for the
+      full methodology note. No receipt on file. Treat as a rough estimate
+      until a receipt turns up.
+    documents: []
   - date: '2020-08-12'
     mileage: 81599
     itemType: oil-change
@@ -140,8 +173,11 @@ entries:
       ($129.95 for 3 full-service oil changes + 3 courtesy tire rotations +
       MPI inspections each visit, purchased same day).
     notes: >-
-      No record of the other 2
-      package visits ever being used in later history — likely lapsed.
+      UPDATED 2026-07-21: Brady confirmed the other 2 visits on this
+      package DID happen (see the estimated 2021-02-28 and 2021-09-16
+      entries below) — the earlier "likely lapsed" assumption was wrong,
+      just unreceipted. He continued at the dealer at roughly a 6-month
+      cadence straight through to the 2025-02-25 visit.
     documents:
       - 20200812-tim-dahle-worry-free-maintenance.pdf
   - date: '2020-08-12'
@@ -202,6 +238,40 @@ entries:
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
     documents: []
+  - date: '2021-02-18'
+    mileage: 87992
+    itemType: oil-change
+    description: >-
+      Oil change — Tim Dahle Ford, redeemed under the WFM package bought
+      2020-08-12 above, no charge (estimated)
+    notes: >-
+      Brady confirmed (2026-07-21) he only went to the dealer (Tim Dahle
+      Ford, via WFM packages) for oil changes from 2020-08-12 through
+      early 2025, following the truck's onboard oil-life monitor at
+      roughly a 6-7 month cadence (his standing minimum-2/year policy —
+      see schedule.yaml). No receipt on file for this specific visit — an
+      earlier note on the 2020-08-12 entry assumed this package "lapsed,"
+      but that assumption is superseded by Brady's confirmation that all
+      dealer visits through early 2025 actually happened. UPDATED
+      2026-07-21: date/mileage recalculated by evenly dividing the
+      2020-08-12 (81,599 mi) to 2022-09-12 (107,172 mi) gap into 4
+      intervals — the 2022-09-12 endpoint is now a confirmed oil change
+      (drained incidental to the oil pan gasket repair, see that entry),
+      replacing the earlier estimate that spanned all the way to
+      2023-05-09. Treat as a rough estimate until a receipt turns up.
+    documents: []
+  - date: '2021-02-18'
+    mileage: 87992
+    itemType: tire-rotation
+    description: Tire rotation — Tim Dahle Ford, part of the estimated 2021-02-18 visit
+    notes: Same estimate caveats as the oil-change entry above.
+    documents: []
+  - date: '2021-02-18'
+    mileage: 87992
+    itemType: multi-point-inspection
+    description: Multi-point inspection — Tim Dahle Ford, part of the estimated 2021-02-18 visit
+    notes: Same estimate caveats as the oil-change entry above.
+    documents: []
   - date: '2021-08-17'
     mileage: 94027
     itemType: brake-inspection
@@ -220,6 +290,50 @@ entries:
       caliper-part purchase; the work spanned late July to mid-August 2021.
       Mileage interpolated between the 2020-08-12 (81,599 mi) and 2022-09-12
       (107,172 mi) readings — a ~2-year gap, so treat as rough.
+    documents: []
+  - date: '2021-08-27'
+    mileage: 94385
+    itemType: oil-change
+    description: >-
+      Oil change — Tim Dahle Ford, redeemed under the WFM package bought
+      2020-08-12 above, no charge (estimated)
+    notes: >-
+      See the 2021-02-18 entry above for the full methodology note. No
+      receipt on file. Treat as a rough estimate until a receipt turns up.
+    documents: []
+  - date: '2021-08-27'
+    mileage: 94385
+    itemType: tire-rotation
+    description: Tire rotation — Tim Dahle Ford, part of the estimated 2021-08-27 visit
+    notes: Same estimate caveats as the oil-change entry above.
+    documents: []
+  - date: '2021-08-27'
+    mileage: 94385
+    itemType: multi-point-inspection
+    description: Multi-point inspection — Tim Dahle Ford, part of the estimated 2021-08-27 visit
+    notes: Same estimate caveats as the oil-change entry above.
+    documents: []
+  - date: '2022-03-05'
+    mileage: 100778
+    itemType: oil-change
+    description: >-
+      Oil change — Tim Dahle Ford, redeemed under the WFM package bought
+      2020-08-12 above, no charge (estimated)
+    notes: >-
+      See the 2021-02-18 entry above for the full methodology note. No
+      receipt on file. Treat as a rough estimate until a receipt turns up.
+    documents: []
+  - date: '2022-03-05'
+    mileage: 100778
+    itemType: tire-rotation
+    description: Tire rotation — Tim Dahle Ford, part of the estimated 2022-03-05 visit
+    notes: Same estimate caveats as the oil-change entry above.
+    documents: []
+  - date: '2022-03-05'
+    mileage: 100778
+    itemType: multi-point-inspection
+    description: Multi-point inspection — Tim Dahle Ford, part of the estimated 2022-03-05 visit
+    notes: Same estimate caveats as the oil-change entry above.
     documents: []
   - date: '2022-07-01'
     mileage: 104719
@@ -249,6 +363,29 @@ entries:
       rear pinion seal and oil pan gasket, with a chance it could also be
       the rear main seal. Engine air filter replacement was recommended
       again and declined again (Brady prefers his aftermarket filter).
+    documents:
+      - 20220912-clegg-auto-pinion-seal-oil-pan-repair.pdf
+  - date: '2022-09-12'
+    mileage: 107172
+    itemType: oil-change
+    description: Oil change (incidental to the oil pan gasket replacement) — Clegg Auto Spanish Fork
+    notes: >-
+      Brady flagged (2026-07-21) that oil pan gasket replacement requires
+      fully draining the engine oil, so this visit almost certainly
+      included a fresh oil fill even though the RO doesn't explicitly
+      itemize "oil change" as its own line — the invoice only describes
+      the pinion seal, oil pan gasket, and differential cover work (see
+      the entry above). Logged here so the oil-change interval reflects
+      it. Not an independently confirmed oil-change line item — treat as
+      inferred from the nature of the repair, not a certainty. UPDATED
+      2026-07-21: because this fills in a real anchor point roughly in
+      the middle of what had been one long estimated gap, the surrounding
+      2021-02-28/2021-09-16/2022-04-04/2022-10-21 estimated dealer visits
+      were recalculated and consolidated into 3 evenly-spaced visits
+      (2021-02-18, 2021-08-27, 2022-03-05) ending here — see those
+      entries. No new estimated visit was needed between here and the
+      next confirmed date (2023-05-09); that gap (239 days) is itself a
+      normal single interval.
     documents:
       - 20220912-clegg-auto-pinion-seal-oil-pan-repair.pdf
   - date: '2022-10-04'
@@ -478,6 +615,54 @@ entries:
       entire cost of the warranty many times over.
     documents:
       - 20231227-tim-dahle-major-warranty-repairs.pdf
+  - date: '2023-12-27'
+    mileage: 124020
+    itemType: oil-change
+    description: Oil change (incidental to the timing cover / rear main seal repair) — Tim Dahle Ford
+    notes: >-
+      Brady flagged (2026-07-21) that both the timing cover reseal and
+      rear main seal replacement done this visit require fully draining
+      the engine oil, so a fresh oil fill almost certainly happened here
+      too — the timing cover parts list even includes "engine shampoo," a
+      flush product used right before an oil change. The RO doesn't
+      itemize "oil change" as its own billed line among the 7 items
+      listed above, so this is inferred from the nature of the repair
+      work, not an independently confirmed line item. Logged so the
+      oil-change interval reflects it. UPDATED 2026-07-21: this real
+      anchor made the nearby 2023-10-21 estimated visit redundant (it was
+      guessing at basically this same event) — that entry was removed,
+      and the surrounding estimates recalculated: the 2023-05-09 to
+      2023-12-27 gap (232 days) is itself a normal single interval needing
+      no backfill, and the 2023-12-27 to 2025-02-25 gap was re-divided
+      into 2 intervals, producing one new estimated visit at 2024-07-29
+      (see below) in place of the old 2024-04-02/2024-09-14 pair.
+    documents:
+      - 20231227-tim-dahle-major-warranty-repairs.pdf
+  - date: '2024-07-29'
+    mileage: 132081
+    itemType: oil-change
+    description: >-
+      Oil change — Tim Dahle Ford, redeemed under the WFM package bought
+      2023-05-09 above, no charge (estimated)
+    notes: >-
+      See the 2021-02-18 entry for the full methodology note. Recalculated
+      2026-07-21 as the midpoint of the 2023-12-27 (confirmed, incidental
+      to the timing cover/rear main seal repair) to 2025-02-25 (confirmed)
+      gap. No receipt on file. Treat as a rough estimate until a receipt
+      turns up.
+    documents: []
+  - date: '2024-07-29'
+    mileage: 132081
+    itemType: tire-rotation
+    description: Tire rotation — Tim Dahle Ford, part of the estimated 2024-07-29 visit
+    notes: Same estimate caveats as the oil-change entry above.
+    documents: []
+  - date: '2024-07-29'
+    mileage: 132081
+    itemType: multi-point-inspection
+    description: Multi-point inspection — Tim Dahle Ford, part of the estimated 2024-07-29 visit
+    notes: Same estimate caveats as the oil-change entry above.
+    documents: []
   - date: '2024-04-14'
     mileage: 127341
     itemType: ''
@@ -670,6 +855,21 @@ entries:
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
+    documents: []
+  - date: '2025-09-17'
+    mileage: 147039
+    itemType: oil-change
+    description: Oil & filter change (Kirkland Signature 5W-30 full synthetic) — DIY
+    notes: >-
+      Oil (Kirkland Signature 5W-30 Full Synthetic, 5-qt 2-pack, $29.99
+      after instant savings + $0.40 oil disposal fee) purchased at Costco
+      (Spanish Fork) 2025-09-17. No filter in the same transaction. This is
+      Zeus's first DIY oil change — Brady confirmed (2026-07-21) dealer WFM
+      visits stopped after the 2025-02-25 visit above, matching the same
+      2025 DIY transition seen on Hera's log. Exact install date not
+      independently confirmed beyond the purchase date. Mileage
+      interpolated between the 2025-02-25 (140,142 mi) and 2026-04-10
+      (153,970 mi) readings — treat as rough.
     documents: []
   - date: '2025-11-19'
     mileage: 149829
