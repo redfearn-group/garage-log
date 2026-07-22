@@ -643,34 +643,34 @@ entries:
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
     documents: []
-  - date: '2024-12-21'
-    mileage: 137625
+  - date: '2025-01-08'
+    mileage: 138078
     itemType: oil-change
     description: >-
-      Worry Free Maintenance package #3 3rd visit — full-service oil change
-      (0W-20 synthetic) + tire rotation + MPI — Tim Dahle Ford. Redeemed
+      Worry Free Maintenance package #3 3rd (final) visit — full-service oil
+      change + tire rotation + MPI — Tim Dahle Ford. Redeemed
       under the package bought 2024-03-06, no charge.
     notes: >-
-      Brady confirmed (2026-07-21) that historically Hera only ever had oil
-      changes done at Tim Dahle Ford via 3-visit WFM packages, bought as
-      needed — DIY oil changes didn't start until 2025. This 3rd visit
-      closes out package #3, bought 2024-03-06 (1st visit same day, 2nd
-      visit 2024-07-25), consistent with that pattern. No receipt/invoice on
-      file for this visit, unlike the 1st and 2nd. Exact date not confirmed
-      — date and mileage are placed at the midpoint of the gap between the
-      confirmed 2024-07-25 (132,260 mi) visit and the 2025-05-20 (142,990
-      mi) first-known DIY change, as a rough placeholder. Treat as an
-      estimate until a more precise date turns up.
+      CORRECTED 2026-07-22 — replaces the earlier "2024-12-21" placeholder
+      (no receipt on file, placed at a rough midpoint estimate). Found via
+      Gmail: a Tim Dahle Ford appointment confirmation email explicitly
+      confirms an appointment on 2025-01-08 at 7:30 AM with "REQUESTED
+      SERVICES: WORRY FREE MAINTENANCE" — consistent with this being the
+      3rd/final visit on package #3 (1st visit 2024-03-06, 2nd visit
+      2024-07-25). No itemized invoice found to confirm further detail
+      beyond the requested service. Mileage interpolated between the
+      2024-07-25 (132,260 mi) and 2025-04-07 (141,180 mi) readings — treat
+      as rough.
     documents: []
-  - date: '2024-12-21'
-    mileage: 137625
+  - date: '2025-01-08'
+    mileage: 138078
     itemType: tire-rotation
     description: Tire rotation — Tim Dahle Ford, part of WFM package #3's 3rd visit
     notes: >-
-      Tire rotation — done as part of the estimated dealer Worry Free
-      Maintenance visit the same day (see the oil-change entry above).
-      Broken out so the tire-rotation interval reflects it. Same estimate
-      caveats as that entry.
+      Tire rotation — done as part of the dealer Worry Free Maintenance
+      oil-change visit the same day (see the oil-change entry above).
+      Broken out so the tire-rotation interval reflects it. Same sourcing
+      as that entry.
     documents: []
   - date: '2025-05-20'
     mileage: 142990
