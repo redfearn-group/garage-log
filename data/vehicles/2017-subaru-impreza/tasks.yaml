@@ -26,6 +26,9 @@ tasks:
       inspection) is 50,000-60,000 mi with synthetic gear oil — given
       this car's unknown prior service history, doing the swap now rather
       than waiting is reasonable regardless of exact mileage.
+
+      PLANNED 2026-07-22: Brady is targeting the weekend of 2026-07-25 for
+      this, alongside the CVT fluid change (task #11).
     status: open
     createdDate: '2026-07-11'
     completedDate: null
@@ -82,18 +85,6 @@ tasks:
     status: open
     createdDate: '2026-07-11'
     completedDate: null
-  - id: 8
-    title: 'Check engine light + traction control light on as of 2026-07-12 (140,837 mi)'
-    notes: >-
-      Today's odometer photo (140,837 mi) shows the CHECK ENGINE light and
-      the amber traction-control-off icon both lit, plus a red BRAKE
-      indicator and seatbelt icon (likely just parking-brake-engaged/seatbelt
-      reminders while parked in P, not necessarily faults). Worth pulling
-      codes with an OBD-II reader before doing anything else — no other
-      symptoms reported yet.
-    status: open
-    createdDate: '2026-07-12'
-    completedDate: null
   - id: 9
     title: 'Research window tint costs (3M Crystalline or XPEL Prime)'
     notes: >-
@@ -132,6 +123,9 @@ tasks:
       cover the front differential, which has its own separate gear-oil
       fill (see task #1). See schedule.yaml's DRIVELINE COMPONENT AUDIT
       note for the full mechanical breakdown.
+
+      PLANNED 2026-07-22: Brady is targeting the weekend of 2026-07-25 for
+      this, alongside the front/rear differential fluid (task #1).
     status: open
     createdDate: '2026-07-14'
     completedDate: null
@@ -147,7 +141,8 @@ tasks:
       Still pending as of the April 2026 post-purchase checklist. Gasket
       (Fel-Pro 61733) already purchased 2026-04-09 from O'Reilly, $17.18 —
       see maintenance-log.yaml. Brady confirmed (2026-07-22) it's on hand
-      but not yet installed.
+      but not yet installed. PLANNED 2026-07-22: targeting the weekend of
+      2026-07-25 for this.
     status: open
     createdDate: '2026-07-14'
     completedDate: null
@@ -178,13 +173,14 @@ tasks:
     createdDate: '2026-07-14'
     completedDate: null
   - id: 17
-    title: Replace driver's-side seat belt buckle — part ordered, install once delivered
+    title: Replace driver's-side seat belt buckle — part arrived, install pending
     notes: >-
       The earlier vague "fix seatbelt latch" is now pinned down to the
       driver's-side seat belt buckle/latch. Brady ordered an OEM replacement
       on eBay 2026-07-15 — "Seat Belt Front Driver Buckle Latch Fits 17-19
-      Impreza OEM", estimated delivery Jul
-      17-21, 2026. Install it once it arrives.
+      Impreza OEM", estimated delivery Jul 17-21, 2026. UPDATED 2026-07-22:
+      arrived 2026-07-21, still needs to be installed — Brady's targeting
+      the weekend of 2026-07-25.
     status: open
     createdDate: '2026-07-14'
     completedDate: null
