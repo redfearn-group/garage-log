@@ -843,3 +843,25 @@ entries:
       interpolated the same way as the other entries at this date — treat
       as rough.
     documents: []
+  - date: '2026-05-25'
+    mileage: 158643
+    itemType: cabin-air-filter
+    description: Cabin air filter inspected — washable K&N (VF2000), confirmed clean, not replaced
+    notes: >-
+      Split out from the bundled filter-check entry above (2026-07-22) so
+      the schedule's due-date calculation actually sees it — this
+      washable/reusable filter is washed each spring rather than replaced
+      on a mileage interval (see schedule.yaml). Brady reconfirmed
+      (2026-07-22) it's currently clean and working.
+    documents: []
+  - date: '2026-05-25'
+    mileage: 158643
+    itemType: engine-air-filter
+    description: Engine air filter inspected — washable K&N (33-2260), confirmed clean, not replaced
+    notes: >-
+      Split out from the bundled filter-check entry above (2026-07-22) so
+      the schedule's due-date calculation actually sees it — this
+      washable/reusable filter is washed each spring rather than replaced
+      on a mileage interval (see schedule.yaml). Brady reconfirmed
+      (2026-07-22) it's currently clean and working.
+    documents: []
