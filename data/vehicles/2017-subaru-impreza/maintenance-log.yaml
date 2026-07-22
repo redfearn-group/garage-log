@@ -278,6 +278,19 @@ entries:
       personal vehicles this year — Zeus, Hera, Draco) so it can actually be
       tracked against a schedule item.
     documents: []
+  - date: '2026-04-09'
+    mileage: 134847
+    itemType: ''
+    description: >-
+      Fel-Pro Rubber, Steel Throttle Body Mounting Gasket - 61733
+    notes: >-
+      Purchased at O'Reilly Auto Parts (Spanish Fork, store 2988), $17.18
+      — picked up in-store, order placed 2026-04-09 9:11 PM. Brady
+      confirmed (2026-07-22) this has NOT been installed yet — see open
+      task "Throttle body clean & gasket replacement" in tasks.yaml.
+      Mileage interpolated between the 2026-04-08 (134,783 mi) and
+      2026-04-29 (136,121 mi) readings — treat as rough.
+    documents: []
   - date: '2026-04-29'
     mileage: 136121
     itemType: ''

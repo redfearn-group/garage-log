@@ -1076,8 +1076,14 @@ entries:
   - date: '2026-04-08'
     mileage: 153950
     itemType: battery-test
-    description: 12V battery load-tested with Brady's own tester — good
+    description: 12V battery load-tested with Brady's own tester — good, tested at 621 CCA
     notes: >-
+      CCA figure from a Google Keep checklist note, confirmed (2026-07-22)
+      to be about this truck rather than Draco. That same note lists
+      several other recommendations (front/rear brake check, cooling
+      system fluid exchange, transmission and transfer case fluid
+      service) that are already tracked as open tasks here (tasks.yaml
+      #3, #10, #11) — no new gaps found from it beyond this CCA number.
       Part of Brady's annual spring battery-check routine, done across his
       3 personal vehicles this year (Zeus, Hera, Draco). Exact date not
       independently confirmed — approximated to match Draco's confirmed
