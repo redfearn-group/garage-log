@@ -99,21 +99,30 @@ items:
       Fluid Check" (level/condition). Ford did not add a scheduled brake
       fluid CHANGE to the F-150's maintenance table until the 2020 model
       year (prior version of this file wrongly attributed a 3-year figure
-      to this 2015 truck's own Ford schedule). 36 mo below is kept as a
-      COMMUNITY/industry-standard estimate — DOT 4 brake fluid is
-      hygroscopic and most non-Ford manufacturers (and Ford's own 2020+
-      schedule) call for a ~3-year change regardless of mileage.
+      to this 2015 truck's own Ford schedule). UPDATED 2026-07-22: Brady's
+      actual practice supersedes the calendar-estimate approach entirely —
+      he tests the fluid's chemical condition twice yearly (spring & fall)
+      with Phoenix Systems test strips and only replaces it if a test
+      fails, never on a fixed calendar interval. 6 mo below reflects that
+      test cadence, not a flush-due date — see maintenance-log.yaml for
+      test results.
     intervalMiles: null
-    intervalMonths: 36
+    intervalMonths: 6
   - itemType: coolant-flush
     name: >-
       Engine coolant (Motorcraft Orange) — Ford owner's manual, Scheduled
       Maintenance table, footnote 2: "Initial replacement at six years or
-      100,000 miles, then every three years or 50,000 miles." Both the
-      recurring mileage (50,000 mi) AND recurring time (3 yr / 36 mo)
-      figures below are literal, direct Ford citations, not derived.
+      100,000 miles, then every three years or 50,000 miles." Those
+      figures are literal, direct Ford citations. UPDATED 2026-07-22:
+      Brady's actual practice supersedes the calendar-estimate approach —
+      he tests the coolant's chemical condition twice yearly (spring &
+      fall) with Phoenix Systems test strips alongside the brake fluid
+      test above, and only replaces it if a test fails, not purely on
+      Ford's calendar interval. 6 mo below reflects that test cadence —
+      see maintenance-log.yaml for test results. Ford's mileage/time
+      figures remain the outer bound if a test is ever missed.
     intervalMiles: 50000
-    intervalMonths: 36
+    intervalMonths: 6
   - itemType: transmission-fluid-service
     name: >-
       Transmission fluid (6R80, Motorcraft MERCON LV) — Ford's own normal

@@ -104,25 +104,31 @@ items:
       Brake fluid — Toyota's own Warranty & Maintenance Guide for this
       vehicle does NOT list a scheduled brake-fluid replacement item at all
       (only visual "brake lines and hoses" inspection); there is no fixed
-      Toyota factory interval to cite here. COMMUNITY NOTE: industry/Toyota-
-      tech consensus (independent shops, other Toyota owner's-manual
-      language for models that do specify it) is every 2-3 years regardless
-      of mileage to control moisture/corrosion; 36 mo below is the
-      conservative end of that community range, not a literal Toyota
-      citation for this vehicle.
+      Toyota factory interval to cite here. UPDATED 2026-07-22: Brady's
+      actual practice supersedes the calendar-estimate approach entirely —
+      he tests the fluid's chemical condition twice yearly (spring & fall)
+      with Phoenix Systems test strips and only replaces it if a test
+      fails, never on a fixed calendar interval. 6 mo below reflects that
+      test cadence, not a flush-due date — see maintenance-log.yaml for
+      test results.
     intervalMiles: null
-    intervalMonths: 36
+    intervalMonths: 6
   - itemType: coolant-flush
     name: >-
       Engine coolant (Toyota Super Long Life Coolant, pink) — FIRST change
       100,000 mi/120 mo, then every 50,000 mi/60 mo thereafter. Confirmed by
       a literal citation in the 2013 Highlander Warranty & Maintenance
       Guide footnote: "Initial replacement at 100,000 miles/120 months.
-      Replace every 50,000 miles/60 months thereafter." (both the recurring
-      mileage AND recurring time figures below are directly stated by
-      Toyota for this vehicle, not derived.)
+      Replace every 50,000 miles/60 months thereafter." UPDATED 2026-07-22:
+      Brady's actual practice supersedes the calendar-estimate approach —
+      he tests the coolant's chemical condition twice yearly (spring &
+      fall) with Phoenix Systems test strips alongside the brake fluid
+      test above, and only replaces it if a test fails, not purely on
+      Toyota's calendar interval. 6 mo below reflects that test cadence —
+      see maintenance-log.yaml for test results. Toyota's mileage/time
+      figures remain the outer bound if a test is ever missed.
     intervalMiles: 50000
-    intervalMonths: 60
+    intervalMonths: 6
   - itemType: transmission-fluid-service
     name: >-
       Transmission fluid (U660E, Toyota WS ATF) — no fixed normal-use

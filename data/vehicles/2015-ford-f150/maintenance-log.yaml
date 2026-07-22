@@ -1174,3 +1174,44 @@ entries:
       untagged/DIY wash. Mileage taken from the last known odometer
       reading (155,407.7 mi, 2026-07-12).
     documents: []
+  - date: '2025-07-28'
+    mileage: 148000
+    itemType: ''
+    description: >-
+      Phoenix Systems 8006-B Double-Ended Brake Fluid + Coolant Test
+      Strips (15 foil-wrapped strips, 1 pack)
+    notes: >-
+      $21.99 (order #113-1286416-9109016, $67.97 item subtotal /$73.03
+      grand total with tax and other items, Amazon, delivered/order-placed
+      2025-07-28). Brady uses these single strips to test BOTH brake fluid
+      and coolant chemical condition twice yearly (spring & fall) across
+      the fleet — currently Zeus and Hera — replacing fluid only when a
+      test actually fails, not on a calendar guess. See the brake-fluid-
+      flush and coolant-flush entries on this car and on Hera for actual
+      test results. Mileage interpolated between surrounding odometer
+      readings — treat as rough.
+    documents: []
+  - date: '2026-04-08'
+    mileage: 153950
+    itemType: brake-fluid-flush
+    description: Brake fluid tested (Phoenix Systems test strip) — passed, no replacement needed
+    notes: >-
+      Brady confirmed (2026-07-22) he tests brake fluid chemical
+      condition every spring and fall rather than replacing on a
+      calendar interval (see the 2025-07-28 test-strip purchase entry
+      above) — this spring's test passed, so no flush was performed.
+      Exact test date approximated to match the same spring-service
+      window as Zeus's other spring items (battery test, etc.); treat as
+      rough. Mileage interpolated the same way.
+    documents: []
+  - date: '2026-04-08'
+    mileage: 153950
+    itemType: coolant-flush
+    description: Coolant tested (Phoenix Systems test strip) — passed, no replacement needed
+    notes: >-
+      Brady confirmed (2026-07-22) he tests coolant chemical condition
+      every spring and fall alongside the brake fluid test above, rather
+      than replacing on Ford's calendar interval — this spring's test
+      passed, so no flush was performed. Same date/mileage estimate
+      caveats as the brake fluid entry above.
+    documents: []

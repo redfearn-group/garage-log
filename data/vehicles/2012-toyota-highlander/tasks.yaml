@@ -96,14 +96,20 @@ tasks:
     createdDate: '2026-07-11'
     completedDate: null
   - id: 7
-    title: Brake fluid test (moisture test strip) — twice yearly, spring & fall
+    title: 'Brake fluid & coolant test (Phoenix Systems test strips) — standing twice-yearly routine, spring & fall'
     notes: >-
-      Toyota specifies a time-based interval (not purely mileage-based);
-      at 12+ years old this is very likely overdue regardless of mileage.
-      UPDATED 2026-07-22: Brady confirmed (2026-07-22) he needs to test
-      the brake fluid with a test strip and replace if it fails — plans to
-      make this a standing twice-yearly check during the spring and fall
-      service passes going forward, not just a one-time flush.
+      CORRECTED 2026-07-22: Brady tests BOTH brake fluid and coolant each
+      spring and fall using Phoenix Systems 8006-B double-ended test
+      strips (bought 2025-07-28, $21.99, 15-strip pack — see
+      maintenance-log.yaml) — the strip reads actual chemical
+      condition/contamination rather than going by a calendar interval, so
+      fluid only gets replaced when a test actually fails. Both fluids
+      were tested this spring 2026 and PASSED — no replacement needed
+      right now. This is a standing routine, not a one-time to-do; next
+      test due fall 2026. Toyota's own guide has no scheduled brake-fluid
+      change item at all for this vehicle (see schedule.yaml), so this
+      test-strip routine is the real maintenance signal here, not the
+      36-month community-estimate figure.
     status: open
     createdDate: '2026-07-11'
     completedDate: null
