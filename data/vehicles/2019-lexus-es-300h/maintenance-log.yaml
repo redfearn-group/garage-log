@@ -38,13 +38,32 @@ entries:
       interpolated between the surrounding odometer readings — treat as
       rough.
     documents: []
+  - date: '2026-07-09'
+    mileage: 110324
+    itemType: ''
+    description: >-
+      Dealer diagnostic visit — TSB L-SB-0020-20 (low rear speaker volume)
+      investigated, plus asked about an Android Auto upgrade path
+    notes: >-
+      Added 2026-07-22 — this visit (see tasks.yaml #3) wasn't previously
+      in the log. Dealer quoted $1000+ for the amplifier replacement and
+      confirmed no official Android Auto upgrade path exists for this
+      infotainment generation. No repair performed; Brady is pursuing the
+      amp fix DIY instead (see tasks.yaml #8). Mileage interpolated
+      between the 2026-06-19 (106,926 mi) and 2026-07-12 (110,834 mi)
+      odometer readings — treat as rough.
+    documents: []
   - date: '2026-07-10'
-    mileage: 106862
+    mileage: 110494
     itemType: recall-verification
     description: Dealer stated all reported open recalls (including 19V544000, brake booster/ESC) were completed prior to sale
     notes: >-
       Independently confirmed via nhtsa.gov/recalls VIN-specific lookup on
       2026-07-10: 0 unrepaired recalls on this exact VIN. Corroborates the
       dealer's assurance — 19V544000 and any other issued recalls are
-      closed on this car, not just claimed.
+      closed on this car, not just claimed. CORRECTED 2026-07-22: mileage
+      was previously logged as 106,862, which is lower than the
+      2026-06-19 purchase-date reading (106,926 mi) — not possible.
+      Recalculated by interpolating between the 2026-06-19 (106,926 mi)
+      and 2026-07-12 (110,834 mi) odometer readings — treat as rough.
     documents: []
