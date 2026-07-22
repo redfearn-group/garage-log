@@ -271,48 +271,41 @@ entries:
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
     documents: []
-  - date: '2021-02-18'
-    mileage: 87992
+  - date: '2021-05-21'
+    mileage: 89600
     itemType: oil-change
     description: >-
       Oil change — Tim Dahle Ford, redeemed under the WFM package bought
-      2020-08-12 above, no charge (estimated)
+      2020-08-12 above, no charge
     notes: >-
-      Brady confirmed (2026-07-21) he only went to the dealer (Tim Dahle
-      Ford, via WFM packages) for oil changes from 2020-08-12 through
-      early 2025, following the truck's onboard oil-life monitor at
-      roughly a 6-7 month cadence (his standing minimum-2/year policy —
-      see schedule.yaml). No receipt on file for this specific visit — an
-      earlier note on the 2020-08-12 entry assumed this package "lapsed,"
-      but that assumption is superseded by Brady's confirmation that all
-      dealer visits through early 2025 actually happened. UPDATED
-      2026-07-21: date/mileage recalculated by evenly dividing the
-      2020-08-12 (81,599 mi) to 2022-09-12 (107,172 mi) gap into 4
-      intervals — the 2022-09-12 endpoint is now a confirmed oil change
-      (drained incidental to the oil pan gasket repair, see that entry),
-      replacing the earlier estimate that spanned all the way to
-      2023-05-09. Treat as a rough estimate until a receipt turns up.
+      CONFIRMED 2026-07-22 via Brady's own MyCARFAX maintenance log
+      ("Zeus CARFAX Maintenance Report - 05 JAN 2024.pdf", found in
+      Gmail) — replaces the earlier estimated 2021-02-18/87,992 mi date
+      with this real logged date/mileage. Exact services performed on
+      this specific visit weren't itemized in the export beyond the
+      dealer name; assumed to match the standard WFM oil-change/rotation/
+      MPI/brake-check bundle per Brady's confirmed practice.
     documents: []
-  - date: '2021-02-18'
-    mileage: 87992
+  - date: '2021-05-21'
+    mileage: 89600
     itemType: tire-rotation
-    description: Tire rotation — Tim Dahle Ford, part of the estimated 2021-02-18 visit
-    notes: Same estimate caveats as the oil-change entry above.
+    description: Tire rotation — Tim Dahle Ford, part of the 2021-05-21 visit
+    notes: Same sourcing/caveats as the oil-change entry above.
     documents: []
-  - date: '2021-02-18'
-    mileage: 87992
+  - date: '2021-05-21'
+    mileage: 89600
     itemType: multi-point-inspection
-    description: Multi-point inspection — Tim Dahle Ford, part of the estimated 2021-02-18 visit
-    notes: Same estimate caveats as the oil-change entry above.
+    description: Multi-point inspection — Tim Dahle Ford, part of the 2021-05-21 visit
+    notes: Same sourcing/caveats as the oil-change entry above.
     documents: []
-  - date: '2021-02-18'
-    mileage: 87992
+  - date: '2021-05-21'
+    mileage: 89600
     itemType: brake-inspection
-    description: Brake inspection — Tim Dahle Ford, part of the estimated 2021-02-18 visit
+    description: Brake inspection — Tim Dahle Ford, part of the 2021-05-21 visit
     notes: >-
       Brady confirmed (2026-07-21) every WFM package visit included brake
       checks, fluid checks/top-offs, and a tire rotation in addition to the
-      oil change and MPI. Same estimate caveats as the oil-change entry
+      oil change and MPI. Same sourcing/caveats as the oil-change entry
       above.
     documents: []
   - date: '2021-08-17'
@@ -334,82 +327,102 @@ entries:
       Mileage interpolated between the 2020-08-12 (81,599 mi) and 2022-09-12
       (107,172 mi) readings — a ~2-year gap, so treat as rough.
     documents: []
-  - date: '2021-08-27'
-    mileage: 94385
+  - date: '2021-07-20'
+    mileage: 91402
     itemType: oil-change
     description: >-
       Oil change — Tim Dahle Ford, redeemed under the WFM package bought
-      2020-08-12 above, no charge (estimated)
+      2020-08-12 above, no charge
     notes: >-
-      See the 2021-02-18 entry above for the full methodology note. No
-      receipt on file. Treat as a rough estimate until a receipt turns up.
+      CONFIRMED 2026-07-22 via Brady's own MyCARFAX maintenance log
+      ("Zeus CARFAX Maintenance Report - 05 JAN 2024.pdf", found in
+      Gmail) — replaces the earlier estimated 2021-08-27/94,385 mi date
+      with this real logged date/mileage; also matches a Tim Dahle Ford
+      appointment confirmation email for 7/19/2021. Exact services
+      performed weren't itemized in the export beyond the dealer name;
+      assumed to match the standard WFM bundle per Brady's confirmed
+      practice.
     documents: []
-  - date: '2021-08-27'
-    mileage: 94385
+  - date: '2021-07-20'
+    mileage: 91402
     itemType: tire-rotation
-    description: Tire rotation — Tim Dahle Ford, part of the estimated 2021-08-27 visit
-    notes: Same estimate caveats as the oil-change entry above.
+    description: Tire rotation — Tim Dahle Ford, part of the 2021-07-20 visit
+    notes: Same sourcing/caveats as the oil-change entry above.
     documents: []
-  - date: '2021-08-27'
-    mileage: 94385
+  - date: '2021-07-20'
+    mileage: 91402
     itemType: multi-point-inspection
-    description: Multi-point inspection — Tim Dahle Ford, part of the estimated 2021-08-27 visit
-    notes: Same estimate caveats as the oil-change entry above.
+    description: Multi-point inspection — Tim Dahle Ford, part of the 2021-07-20 visit
+    notes: Same sourcing/caveats as the oil-change entry above.
     documents: []
-  - date: '2021-08-27'
-    mileage: 94385
+  - date: '2021-07-20'
+    mileage: 91402
     itemType: brake-inspection
-    description: Brake inspection — Tim Dahle Ford, part of the estimated 2021-08-27 visit
+    description: Brake inspection — Tim Dahle Ford, part of the 2021-07-20 visit
     notes: >-
       Brady confirmed (2026-07-21) every WFM package visit included brake
       checks, fluid checks/top-offs, and a tire rotation in addition to the
-      oil change and MPI. Same estimate caveats as the oil-change entry
+      oil change and MPI. Same sourcing/caveats as the oil-change entry
       above.
     documents: []
-  - date: '2022-03-05'
-    mileage: 100778
+  - date: '2022-01-06'
+    mileage: 99857
     itemType: oil-change
-    description: >-
-      Oil change — Tim Dahle Ford, redeemed under the WFM package bought
-      2020-08-12 above, no charge (estimated)
+    description: '100K mile service — oil and filter changed — Tim Dahle Ford'
     notes: >-
-      See the 2021-02-18 entry above for the full methodology note. No
-      receipt on file. Treat as a rough estimate until a receipt turns up.
+      CONFIRMED 2026-07-22, replacing the earlier estimated 2022-03-05/
+      100,778 mi placeholder. Sourced from two independent pieces of
+      Brady's Gmail: (1) his own MyCARFAX maintenance log ("Zeus CARFAX
+      Maintenance Report - 05 JAN 2024.pdf"), which itemizes this exact
+      visit as "Vehicle serviced / Oil and filter changed / Tires rotated
+      / Cabin air filter replaced/cleaned / Antifreeze/coolant flushed/
+      changed / Brakes checked / Spark plug(s) replaced" at 99,857 mi;
+      and (2) a Jan 2024 warranty-claim email thread where Tim Dahle
+      service advisor Kevin Vrooman states directly "We did an oil change
+      here @ 99,857 miles 01/06/2022." No charge — redeemed under the WFM
+      package bought 2020-08-12 above.
     documents: []
-  - date: '2022-03-05'
-    mileage: 100778
+  - date: '2022-01-06'
+    mileage: 99857
     itemType: tire-rotation
-    description: Tire rotation — Tim Dahle Ford, part of the estimated 2022-03-05 visit
-    notes: Same estimate caveats as the oil-change entry above.
+    description: Tire rotation — Tim Dahle Ford, part of the 100K mile service above
+    notes: Same sourcing as the oil-change entry above.
     documents: []
-  - date: '2022-03-05'
-    mileage: 100778
+  - date: '2022-01-06'
+    mileage: 99857
     itemType: multi-point-inspection
-    description: Multi-point inspection — Tim Dahle Ford, part of the estimated 2022-03-05 visit
-    notes: Same estimate caveats as the oil-change entry above.
+    description: Multi-point inspection — Tim Dahle Ford, part of the 100K mile service above
+    notes: Same sourcing as the oil-change entry above.
     documents: []
-  - date: '2022-03-05'
-    mileage: 100778
+  - date: '2022-01-06'
+    mileage: 99857
     itemType: brake-inspection
-    description: Brake inspection — Tim Dahle Ford, part of the estimated 2022-03-05 visit
-    notes: >-
-      Brady confirmed (2026-07-21) every WFM package visit included brake
-      checks, fluid checks/top-offs, and a tire rotation in addition to the
-      oil change and MPI. Same estimate caveats as the oil-change entry
-      above.
+    description: Brakes checked — Tim Dahle Ford, part of the 100K mile service above
+    notes: Same sourcing as the oil-change entry above.
     documents: []
-  - date: '2022-03-05'
-    mileage: 100778
+  - date: '2022-01-06'
+    mileage: 99857
+    itemType: cabin-air-filter
+    description: Cabin air filter replaced/cleaned — Tim Dahle Ford, part of the 100K mile service above
+    notes: Same sourcing as the oil-change entry above — this detail wasn't previously captured.
+    documents: []
+  - date: '2022-01-06'
+    mileage: 99857
+    itemType: coolant-flush
+    description: Coolant flushed/changed — Tim Dahle Ford, part of the 100K mile service above
+    notes: >-
+      Same sourcing as the oil-change entry above — this is the first
+      confirmed coolant flush anywhere in Zeus's history; not previously
+      captured. Resets the coolant-flush schedule clock from this date.
+    documents: []
+  - date: '2022-01-06'
+    mileage: 99857
     itemType: spark-plugs
     description: Spark plugs replaced — Tim Dahle Ford, 100K mile service
     notes: >-
-      Brady confirmed (2026-07-22) he had a "100K service" done that
-      included spark plug replacement plus other work, but has no RO on
-      file for it. Placed at this dealer visit — the closest logged visit
-      to 100,000 mi and the same date/mileage as this estimated WFM
-      package visit — since that's the most likely occasion for a
-      100K-mile dealer service. Treat the exact date as approximate; the
-      mileage (~100K) is the confirmed anchor.
+      CONFIRMED 2026-07-22 — same sourcing as the oil-change entry above.
+      Previously placed at the estimated 2022-03-05/100,778 mi visit;
+      moved here now that the real date/mileage is confirmed.
     documents: []
   - date: '2022-07-01'
     mileage: 104719
@@ -706,6 +719,17 @@ entries:
       - 20231227-tim-dahle-major-warranty-repairs.pdf
   - date: '2023-12-27'
     mileage: 124020
+    itemType: multi-point-inspection
+    description: Complimentary Quick Lane multi-point inspection — Tim Dahle Ford, no charge, same visit as the warranty repairs above.
+    notes: >-
+      Listed as its own line item (#6) on the R/O among the 7 items already
+      logged for this visit; missed in the initial pass through this invoice
+      — added on the 2026-07-22 document-completeness sweep. No findings
+      noted beyond what's already captured elsewhere on this R/O.
+    documents:
+      - 20231227-tim-dahle-major-warranty-repairs.pdf
+  - date: '2023-12-27'
+    mileage: 124020
     itemType: oil-change
     description: Oil change (incidental to the timing cover / rear main seal repair) — Tim Dahle Ford
     notes: >-
@@ -727,39 +751,57 @@ entries:
       (see below) in place of the old 2024-04-02/2024-09-14 pair.
     documents:
       - 20231227-tim-dahle-major-warranty-repairs.pdf
-  - date: '2024-07-29'
+  - date: '2024-01-23'
+    mileage: 124030
+    itemType: ''
+    description: Follow-up/retest visit — Tim Dahle Ford
+    notes: >-
+      ADDED 2026-07-22 from Gmail (Ford post-visit review-request emails
+      dated 1/27/24 and 1/30/24, both confirming "your recent 2015 FORD
+      F-150 service visit on January 23, 2024"). No RO/invoice on file
+      for this specific visit. Mileage (124,030 mi) is an existing
+      confirmed reading from mileage-log.yaml, barely 10 mi past the
+      2023-12-27 reading — strongly suggests this was a warranty
+      retest/follow-up tied to the major timing cover/rear main seal/
+      pinion seal repair done that day (the RO for that repair
+      explicitly calls for "RETEST" on multiple line items), not an
+      independent new service. No specific work items confirmed.
+    documents: []
+  - date: '2024-07-31'
     mileage: 132081
     itemType: oil-change
     description: >-
       Oil change — Tim Dahle Ford, redeemed under the WFM package bought
-      2023-05-09 above, no charge (estimated)
+      2023-05-09 above, no charge
     notes: >-
-      See the 2021-02-18 entry for the full methodology note. Recalculated
-      2026-07-21 as the midpoint of the 2023-12-27 (confirmed, incidental
-      to the timing cover/rear main seal repair) to 2025-02-25 (confirmed)
-      gap. No receipt on file. Treat as a rough estimate until a receipt
-      turns up.
+      DATE CONFIRMED 2026-07-22, moved from the estimated 2024-07-29
+      placeholder to 2024-07-31 — a Ford post-visit review-request email
+      explicitly cites "your recent 2015 FORD F-150 service visit on
+      July 31, 2024" (an appointment for this same window was originally
+      confirmed for 2024-07-25, so the visit may have spanned or been
+      rescheduled within that week). Mileage is still an estimate — no
+      odometer reading independently confirmed for this exact date.
     documents: []
-  - date: '2024-07-29'
+  - date: '2024-07-31'
     mileage: 132081
     itemType: tire-rotation
-    description: Tire rotation — Tim Dahle Ford, part of the estimated 2024-07-29 visit
-    notes: Same estimate caveats as the oil-change entry above.
+    description: Tire rotation — Tim Dahle Ford, part of the 2024-07-31 visit
+    notes: Same sourcing/caveats as the oil-change entry above.
     documents: []
-  - date: '2024-07-29'
+  - date: '2024-07-31'
     mileage: 132081
     itemType: multi-point-inspection
-    description: Multi-point inspection — Tim Dahle Ford, part of the estimated 2024-07-29 visit
-    notes: Same estimate caveats as the oil-change entry above.
+    description: Multi-point inspection — Tim Dahle Ford, part of the 2024-07-31 visit
+    notes: Same sourcing/caveats as the oil-change entry above.
     documents: []
-  - date: '2024-07-29'
+  - date: '2024-07-31'
     mileage: 132081
     itemType: brake-inspection
-    description: Brake inspection — Tim Dahle Ford, part of the estimated 2024-07-29 visit
+    description: Brake inspection — Tim Dahle Ford, part of the 2024-07-31 visit
     notes: >-
       Brady confirmed (2026-07-21) every WFM package visit included brake
       checks, fluid checks/top-offs, and a tire rotation in addition to the
-      oil change and MPI. Same estimate caveats as the oil-change entry
+      oil change and MPI. Same sourcing/caveats as the oil-change entry
       above.
     documents: []
   - date: '2024-04-14'
@@ -1075,6 +1117,18 @@ entries:
       have incorrectly reset that schedule item's due date.
     documents:
       - 20251209-tim-dahle-vacuum-pump-camera-mirror-axle.pdf
+  - date: '2025-12-09'
+    mileage: 151830
+    itemType: multi-point-inspection
+    description: Complimentary Quick Lane multi-point inspection (vehicle check-up) — Tim Dahle Ford, no charge, same visit as the repairs above.
+    notes: >-
+      Listed as its own line item (#7, "PERFORM VEHICLE CHECK-UP... COMPLIMENTARY
+      QUICK LANE MULTI-POINT INSPECTION") on the R/O; missed in the initial
+      pass through this invoice — added on the 2026-07-22
+      document-completeness sweep. No findings noted beyond what's already
+      captured elsewhere on this R/O.
+    documents:
+      - 20251209-tim-dahle-vacuum-pump-camera-mirror-axle.pdf
   - date: '2026-01-30'
     mileage: 152431
     itemType: ''
@@ -1123,6 +1177,35 @@ entries:
       history isn't readily searchable for past item purchases), so this is
       reconstructed from Brady's memory. Exact date is approximate. Mileage
       interpolated from the surrounding odometer readings — treat as rough.
+    documents: []
+  - date: '2026-03-18'
+    mileage: 153762
+    itemType: multi-point-inspection
+    description: Multi-point inspection — Tim Dahle Ford
+    notes: >-
+      ADDED 2026-07-22 from Gmail — a "Please review your services" MPI
+      results email from Tim Dahle Ford dated 2026-03-18 confirms this
+      visit; the actual detailed results were behind a since-expired
+      customer portal link, so specific findings aren't captured. Date
+      used as the log date; mileage interpolated between the 2026-02-21
+      (153,240 mi) and 2026-07-12 (155,407.7 mi) readings — treat as
+      rough.
+    documents: []
+  - date: '2026-03-18'
+    mileage: 153762
+    itemType: ''
+    description: Driver's seat heater repaired — DIY
+    notes: >-
+      ADDED 2026-07-22 from Gmail — a Mar 24, 2026 email from Assistant
+      Service Manager Kevin Vrooman references this repair: Brady had
+      already fixed the seat heater himself by the time the truck came
+      in for the MPI above, so the dealer arranged to submit the repair
+      invoice as "completed" (even though Brady did it) to cover
+      restocking fees on special-order parts from an earlier approved
+      warranty job, at no cost to Brady. Brady confirmed (2026-07-22) he
+      doesn't remember the exact date he did the DIY fix — dated here to
+      match the MPI visit above since the two appear closely related;
+      treat the date as a rough placeholder pending a better source.
     documents: []
   - date: '2026-04-08'
     mileage: 153950

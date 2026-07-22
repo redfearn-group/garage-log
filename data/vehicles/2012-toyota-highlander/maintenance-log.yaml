@@ -475,7 +475,12 @@ entries:
     notes: >-
       $0.00 (service contract). Invoice
       notes "eligible for new maintenance package at next visit," i.e. this
-      package's 3rd visit would be the last.
+      package's 3rd visit would be the last. Invoice also lists a declined,
+      no-charge "added operation" reading "bf and rear brakes" — likely
+      brake fluid and/or rear brakes flagged by the advisor, but the
+      abbreviation isn't spelled out on the invoice and no repair was
+      performed or charged, so not logging it as a specific fact beyond
+      this note.
     documents:
       - 20240725-tim-dahle-wfm-visit2.pdf
   - date: '2024-05-15'
