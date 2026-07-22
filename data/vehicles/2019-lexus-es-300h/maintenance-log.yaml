@@ -1,4 +1,440 @@
 entries:
+  - date: '2019-04-30'
+    mileage: 10
+    itemType: ''
+    description: >-
+      Pre-delivery inspection completed; fabric protection, leather/vinyl
+      treatment, and paint protection applied — Larry H. Miller Lexus
+      Murray
+    notes: >-
+      Added 2026-07-22 from the CARFAX Vehicle History Report (pulled by
+      Lexus of Murray, dated 2026-05-28) — the car's full pre-Brady service
+      history was never transcribed into this log before now. This is the
+      original new-vehicle prep before the car's first lease (Owner 1,
+      2019-2023).
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2019-06-07'
+    mileage: 11
+    itemType: ''
+    description: Vehicle serviced — Larry H. Miller Lexus Murray
+    notes: >-
+      From CARFAX (see 2019-04-30 entry for source detail) — no service
+      detail listed on the report beyond "Vehicle serviced."
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2019-07-12'
+    mileage: 1242
+    itemType: ''
+    description: Vehicle serviced — Larry Miller Lexus
+    notes: From CARFAX — no service detail listed beyond "Vehicle serviced."
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2019-10-29'
+    mileage: 5608
+    itemType: tire-rotation
+    description: 5,000 mile service performed, tires rotated — Larry Miller Lexus
+    notes: From CARFAX — bundled "5,000 mile service" visit, only tire rotation itemized.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2020-02-26'
+    mileage: 10415
+    itemType: ''
+    description: 10,000 mile service performed, tire condition and pressure checked — Larry Miller Lexus
+    notes: From CARFAX — no oil change or rotation explicitly itemized for this visit.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2020-07-22'
+    mileage: 16620
+    itemType: ''
+    description: Maintenance inspection completed — Larry Miller Lexus
+    notes: From CARFAX — no further detail listed.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2020-12-04'
+    mileage: 23226
+    itemType: ''
+    description: Vehicle serviced — Larry Miller Lexus
+    notes: From CARFAX — no service detail listed beyond "Vehicle serviced."
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2021-04-09'
+    mileage: 28328
+    itemType: ''
+    description: >-
+      Four-wheel alignment performed and tire(s) replaced (Big O Tires,
+      Draper UT), same day as a Larry Miller Lexus service visit (no
+      further detail on that visit)
+    notes: From CARFAX — two same-day records combined into one entry.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2021-05-26'
+    mileage: 32007
+    itemType: ''
+    description: Tire(s) replaced — Big O Tires (Draper, UT)
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2021-07-15'
+    mileage: 34731
+    itemType: ''
+    description: 'Vehicle serviced; alignment checked — Larry H. Miller Lexus Murray'
+    notes: From CARFAX — two same-day records combined into one entry.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2021-08-05'
+    mileage: 35360
+    itemType: ''
+    description: Vehicle serviced — Larry Miller Lexus
+    notes: From CARFAX — no service detail listed beyond "Vehicle serviced."
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2021-11-05'
+    mileage: 40501
+    itemType: ''
+    description: Vehicle serviced — Larry Miller Lexus
+    notes: From CARFAX — no service detail listed beyond "Vehicle serviced."
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2022-03-10'
+    mileage: 45983
+    itemType: oil-change
+    description: Maintenance inspection completed, oil and filter changed — Larry H. Miller Lexus Murray
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2022-03-10'
+    mileage: 45983
+    itemType: tire-rotation
+    description: Tires rotated — Larry H. Miller Lexus Murray, same visit as the oil change above
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2022-06-29'
+    mileage: 51486
+    itemType: oil-change
+    description: Maintenance inspection completed, oil and filter changed — Larry H. Miller Lexus Murray
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2022-06-29'
+    mileage: 51486
+    itemType: tire-rotation
+    description: Tires rotated — Larry H. Miller Lexus Murray, same visit as the oil change above
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2022-06-29'
+    mileage: 51486
+    itemType: cabin-air-filter
+    description: Cabin air filter replaced/cleaned — Larry H. Miller Lexus Murray, same visit as the oil change above
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2022-12-08'
+    mileage: 56872
+    itemType: brake-inspection
+    description: 'Maintenance inspection completed, 55,000 mile service performed, brakes checked — Larry H. Miller Lexus Murray'
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2022-12-08'
+    mileage: 56872
+    itemType: tire-rotation
+    description: Tires rotated — Larry H. Miller Lexus Murray, same visit as the brake check above
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2023-01-24'
+    mileage: 58786
+    itemType: ''
+    description: Emissions inspection performed — Larry H. Miller Lexus Murray
+    notes: >-
+      From CARFAX — last recorded service under Owner 1 before the car was
+      sold to Owner 2 (title/registration transferred 2023-02-14, per
+      CARFAX).
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2023-03-29'
+    mileage: 61672
+    itemType: brake-inspection
+    description: 'Brakes checked — Larry H. Miller Lexus Murray'
+    notes: >-
+      From CARFAX — first recorded service under Owner 2. Bundled visit:
+      brakes checked, brake fluid flushed/changed (see separate entry),
+      four tires balanced/mounted/replaced, oil and filter changed (see
+      separate entry), tire(s) replaced, tires rotated (see separate
+      entry), wiper(s) replaced (see separate entry).
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2023-03-29'
+    mileage: 61672
+    itemType: brake-fluid-flush
+    description: Brake fluid flushed/changed — Larry H. Miller Lexus Murray, same visit as the brake check above
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2023-03-29'
+    mileage: 61672
+    itemType: oil-change
+    description: Oil and filter changed — Larry H. Miller Lexus Murray, same visit as the brake check above
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2023-03-29'
+    mileage: 61672
+    itemType: tire-rotation
+    description: Tires rotated — Larry H. Miller Lexus Murray, same visit as the brake check above
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2023-03-29'
+    mileage: 61672
+    itemType: wiper-blades
+    description: Wiper blade(s) replaced — Larry H. Miller Lexus Murray, same visit as the brake check above
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2023-03-29'
+    mileage: 61672
+    itemType: ''
+    description: Four tires balanced/mounted/replaced — new tire set — Larry H. Miller Lexus Murray
+    notes: From CARFAX, same visit as the brake check above.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2023-06-06'
+    mileage: 61941
+    itemType: ''
+    description: Four tires balanced/mounted/replaced — Larry H. Miller Lexus Murray
+    notes: >-
+      From CARFAX — likely a warranty/follow-up adjustment on the tire set
+      installed 10 days earlier (2023-03-29), given the small mileage gap.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2023-08-19'
+    mileage: 67053
+    itemType: oil-change
+    description: Electrical system checked, oil and filter changed — Larry H. Miller Lexus Murray
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2023-08-19'
+    mileage: 67053
+    itemType: tire-rotation
+    description: Tires rotated — Larry H. Miller Lexus Murray, same visit as the oil change above
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2024-02-13'
+    mileage: 72593
+    itemType: oil-change
+    description: 'Four-wheel alignment performed, oil and filter changed — Larry H. Miller Lexus Murray'
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2024-02-13'
+    mileage: 72593
+    itemType: tire-rotation
+    description: Tires rotated — Larry H. Miller Lexus Murray, same visit as the oil change above
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2024-07-07'
+    mileage: 77598
+    itemType: oil-change
+    description: Oil and filter changed — Larry H. Miller Lexus Murray
+    notes: From CARFAX — only item listed for this visit.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2024-11-05'
+    mileage: 83035
+    itemType: oil-change
+    description: 'Air filter replaced, brakes checked, oil and filter changed — Larry H. Miller Lexus Murray'
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2024-11-05'
+    mileage: 83035
+    itemType: engine-air-filter
+    description: Engine air filter replaced — Larry H. Miller Lexus Murray, same visit as the oil change above
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2024-11-05'
+    mileage: 83035
+    itemType: brake-inspection
+    description: Brakes checked — Larry H. Miller Lexus Murray, same visit as the oil change above
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2025-04-01'
+    mileage: 88067
+    itemType: oil-change
+    description: Maintenance inspection completed, oil and filter changed — Larry H. Miller Lexus Murray
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2025-04-01'
+    mileage: 88067
+    itemType: tire-rotation
+    description: Tires rotated — Larry H. Miller Lexus Murray, same visit as the oil change above
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2025-07-17'
+    mileage: 93591
+    itemType: oil-change
+    description: Maintenance inspection completed, oil and filter changed — Larry H. Miller Lexus Murray
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2025-07-17'
+    mileage: 93591
+    itemType: tire-rotation
+    description: Tires rotated — Larry H. Miller Lexus Murray, same visit as the oil change above
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2025-07-17'
+    mileage: 93591
+    itemType: brake-fluid-flush
+    description: Brake fluid flushed/changed — Larry H. Miller Lexus Murray, same visit as the oil change above
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2025-09-19'
+    mileage: 95800
+    itemType: ''
+    description: Glass repaired — Glass America
+    notes: >-
+      From CARFAX — no mileage given on the report; interpolated between
+      the 2025-07-17 (93,591 mi) and 2025-12-10 (98,704 mi) readings —
+      treat as rough.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2025-12-10'
+    mileage: 98704
+    itemType: oil-change
+    description: Maintenance inspection completed, oil and filter changed — Lexus of Murray
+    notes: From CARFAX — only item listed for this visit.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2026-01-08'
+    mileage: 100700
+    itemType: engine-air-filter
+    description: 'Maintenance inspection completed, air filter replaced — Lexus of Murray'
+    notes: >-
+      From CARFAX — no mileage given on the report; interpolated between
+      the 2025-12-10 (98,704 mi) and 2026-04-15 (104,975 mi) readings —
+      treat as rough. Bundled visit: alignment checked, brake fluid
+      flushed/changed (see separate entry), cabin air filter replaced/
+      cleaned (see separate entry), window(s) checked.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2026-01-08'
+    mileage: 100700
+    itemType: cabin-air-filter
+    description: Cabin air filter replaced/cleaned — Lexus of Murray, same visit as the air filter change above
+    notes: Same mileage-interpolation caveat as the engine air filter entry above.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2026-01-08'
+    mileage: 100700
+    itemType: brake-fluid-flush
+    description: Brake fluid flushed/changed — Lexus of Murray, same visit as the air filter change above
+    notes: Same mileage-interpolation caveat as the engine air filter entry above.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2026-04-15'
+    mileage: 104975
+    itemType: oil-change
+    description: Maintenance inspection completed, oil and filter changed — Lexus of Murray
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2026-04-15'
+    mileage: 104975
+    itemType: engine-air-filter
+    description: Engine air filter replaced — Lexus of Murray, same visit as the oil change above
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2026-04-15'
+    mileage: 104975
+    itemType: cabin-air-filter
+    description: Cabin air filter replaced/cleaned — Lexus of Murray, same visit as the oil change above
+    notes: From CARFAX.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2026-04-15'
+    mileage: 104975
+    itemType: transmission-fluid-service
+    description: 'Transmission fluid changed — Lexus of Murray, same visit as the oil change above'
+    notes: >-
+      From CARFAX, listed verbatim as "Transmission fluid changed." Flagged
+      as uncertain: per schedule.yaml's transmission-fluid-service item,
+      Lexus's own literature states the eCVT transaxle is a SEALED unit
+      with no scheduled fluid check or replacement — so this could
+      genuinely be a fluid service, or could be Carfax/dealer shorthand for
+      the transaxle leak inspection that IS on Lexus's real schedule.
+      Logged as reported since it's the only record available; worth
+      keeping the "sealed transaxle" caveat in mind rather than assuming
+      a full fluid change definitely happened.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2026-05-26'
+    mileage: 106890
+    itemType: oil-change
+    description: Pre-delivery inspection completed, oil and filter changed — Lexus of Murray
+    notes: >-
+      From CARFAX — no exact mileage given; interpolated between "offered
+      for sale" (106,854 mi, 2026-05-21) and Brady's purchase (106,926 mi,
+      2026-06-19) — treat as rough. This is the dealer's pre-sale prep
+      before selling the car to Brady, and matches the existing note on
+      Brady's own first oil-change entry ("oil/color had been good since
+      the dealer replaced it right before purchase").
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2026-05-26'
+    mileage: 106890
+    itemType: engine-air-filter
+    description: Engine air filter replaced — Lexus of Murray, pre-delivery prep
+    notes: Same mileage-interpolation caveat as the oil-change entry above.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2026-05-26'
+    mileage: 106890
+    itemType: cabin-air-filter
+    description: Cabin air filter replaced/cleaned — Lexus of Murray, pre-delivery prep
+    notes: Same mileage-interpolation caveat as the oil-change entry above.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2026-05-26'
+    mileage: 106890
+    itemType: ''
+    description: >-
+      Valve cover gasket(s) replaced — Lexus of Murray, pre-delivery prep
+      before offering the car for sale
+    notes: >-
+      From CARFAX, listed as its own line item on the pre-delivery service.
+      No symptom/reason given on the report — likely a minor oil seep
+      found and proactively addressed during the dealer's pre-sale
+      inspection, not a customer complaint (car had just been "offered for
+      sale" 5 days earlier per the same report). Worth keeping in mind as
+      a watch item if any oil seepage is ever noticed near the valve
+      covers, though there's no indication of an active problem. Same
+      mileage-interpolation caveat as the oil-change entry above.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2026-05-26'
+    mileage: 106890
+    itemType: ''
+    description: >-
+      Four tires balanced/mounted, alignment checked, emissions inspection
+      performed — Lexus of Murray, pre-delivery prep
+    notes: Same mileage-interpolation caveat as the oil-change entry above.
+    documents:
+      - 20260528-carfax-report.pdf
   - date: '2026-06-24'
     mileage: 107776
     itemType: ''
@@ -61,12 +497,15 @@ entries:
       Independently confirmed via nhtsa.gov/recalls VIN-specific lookup on
       2026-07-10: 0 unrepaired recalls on this exact VIN. Corroborates the
       dealer's assurance — 19V544000 and any other issued recalls are
-      closed on this car, not just claimed. CORRECTED 2026-07-22: mileage
-      was previously logged as 106,862, which is lower than the
-      2026-06-19 purchase-date reading (106,926 mi) — not possible.
-      Recalculated by interpolating between the 2026-06-19 (106,926 mi)
-      and 2026-07-12 (110,834 mi) odometer readings — treat as rough.
-    documents: []
+      closed on this car, not just claimed. Also corroborated by the
+      CARFAX report (added 2026-07-22): "No Recalls Reported" for both
+      owners. CORRECTED 2026-07-22: mileage was previously logged as
+      106,862, which is lower than the 2026-06-19 purchase-date reading
+      (106,926 mi) — not possible. Recalculated by interpolating between
+      the 2026-06-19 (106,926 mi) and 2026-07-12 (110,834 mi) odometer
+      readings — treat as rough.
+    documents:
+      - 20260528-carfax-report.pdf
   - date: '2026-07-22'
     mileage: 110834
     itemType: ''
