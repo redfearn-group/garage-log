@@ -1,4 +1,20 @@
 entries:
+  - date: '2018-05-23'
+    mileage: 44240
+    itemType: ''
+    description: >-
+      Truck purchased — Clegg Auto Sales (Spanish Fork, UT), 2015 Ford
+      F-150 XLT, silver, VIN 1FTEW1EG7FKE00733. $35,900 cash price
+      ($38,823.86 amount financed incl. doc fee/tax/reg, 4.240% APR, 72
+      monthly payments via Utah Community Credit Union).
+    notes: >-
+      Bill of sale + odometer disclosure + retail installment contract on
+      file. Odometer disclosed as actual mileage (44,240 mi), no
+      discrepancy. This is the purchase date/mileage referenced in several
+      later entries' notes (e.g. the 2018-11-23 oil change, the 2020-10-24
+      battery) but hadn't previously had its own log entry.
+    documents:
+      - 20180523-clegg-auto-purchase-docs.pdf
   - date: '2018-06-05'
     mileage: 44730
     itemType: ''
@@ -145,6 +161,13 @@ entries:
       (including U2100), reset the IPMA module, cleared codes, road-tested
       and verified adaptive speed control operation.
     notes: '$135.00 (1.0 hr diagnostic labor).'
+    documents:
+      - 20191118-tim-dahle-adaptive-cruise-recalibration.pdf
+  - date: '2019-11-18'
+    mileage: 69553
+    itemType: multi-point-inspection
+    description: Complete multi-point inspection — Tim Dahle Ford, no charge, same visit as the adaptive cruise recalibration above.
+    notes: 'Listed twice on the R/O (items #2 and #4), no findings noted.'
     documents:
       - 20191118-tim-dahle-adaptive-cruise-recalibration.pdf
   - date: '2019-12-09'
@@ -762,19 +785,22 @@ entries:
       between the 2024-01-23 (124,030 mi) and 2025-04-07 (140,842 mi)
       readings, a 15-month gap with no other data points — treat as rough.
       Update if a better source turns up.
-    documents: []
+    documents:
+      - car-repairs-for-may-2024-planning-doc.pdf
   - date: '2024-05-15'
     mileage: 127800
     itemType: engine-air-filter
     description: Engine air filter cleaned (not replaced) — DIY
     notes: Same estimated date/mileage caveat as the cabin air filter entry above — see there for the interpolation basis.
-    documents: []
+    documents:
+      - car-repairs-for-may-2024-planning-doc.pdf
   - date: '2024-05-15'
     mileage: 127800
     itemType: ''
     description: 'Fuel system cleaner (Bernie''s), drain holes cleared (sunroof, doors, AC drain, fenders), MAF sensor cleaned — DIY'
     notes: Same estimated date/mileage caveat as the cabin air filter entry above.
-    documents: []
+    documents:
+      - car-repairs-for-may-2024-planning-doc.pdf
   - date: '2024-05-15'
     mileage: 127800
     itemType: ''
@@ -784,13 +810,15 @@ entries:
       issue already tracked on the watch list — see watch-list.yaml, status
       updated to "addressed." Same estimated date/mileage caveat as the
       cabin air filter entry above.
-    documents: []
+    documents:
+      - car-repairs-for-may-2024-planning-doc.pdf
   - date: '2024-05-15'
     mileage: 127800
     itemType: ''
     description: AC system vacuum & refill — DIY
     notes: Same estimated date/mileage caveat as the cabin air filter entry above.
-    documents: []
+    documents:
+      - car-repairs-for-may-2024-planning-doc.pdf
   - date: '2024-05-17'
     mileage: 128674
     itemType: ''
@@ -1035,6 +1063,16 @@ entries:
       had a rental for this repair — flagged to the advisor
       2026-07-14 for a corrected RO. The $200 (and any tax calculated on
       it) should come off the $3,428.72 total once corrected.
+
+      Left un-tagged (itemType '') rather than rear-diff-transfer-case:
+      item (5) was a leak REPAIR (front axle seal/bolts/spacer kit, plus a
+      fluid top-off with the replacement seal installed), not the
+      scheduled BG differential/transfer-case SERVICE that itemType
+      tracks — confirmed still outstanding by the very next visit, the
+      2026-01-09 Tim Dahle estimate, which flags front differential,
+      rear differential, and transfer case all as "no service history"
+      (see task #3/#11). Tagging this entry rear-diff-transfer-case would
+      have incorrectly reset that schedule item's due date.
     documents:
       - 20251209-tim-dahle-vacuum-pump-camera-mirror-axle.pdf
   - date: '2026-01-30'
