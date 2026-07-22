@@ -176,3 +176,30 @@ tasks:
     status: open
     createdDate: '2026-07-17'
     completedDate: null
+  - id: 14
+    title: 'Switch from K&N reusable air filters (cabin + engine) to disposable — planned spring 2027'
+    notes: >-
+      Brady confirmed (2026-07-22) both the cabin (VF2049) and engine
+      (K&N) air filters are washable/reusable, cleaned every spring rather
+      than replaced — currently clean and working, not an active gap. He
+      wants to switch to disposable filters starting the spring 2027
+      service pass. See schedule.yaml's cabin-air-filter/engine-air-filter
+      notes for the washable-filter context.
+    status: open
+    createdDate: '2026-07-22'
+    completedDate: null
+  - id: 15
+    title: 'Weekend check (2026-07-25): 12V battery age and brake fluid condition'
+    notes: >-
+      From this week's fleet review — two items not currently tracked
+      anywhere else. 12V AGM battery was installed 2020-10-24 and tested
+      good in April 2026 (621 CCA), but it's now past the typical 5-year
+      AGM service-life mark with no replacement plan on file — worth a
+      fresh load test and a decision on proactive replacement. Brake
+      fluid was last flushed 2022-12-22 (incidental to a burst brake line
+      repair), ~7 months past the 36-month community-standard interval —
+      task #10's spring checklist only tests coolant/brake fluid
+      condition, nothing currently tracks an actual flush if warranted.
+    status: open
+    createdDate: '2026-07-22'
+    completedDate: null

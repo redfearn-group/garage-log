@@ -72,11 +72,27 @@ items:
     intervalMiles: 5000
     intervalMonths: 6
   - itemType: cabin-air-filter
-    name: Cabin air filter — Toyota normal-schedule 30,000 mi/36 mo (confirmed in 2013 Highlander WMG Schedule A/B tables)
+    name: >-
+      Cabin air filter — Toyota normal-schedule 30,000 mi/36 mo (confirmed
+      in 2013 Highlander WMG Schedule A/B tables). UPDATED 2026-07-22:
+      Hera runs a K&N washable/reusable cabin air filter (VF2000), washed
+      every spring rather than replaced on Toyota's mileage interval —
+      confirmed clean and working as of 2026-07-22 (a 2024-05-15 wash is
+      logged, but not itemType-tagged, which made this look overdue by
+      the schedule's automated calculation — it isn't). Brady plans to
+      switch to disposable filters starting spring 2027 (see tasks.yaml).
     intervalMiles: 30000
     intervalMonths: 36
   - itemType: engine-air-filter
-    name: Engine air filter — Toyota normal-schedule 30,000 mi/36 mo (confirmed in 2013 Highlander WMG Schedule A/B tables)
+    name: >-
+      Engine air filter — Toyota normal-schedule 30,000 mi/36 mo (confirmed
+      in 2013 Highlander WMG Schedule A/B tables). UPDATED 2026-07-22:
+      Hera runs a K&N washable/reusable engine air filter (33-2260), washed
+      every spring rather than replaced on Toyota's mileage interval —
+      confirmed clean and working as of 2026-07-22 (same 2024-05-15
+      untagged wash and same automated-overdue-flag caveat as the cabin
+      filter above). Brady plans to switch to disposable filters starting
+      spring 2027 (see tasks.yaml).
     intervalMiles: 30000
     intervalMonths: 36
   - itemType: brake-inspection

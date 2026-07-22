@@ -44,7 +44,15 @@ items:
     intervalMiles: 10000
     intervalMonths: 12
   - itemType: engine-air-filter
-    name: Engine air filter — Ford ~30,000 mi
+    name: >-
+      Engine air filter — UPDATED 2026-07-22: Zeus runs a K&N washable/
+      reusable engine air filter (Brady declined the dealer's disposable-
+      filter recommendation more than once for this reason). Brady washes
+      it every spring rather than replacing it on a mileage interval — the
+      30,000 mi figure below is really a "check/wash by" prompt, not a
+      replacement due date. Confirmed clean and working as of 2026-07-22.
+      Brady plans to switch to disposable filters starting spring 2027
+      (see tasks.yaml).
     intervalMiles: 30000
     intervalMonths: null
   - itemType: cabin-air-filter
@@ -56,7 +64,12 @@ items:
       file wrongly attributed a 20,000 mi figure to Ford). 20,000 mi is
       kept as a COMMUNITY/industry-standard estimate (widely-cited
       15,000-20,000 mi range from parts retailers and independent shops),
-      not an official Ford interval.
+      not an official Ford interval. UPDATED 2026-07-22: Zeus also runs a
+      K&N washable/reusable cabin air filter (VF2049), washed every spring
+      rather than replaced on a mileage interval — same caveat as the
+      engine air filter above. Confirmed clean and working as of
+      2026-07-22. Brady plans to switch to disposable filters starting
+      spring 2027 (see tasks.yaml).
     intervalMiles: 20000
     intervalMonths: null
   - itemType: brake-inspection
