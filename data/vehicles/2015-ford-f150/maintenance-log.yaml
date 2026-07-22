@@ -203,6 +203,16 @@ entries:
       - 20200812-tim-dahle-worry-free-maintenance.pdf
   - date: '2020-08-12'
     mileage: 81599
+    itemType: brake-inspection
+    description: Brake inspection — Tim Dahle Ford, no charge, part of the Worry Free Maintenance package.
+    notes: >-
+      Brady confirmed (2026-07-21) every WFM package visit included brake
+      checks, fluid checks/top-offs, and a tire rotation in addition to the
+      oil change and MPI — added here to fill out the visit's full scope.
+    documents:
+      - 20200812-tim-dahle-worry-free-maintenance.pdf
+  - date: '2020-08-12'
+    mileage: 81599
     itemType: battery-test
     description: Battery tested — Tim Dahle Ford, 655 CCA actual vs 610 CCA factory spec, good condition, no leaks/damage.
     documents:
@@ -272,6 +282,16 @@ entries:
     description: Multi-point inspection — Tim Dahle Ford, part of the estimated 2021-02-18 visit
     notes: Same estimate caveats as the oil-change entry above.
     documents: []
+  - date: '2021-02-18'
+    mileage: 87992
+    itemType: brake-inspection
+    description: Brake inspection — Tim Dahle Ford, part of the estimated 2021-02-18 visit
+    notes: >-
+      Brady confirmed (2026-07-21) every WFM package visit included brake
+      checks, fluid checks/top-offs, and a tire rotation in addition to the
+      oil change and MPI. Same estimate caveats as the oil-change entry
+      above.
+    documents: []
   - date: '2021-08-17'
     mileage: 94027
     itemType: brake-inspection
@@ -313,6 +333,16 @@ entries:
     description: Multi-point inspection — Tim Dahle Ford, part of the estimated 2021-08-27 visit
     notes: Same estimate caveats as the oil-change entry above.
     documents: []
+  - date: '2021-08-27'
+    mileage: 94385
+    itemType: brake-inspection
+    description: Brake inspection — Tim Dahle Ford, part of the estimated 2021-08-27 visit
+    notes: >-
+      Brady confirmed (2026-07-21) every WFM package visit included brake
+      checks, fluid checks/top-offs, and a tire rotation in addition to the
+      oil change and MPI. Same estimate caveats as the oil-change entry
+      above.
+    documents: []
   - date: '2022-03-05'
     mileage: 100778
     itemType: oil-change
@@ -334,6 +364,16 @@ entries:
     itemType: multi-point-inspection
     description: Multi-point inspection — Tim Dahle Ford, part of the estimated 2022-03-05 visit
     notes: Same estimate caveats as the oil-change entry above.
+    documents: []
+  - date: '2022-03-05'
+    mileage: 100778
+    itemType: brake-inspection
+    description: Brake inspection — Tim Dahle Ford, part of the estimated 2022-03-05 visit
+    notes: >-
+      Brady confirmed (2026-07-21) every WFM package visit included brake
+      checks, fluid checks/top-offs, and a tire rotation in addition to the
+      oil change and MPI. Same estimate caveats as the oil-change entry
+      above.
     documents: []
   - date: '2022-07-01'
     mileage: 104719
@@ -520,6 +560,19 @@ entries:
       above). Broken out so the inspection interval reflects it.
     documents:
       - 20230509-tim-dahle-emissions-wfm-package.pdf
+  - date: '2023-05-09'
+    mileage: 117125
+    itemType: brake-inspection
+    description: >-
+      Brake inspection — Tim Dahle Ford, part of the Worry Free Maintenance visit
+    notes: >-
+      Brady confirmed (2026-07-21) every WFM package visit included brake
+      checks, fluid checks/top-offs, and a tire rotation in addition to the
+      oil change and MPI — done as part of the dealer Worry Free
+      Maintenance oil-change visit the same day (see the oil-change entry
+      above).
+    documents:
+      - 20230509-tim-dahle-emissions-wfm-package.pdf
   - date: '2023-12-27'
     mileage: 124020
     itemType: ''
@@ -662,6 +715,16 @@ entries:
     itemType: multi-point-inspection
     description: Multi-point inspection — Tim Dahle Ford, part of the estimated 2024-07-29 visit
     notes: Same estimate caveats as the oil-change entry above.
+    documents: []
+  - date: '2024-07-29'
+    mileage: 132081
+    itemType: brake-inspection
+    description: Brake inspection — Tim Dahle Ford, part of the estimated 2024-07-29 visit
+    notes: >-
+      Brady confirmed (2026-07-21) every WFM package visit included brake
+      checks, fluid checks/top-offs, and a tire rotation in addition to the
+      oil change and MPI. Same estimate caveats as the oil-change entry
+      above.
     documents: []
   - date: '2024-04-14'
     mileage: 127341
@@ -842,6 +905,19 @@ entries:
       Multi-point inspection — done as part of the dealer Worry Free
       Maintenance oil-change visit the same day (see the oil-change entry
       above). Broken out so the inspection interval reflects it.
+    documents:
+      - 20250225-tim-dahle-wfm-visit3-valve-cover.pdf
+  - date: '2025-02-25'
+    mileage: 140142
+    itemType: brake-inspection
+    description: >-
+      Brake inspection — Tim Dahle Ford, part of the WFM 3rd/final visit
+    notes: >-
+      Brady confirmed (2026-07-21) every WFM package visit included brake
+      checks, fluid checks/top-offs, and a tire rotation in addition to the
+      oil change and MPI — done as part of the dealer Worry Free
+      Maintenance oil-change visit the same day (see the oil-change entry
+      above).
     documents:
       - 20250225-tim-dahle-wfm-visit3-valve-cover.pdf
   - date: '2025-07-08'
