@@ -4,6 +4,7 @@ import StatusBadge from "../../components/StatusBadge.astro";
 import { getVehicleSummaries, getVehicle, currentMileage, vehicleLabel } from "../../lib/data";
 import { scheduleStatusesFor, upcomingAdminDates, splitScheduleItemName, currentMileageAtOrAbove } from "../../lib/status";
 import { withBase } from "../../lib/url";
+import { formatDate } from "../../lib/date";
 
 export function getStaticPaths() {
   return getVehicleSummaries().map((v) => ({ params: { slug: v.slug } }));
@@ -46,7 +47,7 @@ if (points.length > 1) {
     <a class="no-print" href={withBase(`/vehicles/${vehicle.slug}/export`)}>Printable / export history →</a>
   </div>
   <p class="muted" style="margin-top: 0.25rem;">
-    VIN: {vehicle.vin || "—"} · Plate: {vehicle.licensePlate || "—"} · Tires: {vehicle.tireSize || "—"} · Purchased: {vehicle.purchaseDate || "—"}
+    VIN: {vehicle.vin || "—"} · Plate: {vehicle.licensePlate || "—"} · Tires: {vehicle.tireSize || "—"} · Purchased: {vehicle.purchaseDate ? formatDate(vehicle.purchaseDate) : "—"}
   </p>
   {vehicle.previousOwner && <p class="muted">{vehicle.previousOwner}</p>}
 
@@ -77,11 +78,11 @@ if (points.length > 1) {
             ) : short}
           </td>
           <td><StatusBadge status={s.status} /></td>
-          <td>{s.lastDone ? (s.lastDone.mileage != null ? `${s.lastDone.date} (${s.lastDone.mileage.toLocaleString()} mi)` : s.lastDone.date) : "—"}</td>
+          <td>{s.lastDone ? (s.lastDone.mileage != null ? `${formatDate(s.lastDone.date)} (${s.lastDone.mileage.toLocaleString()} mi)` : formatDate(s.lastDone.date)) : "—"}</td>
           <td>
             {s.dueMileage != null ? `${s.dueMileage.toLocaleString()} mi` : ""}
             {s.dueMileage != null && s.dueDate != null ? " / " : ""}
-            {s.dueDate != null ? s.dueDate : ""}
+            {s.dueDate != null ? formatDate(s.dueDate) : ""}
             {s.dueMileage == null && s.dueDate == null ? "—" : ""}
           </td>
         </tr>
@@ -121,7 +122,7 @@ if (points.length > 1) {
     <>
       <h3 class="section-title">Recalls (NHTSA)</h3>
       <p class="muted" style="font-size:0.85rem;">
-        Last checked: {vehicle.recallsData.lastChecked || "never"}
+        Last checked: {vehicle.recallsData.lastChecked ? formatDate(vehicle.recallsData.lastChecked) : "never"}
       </p>
       {vehicle.recallsData.recalls.map((r) => (
         <div class="card" style="border-color: var(--status-overdue-fg);">
@@ -146,7 +147,7 @@ if (points.length > 1) {
   <table>
     <thead><tr><th>Date</th><th>Mileage</th></tr></thead>
     <tbody>
-      {sortedMileageLog.map((m) => <tr><td>{m.date}</td><td>{m.mileage.toLocaleString()}</td></tr>)}
+      {sortedMileageLog.map((m) => <tr><td>{formatDate(m.date)}</td><td>{m.mileage.toLocaleString()}</td></tr>)}
     </tbody>
   </table>
   </div>
@@ -158,7 +159,7 @@ if (points.length > 1) {
     <tbody>
       {sortedMaintenanceLog.map((m) => (
         <tr>
-          <td>{m.date}</td>
+          <td>{formatDate(m.date)}</td>
           <td>{m.mileage != null ? m.mileage.toLocaleString() : "—"}</td>
           <td>{m.description}</td>
           <td class="muted">{m.notes}</td>
@@ -173,7 +174,7 @@ if (points.length > 1) {
     {openTasks.map((t) => (
       <li>
         ☐ {t.priority === "critical" && <span class="tag tag-red" style="margin-right: 0.4rem;">Critical</span>}
-        {t.title} <span class="muted">({t.createdDate})</span>
+        {t.title} <span class="muted">({formatDate(t.createdDate)})</span>
       </li>
     ))}
     {doneTasks.map((t) => <li class="muted">☑ {t.title}</li>)}
@@ -185,7 +186,7 @@ if (points.length > 1) {
   <table>
     <thead><tr><th>Type</th><th>Due</th><th>Notes</th></tr></thead>
     <tbody>
-      {adminDates.map((d) => <tr><td>{d.label}</td><td>{d.dueDate}</td><td class="muted">{d.notes}</td></tr>)}
+      {adminDates.map((d) => <tr><td>{d.label}</td><td>{formatDate(d.dueDate)}</td><td class="muted">{d.notes}</td></tr>)}
       {adminDates.length === 0 && <tr><td colspan="3" class="muted">None on file.</td></tr>}
     </tbody>
   </table>
@@ -197,7 +198,7 @@ if (points.length > 1) {
     {vehicle.documents.map((doc) => (
       <li>
         <span>{doc.filename}</span>
-        <span class="muted"> — {doc.category}, added {doc.dateAdded}</span>
+        <span class="muted"> — {doc.category}, added {formatDate(doc.dateAdded)}</span>
         {doc.description && <div class="muted" style="font-size:0.85rem;">{doc.description}</div>}
       </li>
     ))}

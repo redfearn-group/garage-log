@@ -251,3 +251,31 @@ tasks:
     status: open
     createdDate: '2026-07-14'
     completedDate: null
+  - id: 26
+    title: 'Tire edge/shoulder wear despite regular rotation — get alignment checked before new tires'
+    notes: >-
+      Brady confirmed (2026-07-21) the current tires (Michelin Defender,
+      installed ~2021-11-17, see maintenance-log.yaml) are showing heavy
+      wear at the shoulders/edges while the main tread area still has
+      life — despite religious rotations. Edge wear that survives regular
+      rotation usually isn't a rotation problem; it points to something
+      affecting the whole contact patch, most commonly alignment (excess
+      negative camber or toe error), chronic underinflation, or worn
+      suspension components (control arm bushings, ball joints, sway bar
+      links) letting the wheel lean under load/cornering. Get an alignment
+      check and, per Brady, also check the rubber bushings — likely
+      overlaps with task #6 (age-based rubber check) and task #22 (AT205
+      Reseal treatment). Worth doing before the planned tire replacement
+      (task #9, targeted Nov 2026) so the new set doesn't wear the same
+      way. Brady plans to shop around for a good deal on this.
+
+      Brady also flagged (2026-07-21) that his wife's driving style — fast
+      cornering — could be a contributing or even primary cause: aggressive
+      cornering loads the outer shoulder heavily and produces this exact
+      wear pattern even on a mechanically sound, correctly aligned vehicle.
+      Worth keeping in mind if the alignment/bushing check comes back
+      clean — the cause may be driving habits rather than a mechanical
+      fault.
+    status: open
+    createdDate: '2026-07-21'
+    completedDate: null

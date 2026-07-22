@@ -61,13 +61,178 @@ entries:
       mileage interpolated between the surrounding odometer readings — treat
       as rough.
     documents: []
+  - date: '2020-03-17'
+    mileage: 93931
+    itemType: oil-change
+    description: >-
+      Worry Free Maintenance package #1 purchased and its 1st visit redeemed
+      — full-service oil change (0W-20 synthetic) + tire rotation + MPI —
+      Tim Dahle Ford.
+    notes: >-
+      Brady confirmed (2026-07-21) that historically Hera only ever had oil
+      changes done at Tim Dahle Ford via 3-visit WFM packages, bought as
+      needed, throughout her whole ownership history (purchased 2019-05-25 at
+      88,289 mi) — DIY oil changes didn't start until 2025. Brady recalls 2
+      packages (6 visits total) covered the span from purchase through the
+      first confirmed/invoiced visit on 2023-06-19. This is package #1's
+      purchase + 1st visit — no receipt/invoice on file. Date and mileage are
+      estimated by evenly dividing the 2019-05-25 (88,289 mi) to 2023-06-19
+      (116,501 mi) gap into 5 intervals at Hera's normal ~5,000-7,000 mile
+      dealer-visit spacing (this places the visit close to the confirmed
+      2020-02-07 mileage-log reading of 92,423 mi, which fits well). Treat as
+      a rough estimate until a more precise date/mileage turns up.
+    documents: []
+  - date: '2020-03-17'
+    mileage: 93931
+    itemType: tire-rotation
+    description: Tire rotation — Tim Dahle Ford, part of WFM package #1's 1st visit
+    notes: >-
+      Tire rotation — done as part of the estimated dealer Worry Free
+      Maintenance visit the same day (see the oil-change entry above).
+      Broken out so the tire-rotation interval reflects it. Same estimate
+      caveats as that entry.
+    documents: []
+  - date: '2020-03-17'
+    mileage: 93931
+    itemType: multi-point-inspection
+    description: Multi-point inspection — Tim Dahle Ford, part of WFM package #1's 1st visit
+    notes: >-
+      Multi-point inspection — done as part of the estimated dealer Worry
+      Free Maintenance visit the same day (see the oil-change entry above).
+      Broken out so the inspection interval reflects it. Same estimate
+      caveats as that entry.
+    documents: []
+  - date: '2021-01-08'
+    mileage: 99573
+    itemType: oil-change
+    description: >-
+      Worry Free Maintenance package #1 2nd visit — full-service oil change
+      (0W-20 synthetic) + tire rotation + MPI — Tim Dahle Ford. Redeemed
+      under the package purchased 2020-03-17 above, no charge.
+    notes: >-
+      No receipt/invoice on file for this visit. Date and mileage are
+      estimated by evenly dividing the 2019-05-25 to 2023-06-19 gap into 5
+      intervals at Hera's normal dealer-visit spacing — see the package
+      purchase entry above for the full methodology note. Treat as a rough
+      estimate until a more precise date/mileage turns up.
+    documents: []
+  - date: '2021-01-08'
+    mileage: 99573
+    itemType: tire-rotation
+    description: Tire rotation — Tim Dahle Ford, part of WFM package #1's 2nd visit
+    notes: >-
+      Tire rotation — done as part of the estimated dealer Worry Free
+      Maintenance visit the same day (see the oil-change entry above).
+      Broken out so the tire-rotation interval reflects it. Same estimate
+      caveats as that entry.
+    documents: []
+  - date: '2021-01-08'
+    mileage: 99573
+    itemType: multi-point-inspection
+    description: Multi-point inspection — Tim Dahle Ford, part of WFM package #1's 2nd visit
+    notes: >-
+      Multi-point inspection — done as part of the estimated dealer Worry
+      Free Maintenance visit the same day (see the oil-change entry above).
+      Broken out so the inspection interval reflects it. Same estimate
+      caveats as that entry.
+    documents: []
+  - date: '2021-11-01'
+    mileage: 105216
+    itemType: oil-change
+    description: >-
+      Worry Free Maintenance package #1 3rd visit — full-service oil change
+      (0W-20 synthetic) + tire rotation + MPI — Tim Dahle Ford. Redeemed
+      under the package purchased 2020-03-17 above, no charge.
+    notes: >-
+      No receipt/invoice on file for this visit — the last visit on package
+      #1. Date and mileage are estimated by evenly dividing the 2019-05-25
+      to 2023-06-19 gap into 5 intervals at Hera's normal dealer-visit
+      spacing — see the package purchase entry above for the full
+      methodology note. Treat as a rough estimate until a more precise
+      date/mileage turns up.
+    documents: []
+  - date: '2021-11-01'
+    mileage: 105216
+    itemType: tire-rotation
+    description: Tire rotation — Tim Dahle Ford, part of WFM package #1's 3rd visit
+    notes: >-
+      Tire rotation — done as part of the estimated dealer Worry Free
+      Maintenance visit the same day (see the oil-change entry above).
+      Broken out so the tire-rotation interval reflects it. Same estimate
+      caveats as that entry.
+    documents: []
+  - date: '2021-11-01'
+    mileage: 105216
+    itemType: multi-point-inspection
+    description: Multi-point inspection — Tim Dahle Ford, part of WFM package #1's 3rd visit
+    notes: >-
+      Multi-point inspection — done as part of the estimated dealer Worry
+      Free Maintenance visit the same day (see the oil-change entry above).
+      Broken out so the inspection interval reflects it. Same estimate
+      caveats as that entry.
+    documents: []
+  - date: '2021-11-17'
+    mileage: 105150
+    itemType: ''
+    description: 4 tires replaced — Discount Tire (Michelin Defender, P245/65R17 105T)
+    notes: >-
+      Brady confirmed (2026-07-21) this was done in November 2021, the week
+      before Thanksgiving, before the first snow of the season — no
+      receipt/invoice from Discount Tire on file, but photos of the tires
+      (taken 2026-07-21) show a DOT date code of 1M3JK1 04UX 4521, i.e.
+      manufactured week 45 of 2021 (~Nov 8-14, 2021), consistent with a
+      purchase shortly after in mid-to-late November. Date set to
+      2021-11-17 (Wednesday of the week before Thanksgiving 2021, which fell
+      on 2021-11-25) as a reasonable midpoint — exact day not confirmed.
+      Mileage interpolated using the two nearest confirmed mileage-log
+      readings (92,423 mi on 2020-02-07 and 116,501 mi on 2023-06-19).
+      Treat date/mileage as estimates until a receipt or bank record turns
+      up.
+    documents: []
+  - date: '2022-08-25'
+    mileage: 110858
+    itemType: oil-change
+    description: >-
+      Worry Free Maintenance package #2 purchased and its 1st visit redeemed
+      — full-service oil change (0W-20 synthetic) + tire rotation + MPI —
+      Tim Dahle Ford. This is the "earlier WFM service contract" referenced
+      in the 2023-06-19 visit below (contract 124,000 mi or 2024-04-27).
+    notes: >-
+      No receipt/invoice on file for this visit. Date and mileage are
+      estimated by evenly dividing the 2019-05-25 to 2023-06-19 gap into 5
+      intervals at Hera's normal dealer-visit spacing — see the package #1
+      purchase entry above for the full methodology note. The contract
+      expiration noted on the 2023-06-19 invoice (124,000 mi / 2024-04-27)
+      is consistent with a package purchased around this date. Treat as a
+      rough estimate until a more precise date/mileage turns up.
+    documents: []
+  - date: '2022-08-25'
+    mileage: 110858
+    itemType: tire-rotation
+    description: Tire rotation — Tim Dahle Ford, part of WFM package #2's 1st visit
+    notes: >-
+      Tire rotation — done as part of the estimated dealer Worry Free
+      Maintenance visit the same day (see the oil-change entry above).
+      Broken out so the tire-rotation interval reflects it. Same estimate
+      caveats as that entry.
+    documents: []
+  - date: '2022-08-25'
+    mileage: 110858
+    itemType: multi-point-inspection
+    description: Multi-point inspection — Tim Dahle Ford, part of WFM package #2's 1st visit
+    notes: >-
+      Multi-point inspection — done as part of the estimated dealer Worry
+      Free Maintenance visit the same day (see the oil-change entry above).
+      Broken out so the inspection interval reflects it. Same estimate
+      caveats as that entry.
+    documents: []
   - date: '2023-06-19'
     mileage: 116501
     itemType: oil-change
     description: >-
-      Worry Free Maintenance 2nd visit — full-service oil change (0W-20
-      synthetic, M967 filter) + tire rotation + MPI + car wash — Tim Dahle
-      Ford. Redeemed under an earlier WFM service contract
+      Worry Free Maintenance package #2 2nd visit — full-service oil change
+      (0W-20 synthetic, M967 filter) + tire rotation + MPI + car wash — Tim
+      Dahle Ford. Redeemed under the package purchased 2022-08-25 above
       (contract 124,000 mi or 2024-04-27), no charge.
     notes: >-
       $0.00 (service contract). Invoice
@@ -98,6 +263,39 @@ entries:
       above). Broken out so the inspection interval reflects it.
     documents:
       - 20230619-tim-dahle-wfm-visit2.pdf
+  - date: '2024-01-15'
+    mileage: 121501
+    itemType: oil-change
+    description: >-
+      Worry Free Maintenance package #2 3rd visit — full-service oil change
+      (0W-20 synthetic) + tire rotation + MPI — Tim Dahle Ford. Redeemed
+      under the package purchased 2022-08-25, no charge.
+    notes: >-
+      Brady confirmed (2026-07-21) this was the 3rd and final visit on
+      package #2 (purchased 2022-08-25 above; 1st visit same day, 2nd visit
+      2023-06-19), placed in winter 2024 — the dealer wouldn't sell him a
+      new package until the old one was used up, and a new package (#3) was
+      in fact purchased 2024-03-06, consistent with this visit closing out
+      package #2 shortly before. No receipt/invoice on file for this visit,
+      unlike the 1st and 2nd. Exact date not confirmed; date kept within the
+      "winter 2024" window Brady recalled. Mileage corrected (2026-07-21)
+      from a straight date-based interpolation (which put it at 125,121 mi)
+      to ~5,000 miles past the prior 2023-06-19 (116,501 mi) visit —
+      matching Hera's normal ~5,000-7,300 mile interval seen elsewhere in
+      this log — rather than the ~8,600 miles the straight-line date
+      interpolation implied. Treat as an estimate until a more precise
+      date/mileage turns up.
+    documents: []
+  - date: '2024-01-15'
+    mileage: 121501
+    itemType: tire-rotation
+    description: Tire rotation — Tim Dahle Ford, part of WFM package #2's 3rd visit
+    notes: >-
+      Tire rotation — done as part of the estimated dealer Worry Free
+      Maintenance visit the same day (see the oil-change entry above).
+      Broken out so the tire-rotation interval reflects it. Same estimate
+      caveats as that entry.
+    documents: []
   - date: '2023-11-29'
     mileage: 123956
     itemType: ''
@@ -126,7 +324,7 @@ entries:
     mileage: 127215
     itemType: oil-change
     description: >-
-      New "Worry Free Maintenance" package purchased and its 1st visit
+      Worry Free Maintenance package #3 purchased and its 1st visit
       redeemed (full-service oil change, 0W-20 full synthetic, M967 filter,
       tire rotation, MPI) — Tim Dahle Ford.
     notes: >-
@@ -135,7 +333,8 @@ entries:
       visit was redeemed against it the same day. Declined the advisor's
       recommended add-ons: swollen lug
       nuts, engine air filter, and front & rear brake pads + rotor
-      resurface.
+      resurface. This is package #3, following package #2 (purchased
+      2022-08-25, closed out 2024-01-15).
     documents:
       - 20240306-tim-dahle-wfm-package.pdf
   - date: '2024-03-06'
@@ -238,9 +437,9 @@ entries:
     mileage: 132260
     itemType: oil-change
     description: >-
-      Worry Free Maintenance 2nd visit — full-service oil change (0W-20
-      synthetic, M967 filter) + tire rotation + MPI — Tim Dahle Ford.
-      Redeemed under the WFM package bought 2024-03-06 above, no
+      Worry Free Maintenance package #3 2nd visit — full-service oil change
+      (0W-20 synthetic, M967 filter) + tire rotation + MPI — Tim Dahle Ford.
+      Redeemed under the package bought 2024-03-06 above, no
       charge.
     notes: >-
       $0.00 (service contract). Invoice
@@ -370,18 +569,75 @@ entries:
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
     documents: []
+  - date: '2024-12-21'
+    mileage: 137625
+    itemType: oil-change
+    description: >-
+      Worry Free Maintenance package #3 3rd visit — full-service oil change
+      (0W-20 synthetic) + tire rotation + MPI — Tim Dahle Ford. Redeemed
+      under the package bought 2024-03-06, no charge.
+    notes: >-
+      Brady confirmed (2026-07-21) that historically Hera only ever had oil
+      changes done at Tim Dahle Ford via 3-visit WFM packages, bought as
+      needed — DIY oil changes didn't start until 2025. This 3rd visit
+      closes out package #3, bought 2024-03-06 (1st visit same day, 2nd
+      visit 2024-07-25), consistent with that pattern. No receipt/invoice on
+      file for this visit, unlike the 1st and 2nd. Exact date not confirmed
+      — date and mileage are placed at the midpoint of the gap between the
+      confirmed 2024-07-25 (132,260 mi) visit and the 2025-05-20 (142,990
+      mi) first-known DIY change, as a rough placeholder. Treat as an
+      estimate until a more precise date turns up.
+    documents: []
+  - date: '2024-12-21'
+    mileage: 137625
+    itemType: tire-rotation
+    description: Tire rotation — Tim Dahle Ford, part of WFM package #3's 3rd visit
+    notes: >-
+      Tire rotation — done as part of the estimated dealer Worry Free
+      Maintenance visit the same day (see the oil-change entry above).
+      Broken out so the tire-rotation interval reflects it. Same estimate
+      caveats as that entry.
+    documents: []
   - date: '2025-05-20'
     mileage: 142990
     itemType: oil-change
-    description: >-
-      Engine oil filter purchased (Toyota OE 04152-YZZA1 cartridge) — for a
-      DIY oil change
+    description: Oil & filter change (Kirkland Signature 0W-20 full synthetic) — DIY
     notes: >-
-      AutoZone #886 2025-05-20. 04152-YZZA1 is the Toyota engine oil-filter
-      cartridge kit; Hera was Brady's only Toyota-family vehicle at this date.
-      Logged as a filter purchase — the exact oil-change date isn't
-      independently confirmed. Mileage interpolated between the 2025-04-07
-      (141,180 mi) and 2025-09-09 (147,713 mi) readings — treat as rough.
+      Filter (Toyota OE 04152-YZZA1 cartridge) purchased at AutoZone #886
+      2025-05-20, same day oil (Kirkland Signature 0W-20 Full Synthetic,
+      5-qt 2-pack, $35.99 + $0.40 oil disposal fee) was purchased at Costco
+      (Spanish Fork) — the two same-day purchases at different stores are
+      treated as one DIY oil change. Exact install date not independently
+      confirmed beyond the purchase date. Mileage interpolated between the
+      2025-04-07 (141,180 mi) and 2025-09-09 (147,713 mi) readings — treat
+      as rough.
+    documents: []
+  - date: '2025-05-20'
+    mileage: 142990
+    itemType: tire-rotation
+    description: Tire rotation — DIY, part of the same 2025-05-20 service
+    notes: >-
+      Brady confirmed (2026-07-21) this service also included a tire
+      rotation. Same date/mileage as the oil-change entry above; same
+      estimate caveats.
+    documents: []
+  - date: '2025-05-20'
+    mileage: 142990
+    itemType: brake-inspection
+    description: Brake check — DIY, part of the same 2025-05-20 service
+    notes: >-
+      Brady confirmed (2026-07-21) this service also included a brake
+      check. Same date/mileage as the oil-change entry above; same
+      estimate caveats.
+    documents: []
+  - date: '2025-05-20'
+    mileage: 142990
+    itemType: multi-point-inspection
+    description: Filter and fluid level checks — DIY, part of the same 2025-05-20 service
+    notes: >-
+      Brady confirmed (2026-07-21) this service also included filter
+      checks (cabin/engine air) and fluid level checks. Same date/mileage
+      as the oil-change entry above; same estimate caveats.
     documents: []
   - date: '2025-07-05'
     mileage: 144931
@@ -466,13 +722,18 @@ entries:
   - date: '2025-11-02'
     mileage: 150265
     itemType: oil-change
-    description: >-
-      Engine oil filter purchased (STP S10590) — for a DIY oil change
+    description: Oil & filter change (Kirkland Signature 0W-20 full synthetic) — DIY
     notes: >-
-      AutoZone #886 2025-11-02, same trip that included a cabin air filter for
-      a family member's Tucson (logged under that vehicle). S10590 fits the
-      Toyota 3.5L V6. Logged as a filter purchase; exact oil-change date not
-      confirmed. Mileage interpolated between the 2025-09-09 (147,713 mi) and
+      Filter (STP S10590, fits the Toyota 3.5L V6) purchased at AutoZone #886
+      2025-11-02, same trip that included a cabin air filter for a family
+      member's Tucson (logged under that vehicle). Oil (Kirkland Signature
+      0W-20 Full Synthetic, 5-qt 2-pack, $29.99 after instant savings + $0.40
+      oil disposal fee) was bought ahead of time at Costco (Spanish Fork) on
+      2025-09-06 and held in stock until this filter purchase completed the
+      job — the ~8-week gap between buying the oil and the filter fits
+      Brady's habit of stocking up on oil separately from filters. Exact
+      install date not independently confirmed beyond the filter purchase
+      date. Mileage interpolated between the 2025-09-09 (147,713 mi) and
       2025-12-30 (153,008 mi) readings — treat as rough.
     documents: []
   - date: '2025-11-15'

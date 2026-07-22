@@ -2,6 +2,7 @@
 import Base from "../../../layouts/Base.astro";
 import { getVehicleSummaries, getVehicle, currentMileage, vehicleLabel } from "../../../lib/data";
 import { withBase } from "../../../lib/url";
+import { formatDate } from "../../../lib/date";
 
 export function getStaticPaths() {
   return getVehicleSummaries().map((v) => ({ params: { slug: v.slug } }));
@@ -34,7 +35,7 @@ const sortedMaintenanceLog = [...vehicle.maintenanceLog].sort((a, b) => (a.date 
     <tbody>
       {sortedMaintenanceLog.map((m) => (
         <tr>
-          <td>{m.date}</td>
+          <td>{formatDate(m.date)}</td>
           <td>{m.mileage != null ? m.mileage.toLocaleString() : "—"}</td>
           <td>{m.description}</td>
           <td>{m.notes}</td>
@@ -46,7 +47,7 @@ const sortedMaintenanceLog = [...vehicle.maintenanceLog].sort((a, b) => (a.date 
 
   <h3 class="section-title">Documents on file</h3>
   <ul>
-    {vehicle.documents.map((doc) => <li>{doc.filename} — {doc.category} ({doc.dateAdded}){doc.description ? `: ${doc.description}` : ""}</li>)}
+    {vehicle.documents.map((doc) => <li>{doc.filename} — {doc.category} ({formatDate(doc.dateAdded)}){doc.description ? `: ${doc.description}` : ""}</li>)}
     {vehicle.documents.length === 0 && <li class="muted">None</li>}
   </ul>
 
