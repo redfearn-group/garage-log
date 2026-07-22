@@ -198,10 +198,13 @@ tasks:
       car's unknown pre-purchase history (bought 2026-06-19 @ 106,926 mi).
       Engine coolant flush: first due at 100,000 mi/120 mo; current
       mileage (~111,000) is already past the mileage trigger with no
-      record it's ever been done. 12V battery: no logged replacement; car
-      is a 2019 model (~7 yrs), at/past the 72-month general AGM
-      service-life estimate — worth a load test given age alone. eCVT
-      transaxle leak inspection (a visual check, separate from the
+      record it's ever been done. CORRECTED 2026-07-22: 12V battery is
+      NOT an age-based concern — Brady tests every vehicle's battery
+      twice yearly (spring & fall) with a KONNWEI KW208 tester and
+      replaces only if the test fails, not by age. No test logged yet for
+      this car since purchase — add it to the standing fall test round
+      rather than as a standalone weekend item. eCVT transaxle leak
+      inspection (a visual check, separate from the
       fluid-change question in task #1): mileage-triggered every
       30,000 mi/36 mo, several intervals likely passed with no record. HV
       battery cooling filter clean/service (TSB L-SB-0028-20, ~20,000 mi
