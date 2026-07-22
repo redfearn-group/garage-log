@@ -18,6 +18,18 @@ tasks:
       harm — but it is Brady's discretionary choice, not something the
       manufacturer calls for. Car was purchased at 106,926 mi with
       unknown prior service (now at 110,834 mi as of 2026-07-12).
+
+      UPDATE 2026-07-22: the car's prior-owner service history is no
+      longer fully unknown — CARFAX shows "transmission fluid changed" at
+      the 2026-04-15 dealer visit (104,975 mi, ~2 months before Brady's
+      purchase). Given Lexus's own "sealed, no scheduled fluid change"
+      stance, this record is ambiguous — it may reflect an actual fluid
+      service, or may just be dealer/Carfax shorthand for the transaxle
+      leak inspection that IS on the real schedule. Either way, a fluid
+      service (if one truly happened) would be quite recent relative to
+      Brady's ownership, which weakens the case for doing another
+      proactive drain-and-fill any time soon even as a discretionary
+      choice.
     status: open
     createdDate: '2026-07-09'
     completedDate: null
@@ -192,25 +204,40 @@ tasks:
     createdDate: '2026-07-15'
     completedDate: '2026-07-22'
   - id: 9
-    title: 'Weekend check (2026-07-25): coolant flush, 12V battery, eCVT leak inspection, HV battery cooling filter'
+    title: 'Weekend check (2026-07-25): coolant flush + HV battery cooling filter'
     notes: >-
-      From this week's fleet review — all unknown/likely-due given the
-      car's unknown pre-purchase history (bought 2026-06-19 @ 106,926 mi).
-      Engine coolant flush: first due at 100,000 mi/120 mo; current
-      mileage (~111,000) is already past the mileage trigger with no
-      record it's ever been done. CORRECTED 2026-07-22: 12V battery is
-      NOT an age-based concern — Brady tests every vehicle's battery
-      twice yearly (spring & fall) with a KONNWEI KW208 tester and
-      replaces only if the test fails, not by age. No test logged yet for
-      this car since purchase — add it to the standing fall test round
-      rather than as a standalone weekend item. eCVT transaxle leak
-      inspection (a visual check, separate from the
-      fluid-change question in task #1): mileage-triggered every
-      30,000 mi/36 mo, several intervals likely passed with no record. HV
-      battery cooling filter clean/service (TSB L-SB-0028-20, ~20,000 mi
-      interval): no record since purchase — lower confidence since this
-      interval is TSB-sourced rather than core Lexus schedule, but worth
-      confirming given hybrid-battery-health stakes.
+      MAJOR UPDATE 2026-07-22: the car's full pre-Brady service history
+      (CARFAX report, 2 owners, 31 service records back to 2019) was
+      finally transcribed into maintenance-log.yaml — most of what this
+      task originally flagged turned out to already be well-covered:
+
+      - Brake fluid: flushed 2023-03-29, 2025-07-17, AND 2026-01-08 (only
+      ~5 months before Brady's purchase) — NOT a gap, drop from this list.
+      - Cabin/engine air filters: replaced regularly, most recently
+      2026-04-15 and again 2026-05-26 (dealer's own pre-delivery prep
+      right before selling to Brady) — NOT a gap.
+      - Transmission fluid: CARFAX shows "transmission fluid changed"
+      2026-04-15 @ 104,975 mi, though this may be Carfax/dealer shorthand
+      for the transaxle leak inspection rather than an actual fluid
+      service, given Lexus's "sealed eCVT" stance (see task #1) — logged
+      as reported, some ambiguity remains.
+      - 12V battery: not an age-based concern regardless — Brady tests
+      twice yearly (KONNWEI KW208), see the fluid/battery note elsewhere.
+
+      Still genuinely unresolved, confirmed by 7 years of CARFAX records
+      with NO mention of either: engine coolant flush (first due at
+      100,000 mi/120 mo, current mileage already past that, truly never
+      done across either owner) and the HV battery cooling filter
+      clean/service (TSB L-SB-0028-20, ~20,000 mi interval, never
+      mentioned either — lower confidence since this interval is
+      TSB-sourced rather than core Lexus schedule, but worth confirming
+      given hybrid-battery-health stakes).
+
+      Also newly discovered from CARFAX: a valve cover gasket was
+      replaced during the dealer's 2026-05-26 pre-delivery prep, days
+      before offering the car for sale — no symptom given, likely a minor
+      seep found and proactively fixed. Worth keeping in mind as a watch
+      item, not an active concern.
     status: open
     createdDate: '2026-07-22'
     completedDate: null
