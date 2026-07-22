@@ -252,15 +252,24 @@ entries:
       purchase — inspected and confirmed good, no action needed on those
       this session. Brake fluid also inspected and tested good. The
       valve cover gasket sets Brady initially ordered from AutoZone
-      (2026-04-05, two BECK/ARNLEY sets) arrived too late and were fully
-      returned (2026-05-01) — the gaskets actually installed came from
-      Amazon instead (receipt pending upload).
-    documents: []
+      (2026-04-05, two BECK/ARNLEY sets, $64.45) arrived too late and were
+      fully returned (2026-05-01, same $64.45) — the gaskets actually
+      installed came from Amazon instead (receipt pending upload).
+    documents:
+      - 20260405-autozone-valve-cover-gasket-purchase.pdf
+      - 20260501-autozone-valve-cover-gasket-return.pdf
   - date: '2026-04-08'
     mileage: 134783
     itemType: oil-change
     description: Oil & filter changed — DIY, same session as the valve cover gasket job
-    notes: Oil/color had been good since the dealer replaced it right before purchase; this is the first change under Brady's ownership.
+    notes: >-
+      Oil/color had been good since the dealer replaced it right before
+      purchase; this is the first change under Brady's ownership. Brady
+      recalled (2026-07-22) the drain plug had no crush washer/gasket on
+      it when he removed it — a sign whoever did the dealer's pre-sale
+      oil change didn't do a thorough job. A new gasket was installed at
+      this DIY change (consistent with the Subaru Genuine Drain Plug
+      Gasket, part 803918060, purchased 2026-03-14).
     documents: []
   - date: '2026-04-08'
     mileage: 134783
@@ -295,7 +304,8 @@ entries:
       task "Throttle body clean & gasket replacement" in tasks.yaml.
       Mileage interpolated between the 2026-04-08 (134,783 mi) and
       2026-04-29 (136,121 mi) readings — treat as rough.
-    documents: []
+    documents:
+      - 20260409-oreilly-throttle-body-gasket.pdf
   - date: '2026-04-29'
     mileage: 136121
     itemType: ''
