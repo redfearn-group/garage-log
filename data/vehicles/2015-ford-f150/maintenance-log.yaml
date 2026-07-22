@@ -1069,6 +1069,36 @@ entries:
       Mileage interpolated between the 2026-02-21 (153,240 mi) and
       2026-07-12 (155,407.7 mi) readings — treat as rough.
     documents: []
+  - date: '2026-04-10'
+    mileage: 153970
+    itemType: tire-rotation
+    description: Tire rotation — DIY, part of the same oil-change visit
+    notes: >-
+      Brady confirmed (2026-07-22) he performed the same brake check, fluid
+      checks/top-offs, and tire rotation himself during this DIY oil
+      change that the dealer WFM visits used to include. Same estimate
+      caveats as the oil-change entry above.
+    documents: []
+  - date: '2026-04-10'
+    mileage: 153970
+    itemType: brake-inspection
+    description: Brake inspection — DIY, part of the same oil-change visit
+    notes: >-
+      Brady confirmed (2026-07-22) he performed the same brake check, fluid
+      checks/top-offs, and tire rotation himself during this DIY oil
+      change that the dealer WFM visits used to include. Same estimate
+      caveats as the oil-change entry above.
+    documents: []
+  - date: '2026-04-10'
+    mileage: 153970
+    itemType: multi-point-inspection
+    description: Fluid checks/top-offs — DIY, part of the same oil-change visit
+    notes: >-
+      Brady confirmed (2026-07-22) he performed the same brake check, fluid
+      checks/top-offs, and tire rotation himself during this DIY oil
+      change that the dealer WFM visits used to include. Same estimate
+      caveats as the oil-change entry above.
+    documents: []
   - date: '2026-06-26'
     mileage: 155162
     itemType: ''
