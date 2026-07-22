@@ -263,6 +263,37 @@ entries:
       above). Broken out so the inspection interval reflects it.
     documents:
       - 20230619-tim-dahle-wfm-visit2.pdf
+  - date: '2023-06-19'
+    mileage: 116501
+    itemType: battery-test
+    description: >-
+      12V battery tested — Tim Dahle Ford flagged it as bad, recommended
+      replacement ($234.95); not replaced at this visit
+    notes: >-
+      Part of the same WFM 2nd-visit multi-point inspection as the
+      oil-change/tire-rotation/MPI entries above (same invoice). No charge
+      was incurred — the recommended repair wasn't approved at this visit.
+      The battery wasn't actually replaced until 2024-02-19 (see that
+      entry).
+    documents:
+      - 20230619-tim-dahle-wfm-visit2.pdf
+  - date: '2023-06-19'
+    mileage: 116501
+    itemType: brake-inspection
+    description: >-
+      Front & rear brake pads/rotors inspected — Tim Dahle Ford flagged
+      both axles for natural wear (pad measurement of 2 on both sides,
+      units not specified on the invoice; rotor replacement recommended),
+      combined estimate $1,231.80; not serviced at this visit
+    notes: >-
+      Part of the same WFM 2nd-visit multi-point inspection as the
+      oil-change/tire-rotation/MPI entries above (same invoice). No charge
+      was incurred — the recommended repair wasn't approved. The same
+      recommendation recurred at the 2024-03-06 visit (declined again)
+      before the pads and rotors were finally replaced DIY around
+      2024-05-15 — see those entries.
+    documents:
+      - 20230619-tim-dahle-wfm-visit2.pdf
   - date: '2024-01-15'
     mileage: 121501
     itemType: oil-change
