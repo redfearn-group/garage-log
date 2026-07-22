@@ -143,7 +143,11 @@ tasks:
     completedDate: null
   - id: 13
     title: Throttle body clean & gasket replacement
-    notes: Still pending as of the April 2026 post-purchase checklist.
+    notes: >-
+      Still pending as of the April 2026 post-purchase checklist. Gasket
+      (Fel-Pro 61733) already purchased 2026-04-09 from O'Reilly, $17.18 —
+      see maintenance-log.yaml. Brady confirmed (2026-07-22) it's on hand
+      but not yet installed.
     status: open
     createdDate: '2026-07-14'
     completedDate: null
