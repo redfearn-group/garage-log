@@ -79,6 +79,12 @@ export interface RecallsData {
   recalls: RecallEntry[];
 }
 
+export interface RecallRemedy {
+  campaignNumber: string;
+  remediedDate: string;
+  notes?: string;
+}
+
 export interface WatchListItem {
   issue: string;
   typicalMileage?: number | null;
@@ -95,6 +101,7 @@ export interface Vehicle extends VehicleSummary {
   adminDates: AdminDate[];
   documents: DocumentEntry[];
   recallsData: RecallsData;
+  openRecalls: RecallEntry[];
   watchList: WatchListItem[];
 }
 
