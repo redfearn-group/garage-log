@@ -430,11 +430,32 @@ entries:
       - 20260528-carfax-report.pdf
   - date: '2026-05-26'
     mileage: 106890
+    itemType: tire-rotation
+    description: >-
+      Four tires balanced/mounted — Lexus of Murray, pre-delivery prep
+    notes: >-
+      CORRECTED 2026-07-23 — split out from the combined "tires
+      balanced/mounted, alignment checked, emissions inspection" CARFAX
+      line and tagged tire-rotation (was itemType: '', so it wasn't
+      counted as a tire service and the schedule was showing "Overdue"
+      based on the previous owner's last rotation, 2025-07-17 @ 93,591
+      mi). The CARFAX record doesn't explicitly say "new tires," but
+      "four tires... mounted" at a dealer's pre-sale prep reads as a
+      fresh tire installation, not just a rotation — Brady's read of this
+      record. Treating it as the interval-reset point either way. Same
+      mileage-interpolation caveat as the oil-change entry above.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2026-05-26'
+    mileage: 106890
     itemType: ''
     description: >-
-      Four tires balanced/mounted, alignment checked, emissions inspection
-      performed — Lexus of Murray, pre-delivery prep
-    notes: Same mileage-interpolation caveat as the oil-change entry above.
+      Alignment checked, emissions inspection performed — Lexus of Murray,
+      pre-delivery prep
+    notes: >-
+      Split out from the combined CARFAX line above — see that entry for
+      context. Same mileage-interpolation caveat as the oil-change entry
+      above.
     documents:
       - 20260528-carfax-report.pdf
   - date: '2026-06-24'
