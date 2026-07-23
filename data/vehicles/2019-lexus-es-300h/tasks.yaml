@@ -206,6 +206,18 @@ tasks:
   - id: 9
     title: 'Weekend check (2026-07-25): coolant flush + HV battery cooling filter'
     notes: >-
+      UPDATE 2026-07-23: confirmed via a full-document search of the
+      CARFAX report (all 7 pages, all 31 service records, both prior
+      owners) — no mention anywhere of the HV battery cooling intake
+      filter, "HV battery," or "battery cooling." The only filter entries
+      on file are generic "Air filter replaced" and "Cabin air filter
+      replaced/cleaned" lines, neither of which is this component. So
+      this really has never been done across the car's full known
+      history. Per Brady, this is critical to hybrid battery performance
+      — marked critical priority, and schedule.yaml's interval was
+      tightened to 6 mo/20,000 mi (whichever first) instead of mileage
+      only. Brady intends to clean it immediately rather than waiting for
+      the 2026-07-25 weekend slot.
       MAJOR UPDATE 2026-07-22: the car's full pre-Brady service history
       (CARFAX report, 2 owners, 31 service records back to 2019) was
       finally transcribed into maintenance-log.yaml — most of what this
@@ -239,5 +251,6 @@ tasks:
       seep found and proactively fixed. Worth keeping in mind as a watch
       item, not an active concern.
     status: open
+    priority: critical
     createdDate: '2026-07-22'
     completedDate: null
