@@ -1,1 +1,13 @@
-remedies: []
+remedies:
+  - campaignNumber: 13V014000
+    remediedDate: '2026-07-23'
+    notes: >-
+      Verified via nhtsa.gov/recalls VIN lookup (5TDBK3EH7CS102772) —
+      "0 Unrepaired Recalls associated with this VIN" as of the recall data
+      refresh dated Jul 23, 2026.
+  - campaignNumber: 13V123000
+    remediedDate: '2026-07-23'
+    notes: >-
+      Verified via nhtsa.gov/recalls VIN lookup (5TDBK3EH7CS102772) —
+      "0 Unrepaired Recalls associated with this VIN" as of the recall data
+      refresh dated Jul 23, 2026.

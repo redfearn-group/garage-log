@@ -1,1 +1,25 @@
-remedies: []
+# NHTSA VIN lookup (4S3GKAB61H3617577) on 2026-07-23 returned "0 Unrepaired
+# Recalls associated with this VIN" — every campaign on file for this
+# vehicle is treated as remedied per that result.
+remedies:
+  - campaignNumber: 21V264000
+    remediedDate: '2026-07-23'
+    notes: Verified via nhtsa.gov/recalls VIN lookup — "0 Unrepaired Recalls".
+  - campaignNumber: 19V744000
+    remediedDate: '2026-07-23'
+    notes: Verified via nhtsa.gov/recalls VIN lookup — "0 Unrepaired Recalls".
+  - campaignNumber: 19V745000
+    remediedDate: '2026-07-23'
+    notes: Verified via nhtsa.gov/recalls VIN lookup — "0 Unrepaired Recalls".
+  - campaignNumber: 19V743000
+    remediedDate: '2026-07-23'
+    notes: Verified via nhtsa.gov/recalls VIN lookup — "0 Unrepaired Recalls".
+  - campaignNumber: 17V216000
+    remediedDate: '2026-07-23'
+    notes: Verified via nhtsa.gov/recalls VIN lookup — "0 Unrepaired Recalls".
+  - campaignNumber: 17V132000
+    remediedDate: '2026-07-23'
+    notes: Verified via nhtsa.gov/recalls VIN lookup — "0 Unrepaired Recalls".
+  - campaignNumber: 22V624000
+    remediedDate: '2026-07-23'
+    notes: Verified via nhtsa.gov/recalls VIN lookup — "0 Unrepaired Recalls".

@@ -1,1 +1,44 @@
-remedies: []
+# NHTSA VIN lookup (1FTEW1EG7FKE00733) on 2026-07-23 returned "1 Unrepaired
+# Recalls associated with this VIN": only 26V237 (transmission downshift,
+# reported 2026-04-14), status "Recall Incomplete". Every other campaign on
+# file for this vehicle is treated as remedied per that result.
+remedies:
+  - campaignNumber: 18V894000
+    remediedDate: '2026-07-23'
+    notes: Verified via nhtsa.gov/recalls VIN lookup — not listed as unrepaired.
+  - campaignNumber: 19V278000
+    remediedDate: '2026-07-23'
+    notes: Verified via nhtsa.gov/recalls VIN lookup — not listed as unrepaired.
+  - campaignNumber: 18V568000
+    remediedDate: '2026-07-23'
+    notes: Verified via nhtsa.gov/recalls VIN lookup — not listed as unrepaired.
+  - campaignNumber: 17V652000
+    remediedDate: '2026-07-23'
+    notes: Verified via nhtsa.gov/recalls VIN lookup — not listed as unrepaired.
+  - campaignNumber: 17V526000
+    remediedDate: '2026-07-23'
+    notes: Verified via nhtsa.gov/recalls VIN lookup — not listed as unrepaired.
+  - campaignNumber: 17V331000
+    remediedDate: '2026-07-23'
+    notes: Verified via nhtsa.gov/recalls VIN lookup — not listed as unrepaired.
+  - campaignNumber: 15V867000
+    remediedDate: '2026-07-23'
+    notes: Verified via nhtsa.gov/recalls VIN lookup — not listed as unrepaired.
+  - campaignNumber: 15V614000
+    remediedDate: '2026-07-23'
+    notes: Verified via nhtsa.gov/recalls VIN lookup — not listed as unrepaired.
+  - campaignNumber: 15V251000
+    remediedDate: '2026-07-23'
+    notes: Verified via nhtsa.gov/recalls VIN lookup — not listed as unrepaired.
+  - campaignNumber: 15V279000
+    remediedDate: '2026-07-23'
+    notes: Verified via nhtsa.gov/recalls VIN lookup — not listed as unrepaired.
+  - campaignNumber: 20V098000
+    remediedDate: '2026-07-23'
+    notes: Verified via nhtsa.gov/recalls VIN lookup — not listed as unrepaired.
+  - campaignNumber: 20V332000
+    remediedDate: '2026-07-23'
+    notes: Verified via nhtsa.gov/recalls VIN lookup — not listed as unrepaired.
+  - campaignNumber: 21E027000
+    remediedDate: '2026-07-23'
+    notes: Verified via nhtsa.gov/recalls VIN lookup — not listed as unrepaired.

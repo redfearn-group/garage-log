@@ -1,1 +1,7 @@
+# Attempted NHTSA VIN lookup (KM8J3CAL3LU133611) on 2026-07-23 — the site's
+# nhtsa.gov/recalls VIN search returned "An unknown error occurred" on 4
+# consecutive attempts (other vehicles' VINs succeeded in the same session,
+# so this looks specific to this VIN/vehicle, not a general outage). Recall
+# 20V543000 (HECU fire risk) therefore remains unverified — treat as open
+# until manually checked at nhtsa.gov/recalls or with the dealer.
 remedies: []
