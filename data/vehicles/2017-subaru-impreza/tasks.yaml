@@ -52,14 +52,16 @@ tasks:
   - id: 4
     title: Brake pad/rotor measurement at all four corners
     notes: >-
-      Record the exact numbers for reference. UPDATED 2026-07-23: rotors
-      are already new (PowerStop, DIY-installed ~2026-05-05, see
-      maintenance-log.yaml) — this is now really about measuring the
-      old pads still on the car, to compare against the new PowerStop
-      pads once installed (see the new pad-install task).
-    status: open
+      Record the exact numbers for reference. DONE 2026-05-09, per Brady
+      (confirmed 2026-07-23) — pad inspection/measurement done the same
+      day as the rotor swap, see maintenance-log.yaml (itemType
+      brake-inspection). Rotors are new (PowerStop, DIY-installed
+      2026-05-09); the pads measured this session are the old ones still
+      on the car, ahead of installing the new PowerStop pads (see task
+      #20).
+    status: done
     createdDate: '2026-07-11'
-    completedDate: null
+    completedDate: '2026-05-09'
   - id: 20
     title: Install PowerStop brake pads (front and rear) — already on hand
     notes: >-
@@ -206,19 +208,21 @@ tasks:
     createdDate: '2026-07-14'
     completedDate: null
   - id: 19
-    title: 'Weekend check (2026-07-25): oil change/tire rotation due now, plus brake fluid and coolant flush'
+    title: 'Weekend check (2026-07-25): oil change/tire rotation due now'
     notes: >-
       From this week's fleet review. Oil change + tire rotation: last done
       2026-04-08 @ 134,783 mi, 6,000 mi interval — mileage threshold
       already passed by a few hundred miles as of current mileage
-      (~141,000). Brake fluid flush: never appears in the log under
-      Brady's ownership — the 04-08 entry only notes it was inspected, not
-      flushed; interval is 30 mo/30,000 mi and given the unknown
-      pre-purchase history this is due now. Coolant flush: Subaru's
-      first-change threshold is 11 yr/137,500 mi and current mileage has
-      already passed that; only a partial top-off is logged, never a real
-      flush. Add all three to the same weekend as the CVT/differential
-      fluid (tasks #1/#11) and throttle body gasket (task #13) work.
+      (~141,000). Add to the same weekend as the CVT/differential fluid
+      (tasks #1/#11) and throttle body gasket (task #13) work.
+
+      UPDATED 2026-07-23: brake fluid and coolant flush dropped from this
+      task's title — per Brady, both were directly tested (not just
+      inspected/topped off) at the 2026-04-08 session and found good; now
+      logged as their own schedule-tracked entries in maintenance-log.yaml
+      (itemTypes brake-fluid-flush and coolant-flush), showing OK. His
+      standing policy is that a direct test result resets these items,
+      not a fixed interval regardless of condition.
     status: open
     createdDate: '2026-07-22'
     completedDate: null

@@ -345,6 +345,27 @@ entries:
       records the result here — replacement is test-driven, not based on
       the battery's age alone.
     documents: []
+  - date: '2026-04-08'
+    mileage: 134783
+    itemType: brake-fluid-flush
+    description: Brake fluid tested — DIY, same post-purchase inspection session
+    notes: >-
+      ADDED 2026-07-23, per Brady — tested (not flushed) and found good.
+      Per Brady's standing fleet-wide policy, a direct test result is
+      what resets these schedule items, not a hard flush on a fixed
+      interval — see the bundled post-purchase entry above for full
+      session context.
+    documents: []
+  - date: '2026-04-08'
+    mileage: 134783
+    itemType: coolant-flush
+    description: Coolant tested — DIY, same post-purchase inspection session
+    notes: >-
+      ADDED 2026-07-23, per Brady — tested (not flushed) and found good,
+      in addition to the level top-off already noted on the bundled
+      post-purchase entry above. Same test-driven-reset policy as the
+      brake fluid entry above.
+    documents: []
   - date: '2026-04-09'
     mileage: 134847
     itemType: ''
@@ -370,8 +391,8 @@ entries:
       independently confirmed. Mileage interpolated between the surrounding
       odometer readings — treat as rough.
     documents: []
-  - date: '2026-05-05'
-    mileage: 136536
+  - date: '2026-05-09'
+    mileage: 136789
     itemType: ''
     description: >-
       Front and rear brake rotors replaced (PowerStop Drilled & Slotted,
@@ -379,15 +400,21 @@ entries:
     notes: >-
       ADDED 2026-07-23, per Brady — rotors are installed and brand new;
       the pads from the same PowerStop kit have NOT been installed yet
-      (still on hand, open task). DATE IS ESTIMATED: Brady described this
-      as done "during my full initial service," but the PowerStop kit
-      wasn't even ordered until 2026-04-29 — after the main 2026-04-08
-      post-purchase session — so it can't have happened then. Using the
-      kit's expected-delivery window (ordered 04-29, expected by 05-05)
-      as a placeholder date instead of the stated one, since the evidence
-      doesn't support 04-08. Mileage interpolated between the 2026-04-15
-      (135,271 mi) and 2026-07-12 (140,837 mi) readings — treat both date
-      and mileage as rough pending Brady confirming the actual date.
+      (still on hand, open task). CONFIRMED 2026-07-23: Brady pinned the
+      date to 2026-05-09 (previously an estimate based on the PowerStop
+      kit's order/delivery window). Mileage interpolated between the
+      2026-04-15 (135,271 mi) and 2026-07-12 (140,837 mi) readings —
+      treat as rough.
+    documents: []
+  - date: '2026-05-09'
+    mileage: 136789
+    itemType: brake-inspection
+    description: Brake pad inspection/measurement, all four corners — DIY, same session as the rotor swap above
+    notes: >-
+      ADDED 2026-07-23, per Brady — done the same day as the rotor
+      replacement above. Satisfies the open "brake pad/rotor measurement"
+      task (see tasks.yaml). Same mileage-interpolation caveat as the
+      rotor entry above.
     documents: []
   - date: '2026-04-29'
     mileage: 136121
