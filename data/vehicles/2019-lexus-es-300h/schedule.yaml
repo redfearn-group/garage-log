@@ -172,7 +172,13 @@ items:
       procedure and its ~20,000 mi interval come from TSB L-SB-0028-20
       (Aug. 2020, "HV Battery Cooling System Maintenance Service"),
       which independent sources describe as inspect-every-5,000-mi,
-      clean-every-20,000-mi. This entry tracks that 20,000 mi
-      clean/service action, not the every-visit visual check.
+      clean-every-20,000-mi. UPGRADED 2026-07-23, per Brady: bumped from
+      a pure 20,000 mi interval to whichever comes first against a 6-month
+      cadence, matching his twice-yearly (spring/fall) check rhythm for
+      other critical items — a full 7-year, 31-record CARFAX history for
+      this car (see maintenance-log.yaml) shows this was NEVER done by
+      either prior owner, and Brady considers it critical to hybrid
+      battery performance/longevity, so a mileage-only interval that
+      could stretch past a year at his driving pace isn't tight enough.
     intervalMiles: 20000
-    intervalMonths: null
+    intervalMonths: 6
