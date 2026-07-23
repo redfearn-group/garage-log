@@ -47,7 +47,7 @@ if (points.length > 1) {
     <a class="no-print" href={withBase(`/vehicles/${vehicle.slug}/export`)}>Printable / export history →</a>
   </div>
   <p class="muted" style="margin-top: 0.25rem;">
-    VIN: {vehicle.vin || "—"} · Plate: {vehicle.licensePlate || "—"} · Tires: {vehicle.tireSize || "—"} · Purchased: {vehicle.purchaseDate ? formatDate(vehicle.purchaseDate) : "—"}
+    VIN: {vehicle.vin || "<private>"} · Tires: {vehicle.tireSize || "—"} · Purchased: {vehicle.purchaseDate ? formatDate(vehicle.purchaseDate) : "—"}
   </p>
   {vehicle.previousOwner && <p class="muted">{vehicle.previousOwner}</p>}
 
