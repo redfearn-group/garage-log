@@ -458,6 +458,35 @@ entries:
       above.
     documents:
       - 20260528-carfax-report.pdf
+  - date: '2026-05-26'
+    mileage: 106890
+    itemType: brake-inspection
+    description: >-
+      Brake pad/caliper/rotor inspection — Lexus of Murray, pre-delivery
+      prep (inferred)
+    notes: >-
+      ADDED 2026-07-23, per Brady — not itemized by name on the CARFAX
+      report, but a brake inspection is a standard part of a dealer's
+      pre-delivery/used-car prep alongside the tire, alignment, and
+      emissions work already logged from the same 2026-05-26 visit, and
+      Brady's read is that it was done then. Logged as inferred rather
+      than CARFAX-confirmed. Same mileage-interpolation caveat as the
+      oil-change entry above.
+    documents:
+      - 20260528-carfax-report.pdf
+  - date: '2026-05-26'
+    mileage: 106890
+    itemType: wiper-blades
+    description: >-
+      Wiper blade inspection — Lexus of Murray, pre-delivery prep
+      (inferred)
+    notes: >-
+      ADDED 2026-07-23, per Brady — same reasoning as the brake-inspection
+      entry above: not itemized by name on the CARFAX report, but treated
+      as part of the same pre-delivery prep visit. Same
+      mileage-interpolation caveat as the oil-change entry above.
+    documents:
+      - 20260528-carfax-report.pdf
   - date: '2026-06-24'
     mileage: 107776
     itemType: ''
