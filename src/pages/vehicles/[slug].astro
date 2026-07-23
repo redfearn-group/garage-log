@@ -118,13 +118,13 @@ if (points.length > 1) {
     </>
   )}
 
-  {vehicle.recallsData.recalls.length > 0 && (
+  {vehicle.openRecalls.length > 0 && (
     <>
-      <h3 class="section-title">Recalls (NHTSA)</h3>
+      <h3 class="section-title">Open recalls (NHTSA)</h3>
       <p class="muted" style="font-size:0.85rem;">
         Last checked: {vehicle.recallsData.lastChecked ? formatDate(vehicle.recallsData.lastChecked) : "never"}
       </p>
-      {vehicle.recallsData.recalls.map((r) => (
+      {vehicle.openRecalls.map((r) => (
         <div class="card" style="border-color: var(--status-overdue-fg);">
           <strong>{r.component}</strong>
           <p style="margin: 0.25rem 0 0;">{r.summary}</p>

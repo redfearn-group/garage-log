@@ -18,7 +18,7 @@ const rows = vehicles.map((vehicle) => {
     dueItems,
     admin,
     openTasks: vehicle.tasks.filter((t) => t.status === "open"),
-    recallCount: vehicle.recallsData.recalls.length,
+    recallCount: vehicle.openRecalls.length,
   };
 });
 
@@ -142,7 +142,7 @@ const ICONS: Record<"sedan" | "suv" | "truck", string> = {
             {recallCount > 0 && (
               <div>
                 <div class="stat-value">{recallCount}</div>
-                <div class="stat-label">Recall{recallCount === 1 ? "" : "s"} on file</div>
+                <div class="stat-label">Open recall{recallCount === 1 ? "" : "s"}</div>
               </div>
             )}
           </div>

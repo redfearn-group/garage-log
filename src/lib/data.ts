@@ -11,6 +11,7 @@ import type {
   AdminDate,
   DocumentEntry,
   RecallsData,
+  RecallRemedy,
   WatchListItem,
 } from "./types";
 
@@ -62,6 +63,17 @@ export function getVehicle(slug: string): Vehicle {
     lastChecked: null,
     recalls: [],
   });
+  // Manually maintained, separate from recalls.yaml so the monthly NHTSA
+  // auto-fetch (which overwrites recalls.yaml wholesale) never clobbers it.
+  // The NHTSA API has no per-VIN remedy status, so this has to be hand-kept.
+  const remedies = readYaml<{ remedies: RecallRemedy[] }>(
+    path.join(dir, "recall-remedies.yaml"),
+    { remedies: [] }
+  ).remedies;
+  const remediedCampaigns = new Set(remedies.map((r) => r.campaignNumber));
+  const openRecalls = recallsData.recalls.filter(
+    (r) => !remediedCampaigns.has(r.campaignNumber)
+  );
   const watchList = readYaml<{ items: WatchListItem[] }>(
     path.join(dir, "watch-list.yaml"),
     { items: [] }
@@ -76,6 +88,7 @@ export function getVehicle(slug: string): Vehicle {
     adminDates,
     documents,
     recallsData,
+    openRecalls,
     watchList,
   };
 }
