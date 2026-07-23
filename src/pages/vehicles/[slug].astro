@@ -75,43 +75,45 @@ if (points.length > 1) {
     <div class="stat"><strong>{vehicle.documents.length}</strong>documents</div>
   </div>
 
-  <h3 class="section-title">Maintenance schedule</h3>
-  <div class="table-wrap">
-  <table>
-    <thead>
-      <tr><th>Item</th><th>Status</th><th>Last done</th><th>Due at</th></tr>
-    </thead>
-    <tbody>
-      {statuses.map((s) => {
-        const { short, citation } = splitScheduleItemName(s.item.name);
-        return (
-        <tr>
-          <td>
-            {citation ? (
-              <details>
-                <summary>{short}</summary>
-                <p class="muted" style="font-size:0.85rem; margin: 0.35rem 0 0;">{citation}</p>
-              </details>
-            ) : short}
-          </td>
-          <td><StatusBadge status={s.status} /></td>
-          <td>{s.lastDone ? (s.lastDone.mileage != null ? `${formatDate(s.lastDone.date)} (${s.lastDone.mileage.toLocaleString()} mi)` : formatDate(s.lastDone.date)) : "—"}</td>
-          <td>
-            {s.dueMileage != null ? `${s.dueMileage.toLocaleString()} mi` : ""}
-            {s.dueMileage != null && s.dueDate != null ? " / " : ""}
-            {s.dueDate != null ? formatDate(s.dueDate) : ""}
-            {s.dueMileage == null && s.dueDate == null ? "—" : ""}
-          </td>
-        </tr>
-        );
-      })}
-    </tbody>
-  </table>
-  </div>
+  <details class="section" open>
+    <summary class="section-summary">Maintenance schedule</summary>
+    <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Item</th><th>Status</th><th>Last done</th><th>Due at</th></tr>
+      </thead>
+      <tbody>
+        {statuses.map((s) => {
+          const { short, citation } = splitScheduleItemName(s.item.name);
+          return (
+          <tr>
+            <td>
+              {citation ? (
+                <details>
+                  <summary>{short}</summary>
+                  <p class="muted" style="font-size:0.85rem; margin: 0.35rem 0 0;">{citation}</p>
+                </details>
+              ) : short}
+            </td>
+            <td><StatusBadge status={s.status} /></td>
+            <td>{s.lastDone ? (s.lastDone.mileage != null ? `${formatDate(s.lastDone.date)} (${s.lastDone.mileage.toLocaleString()} mi)` : formatDate(s.lastDone.date)) : "—"}</td>
+            <td>
+              {s.dueMileage != null ? `${s.dueMileage.toLocaleString()} mi` : ""}
+              {s.dueMileage != null && s.dueDate != null ? " / " : ""}
+              {s.dueDate != null ? formatDate(s.dueDate) : ""}
+              {s.dueMileage == null && s.dueDate == null ? "—" : ""}
+            </td>
+          </tr>
+          );
+        })}
+      </tbody>
+    </table>
+    </div>
+  </details>
 
   {activeWatchList.length > 0 && (
-    <>
-      <h3 class="section-title">Things to watch for</h3>
+    <details class="section" open>
+      <summary class="section-summary">Things to watch for</summary>
       <div class="table-wrap">
       <table>
         <thead><tr><th>Issue</th><th>Typical mileage</th><th>Status</th></tr></thead>
@@ -132,12 +134,26 @@ if (points.length > 1) {
         </tbody>
       </table>
       </div>
-    </>
+    </details>
   )}
 
+  <details class="section" open>
+    <summary class="section-summary">Tasks</summary>
+    <ul class="pill-list">
+      {openTasks.map((t) => (
+        <li>
+          ☐ {t.priority === "critical" && <span class="tag tag-red" style="margin-right: 0.4rem;">Critical</span>}
+          {t.title} <span class="muted">({formatDate(t.createdDate)})</span>
+        </li>
+      ))}
+      {doneTasks.map((t) => <li class="muted">☑ {t.title}</li>)}
+      {vehicle.tasks.length === 0 && <li class="muted">No tasks.</li>}
+    </ul>
+  </details>
+
   {vehicle.openRecalls.length > 0 && (
-    <>
-      <h3 class="section-title">Open recalls (NHTSA)</h3>
+    <details class="section" open>
+      <summary class="section-summary">Open recalls (NHTSA)</summary>
       <p class="muted" style="font-size:0.85rem;">
         Last checked: {vehicle.recallsData.lastChecked ? formatDate(vehicle.recallsData.lastChecked) : "never"}
       </p>
@@ -147,12 +163,12 @@ if (points.length > 1) {
           <p style="margin: 0.25rem 0 0;">{r.summary}</p>
         </div>
       ))}
-    </>
+    </details>
   )}
 
   {points.length > 1 && (
-    <>
-      <h3 class="section-title">Mileage trend</h3>
+    <details class="section">
+      <summary class="section-summary">Mileage trend</summary>
       <svg viewBox={`0 0 ${chartW} ${chartH}`} width="100%" height={chartH} role="img">
         {yearMarkers.map((m) => (
           <>
@@ -162,69 +178,65 @@ if (points.length > 1) {
         ))}
         <polyline points={polyline} fill="none" stroke="var(--accent)" stroke-width="2" />
       </svg>
-    </>
+    </details>
   )}
 
-  <h3 class="section-title">Mileage log</h3>
-  <div class="table-wrap">
-  <table>
-    <thead><tr><th>Date</th><th>Mileage</th></tr></thead>
-    <tbody>
-      {sortedMileageLog.map((m) => <tr><td>{formatDate(m.date)}</td><td>{m.mileage.toLocaleString()}</td></tr>)}
-    </tbody>
-  </table>
-  </div>
+  <details class="section">
+    <summary class="section-summary">Mileage log</summary>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Date</th><th>Mileage</th></tr></thead>
+      <tbody>
+        {sortedMileageLog.map((m) => <tr><td>{formatDate(m.date)}</td><td>{m.mileage.toLocaleString()}</td></tr>)}
+      </tbody>
+    </table>
+    </div>
+  </details>
 
-  <h3 class="section-title">Maintenance history</h3>
-  <div class="table-wrap">
-  <table>
-    <thead><tr><th>Date</th><th>Mileage</th><th>Item</th><th>Notes</th></tr></thead>
-    <tbody>
-      {sortedMaintenanceLog.map((m) => (
-        <tr>
-          <td>{formatDate(m.date)}</td>
-          <td>{m.mileage != null ? m.mileage.toLocaleString() : "—"}</td>
-          <td>{m.description}</td>
-          <td class="muted">{m.notes}</td>
-        </tr>
+  <details class="section">
+    <summary class="section-summary">Maintenance history</summary>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Date</th><th>Mileage</th><th>Item</th><th>Notes</th></tr></thead>
+      <tbody>
+        {sortedMaintenanceLog.map((m) => (
+          <tr>
+            <td>{formatDate(m.date)}</td>
+            <td>{m.mileage != null ? m.mileage.toLocaleString() : "—"}</td>
+            <td>{m.description}</td>
+            <td class="muted">{m.notes}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    </div>
+  </details>
+
+  <details class="section">
+    <summary class="section-summary">Admin dates</summary>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Type</th><th>Due</th><th>Notes</th></tr></thead>
+      <tbody>
+        {adminDates.map((d) => <tr><td>{d.label}</td><td>{formatDate(d.dueDate)}</td><td class="muted">{d.notes}</td></tr>)}
+        {adminDates.length === 0 && <tr><td colspan="3" class="muted">None on file.</td></tr>}
+      </tbody>
+    </table>
+    </div>
+  </details>
+
+  <details class="section">
+    <summary class="section-summary">Documents</summary>
+    <p class="muted" style="font-size:0.85rem;">🔒 Source files are kept in a private repo — only the summary below is public.</p>
+    <ul class="pill-list">
+      {vehicle.documents.map((doc) => (
+        <li>
+          <span>{doc.filename}</span>
+          <span class="muted"> — {doc.category}, added {formatDate(doc.dateAdded)}</span>
+          {doc.description && <div class="muted" style="font-size:0.85rem;">{doc.description}</div>}
+        </li>
       ))}
-    </tbody>
-  </table>
-  </div>
-
-  <h3 class="section-title">Tasks</h3>
-  <ul class="pill-list">
-    {openTasks.map((t) => (
-      <li>
-        ☐ {t.priority === "critical" && <span class="tag tag-red" style="margin-right: 0.4rem;">Critical</span>}
-        {t.title} <span class="muted">({formatDate(t.createdDate)})</span>
-      </li>
-    ))}
-    {doneTasks.map((t) => <li class="muted">☑ {t.title}</li>)}
-    {vehicle.tasks.length === 0 && <li class="muted">No tasks.</li>}
-  </ul>
-
-  <h3 class="section-title">Admin dates</h3>
-  <div class="table-wrap">
-  <table>
-    <thead><tr><th>Type</th><th>Due</th><th>Notes</th></tr></thead>
-    <tbody>
-      {adminDates.map((d) => <tr><td>{d.label}</td><td>{formatDate(d.dueDate)}</td><td class="muted">{d.notes}</td></tr>)}
-      {adminDates.length === 0 && <tr><td colspan="3" class="muted">None on file.</td></tr>}
-    </tbody>
-  </table>
-  </div>
-
-  <h3 class="section-title">Documents</h3>
-  <p class="muted" style="font-size:0.85rem;">🔒 Source files are kept in a private repo — only the summary below is public.</p>
-  <ul class="pill-list">
-    {vehicle.documents.map((doc) => (
-      <li>
-        <span>{doc.filename}</span>
-        <span class="muted"> — {doc.category}, added {formatDate(doc.dateAdded)}</span>
-        {doc.description && <div class="muted" style="font-size:0.85rem;">{doc.description}</div>}
-      </li>
-    ))}
-    {vehicle.documents.length === 0 && <li class="muted">No documents uploaded.</li>}
-  </ul>
+      {vehicle.documents.length === 0 && <li class="muted">No documents uploaded.</li>}
+    </ul>
+  </details>
 </Base>
