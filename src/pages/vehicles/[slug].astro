@@ -19,6 +19,9 @@ const sortedMileageLog = [...vehicle.mileageLog].sort((a, b) => (a.date < b.date
 const sortedMaintenanceLog = [...vehicle.maintenanceLog].sort((a, b) => (a.date < b.date ? 1 : -1));
 const openTasks = vehicle.tasks.filter((t) => t.status === "open");
 const doneTasks = vehicle.tasks.filter((t) => t.status === "done");
+// Addressed items are already in maintenance-log.yaml — the watch list is
+// only for things still worth watching for.
+const activeWatchList = vehicle.watchList.filter((w) => w.status !== "addressed");
 
 // simple inline sparkline points for the mileage trend
 const points = [...vehicle.mileageLog].sort((a, b) => (a.date < b.date ? -1 : 1));
@@ -92,14 +95,14 @@ if (points.length > 1) {
   </table>
   </div>
 
-  {vehicle.watchList.length > 0 && (
+  {activeWatchList.length > 0 && (
     <>
       <h3 class="section-title">Things to watch for</h3>
       <div class="table-wrap">
       <table>
         <thead><tr><th>Issue</th><th>Typical mileage</th><th>Status</th></tr></thead>
         <tbody>
-          {vehicle.watchList.map((w) => {
+          {activeWatchList.map((w) => {
             const mileageReached = w.status === "not-yet-at-mileage" && currentMileageAtOrAbove(mileage, w.typicalMileage);
             return (
             <tr>
