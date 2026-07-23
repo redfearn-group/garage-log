@@ -269,6 +269,7 @@ details.section[open] > summary.section-summary::before { transform: rotate(90de
 @media (max-width: 640px) {
   .fleet-stats { grid-template-columns: repeat(2, 1fr); }
 }
+.fleet-stats.fleet-stats-single { grid-template-columns: 1fr; }
 
 /* ---------- Callouts ---------- */
 

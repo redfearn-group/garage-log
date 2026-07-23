@@ -1,7 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import StatusBadge from "../components/StatusBadge.astro";
-import { getActiveVehicles, currentMileage, vehicleLabel } from "../lib/data";
+import { getActiveVehicles, currentMileage, vehicleLabel, vehicleShortLabel } from "../lib/data";
 import { scheduleStatusesFor, worstStatus, upcomingAdminDates, splitScheduleItemName } from "../lib/status";
 import { withBase } from "../lib/url";
 
@@ -22,10 +22,7 @@ const rows = vehicles.map((vehicle) => {
   };
 });
 
-// Fleet-wide aggregates for the summary strip.
-const overdueCount = rows.reduce((n, r) => n + r.dueItems.filter((s) => s.status === "overdue").length, 0);
-const dueSoonCount = rows.reduce((n, r) => n + r.dueItems.filter((s) => s.status === "due-soon").length, 0);
-const openTasksCount = rows.reduce((n, r) => n + r.openTasks.length, 0);
+// Fleet-wide aggregate for the summary strip.
 const vehiclesNeedAttentionCount = rows.filter((r) => r.overall !== "ok").length;
 
 // Critical items: Brady's own hand-set task.priority is a more trustworthy
@@ -74,24 +71,12 @@ const ICONS: Record<"sedan" | "suv" | "truck", string> = {
   {rows.length === 0 && <p class="muted">No active vehicles yet. Add one to <code>data/vehicles.yaml</code>.</p>}
 
   {rows.length > 0 && (
-    <div class="fleet-stats">
+    <div class="fleet-stats fleet-stats-single">
       <div class="fleet-stat">
         <div class={`fleet-stat-value ${vehiclesNeedAttentionCount > 0 ? "is-critical" : "is-positive"}`}>
           {vehiclesNeedAttentionCount} / {rows.length}
         </div>
         <div class="fleet-stat-label">Need attention</div>
-      </div>
-      <div class="fleet-stat">
-        <div class={`fleet-stat-value ${overdueCount > 0 ? "is-critical" : "is-positive"}`}>{overdueCount}</div>
-        <div class="fleet-stat-label">Overdue items</div>
-      </div>
-      <div class="fleet-stat">
-        <div class={`fleet-stat-value ${dueSoonCount > 0 ? "is-warning" : "is-positive"}`}>{dueSoonCount}</div>
-        <div class="fleet-stat-label">Due soon</div>
-      </div>
-      <div class="fleet-stat">
-        <div class="fleet-stat-value">{openTasksCount}</div>
-        <div class="fleet-stat-label">Open tasks</div>
       </div>
     </div>
   )}
@@ -100,13 +85,16 @@ const ICONS: Record<"sedan" | "suv" | "truck", string> = {
     <div class="callout callout-alert">
       <p class="callout-label">Alert — {criticalItems.length} critical item{criticalItems.length === 1 ? "" : "s"}</p>
       <div class="callout-body">
-        {criticalItems.map(({ vehicle, task }) => (
+        {criticalItems.slice(0, 3).map(({ vehicle, task }) => (
           <span class="callout-item">
-            <a href={withBase(`/vehicles/${vehicle.slug}`)}>{vehicleLabel(vehicle)}</a>
+            <a href={withBase(`/vehicles/${vehicle.slug}`)}>{vehicleShortLabel(vehicle)}</a>
             {" — "}
             {task.title}
           </span>
         ))}
+        {criticalItems.length > 3 && (
+          <span class="callout-item muted">+{criticalItems.length - 3} more</span>
+        )}
       </div>
     </div>
   )}

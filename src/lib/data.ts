@@ -120,3 +120,10 @@ export function vehicleLabel(vehicle: VehicleSummary): string {
   const nickname = vehicle.nickname ? ` "${vehicle.nickname}"` : "";
   return `${vehicle.year} ${vehicle.make} ${vehicle.model}${nickname}${vehicle.trim ? " " + vehicle.trim : ""}`;
 }
+
+// Same as vehicleLabel but without trim — for tight mobile spaces (e.g. the
+// dashboard's critical-items alert) where the full trim text wraps badly.
+export function vehicleShortLabel(vehicle: VehicleSummary): string {
+  const nickname = vehicle.nickname ? ` "${vehicle.nickname}"` : "";
+  return `${vehicle.year} ${vehicle.make} ${vehicle.model}${nickname}`;
+}
