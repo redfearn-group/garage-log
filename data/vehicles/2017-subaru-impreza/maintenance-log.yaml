@@ -1,4 +1,35 @@
 entries:
+  - date: '2026-03-13'
+    mileage: 133173
+    itemType: tire-rotation
+    description: Four tires — brand new from the dealer at purchase (Carnova LLC)
+    notes: >-
+      ADDED 2026-07-23, per Brady — confirmed during his initial post-purchase
+      inspection (see the 2026-04-08 entry below) that the tires were new,
+      but the actual install/reset point is the dealer's own work at
+      purchase, not Brady's later inspection of them. Treated as the
+      tire-rotation interval reset point.
+    documents: []
+  - date: '2026-03-13'
+    mileage: 133173
+    itemType: cabin-air-filter
+    description: Cabin air filter — brand new from the dealer at purchase
+    notes: >-
+      ADDED 2026-07-23, per Brady — same sourcing as the tire-rotation entry
+      above: confirmed new during his initial inspection, dated to the
+      dealer's purchase-prep work rather than the later inspection date.
+    documents: []
+  - date: '2026-03-13'
+    mileage: 133173
+    itemType: engine-air-filter
+    description: Engine air filter — brand new from the dealer at purchase
+    notes: >-
+      ADDED 2026-07-23, per Brady — same sourcing as the tire-rotation entry
+      above. Note the K&N long-life replacement filter ordered the very next
+      day (2026-03-14, below) is a separate proactive reusable-filter
+      purchase, not evidence the factory filter was already due — it wasn't
+      installed until later, if at all (unconfirmed).
+    documents: []
   - date: '2026-03-14'
     mileage: 133235
     itemType: ''
@@ -232,6 +263,20 @@ entries:
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
     documents: []
+  - date: '2026-04-06'
+    mileage: 134659
+    itemType: ''
+    description: Fel-Pro valve cover gasket set — O'Reilly Auto Parts
+    notes: >-
+      ADDED 2026-07-23, per Brady — the gasket set actually installed at
+      the 2026-04-08 post-purchase service (see below), confirmed via his
+      card statement charge dated 2026-04-06. No email receipt found for
+      this purchase (unlike the AutoZone in-store purchase, which did
+      email one) — Gmail searches for O'Reilly + valve/gasket in this
+      window turned up nothing beyond the unrelated throttle body gasket
+      order. Mileage interpolated between the 2026-04-03 (134,473 mi) and
+      2026-04-08 (134,783 mi) readings — treat as rough.
+    documents: []
   - date: '2026-04-08'
     mileage: 134783
     itemType: ''
@@ -247,14 +292,22 @@ entries:
     notes: >-
       Brady recalls doing this work 03-05 April 2026, shortly after
       buying the car; using 04-08 since that's the date with a confirmed
-      odometer photo (134,783 mi) in the same window. Tires/wheels,
-      engine air filter, and cabin air filter were all brand new at
-      purchase — inspected and confirmed good, no action needed on those
-      this session. Brake fluid also inspected and tested good. The
-      valve cover gasket sets Brady initially ordered from AutoZone
-      (2026-04-05, two BECK/ARNLEY sets, $64.45) arrived too late and were
-      fully returned (2026-05-01, same $64.45) — the gaskets actually
-      installed came from Amazon instead (receipt pending upload).
+      odometer photo (134,783 mi) in the same window. Tires, engine air
+      filter, and cabin air filter were all brand new at purchase —
+      inspected and confirmed good this session, no action needed; see
+      the dedicated 2026-03-13 entries above (dated to the dealer's prep,
+      not this inspection). Brake fluid inspected and tested good.
+      UPDATED 2026-07-23, per Brady: coolant was also tested (not just
+      visually topped off) and found fine this session. RESOLVED
+      2026-07-23 — the gasket set actually installed was a Fel-Pro set
+      from O'Reilly Auto Parts, charged 2026-04-06 (per Brady, from his
+      card statement — no email receipt found, unlike the AutoZone
+      in-store purchase which did email one). Both other candidates were
+      returned, not installed: the AutoZone BECK/ARNLEY sets (2026-04-05,
+      $64.45, returned 2026-05-01) and the Amazon "Subaru Valve Cover
+      Gasket Kit" (ordered 03-27, delivered 04-05, returned/refunded
+      $63.38 on 04-20) — this corrects the entry's original claim that
+      the Amazon kit was the one installed.
     documents:
       - 20260405-autozone-valve-cover-gasket-purchase.pdf
       - 20260501-autozone-valve-cover-gasket-return.pdf
@@ -316,6 +369,25 @@ entries:
       order-placed date used as the log date; exact install date not
       independently confirmed. Mileage interpolated between the surrounding
       odometer readings — treat as rough.
+    documents: []
+  - date: '2026-05-05'
+    mileage: 136536
+    itemType: ''
+    description: >-
+      Front and rear brake rotors replaced (PowerStop Drilled & Slotted,
+      from the kit above) — DIY
+    notes: >-
+      ADDED 2026-07-23, per Brady — rotors are installed and brand new;
+      the pads from the same PowerStop kit have NOT been installed yet
+      (still on hand, open task). DATE IS ESTIMATED: Brady described this
+      as done "during my full initial service," but the PowerStop kit
+      wasn't even ordered until 2026-04-29 — after the main 2026-04-08
+      post-purchase session — so it can't have happened then. Using the
+      kit's expected-delivery window (ordered 04-29, expected by 05-05)
+      as a placeholder date instead of the stated one, since the evidence
+      doesn't support 04-08. Mileage interpolated between the 2026-04-15
+      (135,271 mi) and 2026-07-12 (140,837 mi) readings — treat both date
+      and mileage as rough pending Brady confirming the actual date.
     documents: []
   - date: '2026-04-29'
     mileage: 136121

@@ -51,9 +51,24 @@ tasks:
     completedDate: '2026-04-08'
   - id: 4
     title: Brake pad/rotor measurement at all four corners
-    notes: Record the exact numbers for reference.
+    notes: >-
+      Record the exact numbers for reference. UPDATED 2026-07-23: rotors
+      are already new (PowerStop, DIY-installed ~2026-05-05, see
+      maintenance-log.yaml) — this is now really about measuring the
+      old pads still on the car, to compare against the new PowerStop
+      pads once installed (see the new pad-install task).
     status: open
     createdDate: '2026-07-11'
+    completedDate: null
+  - id: 20
+    title: Install PowerStop brake pads (front and rear) — already on hand
+    notes: >-
+      ADDED 2026-07-23, per Brady. Part of the same PowerStop kit as the
+      rotors (ordered 2026-04-29, see maintenance-log.yaml) — rotors are
+      already installed, but the pads from that kit are still sitting on
+      hand, not yet installed.
+    status: open
+    createdDate: '2026-07-23'
     completedDate: null
   - id: 5
     title: Tire inspection — tread depth, DOT date codes, sidewall condition
