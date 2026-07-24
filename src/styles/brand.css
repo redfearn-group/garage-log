@@ -1,0 +1,329 @@
+/* ============================================================
+   Redfearn Group Brand
+   Canonical design tokens and shared primitives.
+
+   THIS FILE IS THE SOURCE OF TRUTH. It is vendored into each
+   property (redfearn-group.github.io, garage-log, home-log) and a
+   CI check fails the build if a vendored copy drifts from this
+   one. Edit it here, then sync outward. Never patch a copy.
+
+   Values live here. The rules about how to apply them live in the
+   redfearn-group-style skill, which points at this file rather
+   than restating hex codes.
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   1. Raw palette. Mode-independent, never referenced directly by
+      components. Components use the semantic tokens in section 3.
+   ------------------------------------------------------------ */
+:root {
+  /* Brand anchor plus the barn swallow palette */
+  --rg-red:       #BF1E2E;
+  --rg-blue:      #0A1128;
+  --rg-cream:     #F7F4EF;
+  --rg-green:     #1A6635;
+  --rg-gape:      #FFCC00;
+  --rg-tawny:     #D97443;
+  --rg-ember:     #C2592A;
+
+  /* Dark-surface-safe red. Raw --rg-red is 3.06:1 on --rg-blue and
+     2.88:1 on the dark card surface, which fails body text. This is
+     the same hue (354deg) lightened to clear AA on both: 6.80:1 on
+     page, 6.40:1 on card. Also sits dE 13.8 from --status-overdue-fg
+     so an accent link never reads as an overdue badge. */
+  --rg-red-light: #EC7985;
+
+  /* Editorial neutrals */
+  --rg-graphite:  #2B2F36;
+  --rg-slate:     #4B5563;
+  --rg-ash:       #676E7C;
+  --rg-mist:      #D1D5DB;
+  --rg-paper:     #F8F9FA;
+  --rg-bone:      #F7F5EF;
+
+  /* Callout tints, light mode only */
+  --tint-blue:    #E9E9EE;
+  --tint-slate:   #EEF0F2;
+  --tint-paper:   #F8F9FA;
+  --tint-mist:    #EFEFF1;
+  --tint-tawny:   #FCF4F0;
+  --tint-yellow:  #FFFBEB;
+  --tint-ember:   #FAF2EE;
+  --tint-red:     #FAEDEE;
+  --tint-green:   #EDF3EF;
+
+  /* Type */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body:    'IBM Plex Sans', sans-serif;
+  --font-mono:    'JetBrains Mono', monospace;
+
+  --radius: 4px;
+}
+
+/* ------------------------------------------------------------
+   2. Layer scopes. Each sets the accent role. Never mix two layers
+      in the same accent role on one page.
+
+      Identity  (:root)        brand chrome, marketing surfaces
+      Content   (.content-layer) case studies, reports
+      Product   (.app-layer)   real working applications
+   ------------------------------------------------------------ */
+:root {
+  --accent:        var(--rg-red);
+  --accent-tint:   rgba(191, 30, 46, 0.08);
+  --accent-border: rgba(191, 30, 46, 0.22);
+  --gradient-a:    #BF1E2E;
+  --gradient-b:    #D97443;
+}
+
+.content-layer {
+  --accent:        var(--rg-ember);
+  --accent-tint:   rgba(194, 89, 42, 0.08);
+  --accent-border: rgba(194, 89, 42, 0.24);
+  --gradient-a:    #C2592A;
+  --gradient-b:    #FFCC00;
+}
+
+/* ------------------------------------------------------------
+   3. Semantic surface tokens. Light is the default.
+   ------------------------------------------------------------ */
+:root {
+  --bg:          var(--rg-cream);
+  --surface:     #FFFFFF;
+  --border:      rgba(10, 17, 40, 0.10);
+  --text:        var(--rg-blue);
+  --text-muted:  var(--rg-ash);
+
+  --status-overdue-fg:  var(--rg-red);
+  --status-due-soon-fg: var(--rg-tawny);
+  --status-ok-fg:       var(--rg-green);
+  --status-never-fg:    var(--rg-ash);
+  --status-overdue-bg:  rgba(191, 30, 46, 0.08);
+  --status-due-soon-bg: rgba(217, 116, 67, 0.08);
+  --status-ok-bg:       rgba(26, 102, 53, 0.08);
+  --status-never-bg:    rgba(107, 114, 128, 0.08);
+}
+
+/* Product layer. Dark unconditionally, not via prefers-color-scheme:
+   the dark treatment is the product identity for these tools, not an
+   echo of an OS setting. Every value below is measured against the
+   surface it actually renders on (the card, #0F1830, is the binding
+   constraint since it is lighter than the page).
+
+     cream body text   16.04:1  AAA
+     muted text         6.77:1  AA
+     accent link        6.40:1  AA
+     overdue            6.40:1  AA
+     due-soon           8.69:1  AAA
+     ok                 6.42:1  AA
+     gape (log only)   11.64:1  AAA
+   ------------------------------------------------------------ */
+.app-layer {
+  --bg:          var(--rg-blue);
+  --surface:     #0F1830;
+  --border:      rgba(247, 244, 239, 0.12);
+  --text:        var(--rg-cream);
+  --text-muted:  #9AA1AE;
+
+  --accent:        var(--rg-red-light);
+  --accent-tint:   rgba(236, 121, 133, 0.10);
+  --accent-border: rgba(236, 121, 133, 0.28);
+  --gradient-a:    #EC7985;
+  --gradient-b:    #D97443;
+
+  --status-overdue-fg:  #FF6B7A;
+  --status-due-soon-fg: #F0A57A;
+  --status-ok-fg:       #4CAF6E;
+  --status-never-fg:    #9AA1AE;
+  --status-overdue-bg:  rgba(255, 107, 122, 0.12);
+  --status-due-soon-bg: rgba(240, 165, 122, 0.12);
+  --status-ok-bg:       rgba(76, 175, 110, 0.12);
+  --status-never-bg:    rgba(154, 161, 174, 0.12);
+}
+
+/* ------------------------------------------------------------
+   4. Shared primitives
+   ------------------------------------------------------------ */
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  background: var(--rg-red);
+  color: var(--rg-cream);
+  padding: 0.75rem 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.skip-link:focus { left: 1rem; top: 1rem; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Minimum text size is 12px (0.75rem) everywhere, with weight 500 or
+   heavier below 14px. Tracked uppercase mono loses stroke contrast
+   fast, which is why every label primitive below carries 500. */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+.eyebrow::before {
+  content: '';
+  display: block;
+  width: 26px;
+  height: 1px;
+  background: var(--accent);
+}
+
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+.section-label::after {
+  content: '';
+  flex: 0 0 80px;
+  height: 1px;
+  background: var(--rg-mist);
+}
+
+.gradient-bar {
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(90deg, var(--gradient-a) 0%, var(--gradient-b) 100%);
+}
+
+/* Calibrated for dark backgrounds. Red stays on the border, tint, and
+   dot, which are decorative. Text is cream because raw red on dark is
+   3.06:1. On a light background use color: var(--rg-red) instead. */
+.live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.22rem 0.65rem;
+  background: var(--accent-tint);
+  border: 1px solid var(--accent-border);
+  border-radius: 99px;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--rg-cream);
+}
+.live-dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--rg-red);
+  animation: rg-pulse 2s ease-in-out infinite;
+}
+@keyframes rg-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.8rem 1.7rem;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s, border-color 0.15s, background 0.15s;
+}
+.btn-primary { background: var(--rg-red); color: var(--rg-cream); }
+.btn-primary:hover { transform: translateY(-1px); background: #A71926; }
+.btn-ghost { background: transparent; border-color: rgba(10, 17, 40, 0.2); color: var(--rg-blue); }
+.btn-ghost:hover { border-color: var(--rg-red); color: var(--rg-red); }
+.btn-ghost-dark { background: transparent; border-color: rgba(247, 244, 239, 0.25); color: var(--rg-cream); }
+.btn-ghost-dark:hover { border-color: var(--accent); color: var(--accent); }
+
+.tag {
+  display: inline-block;
+  padding: 0.22rem 0.55rem;
+  border-radius: 2px;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+}
+/* Status tags read from the semantic tokens, not the raw palette, so
+   they pick up the corrected values inside .app-layer automatically. */
+.tag-red     { color: var(--status-overdue-fg);  background: var(--status-overdue-bg); }
+.tag-green   { color: var(--status-ok-fg);       background: var(--status-ok-bg); }
+.tag-tawny   { color: var(--status-due-soon-fg); background: var(--status-due-soon-bg); }
+.tag-neutral { color: var(--status-never-fg);    background: var(--status-never-bg); }
+.tag-ember   { color: var(--rg-ember);           background: rgba(194, 89, 42, 0.08); }
+.app-layer .tag-ember { color: var(--rg-tawny); background: rgba(217, 116, 67, 0.12); }
+
+/* Callouts. Light mode only: the tints are opaque light values and do
+   not survive on a dark surface. Apps use .tag and status badges. */
+.callout {
+  border-radius: 0 6px 6px 0;
+  padding: 0.9rem 1.2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.callout::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 4px;
+}
+.callout .lbl {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+.callout p { font-size: 0.9rem; color: var(--rg-blue); font-weight: 300; line-height: 1.6; margin: 0; }
+
+.co-insight { background: var(--tint-blue); }   .co-insight::before { background: var(--rg-blue); }     .co-insight .lbl { color: var(--rg-blue); }
+.co-note    { background: var(--tint-slate); }  .co-note::before    { background: var(--rg-slate); }    .co-note .lbl    { color: var(--rg-slate); }
+.co-bottom  { background: var(--tint-paper); }  .co-bottom::before  { background: var(--rg-blue); }     .co-bottom .lbl  { color: var(--rg-blue); }
+.co-def     { background: var(--tint-mist); }   .co-def::before     { background: var(--rg-graphite); } .co-def .lbl     { color: var(--rg-graphite); }
+.co-quote   { background: var(--tint-tawny); }  .co-quote::before   { background: var(--rg-tawny); }    .co-quote .lbl   { color: var(--rg-blue); }
+.co-warning { background: var(--tint-yellow); } .co-warning::before { background: var(--rg-gape); }     .co-warning .lbl { color: var(--rg-ember); }
+.co-caution { background: var(--tint-ember); }  .co-caution::before { background: var(--rg-ember); }    .co-caution .lbl { color: var(--rg-ember); }
+.co-alert   { background: var(--tint-red); }    .co-alert::before   { background: var(--rg-red); }      .co-alert .lbl   { color: var(--rg-red); }
+
+.sc { display: inline-block; padding: 0.18em 0.6em; border-radius: 3px; font-weight: 700; font-size: 0.8rem; font-family: var(--font-mono); }
+.sc-green { background: var(--tint-green); color: var(--rg-green); }
+.sc-tawny { background: var(--tint-tawny); color: var(--rg-tawny); }
+.sc-ember { background: var(--tint-ember); color: var(--rg-ember); }
+.sc-red   { background: var(--tint-red);   color: var(--rg-red); }
+
+@media (prefers-reduced-motion: reduce) {
+  .live-dot { animation: none; }
+  .btn { transition: none; }
+  .btn-primary:hover { transform: none; }
+}

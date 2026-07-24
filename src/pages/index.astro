@@ -35,10 +35,10 @@ const criticalItems = rows.flatMap((r) =>
 );
 
 const accentFor: Record<string, string> = {
-  overdue: "var(--rg-red)",
-  "due-soon": "var(--rg-tawny)",
-  ok: "var(--rg-green)",
-  "never-done": "var(--rg-ash)",
+  overdue: "var(--status-overdue-fg)",
+  "due-soon": "var(--status-due-soon-fg)",
+  ok: "var(--status-ok-fg)",
+  "never-done": "var(--status-never-fg)",
 };
 
 const tagClassFor: Record<string, string> = {
@@ -137,7 +137,7 @@ const ICONS: Record<"sedan" | "suv" | "truck", string> = {
 
           {dueItems.length > 0 && (
             <div class="card-section">
-              <p class="section-label">Needs attention</p>
+              <p class="card-label">Needs attention</p>
               <div class="tag-row">
                 {shown.map((s) => (
                   <span class={`tag ${tagClassFor[s.status]}`}>{splitScheduleItemName(s.item.name).short}</span>
