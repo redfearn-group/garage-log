@@ -26,13 +26,6 @@
   --rg-tawny:     #D97443;
   --rg-ember:     #C2592A;
 
-  /* Dark-surface-safe red. Raw --rg-red is 3.06:1 on --rg-blue and
-     2.88:1 on the dark card surface, which fails body text. This is
-     the same hue (354deg) lightened to clear AA on both: 6.80:1 on
-     page, 6.40:1 on card. Also sits dE 13.8 from --status-overdue-fg
-     so an accent link never reads as an overdue badge. */
-  --rg-red-light: #EC7985;
-
   /* Editorial neutrals */
   --rg-graphite:  #2B2F36;
   --rg-slate:     #4B5563;
@@ -106,17 +99,25 @@
 
 /* Product layer. Dark unconditionally, not via prefers-color-scheme:
    the dark treatment is the product identity for these tools, not an
-   echo of an OS setting. Every value below is measured against the
-   surface it actually renders on (the card, #0F1830, is the binding
-   constraint since it is lighter than the page).
+   echo of an OS setting.
 
-     cream body text   16.04:1  AAA
-     muted text         6.77:1  AA
-     accent link        6.40:1  AA
-     overdue            6.40:1  AA
-     due-soon           8.69:1  AAA
-     ok                 6.42:1  AA
-     gape (log only)   11.64:1  AAA
+   ACCENT TEXT IS CREAM, NOT RED. This follows the rule the logo system
+   and the live-badge component already set: on dark surfaces, red goes
+   on borders, tint fills, gradient bars, dots, and underlines, which are
+   decorative, while anything that has to be read is cream. Raw --rg-red
+   is 2.88:1 on the card surface and fails body text. Do not solve that
+   by inventing a lighter red. The palette is a closed set of five logo
+   schemes plus the tokens in section 1, and off-system colors are not
+   introduced without Brady saying so explicitly.
+
+   Measured against the card surface #0F1830, the binding constraint
+   since it is lighter than the page:
+
+     cream text (incl. links)  16.04:1  AAA
+     muted text                 6.77:1  AA
+     due-soon                   8.69:1  AAA
+     ok                         6.42:1  AA
+     gape (ambient log only)   11.64:1  AAA
    ------------------------------------------------------------ */
 .app-layer {
   --bg:          var(--rg-blue);
@@ -125,10 +126,10 @@
   --text:        var(--rg-cream);
   --text-muted:  #9AA1AE;
 
-  --accent:        var(--rg-red-light);
-  --accent-tint:   rgba(236, 121, 133, 0.10);
-  --accent-border: rgba(236, 121, 133, 0.28);
-  --gradient-a:    #EC7985;
+  --accent:        var(--rg-cream);
+  --accent-tint:   rgba(191, 30, 46, 0.12);
+  --accent-border: rgba(191, 30, 46, 0.35);
+  --gradient-a:    #BF1E2E;
   --gradient-b:    #D97443;
 
   --status-overdue-fg:  #FF6B7A;
@@ -140,6 +141,18 @@
   --status-ok-bg:       rgba(76, 175, 110, 0.12);
   --status-never-bg:    rgba(154, 161, 174, 0.12);
 }
+
+/* Links on dark are cream, the same as body text, so colour cannot be the
+   thing that marks them. The underline carries the brand red instead.
+   An underline is decorative, so it is not contrast-bound, which is what
+   lets red appear on a dark surface without failing anyone. */
+.app-layer a {
+  color: var(--accent);
+  text-decoration-color: var(--rg-red);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+.app-layer a:hover { text-decoration-color: var(--rg-cream); }
 
 /* ------------------------------------------------------------
    4. Shared primitives
