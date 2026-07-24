@@ -1,61 +1,8 @@
-:root {
-  --rg-red: #BF1E2E;
-  --rg-blue: #0A1128;
-  --rg-cream: #F7F4EF;
-  --rg-green: #1A6635;
-  --rg-gape: #FFCC00;
-  --rg-tawny: #D97443;
-  --rg-ember: #C2592A;
-  --rg-graphite: #2B2F36;
-  --rg-slate: #4B5563;
-  --rg-ash: #676E7C;
-  --rg-mist: #D1D5DB;
-  --rg-paper: #F8F9FA;
-  --rg-bone: #F7F5EF;
+/* App-specific styles for this tracker.
+   Design tokens and shared primitives come from brand.css, which is
+   vendored from redfearn-group/redfearn-brand and checked for drift in
+   CI. Do not redefine --rg-* or --status-* values here. */
 
-  --bg: var(--rg-cream);
-  --surface: #FFFFFF;
-  --border: rgba(10, 17, 40, 0.10);
-  --text: var(--rg-blue);
-  --text-muted: var(--rg-ash);
-  --accent: var(--rg-ember);
-
-  --status-overdue-fg: var(--rg-red);
-  --status-due-soon-fg: var(--rg-tawny);
-  --status-ok-fg: var(--rg-green);
-  --status-never-fg: var(--rg-ash);
-  --status-overdue-bg: rgba(191, 30, 46, 0.08);
-  --status-due-soon-bg: rgba(217, 116, 67, 0.08);
-  --status-ok-bg: rgba(26, 102, 53, 0.08);
-  --status-never-bg: rgba(107, 114, 128, 0.08);
-
-  --radius: 4px;
-}
-
-/* Courtesy dark-mode adaptation, with lightened RG-family variants tuned for
-   --rg-blue backgrounds. The design system's WCAG-verified pairs are all
-   specified on cream, not dark blue; these values are a good-faith,
-   contrast-conscious re-skin, not independently verified. Run an actual
-   contrast checker (e.g. WebAIM) before treating this as final. */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: var(--rg-blue);
-    --surface: #0F1830;
-    --border: rgba(247, 244, 239, 0.12);
-    --text: var(--rg-cream);
-    --text-muted: #9AA1AE;
-    --accent: #E08A5C;
-
-    --status-overdue-fg: #FF6B7A;
-    --status-due-soon-fg: #F0A57A;
-    --status-ok-fg: #4CAF6E;
-    --status-never-fg: #9AA1AE;
-    --status-overdue-bg: rgba(255, 107, 122, 0.12);
-    --status-due-soon-bg: rgba(240, 165, 122, 0.12);
-    --status-ok-bg: rgba(76, 175, 110, 0.12);
-    --status-never-bg: rgba(154, 161, 174, 0.12);
-  }
-}
 
 * { box-sizing: border-box; }
 
@@ -75,22 +22,6 @@ a { color: var(--accent); }
   padding: 1.5rem 1.25rem 4rem;
 }
 
-.skip-link {
-  position: absolute;
-  left: -9999px;
-  top: 0;
-  background: var(--rg-blue);
-  color: var(--rg-cream);
-  padding: 0.75rem 1.25rem;
-  z-index: 100;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.85rem;
-  border-radius: 0 0 4px 0;
-}
-.skip-link:focus {
-  left: 0;
-  top: 0;
-}
 
 header.site-header {
   border-bottom: 1px solid var(--border);
@@ -112,6 +43,15 @@ header.site-header h1 {
   letter-spacing: -0.01em;
   margin: 0;
 }
+
+.site-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: inherit;
+  text-decoration: none;
+}
+.site-brand img { width: 26px; height: 26px; display: block; flex: 0 0 auto; }
 
 header.site-header nav a {
   position: relative;
@@ -244,8 +184,8 @@ details.section[open] > summary.section-summary::before { transform: rotate(90de
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1px;
-  background: var(--rg-mist);
-  border: 1px solid var(--rg-mist);
+  background: var(--border);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
   margin: 1.5rem 0 2rem;
@@ -282,13 +222,13 @@ details.section[open] > summary.section-summary::before { transform: rotate(90de
 /* ---------- Callouts ---------- */
 
 .callout {
-  border-left: 4px solid var(--rg-mist);
+  border-left: 4px solid var(--border);
   border-radius: 2px;
   padding: 1rem 1.25rem;
   margin-bottom: 1.5rem;
 }
 .callout-alert {
-  border-left-color: var(--rg-red);
+  border-left-color: var(--status-overdue-fg);
   background: var(--status-overdue-bg);
 }
 .callout-label {
@@ -324,7 +264,7 @@ details.section[open] > summary.section-summary::before { transform: rotate(90de
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 3px;
-  background: var(--card-accent, var(--rg-mist));
+  background: var(--card-accent, var(--border));
 }
 @media (prefers-reduced-motion: reduce) {
   .vehicle-card { transition: none; }
@@ -388,7 +328,7 @@ details.section[open] > summary.section-summary::before { transform: rotate(90de
 }
 
 .card-section { margin-top: 1rem; }
-.section-label {
+.card-label {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.75rem;
   font-weight: 500;
@@ -399,23 +339,9 @@ details.section[open] > summary.section-summary::before { transform: rotate(90de
 }
 
 .tag-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
-.tag {
-  display: inline-block;
-  padding: 0.22rem 0.55rem;
-  border-radius: 2px;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-}
 /* Status-driven tags reuse the same theme-aware --status-*-fg/-bg variables
    as .badge (not the raw --rg-* tokens), so dark mode gets the lightened,
    contrast-corrected colors instead of light-mode hex on a dark background. */
-.tag-red     { color: var(--status-overdue-fg);  background: var(--status-overdue-bg); }
-.tag-green   { color: var(--status-ok-fg);       background: var(--status-ok-bg); }
-.tag-tawny   { color: var(--status-due-soon-fg); background: var(--status-due-soon-bg); }
-.tag-neutral { color: var(--status-never-fg);    background: var(--status-never-bg); }
-.tag-ember   { color: var(--rg-ember); background: rgba(194, 89, 42, 0.08); }
 .tag-link { position: relative; text-decoration: none; cursor: pointer; }
 .tag-link:hover { text-decoration: underline; }
 .tag-link::after {

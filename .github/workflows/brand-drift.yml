@@ -1,0 +1,28 @@
+name: Brand drift check
+
+# brand.css is vendored from redfearn-group/redfearn-brand so builds stay
+# hermetic. This job is what stops a vendored copy from silently drifting
+# away from canonical. If it fails, sync from the brand repo rather than
+# editing the copy in this repo.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch canonical brand.css
+        run: curl -sfL https://raw.githubusercontent.com/redfearn-group/redfearn-brand/main/brand.css -o /tmp/canonical.css
+      - name: Compare against vendored copy
+        run: |
+          if ! diff -u /tmp/canonical.css src/styles/brand.css; then
+            echo "::error::src/styles/brand.css has drifted from redfearn-group/redfearn-brand."
+            echo "Run 'node sync.mjs' in the redfearn-brand repo and commit the result."
+            exit 1
+          fi
+          echo "brand.css matches canonical."
