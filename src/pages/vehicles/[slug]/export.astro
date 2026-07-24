@@ -13,7 +13,7 @@ const vehicle = getVehicle(slug!);
 const mileage = currentMileage(vehicle);
 const sortedMaintenanceLog = [...vehicle.maintenanceLog].sort((a, b) => (a.date < b.date ? -1 : 1));
 ---
-<Base title={`${vehicleLabel(vehicle)} — history export`}>
+<Base title={`${vehicleLabel(vehicle)}: history export`}>
   <p class="no-print">
     <a href={withBase(`/vehicles/${vehicle.slug}`)}>← Back to vehicle</a>
     &nbsp;·&nbsp;
@@ -22,7 +22,7 @@ const sortedMaintenanceLog = [...vehicle.maintenanceLog].sort((a, b) => (a.date 
     <button onclick="window.print()">Print / Save as PDF</button>
   </p>
 
-  <h2>{vehicleLabel(vehicle)} — Maintenance History</h2>
+  <h2>{vehicleLabel(vehicle)}: Maintenance History</h2>
   <p class="muted">
     VIN: {vehicle.vin || "—"} · Plate: {vehicle.licensePlate || "—"} · Tires: {vehicle.tireSize || "—"} · Current mileage: {mileage != null ? mileage.toLocaleString() : "—"}
     {vehicle.previousOwner && <> · {vehicle.previousOwner}</>}
@@ -47,7 +47,7 @@ const sortedMaintenanceLog = [...vehicle.maintenanceLog].sort((a, b) => (a.date 
 
   <h3 class="section-title">Documents on file</h3>
   <ul>
-    {vehicle.documents.map((doc) => <li>{doc.filename} — {doc.category} ({formatDate(doc.dateAdded)}){doc.description ? `: ${doc.description}` : ""}</li>)}
+    {vehicle.documents.map((doc) => <li>{doc.filename} · {doc.category} ({formatDate(doc.dateAdded)}){doc.description ? `: ${doc.description}` : ""}</li>)}
     {vehicle.documents.length === 0 && <li class="muted">None</li>}
   </ul>
 

@@ -19,7 +19,7 @@ const sortedMileageLog = [...vehicle.mileageLog].sort((a, b) => (a.date < b.date
 const sortedMaintenanceLog = [...vehicle.maintenanceLog].sort((a, b) => (a.date < b.date ? 1 : -1));
 const openTasks = vehicle.tasks.filter((t) => t.status === "open");
 const doneTasks = vehicle.tasks.filter((t) => t.status === "done");
-// Addressed items are already in maintenance-log.yaml — the watch list is
+// Addressed items are already in maintenance-log.yaml. The watch list is
 // only for things still worth watching for.
 const activeWatchList = vehicle.watchList.filter((w) => w.status !== "addressed");
 
@@ -76,7 +76,7 @@ if (points.length > 1) {
   </div>
 
   <details class="section" open>
-    <summary class="section-summary">Maintenance schedule</summary>
+    <summary class="section-summary"><h3>Maintenance schedule</h3></summary>
     <div class="table-wrap">
     <table>
       <thead>
@@ -113,7 +113,7 @@ if (points.length > 1) {
 
   {activeWatchList.length > 0 && (
     <details class="section" open>
-      <summary class="section-summary">Things to watch for</summary>
+      <summary class="section-summary"><h3>Things to watch for</h3></summary>
       <div class="table-wrap">
       <table>
         <thead><tr><th>Issue</th><th>Typical mileage</th><th>Status</th></tr></thead>
@@ -138,7 +138,7 @@ if (points.length > 1) {
   )}
 
   <details class="section" open>
-    <summary class="section-summary">Tasks</summary>
+    <summary class="section-summary"><h3>Tasks</h3></summary>
     <ul class="pill-list">
       {openTasks.map((t) => (
         <li>
@@ -153,7 +153,7 @@ if (points.length > 1) {
 
   {vehicle.openRecalls.length > 0 && (
     <details class="section" open>
-      <summary class="section-summary">Open recalls (NHTSA)</summary>
+      <summary class="section-summary"><h3>Open recalls (NHTSA)</h3></summary>
       <p class="muted" style="font-size:0.85rem;">
         Last checked: {vehicle.recallsData.lastChecked ? formatDate(vehicle.recallsData.lastChecked) : "never"}
       </p>
@@ -168,7 +168,7 @@ if (points.length > 1) {
 
   {points.length > 1 && (
     <details class="section">
-      <summary class="section-summary">Mileage trend</summary>
+      <summary class="section-summary"><h3>Mileage trend</h3></summary>
       <svg viewBox={`0 0 ${chartW} ${chartH}`} width="100%" height={chartH} role="img">
         {yearMarkers.map((m) => (
           <>
@@ -182,7 +182,7 @@ if (points.length > 1) {
   )}
 
   <details class="section">
-    <summary class="section-summary">Mileage log</summary>
+    <summary class="section-summary"><h3>Mileage log</h3></summary>
     <div class="table-wrap">
     <table>
       <thead><tr><th>Date</th><th>Mileage</th></tr></thead>
@@ -194,7 +194,7 @@ if (points.length > 1) {
   </details>
 
   <details class="section">
-    <summary class="section-summary">Maintenance history</summary>
+    <summary class="section-summary"><h3>Maintenance history</h3></summary>
     <div class="table-wrap">
     <table>
       <thead><tr><th>Date</th><th>Mileage</th><th>Item</th><th>Notes</th></tr></thead>
@@ -213,7 +213,7 @@ if (points.length > 1) {
   </details>
 
   <details class="section">
-    <summary class="section-summary">Admin dates</summary>
+    <summary class="section-summary"><h3>Admin dates</h3></summary>
     <div class="table-wrap">
     <table>
       <thead><tr><th>Type</th><th>Due</th><th>Notes</th></tr></thead>
@@ -226,13 +226,13 @@ if (points.length > 1) {
   </details>
 
   <details class="section">
-    <summary class="section-summary">Documents</summary>
-    <p class="muted" style="font-size:0.85rem;">🔒 Source files are kept in a private repo — only the summary below is public.</p>
+    <summary class="section-summary"><h3>Documents</h3></summary>
+    <p class="muted" style="font-size:0.85rem;">🔒 Source files are kept in a private repo. Only the summary below is public.</p>
     <ul class="pill-list">
       {vehicle.documents.map((doc) => (
         <li>
           <span>{doc.filename}</span>
-          <span class="muted"> — {doc.category}, added {formatDate(doc.dateAdded)}</span>
+          <span class="muted"> · {doc.category}, added {formatDate(doc.dateAdded)}</span>
           {doc.description && <div class="muted" style="font-size:0.85rem;">{doc.description}</div>}
         </li>
       ))}

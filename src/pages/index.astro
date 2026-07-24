@@ -48,7 +48,7 @@ const tagClassFor: Record<string, string> = {
   "never-done": "tag-neutral",
 };
 
-// Small hardcoded body-type lookup — 5 vehicles, not worth a schema change.
+// Small hardcoded body-type lookup. 5 vehicles, not worth a schema change.
 const vehicleTypeFor: Record<string, "sedan" | "suv" | "truck"> = {
   "F-150": "truck",
   "ES 300h": "sedan",
@@ -83,12 +83,12 @@ const ICONS: Record<"sedan" | "suv" | "truck", string> = {
 
   {criticalItems.length > 0 && (
     <div class="callout callout-alert">
-      <p class="callout-label">Alert — {criticalItems.length} critical item{criticalItems.length === 1 ? "" : "s"}</p>
+      <p class="callout-label">Alert: {criticalItems.length} critical item{criticalItems.length === 1 ? "" : "s"}</p>
       <div class="callout-body">
         {criticalItems.slice(0, 3).map(({ vehicle, task }) => (
           <span class="callout-item">
             <a href={withBase(`/vehicles/${vehicle.slug}`)}>{vehicleShortLabel(vehicle)}</a>
-            {" — "}
+            {": "}
             {task.title}
           </span>
         ))}

@@ -8,7 +8,7 @@ const vehicles = getArchivedVehicles();
 <Base title="Archive">
   <p><a href={withBase("/")}>← Dashboard</a></p>
   <h2>Archived vehicles</h2>
-  <p class="muted">Sold or retired vehicles — full history is kept for reference, just off the main dashboard.</p>
+  <p class="muted">Sold or retired vehicles. Full history is kept for reference, just off the main dashboard.</p>
 
   {vehicles.length === 0 && <p class="muted">Nothing archived yet.</p>}
 
@@ -16,7 +16,7 @@ const vehicles = getArchivedVehicles();
     {vehicles.map((v) => (
       <li class="card">
         <a href={withBase(`/vehicles/${v.slug}`)}>{vehicleLabel(v)}</a>
-        <span class="muted"> — last known mileage: {currentMileage(v)?.toLocaleString() ?? "—"}</span>
+        <span class="muted"> · last known mileage: {currentMileage(v)?.toLocaleString() ?? "—"}</span>
       </li>
     ))}
   </ul>

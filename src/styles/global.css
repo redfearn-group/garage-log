@@ -32,7 +32,7 @@
   --radius: 4px;
 }
 
-/* Courtesy dark-mode adaptation — lightened RG-family variants tuned for
+/* Courtesy dark-mode adaptation, with lightened RG-family variants tuned for
    --rg-blue backgrounds. The design system's WCAG-verified pairs are all
    specified on cream, not dark blue; these values are a good-faith,
    contrast-conscious re-skin, not independently verified. Run an actual
@@ -40,7 +40,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: var(--rg-blue);
-    --surface: #151B33;
+    --surface: #0F1830;
     --border: rgba(247, 244, 239, 0.12);
     --text: var(--rg-cream);
     --text-muted: #9AA1AE;
@@ -134,7 +134,7 @@ header.site-header nav a::after {
 }
 
 /* Below ~400px (older/smaller phones), "Garage Log" + both nav links no
-   longer fit on one line — wrap onto a second line instead of overflowing
+   longer fit on one line, so wrap onto a second line instead of overflowing
    the viewport. */
 @media (max-width: 400px) {
   header.site-header .container {
@@ -187,7 +187,7 @@ th, td { text-align: left; padding: 0.5rem 0.6rem; border-bottom: 1px solid var(
 th { color: var(--text-muted); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.02em; }
 
 /* Multi-column tables (schedule, mileage log, maintenance history, admin
-   dates) don't fit a phone viewport at their natural column widths — clip
+   dates) don't fit a phone viewport at their natural column widths, so they clip
    instead of reading. Scroll horizontally within the table itself rather
    than letting it squish illegibly or overflow the page. */
 .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
@@ -197,18 +197,26 @@ th { color: var(--text-muted); font-weight: 600; font-size: 0.8rem; text-transfo
 .section-title { margin-top: 2rem; margin-bottom: 0.75rem; }
 
 /* ---------- Collapsible vehicle-page sections ---------- */
+/* The section title is a real <h3> inside the <summary>, not styled text on
+   the summary itself. <summary> carries no heading semantics, so without
+   this the page went <h2> (vehicle name) straight to nothing and screen
+   readers got no section structure at all. Layout/affordance styles stay on
+   the summary; typography moves to the h3. */
 details.section { margin-top: 2rem; }
 summary.section-summary {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 600;
-  font-size: 1.17em;
-  line-height: 1.25;
   margin-bottom: 0.75rem;
   cursor: pointer;
   list-style: none;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+summary.section-summary > h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 1.17em;
+  line-height: 1.25;
+  margin: 0;
 }
 summary.section-summary::-webkit-details-marker { display: none; }
 summary.section-summary::before {
@@ -439,7 +447,7 @@ details.section[open] > summary.section-summary::before { transform: rotate(90de
   body { background: white; color: black; }
   .card, .vehicle-card { border: none; padding: 0; }
   .vehicle-card::before, .tag, .callout { background: none !important; }
-  /* Paper doesn't scroll — let tables shrink to the page width instead of
+  /* Paper doesn't scroll, so let tables shrink to the page width instead of
      imposing the mobile min-width. */
   .table-wrap { overflow-x: visible; }
   .table-wrap table { min-width: 0; }
