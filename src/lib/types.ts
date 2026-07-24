@@ -2,7 +2,7 @@
 // print export) by default, since src/lib/data.ts loads YAML straight
 // through with no field-level filtering. If a new field is meant to carry
 // account numbers, contract details, or anything else that shouldn't be
-// public, it belongs in a vehicle's gitignored private.yaml instead — not
+// public, it belongs in a vehicle's gitignored private.yaml instead, not
 // as a new field here. See the 2026-07-21 redaction pass (git log) for what
 // this looked like getting wrong the first time.
 
