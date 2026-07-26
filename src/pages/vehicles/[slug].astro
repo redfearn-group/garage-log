@@ -59,6 +59,7 @@ if (points.length > 1) {
 ---
 <Base title={vehicleLabel(vehicle)}>
   <p class="no-print"><a href={withBase("/")}>← Dashboard</a></p>
+  <div class="eyebrow">Vehicle</div>
   <div style="display:flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem;">
     <h2 style="margin: 0;">{vehicleLabel(vehicle)}</h2>
     <a class="no-print" href={withBase(`/vehicles/${vehicle.slug}/export`)}>Printable / export history →</a>
