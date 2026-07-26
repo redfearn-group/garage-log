@@ -109,8 +109,14 @@ header.site-header nav a {
   font-size: 0.75rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid transparent;
 }
-header.site-header nav a:hover { color: var(--text); }
+header.site-header nav a:hover,
+header.site-header nav a[aria-current="page"] {
+  color: var(--text);
+  border-bottom-color: var(--rg-red);
+}
 /* Expand the tappable area well past the visible text for comfortable
    mobile tapping, without changing the header's visual density. */
 header.site-header nav a::after {
