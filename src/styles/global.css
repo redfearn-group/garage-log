@@ -265,19 +265,27 @@ details.section[open] > summary.section-summary::before { transform: rotate(90de
 }
 .fleet-stats.fleet-stats-single { grid-template-columns: 1fr; }
 
-/* ---------- Callouts ---------- */
+/* ---------- Alert banner ---------- */
+/* Named alert-*, not callout-*: brand.css already owns .callout for its own
+   light-mode component (co-insight/co-note/etc), including a bare
+   `.callout p { color: var(--rg-blue); ... }` rule. That rule's specificity
+   (class + type) beats a plain `.callout-label` class, so reusing "callout"
+   here silently forced this box's label to --rg-blue on a --rg-blue
+   background, a ~1.15:1 contrast ratio, effectively invisible. Caught
+   2026-07-25. Do not reintroduce the "callout" name for anything in this
+   app; see the redfearn-group-style skill's shared-class-collision pitfall. */
 
-.callout {
+.alert-box {
   border-left: 4px solid var(--border);
   border-radius: 2px;
   padding: 1rem 1.25rem;
   margin-bottom: 1.5rem;
 }
-.callout-alert {
+.alert-box-critical {
   border-left-color: var(--status-overdue-fg);
   background: var(--status-overdue-bg);
 }
-.callout-label {
+.alert-label {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.75rem;
   font-weight: 600;
@@ -285,10 +293,10 @@ details.section[open] > summary.section-summary::before { transform: rotate(90de
   color: var(--status-overdue-fg);
   margin: 0 0 0.35rem;
 }
-.callout-body { margin: 0; color: var(--text); }
-.callout-body a { color: var(--status-overdue-fg); font-weight: 500; }
-.callout-item { display: block; margin-top: 0.25rem; }
-.callout-item:first-of-type { margin-top: 0; }
+.alert-body { margin: 0; color: var(--text); }
+.alert-body a { color: var(--status-overdue-fg); font-weight: 500; }
+.alert-item { display: block; margin-top: 0.25rem; }
+.alert-item:first-of-type { margin-top: 0; }
 
 /* ---------- Vehicle cards ---------- */
 
@@ -418,7 +426,7 @@ details.section[open] > summary.section-summary::before { transform: rotate(90de
   header.site-header, .no-print, .skip-link { display: none !important; }
   body { background: white; color: black; }
   .card, .vehicle-card { border: none; padding: 0; }
-  .vehicle-card::before, .tag, .callout { background: none !important; }
+  .vehicle-card::before, .tag, .alert-box { background: none !important; }
   /* Paper doesn't scroll, so let tables shrink to the page width instead of
      imposing the mobile min-width. */
   .table-wrap { overflow-x: visible; }
