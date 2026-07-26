@@ -348,14 +348,29 @@
 .co-bottom  { background: var(--tint-paper); }  .co-bottom::before  { background: var(--rg-blue); }     .co-bottom .lbl  { color: var(--rg-blue); }
 .co-def     { background: var(--tint-mist); }   .co-def::before     { background: var(--rg-graphite); } .co-def .lbl     { color: var(--rg-graphite); }
 .co-quote   { background: var(--tint-tawny); }  .co-quote::before   { background: var(--rg-tawny); }    .co-quote .lbl   { color: var(--rg-blue); }
-.co-warning { background: var(--tint-yellow); } .co-warning::before { background: var(--rg-gape); }     .co-warning .lbl { color: var(--rg-ember); }
-.co-caution { background: var(--tint-ember); }  .co-caution::before { background: var(--rg-ember); }    .co-caution .lbl { color: var(--rg-ember); }
+/* co-warning and co-caution: same ember-as-text failure as tag-ember
+   (~3.8:1, below the 4.5:1 floor at this size, and 12px bold still doesn't
+   clear WCAG's large-text bold threshold of ~18.66px). Label text moves to
+   --rg-blue, matching co-quote's existing precedent above (tawny's bar,
+   blue's label); the ::before bar keeps carrying the actual warning/caution
+   color, unchanged. */
+.co-warning { background: var(--tint-yellow); } .co-warning::before { background: var(--rg-gape); }     .co-warning .lbl { color: var(--rg-blue); }
+.co-caution { background: var(--tint-ember); }  .co-caution::before { background: var(--rg-ember); }    .co-caution .lbl { color: var(--rg-blue); }
 .co-alert   { background: var(--tint-red); }    .co-alert::before   { background: var(--rg-red); }      .co-alert .lbl   { color: var(--rg-red); }
 
 .sc { display: inline-block; padding: 0.18em 0.6em; border-radius: 3px; font-weight: 700; font-size: 0.8rem; font-family: var(--font-mono); }
 .sc-green { background: var(--tint-green); color: var(--rg-green); }
 .sc-tawny { background: var(--tint-tawny); color: var(--rg-tawny); }
-.sc-ember { background: var(--tint-ember); color: var(--rg-ember); }
+/* sc-ember: same fix as tag-ember, applied at this chip's smaller scale
+   (2px edge instead of 3px). Ember-as-text here measured the same ~3.8:1
+   failure; see .tag-ember above for the full rationale. */
+.sc-ember {
+  position: relative;
+  padding-left: 0.85em;
+  background: var(--tint-ember);
+  color: var(--rg-blue);
+}
+.sc-ember::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: var(--rg-ember); border-radius: 3px 0 0 3px; }
 .sc-red   { background: var(--tint-red);   color: var(--rg-red); }
 
 @media (prefers-reduced-motion: reduce) {
