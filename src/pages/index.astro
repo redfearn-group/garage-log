@@ -83,18 +83,18 @@ const ICONS: Record<"sedan" | "suv" | "truck", string> = {
   )}
 
   {criticalItems.length > 0 && (
-    <div class="callout callout-alert">
-      <p class="callout-label">Alert: {criticalItems.length} critical item{criticalItems.length === 1 ? "" : "s"}</p>
-      <div class="callout-body">
+    <div class="alert-box alert-box-critical">
+      <p class="alert-label">Alert: {criticalItems.length} critical item{criticalItems.length === 1 ? "" : "s"}</p>
+      <div class="alert-body">
         {criticalItems.slice(0, 3).map(({ vehicle, task }) => (
-          <span class="callout-item">
+          <span class="alert-item">
             <a href={withBase(`/vehicles/${vehicle.slug}`)}>{vehicleShortLabel(vehicle)}</a>
             {": "}
             {task.title}
           </span>
         ))}
         {criticalItems.length > 3 && (
-          <span class="callout-item muted">+{criticalItems.length - 3} more</span>
+          <span class="alert-item muted">+{criticalItems.length - 3} more</span>
         )}
       </div>
     </div>
