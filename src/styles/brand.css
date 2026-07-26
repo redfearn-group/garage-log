@@ -292,8 +292,31 @@
 .tag-green   { color: var(--status-ok-fg);       background: var(--status-ok-bg); }
 .tag-tawny   { color: var(--status-due-soon-fg); background: var(--status-due-soon-bg); }
 .tag-neutral { color: var(--status-never-fg);    background: var(--status-never-bg); }
-.tag-ember   { color: var(--rg-ember);           background: rgba(194, 89, 42, 0.08); }
-.app-layer .tag-ember { color: var(--rg-tawny); background: rgba(217, 116, 67, 0.12); }
+/* Ember as a tag's own text fails AA at this size: ~3.8:1 on cream, ~3.98:1
+   on the app-layer card, both below the 4.5:1 floor for text under 18px
+   (confirmed on the live frameworks/case-study tags, 2026-07-26). Ember
+   moves to a decorative left edge instead, the same move already used
+   elsewhere in this file for brand color that can't carry as text (dark-mode
+   links: cream text, red underline). Text goes to the safe neutral for the
+   surface it's on. Brady reviewed this against plain ember text and the
+   flat semantic-token tags above, and preferred the accent-edge treatment
+   as more consistent with an executive-level site. */
+.tag-ember {
+  position: relative;
+  padding-left: 0.95rem;
+  color: var(--rg-blue);
+  background: rgba(194, 89, 42, 0.08);
+}
+.tag-ember::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: var(--rg-ember);
+  border-radius: 2px 0 0 2px;
+}
+.app-layer .tag-ember { color: var(--rg-cream); background: rgba(217, 116, 67, 0.12); }
+.app-layer .tag-ember::before { background: var(--rg-tawny); }
 
 /* Callouts. Light mode only: the tints are opaque light values and do
    not survive on a dark surface. Apps use .tag and status badges. */
