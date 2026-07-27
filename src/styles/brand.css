@@ -290,8 +290,38 @@
    they pick up the corrected values inside .app-layer automatically. */
 .tag-red     { color: var(--status-overdue-fg);  background: var(--status-overdue-bg); }
 .tag-green   { color: var(--status-ok-fg);       background: var(--status-ok-bg); }
-.tag-tawny   { color: var(--status-due-soon-fg); background: var(--status-due-soon-bg); }
 .tag-neutral { color: var(--status-never-fg);    background: var(--status-never-bg); }
+/* tag-tawny is the one status tag that fails on its own default (light)
+   value: --status-due-soon-fg is --rg-tawny in :root, which measures
+   ~2.9-3.2:1 as text, below the 4.5:1 floor and worse than ember's ~3.8:1
+   (confirmed 2026-07-27, same root cause: copy-pasted across red/green/
+   tawny/ember without checking each hue's own contrast as text). The
+   .app-layer override already corrects to #F0A57A (8.69:1 AAA, verified)
+   for real due-soon status badges in garage-log/home-log, so that usage
+   is untouched. The default gets the same accent-edge treatment as
+   tag-ember and sc-ember: tawny moves to a 3px left edge, text goes to
+   --rg-blue. This also brings tag-tawny in line with co-quote, which has
+   used exactly this pattern (tawny bar, blue label) since day one. */
+.tag-tawny {
+  position: relative;
+  padding-left: 0.95rem;
+  color: var(--rg-blue);
+  background: var(--status-due-soon-bg);
+}
+.tag-tawny::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: var(--rg-tawny);
+  border-radius: 2px 0 0 2px;
+}
+.app-layer .tag-tawny {
+  padding-left: 0.55rem;
+  color: var(--status-due-soon-fg);
+  background: var(--status-due-soon-bg);
+}
+.app-layer .tag-tawny::before { content: none; }
 /* Ember as a tag's own text fails AA at this size: ~3.8:1 on cream, ~3.98:1
    on the app-layer card, both below the 4.5:1 floor for text under 18px
    (confirmed on the live frameworks/case-study tags, 2026-07-26). Ember
@@ -360,7 +390,18 @@
 
 .sc { display: inline-block; padding: 0.18em 0.6em; border-radius: 3px; font-weight: 700; font-size: 0.8rem; font-family: var(--font-mono); }
 .sc-green { background: var(--tint-green); color: var(--rg-green); }
-.sc-tawny { background: var(--tint-tawny); color: var(--rg-tawny); }
+/* sc-tawny: same fix as tag-tawny, applied at this chip's smaller scale.
+   Tawny-as-text here measured the same ~2.9-3.2:1 failure; see .tag-tawny
+   above for the full rationale. No .app-layer override needed: .sc is
+   light-mode only, like .callout, so there's no dark-mode value to
+   preserve here. */
+.sc-tawny {
+  position: relative;
+  padding-left: 0.85em;
+  background: var(--tint-tawny);
+  color: var(--rg-blue);
+}
+.sc-tawny::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: var(--rg-tawny); border-radius: 3px 0 0 3px; }
 /* sc-ember: same fix as tag-ember, applied at this chip's smaller scale
    (2px edge instead of 3px). Ember-as-text here measured the same ~3.8:1
    failure; see .tag-ember above for the full rationale. */
