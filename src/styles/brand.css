@@ -285,6 +285,7 @@
   font-weight: 500;
   font-size: 0.75rem;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 /* Status tags read from the semantic tokens, not the raw palette, so
    they pick up the corrected values inside .app-layer automatically. */
