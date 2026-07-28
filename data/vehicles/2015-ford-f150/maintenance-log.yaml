@@ -1187,15 +1187,19 @@ entries:
       a misremembered aside rather than evidence of an undocumented
       prior repair.
 
-      Left un-tagged (itemType '') rather than rear-diff-transfer-case:
-      item (5) was a leak REPAIR (front axle seal/bolts/spacer kit, plus a
-      fluid top-off with the replacement seal installed), not the
-      scheduled BG differential/transfer-case SERVICE that itemType
-      tracks — confirmed still outstanding by the very next visit, the
-      2026-01-09 Tim Dahle estimate, which flags front differential,
-      rear differential, and transfer case all as "no service history"
-      (see task #3/#11). Tagging this entry rear-diff-transfer-case would
-      have incorrectly reset that schedule item's due date.
+      Left un-tagged (itemType '') rather than front-axle-fluid: item (5)
+      was a leak REPAIR (front axle seal/bolts/spacer kit, plus a fluid
+      top-off with the replacement seal installed), not the scheduled BG
+      differential/transfer-case SERVICE those items track — confirmed
+      still outstanding by the very next visit, the 2026-01-09 Tim Dahle
+      estimate, which flags front differential, rear differential, and
+      transfer case all as "no service history" (see task #3/#11).
+      Tagging this entry front-axle-fluid would have incorrectly reset
+      that schedule item's due date. UPDATED 2026-07-28: schedule.yaml
+      now tracks these as three separate itemTypes (front-axle-fluid,
+      rear-axle-fluid, transfer-case-fluid) — this entry's leak repair
+      only touched the front axle seal, so it still would not be tagged
+      to any of the three, for the same reason as before.
     documents:
       - 20251209-tim-dahle-vacuum-pump-camera-mirror-axle.pdf
   - date: '2025-12-09'

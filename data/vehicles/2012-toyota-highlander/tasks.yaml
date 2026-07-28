@@ -314,11 +314,17 @@ tasks:
   - id: 28
     title: 'Weekend check (2026-07-25): AWD front/rear differential + transfer case fluid — never once done'
     notes: >-
-      From this week's fleet review — this itemType has never appeared in
-      maintenance-log.yaml at all across Hera's full history. Schedule
-      calls for inspection at 30,000 mi intervals; at 160,357+ mi this has
-      never been checked once, over 5 intervals past due. Add to the
-      weekend checklist alongside the rubber/hose inspection (task #6).
+      From this week's fleet review — none of these have ever appeared in
+      maintenance-log.yaml at all across Hera's full history. UPDATED
+      2026-07-28, per Brady: schedule.yaml now tracks these as three
+      separate items (front-differential-fluid at 30,000 mi/36 mo,
+      rear-differential-fluid and transfer-case-fluid at 15,000 mi/18 mo
+      each — split from a single combined itemType so a log entry
+      covering only one or two of the three can't silently mark all
+      three "done") — do all three while under the car this weekend, and
+      log each with its own itemType tag so none gets silently skipped.
+      At 160,357+ mi all three are well past due. Add to the weekend
+      checklist alongside the rubber/hose inspection (task #6).
     status: open
     createdDate: '2026-07-22'
     completedDate: null

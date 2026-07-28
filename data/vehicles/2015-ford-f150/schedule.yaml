@@ -150,23 +150,51 @@ items:
     name: Spark plugs (Motorcraft, 3.5L EcoBoost) — Ford ~100,000 mi
     intervalMiles: 100000
     intervalMonths: null
-  - itemType: rear-diff-transfer-case
+  - itemType: front-axle-fluid
     name: >-
-      Rear axle + transfer case + front axle fluid (4WD) — CORRECTED
-      2026-07-16: Ford's owner's manual normal schedule lists 150,000 mi
-      for all three, and Ford's "Exceptions" section actually classifies
-      the synthetic-filled axles as lubricated FOR LIFE — no scheduled
-      change at all, service only on leak or water submersion (there is
-      no official Ford "severe-duty axle = 30,000 mi" figure; that was a
-      misattribution in a prior version of this file). Ford's own SEVERE
-      duty table only gives a numeric figure for the transfer case
-      (60,000 mi under towing/idling/dusty/off-road use), not the axles.
-      Since Ford treats the axle fluid as effectively unscheduled, the
-      30,000 mi interval below is a COMMUNITY-sourced figure (F150
-      Forum/Ford-Trucks/F150online consensus, incl. mechanics quoted
-      recommending a change despite the "lifetime" label), chosen as the
-      most conservative well-supported number to cover all three fluids
-      in one item. Water submersion (deep fording/flooding) calls for an
-      immediate change regardless of interval.
+      Front axle fluid (4WD) — SPLIT 2026-07-28 from a combined "rear
+      axle + transfer case + front axle" item, per Brady: each fluid now
+      gets its own line so a log entry covering only one or two of the
+      three can't silently mark all three "done." CORRECTED 2026-07-16:
+      Ford's owner's manual normal schedule lists 150,000 mi, and Ford's
+      "Exceptions" section actually classifies the synthetic-filled axles
+      as lubricated FOR LIFE — no scheduled change at all, service only
+      on leak or water submersion (there is no official Ford "severe-duty
+      axle = 30,000 mi" figure; that was a misattribution in a prior
+      version of this file). Since Ford treats axle fluid as effectively
+      unscheduled, the 30,000 mi interval below is a COMMUNITY-sourced
+      figure (F150 Forum/Ford-Trucks/F150online consensus, incl.
+      mechanics quoted recommending a change despite the "lifetime"
+      label), the most conservative well-supported community number.
+      Water submersion (deep fording/flooding) calls for an immediate
+      change regardless of interval.
+    intervalMiles: 30000
+    intervalMonths: null
+  - itemType: rear-axle-fluid
+    name: >-
+      Rear axle fluid (4WD) — SPLIT 2026-07-28 from a combined "rear
+      axle + transfer case + front axle" item, per Brady: each fluid now
+      gets its own line so none of the three can be silently skipped.
+      Same Ford "lifetime fluid" exception and same 30,000 mi
+      community-sourced interval as front-axle-fluid above — see that
+      item for full sourcing detail. Water submersion (deep fording/
+      flooding) calls for an immediate change regardless of interval.
+    intervalMiles: 30000
+    intervalMonths: null
+  - itemType: transfer-case-fluid
+    name: >-
+      Transfer case fluid (4WD) — SPLIT 2026-07-28 from a combined "rear
+      axle + transfer case + front axle" item, per Brady: each fluid now
+      gets its own line so none of the three can be silently skipped.
+      Unlike the two axles, Ford's own SEVERE-duty table gives a real
+      numeric figure for the transfer case specifically: 60,000 mi under
+      towing/idling/dusty/off-road use (Ford's normal schedule still
+      lists 150,000 mi, treated as unrealistically long by every
+      independent source, same as the axles). 30,000 mi below matches
+      the axles' conservative community figure rather than Ford's own
+      60,000 mi severe number, since this truck sees enough towing/idling
+      to reasonably run the more conservative interval. Water submersion
+      (deep fording/flooding) calls for an immediate change regardless of
+      interval.
     intervalMiles: 30000
     intervalMonths: null
