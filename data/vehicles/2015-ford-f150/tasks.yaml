@@ -63,6 +63,12 @@ tasks:
       this truck at all — unlike Hera (see her tasks.yaml #5, already
       done). This fluid item in particular is not just "proactive," it's
       genuinely never been touched.
+
+      UPDATED 2026-07-28, per Brady: schedule.yaml now tracks the rear
+      diff/front diff/transfer case fluids as three separate items
+      (rear-axle-fluid, front-axle-fluid, transfer-case-fluid) rather
+      than one combined itemType, so log each with its own tag when this
+      gets done — whether at the dealer or split into DIY jobs.
     status: open
     createdDate: '2026-07-13'
     completedDate: null
@@ -114,6 +120,13 @@ tasks:
       DIY with fluid already on hand avoids that cost entirely; use
       Motorcraft-spec gear oil per the truck's build (verify front vs. rear
       axle fluid spec before pouring, they differ).
+
+      UPDATED 2026-07-28, per Brady: schedule.yaml now tracks these as
+      three separate items (rear-axle-fluid, front-axle-fluid,
+      transfer-case-fluid) rather than one combined itemType — do all
+      three while under the truck for this service, and log each with
+      its own itemType tag so none gets silently skipped, even though
+      they're done in the same visit.
     status: open
     createdDate: '2026-07-16'
     completedDate: null

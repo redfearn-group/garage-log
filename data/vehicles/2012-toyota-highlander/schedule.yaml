@@ -153,19 +153,45 @@ items:
       powertrain and is disregarded here.)
     intervalMiles: 120000
     intervalMonths: 144
-  - itemType: rear-diff-transfer-case
+  - itemType: front-differential-fluid
     name: >-
-      Front/rear differential + transfer case fluid (AWD) — Toyota AWD
-      Highlander: inspect at 30,000 mi intervals, replace only if
-      contaminated/severe use (no fixed normal-use replacement interval).
-      COMMUNITY NOTE: Toyota's own manual actually specifies more frequent
-      INSPECTION than this item's interval reflects — rear diff/transfer
-      case every 15,000 mi/18 mo, front diff every 30,000 mi/36 mo under
-      normal use (severe: replace every 15,000 mi); forum consensus for
-      proactive replacement (not just inspection) is every 20,000-30,000
-      mi given this car's high mileage and unknown prior service.
+      Front differential fluid (AWD) — SPLIT 2026-07-28 from a combined
+      "front/rear differential + transfer case" item, per Brady: each
+      fluid now gets its own line so none of the three can be silently
+      skipped. Toyota AWD Highlander normal schedule: inspect every
+      30,000 mi/36 mo, replace only if contaminated/severe use (severe:
+      replace every 15,000 mi; no fixed normal-use replacement interval).
+      Forum consensus for proactive replacement (not just inspection) is
+      every 20,000-30,000 mi given this car's high mileage and unknown
+      prior service.
     intervalMiles: 30000
-    intervalMonths: null
+    intervalMonths: 36
+  - itemType: rear-differential-fluid
+    name: >-
+      Rear differential fluid (AWD) — SPLIT 2026-07-28 from a combined
+      "front/rear differential + transfer case" item, per Brady: each
+      fluid now gets its own line so none of the three can be silently
+      skipped. Toyota's own manual specifies a MORE FREQUENT inspection
+      here than the old combined item reflected — every 15,000 mi/18 mo
+      under normal use (severe: replace every 15,000 mi; no fixed
+      normal-use replacement interval). Forum consensus for proactive
+      replacement (not just inspection) is every 20,000-30,000 mi given
+      this car's high mileage and unknown prior service.
+    intervalMiles: 15000
+    intervalMonths: 18
+  - itemType: transfer-case-fluid
+    name: >-
+      Transfer case fluid (AWD power transfer unit) — SPLIT 2026-07-28
+      from a combined "front/rear differential + transfer case" item,
+      per Brady: each fluid now gets its own line so none of the three
+      can be silently skipped. Same Toyota inspection interval as the
+      rear differential above — every 15,000 mi/18 mo under normal use
+      (severe: replace every 15,000 mi; no fixed normal-use replacement
+      interval). Forum consensus for proactive replacement (not just
+      inspection) is every 20,000-30,000 mi given this car's high mileage
+      and unknown prior service.
+    intervalMiles: 15000
+    intervalMonths: 18
   - itemType: battery-test
     name: >-
       12V battery load test (KONNWEI KW208 tester) — UPDATED 2026-07-22:
