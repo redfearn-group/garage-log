@@ -441,3 +441,11 @@ entries:
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
     documents: []
+  - date: '2026-07-26'
+    mileage: 141162
+    itemType: oil-change
+    description: Oil & filter changed — DIY
+    notes: >-
+      Mileage confirmed via odometer photo (141,162 mi). Uses the filter kit
+      (Subaru 15208AA21A/803916010) purchased 2026-06-30, above.
+    documents: []
