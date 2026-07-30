@@ -92,7 +92,7 @@ if (points.length > 1) {
               {citation ? (
                 <details>
                   <summary>{short}</summary>
-                  <p class="muted" style="font-size:0.85rem; margin: 0.35rem 0 0;">{citation}</p>
+                  <p class="muted" style="font-size:0.85rem; font-weight:500; margin: 0.35rem 0 0;">{citation}</p>
                 </details>
               ) : short}
             </td>
@@ -123,7 +123,7 @@ if (points.length > 1) {
             const mileageReached = w.status === "not-yet-at-mileage" && currentMileageAtOrAbove(mileage, w.typicalMileage);
             return (
             <tr>
-              <td>{w.issue}<div class="muted" style="font-size:0.85rem;">{w.description}</div></td>
+              <td>{w.issue}<div class="muted" style="font-size:0.85rem; font-weight:500;">{w.description}</div></td>
               <td>{w.typicalMileage ? w.typicalMileage.toLocaleString() + " mi" : "—"}</td>
               <td>
                 {w.status}
@@ -155,7 +155,7 @@ if (points.length > 1) {
   {vehicle.openRecalls.length > 0 && (
     <details class="section" open>
       <summary class="section-summary"><h3>Open recalls (NHTSA)</h3></summary>
-      <p class="muted" style="font-size:0.85rem;">
+      <p class="muted" style="font-size:0.85rem; font-weight:500;">
         Last checked: {vehicle.recallsData.lastChecked ? formatDate(vehicle.recallsData.lastChecked) : "never"}
       </p>
       {vehicle.openRecalls.map((r) => (
@@ -170,15 +170,26 @@ if (points.length > 1) {
   {points.length > 1 && (
     <details class="section">
       <summary class="section-summary"><h3>Mileage trend</h3></summary>
-      <svg viewBox={`0 0 ${chartW} ${chartH}`} width="100%" height={chartH} role="img">
-        {yearMarkers.map((m) => (
-          <>
-            <line x1={m.x} y1={padTop} x2={m.x} y2={padTop + plotH} stroke="var(--border)" stroke-width="1" stroke-dasharray="2,2" />
-            <text x={m.x} y={chartH - 6} text-anchor="middle" font-size="9" fill="var(--text-muted)">{m.year}</text>
-          </>
-        ))}
-        <polyline points={polyline} fill="none" stroke="var(--accent)" stroke-width="2" />
-      </svg>
+      <figure style="margin: 0;">
+        <svg
+          viewBox={`0 0 ${chartW} ${chartH}`}
+          width="100%"
+          height={chartH}
+          role="img"
+          aria-label={`Odometer trend from ${points[0].mileage.toLocaleString()} mi on ${formatDate(points[0].date)} to ${points[points.length - 1].mileage.toLocaleString()} mi on ${formatDate(points[points.length - 1].date)}.`}
+        >
+          {yearMarkers.map((m) => (
+            <>
+              <line x1={m.x} y1={padTop} x2={m.x} y2={padTop + plotH} stroke="var(--border)" stroke-width="1" stroke-dasharray="2,2" />
+              <text x={m.x} y={chartH - 6} text-anchor="middle" font-size="9" fill="var(--text-muted)">{m.year}</text>
+            </>
+          ))}
+          <polyline points={polyline} fill="none" stroke="var(--accent)" stroke-width="2" />
+        </svg>
+        <figcaption class="muted" style="font-size: 0.85rem; font-weight: 500; margin-top: 0.35rem;">
+          Odometer from {points[0].mileage.toLocaleString()} mi ({formatDate(points[0].date)}) to {points[points.length - 1].mileage.toLocaleString()} mi ({formatDate(points[points.length - 1].date)}).
+        </figcaption>
+      </figure>
     </details>
   )}
 
@@ -228,13 +239,13 @@ if (points.length > 1) {
 
   <details class="section">
     <summary class="section-summary"><h3>Documents</h3></summary>
-    <p class="muted" style="font-size:0.85rem;">🔒 Source files are kept in a private repo. Only the summary below is public.</p>
+    <p class="muted" style="font-size:0.85rem; font-weight:500;">🔒 Source files are kept in a private repo. Only the summary below is public.</p>
     <ul class="pill-list">
       {vehicle.documents.map((doc) => (
         <li>
           <span>{doc.filename}</span>
           <span class="muted"> · {doc.category}, added {formatDate(doc.dateAdded)}</span>
-          {doc.description && <div class="muted" style="font-size:0.85rem;">{doc.description}</div>}
+          {doc.description && <div class="muted" style="font-size:0.85rem; font-weight:500;">{doc.description}</div>}
         </li>
       ))}
       {vehicle.documents.length === 0 && <li class="muted">No documents uploaded.</li>}
