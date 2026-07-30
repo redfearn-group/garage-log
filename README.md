@@ -8,15 +8,15 @@ A maintenance tracker for a small fleet of real vehicles, built as a static site
 
 Five vehicles, tracked against maintenance schedules sourced from actual owner's manuals and warranty guides rather than generic dealer intervals. Every schedule item carries its citation inline, so the reasoning behind a due date is still visible a year later, not just the number.
 
-- **Due-status dashboard** — each vehicle's schedule is checked against logged mileage and dates, and flagged overdue, due soon, or on track, whichever comes first between mileage and time.
-- **Recall tracking** — pulled live from the NHTSA API by VIN, refreshed automatically on a schedule.
-- **Full maintenance history** — every oil change, part, and repair, with mileage interpolated from surrounding odometer readings when an exact reading isn't on file.
+- **Due-status dashboard**: each vehicle's schedule is checked against logged mileage and dates, and flagged overdue, due soon, or on track, whichever comes first between mileage and time.
+- **Recall tracking**: pulled live from the NHTSA API by VIN, refreshed automatically on a schedule.
+- **Full maintenance history**: every oil change, part, and repair, with mileage interpolated from surrounding odometer readings when an exact reading isn't on file.
 
 ## Architecture
 
 No database. Vehicle data lives as YAML files committed directly to this repo, which means git history doubles as a free audit trail: every correction, every backfilled record, every re-sourced interval is a diff you can go back and read.
 
-*Data is edited directly (by hand or via Claude) as YAML and committed to git. Everything downstream of the YAML is a read-only build — there is no write path in the deployed site.*
+*Data is edited directly (by hand or via Claude) as YAML and committed to git. Everything downstream of the YAML is a read-only build, with no write path in the deployed site.*
 
 ```
 data/vehicles.yaml              # index of all vehicles
@@ -26,7 +26,7 @@ data/vehicles/<slug>/
   mileage-log.yaml              # odometer readings
   tasks.yaml                    # open to-dos per vehicle
   recalls.yaml                  # NHTSA recall data
-  private.yaml                  # gitignored — door codes, policy numbers, anything that shouldn't be public
+  private.yaml                  # gitignored: door codes, policy numbers, anything that shouldn't be public
 ```
 
 The site itself is pure Astro with no UI framework and no database driver — `src/lib/` reads the YAML at build time and every page is static HTML. The deployed site is read-only; data is edited directly as YAML.
@@ -41,7 +41,7 @@ src/
 scripts/            # recall-check + publish automation
 ```
 
-Deployed via GitHub Actions to GitHub Pages on every push to `main`. A second, private sibling repo holds uploaded documents (titles, invoices, service records) — this repo's `documents.yaml` only ever stores metadata, never the files themselves.
+Deployed via GitHub Actions to GitHub Pages on every push to `main`. A second, private sibling repo holds uploaded documents (titles, invoices, service records); this repo's `documents.yaml` only ever stores metadata, never the files themselves.
 
 ## Development
 

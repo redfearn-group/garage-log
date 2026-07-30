@@ -79,6 +79,7 @@ header.site-header h1 {
 .site-footer__meta {
   margin: 0;
   font-size: 0.8rem;
+  font-weight: 500;
   color: var(--text-muted);
 }
 .site-footer__meta a { color: var(--text-muted); text-decoration: underline; }
@@ -347,7 +348,7 @@ details.section[open] > summary.section-summary::before { transform: rotate(90de
   width: 22px;
   height: 22px;
   margin-top: 0.15rem;
-  color: rgba(10, 17, 40, 0.35);
+  color: var(--text-muted);
 }
 .vehicle-card h3 {
   margin: 0;
