@@ -5,27 +5,16 @@ import type {
   DueStatus,
 } from "./types";
 import { currentMileage } from "./data";
+import { daysBetween, today as currentDate } from "./kit/date";
+import { dateDue } from "./kit/due";
 
 const DUE_SOON_MILES = 500;
 const DUE_SOON_DAYS = 30;
 
-function addMonths(dateStr: string, months: number): string {
-  const d = new Date(dateStr + "T00:00:00");
-  d.setMonth(d.getMonth() + months);
-  return d.toISOString().slice(0, 10);
-}
-
-function daysBetween(a: string, b: string): number {
-  const msPerDay = 1000 * 60 * 60 * 24;
-  const da = new Date(a + "T00:00:00").getTime();
-  const db = new Date(b + "T00:00:00").getTime();
-  return Math.round((db - da) / msPerDay);
-}
-
 /** today as YYYY-MM-DD, injectable for testing */
 export function scheduleStatusesFor(
   vehicle: Vehicle,
-  today: string = new Date().toISOString().slice(0, 10)
+  today: string = currentDate()
 ): ScheduleItemStatus[] {
   const mileageNow = currentMileage(vehicle) ?? 0;
 
@@ -45,27 +34,32 @@ export function scheduleStatusesFor(
       };
     }
 
+    // The mileage half stays here on purpose. The kit's dateDue() is shared
+    // with home-log and knows nothing about odometers; the moment it does,
+    // it stops being shared code.
     const dueMileage =
       item.intervalMiles != null && lastDone.mileage != null
         ? lastDone.mileage + item.intervalMiles
         : null;
-    const dueDate =
-      item.intervalMonths != null ? addMonths(lastDone.date, item.intervalMonths) : null;
+    const mileageOverdue = dueMileage != null && mileageNow >= dueMileage;
+    const mileageDueSoon = dueMileage != null && mileageNow >= dueMileage - DUE_SOON_MILES;
 
-    let overdue = false;
-    let dueSoon = false;
+    // The date half comes from the kit.
+    const byDate = dateDue({
+      lastDone: lastDone.date,
+      intervalMonths: item.intervalMonths,
+      today,
+      dueSoonDays: DUE_SOON_DAYS,
+    });
 
-    if (dueMileage != null && mileageNow >= dueMileage) overdue = true;
-    if (dueDate != null && today >= dueDate) overdue = true;
-
-    if (!overdue) {
-      if (dueMileage != null && mileageNow >= dueMileage - DUE_SOON_MILES) dueSoon = true;
-      if (dueDate != null && daysBetween(today, dueDate) <= DUE_SOON_DAYS) dueSoon = true;
-    }
+    // Whichever comes first wins, and overdue on either axis suppresses
+    // due-soon on both. Same precedence the mileage/date pair has always had.
+    const overdue = mileageOverdue || byDate.overdue;
+    const dueSoon = !overdue && (mileageDueSoon || byDate.dueSoon);
 
     const status: DueStatus = overdue ? "overdue" : dueSoon ? "due-soon" : "ok";
 
-    return { item, status, lastDone, dueMileage, dueDate };
+    return { item, status, lastDone, dueMileage, dueDate: byDate.dueDate };
   });
 }
 
@@ -76,9 +70,16 @@ export function worstStatus(statuses: ScheduleItemStatus[]): DueStatus {
   return "ok";
 }
 
-export function upcomingAdminDates(vehicle: Vehicle, today: string = new Date().toISOString().slice(0, 10)) {
+export function upcomingAdminDates(vehicle: Vehicle, today: string = currentDate()) {
   return vehicle.adminDates
-    .map((d) => ({ ...d, daysUntil: daysBetween(today, d.dueDate) }))
+    .map((d) => ({
+      ...d,
+      // The kit's daysBetween returns null for a date it cannot parse.
+      // Coalescing to Infinity rather than 0 sorts a malformed entry to the
+      // END of an upcoming list; 0 would put it at the top, reading as due
+      // today.
+      daysUntil: daysBetween(today, d.dueDate) ?? Number.POSITIVE_INFINITY,
+    }))
     .sort((a, b) => a.daysUntil - b.daysUntil);
 }
 

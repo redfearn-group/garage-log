@@ -16,6 +16,16 @@ import fs from "node:fs";
 import path from "node:path";
 import * as yaml from "js-yaml";
 
+// Local copy of the kit's today(). node runs this script outside the Astro
+// build, so it cannot import src/lib/kit/*.ts. Not
+// new Date().toISOString().slice(0,10): that is UTC and returns TOMORROW
+// after 18:00 Mountain.
+function today() {
+  const d = new Date();
+  const p = (n) => String(n).padStart(2, "0");
+  return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+}
+
 const ROOT = path.resolve(import.meta.dirname, "..");
 const DATA_DIR = path.join(ROOT, "data");
 
@@ -73,7 +83,7 @@ async function checkVehicle(summary) {
   writeYaml(recallsFile, {
     // Only bump lastChecked when the check actually succeeded — otherwise
     // this would misleadingly claim stale fallback data is current.
-    lastChecked: recallsOk ? new Date().toISOString().slice(0, 10) : existing.lastChecked,
+    lastChecked: recallsOk ? today() : existing.lastChecked,
     recalls,
   });
   console.log(`[${slug}] ${recalls.length} recall(s) on file.`);

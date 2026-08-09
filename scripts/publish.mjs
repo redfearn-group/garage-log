@@ -4,6 +4,16 @@ import readline from "node:readline";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 
+// Local copy of the kit's today(). node runs this script outside the Astro
+// build, so it cannot import src/lib/kit/*.ts. Not
+// new Date().toISOString().slice(0,10): that is UTC and returns TOMORROW
+// after 18:00 Mountain.
+function today() {
+  const d = new Date();
+  const p = (n) => String(n).padStart(2, "0");
+  return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+}
+
 const PUBLIC_ROOT = new URL("..", import.meta.url);
 const PRIVATE_ROOT = new URL("../../garage-log-private/", import.meta.url);
 
@@ -37,7 +47,7 @@ async function publishRepo(label, cwd) {
     return;
   }
 
-  const defaultMsg = `Update vehicle data — ${new Date().toISOString().slice(0, 10)}`;
+  const defaultMsg = `Update vehicle data — ${today()}`;
   const customMsg = await ask(`Commit message [${defaultMsg}]: `);
   const message = customMsg.trim() || defaultMsg;
 

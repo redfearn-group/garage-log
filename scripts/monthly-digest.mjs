@@ -9,7 +9,18 @@ const DUE_SOON_DAYS = 30;
 const STALE_MILEAGE_DAYS = 30;
 
 const DATA_DIR = path.resolve(process.cwd(), "data");
-const today = new Date().toISOString().slice(0, 10);
+
+// Local copy of the kit's today(). node runs this script outside the Astro
+// build, so it cannot import src/lib/kit/*.ts. Not
+// new Date().toISOString().slice(0,10): that is UTC and returns TOMORROW
+// after 18:00 Mountain.
+function localToday() {
+  const d = new Date();
+  const p = (n) => String(n).padStart(2, "0");
+  return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+}
+
+const today = localToday();
 
 function readYaml(filePath, fallback) {
   if (!fs.existsSync(filePath)) return fallback;
@@ -19,7 +30,8 @@ function readYaml(filePath, fallback) {
 function addMonths(dateStr, months) {
   const d = new Date(dateStr + "T00:00:00");
   d.setMonth(d.getMonth() + months);
-  return d.toISOString().slice(0, 10);
+  const p = (n) => String(n).padStart(2, "0");
+  return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
 }
 
 function daysBetween(a, b) {
