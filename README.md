@@ -9,7 +9,7 @@ A maintenance tracker for a small fleet of real vehicles, built as a static site
 Five vehicles, tracked against maintenance schedules sourced from actual owner's manuals and warranty guides rather than generic dealer intervals. Every schedule item carries its citation inline, so the reasoning behind a due date is still visible a year later, not just the number.
 
 - **Due-status dashboard**: each vehicle's schedule is checked against logged mileage and dates, and flagged overdue, due soon, or on track, whichever comes first between mileage and time.
-- **Recall tracking**: pulled live from the NHTSA API by VIN, refreshed automatically on a schedule.
+- **Recall tracking**: campaigns pulled from the NHTSA API by make, model and year, refreshed automatically on a schedule. NHTSA cannot report whether a specific VIN was repaired, so completion status is tracked by hand in a separate file the auto-fetch never touches.
 - **Full maintenance history**: every oil change, part, and repair, with mileage interpolated from surrounding odometer readings when an exact reading isn't on file.
 
 ## Architecture
