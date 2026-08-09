@@ -1,7 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import { getArchivedVehicles, currentMileage, vehicleLabel } from "../lib/data";
-import { withBase } from "../lib/url";
+import { withBase } from "../lib/kit/base";
 
 const vehicles = getArchivedVehicles();
 ---

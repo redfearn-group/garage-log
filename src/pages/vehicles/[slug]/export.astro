@@ -1,8 +1,8 @@
 ---
 import Base from "../../../layouts/Base.astro";
 import { getVehicleSummaries, getVehicle, currentMileage, vehicleLabel } from "../../../lib/data";
-import { withBase } from "../../../lib/url";
-import { formatDate } from "../../../lib/date";
+import { withBase } from "../../../lib/kit/base";
+import { formatDate } from "../../../lib/kit/date";
 
 export function getStaticPaths() {
   return getVehicleSummaries().map((v) => ({ params: { slug: v.slug } }));

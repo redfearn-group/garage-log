@@ -59,6 +59,6 @@ Known API quirks, already handled in that script: the recalls endpoint 400s on a
 
 ## Data conventions
 
-- Dates render as `DD MMM YYYY` via `src/lib/date.ts`. Store them as `YYYY-MM-DD` in YAML.
+- Dates render as `DD MMM YYYY` via `src/lib/kit/date.ts`. Store them as `YYYY-MM-DD` in YAML.
 - Mileage for an entry whose exact odometer reading is unknown is interpolated linearly between surrounding known readings. Say so in the notes and treat it as approximate.
 - Watch-list items with `status: addressed` are filtered out of the vehicle page, since they already appear in the maintenance log.

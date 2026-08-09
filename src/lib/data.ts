@@ -1,6 +1,5 @@
-import fs from "node:fs";
 import path from "node:path";
-import * as yaml from "js-yaml";
+import { DATA_DIR, readYaml, readData } from "./kit/yaml";
 import type {
   VehicleSummary,
   Vehicle,
@@ -15,18 +14,8 @@ import type {
   WatchListItem,
 } from "./types";
 
-const DATA_DIR = path.resolve(process.cwd(), "data");
-
-function readYaml<T>(filePath: string, fallback: T): T {
-  if (!fs.existsSync(filePath)) return fallback;
-  const raw = fs.readFileSync(filePath, "utf-8");
-  const parsed = yaml.load(raw);
-  return (parsed as T) ?? fallback;
-}
-
 export function getVehicleSummaries(): VehicleSummary[] {
-  const indexPath = path.join(DATA_DIR, "vehicles.yaml");
-  const parsed = readYaml<{ vehicles: VehicleSummary[] }>(indexPath, { vehicles: [] });
+  const parsed = readData<{ vehicles: VehicleSummary[] }>("vehicles.yaml", { vehicles: [] });
   return parsed.vehicles ?? [];
 }
 

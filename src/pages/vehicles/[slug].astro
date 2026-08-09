@@ -3,8 +3,8 @@ import Base from "../../layouts/Base.astro";
 import StatusBadge from "../../components/StatusBadge.astro";
 import { getVehicleSummaries, getVehicle, currentMileage, vehicleLabel } from "../../lib/data";
 import { scheduleStatusesFor, upcomingAdminDates, splitScheduleItemName, currentMileageAtOrAbove } from "../../lib/status";
-import { withBase } from "../../lib/url";
-import { formatDate } from "../../lib/date";
+import { withBase } from "../../lib/kit/base";
+import { formatDate } from "../../lib/kit/date";
 
 export function getStaticPaths() {
   return getVehicleSummaries().map((v) => ({ params: { slug: v.slug } }));

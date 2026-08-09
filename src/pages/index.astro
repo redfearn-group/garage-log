@@ -3,7 +3,7 @@ import Base from "../layouts/Base.astro";
 import StatusBadge from "../components/StatusBadge.astro";
 import { getActiveVehicles, currentMileage, vehicleLabel, vehicleShortLabel } from "../lib/data";
 import { scheduleStatusesFor, worstStatus, upcomingAdminDates, splitScheduleItemName } from "../lib/status";
-import { withBase } from "../lib/url";
+import { withBase } from "../lib/kit/base";
 
 const vehicles = getActiveVehicles();
 
