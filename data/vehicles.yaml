@@ -8,8 +8,13 @@
 # (gitignored, never committed) instead. See each vehicle's private.yaml
 # for the full purchase paperwork detail this file used to contain.
 #
-# VINs are deliberately NOT on that list. They are readable through any
-# windshield, so they are fine to publish here if a use for them comes up.
+# VINs are deliberately NOT on that list and are published here. A VIN is
+# readable through any windshield, so it was never private. The thing being
+# protected is the pairing: a VIN together with a plate or another
+# identifier is enough to tie these cars to Brady, which neither is alone.
+# That is why plates are absent from the type entirely rather than just
+# left blank. Never publish a plate here, and never publish a VIN for a
+# vehicle Brady does not own.
 vehicles:
   - slug: 2015-ford-f150
     make: Ford
@@ -17,6 +22,7 @@ vehicles:
     year: 2015
     nickname: Zeus
     trim: 3.5L V6 4WD SuperCrew
+    vin: 1FTEW1EG7FKE00733
     tireSize: 275/65R18
     purchaseDate: '2018-05-23'
     previousOwner: >-
@@ -34,6 +40,7 @@ vehicles:
     model: ES 300h
     year: 2019
     trim: Hybrid (A25A-FXS 2.5L), Nav + Premium Package
+    vin: JTHB21B18K2033784
     tireSize: 235/45R18
     purchaseDate: '2026-06-19'
     previousOwner: >-
@@ -76,6 +83,7 @@ vehicles:
     year: 2012
     nickname: Hera
     trim: SE AWD, 2GR-FE 3.5L V6, U660E 6-speed automatic
+    vin: 5TDBK3EH7CS102772
     tireSize: P245/65R17
     purchaseDate: '2019-05-25'
     previousOwner: >-
@@ -98,6 +106,9 @@ vehicles:
     year: 2020
     nickname: Family Tucson
     trim: 2.4L GDI Theta II, AWD (HTRAC), 6-speed automatic
+    # No vin here on purpose. This car belongs to a relative, not to Brady.
+    # Publishing his own VINs is his call to make; publishing someone
+    # else's is not. It stays in this vehicle's private.yaml.
     tireSize: null
     purchaseDate: null
     previousOwner: >-
@@ -125,6 +136,7 @@ vehicles:
     year: 2017
     nickname: Draco
     trim: Premium Sedan AWD, FB20 2.0L, TR580 Lineartronic CVT
+    vin: 4S3GKAB61H3617577
     purchaseDate: '2026-03-13'
     previousOwner: >-
       Purchased used from a Utah dealer in March 2026 at 133,173 mi

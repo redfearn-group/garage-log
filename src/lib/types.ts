@@ -13,8 +13,13 @@ export interface VehicleSummary {
   year: number;
   nickname?: string;
   trim?: string;
+  // A VIN is readable through any windshield, so it is not private and
+  // renders publicly. There is deliberately no licensePlate field: a VIN
+  // plus a plate together identify the owner in a way neither does alone,
+  // and this type has no field-level filtering, so the only reliable way
+  // to keep a plate off the public site is to give it nowhere to go.
+  // Plates live in the gitignored private.yaml. Do not re-add this field.
   vin?: string;
-  licensePlate?: string;
   tireSize?: string;
   purchaseDate?: string;
   previousOwner?: string;
