@@ -242,6 +242,28 @@ entries:
     description: Battery tested — Tim Dahle Ford, 655 CCA actual vs 610 CCA factory spec, good condition, no leaks/damage.
     documents:
       - 20200812-tim-dahle-worry-free-maintenance.pdf
+  - date: '2020-09-02'
+    mileage: 82195
+    itemType: ''
+    description: >-
+      Rear pair of tires replaced (275/65R18), Discount Tire, $524.52 total.
+    notes: >-
+      RECONSTRUCTED 2026-08-13 from the bank record, not from an invoice, so
+      treat the exact date and contents as approximate. No receipt is on file
+      and this was previously missing from the log entirely.
+
+      The gap was the giveaway: the only documented tire purchase before 2025
+      was the 2018-12-10 FRONT pair, which would have meant this truck covered
+      roughly 105,000 miles on one set of tires. Not possible. The 2018 invoice
+      says in as many words that the rears were not replaced that visit, so the
+      rears were still the 2015 originals and by this point had about 82,000
+      miles on them.
+
+      $524.52 sits within $20 of the documented 2018 two-tire price of $542.66,
+      which is what a second pair of the same size should cost. Mileage is
+      interpolated between the 2020-08-12 (81,599 mi) and 2021-05-21
+      (89,600 mi) readings.
+    documents: []
   - date: '2020-10-24'
     mileage: 84052
     itemType: battery-12v
@@ -272,6 +294,26 @@ entries:
       date used as the log date; exact install date not independently
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
+    documents: []
+  - date: '2021-05-17'
+    mileage: 89490
+    itemType: ''
+    description: >-
+      Two tires replaced under the road hazard warranty after a flat,
+      Discount Tire, $456.78 charged after the warranty credit.
+    notes: >-
+      RECONSTRUCTED 2026-08-13 from the bank record. Brady confirmed he picked
+      up a flat around this time and Discount Tire warrantied two tires. No
+      invoice on file, so the exact date and which axle are approximate.
+
+      The price supports the warranty story rather than a straight purchase.
+      The two full-price pairs on this truck were $542.66 in 2018 and $524.52
+      in 2020, and this is below both, which is what a pro-rated road hazard
+      credit looks like. The 2018 purchase carried certificates, which is what
+      made the claim possible.
+
+      Mileage interpolated against the 2021-05-21 reading of 89,600 mi four
+      days later.
     documents: []
   - date: '2021-05-21'
     mileage: 89600
