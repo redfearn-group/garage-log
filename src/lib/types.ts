@@ -23,6 +23,11 @@ export interface VehicleSummary {
   tireSize?: string;
   purchaseDate?: string;
   previousOwner?: string;
+  // Absent means Brady owns it, which is the case for all but one. Set
+  // false for a vehicle he only maintains for someone else. This drives
+  // the "not owned" badge, and anything totalling cost of ownership must
+  // filter on it, since money spent on someone else's car is not his.
+  owned?: boolean;
   status: "active" | "archived";
   photo?: string | null;
 }

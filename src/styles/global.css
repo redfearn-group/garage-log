@@ -175,6 +175,10 @@ h1, h2, h3 {
 .badge.due-soon   { background: var(--status-due-soon-bg);  color: var(--status-due-soon-fg); }
 .badge.ok         { background: var(--status-ok-bg);        color: var(--status-ok-fg); }
 .badge.never-done { background: var(--status-never-bg);     color: var(--status-never-fg); }
+/* Ownership is not a due status, so it reads as an outline rather than
+   competing with the filled status badges for attention. */
+.badge.not-owned  { background: transparent; color: var(--text-muted); border: 1px solid var(--border); }
+.badge-row { display: flex; align-items: center; gap: 0.4rem; flex-wrap: wrap; justify-content: flex-end; }
 
 table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
 th, td { text-align: left; padding: 0.5rem 0.6rem; border-bottom: 1px solid var(--border); }

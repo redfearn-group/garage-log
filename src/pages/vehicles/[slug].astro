@@ -60,6 +60,12 @@ if (points.length > 1) {
 <Base title={vehicleLabel(vehicle)}>
   <p class="no-print"><a href={withBase("/")}>← Dashboard</a></p>
   <div class="eyebrow">Vehicle</div>
+  {vehicle.owned === false && (
+    <p class="muted" style="margin: 0 0 0.5rem;">
+      <span class="badge not-owned">Not owned</span>
+      Maintained for someone else. Serviced here for reference only, and not part of Brady's fleet costs.
+    </p>
+  )}
   <div style="display:flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem;">
     <h2 style="margin: 0;">{vehicleLabel(vehicle)}</h2>
     <a class="no-print" href={withBase(`/vehicles/${vehicle.slug}/export`)}>Printable / export history →</a>

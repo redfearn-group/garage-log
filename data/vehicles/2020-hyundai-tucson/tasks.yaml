@@ -1,6 +1,6 @@
 tasks:
   - id: 1
-    title: Get license plate and exact tire size for this Tucson
+    title: Get exact tire size and trim for this Tucson
     notes: >-
       Originally a broader "gather basic details" task, added 2026-07-14
       from a single AutoZone cabin air filter purchase. RESOLVED 2026-07-16:
@@ -11,10 +11,11 @@ tasks:
       tailored to this year/engine and the recall check has been run (see
       recalls.yaml). Still outstanding: exact trim (NHTSA's VIN decode
       returned an ambiguous list — Value/SEL/Sport/Limited/Ultimate — since
-      Hyundai VINs don't fully encode trim), license plate, and exact tire
+      Hyundai VINs don't fully encode trim) and exact tire
       size (needed to pin down whether the OEM 17" or 19" wheel/tire combo
-      applies). Check the door-jamb tire placard and registration next time
-      Brady's at the car.
+      applies). Check the door-jamb tire placard next time Brady's at the
+      car. The plate is deliberately not tracked here: plates never go in
+      the public repo, and this car is not Brady's to catalogue anyway.
     status: open
     createdDate: '2026-07-14'
     completedDate: null

@@ -109,11 +109,12 @@ vehicles:
     # No vin here on purpose. This car belongs to a relative, not to Brady.
     # Publishing his own VINs is his call to make; publishing someone
     # else's is not. It stays in this vehicle's private.yaml.
+    owned: false
     tireSize: null
     purchaseDate: null
     previousOwner: >-
-      Not Brady's vehicle — belongs to a family member who lives nearby;
-      Brady helps with maintenance, so it's tracked here. Black paint.
+      Belongs to a family member who lives nearby. Brady helps with
+      maintenance, so it is tracked here. Black paint.
       Added 2026-07-14 after an STP CAF90165P cabin air filter (fits
       2016-2021 Tucson) turned up in Brady's AutoZone order history, bought
       alongside Highlander parts — confirmed 2026-07-16 as correct fitment
@@ -126,8 +127,8 @@ vehicles:
       on-demand electronically-controlled coupling system Hyundai branded
       HTRAC, not a true low-range 4WD transfer case. NHTSA's trim field
       returned an ambiguous list (Value/SEL/Sport/Limited/Ultimate — VIN
-      doesn't fully encode Hyundai trim), not yet narrowed down. License
-      plate and exact tire size still unknown — see open task.
+      doesn't fully encode Hyundai trim), not yet narrowed down. Exact
+      tire size still unknown, see open task.
     status: active
     photo: null
   - slug: 2017-subaru-impreza

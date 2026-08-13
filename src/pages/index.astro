@@ -116,7 +116,10 @@ const ICONS: Record<"sedan" | "suv" | "truck", string> = {
               </svg>
               <h3><a href={withBase(`/vehicles/${vehicle.slug}`)}>{vehicleLabel(vehicle)}</a></h3>
             </div>
-            <StatusBadge status={overall} />
+            <div class="badge-row">
+              {vehicle.owned === false && <span class="badge not-owned">Not owned</span>}
+              <StatusBadge status={overall} />
+            </div>
           </div>
 
           <div class="stat-row">
