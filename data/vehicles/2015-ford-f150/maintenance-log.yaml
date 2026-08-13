@@ -4,8 +4,8 @@ entries:
     itemType: ''
     description: >-
       Truck purchased — Clegg Auto Sales (Spanish Fork, UT), 2015 Ford
-      F-150 XLT, silver, VIN [VIN in private.yaml]. [price in private.yaml] cash price
-      ([amount in private.yaml] amount financed incl. doc fee/tax/reg, [APR in private.yaml], [term in private.yaml] via [lender in private.yaml]).
+      F-150 XLT, silver. VIN, purchase price, financing terms and lender
+      are in private.yaml.
     notes: >-
       Bill of sale + odometer disclosure + retail installment contract on
       file. Odometer disclosed as actual mileage (44,240 mi), no

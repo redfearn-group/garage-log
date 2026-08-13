@@ -3,9 +3,9 @@ dates:
     label: 'Carchex "Ultimate Direct" extended warranty — EXPIRED'
     dueDate: '2026-05-11'
     notes: >-
-      Plan "Ultimate Direct," purchased 2022-05-11 for [price in private.yaml], financed
-      as [term in private.yaml] (paid off well before the coverage itself
-      expired). 48 months / 48,000 miles from a starting odometer of
+      Plan "Ultimate Direct," purchased 2022-05-11 and paid off well before
+      the coverage itself expired. Price and payment terms are in
+      private.yaml. 48 months / 48,000 miles from a starting odometer of
       104,412 mi — expired at whichever came first: 2026-05-11 or
       152,412 mi. Current mileage (155,407.7 as of 2026-07-12) is already
       past the mileage cutoff, and the date cutoff has also passed — this
@@ -27,7 +27,7 @@ dates:
       lumbar adjuster, backup camera, folding-mirror switch, front axle
       seal, rental); a handwritten ~$940–1,050 out-of-pocket figure on it
       is ambiguous/unverified. Across these claims the warranty paid out
-      several times its own [price in private.yaml] purchase price. See
+      several times what it cost. See
       maintenance-log.yaml for all three repair visits. Full contract,
       administrator, claims-contact, and financing details filed
       privately.

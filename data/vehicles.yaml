@@ -19,7 +19,7 @@ vehicles:
     previousOwner: >-
       Purchased used from a Utah dealer in 2018 at 44,240 mi (confirmed
       "ACTUAL" via the odometer disclosure statement). Color: Silver.
-      Financed over roughly 6 years. Sold AS-IS with no dealer warranty,
+      Sold AS-IS with no dealer warranty,
       though the Ford factory warranty still applied to some components at
       the time. A Utah disclosure notes the vehicle was originally sold new
       in Canada — its odometer may have originally been calibrated in
@@ -79,7 +79,7 @@ vehicles:
       Purchased used from a Utah dealer in 2019 at 88,289 mi (confirmed via
       the odometer disclosure statement and title reassignment, correcting
       an earlier 88,336 estimate in the mileage log). Color: Sizzling
-      Crimson Mica. Financed over 6 years. Sold AS-IS; a dealer limited
+      Crimson Mica. Sold AS-IS; a dealer limited
       warranty covering internally lubricated engine/transmission/transfer
       case/differential parts plus water pump, thermostat, and fuel pump
       applied for only 7 days/500 miles (long since expired) — an optional
@@ -127,7 +127,6 @@ vehicles:
       Purchased used from a Utah dealer in March 2026 at 133,173 mi
       (confirmed via two signed documents, correcting an earlier 133,254
       estimate that came from the dealer's online listing photo). Color:
-      Gray. Sold AS-IS, no dealer warranty. Financed independently rather
-      than through the dealer.
+      Gray. Sold AS-IS, no dealer warranty.
     status: active
     photo: null
