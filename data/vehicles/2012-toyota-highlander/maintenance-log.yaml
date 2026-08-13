@@ -66,6 +66,33 @@ entries:
       confirmed. Mileage interpolated between the surrounding odometer
       readings — treat as rough.
     documents: []
+  - date: '2022-06-30'
+    mileage: 109560
+    itemType: ''
+    description: >-
+      Alternator replaced under warranty (Duralast 11326, 150A), AutoZone.
+      No cost.
+    notes: >-
+      RECONSTRUCTED 2026-08-13 from the bank record. No invoice on file and
+      this repair was missing from the log entirely.
+
+      It was missing for a structural reason worth knowing: it cost nothing.
+      Under AutoZone's limited lifetime warranty you buy the replacement, fit
+      it, then carry the failed unit back for a full refund. The bank shows
+      $315.30 out on 2022-06-30 and $315.30 back on 2022-07-01, netting to
+      zero, so a log built by following the money would never see it. Brady
+      confirmed the car and the mechanism.
+
+      Part number confirms the fitment independently: the Duralast 11326 is a
+      150A unit for the 2GR-FE 3.5L V6, catalogued for the 2011-2016 Highlander
+      and 2007-2016 Sienna. No other vehicle in the fleet takes it.
+
+      This also implies an EARLIER alternator on this car, since a warranty
+      claim needs an original purchase, and that one is not in the records
+      either. It likely predates the available transaction history.
+
+      Mileage interpolated from the surrounding readings, so treat it as rough.
+    documents: []
   - date: '2022-07-01'
     mileage: 109580
     itemType: ''
