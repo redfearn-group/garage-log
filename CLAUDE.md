@@ -55,7 +55,11 @@ Known API quirks, already handled in that script: the recalls endpoint 400s on a
 
 ### Everything on the type renders publicly
 
-`data.ts` loads YAML straight through with no field-level filtering, so every field on the interfaces in `src/lib/types.ts` reaches the public site and the CSV/print export. VINs, plates, purchase prices, financing terms, lender and dealer names, and third-party contact details live in the gitignored `private.yaml` instead. A new field carrying that kind of data belongs there, not on the type. The 2026-07-18 redaction pass in git log is what this looked like getting wrong the first time.
+`data.ts` loads YAML straight through with no field-level filtering, so every field on the interfaces in `src/lib/types.ts` reaches the public site and the CSV/print export. Plates, purchase prices, financing terms, lender and dealer names, and third-party contact details live in the gitignored `private.yaml` instead. A new field carrying that kind of data belongs there, not on the type.
+
+VINs are the one exception, decided 2026-08-12: they are readable through any windshield, so Brady does not treat them as private. The `vin` field on the type is safe to populate publicly. Everything else on the list above is not.
+
+Two passes in git log show what getting this wrong looks like. The 2026-07-18 redaction pass cleaned the working tree but left every value in history. The 2026-08-12 pass rewrote all 150 commits and force pushed to purge the purchase and financing data for real.
 
 ## Data conventions
 
