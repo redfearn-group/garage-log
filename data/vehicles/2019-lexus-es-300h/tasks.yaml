@@ -205,21 +205,32 @@ tasks:
     completedDate: '2026-07-22'
   - id: 9
     title: >-
-      Engine coolant flush, overdue (HV battery cooling filter half of this
-      task completed 2026-08-14)
+      Weekend check: engine coolant + HV battery cooling filter, both
+      resolved 2026-08-14
     notes: >-
-      UPDATE 2026-08-14: the HV battery cooling filter was removed and
-      cleaned by Brady at 112,288 mi, as part of the 5,000 mi visit. That
-      closes the second half of this task and starts the 20,000 mi clean
-      interval, next due at 132,288 mi or 2027-02-14. See
-      maintenance-log.yaml. The task stays open and stays critical for the
-      engine coolant flush alone, which is now the only item on it. That
-      flush is genuinely overdue rather than merely approaching: Lexus
-      specifies the first change at 100,000 mi or 120 months, the car is
-      at 112,288 mi and roughly 7.5 years old, and 7 years of CARFAX
-      records show neither prior owner ever did it. Retitled to match the
-      remaining scope so the task list stops implying two outstanding
-      jobs.
+      CLOSED 2026-08-14. Both halves of this task are resolved, by
+      different routes.
+
+      HV battery cooling filter: removed, deep cleaned, and restored to
+      as-new by Brady at 112,288 mi during the 5,000 mi visit. Starts the
+      20,000 mi clean interval, next due 132,288 mi or 2027-02-14.
+
+      Engine coolant: NOT flushed, and does not need to be. Brady
+      strip-tested the coolant at the same visit and it came back in
+      excellent condition. This task, and an earlier note in it, treated
+      the flush as overdue purely because Lexus specifies a first change
+      at 100,000 mi/120 mo and no flush appears in 7 years of CARFAX
+      records. That reasoning was wrong for this fleet. Brady tests
+      coolant and brake fluid directly precisely because a measurement of
+      the actual fluid beats a generic interval, the same principle
+      already documented for the 12V battery, which is replaced on load
+      test results rather than age. Condition this good also suggests the
+      coolant was flushed at some point that never reached the paperwork,
+      so the missing record was never good evidence of degraded fluid.
+      schedule.yaml now carries a coolant-test item on a twice-yearly
+      cadence, and the engine-coolant-flush entry there has been annotated
+      so a "never logged" state is not misread as overdue again.
+
       UPDATE 2026-07-23: confirmed via a full-document search of the
       CARFAX report (all 7 pages, all 31 service records, both prior
       owners) — no mention anywhere of the HV battery cooling intake
@@ -264,7 +275,6 @@ tasks:
       before offering the car for sale — no symptom given, likely a minor
       seep found and proactively fixed. Worth keeping in mind as a watch
       item, not an active concern.
-    status: open
-    priority: critical
+    status: done
     createdDate: '2026-07-22'
-    completedDate: null
+    completedDate: '2026-08-14'

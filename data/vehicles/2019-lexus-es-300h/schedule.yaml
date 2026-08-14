@@ -64,10 +64,34 @@ items:
   - itemType: engine-coolant-flush
     name: >-
       Engine coolant (Toyota Super Long Life Coolant, pink/50-50) —
-      FIRST replacement at 120 mo/100,000 mi, then every 60 mo/50,000 mi
-      thereafter — separate system from inverter coolant below
+      Lexus figures are a FIRST replacement at 120 mo/100,000 mi, then
+      every 60 mo/50,000 mi thereafter. Separate system from inverter
+      coolant below.
+      CORRECTED 2026-08-14: replacement on this car is driven by TEST
+      RESULT, not by that age/mileage figure, exactly as the 12V battery
+      is driven by its load test rather than its age. Brady strip-tested
+      the coolant on 2026-08-14 at 112,288 mi and it came back in
+      excellent condition, so no flush is warranted despite the car
+      sitting past the 100,000 mi first-replacement point with no flush
+      anywhere in its records. Do NOT read a "never logged" state here as
+      overdue. Absence of a flush record is not evidence the fluid is
+      degraded, and a direct condition test is the more accurate measure
+      of both. See the coolant-test item below for the testing cadence
+      and maintenance-log.yaml for results. The 50,000 mi/60 mo figures
+      below are retained only as a backstop once an actual flush is
+      logged.
     intervalMiles: 50000
     intervalMonths: 60
+  - itemType: coolant-test
+    name: >-
+      Engine coolant condition test (test strips) — ADDED 2026-08-14:
+      Brady tests coolant condition directly rather than replacing on a
+      generic interval, the same method he applies to the 12V battery
+      via the KONNWEI KW208. Twice yearly, spring and fall, matching his
+      other test-based checks. Replacement is decided by the strip
+      result, not by age or mileage.
+    intervalMiles: null
+    intervalMonths: 6
   - itemType: inverter-coolant-flush
     name: >-
       Inverter coolant (same Toyota Super Long Life Coolant spec,

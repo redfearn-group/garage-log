@@ -643,11 +643,32 @@ entries:
       Fluid level checks at the 5,000 mi scheduled visit: brake, engine
       oil, engine coolant, inverter coolant, and washer fluid (DIY)
     notes: >-
-      Levels checked only, nothing replaced. Engine oil was checked and
+      Levels checked, nothing replaced. Engine coolant was also condition
+      tested with strips at this visit, logged separately as coolant-test
+      below. Engine oil was checked and
       deliberately not changed: that interval is 10,000 mi/6 mo and the
       last change was 2026-05-26 at 106,890 mi, so the next is due around
       116,890 mi or 2026-11-26. Recorded with no itemType because
       schedule.yaml describes the fluid-check half of the 5,000 mi visit
       rhythm in its header but carries no tracked item for it, so this
       entry is history only and resets no interval.
+    documents: []
+  - date: '2026-08-14'
+    mileage: 112288
+    itemType: coolant-test
+    description: >-
+      Engine coolant condition tested with test strips, result excellent
+      (DIY)
+    notes: >-
+      Tested as part of the 5,000 mi visit. The strips showed the coolant
+      in excellent condition, so no flush is warranted right now even
+      though the car is past the 100,000 mi first-replacement point and
+      carries no flush record across 7 years and 31 CARFAX service
+      entries. Per Brady, condition this good means it was almost
+      certainly flushed at some point that never reached the paperwork.
+      Treat this result, not the missing record, as the current state of
+      the fluid. This is the same principle already applied to the 12V
+      battery: a direct measurement beats a generic interval, so
+      replacement follows the test rather than the calendar. Next test
+      due 2027-02-14.
     documents: []
