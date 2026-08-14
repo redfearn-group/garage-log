@@ -97,9 +97,29 @@ items:
     intervalMiles: 6000
     intervalMonths: 6
   - itemType: brake-fluid-flush
-    name: Brake fluid — Subaru 30 months/30,000 mi, whichever comes first
-    intervalMiles: 30000
-    intervalMonths: 30
+    name: >-
+      Brake fluid — Subaru 30 months/30,000 mi, whichever comes first.
+      RESTRUCTURED 2026-08-14: this is a REPLACEMENT record. Brady decides
+      replacement from twice-yearly Phoenix Systems strip tests, not from
+      Subaru's calendar figure, so this is an informational record with no
+      computed due date, exactly like battery-12v. Subaru's figures stay
+      documented in this text but are deliberately NOT set as intervals
+      below, since computing against them flags the row on the calendar
+      while the actual fluid has passed a strip test. The post-purchase
+      strip test previously logged against this item has been retagged to
+      brake-fluid-test below, where it belongs: a passed test is not a
+      flush.
+    intervalMiles: null
+    intervalMonths: null
+  - itemType: brake-fluid-test
+    name: >-
+      Brake fluid condition test (Phoenix Systems 8006-B strips) — ADDED
+      2026-08-14. Brady tests every vehicle in the fleet twice yearly,
+      spring and fall, and replaces the fluid only on a failed result.
+      The 8006-B strips are double-ended, so the same strip covers the
+      coolant test below and the two are normally done in one session.
+    intervalMiles: null
+    intervalMonths: 6
   - itemType: cvt-fluid
     name: >-
       CVT fluid — Subaru CVTF-II ONLY (green, SOA427V1660/SOA427V1610).
@@ -165,9 +185,23 @@ items:
     name: >-
       Engine coolant (Subaru Super Coolant, factory long-life green) — no
       first change until 11 yr/137,500 mi, then every 6 yr/75,000 mi
-      thereafter — do NOT change early or mix with other coolant types
-    intervalMiles: 75000
-    intervalMonths: 72
+      thereafter — do NOT change early or mix with other coolant types.
+      RESTRUCTURED 2026-08-14: this is an informational REPLACEMENT record
+      with no computed due date, like battery-12v. The post-purchase strip
+      test previously logged against it has been retagged to coolant-test
+      below. Subaru's figures stay documented in this text; on this car
+      they are genuinely far off anyway, so the strip test is the only
+      thing that should prompt action.
+    intervalMiles: null
+    intervalMonths: null
+  - itemType: coolant-test
+    name: >-
+      Engine coolant condition test (Phoenix Systems 8006-B strips) —
+      ADDED 2026-08-14. Twice yearly, spring and fall, same session and
+      same double-ended strip as the brake fluid test above. Replacement
+      is decided by the result, not by age or mileage.
+    intervalMiles: null
+    intervalMonths: 6
   - itemType: wiper-blades
     name: >-
       Wiper blades — Brady checks these every spring during the seasonal

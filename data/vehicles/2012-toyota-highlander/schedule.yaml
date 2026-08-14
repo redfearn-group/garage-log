@@ -105,12 +105,28 @@ items:
       vehicle does NOT list a scheduled brake-fluid replacement item at all
       (only visual "brake lines and hoses" inspection); there is no fixed
       Toyota factory interval to cite here. UPDATED 2026-07-22: Brady's
-      actual practice supersedes the calendar-estimate approach entirely —
-      he tests the fluid's chemical condition twice yearly (spring & fall)
-      with Phoenix Systems test strips and only replaces it if a test
-      fails, never on a fixed calendar interval. 6 mo below reflects that
-      test cadence, not a flush-due date — see maintenance-log.yaml for
-      test results.
+      actual practice supersedes the calendar-estimate approach entirely.
+      He tests the fluid's chemical condition twice yearly (spring and
+      fall) with Phoenix Systems 8006-B strips and replaces it only if a
+      test fails, never on a fixed calendar interval.
+      RESTRUCTURED 2026-08-14: the test now has its own brake-fluid-test
+      item below, mirroring how battery-test is kept separate from
+      battery-12v. This entry is a REPLACEMENT record only and carries no
+      interval, since Toyota specifies none. Previously this item held a
+      6-month interval so that strip-test results could be logged against
+      it, which made a passed test render as though the fluid had been
+      flushed. A "never logged" state here means no flush has ever been
+      recorded, which is NOT the same as one being due. The strip test
+      decides that, and its results now live on the test item.
+    intervalMiles: null
+    intervalMonths: null
+  - itemType: brake-fluid-test
+    name: >-
+      Brake fluid condition test (Phoenix Systems 8006-B strips) — ADDED
+      2026-08-14. Brady tests every vehicle in the fleet twice yearly,
+      spring and fall, and replaces the fluid only on a failed result.
+      The 8006-B strips are double-ended, so the same strip covers the
+      coolant test below and the two are normally done in one session.
     intervalMiles: null
     intervalMonths: 6
   - itemType: coolant-flush
@@ -120,14 +136,27 @@ items:
       a literal citation in the 2013 Highlander Warranty & Maintenance
       Guide footnote: "Initial replacement at 100,000 miles/120 months.
       Replace every 50,000 miles/60 months thereafter." UPDATED 2026-07-22:
-      Brady's actual practice supersedes the calendar-estimate approach —
-      he tests the coolant's chemical condition twice yearly (spring &
-      fall) with Phoenix Systems test strips alongside the brake fluid
-      test above, and only replaces it if a test fails, not purely on
-      Toyota's calendar interval. 6 mo below reflects that test cadence —
-      see maintenance-log.yaml for test results. Toyota's mileage/time
-      figures remain the outer bound if a test is ever missed.
-    intervalMiles: 50000
+      Brady's actual practice supersedes the calendar-estimate approach.
+      He tests the coolant's chemical condition twice yearly (spring and
+      fall) with Phoenix Systems strips alongside the brake fluid test
+      above, and replaces it only if a test fails, not on Toyota's
+      calendar interval.
+      RESTRUCTURED 2026-08-14: the test now has its own coolant-test item
+      below. This entry is an informational REPLACEMENT record with no
+      computed due date, exactly like battery-12v. Toyota's figures stay
+      documented in this text but are deliberately NOT set as intervals
+      below, because computing against them would flag this row on the
+      calendar while the actual fluid has passed a strip test. A "never
+      logged" state here is not evidence a flush is due.
+    intervalMiles: null
+    intervalMonths: null
+  - itemType: coolant-test
+    name: >-
+      Engine coolant condition test (Phoenix Systems 8006-B strips) —
+      ADDED 2026-08-14. Twice yearly, spring and fall, same session and
+      same double-ended strip as the brake fluid test above. Replacement
+      is decided by the result, not by age or mileage.
+    intervalMiles: null
     intervalMonths: 6
   - itemType: transmission-fluid-service
     name: >-

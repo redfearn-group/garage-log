@@ -67,15 +67,44 @@ items:
       hygroscopic brake fluid is replacement every 24-36 months regardless
       of mileage to control moisture/corrosion — 30 mo below is the
       conservative end of that range, not a literal Hyundai citation.
+      RESTRUCTURED 2026-08-14: this is an informational REPLACEMENT record
+      with no computed due date, like battery-12v. Brady tests this car's
+      fluids twice yearly with Phoenix Systems strips like the rest of the
+      fleet, so the 30 mo community figure stays documented in this text
+      rather than being set as an interval below. No test has been logged
+      for this vehicle yet.
     intervalMiles: null
-    intervalMonths: 30
+    intervalMonths: null
+  - itemType: brake-fluid-test
+    name: >-
+      Brake fluid condition test (Phoenix Systems 8006-B strips) — ADDED
+      2026-08-14. Brady tests every vehicle in the fleet twice yearly,
+      spring and fall, and replaces the fluid only on a failed result.
+      The 8006-B strips are double-ended, so the same strip covers the
+      coolant test below and the two are normally done in one session.
+      Nothing logged yet for this car.
+    intervalMiles: null
+    intervalMonths: 6
   - itemType: coolant-flush
     name: >-
       Engine coolant — Hyundai: FIRST replacement at 120,000 mi/120 mo,
       then every 30,000 mi/24 mo thereafter (both recurring figures are a
-      literal citation from the manual transcription, not derived)
-    intervalMiles: 30000
-    intervalMonths: 24
+      literal citation from the manual transcription, not derived).
+      RESTRUCTURED 2026-08-14: this is an informational REPLACEMENT record
+      with no computed due date, like battery-12v. Hyundai's figures stay
+      documented in this text rather than being set as intervals below.
+      Replacement is decided by the strip test on the coolant-test item.
+    intervalMiles: null
+    intervalMonths: null
+  - itemType: coolant-test
+    name: >-
+      Engine coolant condition test (Phoenix Systems 8006-B strips) —
+      ADDED 2026-08-14. Twice yearly, spring and fall, same session and
+      same double-ended strip as the brake fluid test above. Replacement
+      is decided by the result, not by age or mileage. Nothing logged yet
+      for this car.
+    intervalMiles: null
+    intervalMonths: 6
   - itemType: transmission-fluid-service
     name: >-
       Automatic transmission fluid (6-speed automatic) — Hyundai's normal

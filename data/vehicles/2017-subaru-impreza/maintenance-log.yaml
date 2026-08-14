@@ -347,7 +347,7 @@ entries:
     documents: []
   - date: '2026-04-08'
     mileage: 134783
-    itemType: brake-fluid-flush
+    itemType: brake-fluid-test
     description: Brake fluid tested — DIY, same post-purchase inspection session
     notes: >-
       ADDED 2026-07-23, per Brady — tested (not flushed) and found good.
@@ -358,7 +358,7 @@ entries:
     documents: []
   - date: '2026-04-08'
     mileage: 134783
-    itemType: coolant-flush
+    itemType: coolant-test
     description: Coolant tested — DIY, same post-purchase inspection session
     notes: >-
       ADDED 2026-07-23, per Brady — tested (not flushed) and found good,

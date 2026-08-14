@@ -1475,7 +1475,7 @@ entries:
     documents: []
   - date: '2026-04-08'
     mileage: 153950
-    itemType: brake-fluid-flush
+    itemType: brake-fluid-test
     description: Brake fluid tested (Phoenix Systems test strip) — passed, no replacement needed
     notes: >-
       Brady confirmed (2026-07-22) he tests brake fluid chemical
@@ -1488,7 +1488,7 @@ entries:
     documents: []
   - date: '2026-04-08'
     mileage: 153950
-    itemType: coolant-flush
+    itemType: coolant-test
     description: Coolant tested (Phoenix Systems test strip) — passed, no replacement needed
     notes: >-
       Brady confirmed (2026-07-22) he tests coolant chemical condition

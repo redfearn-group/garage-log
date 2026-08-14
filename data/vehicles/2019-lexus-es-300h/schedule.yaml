@@ -58,9 +58,29 @@ items:
     intervalMiles: 30000
     intervalMonths: 36
   - itemType: brake-fluid-flush
-    name: Brake fluid replacement — Lexus 36 mo/30,000 mi, whichever occurs first (not purely time-based)
-    intervalMiles: 30000
-    intervalMonths: 36
+    name: >-
+      Brake fluid replacement — Lexus 36 mo/30,000 mi, whichever occurs
+      first (not purely time-based). RESTRUCTURED 2026-08-14: this is an
+      informational REPLACEMENT record with no computed due date, like
+      battery-12v, and the three dealer flushes logged against it are
+      genuine flushes. Brady decides future replacement from the
+      twice-yearly strip test on the brake-fluid-test item below, so the
+      Lexus figures stay documented in this text rather than being set as
+      intervals that would flag the row on the calendar while the fluid
+      itself has passed a test.
+    intervalMiles: null
+    intervalMonths: null
+  - itemType: brake-fluid-test
+    name: >-
+      Brake fluid condition test (Phoenix Systems 8006-B strips) — ADDED
+      2026-08-14. Brady tests every vehicle in the fleet twice yearly,
+      spring and fall, and replaces the fluid only on a failed result.
+      The 8006-B strips are double-ended, so one strip covers both this
+      and the engine coolant test, normally done in the same session.
+      No result logged for this car yet: the 2026-08-14 session recorded
+      a coolant test only.
+    intervalMiles: null
+    intervalMonths: 6
   - itemType: engine-coolant-flush
     name: >-
       Engine coolant (Toyota Super Long Life Coolant, pink/50-50) —
@@ -77,11 +97,12 @@ items:
       overdue. Absence of a flush record is not evidence the fluid is
       degraded, and a direct condition test is the more accurate measure
       of both. See the coolant-test item below for the testing cadence
-      and maintenance-log.yaml for results. The 50,000 mi/60 mo figures
-      below are retained only as a backstop once an actual flush is
-      logged.
-    intervalMiles: 50000
-    intervalMonths: 60
+      and maintenance-log.yaml for results. Lexus's figures stay
+      documented in this text but are deliberately NOT set as intervals
+      below, matching battery-12v, so this row never computes a due date
+      off the calendar while the fluid itself has passed a strip test.
+    intervalMiles: null
+    intervalMonths: null
   - itemType: coolant-test
     name: >-
       Engine coolant condition test (test strips) — ADDED 2026-08-14:
