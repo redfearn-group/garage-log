@@ -204,8 +204,22 @@ tasks:
     createdDate: '2026-07-15'
     completedDate: '2026-07-22'
   - id: 9
-    title: 'Weekend check (2026-07-25): coolant flush + HV battery cooling filter'
+    title: >-
+      Engine coolant flush, overdue (HV battery cooling filter half of this
+      task completed 2026-08-14)
     notes: >-
+      UPDATE 2026-08-14: the HV battery cooling filter was removed and
+      cleaned by Brady at 112,288 mi, as part of the 5,000 mi visit. That
+      closes the second half of this task and starts the 20,000 mi clean
+      interval, next due at 132,288 mi or 2027-02-14. See
+      maintenance-log.yaml. The task stays open and stays critical for the
+      engine coolant flush alone, which is now the only item on it. That
+      flush is genuinely overdue rather than merely approaching: Lexus
+      specifies the first change at 100,000 mi or 120 months, the car is
+      at 112,288 mi and roughly 7.5 years old, and 7 years of CARFAX
+      records show neither prior owner ever did it. Retitled to match the
+      remaining scope so the task list stops implying two outstanding
+      jobs.
       UPDATE 2026-07-23: confirmed via a full-document search of the
       CARFAX report (all 7 pages, all 31 service records, both prior
       owners) — no mention anywhere of the HV battery cooling intake

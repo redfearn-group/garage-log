@@ -576,3 +576,78 @@ entries:
       new odometer reading on file since 2026-07-12 (110,834 mi) — using
       that as a floor; actual mileage is likely somewhat higher.
     documents: []
+  - date: '2026-08-14'
+    mileage: 112288
+    itemType: tire-rotation
+    description: Tire rotation, part of the 5,000 mi scheduled visit (DIY)
+    notes: >-
+      Odometer confirmed from a dash photo at 112,288 mi. The previous
+      rotation was the dealer's pre-delivery work on 2026-05-26 at
+      106,890 mi, putting this 5,398 mi later, on the 5,000 mi visit
+      rhythm. Next due at 117,288 mi or 2027-02-14.
+    documents: []
+  - date: '2026-08-14'
+    mileage: 112288
+    itemType: brake-inspection
+    description: >-
+      Visual brake pad, caliper, and rotor inspection, part of the
+      5,000 mi scheduled visit (DIY)
+    notes: >-
+      Brake fluid level checked at the same visit. No issues reported.
+      Separate from the brake fluid replacement interval (30,000 mi/36
+      mo), which is untouched by this.
+    documents: []
+  - date: '2026-08-14'
+    mileage: 112288
+    itemType: wiper-blades
+    description: >-
+      Wiper blade inspection, part of the 5,000 mi scheduled visit (DIY)
+    notes: >-
+      Inspection only, blades not replaced. Washer fluid level checked at
+      the same visit.
+    documents: []
+  - date: '2026-08-14'
+    mileage: 112288
+    itemType: hybrid-battery-fan-filter
+    description: >-
+      HV battery cooling intake filter deep cleaned, washed out, and
+      restored to as-new condition (DIY)
+    notes: >-
+      CONDITION FOUND: heavily dust-loaded but not clogged, with no
+      visible airflow obstruction. Brady washed the element out rather
+      than replacing it, and it came back to effectively new condition.
+      That dust load represents the car's entire life to date, since the
+      31-record CARFAX history shows neither prior owner ever serviced
+      this filter. It is roughly 112,000 mi and 7.5 years of accumulation,
+      not one interval's worth.
+
+      BASELINE: because the element is back to as-new rather than merely
+      improved, this entry is a clean zero point. Whatever dust is found
+      at the next inspection is the yield of a single interval and is
+      directly comparable against this one, which is what makes the
+      question of cleaning versus replacing answerable from evidence
+      later. Record the condition found at every future check, not just
+      the fact that a check happened. See watch-list.yaml.
+
+      The 20,000 mi/6 mo interval is deliberately left unchanged. The
+      filter reaching 112,288 mi without clogging is evidence the interval
+      is conservative, but Brady tightened it on purpose for hybrid
+      battery health and a single observation is not grounds to loosen it.
+      Procedure per TSB L-SB-0028-20. Next clean due at 132,288 mi or
+      2027-02-14, whichever comes first.
+    documents: []
+  - date: '2026-08-14'
+    mileage: 112288
+    itemType: ''
+    description: >-
+      Fluid level checks at the 5,000 mi scheduled visit: brake, engine
+      oil, engine coolant, inverter coolant, and washer fluid (DIY)
+    notes: >-
+      Levels checked only, nothing replaced. Engine oil was checked and
+      deliberately not changed: that interval is 10,000 mi/6 mo and the
+      last change was 2026-05-26 at 106,890 mi, so the next is due around
+      116,890 mi or 2026-11-26. Recorded with no itemType because
+      schedule.yaml describes the fluid-check half of the 5,000 mi visit
+      rhythm in its header but carries no tracked item for it, so this
+      entry is history only and resets no interval.
+    documents: []
