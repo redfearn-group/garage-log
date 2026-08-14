@@ -77,8 +77,8 @@ items:
       spring and fall, and replaces the fluid only on a failed result.
       The 8006-B strips are double-ended, so one strip covers both this
       and the engine coolant test, normally done in the same session.
-      No result logged for this car yet: the 2026-08-14 session recorded
-      a coolant test only.
+      First result on this car is the 2026-07-31 session, where both ends
+      of the strip were used.
     intervalMiles: null
     intervalMonths: 6
   - itemType: engine-coolant-flush
@@ -90,7 +90,7 @@ items:
       CORRECTED 2026-08-14: replacement on this car is driven by TEST
       RESULT, not by that age/mileage figure, exactly as the 12V battery
       is driven by its load test rather than its age. Brady strip-tested
-      the coolant on 2026-08-14 at 112,288 mi and it came back in
+      the coolant on 2026-07-31 at 112,288 mi and it came back in
       excellent condition, so no flush is warranted despite the car
       sitting past the 100,000 mi first-replacement point with no flush
       anywhere in its records. Do NOT read a "never logged" state here as

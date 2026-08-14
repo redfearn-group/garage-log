@@ -576,17 +576,22 @@ entries:
       new odometer reading on file since 2026-07-12 (110,834 mi) — using
       that as a floor; actual mileage is likely somewhat higher.
     documents: []
-  - date: '2026-08-14'
+  - date: '2026-07-31'
     mileage: 112288
     itemType: tire-rotation
     description: Tire rotation, part of the 5,000 mi scheduled visit (DIY)
     notes: >-
+      DATE CORRECTED 2026-08-14: this entry and the five below it were
+      first logged as 2026-08-14, the day Brady uploaded the dash photo.
+      The service actually happened on 2026-07-31, shortly before his
+      trip to California, and the 112,288 mi reading is from that day.
+      All six entries in this session carry the corrected date.
       Odometer confirmed from a dash photo at 112,288 mi. The previous
       rotation was the dealer's pre-delivery work on 2026-05-26 at
       106,890 mi, putting this 5,398 mi later, on the 5,000 mi visit
-      rhythm. Next due at 117,288 mi or 2027-02-14.
+      rhythm. Next due at 117,288 mi or 2027-01-31.
     documents: []
-  - date: '2026-08-14'
+  - date: '2026-07-31'
     mileage: 112288
     itemType: brake-inspection
     description: >-
@@ -597,7 +602,7 @@ entries:
       Separate from the brake fluid replacement interval (30,000 mi/36
       mo), which is untouched by this.
     documents: []
-  - date: '2026-08-14'
+  - date: '2026-07-31'
     mileage: 112288
     itemType: wiper-blades
     description: >-
@@ -606,7 +611,7 @@ entries:
       Inspection only, blades not replaced. Washer fluid level checked at
       the same visit.
     documents: []
-  - date: '2026-08-14'
+  - date: '2026-07-31'
     mileage: 112288
     itemType: hybrid-battery-fan-filter
     description: >-
@@ -634,17 +639,18 @@ entries:
       is conservative, but Brady tightened it on purpose for hybrid
       battery health and a single observation is not grounds to loosen it.
       Procedure per TSB L-SB-0028-20. Next clean due at 132,288 mi or
-      2027-02-14, whichever comes first.
+      2027-01-31, whichever comes first.
     documents: []
-  - date: '2026-08-14'
+  - date: '2026-07-31'
     mileage: 112288
     itemType: ''
     description: >-
       Fluid level checks at the 5,000 mi scheduled visit: brake, engine
       oil, engine coolant, inverter coolant, and washer fluid (DIY)
     notes: >-
-      Levels checked, nothing replaced. Engine coolant was also condition
-      tested with strips at this visit, logged separately as coolant-test
+      Levels checked, nothing replaced. Engine coolant AND brake fluid
+      were both condition tested with the double-ended strips at this
+      visit, logged separately as coolant-test and brake-fluid-test
       below. Engine oil was checked and
       deliberately not changed: that interval is 10,000 mi/6 mo and the
       last change was 2026-05-26 at 106,890 mi, so the next is due around
@@ -653,7 +659,7 @@ entries:
       rhythm in its header but carries no tracked item for it, so this
       entry is history only and resets no interval.
     documents: []
-  - date: '2026-08-14'
+  - date: '2026-07-31'
     mileage: 112288
     itemType: coolant-test
     description: >-
@@ -670,5 +676,20 @@ entries:
       the fluid. This is the same principle already applied to the 12V
       battery: a direct measurement beats a generic interval, so
       replacement follows the test rather than the calendar. Next test
-      due 2027-02-14.
+      due 2027-01-31.
+    documents: []
+  - date: '2026-07-31'
+    mileage: 112288
+    itemType: brake-fluid-test
+    description: >-
+      Brake fluid condition tested with Phoenix Systems 8006-B strips,
+      passed, no replacement needed (DIY)
+    notes: >-
+      ADDED 2026-08-14, per Brady: the brake fluid was tested at this same
+      2026-07-31 session, using the other end of the same double-ended
+      strip as the coolant test above. It was missed in the first pass at
+      logging this visit. Passed, so no flush was performed. The last
+      actual brake fluid replacement on this car remains the Lexus of
+      Murray dealer flush on 2026-01-08 at 100,700 mi, which stays tagged
+      as brake-fluid-flush. Next test due 2027-01-31.
     documents: []

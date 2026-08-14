@@ -206,14 +206,14 @@ tasks:
   - id: 9
     title: >-
       Weekend check: engine coolant + HV battery cooling filter, both
-      resolved 2026-08-14
+      resolved 2026-07-31
     notes: >-
-      CLOSED 2026-08-14. Both halves of this task are resolved, by
-      different routes.
+      CLOSED, work done 2026-07-31, recorded 2026-08-14. Both halves of
+      this task are resolved, by different routes.
 
       HV battery cooling filter: removed, deep cleaned, and restored to
       as-new by Brady at 112,288 mi during the 5,000 mi visit. Starts the
-      20,000 mi clean interval, next due 132,288 mi or 2027-02-14.
+      20,000 mi clean interval, next due 132,288 mi or 2027-01-31.
 
       Engine coolant: NOT flushed, and does not need to be. Brady
       strip-tested the coolant at the same visit and it came back in
@@ -277,4 +277,4 @@ tasks:
       item, not an active concern.
     status: done
     createdDate: '2026-07-22'
-    completedDate: '2026-08-14'
+    completedDate: '2026-07-31'
