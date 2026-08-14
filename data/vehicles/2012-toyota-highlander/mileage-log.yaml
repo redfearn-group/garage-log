@@ -21,5 +21,10 @@ entries:
     mileage: 155252
   - date: '2026-07-11'
     mileage: 160357
-  - date: '2026-08-14'
+  - date: '2026-08-08'
     mileage: 160653
+    notes: >-
+      DATE CORRECTED 2026-08-14: first logged as 2026-08-14, which was the
+      day Brady uploaded the dash photo rather than the day it was taken.
+      The reading is from 2026-08-08. Odometer read directly off the
+      photo, so the mileage itself was never in question.
