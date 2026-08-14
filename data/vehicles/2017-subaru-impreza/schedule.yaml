@@ -81,7 +81,22 @@ items:
     intervalMiles: 6000
     intervalMonths: 6
   - itemType: tire-rotation
-    name: Tire rotation — done at each oil-change service
+    name: >-
+      Tire rotation — normally done at each oil-change service.
+      DEFERRED 2026-08-14, per Brady: this row reads overdue because the
+      6,000 mi trigger passed at 139,173 mi and the car was already at
+      141,162 mi on 2026-07-26. That is a deliberate decision, not a
+      missed service. Draco is no longer Brady's daily commuter and is now
+      accumulating roughly 700 mi/month, so the uneven tire wear this
+      interval exists to prevent is building far more slowly than the
+      mileage number by itself suggests. The rotation moves to the fall
+      tune-up so it happens in one session with the rest of the fall work.
+      The 2026-07-26 oil change was logged without an accompanying
+      rotation, which is why oil reads OK here while this row does not.
+      Do NOT treat the overdue flag as an action item before the fall
+      service. The interval itself is unchanged and still correct, since
+      what changed is the driving pattern, not the right rotation spacing.
+      See tasks.yaml #19.
     intervalMiles: 6000
     intervalMonths: 6
   - itemType: cabin-air-filter

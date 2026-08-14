@@ -208,21 +208,39 @@ tasks:
     createdDate: '2026-07-14'
     completedDate: null
   - id: 19
-    title: 'Weekend check (2026-07-25): oil change/tire rotation due now'
+    title: Tire rotation held for the fall tune-up, on purpose
     notes: >-
-      From this week's fleet review. Oil change + tire rotation: last done
-      2026-04-08 @ 134,783 mi, 6,000 mi interval — mileage threshold
-      already passed by a few hundred miles as of current mileage
-      (~141,000). Add to the same weekend as the CVT/differential fluid
-      (tasks #1/#11) and throttle body gasket (task #13) work.
+      UPDATE 2026-08-14, per Brady: the oil change half of this task is
+      done, logged 2026-07-26 at 141,162 mi and now showing OK until
+      147,162 mi or 2027-01-26. The tire rotation is deliberately NOT
+      being chased. Draco stopped being the daily commuter and is now
+      covering roughly 700 mi/month, so the wear pattern the 6,000 mi
+      interval guards against is accumulating much more slowly than the
+      raw mileage gap implies. The rotation moves to the fall tune-up and
+      gets done alongside the other fall work.
+
+      The schedule row will keep reading "Overdue" until a rotation is
+      actually logged, because the app has no concept of a deliberate
+      deferral. That flag is expected here and is not an action item. The
+      reasoning is also recorded on the tire-rotation item in
+      schedule.yaml so it is visible at the point of confusion rather than
+      only in this task.
+
+      Original note: from the 2026-07-22 fleet review. Oil change + tire
+      rotation last done 2026-04-08 at 134,783 mi on a 6,000 mi interval,
+      threshold passed as of ~141,000 mi. Pair with the CVT/differential
+      fluid (tasks #1/#11) and throttle body gasket (task #13) work.
 
       UPDATED 2026-07-23: brake fluid and coolant flush dropped from this
       task's title — per Brady, both were directly tested (not just
       inspected/topped off) at the 2026-04-08 session and found good; now
-      logged as their own schedule-tracked entries in maintenance-log.yaml
-      (itemTypes brake-fluid-flush and coolant-flush), showing OK. His
-      standing policy is that a direct test result resets these items,
-      not a fixed interval regardless of condition.
+      logged as their own schedule-tracked entries in maintenance-log.yaml,
+      showing OK. His standing policy is that a direct test result decides
+      these items, not a fixed interval regardless of condition.
+      REFERENCE CORRECTED 2026-08-14: those two entries were retagged from
+      brake-fluid-flush and coolant-flush to brake-fluid-test and
+      coolant-test, because a passed strip test is not a replacement and
+      should never have reset a flush item.
     status: open
     createdDate: '2026-07-22'
     completedDate: null
