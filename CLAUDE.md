@@ -2,7 +2,7 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-This repo is one of several siblings under `C:\Claude Code`. **The workspace-level `C:\Claude Code\CLAUDE.md` covers the shared brand system, the public/private split, and the voice rules, which all apply here too.** Read it as well. This file covers what is specific to garage-log.
+This repo is one of several siblings under `C:\dev`. **The workspace-level `C:\dev\CLAUDE.md` covers the shared brand system, the public/private split, and the voice rules, which all apply here too.** Read it as well. This file covers what is specific to garage-log.
 
 ## What this is
 
