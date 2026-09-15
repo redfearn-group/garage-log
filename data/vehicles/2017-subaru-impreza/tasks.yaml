@@ -244,3 +244,25 @@ tasks:
     status: open
     createdDate: '2026-07-22'
     completedDate: null
+  - id: 21
+    title: Replace cracked windshield — scheduled this week
+    notes: >-
+      Large crack across the windshield, replacement needed this week
+      (week of 2026-09-15). Confirmed 2026-09-15: not covered by the
+      CARCHEX M2M Powertrain Gold Select extended warranty (Contract
+      # CHXM5745679) — that plan's covered component groups are engine,
+      transmission, cooling system, transfer unit, drive axle, A/C,
+      alternator, starter, power window motors, and seals/gaskets; glass
+      and windshield never appear in the contract. USAA comprehensive
+      applies instead: current policy (Sep 2026) shows Draco with
+      comprehensive coverage, $1,000 deductible, and the coverage
+      description explicitly notes "glass replacement may be subject to
+      your deductible" — no separate reduced glass deductible on this
+      policy. Worth getting a cash quote first, since a claim near or
+      under $1,000 isn't worth filing. Also asking the glass shop about
+      windshield protection film (WPF/PPF) at install time to reduce
+      future rock-chip damage — not a chip-proof guarantee, adds roughly
+      $150-$400 on top of the windshield itself.
+    status: open
+    createdDate: '2026-09-15'
+    completedDate: null
