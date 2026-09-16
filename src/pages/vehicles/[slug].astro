@@ -94,7 +94,6 @@ if (points.length > 1) {
           const { short, citation } = splitScheduleItemName(s.item.name);
           const service = s.item.service;
           return (
-          <>
           <tr>
             <td>
               {citation ? (
@@ -103,22 +102,10 @@ if (points.length > 1) {
                   <p class="muted" style="font-size:0.85rem; font-weight:500; margin: 0.35rem 0 0;">{citation}</p>
                 </details>
               ) : short}
-            </td>
-            <td><StatusBadge status={s.status} /></td>
-            <td>{s.lastDone ? (s.lastDone.mileage != null ? `${formatDate(s.lastDone.date)} (${s.lastDone.mileage.toLocaleString()} mi)` : formatDate(s.lastDone.date)) : "—"}</td>
-            <td>
-              {s.dueMileage != null ? `${s.dueMileage.toLocaleString()} mi` : ""}
-              {s.dueMileage != null && s.dueDate != null ? " / " : ""}
-              {s.dueDate != null ? formatDate(s.dueDate) : ""}
-              {s.dueMileage == null && s.dueDate == null ? "—" : ""}
-            </td>
-          </tr>
-          {service && (
-            <tr>
-              <td colspan="4" style="padding-top: 0;">
-                <details>
-                  <summary>Parts and specs</summary>
-                  <div class="muted" style="font-size: 0.85rem; margin: 0.5rem 0 0;">
+              {service && (
+                <details style="margin-top: 0.35rem;">
+                  <summary style="font-size: 0.85rem;">Parts and specs</summary>
+                  <div class="muted" style="font-size: 0.85rem; margin: 0.5rem 0 0; padding-left: 0.6rem; border-left: 2px solid var(--border);">
                     {service.fluids?.map((f) => (
                       <div style="margin-bottom: 0.6rem;">
                         <strong>{f.name}</strong>
@@ -172,10 +159,17 @@ if (points.length > 1) {
                     )}
                   </div>
                 </details>
-              </td>
-            </tr>
-          )}
-          </>
+              )}
+            </td>
+            <td><StatusBadge status={s.status} /></td>
+            <td>{s.lastDone ? (s.lastDone.mileage != null ? `${formatDate(s.lastDone.date)} (${s.lastDone.mileage.toLocaleString()} mi)` : formatDate(s.lastDone.date)) : "—"}</td>
+            <td>
+              {s.dueMileage != null ? `${s.dueMileage.toLocaleString()} mi` : ""}
+              {s.dueMileage != null && s.dueDate != null ? " / " : ""}
+              {s.dueDate != null ? formatDate(s.dueDate) : ""}
+              {s.dueMileage == null && s.dueDate == null ? "—" : ""}
+            </td>
+          </tr>
           );
         })}
       </tbody>
