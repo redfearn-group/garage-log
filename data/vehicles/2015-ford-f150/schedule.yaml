@@ -35,10 +35,56 @@ items:
       standing policy, not Ford's own 12 mo normal-schedule allowance.
     intervalMiles: 10000
     intervalMonths: 6
+    service:
+      fluids:
+        - name: Engine oil
+          grade: Motorcraft 5W-30 full synthetic
+          certifications: [WSS-M2C946-A]
+          capacity: 6.0 qt (5.7 L)
+          notes: >-
+            Ford's base-recommended oil is the Premium Synthetic Blend
+            (XO-5W30-QSP); full synthetic (XO-5W30-QFS) meets the same
+            WSS-M2C946-A spec and is a valid upgrade, not a different
+            spec. Confirmed directly in the 2015 owner's manual,
+            Capacities and Specifications, p. 362.
+      parts:
+        - name: Oil filter
+          oemPartNumber: FL-500S
+          quantityPerService: 1
+          notes: >-
+            Confirmed in Ford's own Motorcraft parts table (p. 359) for
+            all four F-150 gas engines. M967 and Duralast 11326, which
+            appear in this repo's history, belong to the Highlander, not
+            this truck. No filter wrench needed: hand-tighten until the
+            gasket contacts the mounting surface, then turn an additional
+            3/4 to 1 full turn by hand. Do not use a torque spec as the
+            primary method (a ~19 lb-ft/26 Nm equivalent is commonly
+            cited but is not a published Ford number). Over-tightening
+            risks warping the filter shell.
+      sources:
+        - 2015 F-150 Owner's Manual, May 2015 Third Printing, Capacities and Specifications, p. 359 and p. 362
   - itemType: tire-rotation
     name: Tire rotation — Ford lists this at the oil-change interval (~10,000 mi)
     intervalMiles: 10000
     intervalMonths: 12
+    service:
+      parts:
+        - name: Tires
+          notes: >-
+            OEM size 275/65R18, confirmed by every tire purchase on
+            record for this truck. Cold pressure is not a single Ford
+            number: the manual explicitly refers to the driver's-door
+            jamb placard, which can differ front vs rear. Best community
+            estimate for this size/trim is 35 psi front and rear
+            (standard payload), stepping up to 40 psi front and rear if
+            built with the Heavy-Duty Payload Package, but read the
+            actual placard before trusting this. Wheel lug nut torque:
+            150 lb-ft (204 Nm), M14x1.5, confirmed directly in the
+            owner's manual, p. 357. Retighten to spec within 100 miles
+            after any wheel disturbance.
+      sources:
+        - 2015 F-150 Owner's Manual, p. 342 (placard reference) and p. 357 (lug torque)
+        - Repo's own tire purchase history (maintenance-log.yaml)
   - itemType: multi-point-inspection
     name: Multi-point inspection (done alongside each oil-change service)
     intervalMiles: 10000
@@ -55,6 +101,17 @@ items:
       (see tasks.yaml).
     intervalMiles: 30000
     intervalMonths: null
+    service:
+      parts:
+        - name: Engine air filter, disposable (for the spring 2027 switch)
+          oemPartNumber: FA-1883
+          notes: >-
+            Confirmed in Ford's Motorcraft parts table, p. 359, for all
+            four F-150 gas engines that year. Ford OEM equivalent
+            7C3Z-9601-A, supersedes older FA-1903 and AL3Z-9601-A. Not
+            needed yet: Zeus currently runs a K&N washable filter.
+      sources:
+        - 2015 F-150 Owner's Manual, Motorcraft Parts table, p. 359
   - itemType: cabin-air-filter
     name: >-
       Cabin air filter — CORRECTED 2026-07-16: the 2015 F-150 owner's
@@ -72,6 +129,17 @@ items:
       spring 2027 (see tasks.yaml).
     intervalMiles: 20000
     intervalMonths: null
+    service:
+      parts:
+        - name: Cabin air filter, disposable (for the spring 2027 switch)
+          oemPartNumber: FP-79
+          notes: >-
+            Confirmed in Ford's Motorcraft parts table, p. 359. This is
+            the base-trim filter, correct for XLT. King Ranch, Lariat,
+            and Premium trims use a different filter, BXT-94RH7-730. Not
+            needed yet: Zeus currently runs a K&N washable filter.
+      sources:
+        - 2015 F-150 Owner's Manual, Motorcraft Parts table, p. 359
   - itemType: brake-inspection
     name: Brake inspection (pads/rotors/lines) — with each service
     intervalMiles: 10000
@@ -95,6 +163,18 @@ items:
       yearly KW208 test (see battery-test above) indicates it's needed.
     intervalMiles: null
     intervalMonths: null
+    service:
+      parts:
+        - name: 12V battery
+          oemPartNumber: BXT-48H6-610
+          notes: >-
+            Motorcraft Group 48/H6, 610 CCA, confirmed in Ford's
+            Motorcraft parts table, p. 359, and matches Zeus's own
+            2020-08-12 dealer test record ("610 CCA factory spec"). The
+            2020-10-24 AGM currently installed is a proactive upgrade
+            over this OEM baseline, not a like-for-like replacement.
+      sources:
+        - 2015 F-150 Owner's Manual, Motorcraft Parts table, p. 359
   - itemType: wiper-blades
     name: >-
       Wiper blades — Brady checks these every spring during the seasonal
@@ -126,6 +206,17 @@ items:
       being due.
     intervalMiles: null
     intervalMonths: null
+    service:
+      fluids:
+        - name: Brake fluid
+          grade: Motorcraft DOT 4 Low Viscosity (LV) High Performance
+          certifications: [WSS-M6C65-A2]
+          notes: >-
+            Not plain DOT 3 or DOT 4. Ford's manual explicitly warns
+            that any fluid other than the recommended LV formulation may
+            cause degraded brake performance.
+      sources:
+        - 2015 F-150 Owner's Manual, p. 363 and p. 365
   - itemType: brake-fluid-test
     name: >-
       Brake fluid condition test (Phoenix Systems 8006-B strips) — ADDED
@@ -167,40 +258,83 @@ items:
     intervalMonths: 6
   - itemType: transmission-fluid-service
     name: >-
-      Transmission fluid (6R80, Motorcraft MERCON LV) — Ford's own normal
-      schedule says 150,000 mi, which every independent source agrees is
-      unrealistically long: ZF (the actual transmission manufacturer)
-      specifies 8 yr/50,000 mi, and F150 forums call Ford's 150K figure "a
-      terrible idea," recommending 30,000-60,000 mi. Given this truck's
-      unknown prior transmission-fluid history, the interval below is set
-      to ZF's own 50,000 mi/8 yr spec — the most authoritative sourced
-      number in the 30-60K community range — NOT Ford's 150,000 mi figure.
+      Transmission fluid (6R80, Motorcraft MERCON LV) — CORRECTED
+      2026-09-16: Ford's own normal schedule actually says 100,000 mi
+      (Normal Scheduled Maintenance table, p. 503), not the 150,000 mi
+      previously cited here; that figure belonged to the 150k group
+      covering axle/transfer-case fluid, not the transmission. Ford's
+      real number is still treated as too long: ZF (the actual
+      transmission manufacturer) specifies 8 yr/50,000 mi, and F150
+      forums call a 100-150K interval "a terrible idea," recommending
+      30,000-60,000 mi. Given this truck's unknown prior transmission-
+      fluid history, the interval below is set to ZF's own 50,000 mi/8 yr
+      spec — the most authoritative sourced number in the 30-60K
+      community range — NOT Ford's own figure.
     intervalMiles: 50000
     intervalMonths: 96
+    service:
+      fluids:
+        - name: Transmission fluid
+          grade: Motorcraft MERCON LV
+          certifications: [WSS-M2C938-A]
+          capacity: >-
+            13.1 qt (12.4 L) total dry-fill (after a rebuild, not a
+            drain-and-fill target). A routine pan-drop drain-and-fill
+            takes roughly 5 qt, with 2-3 more in reserve; the truck must
+            be running in Park to draw the last 1-2 qt through the pump.
+          notes: >-
+            Ford's manual warns that any fluid other than MERCON LV may
+            cause transmission damage. The 5 qt drain-and-fill figure is
+            community-sourced (BobIsTheOilGuy, f150forum), since Ford
+            does not publish a separate drain-and-fill number.
+      sources:
+        - 2015 F-150 Owner's Manual, p. 362-364 and p. 503
   - itemType: spark-plugs
     name: Spark plugs (Motorcraft, 3.5L EcoBoost) — Ford ~100,000 mi
     intervalMiles: 100000
     intervalMonths: null
+    service:
+      parts:
+        - name: Spark plugs
+          oemPartNumber: SP-534
+          quantityPerService: 6
+          notes: >-
+            Gap .030-.033 in (0.75-0.85 mm), confirmed directly in
+            Ford's Engine Specifications table, p. 358. Torque is not
+            published in the owner's manual (Ford directs to a dealer);
+            the commonly cited packaging figure is 11-13 lb-ft, unverified
+            against a Ford factory number. Check the physical SP-534 box
+            if one's on hand. SP-580 is the modern superseding part once
+            SP-534 becomes hard to find.
+      sources:
+        - 2015 F-150 Owner's Manual, p. 358-359
   - itemType: front-axle-fluid
     name: >-
       Front axle fluid (4WD) — SPLIT 2026-07-28 from a combined "rear
       axle + transfer case + front axle" item, per Brady: each fluid now
       gets its own line so a log entry covering only one or two of the
-      three can't silently mark all three "done." CORRECTED 2026-07-16:
-      Ford's owner's manual normal schedule lists 150,000 mi, and Ford's
-      "Exceptions" section actually classifies the synthetic-filled axles
-      as lubricated FOR LIFE — no scheduled change at all, service only
-      on leak or water submersion (there is no official Ford "severe-duty
-      axle = 30,000 mi" figure; that was a misattribution in a prior
-      version of this file). Since Ford treats axle fluid as effectively
-      unscheduled, the 30,000 mi interval below is a COMMUNITY-sourced
-      figure (F150 Forum/Ford-Trucks/F150online consensus, incl.
-      mechanics quoted recommending a change despite the "lifetime"
-      label), the most conservative well-supported community number.
-      Water submersion (deep fording/flooding) calls for an immediate
-      change regardless of interval.
+      three can't silently mark all three "done." CORRECTED 2026-09-16:
+      Ford's "lubricated for life" exception applies to the REAR axle
+      only, which runs synthetic fluid; the front axle runs conventional
+      80W-90 and is not covered by that exception. Its normal-schedule
+      figure is 150,000 mi (Normal Scheduled Maintenance table, p. 503),
+      with no official Ford "severe-duty = 30,000 mi" number (that was a
+      misattribution in a prior version of this file). The 30,000 mi
+      interval below is a COMMUNITY-sourced figure (F150 Forum/Ford-
+      Trucks/F150online consensus) used as the conservative choice given
+      unknown prior service. Water submersion (deep fording/flooding)
+      calls for an immediate change regardless of interval.
     intervalMiles: 30000
     intervalMonths: null
+    service:
+      fluids:
+        - name: Front axle fluid
+          grade: Motorcraft SAE 80W-90 Premium Rear Axle Lubricant, conventional
+          certifications: [WSP-M2C197-A]
+          capacity: 3.5 pt (1.7 L)
+          notes: Not synthetic, and not covered by Ford's lifetime-fill exception.
+      sources:
+        - 2015 F-150 Owner's Manual, p. 362-363 and p. 506
   - itemType: rear-axle-fluid
     name: >-
       Rear axle fluid (4WD) — SPLIT 2026-07-28 from a combined "rear
@@ -212,6 +346,22 @@ items:
       flooding) calls for an immediate change regardless of interval.
     intervalMiles: 30000
     intervalMonths: null
+    service:
+      fluids:
+        - name: Rear axle fluid
+          grade: Motorcraft SAE 75W-85 Premium Synthetic Hypoid Gear Lubricant
+          certifications: [WSS-M2C942-A]
+          capacity: 5.5 pt (2.6 L)
+          notes: >-
+            2015 model year onward: earlier F-150s used 75W-140 with an
+            XL-3 friction-modifier additive for limited-slip axles.
+            2015+ trucks use open/electronic-locking rear diffs and
+            switched to this thinner spec with no friction modifier.
+            Confirm Zeus's build didn't retain an older axle before
+            assuming 75W-140 is wrong. Ford's lifetime-fill exception
+            applies to this axle since it uses synthetic fluid.
+      sources:
+        - 2015 F-150 Owner's Manual, p. 362-363 and p. 506
   - itemType: transfer-case-fluid
     name: >-
       Transfer case fluid (4WD) — SPLIT 2026-07-28 from a combined "rear
@@ -229,3 +379,19 @@ items:
       interval.
     intervalMiles: 30000
     intervalMonths: null
+    service:
+      fluids:
+        - name: Transfer case fluid
+          notes: >-
+            Depends on which 4WD system this truck has, which isn't
+            confirmed. Electronic Shift-On-The-Fly (ESOF, rotary
+            2H/4H/4L selector, no Auto position): Motorcraft XL-12, spec
+            ESP-M2C166-H. Automatic 4WD/Torque On Demand (push-button
+            selector with an Auto position): Motorcraft MERCON LV,
+            WSS-M2C938-A, same fluid as the transmission. Capacity is
+            1.5 qt (1.4 L) either way. XLT trucks with the 302A package
+            typically came with ESOF, not Auto 4WD, but this needs a
+            30-second check of the dash selector to confirm which
+            system Zeus actually has before buying fluid.
+      sources:
+        - 2015 F-150 Owner's Manual, p. 362-363

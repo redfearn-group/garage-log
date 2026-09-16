@@ -92,7 +92,9 @@ if (points.length > 1) {
       <tbody>
         {statuses.map((s) => {
           const { short, citation } = splitScheduleItemName(s.item.name);
+          const service = s.item.service;
           return (
+          <>
           <tr>
             <td>
               {citation ? (
@@ -111,6 +113,69 @@ if (points.length > 1) {
               {s.dueMileage == null && s.dueDate == null ? "—" : ""}
             </td>
           </tr>
+          {service && (
+            <tr>
+              <td colspan="4" style="padding-top: 0;">
+                <details>
+                  <summary>Parts and specs</summary>
+                  <div class="muted" style="font-size: 0.85rem; margin: 0.5rem 0 0;">
+                    {service.fluids?.map((f) => (
+                      <div style="margin-bottom: 0.6rem;">
+                        <strong>{f.name}</strong>
+                        <ul style="margin: 0.2rem 0 0; padding-left: 1.1rem;">
+                          {f.grade && <li>Grade: {f.grade}</li>}
+                          {f.certifications && f.certifications.length > 0 && <li>Certifications: {f.certifications.join(", ")}</li>}
+                          {f.capacity && <li>Capacity: {f.capacity}</li>}
+                          {f.notes && <li>{f.notes}</li>}
+                        </ul>
+                      </div>
+                    ))}
+                    {service.parts?.map((p) => (
+                      <div style="margin-bottom: 0.6rem;">
+                        <strong>{p.name}</strong>
+                        <ul style="margin: 0.2rem 0 0; padding-left: 1.1rem;">
+                          {p.oemPartNumber && <li>OEM part: {p.oemPartNumber}</li>}
+                          {p.aftermarketCrosses && p.aftermarketCrosses.length > 0 && <li>Aftermarket crosses: {p.aftermarketCrosses.join(", ")}</li>}
+                          {p.avoid && p.avoid.length > 0 && <li>Avoid: {p.avoid.join(", ")}</li>}
+                          {p.quantityPerService != null && <li>Quantity per service: {p.quantityPerService}</li>}
+                          {p.singleUse && <li>Single use. Replace every service.</li>}
+                          {p.lastPurchase && (
+                            <li>Last purchase: {p.lastPurchase.quantity} at ${p.lastPurchase.price.toFixed(2)} each, {formatDate(p.lastPurchase.date)}, {p.lastPurchase.source}.</li>
+                          )}
+                          {p.notes && <li>{p.notes}</li>}
+                        </ul>
+                      </div>
+                    ))}
+                    {service.tools && service.tools.length > 0 && (
+                      <div style="margin-bottom: 0.6rem;">
+                        <strong>Tools</strong>
+                        <ul style="margin: 0.2rem 0 0; padding-left: 1.1rem;">
+                          {service.tools.map((t) => <li>{t}</li>)}
+                        </ul>
+                      </div>
+                    )}
+                    {service.notes && service.notes.length > 0 && (
+                      <div style="margin-bottom: 0.6rem;">
+                        <strong>Notes</strong>
+                        <ul style="margin: 0.2rem 0 0; padding-left: 1.1rem;">
+                          {service.notes.map((n) => <li>{n}</li>)}
+                        </ul>
+                      </div>
+                    )}
+                    {service.sources && service.sources.length > 0 && (
+                      <div>
+                        <strong>Sources</strong>
+                        <ul style="margin: 0.2rem 0 0; padding-left: 1.1rem; font-size: 0.8rem;">
+                          {service.sources.map((src) => <li>{src}</li>)}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                </details>
+              </td>
+            </tr>
+          )}
+          </>
           );
         })}
       </tbody>

@@ -46,11 +46,46 @@ export interface MaintenanceEntry {
   documents?: string[];
 }
 
+export interface PartPurchase {
+  date: string;
+  source: string;
+  price: number;
+  quantity: number;
+}
+
+export interface ServiceFluid {
+  name: string;
+  grade?: string;
+  certifications?: string[];
+  capacity?: string;
+  notes?: string;
+}
+
+export interface ServicePart {
+  name: string;
+  oemPartNumber?: string;
+  aftermarketCrosses?: string[];
+  avoid?: string[];
+  quantityPerService?: number;
+  singleUse?: boolean;
+  lastPurchase?: PartPurchase;
+  notes?: string;
+}
+
+export interface ServiceInfo {
+  fluids?: ServiceFluid[];
+  parts?: ServicePart[];
+  tools?: string[];
+  notes?: string[];
+  sources?: string[];
+}
+
 export interface ScheduleItem {
   itemType: string;
   name: string;
   intervalMiles?: number | null;
   intervalMonths?: number | null;
+  service?: ServiceInfo;
 }
 
 export interface TaskItem {

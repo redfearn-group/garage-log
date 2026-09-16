@@ -37,10 +37,77 @@ items:
       own 12 mo normal-schedule allowance.
     intervalMiles: 10000
     intervalMonths: 6
+    service:
+      fluids:
+        - name: Engine oil
+          grade: 0W-16 full synthetic
+          certifications: [API SP, ILSAC GF-6B]
+          capacity: 4.8 qt with filter change. Buy a 5 qt jug.
+          notes: >-
+            The bottle must state ILSAC GF-6B, not just the 0W-16 viscosity
+            number. 0W-20 is Lexus's own approved one-time substitute only,
+            revert to 0W-16 at the next change. Super Tech Full Synthetic
+            0W-16 (Walmart) and Mobil 1 Advanced Fuel Economy 0W-16 both
+            meet this spec.
+      parts:
+        - name: Oil filter
+          oemPartNumber: 90915-YZZN1
+          aftermarketCrosses: [Fram PH4967]
+          avoid: [Fram Ultra line]
+          quantityPerService: 1
+          lastPurchase:
+            date: '2026-09-16'
+            source: Lexus dealer, online order with local parts-counter pickup
+            price: 5.26
+            quantity: 4
+          notes: >-
+            Denso-made spin-on canister, supersedes 90915-YZZF2 and
+            90915-YZZM1. Lexus also catalogs the cartridge-element
+            04152-YZZA1 for this model. RESOLVED 2026-09-16: 04152-YZZA1
+            is the cartridge filter for the 2GR-FE/2GR-FKS V6 family
+            (Highlander, RX 350, and the gasoline ES 350 that shares
+            this car's body/chassis catalog), not the A25A-FXS hybrid
+            four-cylinder. The spin-on 90915-YZZN1 above is correct for
+            this engine, corroborated by the mechanically identical
+            Camry Hybrid's own parts listings. A spin-on canister is a
+            smooth cylinder that unscrews as a whole; a cartridge is a
+            squarish cap with a hex bolt on top while the housing stays
+            on the block, a glance under the hood confirms it either way.
+        - name: Oil drain plug washer
+          oemPartNumber: 90430-12031
+          singleUse: true
+          notes: Aluminum crush washer, shared with the Highlander.
+      tools:
+        - >-
+          Strap wrench removes this filter. A Toyota cartridge-cap wrench
+          (e.g. Spurtar 64mm) does not fit, that's for a different Toyota
+          filter housing design.
+      notes:
+        - >-
+          After the service, reset the dash light through the touchscreen:
+          Settings > Vehicle Settings > Schedule Maintenance > Reset Oil
+          Maintenance > Yes.
+      sources:
+        - 2020 Lexus ES 300h Warranty & Services Guide (assets.sia.toyota.com, L-MMS-20ES300h)
+        - parts.lexus.com, 90915-YZZN1 product page
   - itemType: tire-rotation
     name: Tire rotation — done at every scheduled visit, 6 mo/5,000 mi
     intervalMiles: 5000
     intervalMonths: 6
+    service:
+      parts:
+        - name: Tires
+          notes: >-
+            Two possible factory configs, confirmed via the owner's
+            manual (OM33E25U, pp. 399-400): 17" wheel, 215/55R17 94V,
+            cold pressure 36 psi front and rear; or 18" wheel, 235/45R18
+            94V, cold pressure 35 psi front and rear. Which applies to
+            this VIN isn't settled here, check the sidewall size or
+            door-jamb placard. Lug nut torque 103 N·m (76 ft-lb),
+            consistently cited across secondary sources, not confirmed
+            against a primary Lexus torque table.
+      sources:
+        - 2019 ES 300h Owner's Manual (OM33E25U), pp. 399-400
   - itemType: brake-inspection
     name: Visual brake pad/caliper/rotor inspection — done at every scheduled visit, 6 mo/5,000 mi
     intervalMiles: 5000
@@ -49,14 +116,54 @@ items:
     name: Wiper blade inspection — done at every scheduled visit, 6 mo/5,000 mi; replace when cracked/streaking
     intervalMiles: 5000
     intervalMonths: 6
+    service:
+      parts:
+        - name: Wiper blades
+          notes: >-
+            Front only, no rear wiper on the sedan body. Driver/left
+            (26 in): 85222-06240. Passenger/right (18 in): 85212-06240.
+            Confirmed via parts.lexus.com listings for the 2019 ES 300h.
+      sources:
+        - parts.lexus.com wiper blade listings
   - itemType: cabin-air-filter
-    name: Cabin air filter (87139-YZZ20) — replaced at the same 12 mo/10,000 mi cadence as the oil change
+    name: >-
+      Cabin air filter (871390E040, CORRECTED 2026-09-16 from
+      87139-YZZ20, which is genuine but fits the NX 300/RX 350, not
+      this car) — replaced at the same 12 mo/10,000 mi cadence as the
+      oil change
     intervalMiles: 10000
     intervalMonths: 12
+    service:
+      parts:
+        - name: Cabin air filter
+          oemPartNumber: 871390E040
+          notes: >-
+            Confirmed via parts.lexus.com for the 2019 ES 300h. Lexus
+            also lists equipment-specific variants for Boost-audio
+            (87139YZZ37/93) and nanoe air-refiner (8713958010) cars,
+            confirm against this VIN at the parts counter before
+            ordering. No confirmed aftermarket cross found this session.
+      sources:
+        - parts.lexus.com, 871390E040 product listing for the 2019 ES 300h
   - itemType: engine-air-filter
-    name: Engine air filter (17801-31110, verify fit against VIN) — Lexus 36 mo/30,000 mi
+    name: >-
+      Engine air filter (17801-F0020, CORRECTED 2026-09-16 from
+      17801-31110, which is genuine but fits the GS 350/IS 250/IS 350,
+      not this car) — Lexus 36 mo/30,000 mi
     intervalMiles: 30000
     intervalMonths: 36
+    service:
+      parts:
+        - name: Engine air filter
+          oemPartNumber: 17801-F0020
+          aftermarketCrosses: [1780177050]
+          notes: >-
+            Denso-made, confirmed via parts.lexus.com and Toyota's own
+            autoparts.toyota.com listing for the 2019 ES 300h. Since
+            Denso is the OEM manufacturer here, there's no separate
+            third-party aftermarket option worth chasing.
+      sources:
+        - parts.lexus.com and autoparts.toyota.com listings for the 2019 ES 300h
   - itemType: brake-fluid-flush
     name: >-
       Brake fluid replacement — Lexus 36 mo/30,000 mi, whichever occurs
@@ -70,6 +177,16 @@ items:
       itself has passed a test.
     intervalMiles: null
     intervalMonths: null
+    service:
+      fluids:
+        - name: Brake fluid
+          grade: SAE J1703 / FMVSS 116 DOT 3
+          notes: >-
+            This is Toyota's actual factory fill, not just what the cap
+            accepts. The reservoir cap is dual-marked "DOT 3 or DOT 4,"
+            so DOT 4 is an acceptable top-up, but DOT 3 is delivered new.
+      sources:
+        - Toyota genuine brake fluid listing, part 00475-1BF03, autoparts.toyota.com
   - itemType: brake-fluid-test
     name: >-
       Brake fluid condition test (Phoenix Systems 8006-B strips) — ADDED
@@ -103,6 +220,18 @@ items:
       off the calendar while the fluid itself has passed a strip test.
     intervalMiles: null
     intervalMonths: null
+    service:
+      fluids:
+        - name: Engine coolant
+          grade: Toyota Super Long Life Coolant, pink, 50/50 pre-diluted
+          capacity: >-
+            Not confirmed to a primary Lexus source. A secondary
+            aggregator (same A25A-FXS platform) cites 7.6 qt (7.2 L)
+            engine coolant separate from 3.4 qt (3.2 L) inverter
+            coolant. Only matters for a full drain-refill, not a level
+            top-up, which is checked to the reservoir F/L marks.
+      sources:
+        - 2020 ES 300h Warranty and Services Guide, "Engine and Inverter Coolants" section
   - itemType: coolant-test
     name: >-
       Engine coolant condition test (test strips) — ADDED 2026-08-14:
@@ -176,11 +305,27 @@ items:
     intervalMonths: 36
   - itemType: spark-plugs
     name: >-
-      Spark plugs (iridium, part 9091901259 — verify at parts counter) —
-      Lexus 120,000 mi (only appears once, at the 144-month/120,000-mile
-      line, so mileage is the effective trigger) — do NOT replace early
+      Spark plugs (iridium, part 90919-01289, CORRECTED 2026-09-16 from
+      9091901259/90919-01259, which is the plug for the 2012-2018
+      2AR-FXE engine, not this car's A25A-FXS) — Lexus 120,000 mi (only
+      appears once, at the 144-month/120,000-mile line, so mileage is
+      the effective trigger) — do NOT replace early
     intervalMiles: 120000
     intervalMonths: null
+    service:
+      parts:
+        - name: Spark plugs
+          oemPartNumber: 90919-01289 (Denso FC16HR-Q8)
+          quantityPerService: 4
+          notes: >-
+            Confirmed two independent ways: parts.lexus.com's own
+            listing for 2019+ ES 300h, and Toyota's dealer-facing spark
+            plug cross-reference document. Gap and torque not found in
+            any primary document. A secondary source cites 13 ft-lb/18
+            N·m for "Lexus ES350" plugs, unconfirmed for this engine.
+            Check with the parts counter or service writer when ordering.
+      sources:
+        - parts.lexus.com listing for 90919-01289; Toyota "09_SparkPlugs2020_hi.pdf" cross-reference document
   - itemType: battery-test
     name: >-
       12V battery load test (KONNWEI KW208 tester) — ADDED 2026-07-22:
@@ -195,16 +340,33 @@ items:
     intervalMonths: 6
   - itemType: battery-12v
     name: >-
-      12V auxiliary battery (Group 55B24R, in trunk behind left panel) —
-      NOT a manufacturer-scheduled interval (Lexus's guide gives no fixed
+      12V auxiliary battery (in trunk behind left panel) — NOT a
+      manufacturer-scheduled interval (Lexus's guide gives no fixed
       replacement interval, only "replace when needed"). CORRECTED
       2026-07-22: this is an informational "last replaced" record only,
       NOT a schedule-driven due date — Brady explicitly does not want a
       replacement flagged just because the battery has crossed a generic
       age estimate. Replacement happens only when the twice-yearly KW208
-      test (see battery-test above) indicates it's needed.
+      test (see battery-test above) indicates it's needed. CORRECTED
+      2026-09-16: "Group 55B24R" does not appear anywhere in Lexus's
+      documented ES 300h battery history for either generation and
+      should not be trusted.
     intervalMiles: null
     intervalMonths: null
+    service:
+      parts:
+        - name: 12V auxiliary battery
+          notes: >-
+            Sealed, maintenance-free, separate from the hybrid NiMH
+            traction battery. Genuine part history for this generation
+            (2019-2024) shows two candidates, 28800-31572 (Euro/EN size
+            LN2, current) or 28800-38160 (LN3), and it isn't settled
+            which applies to this VIN. The size code and CCA are printed
+            on the battery case itself, the fastest and most definitive
+            way to confirm, next time the trunk panel is off. A forum
+            report cites roughly 563 CCA, unconfirmed against a spec sheet.
+      sources:
+        - lexuspartsnow.com OEM battery part history; parts.lexus.com fitment pages
   - itemType: hybrid-battery-fan-filter
     name: >-
       HV battery cooling intake filter — clean (behind right rear seat

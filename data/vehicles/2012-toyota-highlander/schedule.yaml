@@ -63,10 +63,53 @@ items:
       policy, not Toyota's own 12 mo normal-schedule allowance.
     intervalMiles: 10000
     intervalMonths: 6
+    service:
+      fluids:
+        - name: Engine oil
+          grade: 0W-20 full synthetic
+          capacity: 6.1 L (6.4 US qt) with filter change
+          notes: Confirmed directly in the 2GR-FE FSM lubrication chapter, LU-6.
+      parts:
+        - name: Oil filter
+          oemPartNumber: 04152-YZZA1
+          aftermarketCrosses: [WIX 57047, Purolator PureOne PL25608, Denso 150-3021]
+          lastPurchase:
+            date: '2026-09-16'
+            source: Amazon, NewYall 2-pack with O-rings included
+            price: 4.50
+            quantity: 2
+          notes: Cartridge element, requires new housing O-rings each service.
+        - name: Oil filter housing O-rings
+          singleUse: true
+          notes: Included in the NewYall 2-pack purchased with the filter above.
+        - name: Oil drain plug washer
+          oemPartNumber: 90430-12031
+          singleUse: true
+          notes: Aluminum crush washer, shared with the Lexus ES 300h.
+      tools:
+        - Spurtar 64mm, 4-slot, 14-flute cap wrench. Does not fit a spin-on filter.
+      notes:
+        - Oil filter cap torque 25 N·m (18 ft-lb).
+        - Oil filter housing internal drain plug torque 12.5 N·m (9 ft-lb).
+        - Main oil pan drain plug torque 40 N·m (30 ft-lb).
+      sources:
+        - Toyota 2GR-FE FSM, Lubrication chapter (LU-3 to LU-7), engine-level document not Highlander-badged
   - itemType: tire-rotation
     name: Tire rotation — Toyota's standard 5,000 mi/6 mo service rhythm
     intervalMiles: 5000
     intervalMonths: 6
+    service:
+      parts:
+        - name: Tires
+          notes: >-
+            OEM size P245/65R17 105S, confirmed via Toyota Tires,
+            BFGoodrich, and Wheel-Size.com fitment tools. Cold pressure
+            30 psi front and rear for SE trim per a secondary aggregator
+            (tirepressure.org), not Toyota's own placard, confirm against
+            the door jamb sticker. Lug nut torque 76 ft-lb, consistent
+            across independent aggregators, not FSM-confirmed.
+      sources:
+        - Toyota Tires and BFGoodrich fitment tools; tirepressure.org; 21cylinders.com and lugnutspecs.com (lug torque)
   - itemType: multi-point-inspection
     name: Multi-point inspection / fluid level checks — with each 5,000 mi service
     intervalMiles: 5000
@@ -83,6 +126,14 @@ items:
       switch to disposable filters starting spring 2027 (see tasks.yaml).
     intervalMiles: 30000
     intervalMonths: 36
+    service:
+      parts:
+        - name: Cabin air filter, disposable (for the spring 2027 switch)
+          oemPartNumber: 87139-YZZ10
+          aftermarketCrosses: [87139-YZZ92]
+          notes: Not needed yet, Hera currently runs a washable K&N filter (VF2000).
+      sources:
+        - parts.toyota.com product listing for the 2012 Highlander
   - itemType: engine-air-filter
     name: >-
       Engine air filter — Toyota normal-schedule 30,000 mi/36 mo (confirmed
@@ -95,6 +146,19 @@ items:
       spring 2027 (see tasks.yaml).
     intervalMiles: 30000
     intervalMonths: 36
+    service:
+      parts:
+        - name: Engine air filter, disposable (for the spring 2027 switch)
+          oemPartNumber: 17801-31141
+          aftermarketCrosses: [17801-YZZ14]
+          notes: >-
+            17801-31141 is dated specifically to 2012-2015 Highlander;
+            17801-YZZ14 covers 2011-2016 and may also cross-reference.
+            Verify by VIN at the parts counter before ordering in 2027.
+            Not needed yet, Hera currently runs a washable K&N filter
+            (33-2260).
+      sources:
+        - Toyota dealer parts catalog listings (Smithtown Toyota, Toyota Parts Delivered, Desert Toyota of Tucson)
   - itemType: brake-inspection
     name: Brake inspection (pads/rotors) — with each service
     intervalMiles: 5000
@@ -120,6 +184,12 @@ items:
       decides that, and its results now live on the test item.
     intervalMiles: null
     intervalMonths: null
+    service:
+      fluids:
+        - name: Brake fluid
+          grade: SAE J1703 / FMVSS 116 DOT 3
+      sources:
+        - tohighlander.com mirrored owner's manual content
   - itemType: brake-fluid-test
     name: >-
       Brake fluid condition test (Phoenix Systems 8006-B strips) — ADDED
@@ -172,6 +242,27 @@ items:
       unknown history.
     intervalMiles: 60000
     intervalMonths: null
+    service:
+      fluids:
+        - name: Transmission fluid
+          grade: Toyota Genuine ATF WS
+          notes: >-
+            Confirmed by Toyota TSB T-SB-0036-13 Rev2, which explicitly
+            lists 2009-2016 Highlander with U660E + 2GR-FE + AWD. The
+            U660E has no dipstick: level is set warm (185-194°F) via an
+            overflow/drain plug at 75.5mm (600-700 RPM idle) or 72.0mm
+            (700-800 RPM idle), using Toyota's SST vacuum-gauge tool
+            (P/N 10002-00101). Toyota does not publish a drain-and-fill
+            quart figure since the fill method is level-based, not
+            volume-based; forum reports of "3.7 qt" are field
+            measurements, not a spec. Without the dealer SST kit, a DIY
+            drain-and-fill can get close by measuring what drains out,
+            but cannot verify against Toyota's actual level spec.
+      notes:
+        - Overflow/drain plug torque 40 N·m (30 ft-lb).
+        - Refill plug torque 49 N·m (36 ft-lb).
+      sources:
+        - Toyota TSB T-SB-0036-13 Rev2, "WS ATF Level Adjustment for U660E/F & U760E/F Transmissions"
   - itemType: spark-plugs
     name: >-
       Spark plugs (iridium, 2GR-FE V6) — confirmed directly in the 2013
@@ -182,6 +273,21 @@ items:
       powertrain and is disregarded here.)
     intervalMiles: 120000
     intervalMonths: 144
+    service:
+      parts:
+        - name: Spark plugs
+          oemPartNumber: 90919-01247 (Denso FK20HR11)
+          quantityPerService: 6
+          notes: >-
+            Gap 1.0-1.1 mm (0.039-0.043 in) new, ships pre-gapped, do
+            not re-gap unless checking wear (max 1.4 mm). Torque is an
+            unresolved conflict between two tables in the same FSM
+            mirror: 18 N·m/13 ft-lb (Engine Mechanical) vs 25 N·m/18
+            ft-lb (Ignition). Check the torque printed on the OEM Denso
+            plug's own packaging before guessing; overtorquing a 14mm
+            plug into an aluminum head risks thread damage.
+      sources:
+        - Toyota 2GR-FE Ignition Service Specifications, SS-38/SS-39; Engine Mechanical Service Specifications, SS-23
   - itemType: front-differential-fluid
     name: >-
       Front differential fluid (AWD) — SPLIT 2026-07-28 from a combined
@@ -195,6 +301,18 @@ items:
       prior service.
     intervalMiles: 30000
     intervalMonths: 36
+    service:
+      notes:
+        - >-
+          IMPORTANT: on this AWD platform the front final drive is
+          integrated into the transaxle case and shares the
+          transmission's Toyota WS ATF. There is no separate
+          serviceable front differential fluid or fill point the way a
+          body-on-frame 4x4 has one. This item may be redundant with
+          the transmission-fluid-service item above, flagged for Brady
+          to review rather than silently merged.
+      sources:
+        - toyota-club.net factory-derived fluid/capacity table, 2007-2014 Highlander (XU40)
   - itemType: rear-differential-fluid
     name: >-
       Rear differential fluid (AWD) — SPLIT 2026-07-28 from a combined
@@ -208,6 +326,17 @@ items:
       this car's high mileage and unknown prior service.
     intervalMiles: 15000
     intervalMonths: 18
+    service:
+      fluids:
+        - name: Rear differential fluid
+          grade: Hypoid gear oil GL-5, 80W or 80W-90
+          capacity: 0.9 L
+          notes: >-
+            Confirmed for the correct 2007-2014 (XU40) generation.
+            Newer 2014-2019 (XU50) Highlanders use a different spec
+            (75W-85 GL-5 LX, 0.5 L), do not use that figure for this car.
+      sources:
+        - toyota-club.net factory-derived fluid/capacity table, 2007-2014 Highlander (XU40)
   - itemType: transfer-case-fluid
     name: >-
       Transfer case fluid (AWD power transfer unit) — SPLIT 2026-07-28
@@ -221,6 +350,14 @@ items:
       and unknown prior service.
     intervalMiles: 15000
     intervalMonths: 18
+    service:
+      fluids:
+        - name: Transfer case fluid (power transfer unit)
+          grade: Hypoid gear oil GL-5, 80W or 80W-90
+          capacity: 0.9 L
+          notes: Same spec and generation caveat as the rear differential fluid above.
+      sources:
+        - toyota-club.net factory-derived fluid/capacity table, 2007-2014 Highlander (XU40)
   - itemType: battery-test
     name: >-
       12V battery load test (KONNWEI KW208 tester) — UPDATED 2026-07-22:
@@ -240,6 +377,19 @@ items:
       test (see battery-test above) indicates it's needed.
     intervalMiles: null
     intervalMonths: null
+    service:
+      parts:
+        - name: 12V battery
+          notes: >-
+            Group 24F, 530 CCA for the 3.5L V6 (not the 4-cylinder or
+            hybrid variants), per retailer fitment cross-reference
+            (O'Reilly, AutoZone), not a Toyota FSM electrical spec page.
+            No confident single OEM 28800-series part number found.
+            Simplest path: read the group size/CCA off whatever battery
+            is currently installed, or ask a parts counter for the 2012
+            Highlander 3.5L-specific listing directly.
+      sources:
+        - O'Reilly Auto Parts and AutoZone retailer fitment databases
   - itemType: wiper-blades
     name: >-
       Wiper blades — Brady checks these every spring during the seasonal

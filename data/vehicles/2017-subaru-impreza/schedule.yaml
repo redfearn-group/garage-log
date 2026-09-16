@@ -80,6 +80,44 @@ items:
       (2026-07-16) without any adjustment needed.
     intervalMiles: 6000
     intervalMonths: 6
+    service:
+      fluids:
+        - name: Engine oil
+          grade: 0W-20 full synthetic
+          certifications: [ILSAC GF-5, API SN Resource Conserving]
+          capacity: 4.7 US qt (4.4 L) with filter change
+          notes: 5W-30 conventional is only a temporary substitute if 0W-20 isn't available.
+      parts:
+        - name: Oil filter
+          oemPartNumber: 15208AA21A
+          notes: >-
+            CORRECTED 2026-09-16: 15208AA21A is correct for this FB20
+            Impreza. 15208AA12A, which appeared in this repo's history,
+            is a genuine Subaru part but fits 2009-2012 Legacy/Outback
+            EJ25 engines, not the FB20. Both use the same 3/4-16 UNF
+            thread, so a wrong filter would thread on without an
+            obvious leak, but the media/bypass valve spec doesn't match.
+        - name: Oil drain plug bolt
+          oemPartNumber: 807016210
+          notes: M16 x 1.5 thread.
+        - name: Oil drain plug crush washer
+          oemPartNumber: 803916010
+          singleUse: true
+          notes: >-
+            CORRECTED 2026-09-16: this is the correct washer for the
+            engine oil pan drain plug, shared with the CVT pan drain
+            plug. 803918060, which the 2026-04-08 oil-change log records
+            as installed here, is a different, larger gasket (18mm ID
+            vs this washer's 16mm ID) used on the CVT fill plug and
+            differential fill plugs, not the engine oil drain bolt.
+            Check what's actually on the drain plug at the next oil
+            change and correct it to 803916010 if needed. Toyota's
+            90430-12031 (used on the Lexus and Highlander) is NOT
+            interchangeable here, it's an M12 washer for an M12 bolt,
+            while this car's drain bolt is M16 x 1.5.
+      sources:
+        - 2017 Impreza Owner's Manual, Specifications, p. 429-430
+        - parts.subaru.com fitment listings for 15208AA21A, 15208AA12A, 807016210, 803916010, 803918060
   - itemType: tire-rotation
     name: >-
       Tire rotation — normally done at each oil-change service.
@@ -99,14 +137,46 @@ items:
       See tasks.yaml #19.
     intervalMiles: 6000
     intervalMonths: 6
+    service:
+      parts:
+        - name: Tires
+          notes: >-
+            OEM size for this 2.0i Premium Sedan is P205/55R16 89V (16"
+            wheel), the base fitment of three trim-dependent options in
+            the owner's manual. Cold pressure: front 33 psi (230 kPa),
+            rear 32 psi (220 kPa). Wheel lug nut torque: 89 ft-lb (120
+            N·m). All three confirmed directly in the owner's manual.
+      sources:
+        - 2017 Impreza Owner's Manual, Specifications, p. 432
   - itemType: cabin-air-filter
     name: Cabin air filter — Subaru ~12,000 mi/12 mo
     intervalMiles: 12000
     intervalMonths: 12
+    service:
+      parts:
+        - name: Cabin air filter
+          oemPartNumber: 72880FG000
+          notes: >-
+            Confirmed via a 2017 Impreza-specific parts.subaru.com
+            listing. 72880FJ000 is a different, newer part for
+            2018-2021 Forester/STI/WRX/Crosstrek, not this car.
+      sources:
+        - parts.subaru.com listing for the 2017 Impreza
   - itemType: engine-air-filter
     name: Engine air filter — Subaru ~30,000 mi (some sources cite 20,000; using the more conservative 30,000 confirmed by the multi-source schedule)
     intervalMiles: 30000
     intervalMonths: null
+    service:
+      parts:
+        - name: Engine air filter
+          oemPartNumber: 16546AA16A
+          notes: >-
+            Confirmed via a 2017 Impreza-specific parts.subaru.com
+            listing. K&N KNA-5064, already on hand per maintenance-log.yaml
+            (2026-03-14), is a compatible washable/reusable alternative,
+            not a fitment conflict.
+      sources:
+        - parts.subaru.com listing for the 2017 Impreza
   - itemType: brake-inspection
     name: Brake inspection (pads/rotors) — with each service
     intervalMiles: 6000
@@ -126,6 +196,21 @@ items:
       flush.
     intervalMiles: null
     intervalMonths: null
+    service:
+      fluids:
+        - name: Brake fluid
+          grade: DOT 3 or DOT 4, fresh (FMVSS No. 116)
+          notes: >-
+            Subaru ships DOT 3 from the factory but explicitly approves
+            DOT 4, the two are chemically compatible and can be mixed.
+            NEVER use DOT 5: it's silicone-based, not glycol-based like
+            DOT 3/4/5.1, and is incompatible with this car's ABS
+            hydraulic system, it can swell seals and aerate the fluid.
+            The name is the trap: DOT 5.1 is a fine, compatible glycol
+            fluid despite sounding like a small step up from DOT 5,
+            which is a completely different, incompatible chemistry.
+      sources:
+        - 2017 Impreza Owner's Manual, Specifications, p. 431
   - itemType: brake-fluid-test
     name: >-
       Brake fluid condition test (Phoenix Systems 8006-B strips) — ADDED
@@ -162,6 +247,24 @@ items:
       range given this car's unknown prior service history at ~140K mi.
     intervalMiles: 30000
     intervalMonths: null
+    service:
+      fluids:
+        - name: CVT fluid
+          grade: Subaru CVTF-II, green
+          notes: >-
+            SOA427V1660 or SOA427V1610 ONLY. Never SOA748V0200 (orange
+            High Torque CVTF, for turbo Forester/Legacy/Outback/WRX with
+            the TR690), which is chemically different and a documented
+            cause of CVT damage. Total system capacity is 11.3 US qt
+            per the owner's manual, but that's not what a drain-and-fill
+            takes. No exact FSM drain-and-fill figure was found; DIY
+            writeups for this TR580 consistently report draining 5-6 qt
+            from the pan and refilling to the check-plug level (8mm
+            hex), not to a fixed quart count. Budget 6 qt on hand.
+            Drain plug is 14mm hex/socket.
+      sources:
+        - 2017 Impreza Owner's Manual, Specifications, p. 429
+        - Subaru Outback Forums and Impreza Forum DIY threads on TR580 CVT fluid changes
   - itemType: front-differential-fluid
     name: >-
       Front differential fluid — 75W-90 gear oil (~1.3-1.35 qt), API GL-5.
@@ -179,6 +282,19 @@ items:
       oil, given this car's unknown prior service history.
     intervalMiles: 30000
     intervalMonths: null
+    service:
+      fluids:
+        - name: Front differential gear oil
+          grade: SUBARU Extra MT (branded 75W-90 GL-5, same spec as generic 75W-90 gear oil)
+          capacity: 1.4 US qt (1.3 L), confirmed via the owner's manual, slightly above the ~1.3-1.35 qt prior estimate
+          notes: >-
+            "Extra MT" is Subaru's brand name for a 75W-90 GL-5 gear
+            oil, not a different or manual-transmission-only spec. The
+            Valvoline 75W-90 GL-5 already on hand is correct, this car
+            has no clutch-type limited-slip diff, so the separate
+            "80W90 LSD" friction-modified product is not needed.
+      sources:
+        - 2017 Impreza Owner's Manual, Specifications, p. 430
   - itemType: rear-differential-fluid
     name: >-
       Rear differential fluid — 75W-90 gear oil (~1 qt), a fully separate
@@ -196,6 +312,14 @@ items:
       but tracked as a separate item so neither gets silently skipped.
     intervalMiles: 30000
     intervalMonths: null
+    service:
+      fluids:
+        - name: Rear differential gear oil
+          grade: 75W-90 GL-5
+          capacity: 0.8 US qt (0.8 L), confirmed via the owner's manual, slightly below the ~1 qt prior estimate
+          notes: Same Valvoline 75W-90 GL-5 already on hand as the front differential.
+      sources:
+        - 2017 Impreza Owner's Manual, Specifications, p. 430
   - itemType: coolant-flush
     name: >-
       Engine coolant (Subaru Super Coolant, factory long-life green) — no
@@ -229,6 +353,24 @@ items:
     name: Spark plugs (iridium, FB20 chain engine, no timing belt) — Subaru normal 60,000 mi; do not replace early
     intervalMiles: 60000
     intervalMonths: null
+    service:
+      parts:
+        - name: Spark plugs
+          oemPartNumber: 22401AA880
+          aftermarketCrosses: [NGK DILKAR7B8]
+          quantityPerService: 4
+          notes: >-
+            NGK DILKAR7B8 is directly named in the owner's manual
+            itself, the strongest possible confirmation. Gap 0.8mm,
+            pre-set at the factory on this laser-iridium plug, do not
+            adjust, doing so risks damaging the fine center electrode.
+            Torque not found in a confirmed FSM source, secondary
+            sources cluster around 13-17 ft-lb. Reduce torque by
+            roughly a third if using anti-seize, though NGK says it
+            isn't required on these plated threads.
+      sources:
+        - 2017 Impreza Owner's Manual, Specifications, p. 432
+        - parts.subaru.com listing for 22401AA880
   - itemType: battery-test
     name: >-
       12V battery load test (KONNWEI KW208 tester) — UPDATED 2026-07-22:
@@ -237,3 +379,16 @@ items:
       test result, not by the battery's age.
     intervalMiles: null
     intervalMonths: 6
+    service:
+      parts:
+        - name: 12V battery
+          notes: >-
+            Genuine Subaru spec JIS 75D23L, confirmed directly in both
+            the owner's manual and a 2017 Impreza-specific parts.subaru.com
+            listing (82110FL01A). For US retail shopping, AutoZone's
+            fitment tool lists this as BCI Group 35, 585 CCA, EFB.
+            Some generic "Impreza" battery finders show Group 25 or
+            26R, those reflect other model years/trims, not this VIN.
+      sources:
+        - 2017 Impreza Owner's Manual, Specifications, p. 432
+        - parts.subaru.com listing for 82110FL01A
